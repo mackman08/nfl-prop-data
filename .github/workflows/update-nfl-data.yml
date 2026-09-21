@@ -16,14 +16,44 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v5
 
-      - name: Download nflverse player stats
+      - name: Determine current NFL season
+        id: season
         run: |
-          wget -O player_stats.parquet \
-            https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats.parquet
+          YEAR=$(date -u +%Y)
+          MONTH=$(date -u +%m)
+
+          # NFL season belongs to the calendar year in which it starts.
+          # January-June = previous year's NFL season.
+          if [ "$MONTH" -le 6 ]; then
+            CURRENT_SEASON=$((YEAR - 1))
+          else
+            CURRENT_SEASON=$YEAR
+          fi
+
+          PREVIOUS_SEASON=$((CURRENT_SEASON - 1))
+
+          echo "current_season=$CURRENT_SEASON" >> "$GITHUB_OUTPUT"
+          echo "previous_season=$PREVIOUS_SEASON" >> "$GITHUB_OUTPUT"
+
+          echo "Current NFL season: $CURRENT_SEASON"
+          echo "Previous NFL season: $PREVIOUS_SEASON"
+
+      - name: Download current NFL player stats
+        run: |
+          CURRENT="${{ steps.season.outputs.current_season }}"
+          PREVIOUS="${{ steps.season.outputs.previous_season }}"
+
+          wget -O "stats_player_week_${PREVIOUS}.csv" \
+            "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_${PREVIOUS}.csv"
+
+          wget -O "stats_player_week_${CURRENT}.csv" \
+            "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_${CURRENT}.csv"
+
+          ls -lh stats_player_week_*.csv
 
       - name: Install Python packages
         run: |
-          pip install pandas pyarrow
+          pip install pandas
 
       - name: Build compact model input
         run: |
@@ -31,28 +61,35 @@ jobs:
           import pandas as pd
           import json
           import os
+          import glob
 
-          # Load nflverse player stats
-          df = pd.read_parquet("player_stats.parquet")
+          files = sorted(glob.glob("stats_player_week_*.csv"))
 
-          print("Original columns:")
+          if len(files) != 2:
+              raise RuntimeError(
+                  f"Expected exactly 2 weekly player-stat files, found: {files}"
+              )
+
+          frames = []
+
+          for file in files:
+              print(f"Reading {file}")
+              temp = pd.read_csv(file)
+              frames.append(temp)
+
+          df = pd.concat(frames, ignore_index=True)
+
+          print(f"Raw rows: {len(df):,}")
+          print("Available columns:")
           print(list(df.columns))
 
-          # Regular season + relevant positions only
+          # Regular season + relevant skill positions
           df = df[
               (df["season_type"] == "REG") &
               (df["position"].isin(["QB", "RB", "WR", "TE"]))
           ].copy()
 
-          # Keep only the two most recent seasons
-          latest_season = int(df["season"].max())
-          earliest_season = latest_season - 1
-
-          df = df[
-              df["season"].between(earliest_season, latest_season)
-          ].copy()
-
-          # Fields required by the prop model
+          # Required model fields
           columns = [
               "player_id",
               "player_name",
@@ -68,8 +105,9 @@ jobs:
               "receptions"
           ]
 
-          # Keep only fields that actually exist
-          df = df[[c for c in columns if c in df.columns]]
+          # Keep fields that exist in the current nflverse schema
+          available = [c for c in columns if c in df.columns]
+          df = df[available]
 
           print("Model columns:")
           print(list(df.columns))
@@ -84,7 +122,7 @@ jobs:
               if col in df.columns:
                   df[col] = df[col].fillna(0)
 
-          # Sort using only columns that exist
+          # Ensure chronological ordering
           sort_columns = [
               c for c in [
                   "player_id",
@@ -97,17 +135,18 @@ jobs:
 
           df = df.sort_values(sort_columns)
 
-          # Keep the most recent 10 games for every player
+          # Keep each player's latest 10 regular-season games
           df = (
               df.groupby("player_id", group_keys=False)
                 .tail(10)
           )
 
-          # Create output directory
+          # Output one connector-readable text file
           os.makedirs("data", exist_ok=True)
 
-          # One compact JSON Lines text file
-          with open("data/nfl_prop_model.txt", "w") as f:
+          output = "data/nfl_prop_model.txt"
+
+          with open(output, "w") as f:
               for record in df.to_dict("records"):
                   f.write(
                       json.dumps(
@@ -117,16 +156,61 @@ jobs:
                       ) + "\n"
                   )
 
-          print(f"Seasons included: {earliest_season}-{latest_season}")
-          print(f"Model rows: {len(df):,}")
+          print()
+          print("===== MODEL DATA SUMMARY =====")
+          print(
+              f"Seasons: "
+              f"{df['season'].min()}-{df['season'].max()}"
+          )
+          print(f"Rows: {len(df):,}")
           print(f"Players: {df['player_id'].nunique():,}")
+
+          if "week" in df.columns:
+              print(f"Latest week in file: {df['week'].max()}")
+
+          if "team" in df.columns:
+              print("Team column: YES")
+          else:
+              print("Team column: NO")
+
+          if "game_id" in df.columns:
+              print("Game ID column: YES")
+          else:
+              print("Game ID column: NO")
 
           PY
 
-      - name: Show output size
+      - name: Verify output
         run: |
+          echo "Output file:"
           ls -lh data/nfl_prop_model.txt
+
+          echo
+          echo "Number of game rows:"
           wc -l data/nfl_prop_model.txt
+
+          echo
+          echo "First 5 records:"
+          head -5 data/nfl_prop_model.txt
+
+          echo
+          echo "Latest season/week represented:"
+          python - <<'PY'
+          import json
+
+          seasons = []
+          weeks = []
+
+          with open("data/nfl_prop_model.txt") as f:
+              for line in f:
+                  row = json.loads(line)
+                  seasons.append(int(row["season"]))
+                  weeks.append(int(row["week"]))
+
+          print("Max season:", max(seasons))
+          print("Max week:", max(weeks))
+          print("Min season:", min(seasons))
+          PY
 
       - name: Commit model data
         run: |
@@ -135,6 +219,7 @@ jobs:
 
           git add data/nfl_prop_model.txt
 
-          git diff --cached --quiet || git commit -m "Update NFL prop model data"
+          git diff --cached --quiet || \
+            git commit -m "Update NFL prop model data"
 
           git push
