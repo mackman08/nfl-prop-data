@@ -25,20 +25,22 @@ jobs:
         run: |
           pip install pandas pyarrow
 
-      - name: Create model-ready data
+      - name: Build compact model input
         run: |
           python - <<'PY'
           import pandas as pd
+          import json
+          import os
 
           df = pd.read_parquet("player_stats.parquet")
 
-          # Regular-season QB/RB/WR/TE only
+          # Regular season + relevant positions only
           df = df[
               (df["season_type"] == "REG") &
               (df["position"].isin(["QB", "RB", "WR", "TE"]))
-          ]
+          ].copy()
 
-          # Keep only fields needed for the prop model
+          # Fields required by the prop model
           columns = [
               "player_id",
               "player_name",
@@ -56,34 +58,46 @@ jobs:
 
           df = df[[c for c in columns if c in df.columns]]
 
-          # Sort chronologically
+          # Fill missing statistical categories with zero
+          for col in [
+              "passing_yards",
+              "rushing_yards",
+              "receiving_yards",
+              "receptions"
+          ]:
+              if col in df.columns:
+                  df[col] = df[col].fillna(0)
+
+          # Chronological order
           df = df.sort_values(
-              ["season", "week", "player_name"]
+              ["player_id", "season", "week"]
           )
 
-          # Create data directory
-          import os
+          # Keep the most recent 10 games for every player
+          df = (
+              df.groupby("player_id", group_keys=False)
+                .tail(10)
+          )
+
+          # Create compact JSON Lines file
           os.makedirs("data", exist_ok=True)
 
-          # Save model-ready file
-          df.to_csv(
-              "data/nfl_prop_history.csv",
-              index=False
-          )
+          with open("data/nfl_prop_model.txt", "w") as f:
+              for record in df.to_dict("records"):
+                  f.write(json.dumps(record, separators=(",", ":")) + "\n")
 
-          print(f"Rows: {len(df):,}")
-          print(f"Players: {df['player_name'].nunique():,}")
-          print(f"Seasons: {df['season'].min()}-{df['season'].max()}")
-          print(df.head())
+          print(f"Model rows: {len(df):,}")
+          print(f"Players: {df['player_id'].nunique():,}")
+
           PY
 
-      - name: Commit updated data
+      - name: Commit model data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/nfl_prop_history.csv
+          git add data/nfl_prop_model.txt
 
-          git diff --cached --quiet || git commit -m "Update NFL prop data"
+          git diff --cached --quiet || git commit -m "Update NFL prop model data"
 
           git push
