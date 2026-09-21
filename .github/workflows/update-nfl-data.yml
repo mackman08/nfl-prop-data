@@ -16,14 +16,12 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v5
 
-      - name: Determine current NFL season
+      - name: Determine NFL seasons
         id: season
         run: |
           YEAR=$(date -u +%Y)
           MONTH=$(date -u +%m)
 
-          # NFL season belongs to the calendar year in which it starts.
-          # January-June = previous year's NFL season.
           if [ "$MONTH" -le 6 ]; then
             CURRENT_SEASON=$((YEAR - 1))
           else
@@ -35,10 +33,10 @@ jobs:
           echo "current_season=$CURRENT_SEASON" >> "$GITHUB_OUTPUT"
           echo "previous_season=$PREVIOUS_SEASON" >> "$GITHUB_OUTPUT"
 
-          echo "Current NFL season: $CURRENT_SEASON"
-          echo "Previous NFL season: $PREVIOUS_SEASON"
+          echo "Current season: $CURRENT_SEASON"
+          echo "Previous season: $PREVIOUS_SEASON"
 
-      - name: Download current NFL player stats
+      - name: Download weekly player stats
         run: |
           CURRENT="${{ steps.season.outputs.current_season }}"
           PREVIOUS="${{ steps.season.outputs.previous_season }}"
@@ -51,11 +49,11 @@ jobs:
 
           ls -lh stats_player_week_*.csv
 
-      - name: Install Python packages
+      - name: Install Python
         run: |
           pip install pandas
 
-      - name: Build compact model input
+      - name: Build compact one-file model
         run: |
           python - <<'PY'
           import pandas as pd
@@ -63,33 +61,42 @@ jobs:
           import os
           import glob
 
-          files = sorted(glob.glob("stats_player_week_*.csv"))
+          current_season = int("${{ steps.season.outputs.current_season }}")
+          previous_season = int("${{ steps.season.outputs.previous_season }}")
 
-          if len(files) != 2:
-              raise RuntimeError(
-                  f"Expected exactly 2 weekly player-stat files, found: {files}"
-              )
+          files = [
+              f"stats_player_week_{previous_season}.csv",
+              f"stats_player_week_{current_season}.csv"
+          ]
 
           frames = []
 
           for file in files:
               print(f"Reading {file}")
-              temp = pd.read_csv(file)
-              frames.append(temp)
+              frames.append(pd.read_csv(file))
 
           df = pd.concat(frames, ignore_index=True)
 
           print(f"Raw rows: {len(df):,}")
-          print("Available columns:")
-          print(list(df.columns))
 
-          # Regular season + relevant skill positions
+          # Regular season and relevant positions
           df = df[
               (df["season_type"] == "REG") &
               (df["position"].isin(["QB", "RB", "WR", "TE"]))
           ].copy()
 
-          # Required model fields
+          # Only players who have actually appeared in the current season.
+          # Their prior-season games can still be used to complete the L10.
+          current_players = set(
+              df.loc[
+                  df["season"] == current_season,
+                  "player_id"
+              ].dropna()
+          )
+
+          df = df[df["player_id"].isin(current_players)].copy()
+
+          # Required model columns
           columns = [
               "player_id",
               "player_name",
@@ -105,112 +112,139 @@ jobs:
               "receptions"
           ]
 
-          # Keep fields that exist in the current nflverse schema
           available = [c for c in columns if c in df.columns]
-          df = df[available]
+          df = df[available].copy()
 
-          print("Model columns:")
-          print(list(df.columns))
+          print("Available model columns:")
+          print(available)
 
-          # Missing statistical categories = 0
+          # Fail rather than silently producing incomplete history
+          required = [
+              "player_id",
+              "player_name",
+              "position",
+              "season",
+              "week",
+              "passing_yards",
+              "rushing_yards",
+              "receiving_yards",
+              "receptions"
+          ]
+
+          missing = [c for c in required if c not in df.columns]
+
+          if missing:
+              raise RuntimeError(
+                  f"Missing required columns: {missing}"
+              )
+
+          # Missing statistical categories = zero
           for col in [
               "passing_yards",
               "rushing_yards",
               "receiving_yards",
               "receptions"
           ]:
-              if col in df.columns:
-                  df[col] = df[col].fillna(0)
+              df[col] = df[col].fillna(0)
 
-          # Ensure chronological ordering
+          # Sort chronologically
           sort_columns = [
-              c for c in [
-                  "player_id",
-                  "season",
-                  "week",
-                  "game_id"
-              ]
-              if c in df.columns
+              "player_id",
+              "season",
+              "week"
           ]
+
+          if "game_id" in df.columns:
+              sort_columns.append("game_id")
 
           df = df.sort_values(sort_columns)
 
-          # Keep each player's latest 10 regular-season games
+          # Keep each current-season player's 10 most recent games
           df = (
               df.groupby("player_id", group_keys=False)
                 .tail(10)
           )
 
-          # Output one connector-readable text file
+          # One compact JSON object per player
+          players = []
+
+          for player_id, group in df.groupby("player_id", sort=False):
+
+              group = group.sort_values(
+                  ["season", "week"] +
+                  (["game_id"] if "game_id" in group.columns else [])
+              )
+
+              latest = group.iloc[-1]
+
+              player = {
+                  "player_id": str(player_id),
+                  "player_name": str(latest["player_name"]),
+                  "position": str(latest["position"]),
+                  "games": []
+              }
+
+              for _, row in group.iterrows():
+
+                  game = {
+                      "season": int(row["season"]),
+                      "week": int(row["week"])
+                  }
+
+                  if "game_id" in row and pd.notna(row["game_id"]):
+                      game["game_id"] = str(row["game_id"])
+
+                  if "team" in row and pd.notna(row["team"]):
+                      game["team"] = str(row["team"])
+
+                  if "opponent_team" in row and pd.notna(row["opponent_team"]):
+                      game["opponent_team"] = str(row["opponent_team"])
+
+                  game["passing_yards"] = float(row["passing_yards"])
+                  game["rushing_yards"] = float(row["rushing_yards"])
+                  game["receiving_yards"] = float(row["receiving_yards"])
+                  game["receptions"] = float(row["receptions"])
+
+                  player["games"].append(game)
+
+              players.append(player)
+
+          # Sort players alphabetically for reproducibility
+          players.sort(key=lambda x: (x["position"], x["player_name"]))
+
           os.makedirs("data", exist_ok=True)
 
           output = "data/nfl_prop_model.txt"
 
           with open(output, "w") as f:
-              for record in df.to_dict("records"):
+              for player in players:
                   f.write(
                       json.dumps(
-                          record,
-                          separators=(",", ":"),
-                          default=str
+                          player,
+                          separators=(",", ":")
                       ) + "\n"
                   )
 
           print()
           print("===== MODEL DATA SUMMARY =====")
-          print(
-              f"Seasons: "
-              f"{df['season'].min()}-{df['season'].max()}"
-          )
-          print(f"Rows: {len(df):,}")
-          print(f"Players: {df['player_id'].nunique():,}")
-
-          if "week" in df.columns:
-              print(f"Latest week in file: {df['week'].max()}")
-
-          if "team" in df.columns:
-              print("Team column: YES")
-          else:
-              print("Team column: NO")
-
-          if "game_id" in df.columns:
-              print("Game ID column: YES")
-          else:
-              print("Game ID column: NO")
+          print(f"Seasons available: {previous_season}, {current_season}")
+          print(f"Current-season players: {len(players):,}")
+          print(f"Output rows: {len(players):,}")
 
           PY
 
       - name: Verify output
         run: |
-          echo "Output file:"
+          echo "File size:"
           ls -lh data/nfl_prop_model.txt
 
           echo
-          echo "Number of game rows:"
+          echo "Player objects:"
           wc -l data/nfl_prop_model.txt
 
           echo
-          echo "First 5 records:"
-          head -5 data/nfl_prop_model.txt
-
-          echo
-          echo "Latest season/week represented:"
-          python - <<'PY'
-          import json
-
-          seasons = []
-          weeks = []
-
-          with open("data/nfl_prop_model.txt") as f:
-              for line in f:
-                  row = json.loads(line)
-                  seasons.append(int(row["season"]))
-                  weeks.append(int(row["week"]))
-
-          print("Max season:", max(seasons))
-          print("Max week:", max(weeks))
-          print("Min season:", min(seasons))
-          PY
+          echo "First player:"
+          head -1 data/nfl_prop_model.txt
 
       - name: Commit model data
         run: |
