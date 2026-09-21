@@ -16,7 +16,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v5
 
-      - name: Download weekly NFL player stats
+      - name: Download nflverse player stats
         run: |
           wget -O player_stats.parquet \
             https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats.parquet
@@ -40,6 +40,14 @@ jobs:
               (df["position"].isin(["QB", "RB", "WR", "TE"]))
           ].copy()
 
+          # Keep only the two most recent seasons
+          latest_season = int(df["season"].max())
+          earliest_season = latest_season - 1
+
+          df = df[
+              df["season"].between(earliest_season, latest_season)
+          ].copy()
+
           # Fields required by the prop model
           columns = [
               "player_id",
@@ -58,7 +66,7 @@ jobs:
 
           df = df[[c for c in columns if c in df.columns]]
 
-          # Fill missing statistical categories with zero
+          # Missing statistical categories = 0
           for col in [
               "passing_yards",
               "rushing_yards",
@@ -70,7 +78,7 @@ jobs:
 
           # Chronological order
           df = df.sort_values(
-              ["player_id", "season", "week"]
+              ["player_id", "season", "week", "game_id"]
           )
 
           # Keep the most recent 10 games for every player
@@ -79,13 +87,16 @@ jobs:
                 .tail(10)
           )
 
-          # Create compact JSON Lines file
           os.makedirs("data", exist_ok=True)
 
+          # One compact JSONL text file
           with open("data/nfl_prop_model.txt", "w") as f:
               for record in df.to_dict("records"):
-                  f.write(json.dumps(record, separators=(",", ":")) + "\n")
+                  f.write(
+                      json.dumps(record, separators=(",", ":")) + "\n"
+                  )
 
+          print(f"Seasons included: {earliest_season}-{latest_season}")
           print(f"Model rows: {len(df):,}")
           print(f"Players: {df['player_id'].nunique():,}")
 
