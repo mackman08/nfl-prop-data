@@ -1,0 +1,16 @@
+name: Test NFL Data Automation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 10 * * 2'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test
+        run: |
+          echo "NFL data automation is working"
+          date
