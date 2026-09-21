@@ -32,7 +32,11 @@ jobs:
           import json
           import os
 
+          # Load nflverse player stats
           df = pd.read_parquet("player_stats.parquet")
+
+          print("Original columns:")
+          print(list(df.columns))
 
           # Regular season + relevant positions only
           df = df[
@@ -64,7 +68,11 @@ jobs:
               "receptions"
           ]
 
+          # Keep only fields that actually exist
           df = df[[c for c in columns if c in df.columns]]
+
+          print("Model columns:")
+          print(list(df.columns))
 
           # Missing statistical categories = 0
           for col in [
@@ -76,10 +84,18 @@ jobs:
               if col in df.columns:
                   df[col] = df[col].fillna(0)
 
-          # Chronological order
-          df = df.sort_values(
-              ["player_id", "season", "week", "game_id"]
-          )
+          # Sort using only columns that exist
+          sort_columns = [
+              c for c in [
+                  "player_id",
+                  "season",
+                  "week",
+                  "game_id"
+              ]
+              if c in df.columns
+          ]
+
+          df = df.sort_values(sort_columns)
 
           # Keep the most recent 10 games for every player
           df = (
@@ -87,13 +103,18 @@ jobs:
                 .tail(10)
           )
 
+          # Create output directory
           os.makedirs("data", exist_ok=True)
 
-          # One compact JSONL text file
+          # One compact JSON Lines text file
           with open("data/nfl_prop_model.txt", "w") as f:
               for record in df.to_dict("records"):
                   f.write(
-                      json.dumps(record, separators=(",", ":")) + "\n"
+                      json.dumps(
+                          record,
+                          separators=(",", ":"),
+                          default=str
+                      ) + "\n"
                   )
 
           print(f"Seasons included: {earliest_season}-{latest_season}")
@@ -101,6 +122,11 @@ jobs:
           print(f"Players: {df['player_id'].nunique():,}")
 
           PY
+
+      - name: Show output size
+        run: |
+          ls -lh data/nfl_prop_model.txt
+          wc -l data/nfl_prop_model.txt
 
       - name: Commit model data
         run: |
