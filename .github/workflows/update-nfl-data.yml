@@ -1,21 +1,89 @@
-name: Download NFL Data
+name: Build NFL Prop Data
 
 on:
   workflow_dispatch:
   schedule:
     - cron: '17 10 * * 2'
 
+permissions:
+  contents: write
+
 jobs:
-  download:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Download nflverse player stats
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download weekly NFL player stats
         run: |
           wget -O player_stats.parquet \
             https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats.parquet
 
-      - name: Verify download
+      - name: Install Python packages
         run: |
-          ls -lh player_stats.parquet
-          file player_stats.parquet
+          pip install pandas pyarrow
+
+      - name: Create model-ready data
+        run: |
+          python - <<'PY'
+          import pandas as pd
+
+          df = pd.read_parquet("player_stats.parquet")
+
+          # Regular-season QB/RB/WR/TE only
+          df = df[
+              (df["season_type"] == "REG") &
+              (df["position"].isin(["QB", "RB", "WR", "TE"]))
+          ]
+
+          # Keep only fields needed for the prop model
+          columns = [
+              "player_id",
+              "player_name",
+              "position",
+              "season",
+              "week",
+              "game_id",
+              "team",
+              "opponent_team",
+              "passing_yards",
+              "rushing_yards",
+              "receiving_yards",
+              "receptions"
+          ]
+
+          df = df[[c for c in columns if c in df.columns]]
+
+          # Sort chronologically
+          df = df.sort_values(
+              ["season", "week", "player_name"]
+          )
+
+          # Create data directory
+          import os
+          os.makedirs("data", exist_ok=True)
+
+          # Save model-ready file
+          df.to_csv(
+              "data/nfl_prop_history.csv",
+              index=False
+          )
+
+          print(f"Rows: {len(df):,}")
+          print(f"Players: {df['player_name'].nunique():,}")
+          print(f"Seasons: {df['season'].min()}-{df['season'].max()}")
+          print(df.head())
+          PY
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/nfl_prop_history.csv
+
+          git diff --cached --quiet || git commit -m "Update NFL prop data"
+
+          git push
