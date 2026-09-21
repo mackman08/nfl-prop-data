@@ -1,0 +1,2 @@
+GitHub connector test
+If you can read this, plain text is working.
