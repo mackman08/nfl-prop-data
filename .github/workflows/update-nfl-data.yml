@@ -13,7 +13,7 @@ jobs:
       - name: Download nflverse player stats
         run: |
           wget -O player_stats.parquet \
-            https://github.com/nflverse/nflverse-data/releases/latest/download/player_stats.parquet
+            https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats.parquet
 
       - name: Verify download
         run: |
