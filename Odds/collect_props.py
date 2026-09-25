@@ -1,94 +1,31 @@
-import csv
-import json
-import os
-import sys
-from datetime import datetime, timezone
+from oddswrap import OddsClient
 
-# OddsWrap
-try:
-    from oddswrap import Odds
-except ImportError:
-    print("ERROR: oddswrap is not installed.")
-    sys.exit(1)
+# Only use the two sportsbooks we want
+client = OddsClient(
+    books=["draftkings", "fanduel"]
+)
 
+print("Available sportsbooks:")
+print(client.available_books)
 
-OUTPUT_FILE = "nfl_player_props_latest.csv"
+print("\nNFL support:")
+print("DraftKings:", client.supports("nfl"))
+print("FanDuel:", client.supports("nfl"))
 
-SPORTSBOOKS = {
-    "draftkings",
-    "fanduel",
-}
+print("\nDraftKings NFL prop categories:")
+dk_categories = client.get_prop_categories(
+    "nfl",
+    book="draftkings"
+)
 
+for category in dk_categories:
+    print(category)
 
-def normalize(value):
-    if value is None:
-        return ""
-    return str(value).strip()
+print("\nFanDuel NFL prop categories:")
+fd_categories = client.get_prop_categories(
+    "nfl",
+    book="fanduel"
+)
 
-
-def main():
-    print("Starting NFL player-prop collection...")
-    print("Sportsbooks: DraftKings + FanDuel")
-
-    odds = Odds()
-
-    # Get NFL player props
-    props = odds.player_props(
-        sport="nfl",
-        sportsbooks=list(SPORTSBOOKS)
-    )
-
-    rows = []
-
-    for prop in props:
-        sportsbook = normalize(getattr(prop, "sportsbook", ""))
-
-        if sportsbook.lower() not in SPORTSBOOKS:
-            continue
-
-        rows.append({
-            "game_date": normalize(getattr(prop, "game_date", "")),
-            "player": normalize(getattr(prop, "player", "")),
-            "team": normalize(getattr(prop, "team", "")),
-            "opponent": normalize(getattr(prop, "opponent", "")),
-            "market": normalize(getattr(prop, "market", "")),
-            "line": normalize(getattr(prop, "line", "")),
-            "over_odds": normalize(getattr(prop, "over_odds", "")),
-            "under_odds": normalize(getattr(prop, "under_odds", "")),
-            "sportsbook": sportsbook,
-        })
-
-    # Remove duplicate rows
-    unique_rows = []
-    seen = set()
-
-    for row in rows:
-        key = tuple(row.values())
-
-        if key not in seen:
-            seen.add(key)
-            unique_rows.append(row)
-
-    fieldnames = [
-        "game_date",
-        "player",
-        "team",
-        "opponent",
-        "market",
-        "line",
-        "over_odds",
-        "under_odds",
-        "sportsbook",
-    ]
-
-    with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(unique_rows)
-
-    print(f"Collected {len(unique_rows)} player-prop rows.")
-    print(f"Saved to {OUTPUT_FILE}")
-
-
-if __name__ == "__main__":
-    main()
+for category in fd_categories:
+    print(category)
