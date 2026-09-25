@@ -59,10 +59,19 @@ jobs:
           import pandas as pd
           import json
           import os
-          import glob
 
           current_season = int("${{ steps.season.outputs.current_season }}")
           previous_season = int("${{ steps.season.outputs.previous_season }}")
+
+          # Maximum historical game window retained per player.
+          #
+          # The prop model can use shorter dynamic windows:
+          #   L5  -> L10 stability check
+          #   L10 -> L20 stability check
+          #
+          # Keeping 20 games here allows the current L10/L20 framework
+          # while preserving the raw game-level data for dynamic analysis.
+          HISTORY_GAMES = 20
 
           files = [
               f"stats_player_week_{previous_season}.csv",
@@ -79,14 +88,23 @@ jobs:
 
           print(f"Raw rows: {len(df):,}")
 
-          # Regular season and relevant positions
+          # ------------------------------------------------------------
+          # Regular season and relevant positions only
+          # ------------------------------------------------------------
+
           df = df[
               (df["season_type"] == "REG") &
               (df["position"].isin(["QB", "RB", "WR", "TE"]))
           ].copy()
 
-          # Only players who have actually appeared in the current season.
-          # Their prior-season games can still be used to complete the L10.
+          # ------------------------------------------------------------
+          # Only retain players who have actually appeared in the
+          # current season.
+          #
+          # Their prior-season games can still be used to complete
+          # the historical window.
+          # ------------------------------------------------------------
+
           current_players = set(
               df.loc[
                   df["season"] == current_season,
@@ -96,7 +114,10 @@ jobs:
 
           df = df[df["player_id"].isin(current_players)].copy()
 
+          # ------------------------------------------------------------
           # Required model columns
+          # ------------------------------------------------------------
+
           columns = [
               "player_id",
               "player_name",
@@ -113,12 +134,16 @@ jobs:
           ]
 
           available = [c for c in columns if c in df.columns]
+
           df = df[available].copy()
 
           print("Available model columns:")
           print(available)
 
+          # ------------------------------------------------------------
           # Fail rather than silently producing incomplete history
+          # ------------------------------------------------------------
+
           required = [
               "player_id",
               "player_name",
@@ -138,7 +163,10 @@ jobs:
                   f"Missing required columns: {missing}"
               )
 
+          # ------------------------------------------------------------
           # Missing statistical categories = zero
+          # ------------------------------------------------------------
+
           for col in [
               "passing_yards",
               "rushing_yards",
@@ -147,7 +175,10 @@ jobs:
           ]:
               df[col] = df[col].fillna(0)
 
+          # ------------------------------------------------------------
           # Sort chronologically
+          # ------------------------------------------------------------
+
           sort_columns = [
               "player_id",
               "season",
@@ -159,13 +190,24 @@ jobs:
 
           df = df.sort_values(sort_columns)
 
-          # Keep each current-season player's 10 most recent games
+          # ------------------------------------------------------------
+          # Keep each player's 20 most recent games.
+          #
+          # IMPORTANT:
+          # We retain raw game-level results rather than calculating
+          # L5/L10/L20 metrics here. The analysis prompt can therefore
+          # dynamically choose its historical window.
+          # ------------------------------------------------------------
+
           df = (
               df.groupby("player_id", group_keys=False)
-                .tail(10)
+                .tail(HISTORY_GAMES)
           )
 
+          # ------------------------------------------------------------
           # One compact JSON object per player
+          # ------------------------------------------------------------
+
           players = []
 
           for player_id, group in df.groupby("player_id", sort=False):
@@ -209,8 +251,20 @@ jobs:
 
               players.append(player)
 
+          # ------------------------------------------------------------
           # Sort players alphabetically for reproducibility
-          players.sort(key=lambda x: (x["position"], x["player_name"]))
+          # ------------------------------------------------------------
+
+          players.sort(
+              key=lambda x: (
+                  x["position"],
+                  x["player_name"]
+              )
+          )
+
+          # ------------------------------------------------------------
+          # Write output
+          # ------------------------------------------------------------
 
           os.makedirs("data", exist_ok=True)
 
@@ -225,11 +279,36 @@ jobs:
                       ) + "\n"
                   )
 
+          # ------------------------------------------------------------
+          # Summary
+          # ------------------------------------------------------------
+
+          total_games = sum(
+              len(player["games"])
+              for player in players
+          )
+
+          game_counts = [
+              len(player["games"])
+              for player in players
+          ]
+
+          players_with_less_than_history = sum(
+              count < HISTORY_GAMES
+              for count in game_counts
+          )
+
           print()
           print("===== MODEL DATA SUMMARY =====")
           print(f"Seasons available: {previous_season}, {current_season}")
           print(f"Current-season players: {len(players):,}")
           print(f"Output rows: {len(players):,}")
+          print(f"Maximum games retained per player: {HISTORY_GAMES}")
+          print(f"Total game records retained: {total_games:,}")
+          print(
+              f"Players with fewer than {HISTORY_GAMES} games: "
+              f"{players_with_less_than_history:,}"
+          )
 
           PY
 
