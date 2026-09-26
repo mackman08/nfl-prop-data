@@ -2,10 +2,6 @@ name: NFL Odds Collector
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "odds/collect_props.py"
-      - "odds/validate_props.py"
   schedule:
     - cron: "7 9,12,15,18 * * *"
       timezone: "America/Toronto"
