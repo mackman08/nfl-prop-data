@@ -1,6 +1,9 @@
 name: Build NFL Prop Data
 
 on:
+  push:
+    paths:
+      - '.github/workflows/update-nfl-data.yml'
   workflow_dispatch:
   schedule:
     - cron: '17 10 * * 2'
@@ -10,6 +13,7 @@ permissions:
 
 jobs:
   build:
+    if: github.event_name != 'push' || github.event.head_commit.message != 'Remove temporary auto-trigger'
     runs-on: ubuntu-latest
 
     steps:
