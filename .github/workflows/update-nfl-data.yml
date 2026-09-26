@@ -29,17 +29,24 @@ jobs:
           fi
 
           PREVIOUS_SEASON=$((CURRENT_SEASON - 1))
+          TWO_SEASONS_BACK=$((CURRENT_SEASON - 2))
 
           echo "current_season=$CURRENT_SEASON" >> "$GITHUB_OUTPUT"
           echo "previous_season=$PREVIOUS_SEASON" >> "$GITHUB_OUTPUT"
+          echo "two_seasons_back=$TWO_SEASONS_BACK" >> "$GITHUB_OUTPUT"
 
           echo "Current season: $CURRENT_SEASON"
           echo "Previous season: $PREVIOUS_SEASON"
+          echo "Two seasons back: $TWO_SEASONS_BACK"
 
       - name: Download weekly player stats
         run: |
           CURRENT="${{ steps.season.outputs.current_season }}"
           PREVIOUS="${{ steps.season.outputs.previous_season }}"
+          TWO_BACK="${{ steps.season.outputs.two_seasons_back }}"
+
+          wget -O "stats_player_week_${TWO_BACK}.csv" \
+            "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_${TWO_BACK}.csv"
 
           wget -O "stats_player_week_${PREVIOUS}.csv" \
             "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_${PREVIOUS}.csv"
@@ -62,6 +69,7 @@ jobs:
 
           current_season = int("${{ steps.season.outputs.current_season }}")
           previous_season = int("${{ steps.season.outputs.previous_season }}")
+          two_seasons_back = int("${{ steps.season.outputs.two_seasons_back }}")
 
           # Maximum historical game window retained per player.
           #
@@ -69,11 +77,14 @@ jobs:
           #   L5  -> L10 stability check
           #   L10 -> L20 stability check
           #
-          # Keeping 20 games here allows the current L10/L20 framework
-          # while preserving the raw game-level data for dynamic analysis.
+          # Keeping 20 games here supports dynamic L[N] samples through L20
+          # and provides the dedicated 20-game pool required for V6.7 25P.
+          # Three seasons are loaded so established players can reach the
+          # full 20-game history even at early-season cutoffs.
           HISTORY_GAMES = 20
 
           files = [
+              f"stats_player_week_{two_seasons_back}.csv",
               f"stats_player_week_{previous_season}.csv",
               f"stats_player_week_{current_season}.csv"
           ]
@@ -300,7 +311,10 @@ jobs:
 
           print()
           print("===== MODEL DATA SUMMARY =====")
-          print(f"Seasons available: {previous_season}, {current_season}")
+          print(
+              "Seasons available: "
+              f"{two_seasons_back}, {previous_season}, {current_season}"
+          )
           print(f"Current-season players: {len(players):,}")
           print(f"Output rows: {len(players):,}")
           print(f"Maximum games retained per player: {HISTORY_GAMES}")
