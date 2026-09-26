@@ -439,6 +439,119 @@ def get_fd_standard_market_rows(event_id, tab):
     return rows
 
 
+
+def diagnose_fanduel_event():
+
+    event_ids = get_fd_event_ids()
+
+    if not event_ids:
+
+        print(
+            "FD DIAGNOSTIC: no NFL events found"
+        )
+
+        return
+
+    event_id = event_ids[0]
+
+    print()
+    print(
+        "FD DIAGNOSTIC EVENT:",
+        event_id
+    )
+
+    try:
+
+        response = cffi_requests.get(
+            FD_EVENT_URL,
+            params={
+                "eventId": event_id,
+                "tab": "popular",
+                "_ak": FD_API_KEY,
+            },
+            impersonate="chrome120",
+            headers={"Accept": "application/json"},
+            timeout=15,
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+
+        print(
+            "FD DIAGNOSTIC TOP-LEVEL KEYS:",
+            sorted(data.keys())
+        )
+
+        attachments = data.get(
+            "attachments",
+            {}
+        )
+
+        print(
+            "FD DIAGNOSTIC ATTACHMENT KEYS:",
+            sorted(attachments.keys())
+        )
+
+        available_tabs = (
+            data.get("availableTabs")
+            or attachments.get("availableTabs")
+            or data.get("event", {}).get("availableTabs")
+        )
+
+        print(
+            "FD DIAGNOSTIC AVAILABLE TABS:",
+            available_tabs
+        )
+
+        markets = attachments.get(
+            "markets",
+            {}
+        )
+
+        market_names = sorted(
+            set(
+                str(
+                    market.get(
+                        "marketName",
+                        ""
+                    )
+                )
+                for market in markets.values()
+                if market.get("marketName")
+            )
+        )
+
+        print(
+            "FD DIAGNOSTIC MARKET COUNT:",
+            len(market_names)
+        )
+
+        for name in market_names:
+
+            if any(
+                keyword.lower() in name.lower()
+                for keyword in [
+                    "passing",
+                    "receiv",
+                    "rush",
+                    "reception",
+                ]
+            ):
+
+                print(
+                    "FD DIAGNOSTIC PROP MARKET:",
+                    name
+                )
+
+    except Exception as e:
+
+        print(
+            "WARNING: FD diagnostic failed:",
+            e
+        )
+
+
 def collect_fanduel_standard_tabs():
 
     rows = []
@@ -761,6 +874,8 @@ def collect_fanduel(client):
                 name,
                 e
             )
+
+    diagnose_fanduel_event()
 
     rows.extend(collect_fanduel_standard_tabs())
 
