@@ -61,10 +61,10 @@ MIN_CORE_ROWS_BY_BOOK = {
         "Rushing Yards": 50,
     },
     "FanDuel": {
-        "Passing Yards": 1,
-        "Receiving Yards": 1,
-        "Receptions": 1,
-        "Rushing Yards": 1,
+        "Passing Yards": 10,
+        "Receiving Yards": 25,
+        "Receptions": 15,
+        "Rushing Yards": 15,
     },
 }
 
