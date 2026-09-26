@@ -1,16 +1,16 @@
-name: Test NFL Odds Collector
+name: NFL Odds Collector
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9,12,15,18 * * *"
+    - cron: "7 9,12,15,18 * * *"
       timezone: "America/Toronto"
 
 permissions:
   contents: write
 
 jobs:
-  test-odds:
+  collect-odds:
     runs-on: ubuntu-latest
 
     steps:
