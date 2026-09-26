@@ -1,9 +1,11 @@
 import csv
+import json
 import sys
 from collections import Counter
 
 
 INPUT_FILE = "odds/nfl_player_props_latest.csv"
+SUMMARY_FILE = "odds/nfl_player_props_summary.json"
 
 EXPECTED_COLUMNS = [
     "player",
@@ -65,10 +67,6 @@ def main():
 
     errors = []
 
-    # --------------------------------------------------------
-    # Schema
-    # --------------------------------------------------------
-
     if columns != EXPECTED_COLUMNS:
         errors.append(f"Unexpected columns: {columns}")
 
@@ -76,10 +74,6 @@ def main():
         errors.append("CSV contains no data rows.")
 
     print("Rows:", len(rows))
-
-    # --------------------------------------------------------
-    # Row validation
-    # --------------------------------------------------------
 
     for i, row in enumerate(rows, start=2):
 
@@ -140,10 +134,6 @@ def main():
                         f"Line {i}: invalid {field}: {value}"
                     )
 
-    # --------------------------------------------------------
-    # Duplicate validation
-    # --------------------------------------------------------
-
     seen = set()
     duplicates = 0
 
@@ -163,10 +153,6 @@ def main():
         errors.append(
             f"Duplicate rows: {duplicates}"
         )
-
-    # --------------------------------------------------------
-    # Coverage summary
-    # --------------------------------------------------------
 
     market_counts = Counter(
         row["market"]
@@ -193,10 +179,6 @@ def main():
         market_counts.items()
     ):
         print(f"  {market}: {count}")
-
-    # --------------------------------------------------------
-    # Coverage / partial-response protection
-    # --------------------------------------------------------
 
     if set(sportsbook_counts) != ALLOWED_SPORTSBOOKS:
         errors.append(
@@ -231,7 +213,6 @@ def main():
             f"(minimum {MIN_FD_ROWS})"
         )
 
-    # Each core market should have meaningful coverage.
     core_markets = {
         "Passing Yards",
         "Receiving Yards",
@@ -251,10 +232,6 @@ def main():
                 f"Missing core market: {market}"
             )
 
-    # --------------------------------------------------------
-    # Final result
-    # --------------------------------------------------------
-
     if errors:
 
         print()
@@ -272,14 +249,38 @@ def main():
 
         sys.exit(1)
 
+    summary = {
+        "total_rows": len(rows),
+        "sportsbooks": dict(
+            sorted(sportsbook_counts.items())
+        ),
+        "markets": dict(
+            sorted(market_counts.items())
+        ),
+        "duplicates": 0,
+        "core_markets_present": sorted(core_markets),
+    }
+
+    with open(
+        SUMMARY_FILE,
+        "w",
+        encoding="utf-8"
+    ) as f:
+        json.dump(
+            summary,
+            f,
+            indent=2,
+            sort_keys=True
+        )
+        f.write("\n")
+
     print()
     print("=" * 60)
     print("VALIDATION PASSED")
     print("Rows:", len(rows))
     print("DraftKings:", dk_rows)
     print("FanDuel:", fd_rows)
-    print("Duplicates: 0")
-    print("Core markets present: 4/4")
+    print("Summary:", SUMMARY_FILE)
     print("=" * 60)
 
 
