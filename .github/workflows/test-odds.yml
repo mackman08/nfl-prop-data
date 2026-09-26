@@ -25,6 +25,10 @@ jobs:
         run: |
           python odds/collect_props.py
 
+      - name: Validate latest odds
+        run: |
+          python odds/validate_props.py
+
       - name: Save latest odds
         run: |
           git config user.name "github-actions[bot]"
