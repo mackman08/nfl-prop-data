@@ -1,5 +1,4 @@
 import csv
-import re
 import sys
 from collections import Counter
 
@@ -45,10 +44,9 @@ BAD_PLAYER_SUFFIXES = [
     "Rushing + Receiving Yards",
 ]
 
-
-def fail(message):
-    print("FAIL:", message)
-    sys.exit(1)
+MIN_TOTAL_ROWS = 1000
+MIN_DK_ROWS = 1000
+MIN_FD_ROWS = 25
 
 
 def main():
@@ -56,80 +54,83 @@ def main():
     print("NFL PLAYER PROP CSV VALIDATION")
     print("=" * 60)
 
-    with open(INPUT_FILE, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        rows = list(reader)
-        columns = reader.fieldnames
+    try:
+        with open(INPUT_FILE, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
+            columns = reader.fieldnames
+    except FileNotFoundError:
+        print("FAIL: CSV file not found:", INPUT_FILE)
+        sys.exit(1)
+
+    errors = []
+
+    # --------------------------------------------------------
+    # Schema
+    # --------------------------------------------------------
 
     if columns != EXPECTED_COLUMNS:
-        fail(f"Unexpected columns: {columns}")
+        errors.append(f"Unexpected columns: {columns}")
 
     if not rows:
-        fail("CSV contains no data rows.")
+        errors.append("CSV contains no data rows.")
 
     print("Rows:", len(rows))
 
     # --------------------------------------------------------
-    # Basic field validation
+    # Row validation
     # --------------------------------------------------------
-
-    errors = []
 
     for i, row in enumerate(rows, start=2):
 
-        if not row["player"].strip():
-            errors.append(f"Line {i}: blank player")
+        for field in [
+            "player",
+            "market",
+            "line",
+            "sportsbook",
+            "game",
+            "event_id",
+        ]:
+            if not row.get(field, "").strip():
+                errors.append(f"Line {i}: blank {field}")
 
-        if not row["market"].strip():
-            errors.append(f"Line {i}: blank market")
-
-        if not row["line"].strip():
-            errors.append(f"Line {i}: blank line")
-
-        if not row["sportsbook"].strip():
-            errors.append(f"Line {i}: blank sportsbook")
-
-        if not row["game"].strip():
-            errors.append(f"Line {i}: blank game")
-
-        if not row["event_id"].strip():
-            errors.append(f"Line {i}: blank event_id")
-
-        # Player name pollution
-        player = row["player"].strip()
+        player = row.get("player", "").strip()
 
         for suffix in BAD_PLAYER_SUFFIXES:
-
             if player.endswith(" " + suffix):
                 errors.append(
                     f"Line {i}: polluted player name: {player}"
                 )
                 break
 
-        # Market validation
-        if row["market"] not in ALLOWED_MARKETS:
+        market = row.get("market", "")
+
+        if market not in ALLOWED_MARKETS:
             errors.append(
-                f"Line {i}: invalid market: {row['market']}"
+                f"Line {i}: invalid market: {market}"
             )
 
-        # Sportsbook validation
-        if row["sportsbook"] not in ALLOWED_SPORTSBOOKS:
+        sportsbook = row.get("sportsbook", "")
+
+        if sportsbook not in ALLOWED_SPORTSBOOKS:
             errors.append(
-                f"Line {i}: invalid sportsbook: {row['sportsbook']}"
+                f"Line {i}: invalid sportsbook: {sportsbook}"
             )
 
-        # Numeric line validation
         try:
-            float(row["line"])
+            line = float(row.get("line", ""))
+            if line <= 0:
+                errors.append(
+                    f"Line {i}: non-positive line: {row['line']}"
+                )
         except ValueError:
             errors.append(
-                f"Line {i}: invalid line: {row['line']}"
+                f"Line {i}: invalid line: {row.get('line', '')}"
             )
 
-        # Odds validation
         for field in ["over_odds", "under_odds"]:
 
-            value = row[field].strip()
+            value = row.get(field, "").strip()
 
             if value:
                 try:
@@ -149,7 +150,7 @@ def main():
     for row in rows:
 
         key = tuple(
-            row[column]
+            row.get(column, "")
             for column in EXPECTED_COLUMNS
         )
 
@@ -164,7 +165,7 @@ def main():
         )
 
     # --------------------------------------------------------
-    # Market / sportsbook summary
+    # Coverage summary
     # --------------------------------------------------------
 
     market_counts = Counter(
@@ -179,6 +180,7 @@ def main():
 
     print()
     print("Sportsbooks:")
+
     for book, count in sorted(
         sportsbook_counts.items()
     ):
@@ -186,13 +188,14 @@ def main():
 
     print()
     print("Markets:")
+
     for market, count in sorted(
         market_counts.items()
     ):
         print(f"  {market}: {count}")
 
     # --------------------------------------------------------
-    # Structural sanity checks
+    # Coverage / partial-response protection
     # --------------------------------------------------------
 
     if set(sportsbook_counts) != ALLOWED_SPORTSBOOKS:
@@ -200,10 +203,53 @@ def main():
             "Expected both DraftKings and FanDuel."
         )
 
-    if len(rows) < 1000:
+    dk_rows = sportsbook_counts.get(
+        "DraftKings",
+        0
+    )
+
+    fd_rows = sportsbook_counts.get(
+        "FanDuel",
+        0
+    )
+
+    if len(rows) < MIN_TOTAL_ROWS:
         errors.append(
-            f"Suspiciously few rows: {len(rows)}"
+            f"Suspiciously few total rows: {len(rows)} "
+            f"(minimum {MIN_TOTAL_ROWS})"
         )
+
+    if dk_rows < MIN_DK_ROWS:
+        errors.append(
+            f"Suspiciously few DraftKings rows: {dk_rows} "
+            f"(minimum {MIN_DK_ROWS})"
+        )
+
+    if fd_rows < MIN_FD_ROWS:
+        errors.append(
+            f"Suspiciously few FanDuel rows: {fd_rows} "
+            f"(minimum {MIN_FD_ROWS})"
+        )
+
+    # Each core market should have meaningful coverage.
+    core_markets = {
+        "Passing Yards",
+        "Receiving Yards",
+        "Receptions",
+        "Rushing Yards",
+    }
+
+    for market in core_markets:
+
+        count = market_counts.get(
+            market,
+            0
+        )
+
+        if count == 0:
+            errors.append(
+                f"Missing core market: {market}"
+            )
 
     # --------------------------------------------------------
     # Final result
@@ -230,12 +276,10 @@ def main():
     print("=" * 60)
     print("VALIDATION PASSED")
     print("Rows:", len(rows))
+    print("DraftKings:", dk_rows)
+    print("FanDuel:", fd_rows)
     print("Duplicates: 0")
-    print("Blank required fields: 0")
-    print("Invalid markets: 0")
-    print("Invalid sportsbooks: 0")
-    print("Invalid player names: 0")
-    print("Invalid numeric values: 0")
+    print("Core markets present: 4/4")
     print("=" * 60)
 
 
