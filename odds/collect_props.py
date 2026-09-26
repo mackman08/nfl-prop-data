@@ -11,6 +11,7 @@ OUTPUT_FILE = "odds/nfl_player_props_latest.csv"
 BOOKS = ["draftkings", "fanduel"]
 
 FD_EVENT_URL = "https://sbapi.nj.sportsbook.fanduel.com/api/event-page"
+FD_CONTENT_URL = "https://sbapi.nj.sportsbook.fanduel.com/api/content-managed-page"
 FD_API_KEY = "FhMFpcPWXMeyZxOx"
 
 
@@ -219,6 +220,258 @@ def get_fd_market_runner(
         )
 
     return None
+
+
+
+def get_fd_event_ids():
+
+    try:
+
+        response = cffi_requests.get(
+            FD_CONTENT_URL,
+            params={
+                "page": "CUSTOM",
+                "customPageId": "nfl",
+                "_ak": FD_API_KEY,
+            },
+            impersonate="chrome120",
+            headers={"Accept": "application/json"},
+            timeout=15,
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+
+        events = (
+            data
+            .get("attachments", {})
+            .get("events", {})
+        )
+
+        return [
+            str(event_id)
+            for event_id, event in events.items()
+            if " @ " in str(event.get("name", ""))
+        ]
+
+    except Exception as e:
+
+        print(
+            "WARNING: FD event discovery failed:",
+            e
+        )
+
+        return []
+
+
+def get_fd_standard_market_rows(event_id, tab):
+
+    rows = []
+
+    try:
+
+        response = cffi_requests.get(
+            FD_EVENT_URL,
+            params={
+                "eventId": event_id,
+                "tab": tab,
+                "_ak": FD_API_KEY,
+            },
+            impersonate="chrome120",
+            headers={"Accept": "application/json"},
+            timeout=15,
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+
+        events = (
+            data
+            .get("attachments", {})
+            .get("events", {})
+        )
+
+        event = events.get(
+            str(event_id),
+            {}
+        )
+
+        game = event.get("name")
+
+        markets = (
+            data
+            .get("attachments", {})
+            .get("markets", {})
+        )
+
+        for market in markets.values():
+
+            market_name = str(
+                market.get(
+                    "marketName",
+                    ""
+                )
+            )
+
+            if market_name == "Passing Yards":
+                normalized_market = "Passing Yards"
+
+            elif market_name == "Receiving Yards":
+                normalized_market = "Receiving Yards"
+
+            elif market_name in [
+                "Total Receptions",
+                "Receptions",
+            ]:
+                normalized_market = "Receptions"
+
+            elif market_name == "Rushing Yards":
+                normalized_market = "Rushing Yards"
+
+            elif market_name in [
+                "Rush + Receiving Yards",
+                "Rush + Rec Yds",
+            ]:
+                normalized_market = (
+                    "Rush + Receiving Yards"
+                )
+
+            else:
+                continue
+
+            for runner in market.get(
+                "runners",
+                []
+            ):
+
+                if not runner.get(
+                    "isPlayerSelection"
+                ):
+                    continue
+
+                runner_name = str(
+                    runner.get(
+                        "runnerName",
+                        ""
+                    )
+                ).strip()
+
+                if re.search(
+                    r"\s+Over$",
+                    runner_name,
+                    re.IGNORECASE
+                ):
+                    side = "over"
+
+                elif re.search(
+                    r"\s+Under$",
+                    runner_name,
+                    re.IGNORECASE
+                ):
+                    side = "under"
+
+                else:
+                    continue
+
+                player = re.sub(
+                    r"\s+(Over|Under)$",
+                    "",
+                    runner_name,
+                    flags=re.IGNORECASE
+                ).strip()
+
+                odds = (
+                    runner
+                    .get(
+                        "winRunnerOdds",
+                        {}
+                    )
+                    .get(
+                        "americanDisplayOdds",
+                        {}
+                    )
+                    .get(
+                        "americanOdds"
+                    )
+                )
+
+                line = runner.get(
+                    "handicap"
+                )
+
+                if (
+                    not player
+                    or line is None
+                    or odds is None
+                ):
+                    continue
+
+                rows.append({
+                    "player": player,
+                    "market": normalized_market,
+                    "line": line,
+                    "over_odds": (
+                        odds
+                        if side == "over"
+                        else None
+                    ),
+                    "under_odds": (
+                        odds
+                        if side == "under"
+                        else None
+                    ),
+                    "sportsbook": "FanDuel",
+                    "game": game,
+                    "event_id": str(event_id),
+                })
+
+    except Exception as e:
+
+        print(
+            "WARNING: FD standard tab failed:",
+            event_id,
+            tab,
+            e
+        )
+
+    return rows
+
+
+def collect_fanduel_standard_tabs():
+
+    rows = []
+
+    event_ids = get_fd_event_ids()
+
+    print(
+        "FD standard events:",
+        len(event_ids)
+    )
+
+    for tab in [
+        "passing-props",
+        "receiving-props",
+        "rushing-props",
+    ]:
+
+        print(
+            "FD standard tab:",
+            tab
+        )
+
+        for event_id in event_ids:
+
+            rows.extend(
+                get_fd_standard_market_rows(
+                    event_id,
+                    tab
+                )
+            )
+
+    return rows
+
 
 
 # ============================================================
@@ -508,6 +761,8 @@ def collect_fanduel(client):
                 name,
                 e
             )
+
+    rows.extend(collect_fanduel_standard_tabs())
 
     return rows
 
