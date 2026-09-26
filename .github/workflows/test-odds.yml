@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 * * * *"
 
+permissions:
+  contents: write
+
 jobs:
   test-odds:
     runs-on: ubuntu-latest
