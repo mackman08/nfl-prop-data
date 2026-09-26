@@ -1,0 +1,25 @@
+{
+  "core_markets_present": [
+    "Passing Yards",
+    "Receiving Yards",
+    "Receptions",
+    "Rushing Yards"
+  ],
+  "duplicates": 0,
+  "markets": {
+    "Alt Passing Yards": 20,
+    "Alt Receiving Yards": 75,
+    "Alt Receptions": 50,
+    "Alt Rushing Yards": 52,
+    "Passing Yards": 693,
+    "Receiving Yards": 1779,
+    "Receptions": 1114,
+    "Rush + Receiving Yards": 542,
+    "Rushing Yards": 961
+  },
+  "sportsbooks": {
+    "DraftKings": 5067,
+    "FanDuel": 219
+  },
+  "total_rows": 5286
+}
