@@ -27,8 +27,7 @@ DK_MARKETS = {
 }
 
 
-# IMPORTANT:
-# Check ALT markets before standard markets.
+# Check ALT markets before standard markets
 FD_MARKET_KEYWORDS = [
     ("Alt Rush + Rec Yds", "Alt Rush + Receiving Yards"),
     ("Alt Rushing Yds", "Alt Rushing Yards"),
@@ -53,11 +52,13 @@ def normalize_dk_player(player, market):
         return player
 
     suffixes = [
+        "Rush + Receiving Yards",
+        "Rushing + Receiving Yards",
+        "Rushing +",
         "Passing Yards",
         "Rushing Yards",
         "Receiving Yards",
         "Receptions",
-        "Rush + Receiving Yards",
     ]
 
     cleaned = player.strip()
@@ -100,9 +101,10 @@ def normalize_fd_prop(player, market):
 
         return clean_player, None, "under"
 
-    # Threshold markets such as:
-    # "Derrick Henry 80+ Yards"
-    # "Mark Andrews 2+ Receptions"
+    # Threshold markets
+    # Example:
+    # Derrick Henry 80+ Yards
+    # Mark Andrews 2+ Receptions
 
     match = re.match(
         r"^(.*?)\s+(\d+(?:\.\d+)?)\+\s+(Yards|Receptions)$",
@@ -394,15 +396,10 @@ def collect_fanduel(client):
                 )
 
                 # ------------------------------------------------
-                # STANDARD O/U
+                # STANDARD FANDUEL O/U LINE
                 # ------------------------------------------------
 
                 line = prop.line
-
-                # OddsWrap currently returns None for standard
-                # FanDuel O/U lines.
-                #
-                # Retrieve the actual FanDuel runner handicap.
 
                 if line is None:
 
@@ -531,8 +528,9 @@ def pair_fanduel_sides(rows):
             passthrough.append(row)
             continue
 
-        # Threshold/alternate rows already contain their
-        # complete price information.
+        # Alternate/threshold rows already contain
+        # their complete price information.
+
         if (
             row["market"].startswith("Alt ")
             or (
