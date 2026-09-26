@@ -859,14 +859,14 @@ def collect_fanduel(client):
                     ).strip()
 
                     if re.search(
-                        r"\\s+Over$",
+                        r"\s+Over$",
                         runner_name,
                         re.IGNORECASE
                     ):
                         side = "over"
 
                     elif re.search(
-                        r"\\s+Under$",
+                        r"\s+Under$",
                         runner_name,
                         re.IGNORECASE
                     ):
@@ -878,7 +878,7 @@ def collect_fanduel(client):
                         side = "over"
 
                     player = re.sub(
-                        r"\\s+(Over|Under)$",
+                        r"\s+(Over|Under)$",
                         "",
                         runner_name,
                         flags=re.IGNORECASE
@@ -890,7 +890,7 @@ def collect_fanduel(client):
                     if normalized_market.startswith("Alt "):
 
                         threshold_match = re.match(
-                            r"^(.*?)\\s+(\\d+(?:\\.\\d+)?)\\+\\s+(Yards|Receptions)$",
+                            r"^(.*?)\s+(\d+(?:\.\d+)?)\+\s+(Yards|Receptions)$",
                             player,
                             re.IGNORECASE
                         )
