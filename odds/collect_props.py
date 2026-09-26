@@ -6,6 +6,7 @@ from curl_cffi import requests as cffi_requests
 from oddswrap import OddsClient
 
 
+# Temporary validation-trigger marker.
 OUTPUT_FILE = "odds/nfl_player_props_latest.csv"
 
 BOOKS = ["draftkings", "fanduel"]
