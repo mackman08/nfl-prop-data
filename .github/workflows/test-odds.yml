@@ -47,5 +47,11 @@ jobs:
             echo "No odds changes to commit."
           else
             git commit -m "Update latest NFL player props"
-            git push
+
+            # Rebase the generated output onto any newer commits that landed
+            # while this run was collecting/validating odds.
+            git fetch origin main
+            git rebase origin/main
+
+            git push origin HEAD:main
           fi
