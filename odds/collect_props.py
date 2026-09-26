@@ -884,6 +884,40 @@ def collect_fanduel(client):
                         flags=re.IGNORECASE
                     ).strip()
 
+                    # FanDuel alternate ladders encode the
+                    # threshold in the runner name, e.g.
+                    # "Jake Ferguson 2+ Receptions".
+                    if normalized_market.startswith("Alt "):
+
+                        threshold_match = re.match(
+                            r"^(.*?)\\s+(\\d+(?:\\.\\d+)?)\\+\\s+(Yards|Receptions)$",
+                            player,
+                            re.IGNORECASE
+                        )
+
+                        if threshold_match:
+
+                            player = (
+                                threshold_match.group(1)
+                                .strip()
+                            )
+
+                            line = float(
+                                threshold_match.group(2)
+                            )
+
+                        else:
+
+                            line = runner.get(
+                                "handicap"
+                            )
+
+                    else:
+
+                        line = runner.get(
+                            "handicap"
+                        )
+
                     odds = (
                         runner
                         .get(
@@ -897,10 +931,6 @@ def collect_fanduel(client):
                         .get(
                             "americanOdds"
                         )
-                    )
-
-                    line = runner.get(
-                        "handicap"
                     )
 
                     if (
