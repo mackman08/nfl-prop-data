@@ -1,12 +1,17 @@
 import csv
 import os
 import re
+
+from curl_cffi import requests as cffi_requests
 from oddswrap import OddsClient
 
 
 OUTPUT_FILE = "odds/nfl_player_props_latest.csv"
 
 BOOKS = ["draftkings", "fanduel"]
+
+FD_EVENT_URL = "https://sbapi.nj.sportsbook.fanduel.com/api/event-page"
+FD_API_KEY = "FhMFpcPWXMeyZxOx"
 
 
 # ============================================================
@@ -22,22 +27,20 @@ DK_MARKETS = {
 }
 
 
-FD_MARKETS = {
-    "Rushing Yds": "Rushing Yards",
-    "Alt Rushing Yds": "Alt Rushing Yards",
-
-    "Receiving Yds": "Receiving Yards",
-    "Alt Receiving Yds": "Alt Receiving Yards",
-
-    "Total Receptions": "Receptions",
-    "Alt Receptions": "Alt Receptions",
-
-    "Passing Yds": "Passing Yards",
-    "Alt Passing Yds": "Alt Passing Yards",
-
-    "Rush + Rec Yds": "Rush + Receiving Yards",
-    "Alt Rush + Rec Yds": "Alt Rush + Receiving Yards",
-}
+# IMPORTANT:
+# Check ALT markets before standard markets.
+FD_MARKET_KEYWORDS = [
+    ("Alt Rush + Rec Yds", "Alt Rush + Receiving Yards"),
+    ("Alt Rushing Yds", "Alt Rushing Yards"),
+    ("Alt Receiving Yds", "Alt Receiving Yards"),
+    ("Alt Receptions", "Alt Receptions"),
+    ("Alt Passing Yds", "Alt Passing Yards"),
+    ("Rush + Rec Yds", "Rush + Receiving Yards"),
+    ("Rushing Yds", "Rushing Yards"),
+    ("Receiving Yds", "Receiving Yards"),
+    ("Total Receptions", "Receptions"),
+    ("Passing Yds", "Passing Yards"),
+]
 
 
 # ============================================================
@@ -83,9 +86,7 @@ def normalize_fd_prop(player, market):
 
     player = player.strip()
 
-    # --------------------------------------------------------
     # Standard Over / Under
-    # --------------------------------------------------------
 
     if player.endswith(" Over"):
 
@@ -99,16 +100,9 @@ def normalize_fd_prop(player, market):
 
         return clean_player, None, "under"
 
-    # --------------------------------------------------------
-    # Threshold markets
-    #
-    # Examples:
-    #
-    # Derrick Henry 80+ Yards
-    # CeeDee Lamb 7+ Receptions
-    # Dak Prescott 275+ Yards
-    #
-    # --------------------------------------------------------
+    # Threshold markets such as:
+    # "Derrick Henry 80+ Yards"
+    # "Mark Andrews 2+ Receptions"
 
     match = re.match(
         r"^(.*?)\s+(\d+(?:\.\d+)?)\+\s+(Yards|Receptions)$",
@@ -123,18 +117,6 @@ def normalize_fd_prop(player, market):
             match.group(2)
         )
 
-        stat_type = match.group(3)
-
-        # Receptions
-        if stat_type == "Receptions":
-
-            return (
-                clean_player,
-                threshold,
-                "threshold"
-            )
-
-        # Yards
         return (
             clean_player,
             threshold,
@@ -142,6 +124,99 @@ def normalize_fd_prop(player, market):
         )
 
     return player, None, None
+
+
+# ============================================================
+# FANDUEL RAW EVENT LOOKUP
+# ============================================================
+
+def get_fd_market_runner(
+    event_id,
+    market_name,
+    player_name
+):
+
+    try:
+
+        response = cffi_requests.get(
+            FD_EVENT_URL,
+            params={
+                "eventId": event_id,
+                "tab": "popular",
+                "_ak": FD_API_KEY,
+            },
+            impersonate="chrome120",
+            headers={
+                "Accept": "application/json"
+            },
+            timeout=15,
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+
+        markets = (
+            data
+            .get("attachments", {})
+            .get("markets", {})
+        )
+
+        for market in markets.values():
+
+            if market.get(
+                "marketName"
+            ) != market_name:
+                continue
+
+            for runner in market.get(
+                "runners",
+                []
+            ):
+
+                if not runner.get(
+                    "isPlayerSelection"
+                ):
+                    continue
+
+                runner_name = str(
+                    runner.get(
+                        "runnerName",
+                        ""
+                    )
+                ).strip()
+
+                clean_runner = re.sub(
+                    r"\s+(Over|Under)$",
+                    "",
+                    runner_name,
+                    flags=re.IGNORECASE
+                ).strip()
+
+                if (
+                    clean_runner.lower()
+                    != player_name.lower()
+                ):
+                    continue
+
+                return {
+                    "line": runner.get(
+                        "handicap"
+                    ),
+                    "runner_name": runner_name,
+                }
+
+    except Exception as e:
+
+        print(
+            "WARNING: FD raw lookup failed:",
+            event_id,
+            market_name,
+            player_name,
+            e
+        )
+
+    return None
 
 
 # ============================================================
@@ -176,14 +251,12 @@ def collect_draftkings(client):
 
         market_name = None
 
-        # Standard market
         if subcategory_id in DK_MARKETS:
 
             market_name = DK_MARKETS[
                 subcategory_id
             ]
 
-        # Alternate market
         elif (
             "Alt " in subcategory_name
             and (
@@ -191,7 +264,8 @@ def collect_draftkings(client):
                 or "Receiving Yards" in subcategory_name
                 or "Receptions" in subcategory_name
                 or "Passing Yards" in subcategory_name
-                or "Rush + Receiving Yards" in subcategory_name
+                or "Rush + Receiving Yards"
+                in subcategory_name
             )
         ):
 
@@ -200,7 +274,10 @@ def collect_draftkings(client):
         if market_name is None:
             continue
 
-        print("DK:", market_name)
+        print(
+            "DK:",
+            market_name
+        )
 
         try:
 
@@ -262,9 +339,7 @@ def collect_fanduel(client):
             category.subcategory_name
         )
 
-        # ----------------------------------------------------
-        # Ignore unrelated markets
-        # ----------------------------------------------------
+        # Explicit exclusions
 
         if name in [
             "Most Rushing Yards",
@@ -275,51 +350,24 @@ def collect_fanduel(client):
         ]:
             continue
 
-        # ----------------------------------------------------
-        # Identify normal FanDuel market
-        # ----------------------------------------------------
-
         market_name = None
 
-        for keyword, normalized in FD_MARKETS.items():
+        for keyword, normalized in (
+            FD_MARKET_KEYWORDS
+        ):
 
             if keyword in name:
 
                 market_name = normalized
                 break
 
-        # ----------------------------------------------------
-        # Handle threshold markets
-        #
-        # FanDuel can expose these as player-specific
-        # subcategories such as:
-        #
-        # "Derrick Henry - Rushing Yds"
-        #
-        # and the returned PlayerProp may contain:
-        #
-        # "Derrick Henry 80+ Yards"
-        #
-        # ----------------------------------------------------
-
-        if market_name is None:
-
-            if "Rushing Yds" in name:
-                market_name = "Rushing Yards"
-
-            elif "Receiving Yds" in name:
-                market_name = "Receiving Yards"
-
-            elif "Receptions" in name:
-                market_name = "Receptions"
-
-            elif "Passing Yds" in name:
-                market_name = "Passing Yards"
-
         if market_name is None:
             continue
 
-        print("FD:", name)
+        print(
+            "FD:",
+            name
+        )
 
         try:
 
@@ -332,72 +380,123 @@ def collect_fanduel(client):
 
             for prop in props:
 
-                player = str(
+                original_player = str(
                     prop.player
+                ).strip()
+
+                (
+                    clean_player,
+                    parsed_line,
+                    prop_type
+                ) = normalize_fd_prop(
+                    original_player,
+                    market_name
                 )
 
-                clean_player, parsed_line, prop_type = (
-                    normalize_fd_prop(
-                        player,
-                        market_name
+                # ------------------------------------------------
+                # STANDARD O/U
+                # ------------------------------------------------
+
+                line = prop.line
+
+                # OddsWrap currently returns None for standard
+                # FanDuel O/U lines.
+                #
+                # Retrieve the actual FanDuel runner handicap.
+
+                if line is None:
+
+                    raw_prop = (
+                        get_fd_market_runner(
+                            prop.event_id,
+                            prop.market,
+                            clean_player
+                        )
                     )
-                )
+
+                    if raw_prop:
+
+                        line = raw_prop.get(
+                            "line"
+                        )
 
                 # ------------------------------------------------
-                # Threshold / ladder market
+                # DETERMINE OVER / UNDER
                 # ------------------------------------------------
 
-                if prop_type == "threshold":
+                side = None
+
+                if re.search(
+                    r"\s+Over$",
+                    original_player,
+                    re.IGNORECASE
+                ):
+
+                    side = "over"
+
+                elif re.search(
+                    r"\s+Under$",
+                    original_player,
+                    re.IGNORECASE
+                ):
+
+                    side = "under"
+
+                # ------------------------------------------------
+                # STANDARD O/U MARKET
+                # ------------------------------------------------
+
+                if (
+                    prop_type in [
+                        "over",
+                        "under"
+                    ]
+                    and line is not None
+                ):
+
+                    rows.append({
+                        "player": clean_player,
+                        "market": market_name,
+                        "line": line,
+                        "over_odds": (
+                            prop.over_odds
+                            if side == "over"
+                            else None
+                        ),
+                        "under_odds": (
+                            prop.over_odds
+                            if side == "under"
+                            else None
+                        ),
+                        "sportsbook": "FanDuel",
+                        "game": prop.game,
+                        "event_id": prop.event_id,
+                    })
+
+                # ------------------------------------------------
+                # THRESHOLD / ALT MARKET
+                # ------------------------------------------------
+
+                elif prop_type == "threshold":
 
                     line = parsed_line
 
-                    # Preserve the normalized market.
-                    # Mark alternate thresholds explicitly
-                    # for reception markets.
                     if market_name == "Receptions":
-                        output_market = "Alt Receptions"
+
+                        output_market = (
+                            "Alt Receptions"
+                        )
 
                     else:
-                        output_market = market_name
+
+                        output_market = (
+                            market_name
+                        )
 
                     rows.append({
                         "player": clean_player,
                         "market": output_market,
                         "line": line,
-                        "over_odds": prop.over_odds,
-                        "under_odds": prop.under_odds,
-                        "sportsbook": "FanDuel",
-                        "game": prop.game,
-                        "event_id": prop.event_id,
-                    })
-
-                # ------------------------------------------------
-                # Standard Over
-                # ------------------------------------------------
-
-                elif prop_type == "over":
-
-                    rows.append({
-                        "player": clean_player,
-                        "market": market_name,
-                        "line": prop.line,
-                        "over_odds": prop.over_odds,
-                        "under_odds": prop.under_odds,
-                        "sportsbook": "FanDuel",
-                        "game": prop.game,
-                        "event_id": prop.event_id,
-                    })
-
-                # ------------------------------------------------
-                # Standard Under
-                # ------------------------------------------------
-
-                elif prop_type == "under":
-
-                    rows.append({
-                        "player": clean_player,
-                        "market": market_name,
-                        "line": prop.line,
                         "over_odds": prop.over_odds,
                         "under_odds": prop.under_odds,
                         "sportsbook": "FanDuel",
@@ -414,6 +513,75 @@ def collect_fanduel(client):
             )
 
     return rows
+
+
+# ============================================================
+# PAIR FANDUEL OVER / UNDER
+# ============================================================
+
+def pair_fanduel_sides(rows):
+
+    paired = {}
+    passthrough = []
+
+    for row in rows:
+
+        if row["sportsbook"] != "FanDuel":
+
+            passthrough.append(row)
+            continue
+
+        # Threshold/alternate rows already contain their
+        # complete price information.
+        if (
+            row["market"].startswith("Alt ")
+            or (
+                row["over_odds"] is not None
+                and row["under_odds"] is not None
+            )
+        ):
+
+            passthrough.append(row)
+            continue
+
+        key = (
+            row["player"],
+            row["market"],
+            row["line"],
+            row["game"],
+            row["event_id"],
+        )
+
+        if key not in paired:
+
+            paired[key] = row.copy()
+
+        else:
+
+            existing = paired[key]
+
+            if (
+                row["over_odds"] is not None
+                and existing["over_odds"] is None
+            ):
+
+                existing["over_odds"] = (
+                    row["over_odds"]
+                )
+
+            if (
+                row["under_odds"] is not None
+                and existing["under_odds"] is None
+            ):
+
+                existing["under_odds"] = (
+                    row["under_odds"]
+                )
+
+    return (
+        passthrough
+        + list(paired.values())
+    )
 
 
 # ============================================================
@@ -478,6 +646,7 @@ def save_csv(rows):
         )
 
         writer.writeheader()
+
         writer.writerows(rows)
 
 
@@ -513,7 +682,19 @@ def main():
         collect_fanduel(client)
     )
 
-    rows = remove_duplicates(rows)
+    print()
+    print("Pairing FanDuel Over / Under...")
+
+    rows = pair_fanduel_sides(
+        rows
+    )
+
+    print()
+    print("Removing duplicates...")
+
+    rows = remove_duplicates(
+        rows
+    )
 
     save_csv(rows)
 
