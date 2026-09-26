@@ -2,6 +2,8 @@ name: Test NFL Odds Collector
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
   test-odds:
