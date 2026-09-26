@@ -50,6 +50,24 @@ MIN_TOTAL_ROWS = 1000
 MIN_DK_ROWS = 1000
 MIN_FD_ROWS = 25
 
+# These are expected to be available from both books.
+# Thresholds are intentionally conservative to catch partial
+# sportsbook responses without depending on an exact row count.
+MIN_CORE_ROWS_BY_BOOK = {
+    "DraftKings": {
+        "Passing Yards": 50,
+        "Receiving Yards": 100,
+        "Receptions": 50,
+        "Rushing Yards": 50,
+    },
+    "FanDuel": {
+        "Passing Yards": 1,
+        "Receiving Yards": 1,
+        "Receptions": 1,
+        "Rushing Yards": 1,
+    },
+}
+
 
 def main():
     print("=" * 60)
@@ -164,6 +182,14 @@ def main():
         for row in rows
     )
 
+    book_market_counts = Counter(
+        (
+            row["sportsbook"],
+            row["market"],
+        )
+        for row in rows
+    )
+
     print()
     print("Sportsbooks:")
 
@@ -232,6 +258,22 @@ def main():
                 f"Missing core market: {market}"
             )
 
+    # Per-sportsbook core-market coverage.
+    for book, market_limits in MIN_CORE_ROWS_BY_BOOK.items():
+
+        for market, minimum in market_limits.items():
+
+            count = book_market_counts.get(
+                (book, market),
+                0
+            )
+
+            if count < minimum:
+                errors.append(
+                    f"Insufficient {book} {market}: "
+                    f"{count} rows (minimum {minimum})"
+                )
+
     if errors:
 
         print()
@@ -259,6 +301,17 @@ def main():
         ),
         "duplicates": 0,
         "core_markets_present": sorted(core_markets),
+        "core_markets_by_sportsbook": {
+            book: {
+                market: book_market_counts.get(
+                    (book, market),
+                    0
+                )
+                for market in sorted(market_limits)
+            }
+            for book, market_limits
+            in MIN_CORE_ROWS_BY_BOOK.items()
+        },
     }
 
     with open(
@@ -280,6 +333,9 @@ def main():
     print("Rows:", len(rows))
     print("DraftKings:", dk_rows)
     print("FanDuel:", fd_rows)
+    print("Duplicates: 0")
+    print("Core markets present: 4/4")
+    print("Per-book core-market coverage: PASS")
     print("Summary:", SUMMARY_FILE)
     print("=" * 60)
 
