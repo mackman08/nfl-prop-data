@@ -8,8 +8,8 @@
     "rule": "completion of final scheduled game of Week 2",
     "date": "2026-09-21"
   },
-  "record_count": 78,
-  "state_id": "STATE-1-20260926-2337",
+  "record_count": 76,
+  "state_id": "STATE-1-20260926-2342",
   "parent_state_id": "STATE-0-20260926-2318",
   "records": [
     {
@@ -2211,128 +2211,6 @@
       "position": "WR",
       "game": "New York Jets @ Detroit Lions",
       "event_id": "36076207"
-    },
-    {
-      "player": "Javonte Williams",
-      "team": "DET",
-      "market": "Receiving Yards",
-      "line": 15.5,
-      "price": -113,
-      "sportsbook": "FD",
-      "market_hr": "9/10",
-      "l10_observations": [
-        33,
-        45,
-        74,
-        37,
-        70,
-        134,
-        96,
-        144,
-        0,
-        88
-      ],
-      "l10_games": [
-        {
-          "season": 2026,
-          "week": 2,
-          "game_id": "2026_02_DET_BUF",
-          "team": "DET",
-          "opponent_team": "BUF",
-          "value": 33
-        },
-        {
-          "season": 2026,
-          "week": 1,
-          "game_id": "2026_01_NO_DET",
-          "team": "DET",
-          "opponent_team": "NO",
-          "value": 45
-        },
-        {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_DET_CHI",
-          "team": "DET",
-          "opponent_team": "CHI",
-          "value": 74
-        },
-        {
-          "season": 2025,
-          "week": 17,
-          "game_id": "2025_17_DET_MIN",
-          "team": "DET",
-          "opponent_team": "MIN",
-          "value": 37
-        },
-        {
-          "season": 2025,
-          "week": 16,
-          "game_id": "2025_16_PIT_DET",
-          "team": "DET",
-          "opponent_team": "PIT",
-          "value": 70
-        },
-        {
-          "season": 2025,
-          "week": 15,
-          "game_id": "2025_15_DET_LA",
-          "team": "DET",
-          "opponent_team": "LA",
-          "value": 134
-        },
-        {
-          "season": 2025,
-          "week": 14,
-          "game_id": "2025_14_DAL_DET",
-          "team": "DET",
-          "opponent_team": "DAL",
-          "value": 96
-        },
-        {
-          "season": 2025,
-          "week": 13,
-          "game_id": "2025_13_GB_DET",
-          "team": "DET",
-          "opponent_team": "GB",
-          "value": 144
-        },
-        {
-          "season": 2025,
-          "week": 12,
-          "game_id": "2025_12_NYG_DET",
-          "team": "DET",
-          "opponent_team": "NYG",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 11,
-          "game_id": "2025_11_DET_PHI",
-          "team": "DET",
-          "opponent_team": "PHI",
-          "value": 88
-        }
-      ],
-      "ladder_hit_rates": {
-        "20+": "9/10",
-        "30+": "9/10",
-        "40+": "7/10",
-        "50+": "6/10",
-        "60+": "6/10",
-        "75+": "4/10",
-        "100+": "2/10"
-      },
-      "qualifying_ladders": [
-        "20+ 9/10",
-        "30+ 9/10"
-      ],
-      "p25": 33.75,
-      "p25_status": "available",
-      "player_id": "00-0037240",
-      "position": "WR",
-      "game": "Baltimore Ravens @ Dallas Cowboys",
-      "event_id": "35601592"
     },
     {
       "player": "Sam LaPorta",
@@ -5383,127 +5261,6 @@
       "position": "WR",
       "game": "New York Jets @ Detroit Lions",
       "event_id": "36076207"
-    },
-    {
-      "player": "Javonte Williams",
-      "team": "DET",
-      "market": "Receptions",
-      "line": 2.5,
-      "price": -154,
-      "sportsbook": "FD",
-      "market_hr": "7/10",
-      "l10_observations": [
-        2,
-        4,
-        6,
-        2,
-        5,
-        7,
-        7,
-        7,
-        0,
-        4
-      ],
-      "l10_games": [
-        {
-          "season": 2026,
-          "week": 2,
-          "game_id": "2026_02_DET_BUF",
-          "team": "DET",
-          "opponent_team": "BUF",
-          "value": 2
-        },
-        {
-          "season": 2026,
-          "week": 1,
-          "game_id": "2026_01_NO_DET",
-          "team": "DET",
-          "opponent_team": "NO",
-          "value": 4
-        },
-        {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_DET_CHI",
-          "team": "DET",
-          "opponent_team": "CHI",
-          "value": 6
-        },
-        {
-          "season": 2025,
-          "week": 17,
-          "game_id": "2025_17_DET_MIN",
-          "team": "DET",
-          "opponent_team": "MIN",
-          "value": 2
-        },
-        {
-          "season": 2025,
-          "week": 16,
-          "game_id": "2025_16_PIT_DET",
-          "team": "DET",
-          "opponent_team": "PIT",
-          "value": 5
-        },
-        {
-          "season": 2025,
-          "week": 15,
-          "game_id": "2025_15_DET_LA",
-          "team": "DET",
-          "opponent_team": "LA",
-          "value": 7
-        },
-        {
-          "season": 2025,
-          "week": 14,
-          "game_id": "2025_14_DAL_DET",
-          "team": "DET",
-          "opponent_team": "DAL",
-          "value": 7
-        },
-        {
-          "season": 2025,
-          "week": 13,
-          "game_id": "2025_13_GB_DET",
-          "team": "DET",
-          "opponent_team": "GB",
-          "value": 7
-        },
-        {
-          "season": 2025,
-          "week": 12,
-          "game_id": "2025_12_NYG_DET",
-          "team": "DET",
-          "opponent_team": "NYG",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 11,
-          "game_id": "2025_11_DET_PHI",
-          "team": "DET",
-          "opponent_team": "PHI",
-          "value": 4
-        }
-      ],
-      "ladder_hit_rates": {
-        "2+": "9/10",
-        "3+": "7/10",
-        "4+": "7/10",
-        "5+": "5/10",
-        "6+": "4/10",
-        "7+": "3/10",
-        "8+": "0/10"
-      },
-      "qualifying_ladders": [
-        "2+ 9/10"
-      ],
-      "p25": 2,
-      "p25_status": "available",
-      "player_id": "00-0037240",
-      "position": "WR",
-      "game": "Baltimore Ravens @ Dallas Cowboys",
-      "event_id": "35601592"
     },
     {
       "player": "Sam LaPorta",
@@ -9552,15 +9309,17 @@
   ],
   "screening_summary": {
     "fanDuel_main_player_markets": 398,
-    "reliably_matched": 294,
-    "with_10_games": 263,
-    "qualifiers": 78,
-    "unmatched_historical_identity": 104,
+    "reliably_matched": 385,
+    "market_compatible": 290,
+    "with_10_games": 259,
+    "qualifiers": 76,
+    "unmatched_historical_identity": 13,
+    "position_incompatible": 95,
     "insufficient_l10": 31
   },
   "data_source_shas": {
     "historical": "80d96a83b2f8295bacb3a4d6bbf24631a25d44f2",
     "sportsbook": "849b010a83a2db7b2c341004cbecdfde3f649949"
   },
-  "supersedes_state_id": "STATE-1-W3-2026-REPAIR-01"
+  "supersedes_state_id": "STATE-1-20260926-2337"
 }
