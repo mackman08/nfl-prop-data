@@ -30,13 +30,144 @@
     "historical_samples_changed": false,
     "stage2_structure_changed": false,
     "context_separated_from_historical": true,
-    "stage2_state_path": "state/week3_2026/stage2_state.json"
+    "stage2_state_path": "state/week3_2026/stage2_state.json",
+    "complete_prior_stage_records_preserved": true,
+    "stage2_records_embedded": true
   },
   "records": [
     {
       "player": "Jacoby Brissett",
       "team": "ARI",
       "market": "Passing Yards",
+      "event_id": "36076217",
+      "main_market": {
+        "line": 225.5,
+        "price": -113,
+        "hr": "7/10"
+      },
+      "l10_observations": [
+        95,
+        277,
+        243,
+        212,
+        203,
+        249,
+        271,
+        301,
+        317,
+        452
+      ],
+      "alternates": [
+        {
+          "threshold": 150,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1100,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 175,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 200,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -230,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 225,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -118,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 250,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 158,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 275,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 270,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 300,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 325,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 800,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 350,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1200,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 150,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -1100,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 225,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -118,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 250,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 158,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 150,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1100,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 175,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 200,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -230,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Passing Yards",
       "selected_threshold": 225,
       "selected_band": "Core",
@@ -49,6 +180,142 @@
       "player": "Trevor Lawrence",
       "team": "JAX",
       "market": "Passing Yards",
+      "event_id": "36076209",
+      "main_market": {
+        "line": 228.5,
+        "price": -113,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        189,
+        245,
+        255,
+        263,
+        279,
+        330,
+        244,
+        229,
+        256,
+        153
+      ],
+      "alternates": [
+        {
+          "threshold": 150,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 175,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 200,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -240,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 225,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -130,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 250,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 146,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 275,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 250,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 300,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 430,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 325,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 350,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1200,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 150,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -1000,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 225,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -130,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 250,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 146,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 150,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 175,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 200,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -240,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 225,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -130,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Passing Yards",
       "selected_threshold": 225,
       "selected_band": "Core",
@@ -61,6 +328,149 @@
       "player": "Matthew Stafford",
       "team": "LA",
       "market": "Passing Yards",
+      "event_id": "36076216",
+      "main_market": {
+        "line": 242.5,
+        "price": -114,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        327,
+        155,
+        259,
+        269,
+        457,
+        368,
+        281,
+        243,
+        273,
+        130
+      ],
+      "alternates": [
+        {
+          "threshold": 150,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 175,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 200,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -340,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 225,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -182,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 250,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 102,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 275,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 182,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 300,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 320,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 325,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 550,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 350,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 880,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 375,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1400,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 150,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -1450,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 250,
+        "hits": 7,
+        "hr": "7/10",
+        "price": 102,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 275,
+        "hits": 4,
+        "hr": "4/10",
+        "price": 182,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 150,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 175,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 200,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -340,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 225,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -182,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Passing Yards",
       "selected_threshold": 250,
       "selected_band": "Core",
@@ -73,6 +483,135 @@
       "player": "Tyler Shough",
       "team": "NO",
       "market": "Passing Yards",
+      "event_id": "36070615",
+      "main_market": {
+        "line": 252.5,
+        "price": -113,
+        "hr": "6/10"
+      },
+      "l10_observations": [
+        252,
+        410,
+        259,
+        333,
+        308,
+        272,
+        144,
+        239,
+        243,
+        282
+      ],
+      "alternates": [
+        {
+          "threshold": 175,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1100,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 200,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 225,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -240,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 250,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -125,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 275,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 152,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 300,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 260,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 325,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 350,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 375,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1200,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 175,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -1100,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 250,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -125,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 275,
+        "hits": 4,
+        "hr": "4/10",
+        "price": 152,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 175,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1100,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 200,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 225,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -240,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Passing Yards",
       "selected_threshold": 250,
       "selected_band": "Core",
@@ -82,93 +621,173 @@
       "implications_for_final_selection": "Elite early volume/form; pressure is the main counter-signal."
     },
     {
-      "player": "Derrick Henry",
-      "team": "BAL",
-      "market": "Rushing Yards",
-      "selected_market": "Rushing Yards",
-      "selected_threshold": 90,
-      "selected_band": "Core",
-      "historical_hr": "7/10",
-      "current_week_context": "Healthy with 212 rushing yards and four TDs; Dallas is allowing 173.5 rushing yards/game.",
-      "context_classification": "Supportive",
-      "implications_for_final_selection": "Heavy workload plus favorable DAL run environment."
-    },
-    {
-      "player": "James Cook",
-      "team": "BUF",
-      "market": "Rushing Yards",
-      "selected_market": "Rushing Yards",
-      "selected_threshold": 70,
-      "selected_band": "Core",
-      "historical_hr": "6/10",
-      "current_week_context": "Clear lead back after 21 carries/135 yards, but the Chargers have allowed only three explosive runs and rank fifth in defensive EPA/play against the run.",
-      "context_classification": "Mixed",
-      "implications_for_final_selection": "Excellent workload; tougher run matchup."
-    },
-    {
-      "player": "Javonte Williams",
-      "team": "DAL",
-      "market": "Rushing Yards",
-      "selected_market": "Rushing Yards",
-      "selected_threshold": 50,
-      "selected_band": "Core",
-      "historical_hr": "6/10",
-      "current_week_context": "Top Dallas ball carrier, but Baltimore has allowed 83.5 rushing yards/game and ranks fifth in rush defense.",
-      "context_classification": "Concern",
-      "implications_for_final_selection": "Role is strong; opponent is a major resistance."
-    },
-    {
-      "player": "Woody Marks",
-      "team": "HOU",
-      "market": "Rushing Yards",
-      "selected_market": "Rushing Yards",
-      "selected_threshold": 40,
-      "selected_band": "Core",
-      "historical_hr": "9/10",
-      "current_week_context": "45.5% snap share, 44.4% rushing-attempt share and 37.1% route share last week; Indianapolis has allowed the third-highest explosive-run rate.",
-      "context_classification": "Supportive",
-      "implications_for_final_selection": "Role plus favorable IND run defense."
-    },
-    {
-      "player": "Rhamondre Stevenson",
-      "team": "NE",
-      "market": "Rushing Yards",
-      "selected_market": "Rushing Yards",
-      "selected_threshold": 40,
-      "selected_band": "Core",
-      "historical_hr": "8/10",
-      "current_week_context": "Role destabilized after Week 2 fumble: 35.8% snaps versus Henderson's 60.4%. Jacksonville matchup is favorable, but workload is uncertain.",
-      "context_classification": "Concern",
-      "implications_for_final_selection": "Current backfield role is the dominant concern."
-    },
-    {
-      "player": "TreVeyon Henderson",
-      "team": "NE",
-      "market": "Rushing Yards",
-      "selected_market": "Rushing Yards",
-      "selected_threshold": 60,
-      "selected_band": "Core",
-      "historical_hr": "9/10",
-      "current_week_context": "Handled 60.4% of snaps and 57.1% of rush attempts in Week 2; Jacksonville matchup is favorable, but Stevenson remains a competing back.",
-      "context_classification": "Mixed",
-      "implications_for_final_selection": "Strong recent usage, unresolved committee risk."
-    },
-    {
-      "player": "Rachaad White",
-      "team": "WAS",
-      "market": "Rushing Yards",
-      "selected_market": "Rushing Yards",
-      "selected_threshold": 20,
-      "selected_band": "Core",
-      "historical_hr": "8/10",
-      "current_week_context": "Passing-down role is established at 46.3% route share/11.6% target share and a trailing script could help; Croskey-Merritt remains ahead on Washington's depth chart.",
-      "context_classification": "Mixed",
-      "implications_for_final_selection": "Receiving role supportive; rushing volume less secure."
-    },
-    {
       "player": "Tee Higgins",
       "team": "CIN",
       "market": "Receiving Yards",
+      "event_id": "36076213",
+      "main_market": {
+        "line": 53.5,
+        "price": -113,
+        "hr": "7/10"
+      },
+      "l10_observations": [
+        95,
+        59,
+        67,
+        59,
+        53,
+        92,
+        31,
+        63,
+        121,
+        44
+      ],
+      "alternates": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -245,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -138,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 116,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 178,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 250,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 360,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 520,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 110,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 700,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 125,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1100,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 20,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -1200,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 50,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -138,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 116,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -245,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -138,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 50,
       "selected_band": "Core",
@@ -181,6 +800,163 @@
       "player": "Harold Fannin Jr.",
       "team": "CLE",
       "market": "Receiving Yards",
+      "event_id": "36076206",
+      "main_market": {
+        "line": 37.5,
+        "price": -113,
+        "hr": "6/10"
+      },
+      "l10_observations": [
+        54,
+        21,
+        30,
+        34,
+        48,
+        114,
+        43,
+        40,
+        26,
+        44
+      ],
+      "alternates": [
+        {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1600,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -280,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 100,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 178,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 280,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 430,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 680,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 920,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1400,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 10,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -1600,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 30,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -200,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 40,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 100,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1600,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -280,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 30,
       "selected_band": "Core",
@@ -193,6 +969,170 @@
       "player": "Pat Bryant",
       "team": "DEN",
       "market": "Receiving Yards",
+      "event_id": "36076216",
+      "main_market": {
+        "line": 24.5,
+        "price": -114,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        0,
+        42,
+        31,
+        42,
+        32,
+        42,
+        82,
+        43,
+        20,
+        40
+      ],
+      "alternates": [
+        {
+          "threshold": 5,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -275,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -174,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -114,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 126,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 235,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 390,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 630,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 920,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1280,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -1200,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 30,
+        "hits": 8,
+        "hr": "8/10",
+        "price": 126,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 40,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 235,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 5,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -275,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -174,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -114,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 126,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 30,
       "selected_band": "Core",
@@ -205,6 +1145,156 @@
       "player": "Cooper Kupp",
       "team": "SEA",
       "market": "Receiving Yards",
+      "event_id": "36076214",
+      "main_market": {
+        "line": 21.5,
+        "price": -113,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        20,
+        35,
+        29,
+        6,
+        39,
+        46,
+        35,
+        24,
+        24,
+        23
+      ],
+      "alternates": [
+        {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -340,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -215,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -136,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 108,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 154,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 270,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 700,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1000,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1400,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -750,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 20,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -136,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 25,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 108,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -340,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -215,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -136,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 20,
       "selected_band": "Core",
@@ -217,6 +1307,163 @@
       "player": "George Kittle",
       "team": "SF",
       "market": "Receiving Yards",
+      "event_id": "36076217",
+      "main_market": {
+        "line": 44.5,
+        "price": -113,
+        "hr": "7/10"
+      },
+      "l10_observations": [
+        80,
+        12,
+        29,
+        115,
+        88,
+        67,
+        78,
+        67,
+        84,
+        32
+      ],
+      "alternates": [
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1400,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -300,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -158,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 114,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 188,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 290,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 430,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 640,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 880,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 110,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1200,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 15,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -1400,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 60,
+        "hits": 7,
+        "hr": "7/10",
+        "price": 188,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 70,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 290,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1400,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -300,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 60,
       "selected_band": "Core",
@@ -229,6 +1476,149 @@
       "player": "Calvin Ridley",
       "team": "TEN",
       "market": "Receiving Yards",
+      "event_id": "36076215",
+      "main_market": {
+        "line": 13.5,
+        "price": -113,
+        "hr": "9/10"
+      },
+      "l10_observations": [
+        35,
+        13,
+        18,
+        131,
+        30,
+        27,
+        57,
+        27,
+        76,
+        84
+      ],
+      "alternates": [
+        {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -290,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -168,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -106,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 140,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 194,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 255,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 410,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 640,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 920,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -290,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 25,
+        "hits": 8,
+        "hr": "8/10",
+        "price": 194,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 30,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 255,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -290,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -168,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -106,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 140,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 194,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 25,
       "selected_band": "Core",
@@ -241,6 +1631,163 @@
       "player": "Wan'Dale Robinson",
       "team": "TEN",
       "market": "Receiving Yards",
+      "event_id": "36076215",
+      "main_market": {
+        "line": 30.5,
+        "price": -113,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        9,
+        38,
+        113,
+        19,
+        54,
+        34,
+        156,
+        36,
+        62,
+        46
+      ],
+      "alternates": [
+        {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -800,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -270,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -180,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -122,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 154,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 265,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 410,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 640,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 920,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 1280,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 10,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -800,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 30,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -122,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 40,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 154,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -800,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -270,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -180,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -122,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 30,
       "selected_band": "Core",
@@ -253,6 +1800,163 @@
       "player": "Stefon Diggs",
       "team": "WAS",
       "market": "Receiving Yards",
+      "event_id": "36076214",
+      "main_market": {
+        "line": 33.5,
+        "price": -113,
+        "hr": "7/10"
+      },
+      "l10_observations": [
+        47,
+        55,
+        43,
+        101,
+        138,
+        26,
+        26,
+        20,
+        105,
+        46
+      ],
+      "alternates": [
+        {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -550,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -320,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -215,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -152,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 130,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 220,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 360,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 550,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 850,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 1500,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 10,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -1200,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 40,
+        "hits": 7,
+        "hr": "7/10",
+        "price": 130,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 50,
+        "hits": 4,
+        "hr": "4/10",
+        "price": 220,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -550,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -320,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -215,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 40,
       "selected_band": "Core",
@@ -265,6 +1969,191 @@
       "player": "Terry McLaurin",
       "team": "WAS",
       "market": "Receiving Yards",
+      "event_id": "36076214",
+      "main_market": {
+        "line": 42.5,
+        "price": -113,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        50,
+        14,
+        57,
+        63,
+        53,
+        69,
+        41,
+        96,
+        54,
+        74
+      ],
+      "alternates": [
+        {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1600,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -850,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -490,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -330,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -245,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -136,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 122,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 188,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 270,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 390,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 550,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 110,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 920,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 125,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1400,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 10,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -1600,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 50,
+        "hits": 7,
+        "hr": "7/10",
+        "price": 122,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "hits": 4,
+        "hr": "4/10",
+        "price": 188,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1600,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -850,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -490,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -330,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -245,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -136,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receiving Yards",
       "selected_threshold": 50,
       "selected_band": "Core",
@@ -277,6 +2166,135 @@
       "player": "Trey McBride",
       "team": "ARI",
       "market": "Receptions",
+      "event_id": "36076217",
+      "main_market": {
+        "line": 7.5,
+        "price": 112,
+        "hr": "7/10"
+      },
+      "l10_observations": [
+        8,
+        9,
+        7,
+        10,
+        4,
+        12,
+        5,
+        8,
+        9,
+        10
+      ],
+      "alternates": [
+        {
+          "threshold": 5,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -650,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 6,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -310,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 7,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -166,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 8,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 108,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 9,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 182,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 290,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 11,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 12,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 13,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1100,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 14,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1500,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -650,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 7,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -166,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 8,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 108,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 5,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -650,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 6,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -310,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receptions",
       "selected_threshold": 7,
       "selected_band": "Core",
@@ -289,6 +2307,86 @@
       "player": "Jerry Jeudy",
       "team": "CLE",
       "market": "Receptions",
+      "event_id": "36076206",
+      "main_market": {
+        "line": 1.5,
+        "price": -132,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        0,
+        2,
+        2,
+        5,
+        3,
+        2,
+        3,
+        3,
+        1,
+        3
+      ],
+      "alternates": [
+        {
+          "threshold": 1,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 2,
+          "hits": 5,
+          "hr": "5/10",
+          "price": -132,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 230,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 4,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 580,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 1,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -670,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 1,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -670,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 2,
+        "hits": 5,
+        "hr": "5/10",
+        "price": -132,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 1,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -670,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receptions",
       "selected_threshold": 1,
       "selected_band": "Core",
@@ -301,6 +2399,114 @@
       "player": "Jakobi Meyers",
       "team": "JAX",
       "market": "Receptions",
+      "event_id": "36076209",
+      "main_market": {
+        "line": 3.5,
+        "price": -102,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        1,
+        2,
+        5,
+        6,
+        4,
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "alternates": [
+        {
+          "threshold": 2,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 4,
+          "hits": 5,
+          "hr": "5/10",
+          "price": -102,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 5,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 205,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 6,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 400,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1280,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -900,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 3,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -260,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 4,
+        "hits": 5,
+        "hr": "5/10",
+        "price": -102,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 2,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -260,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receptions",
       "selected_threshold": 3,
       "selected_band": "Core",
@@ -313,6 +2519,93 @@
       "player": "Jauan Jennings",
       "team": "MIN",
       "market": "Receptions",
+      "event_id": "36076218",
+      "main_market": {
+        "line": 1.5,
+        "price": -102,
+        "hr": "9/10"
+      },
+      "l10_observations": [
+        0,
+        4,
+        2,
+        5,
+        3,
+        4,
+        5,
+        4,
+        6,
+        4
+      ],
+      "alternates": [
+        {
+          "threshold": 1,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -490,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 2,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -102,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 290,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 4,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 680,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 1,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -490,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 3,
+        "hits": 7,
+        "hr": "7/10",
+        "price": 290,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 4,
+        "hits": 3,
+        "hr": "3/10",
+        "price": 680,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 1,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -490,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 2,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -102,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receptions",
       "selected_threshold": 3,
       "selected_band": "Core",
@@ -325,6 +2618,114 @@
       "player": "Juwan Johnson",
       "team": "NO",
       "market": "Receptions",
+      "event_id": "36070615",
+      "main_market": {
+        "line": 3.5,
+        "price": -102,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        4,
+        3,
+        3,
+        4,
+        8,
+        4,
+        4,
+        5,
+        6,
+        4
+      ],
+      "alternates": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 4,
+          "hits": 3,
+          "hr": "3/10",
+          "price": -102,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 5,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 205,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 6,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 400,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1260,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -900,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 3,
+        "hits": 8,
+        "hr": "8/10",
+        "price": -260,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 4,
+        "hits": 3,
+        "hr": "3/10",
+        "price": -102,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -260,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receptions",
       "selected_threshold": 3,
       "selected_band": "Core",
@@ -337,6 +2738,93 @@
       "player": "Darnell Mooney",
       "team": "NYG",
       "market": "Receptions",
+      "event_id": "36076215",
+      "main_market": {
+        "line": 1.5,
+        "price": 110,
+        "hr": "9/10"
+      },
+      "l10_observations": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      "alternates": [
+        {
+          "threshold": 1,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 2,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 108,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 320,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 4,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 800,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 5,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1700,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 1,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -440,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 1,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -440,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 2,
+        "hits": 4,
+        "hr": "4/10",
+        "price": 108,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 1,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receptions",
       "selected_threshold": 1,
       "selected_band": "Core",
@@ -349,6 +2837,114 @@
       "player": "Wan'Dale Robinson",
       "team": "TEN",
       "market": "Receptions",
+      "event_id": "36076215",
+      "main_market": {
+        "line": 3.5,
+        "price": -106,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        1,
+        5,
+        11,
+        3,
+        5,
+        7,
+        9,
+        4,
+        6,
+        9
+      ],
+      "alternates": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -270,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 4,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -106,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 194,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 6,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 390,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 7,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 700,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 8,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 1200,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -900,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 4,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -106,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 5,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 194,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -270,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
       "selected_market": "Receptions",
       "selected_threshold": 4,
       "selected_band": "Core",
@@ -356,6 +2952,1098 @@
       "current_week_context": "Only 13.5% target share and 0.96 YPRR, with no red-zone/deep targets; current role is low leverage.",
       "context_classification": "Concern",
       "implications_for_final_selection": "Low-leverage role and struggling TEN passing offense."
+    },
+    {
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "market": "Rushing Yards",
+      "event_id": "35601592",
+      "main_market": {
+        "line": 89.5,
+        "price": -113,
+        "hr": "7/10"
+      },
+      "l10_observations": [
+        68,
+        144,
+        126,
+        216,
+        128,
+        100,
+        94,
+        60,
+        64,
+        103
+      ],
+      "alternates": [
+        {
+          "threshold": 50,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -280,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -180,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -114,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 130,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 110,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 182,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 125,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 310,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 150,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 640,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 175,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1260,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 50,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -1000,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 90,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -114,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 100,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 130,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 50,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -470,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
+      "selected_market": "Rushing Yards",
+      "selected_threshold": 90,
+      "selected_band": "Core",
+      "historical_hr": "7/10",
+      "current_week_context": "Healthy with 212 rushing yards and four TDs; Dallas is allowing 173.5 rushing yards/game.",
+      "context_classification": "Supportive",
+      "implications_for_final_selection": "Heavy workload plus favorable DAL run environment."
+    },
+    {
+      "player": "James Cook",
+      "team": "BUF",
+      "market": "Rushing Yards",
+      "event_id": "36076211",
+      "main_market": {
+        "line": 79.5,
+        "price": -113,
+        "hr": "6/10"
+      },
+      "l10_observations": [
+        135,
+        57,
+        15,
+        74,
+        117,
+        107,
+        80,
+        144,
+        116,
+        48
+      ],
+      "alternates": [
+        {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -580,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -310,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -188,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 5,
+          "hr": "5/10",
+          "price": -114,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 132,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 194,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 110,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 280,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 125,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 150,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 920,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 40,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -1450,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 70,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -188,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 80,
+        "hits": 5,
+        "hr": "5/10",
+        "price": -114,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -580,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
+      "selected_market": "Rushing Yards",
+      "selected_threshold": 70,
+      "selected_band": "Core",
+      "historical_hr": "6/10",
+      "current_week_context": "Clear lead back after 21 carries/135 yards, but the Chargers have allowed only three explosive runs and rank fifth in defensive EPA/play against the run.",
+      "context_classification": "Mixed",
+      "implications_for_final_selection": "Excellent workload; tougher run matchup."
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "event_id": "35601592",
+      "main_market": {
+        "line": 58.5,
+        "price": -113,
+        "hr": "6/10"
+      },
+      "l10_observations": [
+        30,
+        41,
+        54,
+        34,
+        91,
+        67,
+        59,
+        87,
+        93,
+        83
+      ],
+      "alternates": [
+        {
+          "threshold": 25,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -340,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -188,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 5,
+          "hr": "5/10",
+          "price": -108,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 146,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 225,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 320,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 110,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 640,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 125,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 920,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 25,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -1450,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 50,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -188,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "hits": 5,
+        "hr": "5/10",
+        "price": -108,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 25,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -340,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
+      "selected_market": "Rushing Yards",
+      "selected_threshold": 50,
+      "selected_band": "Core",
+      "historical_hr": "6/10",
+      "current_week_context": "Top Dallas ball carrier, but Baltimore has allowed 83.5 rushing yards/game and ranks fifth in rush defense.",
+      "context_classification": "Concern",
+      "implications_for_final_selection": "Role is strong; opponent is a major resistance."
+    },
+    {
+      "player": "Woody Marks",
+      "team": "HOU",
+      "market": "Rushing Yards",
+      "event_id": "36076210",
+      "main_market": {
+        "line": 27.5,
+        "price": -113,
+        "hr": "9/10"
+      },
+      "l10_observations": [
+        8,
+        42,
+        48,
+        71,
+        30,
+        68,
+        64,
+        74,
+        44,
+        63
+      ],
+      "alternates": [
+        {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -245,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -148,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 104,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 205,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 370,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 630,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 920,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 0,
+          "hr": "0/10",
+          "price": 1280,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 10,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -1000,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 40,
+        "hits": 8,
+        "hr": "8/10",
+        "price": 205,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 50,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 370,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -245,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -148,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 104,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 205,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
+      "selected_market": "Rushing Yards",
+      "selected_threshold": 40,
+      "selected_band": "Core",
+      "historical_hr": "9/10",
+      "current_week_context": "45.5% snap share, 44.4% rushing-attempt share and 37.1% route share last week; Indianapolis has allowed the third-highest explosive-run rate.",
+      "context_classification": "Supportive",
+      "implications_for_final_selection": "Role plus favorable IND run defense."
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "event_id": "36076209",
+      "main_market": {
+        "line": 35.5,
+        "price": -113,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        43,
+        51,
+        131,
+        47,
+        51,
+        50,
+        40,
+        5,
+        34,
+        88
+      ],
+      "alternates": [
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -420,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -174,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 114,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 194,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 310,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 680,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 920,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1280,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 110,
+          "hits": 1,
+          "hr": "1/10",
+          "price": 1700,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 15,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -750,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 40,
+        "hits": 7,
+        "hr": "7/10",
+        "price": 114,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 50,
+        "hits": 4,
+        "hr": "4/10",
+        "price": 194,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -420,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -174,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
+      "selected_market": "Rushing Yards",
+      "selected_threshold": 40,
+      "selected_band": "Core",
+      "historical_hr": "8/10",
+      "current_week_context": "Role destabilized after Week 2 fumble: 35.8% snaps versus Henderson's 60.4%. Jacksonville matchup is favorable, but workload is uncertain.",
+      "context_classification": "Concern",
+      "implications_for_final_selection": "Current backfield role is the dominant concern."
+    },
+    {
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "event_id": "36076209",
+      "main_market": {
+        "line": 41.5,
+        "price": -113,
+        "hr": "9/10"
+      },
+      "l10_observations": [
+        76,
+        53,
+        82,
+        3,
+        148,
+        67,
+        66,
+        62,
+        147,
+        55
+      ],
+      "alternates": [
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1400,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -650,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -400,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -130,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 9,
+          "hr": "9/10",
+          "price": 134,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 220,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 70,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 320,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 80,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 490,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 90,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 700,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 100,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 920,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 110,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 1280,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 15,
+        "hits": 9,
+        "hr": "9/10",
+        "price": -1400,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 60,
+        "hits": 7,
+        "hr": "7/10",
+        "price": 220,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 70,
+        "hits": 4,
+        "hr": "4/10",
+        "price": 320,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1400,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -650,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -400,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -130,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 9,
+          "hr": "9/10",
+          "price": 134,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
+      "selected_market": "Rushing Yards",
+      "selected_threshold": 60,
+      "selected_band": "Core",
+      "historical_hr": "9/10",
+      "current_week_context": "Handled 60.4% of snaps and 57.1% of rush attempts in Week 2; Jacksonville matchup is favorable, but Stevenson remains a competing back.",
+      "context_classification": "Mixed",
+      "implications_for_final_selection": "Strong recent usage, unresolved committee risk."
+    },
+    {
+      "player": "Rachaad White",
+      "team": "WAS",
+      "market": "Rushing Yards",
+      "event_id": "36076214",
+      "main_market": {
+        "line": 18.5,
+        "price": -113,
+        "hr": "8/10"
+      },
+      "l10_observations": [
+        43,
+        22,
+        23,
+        10,
+        45,
+        20,
+        53,
+        7,
+        38,
+        51
+      ],
+      "alternates": [
+        {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -360,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -186,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 20,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -102,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 25,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 162,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 30,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 230,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 40,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 470,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 50,
+          "hits": 2,
+          "hr": "2/10",
+          "price": 800,
+          "sportsbook": "FD"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "hits": 10,
+        "hr": "10/10",
+        "price": -1200,
+        "sportsbook": "FD"
+      },
+      "core": {
+        "threshold": 20,
+        "hits": 7,
+        "hr": "7/10",
+        "price": -102,
+        "sportsbook": "FD"
+      },
+      "ceiling": {
+        "threshold": 25,
+        "hits": 5,
+        "hr": "5/10",
+        "price": 162,
+        "sportsbook": "FD"
+      },
+      "strong_alternates": [
+        {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 10,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -360,
+          "sportsbook": "FD"
+        },
+        {
+          "threshold": 15,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -186,
+          "sportsbook": "FD"
+        }
+      ],
+      "stage3_candidate": true,
+      "narrowing_reason": "CARRY — Core ≥7/10 and at least one alternate ≥8/10.",
+      "selected_market": "Rushing Yards",
+      "selected_threshold": 20,
+      "selected_band": "Core",
+      "historical_hr": "8/10",
+      "current_week_context": "Passing-down role is established at 46.3% route share/11.6% target share and a trailing script could help; Croskey-Merritt remains ahead on Washington's depth chart.",
+      "context_classification": "Mixed",
+      "implications_for_final_selection": "Receiving role supportive; rushing volume less secure."
     }
   ],
   "source_notes": {
