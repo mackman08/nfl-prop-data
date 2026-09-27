@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 704,
-      "Receiving Yards": 1777,
-      "Receptions": 1113,
-      "Rushing Yards": 988
+      "Passing Yards": 712,
+      "Receiving Yards": 1866,
+      "Receptions": 1157,
+      "Rushing Yards": 1029
     },
     "FanDuel": {
       "Passing Yards": 30,
-      "Receiving Yards": 159,
-      "Receptions": 155,
-      "Rushing Yards": 83
+      "Receiving Yards": 172,
+      "Receptions": 168,
+      "Rushing Yards": 86
     }
   },
   "core_markets_present": [
@@ -21,19 +21,19 @@
   ],
   "duplicates": 0,
   "markets": {
-    "Alt Passing Yards": 278,
-    "Alt Receiving Yards": 1481,
-    "Alt Receptions": 893,
-    "Alt Rushing Yards": 657,
-    "Passing Yards": 734,
-    "Receiving Yards": 1936,
-    "Receptions": 1268,
-    "Rush + Receiving Yards": 543,
-    "Rushing Yards": 1071
+    "Alt Passing Yards": 281,
+    "Alt Receiving Yards": 1573,
+    "Alt Receptions": 939,
+    "Alt Rushing Yards": 674,
+    "Passing Yards": 742,
+    "Receiving Yards": 2038,
+    "Receptions": 1325,
+    "Rush + Receiving Yards": 573,
+    "Rushing Yards": 1115
   },
   "sportsbooks": {
-    "DraftKings": 5125,
-    "FanDuel": 3736
+    "DraftKings": 5337,
+    "FanDuel": 3923
   },
-  "total_rows": 8861
+  "total_rows": 9260
 }
