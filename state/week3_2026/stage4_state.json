@@ -1,0 +1,2279 @@
+{
+  "stage": 4,
+  "season": 2026,
+  "week": 3,
+  "scope": "Sunday only",
+  "historical_sample": "L10",
+  "historical_cutoff": {
+    "rule": "completion of final scheduled game of Week 2",
+    "date": "2026-09-21"
+  },
+  "record_count": 27,
+  "state_id": "STATE-4-20260927-0937",
+  "parent_state_id": "STATE-3-20260927-0927",
+  "methodology": {
+    "purpose": "Final prop selection using locked Stage 1 historical evidence, Stage 2 alternate-market structure, Stage 3 context, and current verified FanDuel main-market information.",
+    "current_sportsbook_snapshot": "odds/nfl_player_props_latest.csv",
+    "alternate_price_rule": "No refreshed alternate price was available in the current odds snapshot; no alternate price was fabricated."
+  },
+  "validation": {
+    "stage3_state_id": "STATE-3-20260927-0927",
+    "stage3_state_complete": true,
+    "stage2_locked": true,
+    "stage1_locked": true,
+    "stage3_candidates_input": 27,
+    "records_evaluated": 27,
+    "final_cards": 11,
+    "current_fanduel_main_market_verified": true,
+    "missing_current_main_markets": 0,
+    "historical_denominator_correct": true,
+    "all_final_cards_hr_gte_7_of_10": true,
+    "prior_states_altered": false
+  },
+  "records": [
+    {
+      "player": "Jacoby Brissett",
+      "team": "ARI",
+      "market": "Passing Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "7/10",
+        "l10_observations": [
+          95,
+          277,
+          243,
+          212,
+          203,
+          249,
+          271,
+          301,
+          317,
+          452
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 153,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 150,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1100,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 225,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -118,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 250,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 158,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Full practice; SF is a difficult defensive environment and Arizona remains heavily concentrated through McBride.",
+        "implications": "SF matchup vs concentrated ARI offense."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 225.5,
+        "over_price": -113,
+        "event_id": "36076217"
+      },
+      "threshold": "225.5+",
+      "final_read": "Not selected: Mixed context plus 7/10 historical HR at the current main line."
+    },
+    {
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "market": "Passing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          189,
+          245,
+          255,
+          263,
+          279,
+          330,
+          244,
+          229,
+          256,
+          153
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 186.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 150,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 225,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -130,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 250,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 146,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Healthy and efficient to start, but Jacksonville's protection struggled last week and New England presents a strong defensive test.",
+        "implications": "Strong start offset by protection/NE defense."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 228.5,
+        "over_price": -113,
+        "event_id": "36076209"
+      },
+      "threshold": "228.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Matthew Stafford",
+      "team": "LA",
+      "market": "Passing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          327,
+          155,
+          259,
+          269,
+          457,
+          368,
+          281,
+          243,
+          273,
+          130
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 194.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 150,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 250,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 102,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 275,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 182,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Healthy and coming off 327 yards/4 TD, but Denver has been efficient against the pass and Puka Nacua is expected to remain out.",
+        "implications": "Strong recent production; tougher DEN defense; Nacua absent."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 242.5,
+        "over_price": -113,
+        "event_id": "36076216"
+      },
+      "threshold": "242.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Tyler Shough",
+      "team": "NO",
+      "market": "Passing Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "6/10",
+        "l10_observations": [
+          252,
+          410,
+          259,
+          333,
+          308,
+          272,
+          144,
+          239,
+          243,
+          282
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": null,
+        "p25_status": "Unavailable — <20 games",
+        "floor": {
+          "threshold": 175,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1100,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 250,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -125,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 275,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 152,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "League-leading 662 passing yards after two games and strong performance under pressure; Las Vegas generates pressure but its early defensive sample is limited.",
+        "implications": "Elite early volume/form; pressure is the main counter-signal."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 252.5,
+        "over_price": -113,
+        "event_id": "36070615"
+      },
+      "threshold": "252.5+",
+      "final_read": "Not selected: Current main line is 6/10 historically, below the 70% final-leg floor."
+    },
+    {
+      "player": "Tee Higgins",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          95,
+          59,
+          67,
+          59,
+          53,
+          92,
+          31,
+          63,
+          121,
+          44
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 41.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 20,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 50,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -138,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 60,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 116,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "10 targets and 95 yards in Week 2 establish volume, but Pittsburgh has been a strong pass-defense environment.",
+        "implications": "Volume positive; PIT matchup negative."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 52.5,
+        "over_price": -113,
+        "event_id": "36076213"
+      },
+      "threshold": "52.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "market": "Receiving Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "6/10",
+        "l10_observations": [
+          54,
+          21,
+          30,
+          34,
+          48,
+          114,
+          43,
+          40,
+          26,
+          44
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": null,
+        "p25_status": "Unavailable — <20 games",
+        "floor": {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1600,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 30,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -200,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 100,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Only 17.3% target share and described as Cleveland's third passing option, with no red-zone/deep targets.",
+        "implications": "Low-leverage role is the main issue."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 37.5,
+        "over_price": -113,
+        "event_id": "36076206"
+      },
+      "threshold": "37.5+",
+      "final_read": "Not selected: Current-week role concern and 6/10 current main-line HR."
+    },
+    {
+      "player": "Pat Bryant",
+      "team": "DEN",
+      "market": "Receiving Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          0,
+          42,
+          31,
+          42,
+          32,
+          42,
+          82,
+          43,
+          20,
+          40
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": null,
+        "p25_status": "Unavailable — <20 games",
+        "floor": {
+          "threshold": 5,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 126,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 235,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Healthy but held without a catch on one target in Week 2 after leading Denver in Week 1; complementary role remains volatile.",
+        "implications": "Role volatility dominates."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 24.5,
+        "over_price": -113,
+        "event_id": "36076216"
+      },
+      "threshold": "24.5+",
+      "final_read": "Not selected: Current-week role volatility is a material concern."
+    },
+    {
+      "player": "Cooper Kupp",
+      "team": "SEA",
+      "market": "Receiving Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          20,
+          35,
+          29,
+          6,
+          39,
+          46,
+          35,
+          24,
+          24,
+          23
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 24,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -136,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 25,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 108,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Cleared to play and Seattle restores Sam Darnold; Washington weather/defensive conditions add uncertainty.",
+        "implications": "Availability positive; QB/weather introduce uncertainty."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 21.5,
+        "over_price": -113,
+        "event_id": "36076214"
+      },
+      "threshold": "21.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "market": "Receiving Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "7/10",
+        "l10_observations": [
+          80,
+          12,
+          29,
+          115,
+          88,
+          67,
+          78,
+          67,
+          84,
+          32
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 28.5,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1400,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 60,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 188,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 70,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 290,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Route share rose to 52% with 18.2% target share and 80 yards last week; Arizona has allowed strong TE efficiency.",
+        "implications": "Workload ramp plus favorable TE matchup."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 44.5,
+        "over_price": -113,
+        "event_id": "36076217"
+      },
+      "threshold": "44.5+",
+      "final_read": "Selected: 7/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Calvin Ridley",
+      "team": "TEN",
+      "market": "Receiving Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "9/10",
+        "l10_observations": [
+          35,
+          13,
+          18,
+          131,
+          30,
+          27,
+          57,
+          27,
+          76,
+          84
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 33.75,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -290,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 25,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 194,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 30,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 255,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Healthy but only two targets for 35 yards in Week 2 after no Week 1 targets; Tennessee's passing game remains low-volume.",
+        "implications": "Target-floor concern despite NYG matchup."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 13.5,
+        "over_price": -113,
+        "event_id": "36076215"
+      },
+      "threshold": "13.5+",
+      "final_read": "Not selected: Current-week target-volume concern offsets the historical result."
+    },
+    {
+      "player": "Wan'Dale Robinson",
+      "team": "TEN",
+      "market": "Receiving Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          9,
+          38,
+          113,
+          19,
+          54,
+          34,
+          156,
+          36,
+          62,
+          46
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 33,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -800,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 30,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -122,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 154,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Only 13.5% target share and 0.96 YPRR, with no red-zone/deep targets; current role is low leverage.",
+        "implications": "Low-leverage role and struggling TEN passing offense."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 30.5,
+        "over_price": -113,
+        "event_id": "36076215"
+      },
+      "threshold": "30.5+",
+      "final_read": "Not selected: Current-week role concern offsets the historical result."
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "7/10",
+        "l10_observations": [
+          47,
+          55,
+          43,
+          101,
+          138,
+          26,
+          26,
+          20,
+          105,
+          46
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 27.5,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 40,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 130,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 50,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 220,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "21.7% target share with four red-zone and three deep targets, but Seattle has limited receiver efficiency; Marcus Mariota replaces Jayden Daniels.",
+        "implications": "Established volume offset by QB/defense/weather."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 33.5,
+        "over_price": -113,
+        "event_id": "36076214"
+      },
+      "threshold": "33.5+",
+      "final_read": "Not selected: Mixed context includes QB change and Seattle defensive/weather concerns."
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          50,
+          14,
+          57,
+          63,
+          53,
+          69,
+          41,
+          96,
+          54,
+          74
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 46.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1600,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 50,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 122,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 60,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 188,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Under 50 yards in both games; Seattle has allowed very low perimeter-receiver efficiency, and Washington changes QBs to Marcus Mariota.",
+        "implications": "Slow start plus strong SEA coverage and QB change."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 42.5,
+        "over_price": -113,
+        "event_id": "36076214"
+      },
+      "threshold": "42.5+",
+      "final_read": "Not selected: Current-week concern from slow production, QB change and Seattle perimeter defense."
+    },
+    {
+      "player": "Trey McBride",
+      "team": "ARI",
+      "market": "Receptions",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "7/10",
+        "l10_observations": [
+          8,
+          9,
+          7,
+          10,
+          4,
+          12,
+          5,
+          8,
+          9,
+          10
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 5.75,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 5,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -650,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 7,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -166,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 8,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 108,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Arizona's focal point with 17 receptions/23 targets and a TD in each game; role concentration remains strong despite SF defense.",
+        "implications": "Elite current role concentration."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 7.5,
+        "over_price": 112,
+        "event_id": "36076217"
+      },
+      "threshold": "7.5+",
+      "final_read": "Selected: 7/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "market": "Receptions",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          0,
+          2,
+          2,
+          5,
+          3,
+          2,
+          3,
+          3,
+          1,
+          3
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 2,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 1,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 1,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -670,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 2,
+          "hits": 5,
+          "hr": "5/10",
+          "price": -132,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Only one target and zero catches in Week 2; current Browns reporting indicates Denzel Boston has emerged as WR1.",
+        "implications": "Current target role materially reduced."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 1.5,
+        "over_price": -132,
+        "event_id": "36076206"
+      },
+      "threshold": "1.5+",
+      "final_read": "Not selected: Current-week target-role concern."
+    },
+    {
+      "player": "Jakobi Meyers",
+      "team": "JAX",
+      "market": "Receptions",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          1,
+          2,
+          5,
+          6,
+          4,
+          5,
+          4,
+          6,
+          4,
+          5
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 4,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 2,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hits": 5,
+          "hr": "5/10",
+          "price": -102,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Healthy after full practice, but only 5.8% target share and 1.55 YPRR against a strong New England perimeter defense.",
+        "implications": "Healthy but very low current involvement."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 3.5,
+        "over_price": -102,
+        "event_id": "36076209"
+      },
+      "threshold": "3.5+",
+      "final_read": "Not selected: Very low current target involvement and defensive resistance."
+    },
+    {
+      "player": "Jauan Jennings",
+      "team": "MIN",
+      "market": "Receptions",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "9/10",
+        "l10_observations": [
+          0,
+          4,
+          2,
+          5,
+          3,
+          4,
+          5,
+          4,
+          6,
+          4
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 2,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 1,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -490,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 3,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 290,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hits": 3,
+          "hr": "3/10",
+          "price": 680,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Cleared to return after missing Week 2 for personal reasons, but current reporting does not show an established high-volume role.",
+        "implications": "Availability restored; role/volume remains unclear."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 1.5,
+        "over_price": -102,
+        "event_id": "36076218"
+      },
+      "threshold": "1.5+",
+      "final_read": "Not selected: Returning player with insufficiently established current role."
+    },
+    {
+      "player": "Juwan Johnson",
+      "team": "NO",
+      "market": "Receptions",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          4,
+          3,
+          3,
+          4,
+          8,
+          4,
+          4,
+          5,
+          6,
+          4
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 3,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 2,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hits": 3,
+          "hr": "3/10",
+          "price": -102,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Primary Saints receiving TE with 7 targets in Week 1 and 4-for-66 in Week 2; four red-zone targets through two games.",
+        "implications": "Primary role and high-leverage usage."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 3.5,
+        "over_price": -102,
+        "event_id": "36070615"
+      },
+      "threshold": "3.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Darnell Mooney",
+      "team": "NYG",
+      "market": "Receptions",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "9/10",
+        "l10_observations": [
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          1,
+          2,
+          3,
+          3
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 1,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 1,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 1,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -440,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 2,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 108,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Giants change QBs to Jameis Winston and are expected to lean more run-heavy; rain/wind is also forecast at MetLife.",
+        "implications": "QB change, script and weather all reduce confidence."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 1.5,
+        "over_price": 110,
+        "event_id": "36076215"
+      },
+      "threshold": "1.5+",
+      "final_read": "Not selected: QB change, expected run-heavy approach and weather concerns."
+    },
+    {
+      "player": "Wan'Dale Robinson",
+      "team": "TEN",
+      "market": "Receptions",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          1,
+          5,
+          11,
+          3,
+          5,
+          7,
+          9,
+          4,
+          6,
+          9
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 3.75,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 2,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 4,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -106,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 5,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 194,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Only 13.5% target share and 0.96 YPRR, with no red-zone/deep targets; current role is low leverage.",
+        "implications": "Low-leverage role and struggling TEN passing offense."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 3.5,
+        "over_price": -106,
+        "event_id": "36076215"
+      },
+      "threshold": "3.5+",
+      "final_read": "Not selected: Current-week role concern offsets the historical result."
+    },
+    {
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "market": "Rushing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "7/10",
+        "l10_observations": [
+          68,
+          144,
+          126,
+          216,
+          128,
+          100,
+          94,
+          60,
+          64,
+          103
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 63,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 50,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 90,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -114,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 100,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 130,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Healthy with 212 rushing yards and four TDs; Dallas is allowing 173.5 rushing yards/game.",
+        "implications": "Heavy workload plus favorable DAL run environment."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 89.5,
+        "over_price": -113,
+        "event_id": "35601592"
+      },
+      "threshold": "89.5+",
+      "final_read": "Selected: 7/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "James Cook",
+      "team": "BUF",
+      "market": "Rushing Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "6/10",
+        "l10_observations": [
+          135,
+          57,
+          15,
+          74,
+          117,
+          107,
+          80,
+          144,
+          116,
+          48
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 52,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 40,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 70,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -188,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 80,
+          "hits": 5,
+          "hr": "5/10",
+          "price": -114,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Clear lead back after 21 carries/135 yards, but the Chargers have allowed only three explosive runs and rank fifth in defensive EPA/play against the run.",
+        "implications": "Excellent workload; tougher run matchup."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 79.5,
+        "over_price": -113,
+        "event_id": "36076211"
+      },
+      "threshold": "79.5+",
+      "final_read": "Not selected: Current main-market line is 6/10 historically and the matchup is resistant."
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "6/10",
+        "l10_observations": [
+          30,
+          41,
+          54,
+          34,
+          91,
+          67,
+          59,
+          87,
+          93,
+          83
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 39.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 25,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 50,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -188,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 60,
+          "hits": 5,
+          "hr": "5/10",
+          "price": -108,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Top Dallas ball carrier, but Baltimore has allowed 83.5 rushing yards/game and ranks fifth in rush defense.",
+        "implications": "Role is strong; opponent is a major resistance."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 58.5,
+        "over_price": -113,
+        "event_id": "35601592"
+      },
+      "threshold": "58.5+",
+      "final_read": "Not selected: Baltimore's run defense is a material matchup concern."
+    },
+    {
+      "player": "Woody Marks",
+      "team": "HOU",
+      "market": "Rushing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "9/10",
+        "l10_observations": [
+          8,
+          42,
+          48,
+          71,
+          30,
+          68,
+          64,
+          74,
+          44,
+          63
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": null,
+        "p25_status": "Unavailable — <20 games",
+        "floor": {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 40,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 205,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 50,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 370,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "45.5% snap share, 44.4% rushing-attempt share and 37.1% route share last week; Indianapolis has allowed the third-highest explosive-run rate.",
+        "implications": "Role plus favorable IND run defense."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 27.5,
+        "over_price": -113,
+        "event_id": "36076210"
+      },
+      "threshold": "27.5+",
+      "final_read": "Selected: 9/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "selection_status": "NOT SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          43,
+          51,
+          131,
+          47,
+          51,
+          50,
+          40,
+          5,
+          34,
+          88
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 18,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 40,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 114,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 50,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 194,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Role destabilized after Week 2 fumble: 35.8% snaps versus Henderson's 60.4%. Jacksonville matchup is favorable, but workload is uncertain.",
+        "implications": "Current backfield role is the dominant concern."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 35.5,
+        "over_price": -113,
+        "event_id": "36076209"
+      },
+      "threshold": "35.5+",
+      "final_read": "Not selected: Backfield role instability is the dominant current-week concern."
+    },
+    {
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "9/10",
+        "l10_observations": [
+          76,
+          53,
+          82,
+          3,
+          148,
+          67,
+          66,
+          62,
+          147,
+          55
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": null,
+        "p25_status": "Unavailable — <20 games",
+        "floor": {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1400,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 60,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 220,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 70,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 320,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Handled 60.4% of snaps and 57.1% of rush attempts in Week 2; Jacksonville matchup is favorable, but Stevenson remains a competing back.",
+        "implications": "Strong recent usage, unresolved committee risk."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 41.5,
+        "over_price": -113,
+        "event_id": "36076209"
+      },
+      "threshold": "41.5+",
+      "final_read": "Selected: 9/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Rachaad White",
+      "team": "WAS",
+      "market": "Rushing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          43,
+          22,
+          23,
+          10,
+          45,
+          20,
+          53,
+          7,
+          38,
+          51
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 19.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 20,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -102,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 25,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 162,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Passing-down role is established at 46.3% route share/11.6% target share and a trailing script could help; Croskey-Merritt remains ahead on Washington's depth chart.",
+        "implications": "Receiving role supportive; rushing volume less secure."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 18.5,
+        "over_price": -113,
+        "event_id": "36076214"
+      },
+      "threshold": "18.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    }
+  ],
+  "final_cards": [
+    {
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "market": "Passing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          189,
+          245,
+          255,
+          263,
+          279,
+          330,
+          244,
+          229,
+          256,
+          153
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 186.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 150,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 225,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -130,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 250,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 146,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Healthy and efficient to start, but Jacksonville's protection struggled last week and New England presents a strong defensive test.",
+        "implications": "Strong start offset by protection/NE defense."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 228.5,
+        "over_price": -113,
+        "event_id": "36076209"
+      },
+      "threshold": "228.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Matthew Stafford",
+      "team": "LA",
+      "market": "Passing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          327,
+          155,
+          259,
+          269,
+          457,
+          368,
+          281,
+          243,
+          273,
+          130
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 194.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 150,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1450,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 250,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 102,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 275,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 182,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Healthy and coming off 327 yards/4 TD, but Denver has been efficient against the pass and Puka Nacua is expected to remain out.",
+        "implications": "Strong recent production; tougher DEN defense; Nacua absent."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 242.5,
+        "over_price": -113,
+        "event_id": "36076216"
+      },
+      "threshold": "242.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Tee Higgins",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          95,
+          59,
+          67,
+          59,
+          53,
+          92,
+          31,
+          63,
+          121,
+          44
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 41.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 20,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 50,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -138,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 60,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 116,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "10 targets and 95 yards in Week 2 establish volume, but Pittsburgh has been a strong pass-defense environment.",
+        "implications": "Volume positive; PIT matchup negative."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 52.5,
+        "over_price": -113,
+        "event_id": "36076213"
+      },
+      "threshold": "52.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Cooper Kupp",
+      "team": "SEA",
+      "market": "Receiving Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          20,
+          35,
+          29,
+          6,
+          39,
+          46,
+          35,
+          24,
+          24,
+          23
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 24,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -750,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 20,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -136,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 25,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 108,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Cleared to play and Seattle restores Sam Darnold; Washington weather/defensive conditions add uncertainty.",
+        "implications": "Availability positive; QB/weather introduce uncertainty."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 21.5,
+        "over_price": -113,
+        "event_id": "36076214"
+      },
+      "threshold": "21.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "market": "Receiving Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "7/10",
+        "l10_observations": [
+          80,
+          12,
+          29,
+          115,
+          88,
+          67,
+          78,
+          67,
+          84,
+          32
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 28.5,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1400,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 60,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 188,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 70,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 290,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Route share rose to 52% with 18.2% target share and 80 yards last week; Arizona has allowed strong TE efficiency.",
+        "implications": "Workload ramp plus favorable TE matchup."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 44.5,
+        "over_price": -113,
+        "event_id": "36076217"
+      },
+      "threshold": "44.5+",
+      "final_read": "Selected: 7/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Trey McBride",
+      "team": "ARI",
+      "market": "Receptions",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "7/10",
+        "l10_observations": [
+          8,
+          9,
+          7,
+          10,
+          4,
+          12,
+          5,
+          8,
+          9,
+          10
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 5.75,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 5,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -650,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 7,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -166,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 8,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 108,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Arizona's focal point with 17 receptions/23 targets and a TD in each game; role concentration remains strong despite SF defense.",
+        "implications": "Elite current role concentration."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 7.5,
+        "over_price": 112,
+        "event_id": "36076217"
+      },
+      "threshold": "7.5+",
+      "final_read": "Selected: 7/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Juwan Johnson",
+      "team": "NO",
+      "market": "Receptions",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          4,
+          3,
+          3,
+          4,
+          8,
+          4,
+          4,
+          5,
+          6,
+          4
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 3,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 2,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -900,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "price": -260,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hits": 3,
+          "hr": "3/10",
+          "price": -102,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Primary Saints receiving TE with 7 targets in Week 1 and 4-for-66 in Week 2; four red-zone targets through two games.",
+        "implications": "Primary role and high-leverage usage."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 3.5,
+        "over_price": -102,
+        "event_id": "36070615"
+      },
+      "threshold": "3.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "market": "Rushing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "7/10",
+        "l10_observations": [
+          68,
+          144,
+          126,
+          216,
+          128,
+          100,
+          94,
+          60,
+          64,
+          103
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 63,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 50,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 90,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -114,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 100,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 130,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Healthy with 212 rushing yards and four TDs; Dallas is allowing 173.5 rushing yards/game.",
+        "implications": "Heavy workload plus favorable DAL run environment."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 89.5,
+        "over_price": -113,
+        "event_id": "35601592"
+      },
+      "threshold": "89.5+",
+      "final_read": "Selected: 7/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Woody Marks",
+      "team": "HOU",
+      "market": "Rushing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "9/10",
+        "l10_observations": [
+          8,
+          42,
+          48,
+          71,
+          30,
+          68,
+          64,
+          74,
+          44,
+          63
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": null,
+        "p25_status": "Unavailable — <20 games",
+        "floor": {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1000,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 40,
+          "hits": 8,
+          "hr": "8/10",
+          "price": 205,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 50,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 370,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "45.5% snap share, 44.4% rushing-attempt share and 37.1% route share last week; Indianapolis has allowed the third-highest explosive-run rate.",
+        "implications": "Role plus favorable IND run defense."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 27.5,
+        "over_price": -113,
+        "event_id": "36076210"
+      },
+      "threshold": "27.5+",
+      "final_read": "Selected: 9/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "9/10",
+        "l10_observations": [
+          76,
+          53,
+          82,
+          3,
+          148,
+          67,
+          66,
+          62,
+          147,
+          55
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": null,
+        "p25_status": "Unavailable — <20 games",
+        "floor": {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "price": -1400,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 60,
+          "hits": 7,
+          "hr": "7/10",
+          "price": 220,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 70,
+          "hits": 4,
+          "hr": "4/10",
+          "price": 320,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Handled 60.4% of snaps and 57.1% of rush attempts in Week 2; Jacksonville matchup is favorable, but Stevenson remains a competing back.",
+        "implications": "Strong recent usage, unresolved committee risk."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 41.5,
+        "over_price": -113,
+        "event_id": "36076209"
+      },
+      "threshold": "41.5+",
+      "final_read": "Selected: 9/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    },
+    {
+      "player": "Rachaad White",
+      "team": "WAS",
+      "market": "Rushing Yards",
+      "selection_status": "SELECTED",
+      "historical_evidence": {
+        "l10_hr": "8/10",
+        "l10_observations": [
+          43,
+          22,
+          23,
+          10,
+          45,
+          20,
+          53,
+          7,
+          38,
+          51
+        ]
+      },
+      "distribution_floor_evidence": {
+        "p25": 19.25,
+        "p25_status": "available",
+        "floor": {
+          "threshold": 5,
+          "hits": 10,
+          "hr": "10/10",
+          "price": -1200,
+          "sportsbook": "FD"
+        },
+        "core": {
+          "threshold": 20,
+          "hits": 7,
+          "hr": "7/10",
+          "price": -102,
+          "sportsbook": "FD"
+        },
+        "ceiling": {
+          "threshold": 25,
+          "hits": 5,
+          "hr": "5/10",
+          "price": 162,
+          "sportsbook": "FD"
+        }
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Passing-down role is established at 46.3% route share/11.6% target share and a trailing script could help; Croskey-Merritt remains ahead on Washington's depth chart.",
+        "implications": "Receiving role supportive; rushing volume less secure."
+      },
+      "sportsbook": {
+        "sportsbook": "FanDuel",
+        "line": 18.5,
+        "over_price": -113,
+        "event_id": "36076214"
+      },
+      "threshold": "18.5+",
+      "final_read": "Selected: 8/10 L10 hits at the verified current FanDuel main line; distribution evidence, Stage 2 structure, and current-week context are jointly supportive enough for final evaluation."
+    }
+  ]
+}
