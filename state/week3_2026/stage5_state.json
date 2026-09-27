@@ -1,0 +1,239 @@
+{
+  "stage": 5,
+  "season": 2026,
+  "week": 3,
+  "scope": "Sunday only",
+  "historical_sample": "L10",
+  "historical_cutoff": {
+    "rule": "completion of final scheduled game of Week 2",
+    "date": "2026-09-21"
+  },
+  "record_count": 5,
+  "state_id": "STATE-5-20260927-0955",
+  "parent_state_id": "STATE-4-20260927-0937",
+  "input_state_id": "STATE-4-20260927-0937",
+  "methodology": {
+    "purpose": "Construct five distinct portfolio types from the locked Stage 4 final prop cards.",
+    "evidence_rule": "Balanced/Price-Seeking prefer >=80% L10 HR; 70-79% permitted when necessary; <70% prohibited. Low Variance prefers >=90%, then >=80%, then 70-79% when necessary; <70% prohibited.",
+    "threshold_rule": "Prefer the strongest conservative lines available in the locked Stage 4 cards.",
+    "payout_rule": "Combined odds are mathematical estimates, not FanDuel quotes. Payout targets are not forced when doing so would weaken evidence or violate portfolio constraints."
+  },
+  "portfolios": [
+    {
+      "type": "LOW VARIANCE",
+      "legs": 2,
+      "legs_detail": [
+        {
+          "player": "Woody Marks",
+          "team": "HOU",
+          "market": "Rushing Yards",
+          "threshold": "27.5+",
+          "hr": "9/10",
+          "price": -113,
+          "context": "Supportive"
+        },
+        {
+          "player": "TreVeyon Henderson",
+          "team": "NE",
+          "market": "Rushing Yards",
+          "threshold": "41.5+",
+          "hr": "9/10",
+          "price": -113,
+          "context": "Mixed"
+        }
+      ],
+      "combined_decimal": 3.5530581877,
+      "estimated_american": "+255",
+      "hr_tier": "Both legs >=90%; preferred Low Variance tier"
+    },
+    {
+      "type": "BALANCED",
+      "legs": 2,
+      "legs_detail": [
+        {
+          "player": "Juwan Johnson",
+          "team": "NO",
+          "market": "Receptions",
+          "threshold": "3.5+",
+          "hr": "8/10",
+          "price": -102,
+          "context": "Supportive"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "team": "JAX",
+          "market": "Passing Yards",
+          "threshold": "228.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        }
+      ],
+      "combined_decimal": 3.7329515877,
+      "estimated_american": "+273",
+      "hr_tier": "Both legs >=80%; preferred Balanced tier"
+    },
+    {
+      "type": "PRICE SEEKING — LOW",
+      "legs": 3,
+      "base": "BALANCED",
+      "added_legs": 1,
+      "legs_detail": [
+        {
+          "player": "Juwan Johnson",
+          "team": "NO",
+          "market": "Receptions",
+          "threshold": "3.5+",
+          "hr": "8/10",
+          "price": -102,
+          "context": "Supportive"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "team": "JAX",
+          "market": "Passing Yards",
+          "threshold": "228.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        },
+        {
+          "player": "Tee Higgins",
+          "team": "CIN",
+          "market": "Receiving Yards",
+          "threshold": "52.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        }
+      ],
+      "combined_decimal": 7.036448568,
+      "estimated_american": "+604",
+      "hr_tier": "All legs >=80%; no evidence weakening required"
+    },
+    {
+      "type": "PRICE SEEKING — MEDIUM",
+      "legs": 4,
+      "base": "PRICE SEEKING — LOW",
+      "added_legs": 1,
+      "legs_detail": [
+        {
+          "player": "Juwan Johnson",
+          "team": "NO",
+          "market": "Receptions",
+          "threshold": "3.5+",
+          "hr": "8/10",
+          "price": -102,
+          "context": "Supportive"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "team": "JAX",
+          "market": "Passing Yards",
+          "threshold": "228.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        },
+        {
+          "player": "Tee Higgins",
+          "team": "CIN",
+          "market": "Receiving Yards",
+          "threshold": "52.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        },
+        {
+          "player": "Cooper Kupp",
+          "team": "SEA",
+          "market": "Receiving Yards",
+          "threshold": "21.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        }
+      ],
+      "combined_decimal": 13.2633942034,
+      "estimated_american": "+1226",
+      "hr_tier": "All legs >=80%; 4-leg construction necessarily exceeds the earlier +700 to +1000 target range, so payout was not forced downward by weakening evidence"
+    },
+    {
+      "type": "PRICE SEEKING — HIGH",
+      "legs": 5,
+      "base": "PRICE SEEKING — MEDIUM",
+      "added_legs": 1,
+      "legs_detail": [
+        {
+          "player": "Juwan Johnson",
+          "team": "NO",
+          "market": "Receptions",
+          "threshold": "3.5+",
+          "hr": "8/10",
+          "price": -102,
+          "context": "Supportive"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "team": "JAX",
+          "market": "Passing Yards",
+          "threshold": "228.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        },
+        {
+          "player": "Tee Higgins",
+          "team": "CIN",
+          "market": "Receiving Yards",
+          "threshold": "52.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        },
+        {
+          "player": "Cooper Kupp",
+          "team": "SEA",
+          "market": "Receiving Yards",
+          "threshold": "21.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        },
+        {
+          "player": "Rachaad White",
+          "team": "WAS",
+          "market": "Rushing Yards",
+          "threshold": "18.5+",
+          "hr": "8/10",
+          "price": -113,
+          "context": "Mixed"
+        }
+      ],
+      "combined_decimal": 25.0009111975,
+      "estimated_american": "+2400",
+      "hr_tier": "All legs >=80%; no evidence weakening required"
+    }
+  ],
+  "validation": {
+    "stage4_state_exists": true,
+    "stage4_state_complete": true,
+    "stage1_locked": true,
+    "stage2_locked": true,
+    "stage3_locked": true,
+    "reconstruction_required": false,
+    "low_variance_exactly_2": true,
+    "balanced_legs": 2,
+    "price_seeking_low_legs": 3,
+    "price_seeking_medium_legs": 4,
+    "price_seeking_high_legs": 5,
+    "all_legs_gte_70": true,
+    "low_variance_all_gte_90": true,
+    "balanced_all_gte_80": true,
+    "price_seeking_all_gte_80": true,
+    "no_tier3_low_variance": true,
+    "prior_states_altered": false,
+    "combined_odds_mathematically_valid": true,
+    "payout_target_forced": false
+  }
+}
