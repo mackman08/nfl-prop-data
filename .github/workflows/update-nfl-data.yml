@@ -1,9 +1,6 @@
 name: Build NFL Prop Data
 
 on:
-  push:
-    paths:
-      - ".github/workflows/update-nfl-data.yml"
   workflow_dispatch:
   schedule:
     - cron: '17 10 * * 2'
