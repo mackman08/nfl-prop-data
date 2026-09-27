@@ -1,6 +1,9 @@
 name: Build NFL Prop Data
 
 on:
+  push:
+    paths:
+      - ".github/workflows/update-nfl-data.yml"
   workflow_dispatch:
   schedule:
     - cron: '17 10 * * 2'
@@ -63,30 +66,20 @@ jobs:
       - name: Build compact one-file model
         run: |
           python - <<'PY'
-          import pandas as pd
           import json
           import os
+          import pandas as pd
 
           current_season = int("${{ steps.season.outputs.current_season }}")
           previous_season = int("${{ steps.season.outputs.previous_season }}")
           two_seasons_back = int("${{ steps.season.outputs.two_seasons_back }}")
 
-          # Maximum historical game window retained per player.
-          #
-          # The prop model can use shorter dynamic windows:
-          #   L5  -> L10 stability check
-          #   L10 -> L20 stability check
-          #
-          # Keeping 20 games here supports dynamic L[N] samples through L20
-          # and provides the dedicated 20-game pool required for V6.7 25P.
-          # Three seasons are loaded so established players can reach the
-          # full 20-game history even at early-season cutoffs.
           HISTORY_GAMES = 20
 
           files = [
               f"stats_player_week_{two_seasons_back}.csv",
               f"stats_player_week_{previous_season}.csv",
-              f"stats_player_week_{current_season}.csv"
+              f"stats_player_week_{current_season}.csv",
           ]
 
           frames = []
@@ -99,23 +92,14 @@ jobs:
 
           print(f"Raw rows: {len(df):,}")
 
-          # ------------------------------------------------------------
-          # Regular season and relevant positions only
-          # ------------------------------------------------------------
-
+          # Regular season and supported positions only.
           df = df[
               (df["season_type"] == "REG") &
               (df["position"].isin(["QB", "RB", "WR", "TE"]))
           ].copy()
 
-          # ------------------------------------------------------------
-          # Only retain players who have actually appeared in the
-          # current season.
-          #
-          # Their prior-season games can still be used to complete
-          # the historical window.
-          # ------------------------------------------------------------
-
+          # Retain only players who have actually appeared in the
+          # current season. Prior-season games may complete history.
           current_players = set(
               df.loc[
                   df["season"] == current_season,
@@ -125,10 +109,7 @@ jobs:
 
           df = df[df["player_id"].isin(current_players)].copy()
 
-          # ------------------------------------------------------------
-          # Required model columns
-          # ------------------------------------------------------------
-
+          # Exact field set required by the analysis prompt.
           columns = [
               "player_id",
               "player_name",
@@ -144,127 +125,104 @@ jobs:
               "receptions"
           ]
 
-          available = [c for c in columns if c in df.columns]
+          missing = [c for c in columns if c not in df.columns]
 
-          df = df[available].copy()
+          if missing:
+              raise RuntimeError(
+                  f"Missing required source columns: {missing}"
+              )
 
-          print("Available model columns:")
-          print(available)
+          df = df[columns].copy()
 
-          # ------------------------------------------------------------
-          # Fail rather than silently producing incomplete history
-          # ------------------------------------------------------------
-
-          required = [
+          # Identity and game-context fields must be present.
+          required_identity = [
               "player_id",
               "player_name",
               "position",
               "season",
               "week",
+              "game_id",
+              "team",
+              "opponent_team"
+          ]
+
+          for col in required_identity:
+              if df[col].isna().any():
+                  raise RuntimeError(
+                      f"Null values found in required field: {col}"
+                  )
+
+          # Missing statistical categories represent zero production.
+          stat_columns = [
               "passing_yards",
               "rushing_yards",
               "receiving_yards",
               "receptions"
           ]
 
-          missing = [c for c in required if c not in df.columns]
-
-          if missing:
-              raise RuntimeError(
-                  f"Missing required columns: {missing}"
-              )
-
-          # ------------------------------------------------------------
-          # Missing statistical categories = zero
-          # ------------------------------------------------------------
-
-          for col in [
-              "passing_yards",
-              "rushing_yards",
-              "receiving_yards",
-              "receptions"
-          ]:
+          for col in stat_columns:
               df[col] = df[col].fillna(0)
 
-          # ------------------------------------------------------------
-          # Sort chronologically
-          # ------------------------------------------------------------
-
-          sort_columns = [
-              "player_id",
-              "season",
-              "week"
-          ]
-
-          if "game_id" in df.columns:
-              sort_columns.append("game_id")
-
-          df = df.sort_values(sort_columns)
-
-          # ------------------------------------------------------------
-          # Keep each player's 20 most recent games.
-          #
-          # IMPORTANT:
-          # We retain raw game-level results rather than calculating
-          # L5/L10/L20 metrics here. The analysis prompt can therefore
-          # dynamically choose its historical window.
-          # ------------------------------------------------------------
+          # Sort chronologically before taking the most recent 20 games.
+          df = df.sort_values(
+              ["player_id", "season", "week", "game_id"]
+          )
 
           df = (
               df.groupby("player_id", group_keys=False)
                 .tail(HISTORY_GAMES)
           )
 
-          # ------------------------------------------------------------
-          # One compact JSON object per player
-          # ------------------------------------------------------------
+          # Preserve the prompt's exact field names while using a fixed
+          # array schema to keep the JSONL artifact comfortably small.
+          GAME_FIELDS = [
+              "season",
+              "week",
+              "game_id",
+              "team",
+              "opponent_team",
+              "passing_yards",
+              "rushing_yards",
+              "receiving_yards",
+              "receptions"
+          ]
 
           players = []
 
           for player_id, group in df.groupby("player_id", sort=False):
-
               group = group.sort_values(
-                  ["season", "week"] +
-                  (["game_id"] if "game_id" in group.columns else [])
+                  ["season", "week", "game_id"]
               )
 
               latest = group.iloc[-1]
 
-              player = {
-                  "player_id": str(player_id),
-                  "player_name": str(latest["player_name"]),
-                  "position": str(latest["position"]),
-                  "games": []
-              }
+              games = []
 
               for _, row in group.iterrows():
 
-                  game = {
-                      "season": int(row["season"]),
-                      "week": int(row["week"])
-                  }
+                  def clean_stat(value):
+                      value = float(value)
+                      return int(value) if value.is_integer() else value
 
-                  if "game_id" in row and pd.notna(row["game_id"]):
-                      game["game_id"] = str(row["game_id"])
+                  games.append([
+                      int(row["season"]),
+                      int(row["week"]),
+                      str(row["game_id"]),
+                      str(row["team"]),
+                      str(row["opponent_team"]),
+                      clean_stat(row["passing_yards"]),
+                      clean_stat(row["rushing_yards"]),
+                      clean_stat(row["receiving_yards"]),
+                      clean_stat(row["receptions"])
+                  ])
 
-                  if "team" in row and pd.notna(row["team"]):
-                      game["team"] = str(row["team"])
-
-                  if "opponent_team" in row and pd.notna(row["opponent_team"]):
-                      game["opponent_team"] = str(row["opponent_team"])
-
-                  game["passing_yards"] = float(row["passing_yards"])
-                  game["rushing_yards"] = float(row["rushing_yards"])
-                  game["receiving_yards"] = float(row["receiving_yards"])
-                  game["receptions"] = float(row["receptions"])
-
-                  player["games"].append(game)
-
-              players.append(player)
-
-          # ------------------------------------------------------------
-          # Sort players alphabetically for reproducibility
-          # ------------------------------------------------------------
+              players.append({
+                  "player_id": str(player_id),
+                  "player_name": str(latest["player_name"]),
+                  "position": str(latest["position"]),
+                  "game_fields": GAME_FIELDS,
+                  "games": games
+              })
 
           players.sort(
               key=lambda x: (
@@ -273,35 +231,156 @@ jobs:
               )
           )
 
-          # ------------------------------------------------------------
-          # Write output
-          # ------------------------------------------------------------
-
           os.makedirs("data", exist_ok=True)
-
           output = "data/nfl_prop_model.txt"
 
-          with open(output, "w") as f:
+          with open(
+              output,
+              "w",
+              encoding="utf-8",
+              newline="\n"
+          ) as f:
               for player in players:
                   f.write(
                       json.dumps(
                           player,
-                          separators=(",", ":")
+                          separators=(",", ":"),
+                          ensure_ascii=False
                       ) + "\n"
                   )
 
           # ------------------------------------------------------------
-          # Summary
+          # Full integrity validation before the file may be committed.
           # ------------------------------------------------------------
+
+          with open(output, "r", encoding="utf-8") as f:
+              lines = [line.rstrip("\n") for line in f if line.strip()]
+
+          if not lines:
+              raise RuntimeError(
+                  "Generated nfl_prop_model.txt is empty"
+              )
+
+          required_game_fields = GAME_FIELDS
+          parsed_players = []
+
+          for line_number, line in enumerate(lines, start=1):
+              try:
+                  player = json.loads(line)
+              except json.JSONDecodeError as exc:
+                  raise RuntimeError(
+                      f"Invalid JSON on line {line_number}: {exc}"
+                  )
+
+              required_player_fields = [
+                  "player_id",
+                  "player_name",
+                  "position",
+                  "game_fields",
+                  "games"
+              ]
+
+              for key in required_player_fields:
+                  if key not in player:
+                      raise RuntimeError(
+                          f"Missing required player field '{key}' "
+                          f"on line {line_number}"
+                      )
+
+              if player["game_fields"] != required_game_fields:
+                  raise RuntimeError(
+                      f"Unexpected game_fields on line {line_number}"
+                  )
+
+              games = player["games"]
+
+              if len(games) == 0:
+                  raise RuntimeError(
+                      f"Player has no game records on line {line_number}: "
+                      f"{player['player_name']}"
+                  )
+
+              if len(games) > HISTORY_GAMES:
+                  raise RuntimeError(
+                      f"Player exceeds {HISTORY_GAMES} retained games: "
+                      f"{player['player_name']}"
+                  )
+
+              seen_game_ids = set()
+              previous_key = None
+
+              for game in games:
+                  if len(game) != len(required_game_fields):
+                      raise RuntimeError(
+                          f"Invalid game record length for "
+                          f"{player['player_name']}"
+                      )
+
+                  game_id = str(game[2])
+
+                  if game_id in seen_game_ids:
+                      raise RuntimeError(
+                          f"Duplicate game_id for "
+                          f"{player['player_name']}: {game_id}"
+                      )
+
+                  seen_game_ids.add(game_id)
+
+                  current_key = (
+                      int(game[0]),
+                      int(game[1]),
+                      game_id
+                  )
+
+                  if previous_key is not None and current_key < previous_key:
+                      raise RuntimeError(
+                          f"Game records are not chronologically sorted for "
+                          f"{player['player_name']}"
+                      )
+
+                  previous_key = current_key
+
+              parsed_players.append(player)
+
+          seasons = {
+              int(game[0])
+              for player in parsed_players
+              for game in player["games"]
+          }
+
+          required_seasons = {
+              two_seasons_back,
+              previous_season,
+              current_season
+          }
+
+          if not required_seasons.issubset(seasons):
+              raise RuntimeError(
+                  "Generated model is missing one or more expected seasons. "
+                  f"Expected at least {sorted(required_seasons)}, "
+                  f"found {sorted(seasons)}"
+              )
+
+          byte_size = os.path.getsize(output)
+
+          # Keep the artifact safely below the retrieval boundary that
+          # caused the previous empty-read failure.
+          MAX_MODEL_BYTES = 900_000
+
+          if byte_size > MAX_MODEL_BYTES:
+              raise RuntimeError(
+                  f"{output} is {byte_size:,} bytes, above the "
+                  f"{MAX_MODEL_BYTES:,}-byte safety ceiling"
+              )
 
           total_games = sum(
               len(player["games"])
-              for player in players
+              for player in parsed_players
           )
 
           game_counts = [
               len(player["games"])
-              for player in players
+              for player in parsed_players
           ]
 
           players_with_less_than_history = sum(
@@ -315,14 +394,16 @@ jobs:
               "Seasons available: "
               f"{two_seasons_back}, {previous_season}, {current_season}"
           )
-          print(f"Current-season players: {len(players):,}")
-          print(f"Output rows: {len(players):,}")
+          print(f"Current-season players: {len(parsed_players):,}")
+          print(f"Output rows: {len(parsed_players):,}")
           print(f"Maximum games retained per player: {HISTORY_GAMES}")
           print(f"Total game records retained: {total_games:,}")
           print(
               f"Players with fewer than {HISTORY_GAMES} games: "
               f"{players_with_less_than_history:,}"
           )
+          print(f"Output size: {byte_size:,} bytes")
+          print("Validation: PASSED")
 
           PY
 
