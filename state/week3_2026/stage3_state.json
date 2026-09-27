@@ -32,7 +32,9 @@
     "context_separated_from_historical": true,
     "stage2_state_path": "state/week3_2026/stage2_state.json",
     "complete_prior_stage_records_preserved": true,
-    "stage2_records_embedded": true
+    "stage2_records_embedded": true,
+    "stage1_25p_recovered_from_locked_state": true,
+    "stage1_source_state_id": "STATE-1-20260926-2342"
   },
   "records": [
     {
@@ -174,7 +176,9 @@
       "historical_hr": "7/10",
       "current_week_context": "Full practice; SF is a difficult defensive environment and Arizona remains heavily concentrated through McBride.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "SF matchup vs concentrated ARI offense."
+      "implications_for_final_selection": "SF matchup vs concentrated ARI offense.",
+      "p25": 153,
+      "p25_status": "available"
     },
     {
       "player": "Trevor Lawrence",
@@ -322,7 +326,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Healthy and efficient to start, but Jacksonville's protection struggled last week and New England presents a strong defensive test.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "Strong start offset by protection/NE defense."
+      "implications_for_final_selection": "Strong start offset by protection/NE defense.",
+      "p25": 186.25,
+      "p25_status": "available"
     },
     {
       "player": "Matthew Stafford",
@@ -477,7 +483,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Healthy and coming off 327 yards/4 TD, but Denver has been efficient against the pass and Puka Nacua is expected to remain out.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "Strong recent production; tougher DEN defense; Nacua absent."
+      "implications_for_final_selection": "Strong recent production; tougher DEN defense; Nacua absent.",
+      "p25": 194.25,
+      "p25_status": "available"
     },
     {
       "player": "Tyler Shough",
@@ -618,7 +626,9 @@
       "historical_hr": "6/10",
       "current_week_context": "League-leading 662 passing yards after two games and strong performance under pressure; Las Vegas generates pressure but its early defensive sample is limited.",
       "context_classification": "Supportive",
-      "implications_for_final_selection": "Elite early volume/form; pressure is the main counter-signal."
+      "implications_for_final_selection": "Elite early volume/form; pressure is the main counter-signal.",
+      "p25": null,
+      "p25_status": "Unavailable — <20 games"
     },
     {
       "player": "Tee Higgins",
@@ -794,7 +804,9 @@
       "historical_hr": "7/10",
       "current_week_context": "10 targets and 95 yards in Week 2 establish volume, but Pittsburgh has been a strong pass-defense environment.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "Volume positive; PIT matchup negative."
+      "implications_for_final_selection": "Volume positive; PIT matchup negative.",
+      "p25": 41.25,
+      "p25_status": "available"
     },
     {
       "player": "Harold Fannin Jr.",
@@ -963,7 +975,9 @@
       "historical_hr": "6/10",
       "current_week_context": "Only 17.3% target share and described as Cleveland's third passing option, with no red-zone/deep targets.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Low-leverage role is the main issue."
+      "implications_for_final_selection": "Low-leverage role is the main issue.",
+      "p25": null,
+      "p25_status": "Unavailable — <20 games"
     },
     {
       "player": "Pat Bryant",
@@ -1139,7 +1153,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Healthy but held without a catch on one target in Week 2 after leading Denver in Week 1; complementary role remains volatile.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Role volatility dominates."
+      "implications_for_final_selection": "Role volatility dominates.",
+      "p25": null,
+      "p25_status": "Unavailable — <20 games"
     },
     {
       "player": "Cooper Kupp",
@@ -1301,7 +1317,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Cleared to play and Seattle restores Sam Darnold; Washington weather/defensive conditions add uncertainty.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "Availability positive; QB/weather introduce uncertainty."
+      "implications_for_final_selection": "Availability positive; QB/weather introduce uncertainty.",
+      "p25": 24,
+      "p25_status": "available"
     },
     {
       "player": "George Kittle",
@@ -1470,7 +1488,9 @@
       "historical_hr": "7/10",
       "current_week_context": "Route share rose to 52% with 18.2% target share and 80 yards last week; Arizona has allowed strong TE efficiency.",
       "context_classification": "Supportive",
-      "implications_for_final_selection": "Workload ramp plus favorable TE matchup."
+      "implications_for_final_selection": "Workload ramp plus favorable TE matchup.",
+      "p25": 28.5,
+      "p25_status": "available"
     },
     {
       "player": "Calvin Ridley",
@@ -1625,7 +1645,9 @@
       "historical_hr": "9/10",
       "current_week_context": "Healthy but only two targets for 35 yards in Week 2 after no Week 1 targets; Tennessee's passing game remains low-volume.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Target-floor concern despite NYG matchup."
+      "implications_for_final_selection": "Target-floor concern despite NYG matchup.",
+      "p25": 33.75,
+      "p25_status": "available"
     },
     {
       "player": "Wan'Dale Robinson",
@@ -1794,7 +1816,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Only 13.5% target share and 0.96 YPRR, with no red-zone/deep targets; current role is low leverage.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Low-leverage role and struggling TEN passing offense."
+      "implications_for_final_selection": "Low-leverage role and struggling TEN passing offense.",
+      "p25": 33,
+      "p25_status": "available"
     },
     {
       "player": "Stefon Diggs",
@@ -1963,7 +1987,9 @@
       "historical_hr": "7/10",
       "current_week_context": "21.7% target share with four red-zone and three deep targets, but Seattle has limited receiver efficiency; Marcus Mariota replaces Jayden Daniels.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "Established volume offset by QB/defense/weather."
+      "implications_for_final_selection": "Established volume offset by QB/defense/weather.",
+      "p25": 27.5,
+      "p25_status": "available"
     },
     {
       "player": "Terry McLaurin",
@@ -2160,7 +2186,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Under 50 yards in both games; Seattle has allowed very low perimeter-receiver efficiency, and Washington changes QBs to Marcus Mariota.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Slow start plus strong SEA coverage and QB change."
+      "implications_for_final_selection": "Slow start plus strong SEA coverage and QB change.",
+      "p25": 46.25,
+      "p25_status": "available"
     },
     {
       "player": "Trey McBride",
@@ -2301,7 +2329,9 @@
       "historical_hr": "7/10",
       "current_week_context": "Arizona's focal point with 17 receptions/23 targets and a TD in each game; role concentration remains strong despite SF defense.",
       "context_classification": "Supportive",
-      "implications_for_final_selection": "Elite current role concentration."
+      "implications_for_final_selection": "Elite current role concentration.",
+      "p25": 5.75,
+      "p25_status": "available"
     },
     {
       "player": "Jerry Jeudy",
@@ -2393,7 +2423,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Only one target and zero catches in Week 2; current Browns reporting indicates Denzel Boston has emerged as WR1.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Current target role materially reduced."
+      "implications_for_final_selection": "Current target role materially reduced.",
+      "p25": 2,
+      "p25_status": "available"
     },
     {
       "player": "Jakobi Meyers",
@@ -2513,7 +2545,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Healthy after full practice, but only 5.8% target share and 1.55 YPRR against a strong New England perimeter defense.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Healthy but very low current involvement."
+      "implications_for_final_selection": "Healthy but very low current involvement.",
+      "p25": 4,
+      "p25_status": "available"
     },
     {
       "player": "Jauan Jennings",
@@ -2612,7 +2646,9 @@
       "historical_hr": "9/10",
       "current_week_context": "Cleared to return after missing Week 2 for personal reasons, but current reporting does not show an established high-volume role.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Availability restored; role/volume remains unclear."
+      "implications_for_final_selection": "Availability restored; role/volume remains unclear.",
+      "p25": 2,
+      "p25_status": "available"
     },
     {
       "player": "Juwan Johnson",
@@ -2732,7 +2768,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Primary Saints receiving TE with 7 targets in Week 1 and 4-for-66 in Week 2; four red-zone targets through two games.",
       "context_classification": "Supportive",
-      "implications_for_final_selection": "Primary role and high-leverage usage."
+      "implications_for_final_selection": "Primary role and high-leverage usage.",
+      "p25": 3,
+      "p25_status": "available"
     },
     {
       "player": "Darnell Mooney",
@@ -2831,7 +2869,9 @@
       "historical_hr": "9/10",
       "current_week_context": "Giants change QBs to Jameis Winston and are expected to lean more run-heavy; rain/wind is also forecast at MetLife.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "QB change, script and weather all reduce confidence."
+      "implications_for_final_selection": "QB change, script and weather all reduce confidence.",
+      "p25": 1,
+      "p25_status": "available"
     },
     {
       "player": "Wan'Dale Robinson",
@@ -2951,7 +2991,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Only 13.5% target share and 0.96 YPRR, with no red-zone/deep targets; current role is low leverage.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Low-leverage role and struggling TEN passing offense."
+      "implications_for_final_selection": "Low-leverage role and struggling TEN passing offense.",
+      "p25": 3.75,
+      "p25_status": "available"
     },
     {
       "player": "Derrick Henry",
@@ -3092,7 +3134,9 @@
       "historical_hr": "7/10",
       "current_week_context": "Healthy with 212 rushing yards and four TDs; Dallas is allowing 173.5 rushing yards/game.",
       "context_classification": "Supportive",
-      "implications_for_final_selection": "Heavy workload plus favorable DAL run environment."
+      "implications_for_final_selection": "Heavy workload plus favorable DAL run environment.",
+      "p25": 63,
+      "p25_status": "available"
     },
     {
       "player": "James Cook",
@@ -3233,7 +3277,9 @@
       "historical_hr": "6/10",
       "current_week_context": "Clear lead back after 21 carries/135 yards, but the Chargers have allowed only three explosive runs and rank fifth in defensive EPA/play against the run.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "Excellent workload; tougher run matchup."
+      "implications_for_final_selection": "Excellent workload; tougher run matchup.",
+      "p25": 52,
+      "p25_status": "available"
     },
     {
       "player": "Javonte Williams",
@@ -3388,7 +3434,9 @@
       "historical_hr": "6/10",
       "current_week_context": "Top Dallas ball carrier, but Baltimore has allowed 83.5 rushing yards/game and ranks fifth in rush defense.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Role is strong; opponent is a major resistance."
+      "implications_for_final_selection": "Role is strong; opponent is a major resistance.",
+      "p25": 39.25,
+      "p25_status": "available"
     },
     {
       "player": "Woody Marks",
@@ -3557,7 +3605,9 @@
       "historical_hr": "9/10",
       "current_week_context": "45.5% snap share, 44.4% rushing-attempt share and 37.1% route share last week; Indianapolis has allowed the third-highest explosive-run rate.",
       "context_classification": "Supportive",
-      "implications_for_final_selection": "Role plus favorable IND run defense."
+      "implications_for_final_selection": "Role plus favorable IND run defense.",
+      "p25": null,
+      "p25_status": "Unavailable — <20 games"
     },
     {
       "player": "Rhamondre Stevenson",
@@ -3726,7 +3776,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Role destabilized after Week 2 fumble: 35.8% snaps versus Henderson's 60.4%. Jacksonville matchup is favorable, but workload is uncertain.",
       "context_classification": "Concern",
-      "implications_for_final_selection": "Current backfield role is the dominant concern."
+      "implications_for_final_selection": "Current backfield role is the dominant concern.",
+      "p25": 18,
+      "p25_status": "available"
     },
     {
       "player": "TreVeyon Henderson",
@@ -3909,7 +3961,9 @@
       "historical_hr": "9/10",
       "current_week_context": "Handled 60.4% of snaps and 57.1% of rush attempts in Week 2; Jacksonville matchup is favorable, but Stevenson remains a competing back.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "Strong recent usage, unresolved committee risk."
+      "implications_for_final_selection": "Strong recent usage, unresolved committee risk.",
+      "p25": null,
+      "p25_status": "Unavailable — <20 games"
     },
     {
       "player": "Rachaad White",
@@ -4043,7 +4097,9 @@
       "historical_hr": "8/10",
       "current_week_context": "Passing-down role is established at 46.3% route share/11.6% target share and a trailing script could help; Croskey-Merritt remains ahead on Washington's depth chart.",
       "context_classification": "Mixed",
-      "implications_for_final_selection": "Receiving role supportive; rushing volume less secure."
+      "implications_for_final_selection": "Receiving role supportive; rushing volume less secure.",
+      "p25": 19.25,
+      "p25_status": "available"
     }
   ],
   "source_notes": {
