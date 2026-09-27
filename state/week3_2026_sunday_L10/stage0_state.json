@@ -1,0 +1,9 @@
+{
+  "stage": 0,
+  "season": 2026,
+  "week": 3,
+  "scope": "Sunday only",
+  "historical_sample": "L10",
+  "historical_cutoff": "End of Week 2",
+  "state_id": "stage0-week3-sunday-l10"
+}
