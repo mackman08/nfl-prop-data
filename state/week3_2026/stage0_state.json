@@ -1,0 +1,16 @@
+{
+  "stage": 0,
+  "season": 2026,
+  "week": 3,
+  "scope": "Sunday only",
+  "historical_sample": "L10",
+  "historical_cutoff": "2026-09-22T23:59:59-04:00",
+  "record_count": 0,
+  "state_id": "STATE-0-W3-2026-REPAIR-01",
+  "parent_state_id": null,
+  "records": [],
+  "sources": {
+    "historical": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
+    "sportsbook": "odds/nfl_player_props_latest.csv"
+  }
+}
