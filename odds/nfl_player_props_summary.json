@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 708,
-      "Receiving Yards": 1865,
-      "Receptions": 1160,
-      "Rushing Yards": 1031
+      "Passing Yards": 83,
+      "Receiving Yards": 226,
+      "Receptions": 145,
+      "Rushing Yards": 125
     },
     "FanDuel": {
-      "Passing Yards": 29,
-      "Receiving Yards": 172,
-      "Receptions": 168,
-      "Rushing Yards": 86
+      "Passing Yards": 6,
+      "Receiving Yards": 27,
+      "Receptions": 27,
+      "Rushing Yards": 14
     }
   },
   "core_markets_present": [
@@ -20,20 +20,35 @@
     "Rushing Yards"
   ],
   "duplicates": 0,
+  "event_ids": [
+    "34118030",
+    "34118083",
+    "35605982",
+    "36076219",
+    "36104915"
+  ],
+  "games": [
+    "Indianapolis Colts @ Washington Commanders",
+    "PHI Eagles @ CHI Bears",
+    "PIT Steelers @ CLE Browns",
+    "Philadelphia Eagles @ Chicago Bears",
+    "Pittsburgh Steelers @ Cleveland Browns"
+  ],
   "markets": {
-    "Alt Passing Yards": 275,
-    "Alt Receiving Yards": 1569,
-    "Alt Receptions": 945,
-    "Alt Rushing Yards": 685,
-    "Passing Yards": 737,
-    "Receiving Yards": 2037,
-    "Receptions": 1328,
-    "Rush + Receiving Yards": 574,
-    "Rushing Yards": 1117
+    "Alt Passing Yards": 32,
+    "Alt Receiving Yards": 190,
+    "Alt Receptions": 117,
+    "Alt Rushing Yards": 81,
+    "Passing Yards": 89,
+    "Receiving Yards": 253,
+    "Receptions": 172,
+    "Rush + Receiving Yards": 49,
+    "Rushing Yards": 139
   },
   "sportsbooks": {
-    "DraftKings": 5338,
-    "FanDuel": 3929
+    "DraftKings": 628,
+    "FanDuel": 494
   },
-  "total_rows": 9267
+  "total_rows": 1122,
+  "validation_mode": "slate-size-agnostic"
 }
