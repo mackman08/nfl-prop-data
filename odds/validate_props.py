@@ -293,3 +293,4 @@ if __name__ == "__main__":
     main()
 
 # Single-game slate validation is intentionally supported.
+# Validation must not assume a full Sunday slate.
