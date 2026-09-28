@@ -2,20 +2,19 @@
   "stage": 0,
   "season": 2026,
   "week": 3,
-  "scope": "Sunday only",
+  "scope": "Monday only",
   "historical_sample": "L10",
   "historical_cutoff": {
     "rule": "completion of the final scheduled game of Week 2",
     "week": 2,
-    "date": "2026-09-21",
-    "basis": "Week 2 concluded with Giants at Rams on Monday, September 21, 2026"
+    "date": "2026-09-21"
   },
   "record_count": 1,
-  "state_id": "STATE-0-20260926-2318",
+  "state_id": "STATE-0-20260928-MONDAY",
   "parent_state_id": null,
   "records": [
     {
-      "analysis_scope": "NFL Week 3, 2026 Regular Season — Sunday only",
+      "analysis_scope": "NFL Week 3, 2026 Regular Season — Monday only",
       "historical_sample_n": 10,
       "historical_sample_label": "L10",
       "historical_cutoff": "Completion of the final scheduled game of Week 2 (September 21, 2026)"
@@ -23,6 +22,5 @@
   ],
   "historical_data_source": "mackman08/nfl-prop-data — data/nfl_prop_model.txt",
   "current_sportsbook_source": "odds/nfl_player_props_latest.csv — FanDuel primary; DraftKings fallback only when specified",
-  "locked": true,
-  "content_hash_sha256": "bb5844989fa1a366332bbab3013743696af886790ede16f60bee10a488107ea"
+  "locked": true
 }
