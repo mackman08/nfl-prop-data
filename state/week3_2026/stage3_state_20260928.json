@@ -1,0 +1,185 @@
+{
+  "stage": 3,
+  "season": 2026,
+  "week": 3,
+  "scope": "Monday only",
+  "analysis_scope": "NFL Week 3, 2026 Regular Season — Monday only",
+  "historical_sample": "L10",
+  "historical_cutoff": "2026-09-21",
+  "current_week_game": "Philadelphia Eagles @ Chicago Bears — Monday, September 28, 2026, 8:15 PM ET",
+  "state_id": "STATE-3-20260928-MONDAY",
+  "parent_state_id": "STATE-2-20260928-MONDAY-RERUN",
+  "stage2_candidate_count": 8,
+  "records": [
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "threshold": "15+",
+      "band": "FLOOR",
+      "historical_hr": "9/10",
+      "classification": "Supportive",
+      "context": {
+        "role_workload": "12 touches in each of first two games; 20 carries for 147 yards through Week 2, while D'Andre Swift has 34 carries. Monangai has been the efficient complementary back and remains part of a two-back rotation.",
+        "usage": "Week 2: 10 carries for 47 yards and 2 targets; season rushing total 147 yards.",
+        "matchup": "Chicago entered Week 3 leading the NFL in rushing at 212.5 yards/game; Philadelphia had allowed 254 rushing yards through two games and was described as a vulnerable run defense. Eagles preview specifically identified stopping Chicago's run game as a key issue.",
+        "injury": "Full participation Friday; latest NFL report lists no game-status restriction for Monangai.",
+        "qb": "Caleb Williams is out. Tyson Bagent cleared concussion protocol but the Bears had uncertainty over the starter; reporting indicated Case Keenum was prepared to start. Less QB mobility can shift more emphasis toward the backs.",
+        "scheme_game_script": "Chicago's offensive identity is run-heavy, and Philadelphia's run-defense vulnerability creates a supportive path. Rotation with Swift caps workload volatility.",
+        "weather": "Clear, about 65F, light wind, essentially no precipitation risk."
+      },
+      "implication": "The 15+ floor is strongly supported by current role and matchup; the 40+ core also has a favorable contextual setup, but Monangai's secondary role keeps workload from being unambiguously concentrated."
+    },
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "threshold": "40+",
+      "band": "CORE",
+      "historical_hr": "6/10",
+      "classification": "Supportive",
+      "context": {
+        "role_workload": "12 touches in each of first two games; 10 carries in Week 2.",
+        "usage": "147 rushing yards through two games; 47 yards on 10 carries in Week 2.",
+        "matchup": "Eagles allowed 254 rushing yards through two games; Chicago's run game ranked first in the NFL entering Week 3.",
+        "injury": "Full participation; no current game-status restriction.",
+        "qb": "Williams out; reduced QB rushing threat could concentrate more designed/standard rushing workload on RBs, although Bagent/Keenum uncertainty affects overall offensive efficiency.",
+        "scheme_game_script": "Strong run-first identity; Monangai remains behind Swift in the backfield rotation, making the 40+ threshold more workload-sensitive than the 15+ floor.",
+        "weather": "Clear and mild with light wind."
+      },
+      "implication": "Current-week context supports the core threshold, with rotation volume the main counterweight."
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "threshold": "10+",
+      "band": "FLOOR",
+      "historical_hr": "10/10",
+      "classification": "Mixed",
+      "context": {
+        "role_workload": "65% snap share through two games; 42 offensive snaps in Week 2.",
+        "usage": "12 targets through two games; Week 2 produced 7 targets, 3 receptions and 32 yards.",
+        "matchup": "Philadelphia's pass defense has been stronger than its run defense; Chicago's official preview describes the Eagles as a defense that limits explosives and makes offenses sustain long drives.",
+        "injury": "No current active injury designation identified for Burden.",
+        "qb": "Caleb Williams is out. Bagent cleared concussion protocol, but Chicago's starter remained uncertain in official reporting; external reporting indicated Keenum could start. Quarterback change is a negative for receiving efficiency.",
+        "competition": "Burden has a 21.4% team target share through two games, second among Bears players listed in the target-share source, so opportunity remains meaningful.",
+        "scheme_game_script": "Heavy rushing identity may reduce total passing volume; however, Burden's target share gives him a stable opportunity base.",
+        "weather": "Clear, mild, light wind."
+      },
+      "implication": "The 10+ floor is supported by target volume and 10/10 historical evidence, but the quarterback downgrade prevents a fully supportive classification."
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "threshold": "40+",
+      "band": "CORE",
+      "historical_hr": "6/10",
+      "classification": "Concern",
+      "context": {
+        "role_workload": "65% season snap share; 57% in Week 2, with 7 targets.",
+        "usage": "12 targets in two games, but only 95 receiving yards total and 32 in Week 2.",
+        "matchup": "Eagles' pass defense is the stronger side of the Philadelphia defense; Chicago is expected to face a shell-oriented defense designed to limit explosives.",
+        "injury": "No current active injury designation identified.",
+        "qb": "Williams out; Bagent/Keenum transition is the largest current-week negative for a 40+ receiving threshold.",
+        "competition": "21.4% target share is encouraging, but Kalif Raymond also has substantial target involvement and the Bears use multiple receiving options.",
+        "scheme_game_script": "Run-first offense and uncertain QB quality make a 40+ receiving threshold more dependent on efficiency than pure volume.",
+        "weather": "Clear, light wind."
+      },
+      "implication": "Volume keeps the candidate alive, but the QB change, pass matchup and 40+ efficiency requirement create meaningful contextual concern."
+    },
+    {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "threshold": "5+",
+      "band": "FLOOR",
+      "historical_hr": "9/10",
+      "classification": "Mixed",
+      "context": {
+        "role_workload": "66% snap share through two games; 62 snaps in Week 2.",
+        "usage": "7 targets through two games; 52 yards in Week 2. Season total 95 receiving yards.",
+        "matchup": "Philadelphia presents a stronger pass-defense environment than its run-defense environment, and Chicago's offense may lean toward the run.",
+        "injury": "Current player feeds report no active injury designation; prior calf issue was reported resolved.",
+        "qb": "Williams out; QB uncertainty/possible Keenum start lowers receiving efficiency.",
+        "competition": "Burden and Raymond have substantial target shares; Odunze's 12.5% target share through two games is below Burden's.",
+        "scheme_game_script": "Starter-level snap volume provides a role floor, but passing efficiency and target concentration are uncertain.",
+        "weather": "Clear, mild, light wind."
+      },
+      "implication": "The 5+ floor has substantial structural support from role and low threshold, but current QB conditions make the context mixed rather than cleanly supportive."
+    },
+    {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "threshold": "40+",
+      "band": "CORE",
+      "historical_hr": "6/10",
+      "classification": "Concern",
+      "context": {
+        "role_workload": "66% season snap share, including 84% in Week 2, but only 7 targets through two games.",
+        "usage": "95 receiving yards through two games; Week 2: 4 targets and 52 yards.",
+        "matchup": "Eagles' pass defense is the tougher side of the matchup; Philadelphia's defensive approach emphasizes limiting explosives.",
+        "injury": "No active injury designation identified.",
+        "qb": "Williams out; Bagent/Keenum uncertainty is a direct negative for a 40+ receiving threshold.",
+        "competition": "12.5% target share through two games trails Burden and Raymond, limiting certainty that his strong snap rate becomes high target volume.",
+        "scheme_game_script": "Chicago's strong rushing identity can reduce pass attempts, increasing the efficiency requirement for 40+.",
+        "weather": "Clear and low wind."
+      },
+      "implication": "The 40+ core remains historically viable, but current-week context is unfavorable because the threshold needs both enough targets and efficient QB play."
+    },
+    {
+      "player": "Cole Kmet",
+      "team": "CHI",
+      "market": "Receptions",
+      "threshold": "1+",
+      "band": "FLOOR",
+      "historical_hr": "9/10",
+      "classification": "Concern",
+      "context": {
+        "role_workload": "63% snap share through two games, but only 13 routes in Week 2 while playing 51 of 74 offensive snaps.",
+        "usage": "4 targets through two games; Week 2: 1 target, 0 catches.",
+        "matchup": "Philadelphia's defense can make drives long, but Kmet's individual route participation limits the translation of snaps into reception opportunities.",
+        "injury": "No current active injury designation identified.",
+        "qb": "Williams out; quarterback transition is an additional efficiency concern.",
+        "competition": "Colston Loveland has dominated TE snaps (87% through two games), while Kmet has been used heavily as a blocker.",
+        "scheme_game_script": "Multiple-TE usage and blocking assignments materially reduce Kmet's receiving route volume.",
+        "weather": "Clear, mild, light wind."
+      },
+      "implication": "The 1+ floor has 9/10 historical support, but current usage is a clear contextual concern because his snap count materially overstates his route volume."
+    },
+    {
+      "player": "Cole Kmet",
+      "team": "CHI",
+      "market": "Receptions",
+      "threshold": "2+",
+      "band": "CORE",
+      "historical_hr": "8/10",
+      "classification": "Concern",
+      "context": {
+        "role_workload": "51 of 74 snaps in Week 2 but only 13 pass routes.",
+        "usage": "Only 4 targets across two games and one target in Week 2.",
+        "matchup": "Eagles matchup does not solve the underlying route-volume issue; long-drive potential is not enough without receiving participation.",
+        "injury": "No current active injury designation identified.",
+        "qb": "Williams out; Bagent/Keenum transition adds further uncertainty.",
+        "competition": "Loveland has an 87% snap share through two games and is taking the more prominent TE workload.",
+        "scheme_game_script": "Chicago uses Kmet extensively as a blocker; 2+ receptions therefore requires a meaningful increase in route/target involvement.",
+        "weather": "Clear, mild, light wind."
+      },
+      "implication": "The 2+ core is historically supported but current role/route data creates a clear contextual concern and materially weakens the case for final selection."
+    }
+  ],
+  "validation": {
+    "stage2_state_loaded": true,
+    "stage2_parent_state_matches": true,
+    "exact_8_candidates_analyzed": true,
+    "no_new_players_or_markets": true,
+    "no_stage1_rescreen": true,
+    "historical_hr_unchanged": true,
+    "historical_samples_unchanged": true,
+    "stage2_structure_unchanged": true,
+    "current_week_context_separate": true,
+    "stage3_complete": true
+  }
+}
