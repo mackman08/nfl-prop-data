@@ -46,27 +46,18 @@ BAD_PLAYER_SUFFIXES = [
     "Rushing + Receiving Yards",
 ]
 
-MIN_TOTAL_ROWS = 1000
-MIN_DK_ROWS = 1000
-MIN_FD_ROWS = 25
-
-# These are expected to be available from both books.
-# Thresholds are intentionally conservative to catch partial
-# sportsbook responses without depending on an exact row count.
-MIN_CORE_ROWS_BY_BOOK = {
-    "DraftKings": {
-        "Passing Yards": 50,
-        "Receiving Yards": 100,
-        "Receptions": 50,
-        "Rushing Yards": 50,
-    },
-    "FanDuel": {
-        "Passing Yards": 10,
-        "Receiving Yards": 25,
-        "Receptions": 15,
-        "Rushing Yards": 15,
-    },
-}
+# Validation is slate-size agnostic.
+#
+# The collector is intentionally allowed to run against a single-game slate
+# (for example Monday Night Football). Full-slate row-count minimums such as
+# 1,000 DK rows / 25 FD rows are therefore invalid as completeness tests.
+#
+# Completeness is checked structurally instead:
+#   * both expected sportsbooks are present
+#   * all four core markets are represented
+#   * each sportsbook has every core market
+#   * every row has a valid game/event/player/line
+#   * duplicate rows are rejected
 
 
 def main():
@@ -141,7 +132,6 @@ def main():
             )
 
         for field in ["over_odds", "under_odds"]:
-
             value = row.get(field, "").strip()
 
             if value:
@@ -156,7 +146,6 @@ def main():
     duplicates = 0
 
     for row in rows:
-
         key = tuple(
             row.get(column, "")
             for column in EXPECTED_COLUMNS
@@ -168,75 +157,37 @@ def main():
             seen.add(key)
 
     if duplicates:
-        errors.append(
-            f"Duplicate rows: {duplicates}"
-        )
+        errors.append(f"Duplicate rows: {duplicates}")
 
-    market_counts = Counter(
-        row["market"]
-        for row in rows
-    )
-
-    sportsbook_counts = Counter(
-        row["sportsbook"]
-        for row in rows
-    )
-
+    market_counts = Counter(row["market"] for row in rows)
+    sportsbook_counts = Counter(row["sportsbook"] for row in rows)
     book_market_counts = Counter(
-        (
-            row["sportsbook"],
-            row["market"],
-        )
+        (row["sportsbook"], row["market"])
         for row in rows
     )
+    games = sorted({row["game"] for row in rows if row.get("game")})
+    event_ids = sorted({row["event_id"] for row in rows if row.get("event_id")})
+
+    print()
+    print("Slate:")
+    print("  Games:", len(games))
+    for game in games:
+        print("   ", game)
+    print("  Event IDs:", len(event_ids))
 
     print()
     print("Sportsbooks:")
-
-    for book, count in sorted(
-        sportsbook_counts.items()
-    ):
+    for book, count in sorted(sportsbook_counts.items()):
         print(f"  {book}: {count}")
 
     print()
     print("Markets:")
-
-    for market, count in sorted(
-        market_counts.items()
-    ):
+    for market, count in sorted(market_counts.items()):
         print(f"  {market}: {count}")
 
     if set(sportsbook_counts) != ALLOWED_SPORTSBOOKS:
         errors.append(
             "Expected both DraftKings and FanDuel."
-        )
-
-    dk_rows = sportsbook_counts.get(
-        "DraftKings",
-        0
-    )
-
-    fd_rows = sportsbook_counts.get(
-        "FanDuel",
-        0
-    )
-
-    if len(rows) < MIN_TOTAL_ROWS:
-        errors.append(
-            f"Suspiciously few total rows: {len(rows)} "
-            f"(minimum {MIN_TOTAL_ROWS})"
-        )
-
-    if dk_rows < MIN_DK_ROWS:
-        errors.append(
-            f"Suspiciously few DraftKings rows: {dk_rows} "
-            f"(minimum {MIN_DK_ROWS})"
-        )
-
-    if fd_rows < MIN_FD_ROWS:
-        errors.append(
-            f"Suspiciously few FanDuel rows: {fd_rows} "
-            f"(minimum {MIN_FD_ROWS})"
         )
 
     core_markets = {
@@ -247,35 +198,29 @@ def main():
     }
 
     for market in core_markets:
-
-        count = market_counts.get(
-            market,
-            0
-        )
+        count = market_counts.get(market, 0)
 
         if count == 0:
             errors.append(
                 f"Missing core market: {market}"
             )
 
-    # Per-sportsbook core-market coverage.
-    for book, market_limits in MIN_CORE_ROWS_BY_BOOK.items():
-
-        for market, minimum in market_limits.items():
-
+    # Each sportsbook must contribute every core market, but the required
+    # count is deliberately 1+ rather than a full-slate minimum.
+    for book in sorted(ALLOWED_SPORTSBOOKS):
+        for market in sorted(core_markets):
             count = book_market_counts.get(
                 (book, market),
                 0
             )
 
-            if count < minimum:
+            if count < 1:
                 errors.append(
-                    f"Insufficient {book} {market}: "
-                    f"{count} rows (minimum {minimum})"
+                    f"Missing {book} {market}: "
+                    f"0 rows"
                 )
 
     if errors:
-
         print()
         print("=" * 60)
         print("VALIDATION FAILED")
@@ -293,6 +238,8 @@ def main():
 
     summary = {
         "total_rows": len(rows),
+        "games": games,
+        "event_ids": event_ids,
         "sportsbooks": dict(
             sorted(sportsbook_counts.items())
         ),
@@ -307,11 +254,11 @@ def main():
                     (book, market),
                     0
                 )
-                for market in sorted(market_limits)
+                for market in sorted(core_markets)
             }
-            for book, market_limits
-            in MIN_CORE_ROWS_BY_BOOK.items()
+            for book in sorted(ALLOWED_SPORTSBOOKS)
         },
+        "validation_mode": "slate-size-agnostic",
     }
 
     with open(
@@ -331,11 +278,13 @@ def main():
     print("=" * 60)
     print("VALIDATION PASSED")
     print("Rows:", len(rows))
-    print("DraftKings:", dk_rows)
-    print("FanDuel:", fd_rows)
+    print("Games:", len(games))
+    print("DraftKings:", sportsbook_counts.get("DraftKings", 0))
+    print("FanDuel:", sportsbook_counts.get("FanDuel", 0))
     print("Duplicates: 0")
     print("Core markets present: 4/4")
     print("Per-book core-market coverage: PASS")
+    print("Validation mode: slate-size-agnostic")
     print("Summary:", SUMMARY_FILE)
     print("=" * 60)
 
