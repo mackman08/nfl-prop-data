@@ -1,0 +1,84 @@
+{
+  "stage": 5,
+  "season": 2026,
+  "week": 3,
+  "scope": "Monday only",
+  "historical_sample": "L10",
+  "historical_cutoff": "2026-09-21",
+  "state_id": "STATE-5-20260928-MONDAY",
+  "parent_state_id": "STATE-4-20260928-MONDAY",
+  "sportsbook": {
+    "book": "FanDuel",
+    "file": "odds/nfl_player_props_latest.csv",
+    "blob_sha": "20f14171566d7c94026d94089ebd164fe92b7f2a",
+    "event_id": "36076219"
+  },
+  "portfolios": {
+    "LOW VARIANCE": {
+      "status": "VALID",
+      "max_legs": 2,
+      "target": "+100 to +150",
+      "legs": [
+        [
+          "Kyle Monangai",
+          "CHI",
+          "Rushing Yards",
+          "30+",
+          "8/10",
+          "-220 FD"
+        ],
+        [
+          "Luther Burden III",
+          "CHI",
+          "Receiving Yards",
+          "30+",
+          "9/10",
+          "-154 FD"
+        ]
+      ],
+      "estimated_combined_odds": "+140",
+      "context": "Both legs meet the Low Variance historical hierarchy; Monangai is Supportive and Burden is Mixed, with no Stage 3 Concern. Same-game concentration is unavoidable because the Monday-only slate is one game."
+    },
+    "BALANCED": {
+      "status": "NOT FEASIBLE",
+      "max_legs": 2,
+      "target": "+200 to +400",
+      "binding_constraint": "No valid two-leg construction reaches +200 using eligible ≥70% L10 legs without using Cole Kmet 2+ receptions (+126), which carries a Stage 3 Concern. Using Kmet would violate the common no-material-concern rule."
+    },
+    "PRICE SEEKING — LOW": {
+      "status": "NOT FEASIBLE",
+      "max_legs": 3,
+      "target": "+400 to +700",
+      "binding_constraint": "Requires the plus-money Kmet 2+ receptions leg (+126) to reach the target with three eligible legs; Kmet carries a Stage 3 Concern, so the construction is not valid under the locked rules."
+    },
+    "PRICE SEEKING — MEDIUM": {
+      "status": "NOT FEASIBLE",
+      "max_legs": 4,
+      "target": "+700 to +1000",
+      "binding_constraint": "The strongest four-distinct-player construction using the eligible conservative thresholds reaches only +944 and requires Kmet 2+ receptions (+126), which has a Stage 3 Concern."
+    },
+    "PRICE SEEKING — HIGH": {
+      "status": "NOT FEASIBLE",
+      "max_legs": 5,
+      "target": ">+1000",
+      "binding_constraint": "Even the strongest four-distinct-player construction available from the locked Stage 3 candidate set reaches approximately +944, below the >+1000 target; adding another permitted leg is not possible without introducing an unsupported prop/player."
+    }
+  },
+  "integrity": {
+    "stage1_locked": true,
+    "stage2_locked": true,
+    "stage3_locked": true,
+    "stage4_locked": true,
+    "low_variance_exactly_2": true,
+    "low_variance_tier1": true,
+    "low_variance_no_leg_below_70": true,
+    "balanced_no_leg_below_70": true,
+    "price_seeking_no_leg_below_70": true,
+    "no_new_players_or_props": true,
+    "no_portfolio_forced": true,
+    "combined_odds_verified": true,
+    "stage5_fully_feasible": false
+  },
+  "status": "FEASIBILITY_BLOCKED",
+  "next_action": "Await explicit user direction before relaxing any construction constraint."
+}
