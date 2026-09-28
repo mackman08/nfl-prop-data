@@ -15,7 +15,7 @@
   "current_week_context": {
     "game": "Philadelphia Eagles @ Chicago Bears",
     "kickoff": "2026-09-28 8:15 PM EDT",
-    "quarterback": "Caleb Williams is out. Tyson Bagent cleared concussion protocol and is available; NFL Network reports Case Keenum is expected to start. Chicago prepared Keenum for most of the week.",
+    "quarterback": "Caleb Williams is out with a hamstring injury. Tyson Bagent cleared concussion protocol and is available; the latest Philadelphia Eagles update had not yet confirmed whether Bagent or Case Keenum would start. This creates quarterback-efficiency uncertainty for Chicago's passing props.",
     "bears_rushing": "Chicago entered Week 3 averaging 212.5 rushing yards/game. Kyle Monangai had 147 rushing yards on 20 carries through two games.",
     "eagles_run_defense": "Philadelphia identified Chicago's rushing attack as a primary defensive focus.",
     "injuries": "Eagles: Marquise Brown, Dallas Goedert and Fred Johnson out. Bears: Caleb Williams, Shemar Turner and Noah Sewell out. Kyle Monangai full participation; DeVonta Smith available.",
@@ -147,15 +147,17 @@
     "historical_samples_changed": false,
     "new_players_added": false,
     "stage2_structure_changed": false,
-    "context_only": true
+    "context_only": true,
+    "source_refresh": "Updated to latest verified current-week sources; locked historical state unchanged."
   },
   "sources": [
-    "NFL official injury report: https://www.nfl.com/injuries/",
-    "NFL Network — Case Keenum expected to start: https://www.nfl.com/news/nfl-network-case-keenum-expected-to-start-for-bears-vs-eagles",
-    "Chicago Bears Week 3 preview: https://www.chicagobears.com/news/game-preview-eagles-vs-bears-2026-week-3",
-    "Chicago Bears player logs: https://www.chicagobears.com/team/players-roster/rome-odunze/logs/ and https://www.chicagobears.com/team/players-roster/luther-burden-iii/logs/",
-    "Philadelphia Eagles Week 3 preview: https://www.philadelphiaeagles.com/news/eagles-at-bears-game-preview-6-storylines-to-follow-2026-week-3-nfl-regular-season-monday-night-football-jalen-hurts-caleb-williams",
-    "NWS Chicago forecast: https://forecast.weather.gov/"
+    "NFL official Week 3 injury report: https://www.nfl.com/injuries/",
+    "Philadelphia Eagles Week 3 injury update (Sep. 27): https://www.philadelphiaeagles.com/news/eagles-at-bears-injury-report-2026-nfl-week-3-monday-night-football-caleb-williams-saquon-barkley",
+    "Philadelphia Eagles Week 3 game preview: https://www.philadelphiaeagles.com/news/eagles-at-bears-game-preview-6-storylines-to-follow-2026-week-3-nfl-regular-season-monday-night-football-jalen-hurts-caleb-williams",
+    "Chicago Bears Week 2 game recap: https://www.chicagobears.com/news/game-recap-bears-fall-to-1-1-with-loss-to-vikings",
+    "Chicago Bears Rome Odunze 2026 logs: https://www.chicagobears.com/team/players-roster/rome-odunze/logs/",
+    "Chicago Bears Luther Burden III 2026 logs: https://www.chicagobears.com/team/players-roster/luther-burden-iii/logs/",
+    "NFL Kyle Monangai 2026 stats: https://www.nfl.com/players/kyle-monangai/stats/"
   ],
   "locked": true
 }
