@@ -1,0 +1,108 @@
+{
+  "stage": 4,
+  "season": 2026,
+  "week": 3,
+  "scope": "Monday only",
+  "analysis_scope": "NFL Week 3, 2026 Regular Season — Monday only",
+  "historical_sample": "L10",
+  "historical_cutoff": "2026-09-21",
+  "current_week_game": "Philadelphia Eagles @ Chicago Bears — Monday, September 28, 2026, 8:15 PM ET",
+  "state_id": "STATE-4-20260928-MONDAY",
+  "parent_state_id": "STATE-3-20260928-MONDAY",
+  "sportsbook_source": {
+    "file": "odds/nfl_player_props_latest.csv",
+    "sportsbook": "FanDuel",
+    "blob_sha": "20f14171566d7c94026d94089ebd164fe92b7f2a",
+    "event_id": "36076219"
+  },
+  "final_evaluated_prop_cards": [
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "historical_hr": "6/10",
+      "threshold": "40+",
+      "sportsbook_price": "-108 FD",
+      "current_week_context": "Supportive: Chicago entered Week 3 with the NFL's top rushing output; Philadelphia had allowed 254 rushing yards through two games. Monangai had 12 touches in each of the first two games and no active game-status restriction.",
+      "final_read": "SELECT — strongest convergence of locked historical evidence, Core structure, and current-week context. The main risk is the two-back rotation with D'Andre Swift."
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "historical_hr": "6/10",
+      "threshold": "40+",
+      "sportsbook_price": "+116 FD",
+      "current_week_context": "Concern: 12 targets through two games provide opportunity, but the Caleb Williams absence/quarterback uncertainty, Philadelphia's stronger pass-defense profile, and Chicago's run-heavy identity make 40+ efficiency-sensitive.",
+      "final_read": "PASS — historical qualification is intact, but the current-week context does not provide enough support."
+    },
+    {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "historical_hr": "6/10",
+      "threshold": "40+",
+      "sportsbook_price": "+220 FD",
+      "current_week_context": "Concern: starter-level snaps and 95 yards through two games are positives, but only seven targets, quarterback uncertainty and the Eagles' stronger pass-defense environment create a weak contextual setup for 40+.",
+      "final_read": "PASS — the Core threshold is historically viable but lacks sufficient current-week support."
+    },
+    {
+      "player": "Cole Kmet",
+      "team": "CHI",
+      "market": "Receptions",
+      "historical_hr": "8/10",
+      "threshold": "2+",
+      "sportsbook_price": "+126 FD",
+      "current_week_context": "Concern: only four targets through two games and just 13 routes in Week 2 despite 51 snaps; Colston Loveland has commanded the larger TE snap share.",
+      "final_read": "PASS — strong historical HR is outweighed by the current route/target profile."
+    }
+  ],
+  "selected_props": [
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "historical_hr": "6/10",
+      "threshold": "40+",
+      "sportsbook_price": "-108 FD",
+      "floor_core_ceiling": "CORE",
+      "historical_evidence": "6 of 10 locked L10 games reached 40+ rushing yards: [47,100,14,38,50,33,57,130,48,23].",
+      "distribution_floor_evidence": "Core threshold; 25P unavailable in the locked Stage 1 data. The lower Floor was 15+ at 9/10, while 40+ is the highest alternate meeting the 60% requirement.",
+      "current_week_context": "Supportive run environment and favorable Philadelphia rushing matchup; workload rotation with Swift is the principal risk.",
+      "model_judgment": "SELECT"
+    }
+  ],
+  "rejected_core": [
+    {
+      "player": "Luther Burden III",
+      "threshold": "40+",
+      "historical_hr": "6/10",
+      "reason": "Concern current-week context"
+    },
+    {
+      "player": "Rome Odunze",
+      "threshold": "40+",
+      "historical_hr": "6/10",
+      "reason": "Concern current-week context"
+    },
+    {
+      "player": "Cole Kmet",
+      "threshold": "2+",
+      "historical_hr": "8/10",
+      "reason": "Concern current-week usage/route volume"
+    }
+  ],
+  "validation": {
+    "stage3_state_loaded": true,
+    "stage3_parent_state_matches": true,
+    "stage2_state_preserved": true,
+    "stage1_state_preserved": true,
+    "no_prior_stage_reconstruction": true,
+    "current_fanduel_information_verified": true,
+    "selected_threshold_verified": true,
+    "selected_price_verified": true,
+    "historical_denominator_exact": true,
+    "no_locked_stage_alteration": true,
+    "stage4_complete": true
+  }
+}
