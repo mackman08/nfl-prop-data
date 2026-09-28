@@ -1,0 +1,546 @@
+{
+  "stage": 2,
+  "season": 2026,
+  "week": 3,
+  "scope": "Monday only",
+  "analysis_scope": "NFL Week 3, 2026 Regular Season — Monday only",
+  "historical_sample": "L10",
+  "historical_sample_n": 10,
+  "historical_cutoff": "2026-09-21",
+  "current_week_game": "Philadelphia Eagles @ Chicago Bears — Monday, September 28, 2026, 8:15 PM ET",
+  "state_id": "STATE-2-20260928-MONDAY-RERUN",
+  "parent_state_id": "STATE-1-RERUN-2026-W03-MON-L10-20260928",
+  "input_validation": {
+    "status": "VALID",
+    "stage1_record_count": 4,
+    "reconstruction_required": false
+  },
+  "historical_source": {
+    "repository": "mackman08/nfl-prop-data",
+    "file": "data/nfl_prop_model.txt",
+    "blob_sha": "80d96a83b2f8295bacb3a4d6bbf24631a25d44f2"
+  },
+  "sportsbook_source": {
+    "file": "odds/nfl_player_props_latest.csv",
+    "sportsbook": "FanDuel",
+    "blob_sha": "20f14171566d7c94026d94089ebd164fe92b7f2a",
+    "event_id": "36076219"
+  },
+  "records": [
+    {
+      "player": "Kyle Monangai",
+      "market": "Rushing Yards",
+      "historical_l10_observations": [
+        47,
+        100,
+        14,
+        38,
+        50,
+        33,
+        57,
+        130,
+        48,
+        23
+      ],
+      "alternates": [
+        {
+          "threshold": 15,
+          "historical_hr": "9/10",
+          "fanDuel_price": "-1000",
+          "band": "FLOOR"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "9/10",
+          "fanDuel_price": "-550",
+          "band": null
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "8/10",
+          "fanDuel_price": "-320",
+          "band": null
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "8/10",
+          "fanDuel_price": "-220",
+          "band": null
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "6/10",
+          "fanDuel_price": "-108",
+          "band": "CORE"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "4/10",
+          "fanDuel_price": "164",
+          "band": "CEILING"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "2/10",
+          "fanDuel_price": "270",
+          "band": null
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "2/10",
+          "fanDuel_price": "410",
+          "band": null
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "2/10",
+          "fanDuel_price": "630",
+          "band": null
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "2/10",
+          "fanDuel_price": "880",
+          "band": null
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "2/10",
+          "fanDuel_price": "1200",
+          "band": null
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "1/10",
+          "fanDuel_price": "1500",
+          "band": null
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 15,
+          "historical_hr": "9/10",
+          "fanDuel_price": "-1000",
+          "band": "FLOOR"
+        },
+        "core": {
+          "threshold": 40,
+          "historical_hr": "6/10",
+          "fanDuel_price": "-108",
+          "band": "CORE"
+        },
+        "ceiling": {
+          "threshold": 50,
+          "historical_hr": "4/10",
+          "fanDuel_price": "164",
+          "band": "CEILING"
+        }
+      }
+    },
+    {
+      "player": "Luther Burden III",
+      "market": "Receiving Yards",
+      "historical_l10_observations": [
+        32,
+        63,
+        35,
+        138,
+        84,
+        67,
+        33,
+        46,
+        27,
+        51
+      ],
+      "alternates": [
+        {
+          "threshold": 10,
+          "historical_hr": "10/10",
+          "fanDuel_price": "-800",
+          "band": "FLOOR"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "10/10",
+          "fanDuel_price": "-470",
+          "band": null
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "10/10",
+          "fanDuel_price": "-300",
+          "band": null
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "10/10",
+          "fanDuel_price": "-210",
+          "band": null
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "9/10",
+          "fanDuel_price": "-154",
+          "band": null
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "6/10",
+          "fanDuel_price": "116",
+          "band": "CORE"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "5/10",
+          "fanDuel_price": "194",
+          "band": "CEILING"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "4/10",
+          "fanDuel_price": "290",
+          "band": null
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "2/10",
+          "fanDuel_price": "430",
+          "band": null
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "2/10",
+          "fanDuel_price": "640",
+          "band": null
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "1/10",
+          "fanDuel_price": "880",
+          "band": null
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "1/10",
+          "fanDuel_price": "1200",
+          "band": null
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "1/10",
+          "fanDuel_price": "1500",
+          "band": null
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 10,
+          "historical_hr": "10/10",
+          "fanDuel_price": "-800",
+          "band": "FLOOR"
+        },
+        "core": {
+          "threshold": 40,
+          "historical_hr": "6/10",
+          "fanDuel_price": "116",
+          "band": "CORE"
+        },
+        "ceiling": {
+          "threshold": 50,
+          "historical_hr": "5/10",
+          "fanDuel_price": "194",
+          "band": "CEILING"
+        }
+      }
+    },
+    {
+      "player": "Rome Odunze",
+      "market": "Receiving Yards",
+      "historical_l10_observations": [
+        43,
+        52,
+        8,
+        53,
+        41,
+        86,
+        0,
+        114,
+        31,
+        32
+      ],
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": "9/10",
+          "fanDuel_price": "-700",
+          "band": "FLOOR"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "8/10",
+          "fanDuel_price": "-360",
+          "band": null
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "8/10",
+          "fanDuel_price": "-235",
+          "band": null
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "8/10",
+          "fanDuel_price": "-158",
+          "band": null
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "8/10",
+          "fanDuel_price": "-108",
+          "band": null
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "8/10",
+          "fanDuel_price": "128",
+          "band": null
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "6/10",
+          "fanDuel_price": "220",
+          "band": "CORE"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "4/10",
+          "fanDuel_price": "360",
+          "band": "CEILING"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "2/10",
+          "fanDuel_price": "580",
+          "band": null
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "2/10",
+          "fanDuel_price": "800",
+          "band": null
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "2/10",
+          "fanDuel_price": "1200",
+          "band": null
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "1/10",
+          "fanDuel_price": "1500",
+          "band": null
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 5,
+          "historical_hr": "9/10",
+          "fanDuel_price": "-700",
+          "band": "FLOOR"
+        },
+        "core": {
+          "threshold": 40,
+          "historical_hr": "6/10",
+          "fanDuel_price": "220",
+          "band": "CORE"
+        },
+        "ceiling": {
+          "threshold": 50,
+          "historical_hr": "4/10",
+          "fanDuel_price": "360",
+          "band": "CEILING"
+        }
+      }
+    },
+    {
+      "player": "Cole Kmet",
+      "market": "Receptions",
+      "historical_l10_observations": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        5
+      ],
+      "alternates": [
+        {
+          "threshold": 1,
+          "historical_hr": "9/10",
+          "fanDuel_price": "-350",
+          "band": "FLOOR"
+        },
+        {
+          "threshold": 2,
+          "historical_hr": "8/10",
+          "fanDuel_price": "126",
+          "band": "CORE"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "2/10",
+          "fanDuel_price": "360",
+          "band": "CEILING"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "1/10",
+          "fanDuel_price": "850",
+          "band": null
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 1,
+          "historical_hr": "9/10",
+          "fanDuel_price": "-350",
+          "band": "FLOOR"
+        },
+        "core": {
+          "threshold": 2,
+          "historical_hr": "8/10",
+          "fanDuel_price": "126",
+          "band": "CORE"
+        },
+        "ceiling": {
+          "threshold": 3,
+          "historical_hr": "2/10",
+          "fanDuel_price": "360",
+          "band": "CEILING"
+        }
+      }
+    }
+  ],
+  "stage3_context_candidate_set": [
+    {
+      "player": "Kyle Monangai",
+      "market": "Rushing Yards",
+      "band": "FLOOR",
+      "threshold": 15,
+      "historical_hr": "9/10",
+      "fanDuel_price": "-1000"
+    },
+    {
+      "player": "Kyle Monangai",
+      "market": "Rushing Yards",
+      "band": "CORE",
+      "threshold": 40,
+      "historical_hr": "6/10",
+      "fanDuel_price": "-108"
+    },
+    {
+      "player": "Luther Burden III",
+      "market": "Receiving Yards",
+      "band": "FLOOR",
+      "threshold": 10,
+      "historical_hr": "10/10",
+      "fanDuel_price": "-800"
+    },
+    {
+      "player": "Luther Burden III",
+      "market": "Receiving Yards",
+      "band": "CORE",
+      "threshold": 40,
+      "historical_hr": "6/10",
+      "fanDuel_price": "116"
+    },
+    {
+      "player": "Rome Odunze",
+      "market": "Receiving Yards",
+      "band": "FLOOR",
+      "threshold": 5,
+      "historical_hr": "9/10",
+      "fanDuel_price": "-700"
+    },
+    {
+      "player": "Rome Odunze",
+      "market": "Receiving Yards",
+      "band": "CORE",
+      "threshold": 40,
+      "historical_hr": "6/10",
+      "fanDuel_price": "220"
+    },
+    {
+      "player": "Cole Kmet",
+      "market": "Receptions",
+      "band": "FLOOR",
+      "threshold": 1,
+      "historical_hr": "9/10",
+      "fanDuel_price": "-350"
+    },
+    {
+      "player": "Cole Kmet",
+      "market": "Receptions",
+      "band": "CORE",
+      "threshold": 2,
+      "historical_hr": "8/10",
+      "fanDuel_price": "126"
+    }
+  ],
+  "excluded_from_stage3": [
+    {
+      "player": "Kyle Monangai",
+      "market": "Rushing Yards",
+      "band": "CEILING",
+      "threshold": 50,
+      "historical_hr": "4/10",
+      "fanDuel_price": "164",
+      "reason": "Historical HR below 60%; not carried into Stage 3 candidate set."
+    },
+    {
+      "player": "Luther Burden III",
+      "market": "Receiving Yards",
+      "band": "CEILING",
+      "threshold": 50,
+      "historical_hr": "5/10",
+      "fanDuel_price": "194",
+      "reason": "Historical HR below 60%; not carried into Stage 3 candidate set."
+    },
+    {
+      "player": "Rome Odunze",
+      "market": "Receiving Yards",
+      "band": "CEILING",
+      "threshold": 50,
+      "historical_hr": "4/10",
+      "fanDuel_price": "360",
+      "reason": "Historical HR below 60%; not carried into Stage 3 candidate set."
+    },
+    {
+      "player": "Cole Kmet",
+      "market": "Receptions",
+      "band": "CEILING",
+      "threshold": 3,
+      "historical_hr": "2/10",
+      "fanDuel_price": "360",
+      "reason": "Historical HR below 60%; not carried into Stage 3 candidate set."
+    }
+  ],
+  "validation": {
+    "locked_stage1_player_market_universe_used": true,
+    "locked_stage1_l10_used": true,
+    "stage1_qualification_status_preserved": true,
+    "current_fanduel_alternate_data_used": true,
+    "no_line_movement_analysis": true,
+    "no_cross_book_analysis": true,
+    "no_context_analysis": true,
+    "no_historical_rebuild": true,
+    "no_fabricated_lines_or_prices": true,
+    "stage2_narrowed_to_8_floor_core_candidates": true,
+    "stage2_complete": true
+  }
+}
