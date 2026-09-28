@@ -15,11 +15,11 @@
   "current_week_context": {
     "game": "Philadelphia Eagles @ Chicago Bears",
     "kickoff": "2026-09-28 8:15 PM EDT",
-    "quarterback": "Caleb Williams is out with a hamstring injury. Tyson Bagent cleared concussion protocol and is available; the latest Philadelphia Eagles update had not yet confirmed whether Bagent or Case Keenum would start. This creates quarterback-efficiency uncertainty for Chicago's passing props.",
+    "quarterback": "Caleb Williams is out with a hamstring injury. Tyson Bagent is listed questionable with a concussion on the latest official NFL injury report; NFL Network reported Monday morning that Case Keenum is expected to start.",
     "bears_rushing": "Chicago entered Week 3 averaging 212.5 rushing yards/game. Kyle Monangai had 147 rushing yards on 20 carries through two games.",
     "eagles_run_defense": "Philadelphia identified Chicago's rushing attack as a primary defensive focus.",
     "injuries": "Eagles: Marquise Brown, Dallas Goedert and Fred Johnson out. Bears: Caleb Williams, Shemar Turner and Noah Sewell out. Kyle Monangai full participation; DeVonta Smith available.",
-    "weather": "NWS forecast for Chicago around the game window: mid-60s F, roughly 5-6 mph winds, 0% precipitation probability."
+    "weather": "NWS Chicago forecast: Monday mostly sunny, Monday night partly cloudy, about 5 mph winds, with patchy fog risk after 1 a.m.; no meaningful precipitation signal around the game window."
   },
   "candidates": [
     [
@@ -29,7 +29,7 @@
       "8/10",
       "+114 FD",
       "MIXED",
-      "2026: 95 yards over 2 games; starting WR, no Week 3 injury. Expected Keenum start creates pass-efficiency/volume concern. Weather neutral."
+      "2026: 95 yards over 2 games; starting WR, no Week 3 injury. Expected Keenum start creates pass-efficiency/volume concern; NFL Pro also reports a 12.3% target rate through two games and a difficult Eagles outside-CB matchup."
     ],
     [
       "Rome Odunze",
@@ -38,7 +38,7 @@
       "6/10",
       "+198 FD",
       "MIXED/CONCERN",
-      "Same QB concern; higher threshold requires more receiving production."
+      "Same QB concern; higher threshold requires more receiving production. Current context provides no offset to the 6/10 historical rate."
     ],
     [
       "Rome Odunze",
@@ -56,7 +56,7 @@
       "9/10",
       "-166 FD",
       "MIXED",
-      "2026: 95 yards over 2 games; starting WR, no Week 3 injury. Expected Keenum start is the principal negative contextual factor."
+      "2026: 95 yards over 2 games; starting WR, no Week 3 injury. NFL Pro reports a 21.8% target rate through two games, which supports opportunity, but the expected Keenum start is a negative contextual factor."
     ],
     [
       "Luther Burden III",
@@ -65,7 +65,7 @@
       "6/10",
       "+110 FD",
       "MIXED/CONCERN",
-      "Same QB concern; higher threshold requires more production."
+      "Same QB concern; higher threshold requires more production. Current context is mixed rather than a historical adjustment."
     ],
     [
       "Luther Burden III",
@@ -148,16 +148,16 @@
     "new_players_added": false,
     "stage2_structure_changed": false,
     "context_only": true,
-    "source_refresh": "Updated to latest verified current-week sources; locked historical state unchanged."
+    "source_refresh": "Updated to latest verified current-week sources; locked historical state unchanged.",
+    "latest_context": "Refreshed 2026-09-28 using latest NFL official injury report, NFL Network QB report, NFL Pro matchup data, and NWS Chicago forecast."
   },
   "sources": [
     "NFL official Week 3 injury report: https://www.nfl.com/injuries/",
-    "Philadelphia Eagles Week 3 injury update (Sep. 27): https://www.philadelphiaeagles.com/news/eagles-at-bears-injury-report-2026-nfl-week-3-monday-night-football-caleb-williams-saquon-barkley",
-    "Philadelphia Eagles Week 3 game preview: https://www.philadelphiaeagles.com/news/eagles-at-bears-game-preview-6-storylines-to-follow-2026-week-3-nfl-regular-season-monday-night-football-jalen-hurts-caleb-williams",
-    "Chicago Bears Week 2 game recap: https://www.chicagobears.com/news/game-recap-bears-fall-to-1-1-with-loss-to-vikings",
-    "Chicago Bears Rome Odunze 2026 logs: https://www.chicagobears.com/team/players-roster/rome-odunze/logs/",
-    "Chicago Bears Luther Burden III 2026 logs: https://www.chicagobears.com/team/players-roster/luther-burden-iii/logs/",
-    "NFL Kyle Monangai 2026 stats: https://www.nfl.com/players/kyle-monangai/stats/"
+    "NFL Network, Case Keenum expected to start for Bears vs. Eagles (Sep. 28, 2026): https://www.nfl.com/news/nfl-network-case-keenum-expected-to-start-for-bears-vs-eagles",
+    "NFL Pro, Rome Odunze Week 3 matchup data: https://pro.nfl.com/games/game/45c0ffe4-1313-11ef-afd1-646009f18b2e",
+    "Chicago Bears Week 3 game preview: https://www.chicagobears.com/news/game-preview-eagles-vs-bears-2026-week-3",
+    "Philadelphia Eagles defensive coordinator comments on Bears rushing attack: https://www.philadelphiaeagles.com/news/caleb-williams-or-not-the-eagles-defense-wont-change-its-preparation",
+    "NWS Chicago forecast: https://forecast.weather.gov/MapClick.php?lat=41.837&lon=-87.685"
   ],
   "locked": true
 }
