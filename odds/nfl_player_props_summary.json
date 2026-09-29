@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 296,
-      "Receiving Yards": 347,
+      "Passing Yards": 300,
+      "Receiving Yards": 345,
       "Receptions": 220,
-      "Rushing Yards": 213
+      "Rushing Yards": 214
     },
     "FanDuel": {
       "Passing Yards": 14,
-      "Receiving Yards": 29,
-      "Receptions": 29,
-      "Rushing Yards": 18
+      "Receiving Yards": 33,
+      "Receptions": 33,
+      "Rushing Yards": 19
     }
   },
   "core_markets_present": [
@@ -51,20 +51,20 @@
     "Pittsburgh Steelers @ Cleveland Browns"
   ],
   "markets": {
-    "Alt Passing Yards": 112,
-    "Alt Receiving Yards": 284,
-    "Alt Receptions": 180,
-    "Alt Rushing Yards": 137,
-    "Passing Yards": 310,
-    "Receiving Yards": 376,
-    "Receptions": 249,
-    "Rush + Receiving Yards": 92,
-    "Rushing Yards": 231
+    "Alt Passing Yards": 130,
+    "Alt Receiving Yards": 322,
+    "Alt Receptions": 203,
+    "Alt Rushing Yards": 177,
+    "Passing Yards": 314,
+    "Receiving Yards": 378,
+    "Receptions": 253,
+    "Rush + Receiving Yards": 93,
+    "Rushing Yards": 233
   },
   "sportsbooks": {
-    "DraftKings": 1168,
-    "FanDuel": 803
+    "DraftKings": 1172,
+    "FanDuel": 931
   },
-  "total_rows": 1971,
+  "total_rows": 2103,
   "validation_mode": "slate-size-agnostic"
 }
