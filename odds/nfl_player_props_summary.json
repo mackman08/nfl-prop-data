@@ -3,14 +3,14 @@
     "DraftKings": {
       "Passing Yards": 296,
       "Receiving Yards": 347,
-      "Receptions": 221,
+      "Receptions": 220,
       "Rushing Yards": 213
     },
     "FanDuel": {
-      "Passing Yards": 12,
+      "Passing Yards": 14,
       "Receiving Yards": 29,
       "Receptions": 29,
-      "Rushing Yards": 15
+      "Rushing Yards": 18
     }
   },
   "core_markets_present": [
@@ -31,6 +31,7 @@
     "36104915",
     "36104918",
     "36104919",
+    "36104923",
     "36104926",
     "36104927"
   ],
@@ -43,6 +44,7 @@
     "Jacksonville Jaguars @ Cincinnati Bengals",
     "KC Chiefs @ LV Raiders",
     "Kansas City Chiefs @ Las Vegas Raiders",
+    "Los Angeles Rams @ Philadelphia Eagles",
     "NE Patriots @ BUF Bills",
     "New England Patriots @ Buffalo Bills",
     "PIT Steelers @ CLE Browns",
@@ -50,19 +52,19 @@
   ],
   "markets": {
     "Alt Passing Yards": 112,
-    "Alt Receiving Yards": 283,
+    "Alt Receiving Yards": 284,
     "Alt Receptions": 180,
     "Alt Rushing Yards": 137,
-    "Passing Yards": 308,
+    "Passing Yards": 310,
     "Receiving Yards": 376,
-    "Receptions": 250,
+    "Receptions": 249,
     "Rush + Receiving Yards": 92,
-    "Rushing Yards": 228
+    "Rushing Yards": 231
   },
   "sportsbooks": {
-    "DraftKings": 1169,
-    "FanDuel": 797
+    "DraftKings": 1168,
+    "FanDuel": 803
   },
-  "total_rows": 1966,
+  "total_rows": 1971,
   "validation_mode": "slate-size-agnostic"
 }
