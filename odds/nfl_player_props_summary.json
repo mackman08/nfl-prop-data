@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 300,
-      "Receiving Yards": 345,
-      "Receptions": 220,
-      "Rushing Yards": 214
+      "Passing Yards": 371,
+      "Receiving Yards": 550,
+      "Receptions": 338,
+      "Rushing Yards": 338
     },
     "FanDuel": {
-      "Passing Yards": 14,
-      "Receiving Yards": 33,
-      "Receptions": 33,
-      "Rushing Yards": 19
+      "Passing Yards": 18,
+      "Receiving Yards": 60,
+      "Receptions": 60,
+      "Rushing Yards": 34
     }
   },
   "core_markets_present": [
@@ -23,6 +23,8 @@
   "event_ids": [
     "34118032",
     "34118061",
+    "34118067",
+    "34118078",
     "34118083",
     "34118124",
     "34118207",
@@ -31,12 +33,17 @@
     "36104915",
     "36104918",
     "36104919",
+    "36104922",
     "36104923",
+    "36104924",
     "36104926",
     "36104927"
   ],
   "games": [
+    "DEN Broncos @ SF 49ers",
     "DET Lions @ CAR Panthers",
+    "Dallas Cowboys @ Houston Texans",
+    "Denver Broncos @ San Francisco 49ers",
     "Detroit Lions @ Carolina Panthers",
     "IND Colts @ WAS Commanders",
     "Indianapolis Colts @ Washington Commanders",
@@ -44,6 +51,7 @@
     "Jacksonville Jaguars @ Cincinnati Bengals",
     "KC Chiefs @ LV Raiders",
     "Kansas City Chiefs @ Las Vegas Raiders",
+    "LA Rams @ PHI Eagles",
     "Los Angeles Rams @ Philadelphia Eagles",
     "NE Patriots @ BUF Bills",
     "New England Patriots @ Buffalo Bills",
@@ -51,20 +59,20 @@
     "Pittsburgh Steelers @ Cleveland Browns"
   ],
   "markets": {
-    "Alt Passing Yards": 130,
-    "Alt Receiving Yards": 322,
-    "Alt Receptions": 203,
-    "Alt Rushing Yards": 177,
-    "Passing Yards": 314,
-    "Receiving Yards": 378,
-    "Receptions": 253,
+    "Alt Passing Yards": 165,
+    "Alt Receiving Yards": 481,
+    "Alt Receptions": 309,
+    "Alt Rushing Yards": 262,
+    "Passing Yards": 389,
+    "Receiving Yards": 610,
+    "Receptions": 398,
     "Rush + Receiving Yards": 93,
-    "Rushing Yards": 233
+    "Rushing Yards": 372
   },
   "sportsbooks": {
-    "DraftKings": 1172,
-    "FanDuel": 931
+    "DraftKings": 1690,
+    "FanDuel": 1389
   },
-  "total_rows": 2103,
+  "total_rows": 3079,
   "validation_mode": "slate-size-agnostic"
 }
