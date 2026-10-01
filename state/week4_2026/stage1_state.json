@@ -9,7 +9,7 @@
   },
   "historical_cutoff": "2026-09-28T23:30:00-04:00",
   "record_count": 13,
-  "state_id": "STATE-1-20261001-THU-L10",
+  "state_id": "STATE-1-20261001-THU-L10-R1",
   "parent_state_id": "STATE-0-20261001-THU-L10",
   "source_snapshot": {
     "historical": "data/nfl_prop_model.txt",
@@ -23,7 +23,8 @@
       "market": {
         "line": 55.5,
         "price": -113,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Rushing Yards"
       },
       "historical_observations": [
         70,
@@ -74,7 +75,10 @@
         "ladder_ge_80": [
           20
         ]
-      }
+      },
+      "market_type": "Rushing Yards",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Aaron Rodgers",
@@ -82,7 +86,8 @@
       "market": {
         "line": 214.5,
         "price": -113,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Passing Yards"
       },
       "historical_observations": [
         292,
@@ -129,7 +134,10 @@
         "ladder_ge_80": [
           150
         ]
-      }
+      },
+      "market_type": "Passing Yards",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Pat Freiermuth",
@@ -137,7 +145,8 @@
       "market": {
         "line": 3.5,
         "price": 106,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receptions"
       },
       "historical_observations": [
         2,
@@ -188,7 +197,10 @@
         "ladder_ge_80": [
           2
         ]
-      }
+      },
+      "market_type": "Receptions",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Pat Freiermuth",
@@ -196,7 +208,8 @@
       "market": {
         "line": 28.5,
         "price": -113,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receiving Yards"
       },
       "historical_observations": [
         30,
@@ -245,7 +258,10 @@
       "qualification": {
         "market_hr_ge_60": true,
         "ladder_ge_80": []
-      }
+      },
+      "market_type": "Receiving Yards",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "DK Metcalf",
@@ -253,7 +269,8 @@
       "market": {
         "line": 44.5,
         "price": -113,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receiving Yards"
       },
       "historical_observations": [
         31,
@@ -305,7 +322,10 @@
           20,
           30
         ]
-      }
+      },
+      "market_type": "Receiving Yards",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Jaylen Warren",
@@ -313,7 +333,8 @@
       "market": {
         "line": 76.5,
         "price": -113,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Rushing Yards"
       },
       "historical_observations": [
         127,
@@ -365,7 +386,10 @@
           20,
           30
         ]
-      }
+      },
+      "market_type": "Rushing Yards",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Jaylen Warren",
@@ -373,7 +397,8 @@
       "market": {
         "line": 3.5,
         "price": -108,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receptions"
       },
       "historical_observations": [
         3,
@@ -424,7 +449,10 @@
         "ladder_ge_80": [
           2
         ]
-      }
+      },
+      "market_type": "Receptions",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "DK Metcalf",
@@ -432,7 +460,8 @@
       "market": {
         "line": 3.5,
         "price": -122,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receptions"
       },
       "historical_observations": [
         3,
@@ -484,7 +513,10 @@
           2,
           3
         ]
-      }
+      },
+      "market_type": "Receptions",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Harold Fannin Jr.",
@@ -492,7 +524,8 @@
       "market": {
         "line": 40.5,
         "price": -113,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receiving Yards"
       },
       "historical_observations": [
         51,
@@ -544,7 +577,10 @@
           20,
           30
         ]
-      }
+      },
+      "market_type": "Receiving Yards",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Harold Fannin Jr.",
@@ -552,7 +588,8 @@
       "market": {
         "line": 4.5,
         "price": -114,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receptions"
       },
       "historical_observations": [
         7,
@@ -603,7 +640,10 @@
         "ladder_ge_80": [
           2
         ]
-      }
+      },
+      "market_type": "Receptions",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Jerry Jeudy",
@@ -611,7 +651,8 @@
       "market": {
         "line": 13.5,
         "price": -113,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receiving Yards"
       },
       "historical_observations": [
         0,
@@ -660,7 +701,10 @@
       "qualification": {
         "market_hr_ge_60": true,
         "ladder_ge_80": []
-      }
+      },
+      "market_type": "Receiving Yards",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Jerry Jeudy",
@@ -668,7 +712,8 @@
       "market": {
         "line": 1.5,
         "price": 124,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receptions"
       },
       "historical_observations": [
         0,
@@ -719,7 +764,10 @@
         "ladder_ge_80": [
           2
         ]
-      }
+      },
+      "market_type": "Receptions",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     },
     {
       "player": "Michael Pittman Jr.",
@@ -727,7 +775,8 @@
       "market": {
         "line": 3.5,
         "price": 106,
-        "sportsbook": "FanDuel"
+        "sportsbook": "FanDuel",
+        "type": "Receptions"
       },
       "historical_observations": [
         2,
@@ -778,7 +827,17 @@
         "ladder_ge_80": [
           2
         ]
-      }
+      },
+      "market_type": "Receptions",
+      "game": "Pittsburgh Steelers @ Cleveland Browns",
+      "event_id": "36104915"
     }
-  ]
+  ],
+  "repair_note": "Stage 1 restored after pre-lock schema defect: explicit market identity added to every record and verified against the current FanDuel sportsbook source. Historical observations, HRs, ladders, 25P values, and main-market lines were preserved from the prior Stage 1 calculation.",
+  "schema_validation": {
+    "required_market_identity": true,
+    "all_records_have_market_type": true,
+    "record_count_matches_records": true,
+    "parent_state_valid": true
+  }
 }
