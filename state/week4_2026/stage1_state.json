@@ -1,0 +1,784 @@
+{
+  "stage": 1,
+  "season": 2026,
+  "week": 4,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "N": 10
+  },
+  "historical_cutoff": "2026-09-28T23:30:00-04:00",
+  "record_count": 13,
+  "state_id": "STATE-1-20261001-THU-L10",
+  "parent_state_id": "STATE-0-20261001-THU-L10",
+  "source_snapshot": {
+    "historical": "data/nfl_prop_model.txt",
+    "sportsbook": "odds/nfl_player_props_latest.csv"
+  },
+  "screened_market_rows": 22,
+  "records": [
+    {
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "market": {
+        "line": 55.5,
+        "price": -113,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        70,
+        21,
+        33,
+        22,
+        21,
+        26,
+        91,
+        47,
+        59,
+        75
+      ],
+      "market_hr": "4/10",
+      "percentile_25_20_game": "Unavailable — <20 games",
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 6
+        },
+        {
+          "threshold": 40,
+          "hits": 5
+        },
+        {
+          "threshold": 50,
+          "hits": 4
+        },
+        {
+          "threshold": 60,
+          "hits": 3
+        },
+        {
+          "threshold": 75,
+          "hits": 2
+        },
+        {
+          "threshold": 100,
+          "hits": 0
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": false,
+        "ladder_ge_80": [
+          20
+        ]
+      }
+    },
+    {
+      "player": "Aaron Rodgers",
+      "team": "PIT",
+      "market": {
+        "line": 214.5,
+        "price": -113,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        292,
+        187,
+        221,
+        294,
+        168,
+        266,
+        224,
+        284,
+        117,
+        116
+      ],
+      "market_hr": "6/10",
+      "percentile_25_20_game": 177.5,
+      "ladder_results": [
+        {
+          "threshold": 150,
+          "hits": 8
+        },
+        {
+          "threshold": 175,
+          "hits": 7
+        },
+        {
+          "threshold": 200,
+          "hits": 6
+        },
+        {
+          "threshold": 225,
+          "hits": 4
+        },
+        {
+          "threshold": 250,
+          "hits": 4
+        },
+        {
+          "threshold": 300,
+          "hits": 0
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": true,
+        "ladder_ge_80": [
+          150
+        ]
+      }
+    },
+    {
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "market": {
+        "line": 3.5,
+        "price": 106,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        2,
+        4,
+        5,
+        3,
+        3,
+        4,
+        3,
+        2,
+        3,
+        1
+      ],
+      "market_hr": "3/10",
+      "percentile_25_20_game": 2.5,
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 9
+        },
+        {
+          "threshold": 3,
+          "hits": 7
+        },
+        {
+          "threshold": 4,
+          "hits": 3
+        },
+        {
+          "threshold": 5,
+          "hits": 1
+        },
+        {
+          "threshold": 6,
+          "hits": 0
+        },
+        {
+          "threshold": 7,
+          "hits": 0
+        },
+        {
+          "threshold": 8,
+          "hits": 0
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": false,
+        "ladder_ge_80": [
+          2
+        ]
+      }
+    },
+    {
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "market": {
+        "line": 28.5,
+        "price": -113,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        30,
+        32,
+        46,
+        51,
+        63,
+        20,
+        45,
+        9,
+        19,
+        19
+      ],
+      "market_hr": "6/10",
+      "percentile_25_20_game": 19,
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 7
+        },
+        {
+          "threshold": 30,
+          "hits": 6
+        },
+        {
+          "threshold": 40,
+          "hits": 4
+        },
+        {
+          "threshold": 50,
+          "hits": 2
+        },
+        {
+          "threshold": 60,
+          "hits": 1
+        },
+        {
+          "threshold": 75,
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hits": 0
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": true,
+        "ladder_ge_80": []
+      }
+    },
+    {
+      "player": "DK Metcalf",
+      "team": "PIT",
+      "market": {
+        "line": 44.5,
+        "price": -113,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        31,
+        27,
+        40,
+        42,
+        55,
+        148,
+        32,
+        22,
+        49,
+        35
+      ],
+      "market_hr": "3/10",
+      "percentile_25_20_game": 31.5,
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8
+        },
+        {
+          "threshold": 40,
+          "hits": 5
+        },
+        {
+          "threshold": 50,
+          "hits": 2
+        },
+        {
+          "threshold": 60,
+          "hits": 1
+        },
+        {
+          "threshold": 75,
+          "hits": 1
+        },
+        {
+          "threshold": 100,
+          "hits": 1
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": false,
+        "ladder_ge_80": [
+          20,
+          30
+        ]
+      }
+    },
+    {
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "market": {
+        "line": 76.5,
+        "price": -113,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        127,
+        43,
+        46,
+        66,
+        64,
+        143,
+        33,
+        13,
+        35,
+        68
+      ],
+      "market_hr": "2/10",
+      "percentile_25_20_game": 36,
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 9
+        },
+        {
+          "threshold": 30,
+          "hits": 9
+        },
+        {
+          "threshold": 40,
+          "hits": 7
+        },
+        {
+          "threshold": 50,
+          "hits": 5
+        },
+        {
+          "threshold": 60,
+          "hits": 5
+        },
+        {
+          "threshold": 75,
+          "hits": 2
+        },
+        {
+          "threshold": 100,
+          "hits": 2
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": false,
+        "ladder_ge_80": [
+          20,
+          30
+        ]
+      }
+    },
+    {
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "market": {
+        "line": 3.5,
+        "price": -108,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        3,
+        2,
+        5,
+        5,
+        0,
+        2,
+        3,
+        3,
+        2,
+        0
+      ],
+      "market_hr": "2/10",
+      "percentile_25_20_game": 2,
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 8
+        },
+        {
+          "threshold": 3,
+          "hits": 5
+        },
+        {
+          "threshold": 4,
+          "hits": 2
+        },
+        {
+          "threshold": 5,
+          "hits": 2
+        },
+        {
+          "threshold": 6,
+          "hits": 0
+        },
+        {
+          "threshold": 7,
+          "hits": 0
+        },
+        {
+          "threshold": 8,
+          "hits": 0
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": false,
+        "ladder_ge_80": [
+          2
+        ]
+      }
+    },
+    {
+      "player": "DK Metcalf",
+      "team": "PIT",
+      "market": {
+        "line": 3.5,
+        "price": -122,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        7,
+        3,
+        5,
+        5,
+        3
+      ],
+      "market_hr": "6/10",
+      "percentile_25_20_game": 3,
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 6
+        },
+        {
+          "threshold": 5,
+          "hits": 3
+        },
+        {
+          "threshold": 6,
+          "hits": 1
+        },
+        {
+          "threshold": 7,
+          "hits": 1
+        },
+        {
+          "threshold": 8,
+          "hits": 0
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": true,
+        "ladder_ge_80": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "market": {
+        "line": 40.5,
+        "price": -113,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        51,
+        54,
+        21,
+        30,
+        34,
+        48,
+        114,
+        43,
+        40,
+        26
+      ],
+      "market_hr": "5/10",
+      "percentile_25_20_game": "Unavailable — <20 games",
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8
+        },
+        {
+          "threshold": 40,
+          "hits": 6
+        },
+        {
+          "threshold": 50,
+          "hits": 3
+        },
+        {
+          "threshold": 60,
+          "hits": 1
+        },
+        {
+          "threshold": 75,
+          "hits": 1
+        },
+        {
+          "threshold": 100,
+          "hits": 1
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": false,
+        "ladder_ge_80": [
+          20,
+          30
+        ]
+      }
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "market": {
+        "line": 4.5,
+        "price": -114,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        7,
+        5,
+        2,
+        2,
+        4,
+        7,
+        8,
+        3,
+        4,
+        2
+      ],
+      "market_hr": "4/10",
+      "percentile_25_20_game": "Unavailable — <20 games",
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 7
+        },
+        {
+          "threshold": 4,
+          "hits": 6
+        },
+        {
+          "threshold": 5,
+          "hits": 4
+        },
+        {
+          "threshold": 6,
+          "hits": 3
+        },
+        {
+          "threshold": 7,
+          "hits": 3
+        },
+        {
+          "threshold": 8,
+          "hits": 1
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": false,
+        "ladder_ge_80": [
+          2
+        ]
+      }
+    },
+    {
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "market": {
+        "line": 13.5,
+        "price": -113,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        0,
+        26,
+        17,
+        54,
+        12,
+        22,
+        76,
+        26,
+        39,
+        21
+      ],
+      "market_hr": "8/10",
+      "percentile_25_20_game": 17,
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 7
+        },
+        {
+          "threshold": 30,
+          "hits": 3
+        },
+        {
+          "threshold": 40,
+          "hits": 2
+        },
+        {
+          "threshold": 50,
+          "hits": 2
+        },
+        {
+          "threshold": 60,
+          "hits": 1
+        },
+        {
+          "threshold": 75,
+          "hits": 1
+        },
+        {
+          "threshold": 100,
+          "hits": 0
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": true,
+        "ladder_ge_80": []
+      }
+    },
+    {
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "market": {
+        "line": 1.5,
+        "price": 124,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        0,
+        2,
+        2,
+        5,
+        3,
+        2,
+        3,
+        3,
+        1,
+        3
+      ],
+      "market_hr": "8/10",
+      "percentile_25_20_game": 2,
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 8
+        },
+        {
+          "threshold": 3,
+          "hits": 5
+        },
+        {
+          "threshold": 4,
+          "hits": 1
+        },
+        {
+          "threshold": 5,
+          "hits": 1
+        },
+        {
+          "threshold": 6,
+          "hits": 0
+        },
+        {
+          "threshold": 7,
+          "hits": 0
+        },
+        {
+          "threshold": 8,
+          "hits": 0
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": true,
+        "ladder_ge_80": [
+          2
+        ]
+      }
+    },
+    {
+      "player": "Michael Pittman Jr.",
+      "team": "PIT",
+      "market": {
+        "line": 3.5,
+        "price": 106,
+        "sportsbook": "FanDuel"
+      },
+      "historical_observations": [
+        2,
+        3,
+        2,
+        2,
+        4,
+        3,
+        9,
+        1,
+        5,
+        2
+      ],
+      "market_hr": "3/10",
+      "percentile_25_20_game": 2,
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 9
+        },
+        {
+          "threshold": 3,
+          "hits": 5
+        },
+        {
+          "threshold": 4,
+          "hits": 3
+        },
+        {
+          "threshold": 5,
+          "hits": 2
+        },
+        {
+          "threshold": 6,
+          "hits": 1
+        },
+        {
+          "threshold": 7,
+          "hits": 1
+        },
+        {
+          "threshold": 8,
+          "hits": 1
+        }
+      ],
+      "qualification": {
+        "market_hr_ge_60": false,
+        "ladder_ge_80": [
+          2
+        ]
+      }
+    }
+  ]
+}
