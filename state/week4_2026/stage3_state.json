@@ -1,0 +1,212 @@
+{
+  "stage": 3,
+  "season": 2026,
+  "week": 4,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "N": 10
+  },
+  "historical_cutoff": "2026-09-28T23:30:00-04:00",
+  "record_count": 13,
+  "state_id": "STATE-3-20261001-THU-L10",
+  "parent_state_id": "STATE-2-20261001-THU-L10",
+  "records": [
+    {
+      "player": "Quinshon Judkins",
+      "market_type": "Rushing Yards",
+      "selected_threshold": 30,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "classification": "Mixed",
+      "context": "18 carries and 79 scrimmage yards in Week 3; 62% rush share. Pittsburgh is allowing 113.0 rushing YPG, but its designed-run contact rate behind the line is 52.1%. Cleveland's line/rush efficiency remains a concern.",
+      "sources": [
+        "steelers.com Week 4 stats"
+      ]
+    },
+    {
+      "player": "Aaron Rodgers",
+      "market_type": "Passing Yards",
+      "selected_threshold": 200,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "classification": "Mixed",
+      "context": "221, 187 and 292 passing yards through three games. Cleveland allows 224.0 passing YPG and Pittsburgh passes on 64.7% of snaps, but the Steelers offense ranks poorly in the matchup model and Cleveland generates pressure.",
+      "sources": [
+        "steelers.com Week 4 stats",
+        "iHeart Week 4 Rodgers preview",
+        "Sharp Football Analysis"
+      ]
+    },
+    {
+      "player": "Pat Freiermuth",
+      "market_type": "Receptions",
+      "selected_threshold": 3,
+      "historical_hr": "7/10",
+      "band": "CORE",
+      "classification": "Supportive",
+      "context": "Freiermuth has 5, 4 and 2 receptions on 5, 5 and 4 targets. Cleveland has allowed 3.3 receptions/game to TE1s.",
+      "sources": [
+        "PFR 2026 game log",
+        "BTB Data"
+      ]
+    },
+    {
+      "player": "Pat Freiermuth",
+      "market_type": "Receiving Yards",
+      "selected_threshold": 30,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "classification": "Supportive",
+      "context": "He has produced 46, 32 and 30 receiving yards in the first three games; Cleveland has allowed 34.0 TE1 receiving yards/game.",
+      "sources": [
+        "PFR 2026 game log",
+        "BTB Data"
+      ]
+    },
+    {
+      "player": "DK Metcalf",
+      "market_type": "Receiving Yards",
+      "selected_threshold": 30,
+      "historical_hr": "8/10",
+      "band": "CORE",
+      "classification": "Supportive",
+      "context": "Metcalf has 10, 9 and 5 targets and at least 3 receptions in every game. Cleveland allows 74.3 receiving yards/game to WR1s; Pittsburgh passes on 64.7% of snaps.",
+      "sources": [
+        "StatChasers",
+        "USA Today/Yahoo",
+        "BTB Data",
+        "steelers.com"
+      ]
+    },
+    {
+      "player": "Jaylen Warren",
+      "market_type": "Rushing Yards",
+      "selected_threshold": 40,
+      "historical_hr": "7/10",
+      "band": "CORE",
+      "classification": "Supportive",
+      "context": "Warren has 10, 11 and 17 carries, including 127 rushing yards in Week 3. He leads Pittsburgh with 216 rushing yards. Cleveland allows 120.3 rushing YPG and has allowed explosive runs on 16.7% of carries.",
+      "sources": [
+        "PFR 2026 game log",
+        "steelers.com",
+        "Reuters"
+      ]
+    },
+    {
+      "player": "Jaylen Warren",
+      "market_type": "Receptions",
+      "selected_threshold": 2,
+      "historical_hr": "8/10",
+      "band": "CORE",
+      "classification": "Supportive",
+      "context": "Warren has 5, 2 and 3 receptions on 6, 4 and 4 targets. He ran a route on 70.3% of dropbacks last week; Cleveland allows 3.0 receptions/game to RB1s.",
+      "sources": [
+        "PFR",
+        "steelers.com",
+        "BTB Data"
+      ]
+    },
+    {
+      "player": "DK Metcalf",
+      "market_type": "Receptions",
+      "selected_threshold": 4,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "classification": "Mixed",
+      "context": "Metcalf has 4, 4 and 3 receptions. He averages 8.0 targets/game, but has not reached four catches in every game.",
+      "sources": [
+        "StatChasers",
+        "BTB Data"
+      ]
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "market_type": "Receiving Yards",
+      "selected_threshold": 40,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "classification": "Supportive",
+      "context": "Fannin has 21, 54 and 51 receiving yards with 18 targets through three games; Week 3 was 7 catches on 9 targets. He is playing a high snap share and is a central Cleveland target.",
+      "sources": [
+        "PFR",
+        "Behind the Steel Curtain",
+        "Dawgs By Nature"
+      ]
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "market_type": "Receptions",
+      "selected_threshold": 4,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "classification": "Supportive",
+      "context": "Fannin has 2, 5 and 7 receptions and 18 targets through three games.",
+      "sources": [
+        "PFR 2026 game log",
+        "PFR advanced receiving"
+      ]
+    },
+    {
+      "player": "Jerry Jeudy",
+      "market_type": "Receiving Yards",
+      "selected_threshold": 20,
+      "historical_hr": "7/10",
+      "band": "CORE",
+      "classification": "Concern",
+      "context": "Jeudy has only 5 targets and 2 receptions for 26 yards through three games. He had zero targets and zero touches in Week 3 despite playing over 50% of offensive snaps.",
+      "sources": [
+        "PFR",
+        "CBS Sports"
+      ]
+    },
+    {
+      "player": "Jerry Jeudy",
+      "market_type": "Receptions",
+      "selected_threshold": 2,
+      "historical_hr": "8/10",
+      "band": "CORE",
+      "classification": "Concern",
+      "context": "Jeudy has 2, 0 and 0 receptions, with only 5 targets total and zero in Week 3. Current usage conflicts with the historical 2+ structure.",
+      "sources": [
+        "PFR",
+        "CBS Sports"
+      ]
+    },
+    {
+      "player": "Michael Pittman Jr.",
+      "market_type": "Receptions",
+      "selected_threshold": 2,
+      "historical_hr": "9/10",
+      "band": "CORE",
+      "classification": "Mixed",
+      "context": "Pittman returned from a foot injury in Week 3 and had 2 receptions on 5 targets. He missed Week 2 with the foot issue, but the latest Week 4 report has no game designation.",
+      "sources": [
+        "PFR",
+        "NFL/Steelers injury reports",
+        "StatChasers"
+      ]
+    }
+  ],
+  "context_snapshot": {
+    "as_of": "2026-10-01",
+    "game": "PIT at CLE",
+    "kickoff": "2026-10-01T20:15:00-04:00",
+    "weather": "About 75F at kickoff; only slight rain risk during the game, with heavier rain forecast later overnight.",
+    "injuries": [
+      "PIT: Rico Dowdle OUT; Joey Porter Jr. OUT; Jalen Ramsey QUESTIONABLE; Brandin Echols QUESTIONABLE.",
+      "CLE: Elgton Jenkins OUT; Teven Jenkins OUT; Tylan Wallace OUT."
+    ],
+    "environment": "Both teams entered 2-1. Pittsburgh is passing on 64.7% of snaps. Cleveland has allowed 120.3 rushing YPG and 224.0 passing YPG."
+  },
+  "validation": {
+    "exact_locked_stage2_universe": true,
+    "no_new_players": true,
+    "no_stage1_rescreen": true,
+    "historical_hr_unchanged": true,
+    "historical_samples_unchanged": true,
+    "stage2_structure_unchanged": true,
+    "current_week_separate": true,
+    "all_candidates_analyzed": true
+  }
+}
