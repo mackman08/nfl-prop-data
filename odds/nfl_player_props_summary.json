@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 747,
-      "Receiving Yards": 1309,
-      "Receptions": 815,
-      "Rushing Yards": 756
+      "Passing Yards": 786,
+      "Receiving Yards": 1716,
+      "Receptions": 1058,
+      "Rushing Yards": 1036
     },
     "FanDuel": {
-      "Passing Yards": 32,
-      "Receiving Yards": 128,
-      "Receptions": 126,
-      "Rushing Yards": 73
+      "Passing Yards": 31,
+      "Receiving Yards": 161,
+      "Receptions": 158,
+      "Rushing Yards": 91
     }
   },
   "core_markets_present": [
@@ -32,6 +32,7 @@
     "34118104",
     "34118124",
     "34118141",
+    "34118170",
     "34118175",
     "34118207",
     "34118238",
@@ -76,6 +77,7 @@
     "LA Rams @ PHI Eagles",
     "Los Angeles Chargers @ Seattle Seahawks",
     "Los Angeles Rams @ Philadelphia Eagles",
+    "MIA Dolphins @ MIN Vikings",
     "Miami Dolphins @ Minnesota Vikings",
     "NE Patriots @ BUF Bills",
     "NY Jets @ CHI Bears",
@@ -87,20 +89,20 @@
     "Tennessee Titans @ Baltimore Ravens"
   ],
   "markets": {
-    "Alt Passing Yards": 298,
-    "Alt Receiving Yards": 1248,
-    "Alt Receptions": 695,
-    "Alt Rushing Yards": 615,
-    "Passing Yards": 779,
-    "Receiving Yards": 1437,
-    "Receptions": 941,
-    "Rush + Receiving Yards": 336,
-    "Rushing Yards": 829
+    "Alt Passing Yards": 291,
+    "Alt Receiving Yards": 1540,
+    "Alt Receptions": 825,
+    "Alt Rushing Yards": 741,
+    "Passing Yards": 817,
+    "Receiving Yards": 1877,
+    "Receptions": 1216,
+    "Rush + Receiving Yards": 511,
+    "Rushing Yards": 1127
   },
   "sportsbooks": {
-    "DraftKings": 3963,
-    "FanDuel": 3215
+    "DraftKings": 5107,
+    "FanDuel": 3838
   },
-  "total_rows": 7178,
+  "total_rows": 8945,
   "validation_mode": "slate-size-agnostic"
 }
