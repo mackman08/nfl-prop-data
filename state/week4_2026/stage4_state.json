@@ -2,156 +2,101 @@
   "stage": 4,
   "season": 2026,
   "week": 4,
-  "scope": "Thursday only",
-  "historical_sample": {
-    "label": "L10",
-    "N": 10
-  },
-  "historical_cutoff": "2026-09-28T23:30:00-04:00",
-  "record_count": 13,
-  "state_id": "STATE-4-20261001-THU-L10",
-  "parent_state_id": "STATE-3-20261001-THU-L10",
+  "scope": "Sunday only; games before 2:00 PM ET",
+  "historical_sample": "L10",
+  "state_id": "STATE-4-20261001-SUN-BEFORE-2PM-L10",
+  "parent_state_id": "STATE-3-20261001-SUN-BEFORE-2PM-L10",
   "final_prop_cards": [
     {
-      "player": "Jaylen Warren",
-      "market_type": "Rushing Yards",
-      "selected_line": 40,
-      "fanDuel_price": -1100,
+      "player": "D'Andre Swift",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "historical_hr": "4/10",
+      "threshold": "40+",
+      "sportsbook_price": "-580 FD",
+      "context": "Supportive — 20 carries and 69% snaps last week; favorable Jets run matchup.",
+      "final_read": "The 40+ threshold has a 9/10 L10 ladder hit rate and sits at/near the Stage 2 floor/core range; current usage supports the workload."
+    },
+    {
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "market": "Rushing Yards",
+      "historical_hr": "5/10",
+      "threshold": "80+",
+      "sportsbook_price": "-245 FD",
+      "context": "Supportive — no injury designation; Baltimore can lean on its run game.",
+      "final_read": "80+ is 10/10 in the locked L10 ladder, with the threshold below the 16P distribution marker; current context supports continued rushing volume."
+    },
+    {
+      "player": "James Cook",
+      "team": "BUF",
+      "market": "Rushing Yards",
+      "historical_hr": "6/10",
+      "threshold": "60+",
+      "sportsbook_price": "-470 FD",
+      "context": "Supportive — 346 rushing yards through three games in a productive Buffalo offense.",
+      "final_read": "60+ is 8/10 historically and below the 16P marker; the current workload and offense provide corroborating support."
+    },
+    {
+      "player": "Tee Higgins",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "historical_hr": "6/10",
+      "threshold": "50+",
+      "sportsbook_price": "-210 FD",
+      "context": "Supportive — Cincinnati has a favorable passing environment and Higgins has strong recent usage.",
+      "final_read": "50+ is 9/10 on the L10 ladder; the threshold is materially above the 16P marker but the L10 ladder and current matchup both support the selection."
+    },
+    {
+      "player": "Dalton Kincaid",
+      "team": "BUF",
+      "market": "Receiving Yards",
+      "historical_hr": "3/10",
+      "threshold": "30+",
+      "sportsbook_price": "-420 FD",
+      "context": "Supportive — Buffalo offense is productive and Keon Coleman missed practice.",
+      "final_read": "30+ is 8/10 on the L10 ladder and is the Stage 2 core region; current target-distribution context is supportive."
+    },
+    {
+      "player": "Trey McBride",
+      "team": "ARI",
+      "market": "Receiving Yards",
+      "historical_hr": "6/10",
+      "threshold": "60+",
+      "sportsbook_price": "-174 FD",
+      "context": "Supportive — double-digit targets each game and 9-75 on 11 targets last week; full practice.",
+      "final_read": "60+ is 7/10 in the L10 ladder and sits between the 16P marker and the main line; recent target volume strongly supports the role."
+    },
+    {
+      "player": "Ja'Marr Chase",
+      "team": "CIN",
+      "market": "Receptions",
       "historical_hr": "7/10",
-      "band": "CORE",
-      "context": "Supportive",
-      "context_implication": "Lead workload plus favorable Cleveland run-defense indicators."
+      "threshold": "6.5+",
+      "sportsbook_price": "-140 FD",
+      "context": "Supportive — favorable passing environment and no injury designation.",
+      "final_read": "The main 6.5 line has a 7/10 L10 hit rate and Stage 2 core at 6.5; current passing context is also supportive."
     },
     {
-      "player": "Jaylen Warren",
-      "market_type": "Receptions",
-      "selected_line": 2,
-      "fanDuel_price": -900,
-      "historical_hr": "8/10",
-      "band": "CORE",
-      "context": "Supportive",
-      "context_implication": "Established receiving role and low threshold."
-    },
-    {
-      "player": "DK Metcalf",
-      "market_type": "Receiving Yards",
-      "selected_line": 30,
-      "fanDuel_price": -260,
-      "historical_hr": "8/10",
-      "band": "CORE",
-      "context": "Supportive",
-      "context_implication": "Strong target volume, consistent recent catches, favorable WR1 matchup."
-    },
-    {
-      "player": "Harold Fannin Jr.",
-      "market_type": "Receiving Yards",
-      "selected_line": 40,
-      "fanDuel_price": -122,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "context": "Supportive",
-      "context_implication": "18 targets through three games and strong recent production."
-    },
-    {
-      "player": "Harold Fannin Jr.",
-      "market_type": "Receptions",
-      "selected_line": 4,
-      "fanDuel_price": -260,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "context": "Supportive",
-      "context_implication": "14 catches on 18 targets through three games."
-    },
-    {
-      "player": "Pat Freiermuth",
-      "market_type": "Receiving Yards",
-      "selected_line": 30,
-      "fanDuel_price": -106,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "context": "Supportive",
-      "context_implication": "30+ in each first three games and supportive TE matchup."
-    },
-    {
-      "player": "Pat Freiermuth",
-      "market_type": "Receptions",
-      "selected_line": 3,
-      "fanDuel_price": -245,
-      "historical_hr": "7/10",
-      "band": "CORE",
-      "context": "Supportive",
-      "context_implication": "5/4/2 receptions on 5/5/4 targets."
-    },
-    {
-      "player": "DK Metcalf",
-      "market_type": "Receptions",
-      "selected_line": 4,
-      "fanDuel_price": -122,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "context": "Mixed",
-      "context_implication": "High target volume, but only 3 receptions in Week 3."
-    },
-    {
-      "player": "Aaron Rodgers",
-      "market_type": "Passing Yards",
-      "selected_line": 200,
-      "fanDuel_price": -166,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "context": "Mixed",
-      "context_implication": "Passing volume and opponent yards allowed support; efficiency/pressure concerns remain."
-    },
-    {
-      "player": "Michael Pittman Jr.",
-      "market_type": "Receptions",
-      "selected_line": 2,
-      "fanDuel_price": -800,
-      "historical_hr": "9/10",
-      "band": "CORE",
-      "context": "Mixed",
-      "context_implication": "Historical evidence is strong, but current sample is limited by recent foot injury interruption."
-    },
-    {
-      "player": "Quinshon Judkins",
-      "market_type": "Rushing Yards",
-      "selected_line": 30,
-      "fanDuel_price": -700,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "context": "Mixed",
-      "context_implication": "Workload supports low threshold; run efficiency and line concerns remain."
-    },
-    {
-      "player": "Jerry Jeudy",
-      "market_type": "Receiving Yards",
-      "selected_line": 20,
-      "fanDuel_price": 142,
-      "historical_hr": "7/10",
-      "band": "CORE",
-      "context": "Concern",
-      "context_implication": "Current target collapse conflicts with historical evidence."
-    },
-    {
-      "player": "Jerry Jeudy",
-      "market_type": "Receptions",
-      "selected_line": 2,
-      "fanDuel_price": 124,
-      "historical_hr": "8/10",
-      "band": "CORE",
-      "context": "Concern",
-      "context_implication": "Only five targets through three games and zero in Week 3."
+      "player": "Puka Nacua",
+      "team": "LA",
+      "market": "Receiving Yards",
+      "historical_hr": "4/10",
+      "threshold": "60+",
+      "sportsbook_price": "-250 FD",
+      "context": "Mixed — expected return after two missed games; target redistribution and conditioning remain variables.",
+      "final_read": "60+ has a 9/10 L10 ladder hit rate and is below the 16P marker; the historical evidence is strong, but the return-from-injury context prevents a fully supportive classification."
     }
   ],
   "validation": {
-    "stage3_input_validated": true,
-    "uses_locked_stage1": true,
-    "uses_locked_stage2": true,
-    "uses_locked_stage3": true,
-    "no_prior_stage_reconstructed": true,
-    "historical_hr_unchanged": true,
-    "current_context_separate": true,
-    "fanDuel_prices_current_snapshot": true,
-    "all_stage2_candidates_evaluated": true
+    "stage3_exists": true,
+    "stage3_complete": true,
+    "stage2_locked": true,
+    "stage1_locked": true,
+    "no_prior_reconstruction": true,
+    "historical_denominators_exact": true,
+    "twenty_game_stats_not_substituted_for_l10": true,
+    "no_stage1_3_alteration": true,
+    "stage4_complete": true
   }
 }
