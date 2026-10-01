@@ -1,0 +1,157 @@
+{
+  "stage": 4,
+  "season": 2026,
+  "week": 4,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "N": 10
+  },
+  "historical_cutoff": "2026-09-28T23:30:00-04:00",
+  "record_count": 13,
+  "state_id": "STATE-4-20261001-THU-L10",
+  "parent_state_id": "STATE-3-20261001-THU-L10",
+  "final_prop_cards": [
+    {
+      "player": "Jaylen Warren",
+      "market_type": "Rushing Yards",
+      "selected_line": 40,
+      "fanDuel_price": -1100,
+      "historical_hr": "7/10",
+      "band": "CORE",
+      "context": "Supportive",
+      "context_implication": "Lead workload plus favorable Cleveland run-defense indicators."
+    },
+    {
+      "player": "Jaylen Warren",
+      "market_type": "Receptions",
+      "selected_line": 2,
+      "fanDuel_price": -900,
+      "historical_hr": "8/10",
+      "band": "CORE",
+      "context": "Supportive",
+      "context_implication": "Established receiving role and low threshold."
+    },
+    {
+      "player": "DK Metcalf",
+      "market_type": "Receiving Yards",
+      "selected_line": 30,
+      "fanDuel_price": -260,
+      "historical_hr": "8/10",
+      "band": "CORE",
+      "context": "Supportive",
+      "context_implication": "Strong target volume, consistent recent catches, favorable WR1 matchup."
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "market_type": "Receiving Yards",
+      "selected_line": 40,
+      "fanDuel_price": -122,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "context": "Supportive",
+      "context_implication": "18 targets through three games and strong recent production."
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "market_type": "Receptions",
+      "selected_line": 4,
+      "fanDuel_price": -260,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "context": "Supportive",
+      "context_implication": "14 catches on 18 targets through three games."
+    },
+    {
+      "player": "Pat Freiermuth",
+      "market_type": "Receiving Yards",
+      "selected_line": 30,
+      "fanDuel_price": -106,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "context": "Supportive",
+      "context_implication": "30+ in each first three games and supportive TE matchup."
+    },
+    {
+      "player": "Pat Freiermuth",
+      "market_type": "Receptions",
+      "selected_line": 3,
+      "fanDuel_price": -245,
+      "historical_hr": "7/10",
+      "band": "CORE",
+      "context": "Supportive",
+      "context_implication": "5/4/2 receptions on 5/5/4 targets."
+    },
+    {
+      "player": "DK Metcalf",
+      "market_type": "Receptions",
+      "selected_line": 4,
+      "fanDuel_price": -122,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "context": "Mixed",
+      "context_implication": "High target volume, but only 3 receptions in Week 3."
+    },
+    {
+      "player": "Aaron Rodgers",
+      "market_type": "Passing Yards",
+      "selected_line": 200,
+      "fanDuel_price": -166,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "context": "Mixed",
+      "context_implication": "Passing volume and opponent yards allowed support; efficiency/pressure concerns remain."
+    },
+    {
+      "player": "Michael Pittman Jr.",
+      "market_type": "Receptions",
+      "selected_line": 2,
+      "fanDuel_price": -800,
+      "historical_hr": "9/10",
+      "band": "CORE",
+      "context": "Mixed",
+      "context_implication": "Historical evidence is strong, but current sample is limited by recent foot injury interruption."
+    },
+    {
+      "player": "Quinshon Judkins",
+      "market_type": "Rushing Yards",
+      "selected_line": 30,
+      "fanDuel_price": -700,
+      "historical_hr": "6/10",
+      "band": "CORE",
+      "context": "Mixed",
+      "context_implication": "Workload supports low threshold; run efficiency and line concerns remain."
+    },
+    {
+      "player": "Jerry Jeudy",
+      "market_type": "Receiving Yards",
+      "selected_line": 20,
+      "fanDuel_price": 142,
+      "historical_hr": "7/10",
+      "band": "CORE",
+      "context": "Concern",
+      "context_implication": "Current target collapse conflicts with historical evidence."
+    },
+    {
+      "player": "Jerry Jeudy",
+      "market_type": "Receptions",
+      "selected_line": 2,
+      "fanDuel_price": 124,
+      "historical_hr": "8/10",
+      "band": "CORE",
+      "context": "Concern",
+      "context_implication": "Only five targets through three games and zero in Week 3."
+    }
+  ],
+  "validation": {
+    "stage3_input_validated": true,
+    "uses_locked_stage1": true,
+    "uses_locked_stage2": true,
+    "uses_locked_stage3": true,
+    "no_prior_stage_reconstructed": true,
+    "historical_hr_unchanged": true,
+    "current_context_separate": true,
+    "fanDuel_prices_current_snapshot": true,
+    "all_stage2_candidates_evaluated": true
+  }
+}
