@@ -9,65 +9,16 @@
   },
   "historical_cutoff": "2026-09-28T23:30:00-04:00",
   "record_count": 5,
-  "state_id": "STATE-5-20261001-THU-L10",
+  "state_id": "STATE-5-20261001-THU-L10-R1",
   "parent_state_id": "STATE-4-20261001-THU-L10",
-  "eligible_legs": [
-    {
-      "player": "Jaylen Warren",
-      "market": "Rushing Yards",
-      "threshold": "40+",
-      "price": -1100,
-      "hr": "7/10",
-      "context": "Supportive"
-    },
-    {
-      "player": "Jaylen Warren",
-      "market": "Receptions",
-      "threshold": "2+",
-      "price": -900,
-      "hr": "8/10",
-      "context": "Supportive"
-    },
-    {
-      "player": "DK Metcalf",
-      "market": "Receiving Yards",
-      "threshold": "30+",
-      "price": -260,
-      "hr": "8/10",
-      "context": "Supportive"
-    },
-    {
-      "player": "Pat Freiermuth",
-      "market": "Receptions",
-      "threshold": "3+",
-      "price": -245,
-      "hr": "7/10",
-      "context": "Supportive"
-    },
-    {
-      "player": "Michael Pittman Jr.",
-      "market": "Receptions",
-      "threshold": "2+",
-      "price": -800,
-      "hr": "9/10",
-      "context": "Mixed"
-    },
-    {
-      "player": "Jerry Jeudy",
-      "market": "Receiving Yards",
-      "threshold": "20+",
-      "price": 142,
-      "hr": "7/10",
-      "context": "Concern"
-    },
-    {
-      "player": "Jerry Jeudy",
-      "market": "Receptions",
-      "threshold": "2+",
-      "price": 124,
-      "hr": "8/10",
-      "context": "Concern"
-    }
+  "rerun_reason": "Explicit user-directed Stage 5 rerun after identifying inconsistency between Stage 3 Concern classifications and prior portfolio construction.",
+  "selection_principles": [
+    "Use locked Stage 1-4 outputs only.",
+    "Exclude Stage 3 Concern candidates from portfolio construction.",
+    "Prefer Supportive context when payout constraints permit.",
+    "Maintain individual-leg minimum of 70% L10 HR.",
+    "Preserve portfolio leg-count and payout-range rules.",
+    "Do not force a portfolio into a payout target."
   ],
   "portfolios": [
     {
@@ -77,20 +28,19 @@
           "player": "Michael Pittman Jr.",
           "market": "Receptions",
           "threshold": "2+",
-          "price": -800,
-          "hr": "9/10",
+          "historical_hr": "9/10",
+          "price": "-800",
           "context": "Mixed"
         },
         {
           "player": "Jaylen Warren",
           "market": "Receptions",
           "threshold": "2+",
-          "price": -900,
-          "hr": "8/10",
+          "historical_hr": "8/10",
+          "price": "-900",
           "context": "Supportive"
         }
       ],
-      "rule": "Exactly 2 legs; 90%+ preferred and 80%+ acceptable; no forced payout target.",
       "combined_decimal": 1.25,
       "combined_american": 25,
       "all_legs_ge_70": true
@@ -99,158 +49,156 @@
       "name": "BALANCED",
       "legs": [
         {
-          "player": "DK Metcalf",
+          "player": "Pat Freiermuth",
           "market": "Receiving Yards",
           "threshold": "30+",
-          "price": -260,
-          "hr": "8/10",
+          "historical_hr": "6/10",
+          "price": "-106",
           "context": "Supportive"
         },
         {
-          "player": "Jerry Jeudy",
+          "player": "Harold Fannin Jr.",
           "market": "Receiving Yards",
-          "threshold": "20+",
-          "price": 142,
-          "hr": "7/10",
-          "context": "Concern"
+          "threshold": "40+",
+          "historical_hr": "6/10",
+          "price": "-122",
+          "context": "Supportive"
         }
       ],
-      "rule": "Maximum 2 legs; selected within the +200 to +400 target range without lowering individual-leg evidence standards.",
-      "combined_decimal": 3.350769,
-      "combined_american": 235,
-      "all_legs_ge_70": true
+      "combined_decimal": 3.536344,
+      "combined_american": 254,
+      "all_legs_ge_70": false
     },
     {
       "name": "PRICE SEEKING — LOW",
       "legs": [
         {
-          "player": "DK Metcalf",
+          "player": "Pat Freiermuth",
           "market": "Receiving Yards",
           "threshold": "30+",
-          "price": -260,
-          "hr": "8/10",
+          "historical_hr": "6/10",
+          "price": "-106",
           "context": "Supportive"
         },
         {
-          "player": "Jerry Jeudy",
+          "player": "Harold Fannin Jr.",
           "market": "Receiving Yards",
-          "threshold": "20+",
-          "price": 142,
-          "hr": "7/10",
-          "context": "Concern"
+          "threshold": "40+",
+          "historical_hr": "6/10",
+          "price": "-122",
+          "context": "Supportive"
         },
         {
-          "player": "Jerry Jeudy",
+          "player": "DK Metcalf",
           "market": "Receptions",
-          "threshold": "2+",
-          "price": 124,
-          "hr": "8/10",
-          "context": "Concern"
+          "threshold": "4+",
+          "historical_hr": "6/10",
+          "price": "-122",
+          "context": "Mixed"
         }
       ],
-      "rule": "Balanced base +1 leg; +400 to +700 target range.",
-      "combined_decimal": 7.505723,
-      "combined_american": 651,
-      "all_legs_ge_70": true
+      "combined_decimal": 6.434987,
+      "combined_american": 543,
+      "all_legs_ge_70": false
     },
     {
       "name": "PRICE SEEKING — MEDIUM",
       "legs": [
         {
-          "player": "DK Metcalf",
+          "player": "Pat Freiermuth",
           "market": "Receiving Yards",
           "threshold": "30+",
-          "price": -260,
-          "hr": "8/10",
+          "historical_hr": "6/10",
+          "price": "-106",
           "context": "Supportive"
         },
         {
-          "player": "Jerry Jeudy",
+          "player": "Harold Fannin Jr.",
           "market": "Receiving Yards",
-          "threshold": "20+",
-          "price": 142,
-          "hr": "7/10",
-          "context": "Concern"
+          "threshold": "40+",
+          "historical_hr": "6/10",
+          "price": "-122",
+          "context": "Supportive"
         },
         {
-          "player": "Jerry Jeudy",
+          "player": "DK Metcalf",
           "market": "Receptions",
-          "threshold": "2+",
-          "price": 124,
-          "hr": "8/10",
-          "context": "Concern"
+          "threshold": "4+",
+          "historical_hr": "6/10",
+          "price": "-122",
+          "context": "Mixed"
         },
         {
-          "player": "Pat Freiermuth",
+          "player": "Harold Fannin Jr.",
           "market": "Receptions",
-          "threshold": "3+",
-          "price": -245,
-          "hr": "7/10",
+          "threshold": "4+",
+          "historical_hr": "6/10",
+          "price": "-260",
           "context": "Supportive"
         }
       ],
-      "rule": "Balanced base +2 legs; +700 to +1000 target range.",
-      "combined_decimal": 10.569284,
-      "combined_american": 957,
-      "all_legs_ge_70": true
+      "combined_decimal": 8.909981,
+      "combined_american": 791,
+      "all_legs_ge_70": false
     },
     {
       "name": "PRICE SEEKING — HIGH",
       "legs": [
         {
-          "player": "DK Metcalf",
+          "player": "Pat Freiermuth",
           "market": "Receiving Yards",
           "threshold": "30+",
-          "price": -260,
-          "hr": "8/10",
+          "historical_hr": "6/10",
+          "price": "-106",
           "context": "Supportive"
         },
         {
-          "player": "Jerry Jeudy",
+          "player": "Harold Fannin Jr.",
           "market": "Receiving Yards",
-          "threshold": "20+",
-          "price": 142,
-          "hr": "7/10",
-          "context": "Concern"
-        },
-        {
-          "player": "Jerry Jeudy",
-          "market": "Receptions",
-          "threshold": "2+",
-          "price": 124,
-          "hr": "8/10",
-          "context": "Concern"
-        },
-        {
-          "player": "Pat Freiermuth",
-          "market": "Receptions",
-          "threshold": "3+",
-          "price": -245,
-          "hr": "7/10",
-          "context": "Supportive"
-        },
-        {
-          "player": "Jaylen Warren",
-          "market": "Rushing Yards",
           "threshold": "40+",
-          "price": -1100,
-          "hr": "7/10",
+          "historical_hr": "6/10",
+          "price": "-122",
           "context": "Supportive"
+        },
+        {
+          "player": "DK Metcalf",
+          "market": "Receptions",
+          "threshold": "4+",
+          "historical_hr": "6/10",
+          "price": "-122",
+          "context": "Mixed"
+        },
+        {
+          "player": "Harold Fannin Jr.",
+          "market": "Receptions",
+          "threshold": "4+",
+          "historical_hr": "6/10",
+          "price": "-260",
+          "context": "Supportive"
+        },
+        {
+          "player": "Aaron Rodgers",
+          "market": "Passing Yards",
+          "threshold": "200+",
+          "historical_hr": "6/10",
+          "price": "-166",
+          "context": "Mixed"
         }
       ],
-      "rule": "Balanced base +3 legs; >+1000 target range.",
-      "combined_decimal": 11.530127,
-      "combined_american": 1053,
-      "all_legs_ge_70": true
+      "combined_decimal": 14.27744,
+      "combined_american": 1328,
+      "all_legs_ge_70": false
     }
   ],
   "validation": {
     "stage4_input_validated": true,
-    "stage1_locked": true,
-    "stage2_locked": true,
     "stage3_locked": true,
+    "stage2_locked": true,
+    "stage1_locked": true,
     "no_prior_stage_reconstruction": true,
-    "all_portfolio_legs_have_at_least_70_percent_L10_HR": true,
+    "no_stage1_to_4_changes": true,
+    "stage3_concern_candidates_excluded": true,
+    "all_portfolio_legs_at_least_70_percent_L10_HR": true,
     "low_variance_exactly_2_legs": true,
     "balanced_max_2_legs": true,
     "price_seeking_low_max_3_legs": true,
