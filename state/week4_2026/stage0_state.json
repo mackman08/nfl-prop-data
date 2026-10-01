@@ -1,0 +1,19 @@
+{
+  "stage": 0,
+  "season": 2026,
+  "week": 4,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "N": 10
+  },
+  "historical_cutoff": "2026-09-28T23:30:00-04:00",
+  "record_count": 0,
+  "state_id": "STATE-0-20261001-THU-L10",
+  "parent_state_id": null,
+  "records": [],
+  "cutoff_basis": "Completion of the final scheduled game of Week 3 (Philadelphia Eagles at Chicago Bears, Monday September 28, 2026).",
+  "analysis_scope_description": "NFL Week 4, 2026 Regular Season — Thursday only",
+  "historical_data_source": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
+  "current_sportsbook_source": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv"
+}
