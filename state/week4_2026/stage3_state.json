@@ -2,211 +2,1658 @@
   "stage": 3,
   "season": 2026,
   "week": 4,
-  "scope": "Thursday only",
-  "historical_sample": {
-    "label": "L10",
-    "N": 10
-  },
+  "scope": "Sunday — games starting prior to 2:00 PM ET",
+  "historical_sample": "L10",
   "historical_cutoff": "2026-09-28T23:30:00-04:00",
-  "record_count": 13,
-  "state_id": "STATE-3-20261001-THU-L10",
-  "parent_state_id": "STATE-2-20261001-THU-L10",
+  "state_id": "STATE-3-20261001-SUN-BEFORE-2PM-L10",
+  "parent_state_id": "STATE-2-20261001-SUN-BEFORE-2PM-L10-DK-FALLBACK",
+  "record_count": 65,
   "records": [
     {
-      "player": "Quinshon Judkins",
-      "market_type": "Rushing Yards",
-      "selected_threshold": 30,
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "selected_threshold": 39.5,
       "historical_hr": "6/10",
-      "band": "CORE",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "10/10",
+        "price": "-850"
+      },
+      "core": {
+        "threshold": 39.5,
+        "historical_hr": "6/10",
+        "price": "-136"
+      },
+      "ceiling": {
+        "threshold": 43.5,
+        "historical_hr": "5/10",
+        "price": "-110"
+      },
+      "current_week_context": "Mixed — Washington QB situation unsettled; matchup described as favorable for Washington passing.",
       "classification": "Mixed",
-      "context": "18 carries and 79 scrimmage yards in Week 3; 62% rush share. Pittsburgh is allowing 113.0 rushing YPG, but its designed-run contact rate behind the line is 52.1%. Cleveland's line/rush efficiency remains a concern.",
-      "sources": [
-        "steelers.com Week 4 stats"
-      ]
+      "implications": "Use current-week context only; do not alter historical evidence."
     },
     {
-      "player": "Aaron Rodgers",
-      "market_type": "Passing Yards",
-      "selected_threshold": 200,
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
       "historical_hr": "6/10",
-      "band": "CORE",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "10/10",
+        "price": "-1880"
+      },
+      "core": {
+        "threshold": 3.5,
+        "historical_hr": "6/10",
+        "price": "-184"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "historical_hr": "4/10",
+        "price": "116"
+      },
+      "current_week_context": "Mixed — Washington QB situation unsettled; matchup described as favorable for Washington passing.",
       "classification": "Mixed",
-      "context": "221, 187 and 292 passing yards through three games. Cleveland allows 224.0 passing YPG and Pittsburgh passes on 64.7% of snaps, but the Steelers offense ranks poorly in the matchup model and Cleveland generates pressure.",
-      "sources": [
-        "steelers.com Week 4 stats",
-        "iHeart Week 4 Rodgers preview",
-        "Sharp Football Analysis"
-      ]
+      "implications": "Use current-week context only; do not alter historical evidence."
     },
     {
-      "player": "Pat Freiermuth",
-      "market_type": "Receptions",
-      "selected_threshold": 3,
-      "historical_hr": "7/10",
-      "band": "CORE",
-      "classification": "Supportive",
-      "context": "Freiermuth has 5, 4 and 2 receptions on 5, 5 and 4 targets. Cleveland has allowed 3.3 receptions/game to TE1s.",
-      "sources": [
-        "PFR 2026 game log",
-        "BTB Data"
-      ]
-    },
-    {
-      "player": "Pat Freiermuth",
-      "market_type": "Receiving Yards",
-      "selected_threshold": 30,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "classification": "Supportive",
-      "context": "He has produced 46, 32 and 30 receiving yards in the first three games; Cleveland has allowed 34.0 TE1 receiving yards/game.",
-      "sources": [
-        "PFR 2026 game log",
-        "BTB Data"
-      ]
-    },
-    {
-      "player": "DK Metcalf",
-      "market_type": "Receiving Yards",
-      "selected_threshold": 30,
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
       "historical_hr": "8/10",
-      "band": "CORE",
-      "classification": "Supportive",
-      "context": "Metcalf has 10, 9 and 5 targets and at least 3 receptions in every game. Cleveland allows 74.3 receiving yards/game to WR1s; Pittsburgh passes on 64.7% of snaps.",
-      "sources": [
-        "StatChasers",
-        "USA Today/Yahoo",
-        "BTB Data",
-        "steelers.com"
-      ]
-    },
-    {
-      "player": "Jaylen Warren",
-      "market_type": "Rushing Yards",
-      "selected_threshold": 40,
-      "historical_hr": "7/10",
-      "band": "CORE",
-      "classification": "Supportive",
-      "context": "Warren has 10, 11 and 17 carries, including 127 rushing yards in Week 3. He leads Pittsburgh with 216 rushing yards. Cleveland allows 120.3 rushing YPG and has allowed explosive runs on 16.7% of carries.",
-      "sources": [
-        "PFR 2026 game log",
-        "steelers.com",
-        "Reuters"
-      ]
-    },
-    {
-      "player": "Jaylen Warren",
-      "market_type": "Receptions",
-      "selected_threshold": 2,
-      "historical_hr": "8/10",
-      "band": "CORE",
-      "classification": "Supportive",
-      "context": "Warren has 5, 2 and 3 receptions on 6, 4 and 4 targets. He ran a route on 70.3% of dropbacks last week; Cleveland allows 3.0 receptions/game to RB1s.",
-      "sources": [
-        "PFR",
-        "steelers.com",
-        "BTB Data"
-      ]
-    },
-    {
-      "player": "DK Metcalf",
-      "market_type": "Receptions",
-      "selected_threshold": 4,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "classification": "Mixed",
-      "context": "Metcalf has 4, 4 and 3 receptions. He averages 8.0 targets/game, but has not reached four catches in every game.",
-      "sources": [
-        "StatChasers",
-        "BTB Data"
-      ]
-    },
-    {
-      "player": "Harold Fannin Jr.",
-      "market_type": "Receiving Yards",
-      "selected_threshold": 40,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "classification": "Supportive",
-      "context": "Fannin has 21, 54 and 51 receiving yards with 18 targets through three games; Week 3 was 7 catches on 9 targets. He is playing a high snap share and is a central Cleveland target.",
-      "sources": [
-        "PFR",
-        "Behind the Steel Curtain",
-        "Dawgs By Nature"
-      ]
-    },
-    {
-      "player": "Harold Fannin Jr.",
-      "market_type": "Receptions",
-      "selected_threshold": 4,
-      "historical_hr": "6/10",
-      "band": "CORE",
-      "classification": "Supportive",
-      "context": "Fannin has 2, 5 and 7 receptions and 18 targets through three games.",
-      "sources": [
-        "PFR 2026 game log",
-        "PFR advanced receiving"
-      ]
-    },
-    {
-      "player": "Jerry Jeudy",
-      "market_type": "Receiving Yards",
-      "selected_threshold": 20,
-      "historical_hr": "7/10",
-      "band": "CORE",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "10/10",
+        "price": "-1940"
+      },
+      "core": {
+        "threshold": 2.5,
+        "historical_hr": "8/10",
+        "price": "-472"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "historical_hr": "4/10",
+        "price": "-187"
+      },
+      "current_week_context": "Concern — Jayden Daniels limited; Sam Cosmi out, adding OL/QB uncertainty.",
       "classification": "Concern",
-      "context": "Jeudy has only 5 targets and 2 receptions for 26 yards through three games. He had zero targets and zero touches in Week 3 despite playing over 50% of offensive snaps.",
-      "sources": [
-        "PFR",
-        "CBS Sports"
-      ]
+      "implications": "Use current-week context only; do not alter historical evidence."
     },
     {
-      "player": "Jerry Jeudy",
-      "market_type": "Receptions",
-      "selected_threshold": 2,
-      "historical_hr": "8/10",
-      "band": "CORE",
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "selected_threshold": 51.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-1180"
+      },
+      "core": {
+        "threshold": 51.5,
+        "historical_hr": "7/10",
+        "price": "-113"
+      },
+      "ceiling": {
+        "threshold": 59.5,
+        "historical_hr": "4/10",
+        "price": "126"
+      },
+      "current_week_context": "Concern — Jayden Daniels limited; Sam Cosmi out, adding OL/QB uncertainty.",
       "classification": "Concern",
-      "context": "Jeudy has 2, 0 and 0 receptions, with only 5 targets total and zero in Week 3. Current usage conflicts with the historical 2+ structure.",
-      "sources": [
-        "PFR",
-        "CBS Sports"
-      ]
+      "implications": "Use current-week context only; do not alter historical evidence."
     },
     {
-      "player": "Michael Pittman Jr.",
-      "market_type": "Receptions",
-      "selected_threshold": 2,
-      "historical_hr": "9/10",
-      "band": "CORE",
+      "player": "Keenan Allen",
+      "team": "IND",
+      "market": "Receiving Yards",
+      "selected_threshold": 24.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-514"
+      },
+      "core": {
+        "threshold": 24.5,
+        "historical_hr": "7/10",
+        "price": "-212"
+      },
+      "ceiling": {
+        "threshold": 34.5,
+        "historical_hr": "5/10",
+        "price": "-110"
+      },
+      "current_week_context": "Mixed — limited practice; Indianapolis passing matchup is more favorable than its run matchup.",
       "classification": "Mixed",
-      "context": "Pittman returned from a foot injury in Week 3 and had 2 receptions on 5 targets. He missed Week 2 with the foot issue, but the latest Week 4 report has no game designation.",
-      "sources": [
-        "PFR",
-        "NFL/Steelers injury reports",
-        "StatChasers"
-      ]
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Daniel Jones",
+      "team": "IND",
+      "market": "Passing Yards",
+      "selected_threshold": 209.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 149.5,
+        "historical_hr": "9/10",
+        "price": "-1320"
+      },
+      "core": {
+        "threshold": 209.5,
+        "historical_hr": "6/10",
+        "price": "-178"
+      },
+      "ceiling": {
+        "threshold": 219.5,
+        "historical_hr": "5/10",
+        "price": "-134"
+      },
+      "current_week_context": "Mixed — returning from Achilles injury; matchup gives Indianapolis a passing edge.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Keenan Allen",
+      "team": "IND",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-1180"
+      },
+      "core": {
+        "threshold": 3.5,
+        "historical_hr": "7/10",
+        "price": "-136"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "historical_hr": "5/10",
+        "price": "159"
+      },
+      "current_week_context": "Mixed — limited practice; Indianapolis passing matchup is more favorable than its run matchup.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Zay Flowers",
+      "team": "BAL",
+      "market": "Receiving Yards",
+      "selected_threshold": 69.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "9/10",
+        "price": "-1100"
+      },
+      "core": {
+        "threshold": 69.5,
+        "historical_hr": "6/10",
+        "price": "102"
+      },
+      "ceiling": {
+        "threshold": 79.5,
+        "historical_hr": "5/10",
+        "price": "146"
+      },
+      "current_week_context": "Concern — limited with hamstring issue; Ravens also have center injuries.",
+      "classification": "Concern",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "market": "Rushing Yards",
+      "selected_threshold": 89.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 49.5,
+        "historical_hr": "10/10",
+        "price": "-1500"
+      },
+      "core": {
+        "threshold": 89.5,
+        "historical_hr": "6/10",
+        "price": "-159"
+      },
+      "ceiling": {
+        "threshold": 97.5,
+        "historical_hr": "5/10",
+        "price": "-114"
+      },
+      "current_week_context": "Supportive — no injury designation; Baltimore can control game with its run game.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Wan'Dale Robinson",
+      "team": "TEN",
+      "market": "Receptions",
+      "selected_threshold": 4.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "9/10",
+        "price": "-1440"
+      },
+      "core": {
+        "threshold": 4.5,
+        "historical_hr": "7/10",
+        "price": "135"
+      },
+      "ceiling": {
+        "threshold": 5.5,
+        "historical_hr": "5/10",
+        "price": "273"
+      },
+      "current_week_context": "Mixed — locked Stage 2 team identity conflicts with current context; player-specific context not safely resolved.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "market": "Rushing Yards",
+      "selected_threshold": 59.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "10/10",
+        "price": "-2700"
+      },
+      "core": {
+        "threshold": 59.5,
+        "historical_hr": "7/10",
+        "price": "182"
+      },
+      "ceiling": {
+        "threshold": 69.5,
+        "historical_hr": "5/10",
+        "price": "293"
+      },
+      "current_week_context": "Concern — did not participate in practice.",
+      "classification": "Concern",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Wan'Dale Robinson",
+      "team": "TEN",
+      "market": "Receiving Yards",
+      "selected_threshold": 37.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-610"
+      },
+      "core": {
+        "threshold": 37.5,
+        "historical_hr": "6/10",
+        "price": "-115"
+      },
+      "ceiling": {
+        "threshold": 39.5,
+        "historical_hr": "5/10",
+        "price": "-102"
+      },
+      "current_week_context": "Mixed — locked Stage 2 team identity conflicts with current context; player-specific context not safely resolved.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Garrett Wilson",
+      "team": "NYJ",
+      "market": "Receiving Yards",
+      "selected_threshold": 69.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "8/10",
+        "price": "-2300"
+      },
+      "core": {
+        "threshold": 69.5,
+        "historical_hr": "6/10",
+        "price": "-144"
+      },
+      "ceiling": {
+        "threshold": 75.5,
+        "historical_hr": "5/10",
+        "price": "-112"
+      },
+      "current_week_context": "Mixed — central target role, but Jets offense and Chicago matchup create uncertainty.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "D'Andre Swift",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "selected_threshold": 49.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "9/10",
+        "price": "-2900"
+      },
+      "core": {
+        "threshold": 49.5,
+        "historical_hr": "7/10",
+        "price": "-284"
+      },
+      "ceiling": {
+        "threshold": 59.5,
+        "historical_hr": "5/10",
+        "price": "-158"
+      },
+      "current_week_context": "Supportive — 20 carries and 69% snaps last week; favorable Jets run matchup.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Colston Loveland",
+      "team": "CHI",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-900"
+      },
+      "core": {
+        "threshold": 3.5,
+        "historical_hr": "6/10",
+        "price": "-105"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "historical_hr": "2/10",
+        "price": "212"
+      },
+      "current_week_context": "Mixed — shared role and volatile target share; no injury listed.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "selected_threshold": 39.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-1160"
+      },
+      "core": {
+        "threshold": 39.5,
+        "historical_hr": "6/10",
+        "price": "-104"
+      },
+      "ceiling": {
+        "threshold": 49.5,
+        "historical_hr": "4/10",
+        "price": "174"
+      },
+      "current_week_context": "Mixed — stable 10-carry RB2 role but shared backfield limits workload.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Emeka Egbuka",
+      "team": "TB",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-710"
+      },
+      "core": {
+        "threshold": 2.5,
+        "historical_hr": "7/10",
+        "price": "-221"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "historical_hr": "4/10",
+        "price": "109"
+      },
+      "current_week_context": "Mixed — rookie QB transition creates passing-volume uncertainty.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 2.5,
+        "historical_hr": "9/10",
+        "price": "-1020"
+      },
+      "core": {
+        "threshold": 3.5,
+        "historical_hr": "8/10",
+        "price": "-357"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "historical_hr": "4/10",
+        "price": "-158"
+      },
+      "current_week_context": "Supportive — healthy/no injury designation and leads GB receiving production.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "10/10",
+        "price": "-1620"
+      },
+      "core": {
+        "threshold": 2.5,
+        "historical_hr": "7/10",
+        "price": "-417"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "historical_hr": "5/10",
+        "price": "-165"
+      },
+      "current_week_context": "Supportive — key part of GB passing attack; no injury listed.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Jalon Daniels",
+      "team": "WAS",
+      "market": "Rushing Yards",
+      "selected_threshold": 29.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 9.5,
+        "historical_hr": "10/10",
+        "price": "-2200"
+      },
+      "core": {
+        "threshold": 29.5,
+        "historical_hr": "7/10",
+        "price": "-202"
+      },
+      "ceiling": {
+        "threshold": 37.5,
+        "historical_hr": "5/10",
+        "price": "-112"
+      },
+      "current_week_context": "Concern — Stage 2 labels WAS, while current sources identify him as TB starter; identity conflict.",
+      "classification": "Concern",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "market": "Receiving Yards",
+      "selected_threshold": 41.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "10/10",
+        "price": "-750"
+      },
+      "core": {
+        "threshold": 41.5,
+        "historical_hr": "6/10",
+        "price": "-109"
+      },
+      "ceiling": {
+        "threshold": 49.5,
+        "historical_hr": "5/10",
+        "price": "137"
+      },
+      "current_week_context": "Supportive — key part of GB passing attack; no injury listed.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Bucky Irving",
+      "team": "TB",
+      "market": "Rushing Yards",
+      "selected_threshold": 59.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "9/10",
+        "price": "-2200"
+      },
+      "core": {
+        "threshold": 59.5,
+        "historical_hr": "6/10",
+        "price": "-127"
+      },
+      "ceiling": {
+        "threshold": 61.5,
+        "historical_hr": "4/10",
+        "price": "-114"
+      },
+      "current_week_context": "Mixed — limited with glute issue, though GB run defense has been vulnerable.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Hunter Henry",
+      "team": "NE",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-840"
+      },
+      "core": {
+        "threshold": 2.5,
+        "historical_hr": "8/10",
+        "price": "-250"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "historical_hr": "5/10",
+        "price": "101"
+      },
+      "current_week_context": "Mixed — no injury; difficult Buffalo matchup.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "market": "Receiving Yards",
+      "selected_threshold": 39.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-870"
+      },
+      "core": {
+        "threshold": 39.5,
+        "historical_hr": "6/10",
+        "price": "-145"
+      },
+      "ceiling": {
+        "threshold": 44.5,
+        "historical_hr": "5/10",
+        "price": "-112"
+      },
+      "current_week_context": "Concern — no injury but NE offensive environment and Buffalo matchup are difficult.",
+      "classification": "Concern",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Romeo Doubs",
+      "team": "NE",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-740"
+      },
+      "core": {
+        "threshold": 2.5,
+        "historical_hr": "6/10",
+        "price": "-223"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "historical_hr": "3/10",
+        "price": "109"
+      },
+      "current_week_context": "Concern — Stage 2 team identity conflicts with current roster context.",
+      "classification": "Concern",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Romeo Doubs",
+      "team": "NE",
+      "market": "Receiving Yards",
+      "selected_threshold": 24.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "8/10",
+        "price": "-670"
+      },
+      "core": {
+        "threshold": 24.5,
+        "historical_hr": "6/10",
+        "price": "-296"
+      },
+      "ceiling": {
+        "threshold": 39.5,
+        "historical_hr": "5/10",
+        "price": "-122"
+      },
+      "current_week_context": "Concern — Stage 2 team identity conflicts with current roster context.",
+      "classification": "Concern",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Dalton Kincaid",
+      "team": "BUF",
+      "market": "Receiving Yards",
+      "selected_threshold": 24.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-1460"
+      },
+      "core": {
+        "threshold": 24.5,
+        "historical_hr": "8/10",
+        "price": "-559"
+      },
+      "ceiling": {
+        "threshold": 39.5,
+        "historical_hr": "5/10",
+        "price": "-214"
+      },
+      "current_week_context": "Supportive — Buffalo offense productive; Keon Coleman missed practice.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "selected_threshold": 59.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-1600"
+      },
+      "core": {
+        "threshold": 59.5,
+        "historical_hr": "7/10",
+        "price": "256"
+      },
+      "ceiling": {
+        "threshold": 69.5,
+        "historical_hr": "4/10",
+        "price": "424"
+      },
+      "current_week_context": "Mixed — no injury, but workload against Buffalo remains uncertain.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "James Cook",
+      "team": "BUF",
+      "market": "Rushing Yards",
+      "selected_threshold": 99.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 39.5,
+        "historical_hr": "9/10",
+        "price": "-1760"
+      },
+      "core": {
+        "threshold": 99.5,
+        "historical_hr": "6/10",
+        "price": "139"
+      },
+      "ceiling": {
+        "threshold": 109.5,
+        "historical_hr": "5/10",
+        "price": "200"
+      },
+      "current_week_context": "Supportive — 346 rushing yards through three games in productive BUF offense.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "10/10",
+        "price": "-1040"
+      },
+      "core": {
+        "threshold": 3.5,
+        "historical_hr": "6/10",
+        "price": "-120"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "historical_hr": "3/10",
+        "price": "185"
+      },
+      "current_week_context": "Concern — no injury but NE offensive environment and Buffalo matchup are difficult.",
+      "classification": "Concern",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Drake Maye",
+      "team": "NE",
+      "market": "Passing Yards",
+      "selected_threshold": 199.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 149.5,
+        "historical_hr": "10/10",
+        "price": "-1320"
+      },
+      "core": {
+        "threshold": 199.5,
+        "historical_hr": "6/10",
+        "price": "-252"
+      },
+      "ceiling": {
+        "threshold": 209.5,
+        "historical_hr": "5/10",
+        "price": "-196"
+      },
+      "current_week_context": "Mixed — full practice, but Buffalo matchup and NE's poor Week 3 create uncertainty.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Chase Brown",
+      "team": "CIN",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "10/10",
+        "price": "-740"
+      },
+      "core": {
+        "threshold": 2.5,
+        "historical_hr": "8/10",
+        "price": "-220"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "historical_hr": "5/10",
+        "price": "109"
+      },
+      "current_week_context": "Mixed — Cincinnati may lean pass-heavy; exact workload distribution uncertain.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Tee Higgins",
+      "team": "CIN",
+      "market": "Receptions",
+      "selected_threshold": 4.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "10/10",
+        "price": "-2800"
+      },
+      "core": {
+        "threshold": 4.5,
+        "historical_hr": "6/10",
+        "price": "100"
+      },
+      "ceiling": {
+        "threshold": 5.5,
+        "historical_hr": "4/10",
+        "price": "205"
+      },
+      "current_week_context": "Supportive — current reporting describes strong play; pass-friendly matchup.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Chase Brown",
+      "team": "CIN",
+      "market": "Rushing Yards",
+      "selected_threshold": 64.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "9/10",
+        "price": "-2600"
+      },
+      "core": {
+        "threshold": 64.5,
+        "historical_hr": "6/10",
+        "price": "-112"
+      },
+      "ceiling": {
+        "threshold": 69.5,
+        "historical_hr": "5/10",
+        "price": "114"
+      },
+      "current_week_context": "Mixed — Cincinnati may lean pass-heavy; exact workload distribution uncertain.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "market": "Passing Yards",
+      "selected_threshold": 239.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 179.5,
+        "historical_hr": "10/10",
+        "price": "-1160"
+      },
+      "core": {
+        "threshold": 239.5,
+        "historical_hr": "7/10",
+        "price": "-187"
+      },
+      "ceiling": {
+        "threshold": 249.5,
+        "historical_hr": "5/10",
+        "price": "-147"
+      },
+      "current_week_context": "Supportive — JAX 2-1; Cincinnati secondary injuries create passing opportunity.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Joe Burrow",
+      "team": "CIN",
+      "market": "Passing Yards",
+      "selected_threshold": 249.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 189.5,
+        "historical_hr": "9/10",
+        "price": "-1060"
+      },
+      "core": {
+        "threshold": 249.5,
+        "historical_hr": "6/10",
+        "price": "-176"
+      },
+      "ceiling": {
+        "threshold": 259.5,
+        "historical_hr": "5/10",
+        "price": "-136"
+      },
+      "current_week_context": "Supportive — Cincinnati expected to lean on aerial attack vs Jacksonville.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Ja'Marr Chase",
+      "team": "CIN",
+      "market": "Receptions",
+      "selected_threshold": 6.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 3.5,
+        "historical_hr": "8/10",
+        "price": "-1360"
+      },
+      "core": {
+        "threshold": 6.5,
+        "historical_hr": "7/10",
+        "price": "-121"
+      },
+      "ceiling": {
+        "threshold": 7.5,
+        "historical_hr": "4/10",
+        "price": "150"
+      },
+      "current_week_context": "Supportive — same favorable passing environment; no injury listed.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Tee Higgins",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "selected_threshold": 60.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "10/10",
+        "price": "-2300"
+      },
+      "core": {
+        "threshold": 60.5,
+        "historical_hr": "6/10",
+        "price": "-113"
+      },
+      "ceiling": {
+        "threshold": 69.5,
+        "historical_hr": "4/10",
+        "price": "128"
+      },
+      "current_week_context": "Supportive — current reporting describes strong play; pass-friendly matchup.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Jakobi Meyers",
+      "team": "JAX",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "9/10",
+        "price": "-1300"
+      },
+      "core": {
+        "threshold": 3.5,
+        "historical_hr": "8/10",
+        "price": "-140"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "historical_hr": "5/10",
+        "price": "158"
+      },
+      "current_week_context": "Mixed — limited practice; target allocation uncertain.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Jakobi Meyers",
+      "team": "JAX",
+      "market": "Receiving Yards",
+      "selected_threshold": 40.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "10/10",
+        "price": "-750"
+      },
+      "core": {
+        "threshold": 40.5,
+        "historical_hr": "6/10",
+        "price": "-114"
+      },
+      "ceiling": {
+        "threshold": 49.5,
+        "historical_hr": "4/10",
+        "price": "141"
+      },
+      "current_week_context": "Mixed — limited practice; target allocation uncertain.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Brenton Strange",
+      "team": "JAX",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "9/10",
+        "price": "-870"
+      },
+      "core": {
+        "threshold": 2.5,
+        "historical_hr": "7/10",
+        "price": "-262"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "historical_hr": "3/10",
+        "price": "-106"
+      },
+      "current_week_context": "Mixed — no injury; target distribution uncertain.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Michael Wilson",
+      "team": "ARI",
+      "market": "Receiving Yards",
+      "selected_threshold": 49.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "10/10",
+        "price": "-2900"
+      },
+      "core": {
+        "threshold": 49.5,
+        "historical_hr": "8/10",
+        "price": "-168"
+      },
+      "ceiling": {
+        "threshold": 57.5,
+        "historical_hr": "5/10",
+        "price": "-113"
+      },
+      "current_week_context": "Supportive — 11 catches on 17 targets last week.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Trey McBride",
+      "team": "ARI",
+      "market": "Receiving Yards",
+      "selected_threshold": 69.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "10/10",
+        "price": "-2200"
+      },
+      "core": {
+        "threshold": 69.5,
+        "historical_hr": "6/10",
+        "price": "100"
+      },
+      "ceiling": {
+        "threshold": 79.5,
+        "historical_hr": "3/10",
+        "price": "154"
+      },
+      "current_week_context": "Supportive — double-digit targets each game and 9-75 on 11 last week.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Isaiah Likely",
+      "team": "NYG",
+      "market": "Receptions",
+      "selected_threshold": 1.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-1680"
+      },
+      "core": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-1680"
+      },
+      "ceiling": {
+        "threshold": 2.5,
+        "historical_hr": "5/10",
+        "price": "-436"
+      },
+      "current_week_context": "Mixed — no injury, but Giants red-zone offense has struggled.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Jacoby Brissett",
+      "team": "ARI",
+      "market": "Passing Yards",
+      "selected_threshold": 239.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 159.5,
+        "historical_hr": "9/10",
+        "price": "-1120"
+      },
+      "core": {
+        "threshold": 239.5,
+        "historical_hr": "7/10",
+        "price": "109"
+      },
+      "ceiling": {
+        "threshold": 249.5,
+        "historical_hr": "5/10",
+        "price": "141"
+      },
+      "current_week_context": "Supportive — Arizona passing volume increased last week.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Trey McBride",
+      "team": "ARI",
+      "market": "Receptions",
+      "selected_threshold": 7.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 3.5,
+        "historical_hr": "10/10",
+        "price": "-2200"
+      },
+      "core": {
+        "threshold": 7.5,
+        "historical_hr": "7/10",
+        "price": "110"
+      },
+      "ceiling": {
+        "threshold": 8.5,
+        "historical_hr": "5/10",
+        "price": "191"
+      },
+      "current_week_context": "Supportive — double-digit targets each game and 9-75 on 11 last week.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Dalton Schultz",
+      "team": "HOU",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "9/10",
+        "price": "-3000"
+      },
+      "core": {
+        "threshold": 3.5,
+        "historical_hr": "6/10",
+        "price": "-248"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "historical_hr": "4/10",
+        "price": "-116"
+      },
+      "current_week_context": "Mixed — limited practice; Houston offense has struggled.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Jake Ferguson",
+      "team": "DAL",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-810"
+      },
+      "core": {
+        "threshold": 2.5,
+        "historical_hr": "6/10",
+        "price": "-248"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "historical_hr": "4/10",
+        "price": "100"
+      },
+      "current_week_context": "Mixed — potential competition for TE targets.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Woody Marks",
+      "team": "HOU",
+      "market": "Rushing Yards",
+      "selected_threshold": 39.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-1240"
+      },
+      "core": {
+        "threshold": 39.5,
+        "historical_hr": "7/10",
+        "price": "104"
+      },
+      "ceiling": {
+        "threshold": 49.5,
+        "historical_hr": "4/10",
+        "price": "200"
+      },
+      "current_week_context": "Mixed — Houston averaging 84.7 rushing yards/game; workload uncertain.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receptions",
+      "selected_threshold": 4.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 2.5,
+        "historical_hr": "9/10",
+        "price": "-860"
+      },
+      "core": {
+        "threshold": 4.5,
+        "historical_hr": "6/10",
+        "price": "-135"
+      },
+      "ceiling": {
+        "threshold": 5.5,
+        "historical_hr": "5/10",
+        "price": "152"
+      },
+      "current_week_context": "Mixed — no injury, but Houston pass rush is a matchup concern.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Ryan Flournoy",
+      "team": "DAL",
+      "market": "Receptions",
+      "selected_threshold": 1.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-850"
+      },
+      "core": {
+        "threshold": 1.5,
+        "historical_hr": "8/10",
+        "price": "-850"
+      },
+      "ceiling": {
+        "threshold": 2.5,
+        "historical_hr": "5/10",
+        "price": "-246"
+      },
+      "current_week_context": "Supportive — Houston pass defense has struggled; reporting calls for more involvement.",
+      "classification": "Supportive",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receptions",
+      "selected_threshold": 5.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 2.5,
+        "historical_hr": "9/10",
+        "price": "-2600"
+      },
+      "core": {
+        "threshold": 5.5,
+        "historical_hr": "6/10",
+        "price": "-137"
+      },
+      "ceiling": {
+        "threshold": 6.5,
+        "historical_hr": "3/10",
+        "price": "140"
+      },
+      "current_week_context": "Mixed — Houston pass rush is a material matchup concern.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "selected_threshold": 49.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "10/10",
+        "price": "-2200"
+      },
+      "core": {
+        "threshold": 49.5,
+        "historical_hr": "7/10",
+        "price": "-218"
+      },
+      "ceiling": {
+        "threshold": 59.5,
+        "historical_hr": "5/10",
+        "price": "-120"
+      },
+      "current_week_context": "Mixed — Dallas faces Houston's strong front.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "market": "Passing Yards",
+      "selected_threshold": 270.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 189.5,
+        "historical_hr": "8/10",
+        "price": "-1120"
+      },
+      "core": {
+        "threshold": 270.5,
+        "historical_hr": "7/10",
+        "price": "-112"
+      },
+      "ceiling": {
+        "threshold": 279.5,
+        "historical_hr": "5/10",
+        "price": "110"
+      },
+      "current_week_context": "Mixed — Houston has 10 sacks and strong pass rush.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Nico Collins",
+      "team": "HOU",
+      "market": "Receiving Yards",
+      "selected_threshold": 69.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "10/10",
+        "price": "-5500"
+      },
+      "core": {
+        "threshold": 69.5,
+        "historical_hr": "7/10",
+        "price": "-138"
+      },
+      "ceiling": {
+        "threshold": 75.5,
+        "historical_hr": "5/10",
+        "price": "-110"
+      },
+      "current_week_context": "Mixed — returning from hamstring issue and limited; major target role but availability/conditioning matter.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Dalton Schultz",
+      "team": "HOU",
+      "market": "Receiving Yards",
+      "selected_threshold": 24.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "9/10",
+        "price": "-980"
+      },
+      "core": {
+        "threshold": 24.5,
+        "historical_hr": "7/10",
+        "price": "-366"
+      },
+      "ceiling": {
+        "threshold": 39.5,
+        "historical_hr": "4/10",
+        "price": "-139"
+      },
+      "current_week_context": "Mixed — limited practice; Houston offense has struggled.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Puka Nacua",
+      "team": "LA",
+      "market": "Receptions",
+      "selected_threshold": 6.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 2.5,
+        "historical_hr": "10/10",
+        "price": "-3200"
+      },
+      "core": {
+        "threshold": 6.5,
+        "historical_hr": "6/10",
+        "price": "119"
+      },
+      "ceiling": {
+        "threshold": 7.5,
+        "historical_hr": "3/10",
+        "price": "216"
+      },
+      "current_week_context": "Mixed — expected return from hip/groin after two missed games; target redistribution/conditioning uncertainty.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "market": "Passing Yards",
+      "selected_threshold": 179.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 149.5,
+        "historical_hr": "8/10",
+        "price": "-537"
+      },
+      "core": {
+        "threshold": 179.5,
+        "historical_hr": "6/10",
+        "price": "-211"
+      },
+      "ceiling": {
+        "threshold": 189.5,
+        "historical_hr": "5/10",
+        "price": "-158"
+      },
+      "current_week_context": "Mixed — Philadelphia offense coming off poor Week 3; no listed Hurts injury.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Puka Nacua",
+      "team": "LA",
+      "market": "Receiving Yards",
+      "selected_threshold": 69.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "10/10",
+        "price": "-1960"
+      },
+      "core": {
+        "threshold": 69.5,
+        "historical_hr": "8/10",
+        "price": "-145"
+      },
+      "ceiling": {
+        "threshold": 76.5,
+        "historical_hr": "4/10",
+        "price": "-112"
+      },
+      "current_week_context": "Mixed — expected return from hip/groin after two missed games; target redistribution/conditioning uncertainty.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "DeVonta Smith",
+      "team": "PHI",
+      "market": "Receiving Yards",
+      "selected_threshold": 49.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "10/10",
+        "price": "-1240"
+      },
+      "core": {
+        "threshold": 49.5,
+        "historical_hr": "6/10",
+        "price": "-242"
+      },
+      "ceiling": {
+        "threshold": 59.5,
+        "historical_hr": "3/10",
+        "price": "-150"
+      },
+      "current_week_context": "Concern — did not practice with hamstring issue.",
+      "classification": "Concern",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Kyren Williams",
+      "team": "LA",
+      "market": "Rushing Yards",
+      "selected_threshold": 69.5,
+      "historical_hr": "7/10",
+      "floor": {
+        "threshold": 24.5,
+        "historical_hr": "10/10",
+        "price": "-1480"
+      },
+      "core": {
+        "threshold": 69.5,
+        "historical_hr": "7/10",
+        "price": "170"
+      },
+      "ceiling": {
+        "threshold": 79.5,
+        "historical_hr": "4/10",
+        "price": "269"
+      },
+      "current_week_context": "Mixed — Nacua return changes offensive distribution; no Kyren injury.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Saquon Barkley",
+      "team": "PHI",
+      "market": "Rushing Yards",
+      "selected_threshold": 76.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 39.5,
+        "historical_hr": "8/10",
+        "price": "-1060"
+      },
+      "core": {
+        "threshold": 76.5,
+        "historical_hr": "6/10",
+        "price": "-111"
+      },
+      "ceiling": {
+        "threshold": 79.5,
+        "historical_hr": "5/10",
+        "price": "103"
+      },
+      "current_week_context": "Mixed — no injury, but Eagles offensive environment has changed.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Blake Corum",
+      "team": "LA",
+      "market": "Rushing Yards",
+      "selected_threshold": 49.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 14.5,
+        "historical_hr": "10/10",
+        "price": "-1700"
+      },
+      "core": {
+        "threshold": 49.5,
+        "historical_hr": "6/10",
+        "price": "149"
+      },
+      "ceiling": {
+        "threshold": 59.5,
+        "historical_hr": "4/10",
+        "price": "261"
+      },
+      "current_week_context": "Mixed — Rams workload may shift with Nacua return.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Davante Adams",
+      "team": "LA",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "historical_hr": "8/10",
+      "floor": {
+        "threshold": 2.5,
+        "historical_hr": "9/10",
+        "price": "-970"
+      },
+      "core": {
+        "threshold": 3.5,
+        "historical_hr": "8/10",
+        "price": "-343"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "historical_hr": "5/10",
+        "price": "-153"
+      },
+      "current_week_context": "Mixed — heavy recent usage, but Nacua return should redistribute targets.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
+    },
+    {
+      "player": "Matthew Stafford",
+      "team": "LA",
+      "market": "Passing Yards",
+      "selected_threshold": 269.5,
+      "historical_hr": "6/10",
+      "floor": {
+        "threshold": 169.5,
+        "historical_hr": "9/10",
+        "price": "-1360"
+      },
+      "core": {
+        "threshold": 269.5,
+        "historical_hr": "6/10",
+        "price": "138"
+      },
+      "ceiling": {
+        "threshold": 279.5,
+        "historical_hr": "5/10",
+        "price": "174"
+      },
+      "current_week_context": "Mixed — Nacua return adds offensive support but changes target distribution.",
+      "classification": "Mixed",
+      "implications": "Use current-week context only; do not alter historical evidence."
     }
   ],
-  "context_snapshot": {
-    "as_of": "2026-10-01",
-    "game": "PIT at CLE",
-    "kickoff": "2026-10-01T20:15:00-04:00",
-    "weather": "About 75F at kickoff; only slight rain risk during the game, with heavier rain forecast later overnight.",
-    "injuries": [
-      "PIT: Rico Dowdle OUT; Joey Porter Jr. OUT; Jalen Ramsey QUESTIONABLE; Brandin Echols QUESTIONABLE.",
-      "CLE: Elgton Jenkins OUT; Teven Jenkins OUT; Tylan Wallace OUT."
-    ],
-    "environment": "Both teams entered 2-1. Pittsburgh is passing on 64.7% of snaps. Cleveland has allowed 120.3 rushing YPG and 224.0 passing YPG."
-  },
   "validation": {
-    "exact_locked_stage2_universe": true,
-    "no_new_players": true,
-    "no_stage1_rescreen": true,
-    "historical_hr_unchanged": true,
-    "historical_samples_unchanged": true,
-    "stage2_structure_unchanged": true,
+    "only_locked_stage2_candidates_analyzed": true,
+    "new_players_added": 0,
+    "stage1_rescreened": false,
+    "historical_hr_changed": false,
+    "historical_samples_changed": false,
+    "stage2_structure_changed": false,
     "current_week_separate": true,
-    "all_candidates_analyzed": true
-  }
+    "identity_conflicts_flagged": true,
+    "stage3_complete": true
+  },
+  "classification_counts": {
+    "Mixed": 38,
+    "Concern": 10,
+    "Supportive": 17
+  },
+  "source_basis": [
+    "NFL official Week 4 injury report",
+    "NFL Week 4 schedule",
+    "Week 4 matchup analysis and team reports"
+  ]
 }
