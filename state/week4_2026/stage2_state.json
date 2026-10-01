@@ -1,0 +1,1226 @@
+{
+  "stage": 2,
+  "season": 2026,
+  "week": 4,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "N": 10
+  },
+  "historical_cutoff": "2026-09-28T23:30:00-04:00",
+  "record_count": 13,
+  "state_id": "STATE-2-20261001-THU-L10",
+  "parent_state_id": "STATE-1-20261001-THU-L10-R1",
+  "input_state_id": "STATE-1-20261001-THU-L10-R1",
+  "input_record_count": 13,
+  "source_snapshot": {
+    "historical": "Stage 1 locked observations",
+    "sportsbook": "odds/nfl_player_props_latest.csv",
+    "sportsbook_scope": "FanDuel alternate markets — Pittsburgh Steelers @ Cleveland Browns"
+  },
+  "alternate_market_analysis": [
+    {
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "market_type": "Rushing Yards",
+      "main_market": {
+        "line": 55.5,
+        "price": -113
+      },
+      "alternates": [
+        {
+          "threshold": 25,
+          "historical_hr": "7/10",
+          "fanDuel_price": -1400
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "6/10",
+          "fanDuel_price": -700
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "5/10",
+          "fanDuel_price": -310
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "4/10",
+          "fanDuel_price": -162
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "3/10",
+          "fanDuel_price": 108
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "3/10",
+          "fanDuel_price": 174
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "1/10",
+          "fanDuel_price": 265
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "1/10",
+          "fanDuel_price": 390
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "0/10",
+          "fanDuel_price": 550
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "0/10",
+          "fanDuel_price": 750
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "0/10",
+          "fanDuel_price": 1200
+        }
+      ],
+      "floor": {
+        "threshold": 25,
+        "historical_hr": "7/10",
+        "fanDuel_price": -1400
+      },
+      "core": {
+        "threshold": 30,
+        "historical_hr": "6/10",
+        "fanDuel_price": -700
+      },
+      "ceiling": {
+        "threshold": 40,
+        "historical_hr": "5/10",
+        "fanDuel_price": -310
+      }
+    },
+    {
+      "player": "Aaron Rodgers",
+      "team": "PIT",
+      "market_type": "Passing Yards",
+      "main_market": {
+        "line": 214.5,
+        "price": -113
+      },
+      "alternates": [
+        {
+          "threshold": 125,
+          "historical_hr": "8/10",
+          "fanDuel_price": -1450
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "8/10",
+          "fanDuel_price": -670
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "7/10",
+          "fanDuel_price": -320
+        },
+        {
+          "threshold": 200,
+          "historical_hr": "6/10",
+          "fanDuel_price": -166
+        },
+        {
+          "threshold": 225,
+          "historical_hr": "4/10",
+          "fanDuel_price": 110
+        },
+        {
+          "threshold": 250,
+          "historical_hr": "4/10",
+          "fanDuel_price": 198
+        },
+        {
+          "threshold": 275,
+          "historical_hr": "3/10",
+          "fanDuel_price": 360
+        },
+        {
+          "threshold": 300,
+          "historical_hr": "0/10",
+          "fanDuel_price": 630
+        },
+        {
+          "threshold": 325,
+          "historical_hr": "0/10",
+          "fanDuel_price": 920
+        },
+        {
+          "threshold": 350,
+          "historical_hr": "0/10",
+          "fanDuel_price": 1500
+        }
+      ],
+      "floor": {
+        "threshold": 125,
+        "historical_hr": "8/10",
+        "fanDuel_price": -1450
+      },
+      "core": {
+        "threshold": 200,
+        "historical_hr": "6/10",
+        "fanDuel_price": -166
+      },
+      "ceiling": {
+        "threshold": 225,
+        "historical_hr": "4/10",
+        "fanDuel_price": 110
+      }
+    },
+    {
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "market_type": "Receptions",
+      "main_market": {
+        "line": 3.5,
+        "price": 106
+      },
+      "alternates": [
+        {
+          "threshold": 2,
+          "historical_hr": "9/10",
+          "fanDuel_price": -750
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "7/10",
+          "fanDuel_price": -245
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "3/10",
+          "fanDuel_price": 102
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "1/10",
+          "fanDuel_price": 220
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "0/10",
+          "fanDuel_price": 410
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "0/10",
+          "fanDuel_price": 750
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "0/10",
+          "fanDuel_price": 1260
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "9/10",
+        "fanDuel_price": -750
+      },
+      "core": {
+        "threshold": 3,
+        "historical_hr": "7/10",
+        "fanDuel_price": -245
+      },
+      "ceiling": {
+        "threshold": 4,
+        "historical_hr": "3/10",
+        "fanDuel_price": 102
+      }
+    },
+    {
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "market_type": "Receiving Yards",
+      "main_market": {
+        "line": 28.5,
+        "price": -113
+      },
+      "alternates": [
+        {
+          "threshold": 10,
+          "historical_hr": "9/10",
+          "fanDuel_price": -800
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "9/10",
+          "fanDuel_price": -420
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "7/10",
+          "fanDuel_price": -245
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "6/10",
+          "fanDuel_price": -158
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "6/10",
+          "fanDuel_price": -106
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "4/10",
+          "fanDuel_price": 182
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "2/10",
+          "fanDuel_price": 320
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "1/10",
+          "fanDuel_price": 520
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "0/10",
+          "fanDuel_price": 850
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "0/10",
+          "fanDuel_price": 1280
+        }
+      ],
+      "floor": {
+        "threshold": 10,
+        "historical_hr": "9/10",
+        "fanDuel_price": -800
+      },
+      "core": {
+        "threshold": 30,
+        "historical_hr": "6/10",
+        "fanDuel_price": -106
+      },
+      "ceiling": {
+        "threshold": 40,
+        "historical_hr": "4/10",
+        "fanDuel_price": 182
+      }
+    },
+    {
+      "player": "DK Metcalf",
+      "team": "PIT",
+      "market_type": "Receiving Yards",
+      "main_market": {
+        "line": 44.5,
+        "price": -113
+      },
+      "alternates": [
+        {
+          "threshold": 15,
+          "historical_hr": "10/10",
+          "fanDuel_price": -900
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "10/10",
+          "fanDuel_price": -550
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "9/10",
+          "fanDuel_price": -360
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "8/10",
+          "fanDuel_price": -260
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "5/10",
+          "fanDuel_price": -152
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "2/10",
+          "fanDuel_price": 110
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "1/10",
+          "fanDuel_price": 172
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "1/10",
+          "fanDuel_price": 240
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "1/10",
+          "fanDuel_price": 350
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "1/10",
+          "fanDuel_price": 490
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "1/10",
+          "fanDuel_price": 640
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "1/10",
+          "fanDuel_price": 880
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "1/10",
+          "fanDuel_price": 1200
+        }
+      ],
+      "floor": {
+        "threshold": 15,
+        "historical_hr": "10/10",
+        "fanDuel_price": -900
+      },
+      "core": {
+        "threshold": 30,
+        "historical_hr": "8/10",
+        "fanDuel_price": -260
+      },
+      "ceiling": {
+        "threshold": 40,
+        "historical_hr": "5/10",
+        "fanDuel_price": -152
+      }
+    },
+    {
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "market_type": "Rushing Yards",
+      "main_market": {
+        "line": 76.5,
+        "price": -113
+      },
+      "alternates": [
+        {
+          "threshold": 40,
+          "historical_hr": "7/10",
+          "fanDuel_price": -1100
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "5/10",
+          "fanDuel_price": -470
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "5/10",
+          "fanDuel_price": -270
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "2/10",
+          "fanDuel_price": -160
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "2/10",
+          "fanDuel_price": 100
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "2/10",
+          "fanDuel_price": 154
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "2/10",
+          "fanDuel_price": 225
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "2/10",
+          "fanDuel_price": 320
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "2/10",
+          "fanDuel_price": 550
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "0/10",
+          "fanDuel_price": 1100
+        }
+      ],
+      "floor": {
+        "threshold": 40,
+        "historical_hr": "7/10",
+        "fanDuel_price": -1100
+      },
+      "core": {
+        "threshold": 40,
+        "historical_hr": "7/10",
+        "fanDuel_price": -1100
+      },
+      "ceiling": {
+        "threshold": 50,
+        "historical_hr": "5/10",
+        "fanDuel_price": -470
+      }
+    },
+    {
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "market_type": "Receptions",
+      "main_market": {
+        "line": 3.5,
+        "price": -108
+      },
+      "alternates": [
+        {
+          "threshold": 2,
+          "historical_hr": "8/10",
+          "fanDuel_price": -900
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "5/10",
+          "fanDuel_price": -260
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "2/10",
+          "fanDuel_price": -112
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "2/10",
+          "fanDuel_price": 194
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "0/10",
+          "fanDuel_price": 360
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "0/10",
+          "fanDuel_price": 640
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "0/10",
+          "fanDuel_price": 1100
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "8/10",
+        "fanDuel_price": -900
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "8/10",
+        "fanDuel_price": -900
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "5/10",
+        "fanDuel_price": -260
+      }
+    },
+    {
+      "player": "DK Metcalf",
+      "team": "PIT",
+      "market_type": "Receptions",
+      "main_market": {
+        "line": 3.5,
+        "price": -122
+      },
+      "alternates": [
+        {
+          "threshold": 2,
+          "historical_hr": "10/10",
+          "fanDuel_price": -1000
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "10/10",
+          "fanDuel_price": -290
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "6/10",
+          "fanDuel_price": -122
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "3/10",
+          "fanDuel_price": 174
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "1/10",
+          "fanDuel_price": 320
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "1/10",
+          "fanDuel_price": 580
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "0/10",
+          "fanDuel_price": 880
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "0/10",
+          "fanDuel_price": 1400
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "10/10",
+        "fanDuel_price": -1000
+      },
+      "core": {
+        "threshold": 4,
+        "historical_hr": "6/10",
+        "fanDuel_price": -122
+      },
+      "ceiling": {
+        "threshold": 5,
+        "historical_hr": "3/10",
+        "fanDuel_price": 174
+      }
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "market_type": "Receiving Yards",
+      "main_market": {
+        "line": 40.5,
+        "price": -113
+      },
+      "alternates": [
+        {
+          "threshold": 15,
+          "historical_hr": "10/10",
+          "fanDuel_price": -1100
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "10/10",
+          "fanDuel_price": -600
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "9/10",
+          "fanDuel_price": -350
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "8/10",
+          "fanDuel_price": -245
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "6/10",
+          "fanDuel_price": -122
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "3/10",
+          "fanDuel_price": 148
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "1/10",
+          "fanDuel_price": 235
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "1/10",
+          "fanDuel_price": 390
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "1/10",
+          "fanDuel_price": 580
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "1/10",
+          "fanDuel_price": 880
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "1/10",
+          "fanDuel_price": 1200
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "1/10",
+          "fanDuel_price": 1700
+        }
+      ],
+      "floor": {
+        "threshold": 15,
+        "historical_hr": "10/10",
+        "fanDuel_price": -1100
+      },
+      "core": {
+        "threshold": 40,
+        "historical_hr": "6/10",
+        "fanDuel_price": -122
+      },
+      "ceiling": {
+        "threshold": 50,
+        "historical_hr": "3/10",
+        "fanDuel_price": 148
+      }
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "market_type": "Receptions",
+      "main_market": {
+        "line": 4.5,
+        "price": -114
+      },
+      "alternates": [
+        {
+          "threshold": 3,
+          "historical_hr": "7/10",
+          "fanDuel_price": -670
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "6/10",
+          "fanDuel_price": -260
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "4/10",
+          "fanDuel_price": -118
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "3/10",
+          "fanDuel_price": 168
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "3/10",
+          "fanDuel_price": 300
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "1/10",
+          "fanDuel_price": 550
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "0/10",
+          "fanDuel_price": 880
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "0/10",
+          "fanDuel_price": 1280
+        }
+      ],
+      "floor": {
+        "threshold": 3,
+        "historical_hr": "7/10",
+        "fanDuel_price": -670
+      },
+      "core": {
+        "threshold": 4,
+        "historical_hr": "6/10",
+        "fanDuel_price": -260
+      },
+      "ceiling": {
+        "threshold": 5,
+        "historical_hr": "4/10",
+        "fanDuel_price": -118
+      }
+    },
+    {
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "market_type": "Receiving Yards",
+      "main_market": {
+        "line": 13.5,
+        "price": -113
+      },
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": "9/10",
+          "fanDuel_price": -290
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "9/10",
+          "fanDuel_price": -166
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "8/10",
+          "fanDuel_price": -104
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "7/10",
+          "fanDuel_price": 142
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "5/10",
+          "fanDuel_price": 198
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "3/10",
+          "fanDuel_price": 270
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "2/10",
+          "fanDuel_price": 430
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "2/10",
+          "fanDuel_price": 700
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "historical_hr": "9/10",
+        "fanDuel_price": -290
+      },
+      "core": {
+        "threshold": 20,
+        "historical_hr": "7/10",
+        "fanDuel_price": 142
+      },
+      "ceiling": {
+        "threshold": 25,
+        "historical_hr": "5/10",
+        "fanDuel_price": 198
+      }
+    },
+    {
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "market_type": "Receptions",
+      "main_market": {
+        "line": 1.5,
+        "price": 124
+      },
+      "alternates": [
+        {
+          "threshold": 1,
+          "historical_hr": "9/10",
+          "fanDuel_price": -400
+        },
+        {
+          "threshold": 2,
+          "historical_hr": "8/10",
+          "fanDuel_price": 124
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "5/10",
+          "fanDuel_price": 370
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "1/10",
+          "fanDuel_price": 920
+        }
+      ],
+      "floor": {
+        "threshold": 1,
+        "historical_hr": "9/10",
+        "fanDuel_price": -400
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "8/10",
+        "fanDuel_price": 124
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "5/10",
+        "fanDuel_price": 370
+      }
+    },
+    {
+      "player": "Michael Pittman Jr.",
+      "team": "PIT",
+      "market_type": "Receptions",
+      "main_market": {
+        "line": 3.5,
+        "price": 106
+      },
+      "alternates": [
+        {
+          "threshold": 2,
+          "historical_hr": "9/10",
+          "fanDuel_price": -800
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "5/10",
+          "fanDuel_price": -245
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "3/10",
+          "fanDuel_price": 104
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "2/10",
+          "fanDuel_price": 225
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "1/10",
+          "fanDuel_price": 430
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "1/10",
+          "fanDuel_price": 800
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "1/10",
+          "fanDuel_price": 1280
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "9/10",
+        "fanDuel_price": -800
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "9/10",
+        "fanDuel_price": -800
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "5/10",
+        "fanDuel_price": -245
+      }
+    }
+  ],
+  "narrowed_stage3_context_candidate_set": [
+    {
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "market_type": "Rushing Yards",
+      "main_line": 55.5,
+      "floor": {
+        "threshold": 25,
+        "historical_hr": "7/10",
+        "fanDuel_price": -1400
+      },
+      "core": {
+        "threshold": 30,
+        "historical_hr": "6/10",
+        "fanDuel_price": -700
+      },
+      "ceiling": {
+        "threshold": 40,
+        "historical_hr": "5/10",
+        "fanDuel_price": -310
+      }
+    },
+    {
+      "player": "Aaron Rodgers",
+      "team": "PIT",
+      "market_type": "Passing Yards",
+      "main_line": 214.5,
+      "floor": {
+        "threshold": 125,
+        "historical_hr": "8/10",
+        "fanDuel_price": -1450
+      },
+      "core": {
+        "threshold": 200,
+        "historical_hr": "6/10",
+        "fanDuel_price": -166
+      },
+      "ceiling": {
+        "threshold": 225,
+        "historical_hr": "4/10",
+        "fanDuel_price": 110
+      }
+    },
+    {
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "market_type": "Receptions",
+      "main_line": 3.5,
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "9/10",
+        "fanDuel_price": -750
+      },
+      "core": {
+        "threshold": 3,
+        "historical_hr": "7/10",
+        "fanDuel_price": -245
+      },
+      "ceiling": {
+        "threshold": 4,
+        "historical_hr": "3/10",
+        "fanDuel_price": 102
+      }
+    },
+    {
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "market_type": "Receiving Yards",
+      "main_line": 28.5,
+      "floor": {
+        "threshold": 10,
+        "historical_hr": "9/10",
+        "fanDuel_price": -800
+      },
+      "core": {
+        "threshold": 30,
+        "historical_hr": "6/10",
+        "fanDuel_price": -106
+      },
+      "ceiling": {
+        "threshold": 40,
+        "historical_hr": "4/10",
+        "fanDuel_price": 182
+      }
+    },
+    {
+      "player": "DK Metcalf",
+      "team": "PIT",
+      "market_type": "Receiving Yards",
+      "main_line": 44.5,
+      "floor": {
+        "threshold": 15,
+        "historical_hr": "10/10",
+        "fanDuel_price": -900
+      },
+      "core": {
+        "threshold": 30,
+        "historical_hr": "8/10",
+        "fanDuel_price": -260
+      },
+      "ceiling": {
+        "threshold": 40,
+        "historical_hr": "5/10",
+        "fanDuel_price": -152
+      }
+    },
+    {
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "market_type": "Rushing Yards",
+      "main_line": 76.5,
+      "floor": {
+        "threshold": 40,
+        "historical_hr": "7/10",
+        "fanDuel_price": -1100
+      },
+      "core": {
+        "threshold": 40,
+        "historical_hr": "7/10",
+        "fanDuel_price": -1100
+      },
+      "ceiling": {
+        "threshold": 50,
+        "historical_hr": "5/10",
+        "fanDuel_price": -470
+      }
+    },
+    {
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "market_type": "Receptions",
+      "main_line": 3.5,
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "8/10",
+        "fanDuel_price": -900
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "8/10",
+        "fanDuel_price": -900
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "5/10",
+        "fanDuel_price": -260
+      }
+    },
+    {
+      "player": "DK Metcalf",
+      "team": "PIT",
+      "market_type": "Receptions",
+      "main_line": 3.5,
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "10/10",
+        "fanDuel_price": -1000
+      },
+      "core": {
+        "threshold": 4,
+        "historical_hr": "6/10",
+        "fanDuel_price": -122
+      },
+      "ceiling": {
+        "threshold": 5,
+        "historical_hr": "3/10",
+        "fanDuel_price": 174
+      }
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "market_type": "Receiving Yards",
+      "main_line": 40.5,
+      "floor": {
+        "threshold": 15,
+        "historical_hr": "10/10",
+        "fanDuel_price": -1100
+      },
+      "core": {
+        "threshold": 40,
+        "historical_hr": "6/10",
+        "fanDuel_price": -122
+      },
+      "ceiling": {
+        "threshold": 50,
+        "historical_hr": "3/10",
+        "fanDuel_price": 148
+      }
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "market_type": "Receptions",
+      "main_line": 4.5,
+      "floor": {
+        "threshold": 3,
+        "historical_hr": "7/10",
+        "fanDuel_price": -670
+      },
+      "core": {
+        "threshold": 4,
+        "historical_hr": "6/10",
+        "fanDuel_price": -260
+      },
+      "ceiling": {
+        "threshold": 5,
+        "historical_hr": "4/10",
+        "fanDuel_price": -118
+      }
+    },
+    {
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "market_type": "Receiving Yards",
+      "main_line": 13.5,
+      "floor": {
+        "threshold": 5,
+        "historical_hr": "9/10",
+        "fanDuel_price": -290
+      },
+      "core": {
+        "threshold": 20,
+        "historical_hr": "7/10",
+        "fanDuel_price": 142
+      },
+      "ceiling": {
+        "threshold": 25,
+        "historical_hr": "5/10",
+        "fanDuel_price": 198
+      }
+    },
+    {
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "market_type": "Receptions",
+      "main_line": 1.5,
+      "floor": {
+        "threshold": 1,
+        "historical_hr": "9/10",
+        "fanDuel_price": -400
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "8/10",
+        "fanDuel_price": 124
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "5/10",
+        "fanDuel_price": 370
+      }
+    },
+    {
+      "player": "Michael Pittman Jr.",
+      "team": "PIT",
+      "market_type": "Receptions",
+      "main_line": 3.5,
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "9/10",
+        "fanDuel_price": -800
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "9/10",
+        "fanDuel_price": -800
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "5/10",
+        "fanDuel_price": -245
+      }
+    }
+  ],
+  "exclusions": [],
+  "exclusion_rationale": [],
+  "validation": {
+    "exact_locked_stage1_universe": true,
+    "exact_locked_stage1_L10_used": true,
+    "stage1_qualification_preserved": true,
+    "current_fanduel_alternates_used": true,
+    "no_line_movement_analysis": true,
+    "no_cross_book_analysis": true,
+    "no_context_analysis": true,
+    "no_fabricated_lines_or_prices": true,
+    "stage1_state_unchanged": true,
+    "stage2_material_narrowing_possible": false,
+    "all_stage1_candidates_have_meaningful_alternate_structure": true
+  }
+}
