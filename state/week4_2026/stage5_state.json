@@ -2,210 +2,107 @@
   "stage": 5,
   "season": 2026,
   "week": 4,
-  "scope": "Thursday only",
-  "historical_sample": {
-    "label": "L10",
-    "N": 10
-  },
-  "historical_cutoff": "2026-09-28T23:30:00-04:00",
+  "scope": "Sunday — games starting after 4:00 PM ET",
+  "historical_sample": {"label": "L10", "N": 10},
+  "historical_cutoff": "2026-09-28T23:10:00-04:00",
+  "state_id": "STATE-5-20261003-SUN-AFTER-4PM-L10",
+  "parent_state_id": "STATE-4-20261003-SUN-AFTER-4PM-L10",
   "record_count": 5,
-  "state_id": "STATE-5-20261001-THU-L10-R1",
-  "parent_state_id": "STATE-4-20261001-THU-L10",
-  "rerun_reason": "Explicit user-directed Stage 5 rerun after identifying inconsistency between Stage 3 Concern classifications and prior portfolio construction.",
   "selection_principles": [
-    "Use locked Stage 1-4 outputs only.",
-    "Exclude Stage 3 Concern candidates from portfolio construction.",
-    "Prefer Supportive context when payout constraints permit.",
-    "Maintain individual-leg minimum of 70% L10 HR.",
-    "Preserve portfolio leg-count and payout-range rules.",
-    "Do not force a portfolio into a payout target."
+    "Use only locked Stage 4 final prop cards; no new legs.",
+    "All portfolio legs must have at least 70% L10 HR.",
+    "For this Sunday slate, Low Variance uses the required 80%+ fallback because the 70–79% emergency exception is limited to Monday/Thursday.",
+    "Prefer conservative lines and stronger historical reliability.",
+    "Do not force payout targets when no compliant construction exists."
   ],
   "portfolios": [
     {
       "name": "LOW VARIANCE",
       "legs": [
-        {
-          "player": "Michael Pittman Jr.",
-          "market": "Receptions",
-          "threshold": "2+",
-          "historical_hr": "9/10",
-          "price": "-800",
-          "context": "Mixed"
-        },
-        {
-          "player": "Jaylen Warren",
-          "market": "Receptions",
-          "threshold": "2+",
-          "historical_hr": "8/10",
-          "price": "-900",
-          "context": "Supportive"
-        }
+        {"player":"George Kittle","team":"SF","market":"Receiving Yards","threshold":"65+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Kyler Murray","team":"MIN","market":"Rushing Yards","threshold":"20+","historical_hr":"8/10","price":"-114","context":"Supportive"}
       ],
-      "combined_decimal": 1.25,
-      "combined_american": 25,
-      "all_legs_ge_70": true
+      "leg_count": 2,
+      "combined_decimal": 3.523853,
+      "combined_american": 252,
+      "payout_target":"+200 to +400",
+      "target_status":"Within range"
     },
     {
       "name": "BALANCED",
       "legs": [
-        {
-          "player": "Pat Freiermuth",
-          "market": "Receiving Yards",
-          "threshold": "30+",
-          "historical_hr": "6/10",
-          "price": "-106",
-          "context": "Supportive"
-        },
-        {
-          "player": "Harold Fannin Jr.",
-          "market": "Receiving Yards",
-          "threshold": "40+",
-          "historical_hr": "6/10",
-          "price": "-122",
-          "context": "Supportive"
-        }
+        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"8/10","price":"-138","context":"Supportive"},
+        {"player":"Jauan Jennings","team":"MIN","market":"Receiving Yards","threshold":"25+","historical_hr":"8/10","price":"-114","context":"Supportive"}
       ],
-      "combined_decimal": 3.536344,
-      "combined_american": 254,
-      "all_legs_ge_70": false
+      "leg_count": 2,
+      "combined_decimal": 3.237478,
+      "combined_american": 224,
+      "payout_target":"+200 to +400",
+      "target_status":"Within range"
     },
     {
       "name": "PRICE SEEKING — LOW",
       "legs": [
-        {
-          "player": "Pat Freiermuth",
-          "market": "Receiving Yards",
-          "threshold": "30+",
-          "historical_hr": "6/10",
-          "price": "-106",
-          "context": "Supportive"
-        },
-        {
-          "player": "Harold Fannin Jr.",
-          "market": "Receiving Yards",
-          "threshold": "40+",
-          "historical_hr": "6/10",
-          "price": "-122",
-          "context": "Supportive"
-        },
-        {
-          "player": "DK Metcalf",
-          "market": "Receptions",
-          "threshold": "4+",
-          "historical_hr": "6/10",
-          "price": "-122",
-          "context": "Mixed"
-        }
+        {"player":"George Kittle","team":"SF","market":"Receiving Yards","threshold":"65+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Jauan Jennings","team":"MIN","market":"Receiving Yards","threshold":"25+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Kyler Murray","team":"MIN","market":"Rushing Yards","threshold":"20+","historical_hr":"8/10","price":"-114","context":"Supportive"}
       ],
-      "combined_decimal": 6.434987,
-      "combined_american": 543,
-      "all_legs_ge_70": false
+      "leg_count": 3,
+      "combined_decimal": 6.614953,
+      "combined_american": 561,
+      "payout_target":"+400 to +700",
+      "target_status":"Within range"
     },
     {
       "name": "PRICE SEEKING — MEDIUM",
       "legs": [
-        {
-          "player": "Pat Freiermuth",
-          "market": "Receiving Yards",
-          "threshold": "30+",
-          "historical_hr": "6/10",
-          "price": "-106",
-          "context": "Supportive"
-        },
-        {
-          "player": "Harold Fannin Jr.",
-          "market": "Receiving Yards",
-          "threshold": "40+",
-          "historical_hr": "6/10",
-          "price": "-122",
-          "context": "Supportive"
-        },
-        {
-          "player": "DK Metcalf",
-          "market": "Receptions",
-          "threshold": "4+",
-          "historical_hr": "6/10",
-          "price": "-122",
-          "context": "Mixed"
-        },
-        {
-          "player": "Harold Fannin Jr.",
-          "market": "Receptions",
-          "threshold": "4+",
-          "historical_hr": "6/10",
-          "price": "-260",
-          "context": "Supportive"
-        }
+        {"player":"George Kittle","team":"SF","market":"Receiving Yards","threshold":"65+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Jauan Jennings","team":"MIN","market":"Receiving Yards","threshold":"25+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Kyler Murray","team":"MIN","market":"Rushing Yards","threshold":"20+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"8/10","price":"-138","context":"Supportive"}
       ],
-      "combined_decimal": 8.909981,
-      "combined_american": 791,
-      "all_legs_ge_70": false
+      "leg_count": 4,
+      "combined_decimal": 11.408397,
+      "combined_american": 1041,
+      "payout_target":"+700 to +1000",
+      "target_status":"No exact compliant construction; nearest valid construction is +1041 because three -114 legs produce only +561 and adding any eligible fourth leg pushes the combined price above +1000. Not forced."
     },
     {
       "name": "PRICE SEEKING — HIGH",
       "legs": [
-        {
-          "player": "Pat Freiermuth",
-          "market": "Receiving Yards",
-          "threshold": "30+",
-          "historical_hr": "6/10",
-          "price": "-106",
-          "context": "Supportive"
-        },
-        {
-          "player": "Harold Fannin Jr.",
-          "market": "Receiving Yards",
-          "threshold": "40+",
-          "historical_hr": "6/10",
-          "price": "-122",
-          "context": "Supportive"
-        },
-        {
-          "player": "DK Metcalf",
-          "market": "Receptions",
-          "threshold": "4+",
-          "historical_hr": "6/10",
-          "price": "-122",
-          "context": "Mixed"
-        },
-        {
-          "player": "Harold Fannin Jr.",
-          "market": "Receptions",
-          "threshold": "4+",
-          "historical_hr": "6/10",
-          "price": "-260",
-          "context": "Supportive"
-        },
-        {
-          "player": "Aaron Rodgers",
-          "market": "Passing Yards",
-          "threshold": "200+",
-          "historical_hr": "6/10",
-          "price": "-166",
-          "context": "Mixed"
-        }
+        {"player":"George Kittle","team":"SF","market":"Receiving Yards","threshold":"65+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Jauan Jennings","team":"MIN","market":"Receiving Yards","threshold":"25+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Kyler Murray","team":"MIN","market":"Rushing Yards","threshold":"20+","historical_hr":"8/10","price":"-114","context":"Supportive"},
+        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"8/10","price":"-138","context":"Supportive"},
+        {"player":"Omarion Hampton","team":"LAC","market":"Rushing Yards","threshold":"45+","historical_hr":"7/10","price":"-114","context":"Supportive"}
       ],
-      "combined_decimal": 14.27744,
-      "combined_american": 1328,
-      "all_legs_ge_70": false
+      "leg_count": 5,
+      "combined_decimal": 21.415763,
+      "combined_american": 2042,
+      "payout_target":"> +1000",
+      "target_status":"Valid"
     }
   ],
+  "excluded_from_all_portfolios": [
+    {"player":"J.K. Dobbins","reason":"6/10 L10 HR; below 70% minimum"},
+    {"player":"Rashee Rice","reason":"6/10 L10 HR; below 70% minimum"}
+  ],
   "validation": {
-    "stage4_input_validated": true,
+    "stage4_state_loaded_exactly": true,
+    "stage4_state_complete": true,
+    "stage4_record_count": 12,
+    "stage4_parent_stage3_exact": true,
     "stage3_locked": true,
     "stage2_locked": true,
     "stage1_locked": true,
     "no_prior_stage_reconstruction": true,
-    "no_stage1_to_4_changes": true,
-    "stage3_concern_candidates_excluded": true,
+    "only_stage4_final_props_used": true,
     "all_portfolio_legs_at_least_70_percent_L10_HR": true,
     "low_variance_exactly_2_legs": true,
     "balanced_max_2_legs": true,
     "price_seeking_low_max_3_legs": true,
     "price_seeking_medium_max_4_legs": true,
     "price_seeking_high_max_5_legs": true,
-    "balanced_base_preserved": true,
-    "price_seeking_individual_leg_standard_unchanged": true,
     "combined_odds_mathematical": true,
     "no_forced_payout": true
   }
