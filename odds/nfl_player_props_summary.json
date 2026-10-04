@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 185,
-      "Receiving Yards": 652,
-      "Receptions": 426,
-      "Rushing Yards": 373
+      "Passing Yards": 169,
+      "Receiving Yards": 580,
+      "Receptions": 362,
+      "Rushing Yards": 317
     },
     "FanDuel": {
       "Passing Yards": 12,
-      "Receiving Yards": 68,
+      "Receiving Yards": 62,
       "Receptions": 23,
-      "Rushing Yards": 36
+      "Rushing Yards": 35
     }
   },
   "core_markets_present": [
@@ -49,20 +49,20 @@
     "Miami Dolphins @ Minnesota Vikings"
   ],
   "markets": {
-    "Alt Passing Yards": 99,
-    "Alt Receiving Yards": 622,
-    "Alt Receptions": 334,
-    "Alt Rushing Yards": 271,
-    "Passing Yards": 197,
-    "Receiving Yards": 720,
-    "Receptions": 449,
-    "Rush + Receiving Yards": 220,
-    "Rushing Yards": 409
+    "Alt Passing Yards": 84,
+    "Alt Receiving Yards": 500,
+    "Alt Receptions": 276,
+    "Alt Rushing Yards": 223,
+    "Passing Yards": 181,
+    "Receiving Yards": 642,
+    "Receptions": 385,
+    "Rush + Receiving Yards": 190,
+    "Rushing Yards": 352
   },
   "sportsbooks": {
-    "DraftKings": 1856,
-    "FanDuel": 1465
+    "DraftKings": 1618,
+    "FanDuel": 1215
   },
-  "total_rows": 3321,
+  "total_rows": 2833,
   "validation_mode": "slate-size-agnostic"
 }
