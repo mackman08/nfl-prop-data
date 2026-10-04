@@ -419,7 +419,8 @@
     "historical_samples_unchanged": true,
     "stage2_structure_unchanged": true,
     "current_week_information_separate": true,
-    "stage3_complete": true
+    "stage3_complete": true,
+    "jauan_jennings_team_verified": "Minnesota Vikings"
   },
   "records": [
     {
@@ -597,12 +598,12 @@
       "t": "30+",
       "hr": "10/12",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "SF WR injuries create additional opportunity; current 49ers offense is highly efficient.",
-      "matchup": "Denver secondary faces a 49ers offense with concentrated established targets.",
-      "injury": "No reported game-status concern.",
-      "env": "Hot Santa Clara conditions.",
-      "read": "Strong historical Core plus current receiver attrition supports opportunity, though target hierarchy remains below Kittle/CMC."
+      "c": "Mixed",
+      "role": "Currently a Minnesota WR; only 1 catch for 1 yard on 3 targets through two games. With Justin Jefferson ruled out, Minnesota says Jennings and Jordan Addison will be relied upon more.",
+      "matchup": "Miami is 0-3 and Minnesota is 3-0, but the Vikings offense has struggled and Kyler Murray's passing game has been inconsistent.",
+      "injury": "No listed game-status concern; Jefferson is out, increasing available WR opportunity.",
+      "env": "U.S. Bank Stadium is indoors; outdoor weather is not material.",
+      "read": "Current context is supportive because Jefferson is out, but Jennings' actual 2026 usage remains extremely low, creating a major conflict with the locked historical Core. Treat as Mixed rather than Supportive."
     },
     {
       "p": "Jauan Jennings",
@@ -610,12 +611,12 @@
       "t": "4+",
       "hr": "8/12",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "Additional WR injuries can raise route/target concentration.",
-      "matchup": "Same SF offensive concentration dynamics; Denver is the opponent.",
-      "injury": "No listed concern.",
-      "env": "Hot, calm conditions.",
-      "read": "Current context supports the role, but 4+ has less historical margin than Jennings 30+ yards."
+      "c": "Mixed",
+      "role": "Currently a Minnesota WR; only 1 catch for 1 yard on 3 targets through two games. With Justin Jefferson ruled out, Minnesota says Jennings and Jordan Addison will be relied upon more.",
+      "matchup": "Miami is 0-3 and Minnesota is 3-0, but the Vikings offense has struggled and Kyler Murray's passing game has been inconsistent.",
+      "injury": "No listed game-status concern; Jefferson is out, increasing available WR opportunity.",
+      "env": "U.S. Bank Stadium is indoors; outdoor weather is not material.",
+      "read": "Current context is supportive because Jefferson is out, but Jennings' actual 2026 usage remains extremely low, creating a major conflict with the locked historical Core. Treat as Mixed rather than Supportive."
     },
     {
       "p": "Patrick Mahomes",
@@ -680,6 +681,10 @@
       "current player usage/stat pages",
       "game weather forecast sources"
     ],
-    "historical_state_sha": "bd28ff43c72e7470a921cb30d52317d654bccbaa"
+    "historical_state_sha": "bd28ff43c72e7470a921cb30d52317d654bccbaa",
+    "additional": [
+      "Vikings official roster/player page",
+      "Vikings official Jefferson injury report context"
+    ]
   }
 }
