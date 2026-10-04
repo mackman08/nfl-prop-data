@@ -2,102 +2,109 @@
   "stage": 5,
   "season": 2026,
   "week": 4,
-  "scope": "Sunday — games starting after 4:00 PM ET",
-  "historical_sample": {"label": "L10", "N": 10},
+  "scope": "Sunday — games starting after 1:00 PM ET",
+  "historical_sample": {"label": "L12", "N": 12},
   "historical_cutoff": "2026-09-28T23:10:00-04:00",
-  "state_id": "STATE-5-20261003-SUN-AFTER-4PM-L10",
-  "parent_state_id": "STATE-4-20261003-SUN-AFTER-4PM-L10",
+  "state_id": "STATE-5-20261004-SUN-AFTER-1PM-L12",
+  "parent_state_id": "STATE-4-20261004-SUN-AFTER-1PM-L12",
   "record_count": 5,
   "selection_principles": [
     "Use only locked Stage 4 final prop cards; no new legs.",
-    "All portfolio legs must have at least 70% L10 HR.",
-    "For this Sunday slate, Low Variance uses the required 80%+ fallback because the 70–79% emergency exception is limited to Monday/Thursday.",
-    "Prefer conservative lines and stronger historical reliability.",
-    "Do not force payout targets when no compliant construction exists."
+    "All portfolio legs must have at least 70% L12 HR.",
+    "For Low Variance, prefer 90%+ HR and use 80%+ when necessary; no Tier 3 legs.",
+    "For Balanced and Price Seeking, prefer 80%+ HR; 70–79% is permissible only when necessary.",
+    "Prefer Floors and strongest conservative lines.",
+    "Do not force payout targets."
   ],
   "portfolios": [
     {
       "name": "LOW VARIANCE",
       "legs": [
-        {"player":"George Kittle","team":"SF","market":"Receiving Yards","threshold":"65+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Kyler Murray","team":"MIN","market":"Rushing Yards","threshold":"20+","historical_hr":"8/10","price":"-114","context":"Supportive"}
+        {"player":"George Kittle","team":"SF","market":"Receptions","threshold":"4+","historical_hr":"11/12","price":"-320","context":"Supportive"},
+        {"player":"Christian McCaffrey","team":"SF","market":"Receptions","threshold":"4+","historical_hr":"11/12","price":"-280","context":"Supportive"}
       ],
       "leg_count": 2,
-      "combined_decimal": 3.523853,
-      "combined_american": 252,
-      "payout_target":"+200 to +400",
-      "target_status":"Within range"
+      "combined_decimal": 1.78125,
+      "combined_american": -128,
+      "payout_target":"Conservative / low variance",
+      "target_status":"Valid"
     },
     {
       "name": "BALANCED",
       "legs": [
-        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"8/10","price":"-138","context":"Supportive"},
-        {"player":"Jauan Jennings","team":"MIN","market":"Receiving Yards","threshold":"25+","historical_hr":"8/10","price":"-114","context":"Supportive"}
+        {"player":"Patrick Mahomes","team":"KC","market":"Passing Yards","threshold":"250+","historical_hr":"8/12","price":"+118","context":"Supportive"},
+        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"9/12","price":"-148","context":"Supportive"}
       ],
       "leg_count": 2,
-      "combined_decimal": 3.237478,
-      "combined_american": 224,
+      "combined_decimal": 3.65297,
+      "combined_american": 265,
       "payout_target":"+200 to +400",
       "target_status":"Within range"
     },
     {
       "name": "PRICE SEEKING — LOW",
       "legs": [
-        {"player":"George Kittle","team":"SF","market":"Receiving Yards","threshold":"65+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Jauan Jennings","team":"MIN","market":"Receiving Yards","threshold":"25+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Kyler Murray","team":"MIN","market":"Rushing Yards","threshold":"20+","historical_hr":"8/10","price":"-114","context":"Supportive"}
+        {"player":"Patrick Mahomes","team":"KC","market":"Passing Yards","threshold":"250+","historical_hr":"8/12","price":"+118","context":"Supportive"},
+        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"9/12","price":"-148","context":"Supportive"},
+        {"player":"Brock Purdy","team":"SF","market":"Passing Yards","threshold":"200+","historical_hr":"9/12","price":"-270","context":"Supportive"}
       ],
       "leg_count": 3,
-      "combined_decimal": 6.614953,
-      "combined_american": 561,
+      "combined_decimal": 5.00593,
+      "combined_american": 401,
       "payout_target":"+400 to +700",
       "target_status":"Within range"
     },
     {
       "name": "PRICE SEEKING — MEDIUM",
       "legs": [
-        {"player":"George Kittle","team":"SF","market":"Receiving Yards","threshold":"65+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Jauan Jennings","team":"MIN","market":"Receiving Yards","threshold":"25+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Kyler Murray","team":"MIN","market":"Rushing Yards","threshold":"20+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"8/10","price":"-138","context":"Supportive"}
+        {"player":"Patrick Mahomes","team":"KC","market":"Passing Yards","threshold":"250+","historical_hr":"8/12","price":"+118","context":"Supportive"},
+        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"9/12","price":"-148","context":"Supportive"},
+        {"player":"Brock Purdy","team":"SF","market":"Passing Yards","threshold":"200+","historical_hr":"9/12","price":"-270","context":"Supportive"},
+        {"player":"Jared Goff","team":"DET","market":"Passing Yards","threshold":"250+","historical_hr":"10/12","price":"-140","context":"Supportive"}
       ],
       "leg_count": 4,
-      "combined_decimal": 11.408397,
-      "combined_american": 1041,
+      "combined_decimal": 8.58159,
+      "combined_american": 758,
       "payout_target":"+700 to +1000",
-      "target_status":"No exact compliant construction; nearest valid construction is +1041 because three -114 legs produce only +561 and adding any eligible fourth leg pushes the combined price above +1000. Not forced."
+      "target_status":"Within range"
     },
     {
       "name": "PRICE SEEKING — HIGH",
       "legs": [
-        {"player":"George Kittle","team":"SF","market":"Receiving Yards","threshold":"65+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Jauan Jennings","team":"MIN","market":"Receiving Yards","threshold":"25+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Kyler Murray","team":"MIN","market":"Rushing Yards","threshold":"20+","historical_hr":"8/10","price":"-114","context":"Supportive"},
-        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"8/10","price":"-138","context":"Supportive"},
-        {"player":"Omarion Hampton","team":"LAC","market":"Rushing Yards","threshold":"45+","historical_hr":"7/10","price":"-114","context":"Supportive"}
+        {"player":"Patrick Mahomes","team":"KC","market":"Passing Yards","threshold":"250+","historical_hr":"8/12","price":"+118","context":"Supportive"},
+        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"9/12","price":"-148","context":"Supportive"},
+        {"player":"Brock Purdy","team":"SF","market":"Passing Yards","threshold":"200+","historical_hr":"9/12","price":"-270","context":"Supportive"},
+        {"player":"Jared Goff","team":"DET","market":"Passing Yards","threshold":"250+","historical_hr":"10/12","price":"-140","context":"Supportive"},
+        {"player":"Cooper Kupp","team":"SEA","market":"Receptions","threshold":"2+","historical_hr":"11/12","price":"-260","context":"Supportive"}
       ],
       "leg_count": 5,
-      "combined_decimal": 21.415763,
-      "combined_american": 2042,
+      "combined_decimal": 11.8822,
+      "combined_american": 1088,
       "payout_target":"> +1000",
       "target_status":"Valid"
     }
   ],
   "excluded_from_all_portfolios": [
-    {"player":"J.K. Dobbins","reason":"6/10 L10 HR; below 70% minimum"},
-    {"player":"Rashee Rice","reason":"6/10 L10 HR; below 70% minimum"}
+    {"player":"Omarion Hampton","reason":"Stage 3 Concern on 40+ rushing yards"},
+    {"player":"Justin Herbert","reason":"Stage 3 Concern on 200+ passing yards"},
+    {"player":"J.K. Dobbins","reason":"Stage 3 Mixed on 60+ rushing yards"},
+    {"player":"Pat Bryant","reason":"Stage 3 Concern on 30+ receiving yards"},
+    {"player":"Jauan Jennings","reason":"Stage 3 Mixed"},
+    {"player":"Christian McCaffrey","market":"Rushing Yards","threshold":"60+","reason":"Not selected for portfolio construction despite supportive context"},
+    {"player":"George Kittle","market":"Receiving Yards","threshold":"60+","reason":"Not selected for portfolio construction despite supportive context"},
+    {"player":"Sam LaPorta","reason":"Stage 3 Mixed"}
   ],
   "validation": {
     "stage4_state_loaded_exactly": true,
     "stage4_state_complete": true,
-    "stage4_record_count": 12,
+    "stage4_record_count": 8,
     "stage4_parent_stage3_exact": true,
     "stage3_locked": true,
     "stage2_locked": true,
     "stage1_locked": true,
     "no_prior_stage_reconstruction": true,
     "only_stage4_final_props_used": true,
-    "all_portfolio_legs_at_least_70_percent_L10_HR": true,
+    "all_portfolio_legs_at_least_70_percent_L12_HR": true,
     "low_variance_exactly_2_legs": true,
     "balanced_max_2_legs": true,
     "price_seeking_low_max_3_legs": true,
