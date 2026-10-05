@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 95,
-      "Receiving Yards": 261,
-      "Receptions": 159,
+      "Passing Yards": 97,
+      "Receiving Yards": 262,
+      "Receptions": 158,
       "Rushing Yards": 135
     },
     "FanDuel": {
-      "Passing Yards": 4,
-      "Receiving Yards": 25,
-      "Receptions": 25,
-      "Rushing Yards": 12
+      "Passing Yards": 6,
+      "Receiving Yards": 29,
+      "Receptions": 29,
+      "Rushing Yards": 13
     }
   },
   "core_markets_present": [
@@ -23,30 +23,32 @@
   "event_ids": [
     "34118137",
     "34118279",
+    "35605983",
     "36104928",
     "36132640"
   ],
   "games": [
     "ATL Falcons @ NO Saints",
     "Atlanta Falcons @ New Orleans Saints",
+    "Philadelphia Eagles @ Jacksonville Jaguars",
     "TB Buccaneers @ DAL Cowboys",
     "Tampa Bay Buccaneers @ Dallas Cowboys"
   ],
   "markets": {
-    "Alt Passing Yards": 38,
-    "Alt Receiving Yards": 251,
-    "Alt Receptions": 144,
-    "Alt Rushing Yards": 101,
-    "Passing Yards": 99,
-    "Receiving Yards": 286,
-    "Receptions": 184,
+    "Alt Passing Yards": 56,
+    "Alt Receiving Yards": 289,
+    "Alt Receptions": 166,
+    "Alt Rushing Yards": 118,
+    "Passing Yards": 103,
+    "Receiving Yards": 291,
+    "Receptions": 187,
     "Rush + Receiving Yards": 73,
-    "Rushing Yards": 147
+    "Rushing Yards": 148
   },
   "sportsbooks": {
-    "DraftKings": 723,
-    "FanDuel": 600
+    "DraftKings": 725,
+    "FanDuel": 706
   },
-  "total_rows": 1323,
+  "total_rows": 1431,
   "validation_mode": "slate-size-agnostic"
 }
