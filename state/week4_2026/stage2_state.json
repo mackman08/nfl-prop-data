@@ -9,7 +9,7 @@
   },
   "historical_cutoff": "2026-09-28T23:10:00-04:00",
   "record_count": 18,
-  "state_id": "STATE-2-20261005-TODAY-ATL-NO-L15-FD",
+  "state_id": "STATE-2-20261005-TODAY-ATL-NO-L15-FD-R1",
   "parent_state_id": "STATE-1-20261005-TODAY-ATL-NO-L15-DK",
   "source_snapshot": {
     "sportsbook": "FanDuel",
@@ -713,78 +713,6 @@
         "threshold": 80,
         "historical_hr": "8/15",
         "price": "-166",
-        "sportsbook": "FanDuel"
-      }
-    },
-    {
-      "player": "Bijan Robinson",
-      "market": "Receptions",
-      "alternates": [
-        {
-          "threshold": 3,
-          "historical_hr": "9/15",
-          "price": "-580",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 4,
-          "historical_hr": "7/15",
-          "price": "-220",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 5,
-          "historical_hr": "4/15",
-          "price": "-102",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 6,
-          "historical_hr": "1/15",
-          "price": "178",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 7,
-          "historical_hr": "0/15",
-          "price": "310",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 8,
-          "historical_hr": "0/15",
-          "price": "550",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 9,
-          "historical_hr": "0/15",
-          "price": "880",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 10,
-          "historical_hr": "0/15",
-          "price": "1280",
-          "sportsbook": "FanDuel"
-        }
-      ],
-      "floor": {
-        "threshold": 3,
-        "historical_hr": "9/15",
-        "price": "-580",
-        "sportsbook": "FanDuel"
-      },
-      "core": {
-        "threshold": 3,
-        "historical_hr": "9/15",
-        "price": "-580",
-        "sportsbook": "FanDuel"
-      },
-      "ceiling": {
-        "threshold": 4,
-        "historical_hr": "7/15",
-        "price": "-220",
         "sportsbook": "FanDuel"
       }
     },
@@ -1815,60 +1743,6 @@
           "threshold": 175,
           "historical_hr": "2/15",
           "price": "1400",
-          "sportsbook": "FanDuel"
-        }
-      ]
-    },
-    {
-      "player": "Bijan Robinson",
-      "market": "Receptions",
-      "alternates": [
-        {
-          "threshold": 3,
-          "historical_hr": "9/15",
-          "price": "-580",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 4,
-          "historical_hr": "7/15",
-          "price": "-220",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 5,
-          "historical_hr": "4/15",
-          "price": "-102",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 6,
-          "historical_hr": "1/15",
-          "price": "178",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 7,
-          "historical_hr": "0/15",
-          "price": "310",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 8,
-          "historical_hr": "0/15",
-          "price": "550",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 9,
-          "historical_hr": "0/15",
-          "price": "880",
-          "sportsbook": "FanDuel"
-        },
-        {
-          "threshold": 10,
-          "historical_hr": "0/15",
-          "price": "1280",
           "sportsbook": "FanDuel"
         }
       ]
