@@ -2,689 +2,191 @@
   "stage": 3,
   "season": 2026,
   "week": 4,
-  "scope": "Sunday — games starting after 1:00 PM ET",
+  "scope": "Custom — today's game only (Atlanta Falcons at New Orleans Saints)",
   "historical_sample": {
-    "label": "L12",
-    "N": 12
+    "label": "L15",
+    "N": 15
   },
-  "state_id": "STATE-3-20261004-SUN-AFTER-1PM-L12",
-  "parent_state_id": "STATE-2-20261004-SUN-AFTER-1PM-L12",
-  "record_count": 19,
-  "alternate_market_snapshot": "FanDuel current snapshot from odds/nfl_player_props_latest.csv",
-  "bands": [
-    {
-      "candidate": "Omarion Hampton|Rushing Yards",
-      "floor": "20+ 12/12 -1100",
-      "core": "40+ 10/12 -172",
-      "ceiling": "50+ 7/12 110"
-    },
-    {
-      "candidate": "Omarion Hampton|Receiving Yards",
-      "floor": null,
-      "core": null,
-      "ceiling": null
-    },
-    {
-      "candidate": "Cooper Kupp|Receptions",
-      "floor": "1+ 12/12 -1600",
-      "core": "2+ 11/12 -260",
-      "ceiling": "3+ 5/12 118"
-    },
-    {
-      "candidate": "Quentin Johnston|Receptions",
-      "floor": "2+ 10/12 -500",
-      "core": "2+ 10/12 -500",
-      "ceiling": "3+ 7/12 -180"
-    },
-    {
-      "candidate": "Jaxon Smith-Njigba|Receptions",
-      "floor": "5+ 11/12 -650",
-      "core": "7+ 9/12 -148",
-      "ceiling": "8+ 7/12 126"
-    },
-    {
-      "candidate": "Ladd McConkey|Receptions",
-      "floor": "3+ 9/12 -440",
-      "core": "3+ 9/12 -440",
-      "ceiling": "4+ 7/12 -178"
-    },
-    {
-      "candidate": "Cooper Kupp|Receiving Yards",
-      "floor": "5+ 12/12 -800",
-      "core": "20+ 11/12 -136",
-      "ceiling": "25+ 7/12 110"
-    },
-    {
-      "candidate": "Jaxon Smith-Njigba|Receiving Yards",
-      "floor": "50+ 11/12 -900",
-      "core": "90+ 9/12 -136",
-      "ceiling": "100+ 6/12 110"
-    },
-    {
-      "candidate": "AJ Barner|Receptions",
-      "floor": "2+ 10/12 -650",
-      "core": "2+ 10/12 -650",
-      "ceiling": "3+ 7/12 -205"
-    },
-    {
-      "candidate": "Justin Herbert|Passing Yards",
-      "floor": "125+ 11/12 -1000",
-      "core": "200+ 8/12 -114",
-      "ceiling": "225+ 5/12 164"
-    },
-    {
-      "candidate": "Ladd McConkey|Receiving Yards",
-      "floor": "15+ 10/12 -1450",
-      "core": "30+ 9/12 -320",
-      "ceiling": "40+ 6/12 -174"
-    },
-    {
-      "candidate": "Keaton Mitchell|Rushing Yards",
-      "floor": "5+ 11/12 -1000",
-      "core": "15+ 8/12 -180",
-      "ceiling": "20+ 7/12 -102"
-    },
-    {
-      "candidate": "J.K. Dobbins|Rushing Yards",
-      "floor": "25+ 12/12 -1600",
-      "core": "60+ 8/12 -114",
-      "ceiling": "70+ 7/12 142"
-    },
-    {
-      "candidate": "Brock Purdy|Passing Yards",
-      "floor": "150+ 11/12 -1100",
-      "core": "200+ 9/12 -270",
-      "ceiling": "225+ 7/12 -144"
-    },
-    {
-      "candidate": "Courtland Sutton|Receptions",
-      "floor": "2+ 10/12 -700",
-      "core": "3+ 9/12 -225",
-      "ceiling": "4+ 6/12 114"
-    },
-    {
-      "candidate": "Christian McCaffrey|Receptions",
-      "floor": "3+ 11/12 -700",
-      "core": "4+ 11/12 -280",
-      "ceiling": "5+ 7/12 -138"
-    },
-    {
-      "candidate": "RJ Harvey|Rushing Yards",
-      "floor": "5+ 12/12 -700",
-      "core": "25+ 8/12 205",
-      "ceiling": "30+ 7/12 310"
-    },
-    {
-      "candidate": "George Kittle|Receiving Yards",
-      "floor": "25+ 11/12 -1400",
-      "core": "60+ 8/12 -144",
-      "ceiling": "70+ 6/12 106"
-    },
-    {
-      "candidate": "Christian McCaffrey|Rushing Yards",
-      "floor": "30+ 10/12 -1800",
-      "core": "60+ 8/12 -158",
-      "ceiling": "70+ 7/12 106"
-    },
-    {
-      "candidate": "Bo Nix|Passing Yards",
-      "floor": "125+ 12/12 -1600",
-      "core": "175+ 8/12 -350",
-      "ceiling": "200+ 6/12 -198"
-    },
-    {
-      "candidate": "Pat Bryant|Receiving Yards",
-      "floor": "5+ 11/12 -800",
-      "core": "30+ 9/12 140",
-      "ceiling": "40+ 7/12 240"
-    },
-    {
-      "candidate": "George Kittle|Receptions",
-      "floor": "3+ 11/12 -900",
-      "core": "4+ 11/12 -320",
-      "ceiling": "5+ 7/12 -148"
-    },
-    {
-      "candidate": "Troy Franklin|Receptions",
-      "floor": "1+ 10/12 -210",
-      "core": "2+ 8/12 230",
-      "ceiling": "3+ 7/12 680"
-    },
-    {
-      "candidate": "Adam Trautman|Receiving Yards",
-      "floor": "5+ 9/12 -130",
-      "core": "10+ 8/12 148",
-      "ceiling": "15+ 5/12 240"
-    },
-    {
-      "candidate": "Troy Franklin|Receiving Yards",
-      "floor": "5+ 10/12 -132",
-      "core": "20+ 8/12 370",
-      "ceiling": "25+ 6/12 550"
-    },
-    {
-      "candidate": "Christian McCaffrey|Receiving Yards",
-      "floor": "15+ 11/12 -850",
-      "core": "30+ 8/12 -220",
-      "ceiling": "40+ 7/12 -114"
-    },
-    {
-      "candidate": "Jaylen Waddle|Receptions",
-      "floor": "3+ 8/12 -600",
-      "core": "3+ 8/12 -600",
-      "ceiling": "4+ 6/12 -240"
-    },
-    {
-      "candidate": "Courtland Sutton|Receiving Yards",
-      "floor": "10+ 11/12 -1400",
-      "core": "30+ 8/12 -200",
-      "ceiling": "40+ 7/12 -108"
-    },
-    {
-      "candidate": "Adam Trautman|Receptions",
-      "floor": "1+ 10/12 -188",
-      "core": "1+ 10/12 -188",
-      "ceiling": "2+ 7/12 240"
-    },
-    {
-      "candidate": "Greg Dulcich|Receptions",
-      "floor": "2+ 11/12 -580",
-      "core": "2+ 11/12 -580",
-      "ceiling": "3+ 6/12 -182"
-    },
-    {
-      "candidate": "Aaron Jones|Rushing Yards",
-      "floor": "30+ 11/12 -1450",
-      "core": "40+ 10/12 -500",
-      "ceiling": "50+ 7/12 -270"
-    },
-    {
-      "candidate": "T.J. Hockenson|Receptions",
-      "floor": null,
-      "core": null,
-      "ceiling": null
-    },
-    {
-      "candidate": "Kyler Murray|Passing Yards",
-      "floor": "125+ 11/12 -1100",
-      "core": "200+ 8/12 -138",
-      "ceiling": "225+ 3/12 130"
-    },
-    {
-      "candidate": "Jauan Jennings|Receiving Yards",
-      "floor": "5+ 10/12 -1000",
-      "core": "30+ 10/12 104",
-      "ceiling": "40+ 7/12 182"
-    },
-    {
-      "candidate": "Jauan Jennings|Receptions",
-      "floor": "1+ 11/12 -1800",
-      "core": "4+ 8/12 235",
-      "ceiling": "5+ 3/12 490"
-    },
-    {
-      "candidate": "Kyler Murray|Rushing Yards",
-      "floor": "5+ 12/12 -1600",
-      "core": "20+ 8/12 -144",
-      "ceiling": "25+ 7/12 116"
-    },
-    {
-      "candidate": "Rashee Rice|Receptions",
-      "floor": "3+ 10/12 -850",
-      "core": "4+ 10/12 -290",
-      "ceiling": "5+ 7/12 -132"
-    },
-    {
-      "candidate": "Travis Kelce|Receptions",
-      "floor": "3+ 9/12 -550",
-      "core": "3+ 9/12 -550",
-      "ceiling": "4+ 7/12 -210"
-    },
-    {
-      "candidate": "Tre Tucker|Receiving Yards",
-      "floor": "10+ 11/12 -1400",
-      "core": "25+ 9/12 -270",
-      "ceiling": "30+ 6/12 -198"
-    },
-    {
-      "candidate": "Ashton Jeanty|Receptions",
-      "floor": "2+ 11/12 -600",
-      "core": "3+ 9/12 -205",
-      "ceiling": "4+ 6/12 118"
-    },
-    {
-      "candidate": "Patrick Mahomes|Passing Yards",
-      "floor": "150+ 12/12 -1200",
-      "core": "250+ 8/12 118",
-      "ceiling": "275+ 5/12 205"
-    },
-    {
-      "candidate": "Xavier Worthy|Receiving Yards",
-      "floor": "10+ 11/12 -900",
-      "core": "25+ 8/12 -215",
-      "ceiling": "30+ 6/12 -148"
-    },
-    {
-      "candidate": "Kirk Cousins|Passing Yards",
-      "floor": "150+ 10/12 -900",
-      "core": "150+ 10/12 -900",
-      "ceiling": "175+ 7/12 -420"
-    },
-    {
-      "candidate": "Xavier Worthy|Receptions",
-      "floor": "2+ 11/12 -600",
-      "core": "3+ 8/12 -188",
-      "ceiling": "4+ 4/12 134"
-    },
-    {
-      "candidate": "Rashee Rice|Receiving Yards",
-      "floor": "20+ 10/12 -1450",
-      "core": "40+ 8/12 -270",
-      "ceiling": "50+ 7/12 -158"
-    },
-    {
-      "candidate": "Michael Mayer|Receptions",
-      "floor": "2+ 8/12 -390",
-      "core": "3+ 8/12 -130",
-      "ceiling": "4+ 2/12 194"
-    },
-    {
-      "candidate": "Tre Tucker|Receptions",
-      "floor": "2+ 11/12 -700",
-      "core": "2+ 11/12 -700",
-      "ceiling": "3+ 7/12 -215"
-    },
-    {
-      "candidate": "Brock Bowers|Receptions",
-      "floor": "4+ 11/12 -1450",
-      "core": "5+ 8/12 -580",
-      "ceiling": "6+ 5/12 -270"
-    },
-    {
-      "candidate": "Ashton Jeanty|Rushing Yards",
-      "floor": "25+ 11/12 -1450",
-      "core": "40+ 8/12 -330",
-      "ceiling": "50+ 7/12 -180"
-    },
-    {
-      "candidate": "Patrick Mahomes|Rushing Yards",
-      "floor": "5+ 10/12 -650",
-      "core": "15+ 9/12 -132",
-      "ceiling": "20+ 7/12 140"
-    },
-    {
-      "candidate": "Brock Bowers|Receiving Yards",
-      "floor": null,
-      "core": null,
-      "ceiling": null
-    },
-    {
-      "candidate": "Jalen Coker|Receptions",
-      "floor": "3+ 9/12 -550",
-      "core": "3+ 9/12 -550",
-      "ceiling": "4+ 6/12 -210"
-    },
-    {
-      "candidate": "Jahmyr Gibbs|Receiving Yards",
-      "floor": "15+ 12/12 -750",
-      "core": "30+ 9/12 -180",
-      "ceiling": "40+ 6/12 114"
-    },
-    {
-      "candidate": "Brock Wright|Receptions",
-      "floor": null,
-      "core": null,
-      "ceiling": null
-    },
-    {
-      "candidate": "Tetairoa McMillan|Receiving Yards",
-      "floor": "25+ 10/12 -1600",
-      "core": "40+ 8/12 -490",
-      "ceiling": "50+ 6/12 -280"
-    },
-    {
-      "candidate": "Tetairoa McMillan|Receptions",
-      "floor": null,
-      "core": null,
-      "ceiling": null
-    },
-    {
-      "candidate": "Jahmyr Gibbs|Receptions",
-      "floor": "3+ 11/12 -700",
-      "core": "4+ 8/12 -275",
-      "ceiling": "5+ 7/12 -130"
-    },
-    {
-      "candidate": "Jahmyr Gibbs|Rushing Yards",
-      "floor": null,
-      "core": null,
-      "ceiling": null
-    },
-    {
-      "candidate": "Jared Goff|Passing Yards",
-      "floor": "175+ 12/12 -1100",
-      "core": "250+ 10/12 -140",
-      "ceiling": "275+ 7/12 130"
-    },
-    {
-      "candidate": "Sam LaPorta|Receptions",
-      "floor": "3+ 12/12 -580",
-      "core": "4+ 8/12 -220",
-      "ceiling": "5+ 7/12 104"
-    },
-    {
-      "candidate": "Sam LaPorta|Receiving Yards",
-      "floor": "15+ 12/12 -1800",
-      "core": "40+ 8/12 -186",
-      "ceiling": "50+ 6/12 -102"
-    }
-  ],
-  "context_candidate_set": [
-    "Omarion Hampton|Rushing Yards",
-    "Cooper Kupp|Receptions",
-    "Cooper Kupp|Receiving Yards",
-    "Jaxon Smith-Njigba|Receptions",
-    "Jaxon Smith-Njigba|Receiving Yards",
-    "Justin Herbert|Passing Yards",
-    "J.K. Dobbins|Rushing Yards",
-    "Brock Purdy|Passing Yards",
-    "Christian McCaffrey|Receptions",
-    "Christian McCaffrey|Rushing Yards",
-    "George Kittle|Receiving Yards",
-    "George Kittle|Receptions",
-    "Pat Bryant|Receiving Yards",
-    "Jauan Jennings|Receiving Yards",
-    "Jauan Jennings|Receptions",
-    "Patrick Mahomes|Passing Yards",
-    "Jared Goff|Passing Yards",
-    "Sam LaPorta|Receptions",
-    "Sam LaPorta|Receiving Yards"
-  ],
-  "exclusions": {
-    "no_meaningful_alternate": [
-      "Omarion Hampton|Receiving Yards",
-      "T.J. Hockenson|Receptions",
-      "Brock Bowers|Receiving Yards",
-      "Brock Wright|Receptions",
-      "Tetairoa McMillan|Receptions",
-      "Jahmyr Gibbs|Rushing Yards"
-    ],
-    "other": "All remaining Stage 1 qualifiers excluded because the alternate structure was not materially useful for later final selection. Exclusions were made without current-week context, injuries, matchup, weather, role, or game-script analysis."
+  "historical_cutoff": "2026-09-28T23:10:00-04:00",
+  "state_id": "STATE-3-20261005-TODAY-ATL-NO-L15",
+  "parent_state_id": "STATE-2-20261005-TODAY-ATL-NO-L15-FD-R1",
+  "record_count": 16,
+  "input_validation": {
+    "stage2_state_exists": true,
+    "stage2_state_complete": true,
+    "stage2_candidate_count": 16,
+    "stage1_locked": true,
+    "reconstruction_required": false
   },
-  "validation": {
-    "only_locked_stage2_candidates_analyzed": true,
-    "no_new_players_added": true,
-    "no_stage1_rescreen": true,
-    "historical_hr_unchanged": true,
-    "historical_samples_unchanged": true,
-    "stage2_structure_unchanged": true,
-    "current_week_information_separate": true,
-    "stage3_complete": true,
-    "jauan_jennings_team_verified": "Minnesota Vikings"
-  },
+  "methodology": "Stage 3 contextual analysis only. Historical HR and Floor/Core/Ceiling are carried unchanged from locked Stage 2. No new players or markets introduced.",
   "records": [
     {
-      "p": "Omarion Hampton",
-      "m": "Rushing Yards",
-      "t": "40+",
-      "hr": "10/12",
+      "candidate": "Michael Penix Jr.",
+      "market": "Passing Yards",
+      "selected_market_threshold": "200+",
+      "historical_hr": "9/15",
       "band": "CORE",
-      "c": "Concern",
-      "role": "Lead RB but declining designed-carry share (75%→57.7%) and route share (28.6%→15.8%); 15 touches/56 total yards last week.",
-      "matchup": "Seattle has allowed the 3rd-lowest explosive-run rate and 3rd-lowest rushing success rate.",
-      "injury": "No game-status injury; available.",
-      "env": "Seattle home; mild 67°F, light wind.",
-      "read": "Historical Core is strong, but current usage trend and elite Seattle run defense materially weaken the 40+ path."
+      "classification": "Supportive",
+      "current_week_context": "Returned as clear Week 4 starter; played all 71 offensive snaps in Week 3 and produced a strong first game back. Atlanta's offense is built around quick decisions and its primary weapons.",
+      "implication": "200+ offers the best historical balance of the Penix bands; starter certainty and recent performance support it, with limited recent continuity as a caveat."
     },
     {
-      "p": "Cooper Kupp",
-      "m": "Receptions",
-      "t": "2+",
-      "hr": "11/12",
+      "candidate": "Brian Robinson Jr.",
+      "market": "Rushing Yards",
+      "selected_market_threshold": "20+",
+      "historical_hr": "12/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "Veteran WR remains active; 4/5/2 receptions over first three games, 10 targets total and 62.7% season snap share.",
-      "matchup": "Seattle passing game is productive, and Chargers coverage attention is likely concentrated on JSN.",
-      "injury": "Full participation/no game-status issue.",
-      "env": "Lumen Field forecast ~67°F, 3 mph wind, 0% rain.",
-      "read": "Low threshold with strong L12 floor; current usage is modest but 2+ remains well supported."
+      "classification": "Concern",
+      "current_week_context": "Official Week 4 depth chart lists him behind Bijan Robinson. Through three games he had 21 carries and 67 snaps; current reporting describes him as having no standalone role absent a Bijan injury.",
+      "implication": "Excellent L15 reliability conflicts with a low current workload expectation."
     },
     {
-      "p": "Cooper Kupp",
-      "m": "Receiving Yards",
-      "t": "20+",
-      "hr": "11/12",
+      "candidate": "Drake London",
+      "market": "Receiving Yards",
+      "selected_market_threshold": "50+",
+      "historical_hr": "10/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "Short-area role; 8 catches/101 yards through three games.",
-      "matchup": "Chargers defense has struggled overall and must prioritize JSN.",
-      "injury": "Full participation.",
-      "env": "Clean Seattle conditions.",
-      "read": "20+ is supported by both historical floor and current-season baseline; lower volatility than higher Kupp yardage bands."
+      "classification": "Supportive",
+      "current_week_context": "Starting WR with 19 targets through three games (26.0% team target share); exploded for 9-194 in Week 3 and played 66 snaps.",
+      "implication": "High-volume role and recent production support 50+, with normal regression risk after the 194-yard game."
     },
     {
-      "p": "Jaxon Smith-Njigba",
-      "m": "Receptions",
-      "t": "7+",
-      "hr": "9/12",
+      "candidate": "Drake London",
+      "market": "Receptions",
+      "selected_market_threshold": "4+",
+      "historical_hr": "11/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "27 catches on 35 targets through three games; 8/9/10 catches weekly. Leads NFL in catches/targets/receiving yards.",
-      "matchup": "Chargers explicitly identify JSN as Seattle's unquestioned No.1 target; defense expected to bracket him, but his route/first-down ability remains elite.",
-      "injury": "No reported game-status concern.",
-      "env": "Clean Seattle conditions.",
-      "read": "Elite current volume strongly reinforces the 7+ Core despite expected defensive attention."
+      "classification": "Supportive",
+      "current_week_context": "19 targets through three games and 9 catches in Week 3; established starter and 66 snaps in Week 3.",
+      "implication": "Target volume and role align well with 4+."
     },
     {
-      "p": "Jaxon Smith-Njigba",
-      "m": "Receiving Yards",
-      "t": "90+",
-      "hr": "9/12",
+      "candidate": "Olamide Zaccheaus",
+      "market": "Receiving Yards",
+      "selected_market_threshold": "5+",
+      "historical_hr": "13/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "405 yards through three games; 135-yard average, 27 receptions/35 targets.",
-      "matchup": "Chargers must focus coverage on him; Seattle offense still ranks top-10 and JSN has dominated first-down production.",
-      "injury": "Healthy.",
-      "env": "Clean conditions.",
-      "read": "Current production materially strengthens the already strong 90+ historical Core."
+      "classification": "Concern",
+      "current_week_context": "Rotational WR behind London/Dotson; 36% snap share and 6 targets (8.2% share) through three games.",
+      "implication": "5+ is historically strong but current role offers little evidence for expanded volume."
     },
     {
-      "p": "Justin Herbert",
-      "m": "Passing Yards",
-      "t": "200+",
-      "hr": "8/12",
+      "candidate": "Olamide Zaccheaus",
+      "market": "Receptions",
+      "selected_market_threshold": "2+",
+      "historical_hr": "10/15",
       "band": "CORE",
-      "c": "Concern",
-      "role": "627 passing yards through three games (~209/game) but Chargers rank 29th in points and offense has struggled.",
-      "matchup": "Seattle owns a top-ranked defense, including strong pressure/pass-defense metrics.",
-      "injury": "Herbert available; Trey Lance questionable but no indication Herbert is unavailable.",
-      "env": "Clean conditions but difficult road matchup.",
-      "read": "200+ has historical support, but current offense and Seattle defense create meaningful downside."
+      "classification": "Concern",
+      "current_week_context": "Only 6 targets through three games and 36% snap share; remains rotational/return depth.",
+      "implication": "2+ clears the historical threshold but current opportunity is thin."
     },
     {
-      "p": "J.K. Dobbins",
-      "m": "Rushing Yards",
-      "t": "60+",
-      "hr": "8/12",
+      "candidate": "Austin Hooper",
+      "market": "Receiving Yards",
+      "selected_market_threshold": "10+",
+      "historical_hr": "12/15",
       "band": "CORE",
-      "c": "Mixed",
-      "role": "35 carries through three games; 121 yards total. Denver expected to emphasize heavier personnel/under-center run concepts.",
-      "matchup": "Denver run game has struggled and faces a 49ers defense; SF defensive injuries may help rushing efficiency.",
-      "injury": "Full participation; available.",
-      "env": "Hot Santa Clara conditions, ~86°F kickoff, minimal wind.",
-      "read": "Role is secure, but efficiency is the question. Heat may increase workload/rotation considerations."
+      "classification": "Concern",
+      "current_week_context": "Behind Kyle Pitts on the depth chart. Heavy Atlanta TE usage creates snaps, but Hooper's target share is only 8.2%.",
+      "implication": "Positive price at +122, but crowded target distribution makes the current path fragile."
     },
     {
-      "p": "Brock Purdy",
-      "m": "Passing Yards",
-      "t": "200+",
-      "hr": "9/12",
-      "band": "Supportive",
-      "c": "Supportive",
-      "role": "789 yards through three games, 72.3% completion, 9 TD/1 INT; remained highly efficient in Week 3.",
-      "matchup": "Denver defense is strong overall, but SF protection has been excellent and Purdy has not been sacked this season.",
-      "injury": "Healthy/full participation.",
-      "env": "Hot but calm Santa Clara conditions.",
-      "read": "Current efficiency and protection strongly support the 200+ Core."
+      "candidate": "Austin Hooper",
+      "market": "Receptions",
+      "selected_market_threshold": "2+",
+      "historical_hr": "9/15",
+      "band": "CORE",
+      "classification": "Concern",
+      "current_week_context": "Secondary TE role with 8.2% target share despite multi-TE usage.",
+      "implication": "Historical threshold barely clears 60% and current volume is modest."
     },
     {
-      "p": "Christian McCaffrey",
-      "m": "Receptions",
-      "t": "4+",
-      "hr": "11/12",
+      "candidate": "Bijan Robinson",
+      "market": "Rushing Yards",
+      "selected_market_threshold": "70+",
+      "historical_hr": "11/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "35 carries through three games and remains central to SF's offense as a dual-threat back.",
-      "matchup": "Denver must account for him in multiple formations; SF offensive design consistently uses him as a receiving outlet.",
-      "injury": "Full participation; no game-status concern.",
-      "env": "Hot Santa Clara conditions.",
-      "read": "High-volume role plus healthy status makes 4+ receptions one of the cleaner Core candidates."
+      "classification": "Supportive",
+      "current_week_context": "Clear lead back; leads NFL with 467 scrimmage yards through three weeks. Week 3: 29 carries, 194 rushing yards, 31 total touches. Brian Robinson is the listed backup.",
+      "implication": "Elite workload and recent rushing volume strongly support 70+; game script is the principal contextual variable."
     },
     {
-      "p": "Christian McCaffrey",
-      "m": "Rushing Yards",
-      "t": "60+",
-      "hr": "8/12",
+      "candidate": "Chris Olave",
+      "market": "Receiving Yards",
+      "selected_market_threshold": "80+",
+      "historical_hr": "9/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "166 rushing yards on 35 carries through three games; 4.7 YPC and central late-game workload.",
-      "matchup": "Denver's run defense has been inconsistent and SF's OL has graded strongly.",
-      "injury": "Healthy/full participation.",
-      "env": "86°F kickoff, light wind.",
-      "read": "Current workload and line play support the 60+ Core, though heat adds some late-game uncertainty."
+      "classification": "Supportive",
+      "current_week_context": "36 targets, 27 receptions and 375 yards through three games with 84% snap share. Jordyn Tyson remains unavailable and Olave is the dominant Saints receiver.",
+      "implication": "Elite target volume and stable role strongly support 80+; Atlanta's pass-defense weakness adds support."
     },
     {
-      "p": "George Kittle",
-      "m": "Receiving Yards",
-      "t": "60+",
-      "hr": "8/12",
+      "candidate": "Chris Olave",
+      "market": "Receptions",
+      "selected_market_threshold": "6+",
+      "historical_hr": "10/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "12 catches/174 yards through three games; remains a major part of SF passing attack.",
-      "matchup": "SF WR injuries increase the importance of Kittle/other established targets.",
-      "injury": "No listed injury concern.",
-      "env": "Hot, calm Santa Clara conditions.",
-      "read": "Strong current role plus depleted WR room supports continued Kittle involvement."
+      "classification": "Supportive",
+      "current_week_context": "Target totals were 13, 10 and 13 across Weeks 1-3, with 10, 8 and 9 catches; 84% snap share.",
+      "implication": "Volume and recent reception consistency strongly support 6+."
     },
     {
-      "p": "George Kittle",
-      "m": "Receptions",
-      "t": "4+",
-      "hr": "11/12",
+      "candidate": "Juwan Johnson",
+      "market": "Receiving Yards",
+      "selected_market_threshold": "50+",
+      "historical_hr": "9/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "12 receptions through three games; established chain-moving role.",
-      "matchup": "Mike Evans is questionable and other SF WRs have been injured, potentially concentrating targets.",
-      "injury": "No listed concern.",
-      "env": "Hot but playable conditions.",
-      "read": "4+ is strongly supported by both historical consistency and current target concentration."
+      "classification": "Supportive",
+      "current_week_context": "13.6% target share, 17.2% first-read share and six red-zone targets; 68% snap share. Atlanta has allowed favorable TE fantasy efficiency.",
+      "implication": "Strong usage and red-zone role support 50+; matchup is additionally favorable."
     },
     {
-      "p": "Pat Bryant",
-      "m": "Receiving Yards",
-      "t": "30+",
-      "hr": "9/12",
+      "candidate": "Juwan Johnson",
+      "market": "Receptions",
+      "selected_market_threshold": "4+",
+      "historical_hr": "11/15",
       "band": "CORE",
-      "c": "Concern",
-      "role": "Only 3.0 targets/game and 28.7 receiving yards/game through three games.",
-      "matchup": "SF presents a disciplined defense and Denver's passing game has been inconsistent.",
-      "injury": "Available/full participation.",
-      "env": "Hot Santa Clara conditions.",
-      "read": "The L12 Core is attractive at 30+, but current target volume does not support confidence at the same level."
+      "classification": "Supportive",
+      "current_week_context": "19 targets and 15 receptions through three games, with 68% snap share and meaningful first-read/red-zone usage.",
+      "implication": "Current volume strongly supports 4+ and matches the 11/15 historical rate."
     },
     {
-      "p": "Jauan Jennings",
-      "m": "Receiving Yards",
-      "t": "30+",
-      "hr": "10/12",
+      "candidate": "Alvin Kamara",
+      "market": "Receptions",
+      "selected_market_threshold": "3+",
+      "historical_hr": "9/15",
       "band": "CORE",
-      "c": "Mixed",
-      "role": "Currently a Minnesota WR; only 1 catch for 1 yard on 3 targets through two games. With Justin Jefferson ruled out, Minnesota says Jennings and Jordan Addison will be relied upon more.",
-      "matchup": "Miami is 0-3 and Minnesota is 3-0, but the Vikings offense has struggled and Kyler Murray's passing game has been inconsistent.",
-      "injury": "No listed game-status concern; Jefferson is out, increasing available WR opportunity.",
-      "env": "U.S. Bank Stadium is indoors; outdoor weather is not material.",
-      "read": "Current context is supportive because Jefferson is out, but Jennings' actual 2026 usage remains extremely low, creating a major conflict with the locked historical Core. Treat as Mixed rather than Supportive."
+      "classification": "Mixed",
+      "current_week_context": "Travis Etienne is on IR, elevating Kamara's backfield role. After Etienne left Week 3, Kamara played 55% of snaps and handled 71.4% of rushing attempts but had zero targets. Atlanta has a strong run defense.",
+      "implication": "Vacated workload helps, but the 0-target Week 3 finish creates reception-specific uncertainty."
     },
     {
-      "p": "Jauan Jennings",
-      "m": "Receptions",
-      "t": "4+",
-      "hr": "8/12",
+      "candidate": "Noah Fant",
+      "market": "Receiving Yards",
+      "selected_market_threshold": "25+",
+      "historical_hr": "9/15",
       "band": "CORE",
-      "c": "Mixed",
-      "role": "Currently a Minnesota WR; only 1 catch for 1 yard on 3 targets through two games. With Justin Jefferson ruled out, Minnesota says Jennings and Jordan Addison will be relied upon more.",
-      "matchup": "Miami is 0-3 and Minnesota is 3-0, but the Vikings offense has struggled and Kyler Murray's passing game has been inconsistent.",
-      "injury": "No listed game-status concern; Jefferson is out, increasing available WR opportunity.",
-      "env": "U.S. Bank Stadium is indoors; outdoor weather is not material.",
-      "read": "Current context is supportive because Jefferson is out, but Jennings' actual 2026 usage remains extremely low, creating a major conflict with the locked historical Core. Treat as Mixed rather than Supportive."
+      "classification": "Concern",
+      "current_week_context": "Questionable with an abdominal injury after three limited practices; only 47% snap share through three games and secondary TE role behind Juwan Johnson.",
+      "implication": "25+ has solid historical support, but availability and role create material current-week risk."
     },
     {
-      "p": "Patrick Mahomes",
-      "m": "Passing Yards",
-      "t": "250+",
-      "hr": "8/12",
+      "candidate": "Noah Fant",
+      "market": "Receptions",
+      "selected_market_threshold": "2+",
+      "historical_hr": "9/15",
       "band": "CORE",
-      "c": "Supportive",
-      "role": "Kansas City enters 3-0 with the league's second-ranked offense according to current previews.",
-      "matchup": "Raiders are also 3-0; game total around 46.5–47.5 and KC favored, supporting sustained offensive volume.",
-      "injury": "Full participation; no game-status concern.",
-      "env": "Indoor Allegiant Stadium; weather irrelevant.",
-      "read": "High-end historical Core aligns with strong current offense and game environment."
-    },
-    {
-      "p": "Jared Goff",
-      "m": "Passing Yards",
-      "t": "250+",
-      "hr": "10/12",
-      "band": "CORE",
-      "c": "Supportive",
-      "role": "802 passing yards through three games, 8 TD/0 INT; Detroit has scored 31 points in every game.",
-      "matchup": "Carolina defense presents a favorable environment; Goff has been excellent against blitzes.",
-      "injury": "No QB injury concern; Lions OL interior largely recovered.",
-      "env": "Charlotte outdoor night game; no material weather concern found.",
-      "read": "One of the strongest context/historical combinations on the board."
-    },
-    {
-      "p": "Sam LaPorta",
-      "m": "Receptions",
-      "t": "4+",
-      "hr": "8/12",
-      "band": "CORE",
-      "c": "Mixed",
-      "role": "High-powered offense but Gibbs and Amon-Ra St. Brown have absorbed much of the production; LaPorta has underperformed relative to expectations.",
-      "matchup": "Carolina has allowed significant yardage, creating opportunity for Detroit passing volume.",
-      "injury": "No material game-status concern found.",
-      "env": "Prime-time Charlotte game.",
-      "read": "Team environment is supportive, but target competition keeps 4+ from being a clean selection."
-    },
-    {
-      "p": "Sam LaPorta",
-      "m": "Receiving Yards",
-      "t": "40+",
-      "hr": "8/12",
-      "band": "CORE",
-      "c": "Mixed",
-      "role": "Same target-competition issue; current-season role has been secondary to Gibbs/St. Brown.",
-      "matchup": "Carolina's defense allows opportunities, and Detroit offense has produced consistently.",
-      "injury": "No material concern found.",
-      "env": "Prime-time Charlotte.",
-      "read": "40+ has a solid historical base, but current usage is not strong enough to call fully supportive."
+      "classification": "Concern",
+      "current_week_context": "Same abdominal-questionable status and 47% three-game snap share. If inactive, Oscar Delp would rotate behind Juwan Johnson.",
+      "implication": "Historical 2+ is solid, but the injury designation is a major pregame uncertainty."
     }
   ],
-  "source_snapshot": {
-    "web_research_date": "2026-10-04",
-    "sources": [
-      "NFL official Week 4 injury report",
-      "official team injury reports",
-      "official team/game pages",
-      "current Week 4 previews",
-      "current player usage/stat pages",
-      "game weather forecast sources"
-    ],
-    "historical_state_sha": "bd28ff43c72e7470a921cb30d52317d654bccbaa",
-    "additional": [
-      "Vikings official roster/player page",
-      "Vikings official Jefferson injury report context"
-    ]
+  "validation": {
+    "historical_hr_unchanged": true,
+    "stage1_universe_preserved": true,
+    "stage2_universe_preserved": true,
+    "current_week_context_only": true,
+    "no_new_players": true,
+    "no_historical_reconstruction": true
   }
 }
