@@ -34,132 +34,2216 @@
   "candidates": [
     {
       "player": "Michael Penix Jr.",
-      "team": "ATL",
       "market": "Passing Yards",
-      "floor": "150+ 12/15 -850",
-      "core": "200+ 9/15 -215",
-      "ceiling": "225+ 6/15 -114"
-    },
-    {
-      "player": "Drake London",
-      "team": "ATL",
-      "market": "Receiving Yards",
-      "floor": "40+ 12/15 -850",
-      "core": "50+ 10/15 -450",
-      "ceiling": "60+ 7/15 -270"
-    },
-    {
-      "player": "Chris Olave",
-      "team": "NO",
-      "market": "Receiving Yards",
-      "floor": "40+ 14/15 -1200",
-      "core": "80+ 9/15 -136",
-      "ceiling": "90+ 7/15 112"
-    },
-    {
-      "player": "Juwan Johnson",
-      "team": "NO",
-      "market": "Receiving Yards",
-      "floor": "15+ 15/15 -1400",
-      "core": "50+ 9/15 108",
-      "ceiling": "60+ 6/15 178"
-    },
-    {
-      "player": "Noah Fant",
-      "team": "NO",
-      "market": "Receiving Yards",
-      "floor": "5+ 12/15 -490",
-      "core": "25+ 9/15 174",
-      "ceiling": "30+ 5/15 240"
-    },
-    {
-      "player": "Olamide Zaccheaus",
-      "team": "ATL",
-      "market": "Receiving Yards",
-      "floor": "5+ 13/15 -180",
-      "core": "5+ 13/15 -180",
-      "ceiling": "10+ 7/15 116"
-    },
-    {
-      "player": "Austin Hooper",
-      "team": "ATL",
-      "market": "Receiving Yards",
-      "floor": "5+ 14/15 -166",
-      "core": "10+ 12/15 122",
-      "ceiling": "15+ 8/15 205"
-    },
-    {
-      "player": "Chris Olave",
-      "team": "NO",
-      "market": "Receptions",
-      "floor": "4+ 13/15 -1600",
-      "core": "6+ 10/15 -260",
-      "ceiling": "7+ 8/15 -136"
-    },
-    {
-      "player": "Drake London",
-      "team": "ATL",
-      "market": "Receptions",
-      "floor": "4+ 11/15 -700",
-      "core": "4+ 11/15 -700",
-      "ceiling": "5+ 8/15 -300"
-    },
-    {
-      "player": "Juwan Johnson",
-      "team": "NO",
-      "market": "Receptions",
-      "floor": "2+ 15/15 -1450",
-      "core": "4+ 11/15 -158",
-      "ceiling": "5+ 6/15 140"
-    },
-    {
-      "player": "Alvin Kamara",
-      "team": "NO",
-      "market": "Receptions",
-      "floor": "2+ 12/15 -500",
-      "core": "3+ 9/15 -172",
-      "ceiling": "4+ 7/15 140"
-    },
-    {
-      "player": "Noah Fant",
-      "team": "NO",
-      "market": "Receptions",
-      "floor": "1+ 13/15 -850",
-      "core": "2+ 9/15 -180",
-      "ceiling": "3+ 8/15 168"
-    },
-    {
-      "player": "Olamide Zaccheaus",
-      "team": "ATL",
-      "market": "Receptions",
-      "floor": "1+ 14/15 -320",
-      "core": "2+ 10/15 148",
-      "ceiling": "3+ 4/15 410"
-    },
-    {
-      "player": "Austin Hooper",
-      "team": "ATL",
-      "market": "Receptions",
-      "floor": "1+ 14/15 -260",
-      "core": "2+ 9/15 182",
-      "ceiling": "3+ 2/15 550"
-    },
-    {
-      "player": "Bijan Robinson",
-      "team": "ATL",
-      "market": "Rushing Yards",
-      "floor": "50+ 11/15 -1000",
-      "core": "70+ 11/15 -270",
-      "ceiling": "80+ 8/15 -166"
+      "alternates": [
+        {
+          "threshold": 150,
+          "historical_hr": "12/15",
+          "price": "-850",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "11/15",
+          "price": "-400",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 200,
+          "historical_hr": "9/15",
+          "price": "-215",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 225,
+          "historical_hr": "6/15",
+          "price": "-114",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 250,
+          "historical_hr": "5/15",
+          "price": "162",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 275,
+          "historical_hr": "3/15",
+          "price": "270",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 300,
+          "historical_hr": "2/15",
+          "price": "470",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 325,
+          "historical_hr": "0/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 350,
+          "historical_hr": "0/15",
+          "price": "1200",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 150,
+        "historical_hr": "12/15",
+        "price": "-850",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 200,
+        "historical_hr": "9/15",
+        "price": "-215",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 225,
+        "historical_hr": "6/15",
+        "price": "-114",
+        "sportsbook": "FanDuel"
+      }
     },
     {
       "player": "Brian Robinson Jr.",
-      "team": "ATL",
       "market": "Rushing Yards",
-      "floor": "10+ 12/15 -1100",
-      "core": "20+ 12/15 -260",
-      "ceiling": "25+ 8/15 -162"
+      "alternates": [
+        {
+          "threshold": 10,
+          "historical_hr": "12/15",
+          "price": "-1100",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "12/15",
+          "price": "-450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "12/15",
+          "price": "-260",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "8/15",
+          "price": "-162",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "7/15",
+          "price": "-104",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "5/15",
+          "price": "188",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "3/15",
+          "price": "320",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "0/15",
+          "price": "580",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "0/15",
+          "price": "880",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "0/15",
+          "price": "1200",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "0/15",
+          "price": "1500",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 10,
+        "historical_hr": "12/15",
+        "price": "-1100",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 20,
+        "historical_hr": "12/15",
+        "price": "-260",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 25,
+        "historical_hr": "8/15",
+        "price": "-162",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Drake London",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 4,
+          "historical_hr": "11/15",
+          "price": "-700",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "8/15",
+          "price": "-300",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "7/15",
+          "price": "-144",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "6/15",
+          "price": "134",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "5/15",
+          "price": "235",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "3/15",
+          "price": "400",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "1/15",
+          "price": "680",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 11,
+          "historical_hr": "0/15",
+          "price": "1100",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 12,
+          "historical_hr": "0/15",
+          "price": "1500",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 4,
+        "historical_hr": "11/15",
+        "price": "-700",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 4,
+        "historical_hr": "11/15",
+        "price": "-700",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 5,
+        "historical_hr": "8/15",
+        "price": "-300",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Olamide Zaccheaus",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": "13/15",
+          "price": "-180",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "7/15",
+          "price": "116",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "7/15",
+          "price": "194",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "6/15",
+          "price": "300",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "4/15",
+          "price": "450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "4/15",
+          "price": "640",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "historical_hr": "13/15",
+        "price": "-180",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 5,
+        "historical_hr": "13/15",
+        "price": "-180",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 10,
+        "historical_hr": "7/15",
+        "price": "116",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Alvin Kamara",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 2,
+          "historical_hr": "12/15",
+          "price": "-500",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "9/15",
+          "price": "-172",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "7/15",
+          "price": "140",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "4/15",
+          "price": "290",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "1/15",
+          "price": "550",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "0/15",
+          "price": "920",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "0/15",
+          "price": "1500",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "12/15",
+        "price": "-500",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 3,
+        "historical_hr": "9/15",
+        "price": "-172",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 4,
+        "historical_hr": "7/15",
+        "price": "140",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Chris Olave",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 40,
+          "historical_hr": "14/15",
+          "price": "-1200",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "13/15",
+          "price": "-580",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "11/15",
+          "price": "-320",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "10/15",
+          "price": "-205",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "9/15",
+          "price": "-136",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "7/15",
+          "price": "112",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "5/15",
+          "price": "162",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "3/15",
+          "price": "225",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "2/15",
+          "price": "370",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "1/15",
+          "price": "800",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "1/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 40,
+        "historical_hr": "14/15",
+        "price": "-1200",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 80,
+        "historical_hr": "9/15",
+        "price": "-136",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 90,
+        "historical_hr": "7/15",
+        "price": "112",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Juwan Johnson",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 2,
+          "historical_hr": "15/15",
+          "price": "-1450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "14/15",
+          "price": "-400",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "11/15",
+          "price": "-158",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "6/15",
+          "price": "140",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "3/15",
+          "price": "280",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "2/15",
+          "price": "520",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "2/15",
+          "price": "880",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "0/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "15/15",
+        "price": "-1450",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 4,
+        "historical_hr": "11/15",
+        "price": "-158",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 5,
+        "historical_hr": "6/15",
+        "price": "140",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Austin Hooper",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": "14/15",
+          "price": "-166",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "12/15",
+          "price": "122",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "8/15",
+          "price": "205",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "8/15",
+          "price": "320",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "5/15",
+          "price": "490",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "4/15",
+          "price": "700",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "0/15",
+          "price": "1260",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "historical_hr": "14/15",
+        "price": "-166",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 10,
+        "historical_hr": "12/15",
+        "price": "122",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 15,
+        "historical_hr": "8/15",
+        "price": "205",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Bijan Robinson",
+      "market": "Rushing Yards",
+      "alternates": [
+        {
+          "threshold": 50,
+          "historical_hr": "11/15",
+          "price": "-1000",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "11/15",
+          "price": "-470",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "11/15",
+          "price": "-270",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "8/15",
+          "price": "-166",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "5/15",
+          "price": "-104",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "4/15",
+          "price": "144",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "3/15",
+          "price": "205",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "3/15",
+          "price": "350",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "2/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "2/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 50,
+        "historical_hr": "11/15",
+        "price": "-1000",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 70,
+        "historical_hr": "11/15",
+        "price": "-270",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 80,
+        "historical_hr": "8/15",
+        "price": "-166",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Bijan Robinson",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 3,
+          "historical_hr": "9/15",
+          "price": "-580",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "7/15",
+          "price": "-220",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "4/15",
+          "price": "-102",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "1/15",
+          "price": "178",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "0/15",
+          "price": "310",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "0/15",
+          "price": "550",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "0/15",
+          "price": "880",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "0/15",
+          "price": "1280",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 3,
+        "historical_hr": "9/15",
+        "price": "-580",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 3,
+        "historical_hr": "9/15",
+        "price": "-580",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 4,
+        "historical_hr": "7/15",
+        "price": "-220",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Chris Olave",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 4,
+          "historical_hr": "13/15",
+          "price": "-1600",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "12/15",
+          "price": "-550",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "10/15",
+          "price": "-260",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "8/15",
+          "price": "-136",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "7/15",
+          "price": "136",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "4/15",
+          "price": "230",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "2/15",
+          "price": "390",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 11,
+          "historical_hr": "0/15",
+          "price": "640",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 12,
+          "historical_hr": "0/15",
+          "price": "920",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 13,
+          "historical_hr": "0/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 4,
+        "historical_hr": "13/15",
+        "price": "-1600",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 6,
+        "historical_hr": "10/15",
+        "price": "-260",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 7,
+        "historical_hr": "8/15",
+        "price": "-136",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Olamide Zaccheaus",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 1,
+          "historical_hr": "14/15",
+          "price": "-320",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 2,
+          "historical_hr": "10/15",
+          "price": "148",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "4/15",
+          "price": "410",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 1,
+        "historical_hr": "14/15",
+        "price": "-320",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "10/15",
+        "price": "148",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "4/15",
+        "price": "410",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Austin Hooper",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 1,
+          "historical_hr": "14/15",
+          "price": "-260",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 2,
+          "historical_hr": "9/15",
+          "price": "182",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "2/15",
+          "price": "550",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "0/15",
+          "price": "1260",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 1,
+        "historical_hr": "14/15",
+        "price": "-260",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "9/15",
+        "price": "182",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "2/15",
+        "price": "550",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Noah Fant",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 1,
+          "historical_hr": "13/15",
+          "price": "-850",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 2,
+          "historical_hr": "9/15",
+          "price": "-180",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "8/15",
+          "price": "168",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "6/15",
+          "price": "370",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "2/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "0/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 1,
+        "historical_hr": "13/15",
+        "price": "-850",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "9/15",
+        "price": "-180",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "8/15",
+        "price": "168",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Noah Fant",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": "12/15",
+          "price": "-490",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "10/15",
+          "price": "-240",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "10/15",
+          "price": "-138",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "9/15",
+          "price": "116",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "9/15",
+          "price": "174",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "5/15",
+          "price": "240",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "2/15",
+          "price": "450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "0/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "0/15",
+          "price": "1200",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "historical_hr": "12/15",
+        "price": "-490",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 25,
+        "historical_hr": "9/15",
+        "price": "174",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 30,
+        "historical_hr": "5/15",
+        "price": "240",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Juwan Johnson",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 15,
+          "historical_hr": "15/15",
+          "price": "-1400",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "14/15",
+          "price": "-670",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "14/15",
+          "price": "-440",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "14/15",
+          "price": "-300",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "10/15",
+          "price": "-160",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "9/15",
+          "price": "108",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "6/15",
+          "price": "178",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "4/15",
+          "price": "270",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "3/15",
+          "price": "410",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "2/15",
+          "price": "630",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "0/15",
+          "price": "880",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "0/15",
+          "price": "1200",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 15,
+        "historical_hr": "15/15",
+        "price": "-1400",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 50,
+        "historical_hr": "9/15",
+        "price": "108",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "historical_hr": "6/15",
+        "price": "178",
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Drake London",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 40,
+          "historical_hr": "12/15",
+          "price": "-850",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "10/15",
+          "price": "-450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "7/15",
+          "price": "-270",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "7/15",
+          "price": "-172",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "6/15",
+          "price": "-114",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "6/15",
+          "price": "126",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "6/15",
+          "price": "178",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "5/15",
+          "price": "235",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "2/15",
+          "price": "370",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "2/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "1/15",
+          "price": "1280",
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 40,
+        "historical_hr": "12/15",
+        "price": "-850",
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 50,
+        "historical_hr": "10/15",
+        "price": "-450",
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "historical_hr": "7/15",
+        "price": "-270",
+        "sportsbook": "FanDuel"
+      }
     }
   ],
-  "repair_status": "repair_pending"
+  "prior_stage_state": {
+    "stage": 1,
+    "path": "state/week4_2026/stage1_state.json",
+    "state_id": "STATE-1-20261005-TODAY-ATL-NO-L15-DK",
+    "content_sha": "3684f2eaed4068fe7155288f0d83f17febddc4be",
+    "record_count": 18,
+    "validation": "Exact locked Stage 1 artifact remains authoritative; Stage 2 does not reconstruct or replace it."
+  },
+  "records": [],
+  "alternate_records": [
+    {
+      "player": "Michael Penix Jr.",
+      "market": "Passing Yards",
+      "alternates": [
+        {
+          "threshold": 150,
+          "historical_hr": "12/15",
+          "price": "-850",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "11/15",
+          "price": "-400",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 200,
+          "historical_hr": "9/15",
+          "price": "-215",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 225,
+          "historical_hr": "6/15",
+          "price": "-114",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 250,
+          "historical_hr": "5/15",
+          "price": "162",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 275,
+          "historical_hr": "3/15",
+          "price": "270",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 300,
+          "historical_hr": "2/15",
+          "price": "470",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 325,
+          "historical_hr": "0/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 350,
+          "historical_hr": "0/15",
+          "price": "1200",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Brian Robinson Jr.",
+      "market": "Rushing Yards",
+      "alternates": [
+        {
+          "threshold": 10,
+          "historical_hr": "12/15",
+          "price": "-1100",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "12/15",
+          "price": "-450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "12/15",
+          "price": "-260",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "8/15",
+          "price": "-162",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "7/15",
+          "price": "-104",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "5/15",
+          "price": "188",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "3/15",
+          "price": "320",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "0/15",
+          "price": "580",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "0/15",
+          "price": "880",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "0/15",
+          "price": "1200",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "0/15",
+          "price": "1500",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Drake London",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 4,
+          "historical_hr": "11/15",
+          "price": "-700",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "8/15",
+          "price": "-300",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "7/15",
+          "price": "-144",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "6/15",
+          "price": "134",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "5/15",
+          "price": "235",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "3/15",
+          "price": "400",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "1/15",
+          "price": "680",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 11,
+          "historical_hr": "0/15",
+          "price": "1100",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 12,
+          "historical_hr": "0/15",
+          "price": "1500",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Olamide Zaccheaus",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": "13/15",
+          "price": "-180",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "7/15",
+          "price": "116",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "7/15",
+          "price": "194",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "6/15",
+          "price": "300",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "4/15",
+          "price": "450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "4/15",
+          "price": "640",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Alvin Kamara",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 2,
+          "historical_hr": "12/15",
+          "price": "-500",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "9/15",
+          "price": "-172",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "7/15",
+          "price": "140",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "4/15",
+          "price": "290",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "1/15",
+          "price": "550",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "0/15",
+          "price": "920",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "0/15",
+          "price": "1500",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Chris Olave",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 40,
+          "historical_hr": "14/15",
+          "price": "-1200",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "13/15",
+          "price": "-580",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "11/15",
+          "price": "-320",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "10/15",
+          "price": "-205",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "9/15",
+          "price": "-136",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "7/15",
+          "price": "112",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "5/15",
+          "price": "162",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "3/15",
+          "price": "225",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "2/15",
+          "price": "370",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "1/15",
+          "price": "800",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "1/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Juwan Johnson",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 2,
+          "historical_hr": "15/15",
+          "price": "-1450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "14/15",
+          "price": "-400",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "11/15",
+          "price": "-158",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "6/15",
+          "price": "140",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "3/15",
+          "price": "280",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "2/15",
+          "price": "520",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "2/15",
+          "price": "880",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "0/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Austin Hooper",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": "14/15",
+          "price": "-166",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "12/15",
+          "price": "122",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "8/15",
+          "price": "205",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "8/15",
+          "price": "320",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "5/15",
+          "price": "490",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "4/15",
+          "price": "700",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "0/15",
+          "price": "1260",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Bijan Robinson",
+      "market": "Rushing Yards",
+      "alternates": [
+        {
+          "threshold": 50,
+          "historical_hr": "11/15",
+          "price": "-1000",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "11/15",
+          "price": "-470",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "11/15",
+          "price": "-270",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "8/15",
+          "price": "-166",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "5/15",
+          "price": "-104",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "4/15",
+          "price": "144",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "3/15",
+          "price": "205",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "3/15",
+          "price": "350",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "2/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "2/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Bijan Robinson",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 3,
+          "historical_hr": "9/15",
+          "price": "-580",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "7/15",
+          "price": "-220",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "4/15",
+          "price": "-102",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "1/15",
+          "price": "178",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "0/15",
+          "price": "310",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "0/15",
+          "price": "550",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "0/15",
+          "price": "880",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "0/15",
+          "price": "1280",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Chris Olave",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 4,
+          "historical_hr": "13/15",
+          "price": "-1600",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "12/15",
+          "price": "-550",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "10/15",
+          "price": "-260",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "8/15",
+          "price": "-136",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "7/15",
+          "price": "136",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "4/15",
+          "price": "230",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "2/15",
+          "price": "390",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 11,
+          "historical_hr": "0/15",
+          "price": "640",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 12,
+          "historical_hr": "0/15",
+          "price": "920",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 13,
+          "historical_hr": "0/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Olamide Zaccheaus",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 1,
+          "historical_hr": "14/15",
+          "price": "-320",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 2,
+          "historical_hr": "10/15",
+          "price": "148",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "4/15",
+          "price": "410",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Austin Hooper",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 1,
+          "historical_hr": "14/15",
+          "price": "-260",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 2,
+          "historical_hr": "9/15",
+          "price": "182",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "2/15",
+          "price": "550",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "0/15",
+          "price": "1260",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Noah Fant",
+      "market": "Receptions",
+      "alternates": [
+        {
+          "threshold": 1,
+          "historical_hr": "13/15",
+          "price": "-850",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 2,
+          "historical_hr": "9/15",
+          "price": "-180",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "8/15",
+          "price": "168",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "6/15",
+          "price": "370",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "2/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "0/15",
+          "price": "1400",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Noah Fant",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": "12/15",
+          "price": "-490",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "10/15",
+          "price": "-240",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "10/15",
+          "price": "-138",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "9/15",
+          "price": "116",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "9/15",
+          "price": "174",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "5/15",
+          "price": "240",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "2/15",
+          "price": "450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "0/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "0/15",
+          "price": "1200",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Juwan Johnson",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 15,
+          "historical_hr": "15/15",
+          "price": "-1400",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "14/15",
+          "price": "-670",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "14/15",
+          "price": "-440",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "14/15",
+          "price": "-300",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "10/15",
+          "price": "-160",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "9/15",
+          "price": "108",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "6/15",
+          "price": "178",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "4/15",
+          "price": "270",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "3/15",
+          "price": "410",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "2/15",
+          "price": "630",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "0/15",
+          "price": "880",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "0/15",
+          "price": "1200",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    },
+    {
+      "player": "Drake London",
+      "market": "Receiving Yards",
+      "alternates": [
+        {
+          "threshold": 40,
+          "historical_hr": "12/15",
+          "price": "-850",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "10/15",
+          "price": "-450",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "7/15",
+          "price": "-270",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "7/15",
+          "price": "-172",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "6/15",
+          "price": "-114",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "6/15",
+          "price": "126",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "6/15",
+          "price": "178",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "5/15",
+          "price": "235",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "2/15",
+          "price": "370",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "2/15",
+          "price": "750",
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "1/15",
+          "price": "1280",
+          "sportsbook": "FanDuel"
+        }
+      ]
+    }
+  ]
 }
