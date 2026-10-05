@@ -2,115 +2,124 @@
   "stage": 5,
   "season": 2026,
   "week": 4,
-  "scope": "Sunday — games starting after 1:00 PM ET",
-  "historical_sample": {"label": "L12", "N": 12},
+  "scope": "Custom — today's game only (Atlanta Falcons at New Orleans Saints)",
+  "historical_sample": {
+    "label": "L15",
+    "N": 15
+  },
   "historical_cutoff": "2026-09-28T23:10:00-04:00",
-  "state_id": "STATE-5-20261004-SUN-AFTER-1PM-L12",
-  "parent_state_id": "STATE-4-20261004-SUN-AFTER-1PM-L12",
-  "record_count": 5,
-  "selection_principles": [
-    "Use only locked Stage 4 final prop cards; no new legs.",
-    "All portfolio legs must have at least 70% L12 HR.",
-    "For Low Variance, prefer 90%+ HR and use 80%+ when necessary; no Tier 3 legs.",
-    "For Balanced and Price Seeking, prefer 80%+ HR; 70–79% is permissible only when necessary.",
-    "Prefer Floors and strongest conservative lines.",
-    "Do not force payout targets."
-  ],
-  "portfolios": [
-    {
-      "name": "LOW VARIANCE",
-      "legs": [
-        {"player":"George Kittle","team":"SF","market":"Receptions","threshold":"4+","historical_hr":"11/12","price":"-320","context":"Supportive"},
-        {"player":"Christian McCaffrey","team":"SF","market":"Receptions","threshold":"4+","historical_hr":"11/12","price":"-280","context":"Supportive"}
-      ],
-      "leg_count": 2,
-      "combined_decimal": 1.78125,
-      "combined_american": -128,
-      "payout_target":"Conservative / low variance",
-      "target_status":"Valid"
+  "record_count": 8,
+  "state_id": "STATE-5-20261005-TODAY-ATL-NO-L15",
+  "parent_state_id": "STATE-4-20261005-TODAY-ATL-NO-L15",
+  "records": {
+    "input_validation": {
+      "stage4_state_id": "STATE-4-20261005-TODAY-ATL-NO-L15",
+      "stage4_record_count": 8,
+      "stage1_locked": true,
+      "stage2_locked": true,
+      "stage3_locked": true,
+      "stage4_locked": true
     },
-    {
-      "name": "BALANCED",
-      "legs": [
-        {"player":"Patrick Mahomes","team":"KC","market":"Passing Yards","threshold":"250+","historical_hr":"8/12","price":"+118","context":"Supportive"},
-        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"9/12","price":"-148","context":"Supportive"}
-      ],
-      "leg_count": 2,
-      "combined_decimal": 3.65297,
-      "combined_american": 265,
-      "payout_target":"+200 to +400",
-      "target_status":"Within range"
-    },
-    {
-      "name": "PRICE SEEKING — LOW",
-      "legs": [
-        {"player":"Patrick Mahomes","team":"KC","market":"Passing Yards","threshold":"250+","historical_hr":"8/12","price":"+118","context":"Supportive"},
-        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"9/12","price":"-148","context":"Supportive"},
-        {"player":"Brock Purdy","team":"SF","market":"Passing Yards","threshold":"200+","historical_hr":"9/12","price":"-270","context":"Supportive"}
-      ],
-      "leg_count": 3,
-      "combined_decimal": 5.00593,
-      "combined_american": 401,
-      "payout_target":"+400 to +700",
-      "target_status":"Within range"
-    },
-    {
-      "name": "PRICE SEEKING — MEDIUM",
-      "legs": [
-        {"player":"Patrick Mahomes","team":"KC","market":"Passing Yards","threshold":"250+","historical_hr":"8/12","price":"+118","context":"Supportive"},
-        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"9/12","price":"-148","context":"Supportive"},
-        {"player":"Brock Purdy","team":"SF","market":"Passing Yards","threshold":"200+","historical_hr":"9/12","price":"-270","context":"Supportive"},
-        {"player":"Jared Goff","team":"DET","market":"Passing Yards","threshold":"250+","historical_hr":"10/12","price":"-140","context":"Supportive"}
-      ],
-      "leg_count": 4,
-      "combined_decimal": 8.58159,
-      "combined_american": 758,
-      "payout_target":"+700 to +1000",
-      "target_status":"Within range"
-    },
-    {
-      "name": "PRICE SEEKING — HIGH",
-      "legs": [
-        {"player":"Patrick Mahomes","team":"KC","market":"Passing Yards","threshold":"250+","historical_hr":"8/12","price":"+118","context":"Supportive"},
-        {"player":"Jaxon Smith-Njigba","team":"SEA","market":"Receptions","threshold":"7+","historical_hr":"9/12","price":"-148","context":"Supportive"},
-        {"player":"Brock Purdy","team":"SF","market":"Passing Yards","threshold":"200+","historical_hr":"9/12","price":"-270","context":"Supportive"},
-        {"player":"Jared Goff","team":"DET","market":"Passing Yards","threshold":"250+","historical_hr":"10/12","price":"-140","context":"Supportive"},
-        {"player":"Cooper Kupp","team":"SEA","market":"Receptions","threshold":"2+","historical_hr":"11/12","price":"-260","context":"Supportive"}
-      ],
-      "leg_count": 5,
-      "combined_decimal": 11.8822,
-      "combined_american": 1088,
-      "payout_target":"> +1000",
-      "target_status":"Valid"
+    "eligible_legs": [
+      {
+        "player": "Bijan Robinson",
+        "market": "Rushing Yards",
+        "threshold": "70+",
+        "historical_hr": "11/15",
+        "price": "-270"
+      },
+      {
+        "player": "Drake London",
+        "market": "Receptions",
+        "threshold": "4+",
+        "historical_hr": "11/15",
+        "price": "-700"
+      },
+      {
+        "player": "Juwan Johnson",
+        "market": "Receptions",
+        "threshold": "4+",
+        "historical_hr": "11/15",
+        "price": "-158"
+      }
+    ],
+    "portfolios": [
+      {
+        "name": "LOW VARIANCE",
+        "status": "VALID",
+        "legs": [
+          "Bijan Robinson 70+ rushing yards (-270)",
+          "Juwan Johnson 4+ receptions (-158)"
+        ],
+        "leg_count": 2,
+        "combined_decimal": 2.2377,
+        "combined_american": "+124",
+        "target_status": "Valid fallback; no ≥80% legs available"
+      },
+      {
+        "name": "BALANCED",
+        "status": "NO VALID CONSTRUCTION",
+        "reason": "No compliant combination reaches +200 to +400."
+      },
+      {
+        "name": "PRICE SEEKING — LOW",
+        "status": "NO VALID CONSTRUCTION",
+        "reason": "All three eligible legs combine to approximately +156, below +400."
+      },
+      {
+        "name": "PRICE SEEKING — MEDIUM",
+        "status": "NO VALID CONSTRUCTION",
+        "reason": "Only three eligible legs exist and their three-leg combination remains below +700."
+      },
+      {
+        "name": "PRICE SEEKING — HIGH",
+        "status": "NO VALID CONSTRUCTION",
+        "reason": "No compliant construction can reach above +1000."
+      }
+    ],
+    "ineligible_legs": [
+      {
+        "player": "Chris Olave",
+        "threshold": "80+ receiving yards",
+        "historical_hr": "9/15",
+        "reason": "Below mandatory 70% portfolio-leg minimum"
+      },
+      {
+        "player": "Chris Olave",
+        "threshold": "6+ receptions",
+        "historical_hr": "10/15",
+        "reason": "Below mandatory 70% portfolio-leg minimum"
+      },
+      {
+        "player": "Drake London",
+        "threshold": "50+ receiving yards",
+        "historical_hr": "10/15",
+        "reason": "Below mandatory 70% portfolio-leg minimum"
+      },
+      {
+        "player": "Michael Penix Jr.",
+        "threshold": "200+ passing yards",
+        "historical_hr": "9/15",
+        "reason": "Below mandatory 70% portfolio-leg minimum"
+      },
+      {
+        "player": "Juwan Johnson",
+        "threshold": "50+ receiving yards",
+        "historical_hr": "9/15",
+        "reason": "Below mandatory 70% portfolio-leg minimum"
+      }
+    ],
+    "validation": {
+      "all_portfolio_legs_minimum_hr_met": true,
+      "low_variance_exactly_2_legs": true,
+      "balanced_max_2_legs": true,
+      "price_seeking_low_max_3_legs": true,
+      "price_seeking_medium_max_4_legs": true,
+      "price_seeking_high_max_5_legs": true,
+      "no_individual_leg_standard_relaxed": true,
+      "no_portfolio_forced": true,
+      "combined_odds_mathematical_estimate": true,
+      "prior_states_unchanged": true
     }
-  ],
-  "excluded_from_all_portfolios": [
-    {"player":"Omarion Hampton","reason":"Stage 3 Concern on 40+ rushing yards"},
-    {"player":"Justin Herbert","reason":"Stage 3 Concern on 200+ passing yards"},
-    {"player":"J.K. Dobbins","reason":"Stage 3 Mixed on 60+ rushing yards"},
-    {"player":"Pat Bryant","reason":"Stage 3 Concern on 30+ receiving yards"},
-    {"player":"Jauan Jennings","reason":"Stage 3 Mixed"},
-    {"player":"Christian McCaffrey","market":"Rushing Yards","threshold":"60+","reason":"Not selected for portfolio construction despite supportive context"},
-    {"player":"George Kittle","market":"Receiving Yards","threshold":"60+","reason":"Not selected for portfolio construction despite supportive context"},
-    {"player":"Sam LaPorta","reason":"Stage 3 Mixed"}
-  ],
-  "validation": {
-    "stage4_state_loaded_exactly": true,
-    "stage4_state_complete": true,
-    "stage4_record_count": 8,
-    "stage4_parent_stage3_exact": true,
-    "stage3_locked": true,
-    "stage2_locked": true,
-    "stage1_locked": true,
-    "no_prior_stage_reconstruction": true,
-    "only_stage4_final_props_used": true,
-    "all_portfolio_legs_at_least_70_percent_L12_HR": true,
-    "low_variance_exactly_2_legs": true,
-    "balanced_max_2_legs": true,
-    "price_seeking_low_max_3_legs": true,
-    "price_seeking_medium_max_4_legs": true,
-    "price_seeking_high_max_5_legs": true,
-    "combined_odds_mathematical": true,
-    "no_forced_payout": true
   }
 }
