@@ -2,21 +2,17 @@
   "stage": 0,
   "season": 2026,
   "week": 4,
-  "scope": "Sunday — games starting after 1:00 PM ET",
-  "historical_sample": {"label": "L12", "N": 12},
+  "scope": "Custom — today's game only (Atlanta Falcons at New Orleans Saints)",
+  "historical_sample": {"label": "L15", "N": 15},
   "historical_cutoff": "2026-09-28T23:10:00-04:00",
   "record_count": 0,
-  "state_id": "STATE-0-20261004-SUN-AFTER-1PM-L12",
+  "state_id": "STATE-0-20261005-TODAY-ATL-NO-L15",
   "parent_state_id": null,
   "records": [],
-  "cutoff_basis": "Completion of the final scheduled game of Week 3 (Philadelphia Eagles at Chicago Bears, Monday September 28, 2026). The game started at 8:15 PM ET and had a listed time of game of 2:55, implying completion at approximately 11:10 PM ET.",
-  "analysis_scope_description": "NFL Week 4, 2026 Regular Season — Sunday games with kickoff after 1:00 PM ET; 5 games.",
+  "cutoff_basis": "Completion of the final scheduled game of Week 3 (Philadelphia Eagles at Chicago Bears, Monday September 28, 2026).",
+  "analysis_scope_description": "NFL Week 4, 2026 Regular Season — Atlanta Falcons at New Orleans Saints only, Monday October 5, 2026, 8:15 PM ET.",
   "included_games": [
-    "Miami Dolphins at Minnesota Vikings — 4:05 PM ET",
-    "Denver Broncos at San Francisco 49ers — 4:25 PM ET",
-    "Kansas City Chiefs at Las Vegas Raiders — 4:25 PM ET",
-    "Los Angeles Chargers at Seattle Seahawks — 4:25 PM ET",
-    "Detroit Lions at Carolina Panthers — 8:20 PM ET"
+    "Atlanta Falcons at New Orleans Saints — 8:15 PM ET"
   ],
   "historical_data_source": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
   "current_sportsbook_source": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv"
