@@ -2,13 +2,13 @@
   "stage": 4,
   "season": 2026,
   "week": 4,
-  "scope": "Sunday — games starting after 1:00 PM ET",
+  "scope": "Custom — today's game only (Atlanta Falcons at New Orleans Saints)",
   "historical_sample": {
-    "label": "L12",
-    "N": 12
+    "label": "L15",
+    "N": 15
   },
-  "state_id": "STATE-4-20261004-SUN-AFTER-1PM-L12",
-  "parent_state_id": "STATE-3-20261004-SUN-AFTER-1PM-L12",
+  "state_id": "STATE-4-20261005-TODAY-ATL-NO-L15",
+  "parent_state_id": "STATE-3-20261005-TODAY-ATL-NO-L15",
   "record_count": 8,
   "alternate_market_snapshot": "FanDuel current snapshot from odds/nfl_player_props_latest.csv",
   "bands": [
@@ -412,15 +412,11 @@
     "other": "All remaining Stage 1 qualifiers excluded because the alternate structure was not materially useful for later final selection. Exclusions were made without current-week context, injuries, matchup, weather, role, or game-script analysis."
   },
   "validation": {
-    "stage2_state_loaded_exactly": true,
-    "stage1_state_remains_locked": true,
-    "no_prior_stage_reconstruction": true,
-    "all_cards_have_historical_evidence": true,
-    "all_cards_have_context": true,
-    "all_cards_have_verified_fanduel_price": true,
-    "correct_L12_denominator": true,
-    "no_prior_state_changed": true,
-    "stage4_complete": true
+    "stage1_locked": true,
+    "stage2_locked": true,
+    "stage3_locked": true,
+    "no_new_candidates": true,
+    "historical_hr_unchanged": true
   },
   "records": [
     {
@@ -617,5 +613,102 @@
       "Sam LaPorta 40+ Receiving Yards"
     ],
     "note_on_mccaffrey_rush": "Strong contextual support but 8/12 Core is less robust than the 11/12 reception card; not selected as a primary final card."
-  }
+  },
+  "source_sportsbook": "FanDuel",
+  "final_props": [
+    {
+      "player": "Bijan Robinson",
+      "market": "Rushing Yards",
+      "line": "70+",
+      "historical_hr": "11/15",
+      "price": "-270",
+      "band": "CORE",
+      "selection": "PRIMARY"
+    },
+    {
+      "player": "Chris Olave",
+      "market": "Receiving Yards",
+      "line": "80+",
+      "historical_hr": "9/15",
+      "price": "-136",
+      "band": "CORE",
+      "selection": "PRIMARY"
+    },
+    {
+      "player": "Chris Olave",
+      "market": "Receptions",
+      "line": "6+",
+      "historical_hr": "10/15",
+      "price": "-260",
+      "band": "CORE",
+      "selection": "PRIMARY"
+    },
+    {
+      "player": "Drake London",
+      "market": "Receiving Yards",
+      "line": "50+",
+      "historical_hr": "10/15",
+      "price": "-450",
+      "band": "CORE",
+      "selection": "SECONDARY"
+    },
+    {
+      "player": "Drake London",
+      "market": "Receptions",
+      "line": "4+",
+      "historical_hr": "11/15",
+      "price": "-700",
+      "band": "CORE",
+      "selection": "SECONDARY"
+    },
+    {
+      "player": "Juwan Johnson",
+      "market": "Receptions",
+      "line": "4+",
+      "historical_hr": "11/15",
+      "price": "-158",
+      "band": "CORE",
+      "selection": "SECONDARY"
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "market": "Passing Yards",
+      "line": "200+",
+      "historical_hr": "9/15",
+      "price": "-215",
+      "band": "CORE",
+      "selection": "SECONDARY"
+    },
+    {
+      "player": "Juwan Johnson",
+      "market": "Receiving Yards",
+      "line": "50+",
+      "historical_hr": "9/15",
+      "price": "+108",
+      "band": "CORE",
+      "selection": "VALUE"
+    }
+  ],
+  "excluded": [
+    {
+      "player": "Brian Robinson Jr.",
+      "reason": "Concern — backup workload"
+    },
+    {
+      "player": "Olamide Zaccheaus",
+      "reason": "Concern — rotational role"
+    },
+    {
+      "player": "Austin Hooper",
+      "reason": "Concern — secondary TE/limited target share"
+    },
+    {
+      "player": "Alvin Kamara",
+      "reason": "Mixed — reception-specific uncertainty"
+    },
+    {
+      "player": "Noah Fant",
+      "reason": "Concern — injury/availability and secondary role"
+    }
+  ]
 }
