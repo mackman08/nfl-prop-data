@@ -3,35 +3,163 @@
   "season": 2026,
   "week": 4,
   "scope": "Custom — today's game only (Atlanta Falcons at New Orleans Saints)",
-  "historical_sample": {"label": "L15", "N": 15},
+  "historical_sample": {
+    "label": "L15",
+    "N": 15
+  },
   "historical_cutoff": "2026-09-28T23:10:00-04:00",
   "record_count": 18,
   "state_id": "STATE-2-20261005-TODAY-ATL-NO-L15-FD",
   "parent_state_id": "STATE-1-20261005-TODAY-ATL-NO-L15-DK",
-  "source_snapshot": {"sportsbook": "FanDuel", "game": "Atlanta Falcons @ New Orleans Saints", "source_file": "odds/nfl_player_props_latest.csv"},
+  "source_snapshot": {
+    "sportsbook": "FanDuel",
+    "game": "Atlanta Falcons @ New Orleans Saints",
+    "source_file": "odds/nfl_player_props_latest.csv"
+  },
   "methodology_note": "Stage 2 alternate-market analysis only. Alternate HR = hits/15 using the exact locked Stage 1 observations. Floor = lowest FanDuel alternate at >=60%; Core = highest FanDuel alternate at >=60%; Ceiling = next higher FanDuel alternate above Core. No context, matchup, injury, weather, role, workload, scheme, line-movement, or current-season trend analysis used.",
   "candidate_count": 16,
   "excluded_count": 2,
   "exclusions": [
-    {"player": "Kyle Pitts Sr.", "market": "Receiving Yards", "reason": "No FanDuel alternate-market structure available."},
-    {"player": "Kyle Pitts Sr.", "market": "Receptions", "reason": "No FanDuel alternate-market structure available."}
+    {
+      "player": "Kyle Pitts Sr.",
+      "market": "Receiving Yards",
+      "reason": "No FanDuel alternate-market structure available."
+    },
+    {
+      "player": "Kyle Pitts Sr.",
+      "market": "Receptions",
+      "reason": "No FanDuel alternate-market structure available."
+    }
   ],
   "candidates": [
-    {"player":"Michael Penix Jr.","team":"ATL","market":"Passing Yards","floor":"150+ 12/15 -850","core":"200+ 9/15 -215","ceiling":"225+ 6/15 -114"},
-    {"player":"Drake London","team":"ATL","market":"Receiving Yards","floor":"40+ 12/15 -850","core":"50+ 10/15 -450","ceiling":"60+ 7/15 -270"},
-    {"player":"Chris Olave","team":"NO","market":"Receiving Yards","floor":"40+ 14/15 -1200","core":"80+ 9/15 -136","ceiling":"90+ 7/15 112"},
-    {"player":"Juwan Johnson","team":"NO","market":"Receiving Yards","floor":"15+ 15/15 -1400","core":"50+ 9/15 108","ceiling":"60+ 6/15 178"},
-    {"player":"Noah Fant","team":"NO","market":"Receiving Yards","floor":"5+ 12/15 -490","core":"25+ 9/15 174","ceiling":"30+ 5/15 240"},
-    {"player":"Olamide Zaccheaus","team":"ATL","market":"Receiving Yards","floor":"5+ 13/15 -180","core":"5+ 13/15 -180","ceiling":"10+ 7/15 116"},
-    {"player":"Austin Hooper","team":"ATL","market":"Receiving Yards","floor":"5+ 14/15 -166","core":"10+ 12/15 122","ceiling":"15+ 8/15 205"},
-    {"player":"Chris Olave","team":"NO","market":"Receptions","floor":"4+ 13/15 -1600","core":"6+ 10/15 -260","ceiling":"7+ 8/15 -136"},
-    {"player":"Drake London","team":"ATL","market":"Receptions","floor":"4+ 11/15 -700","core":"4+ 11/15 -700","ceiling":"5+ 8/15 -300"},
-    {"player":"Juwan Johnson","team":"NO","market":"Receptions","floor":"2+ 15/15 -1450","core":"4+ 11/15 -158","ceiling":"5+ 6/15 140"},
-    {"player":"Alvin Kamara","team":"NO","market":"Receptions","floor":"2+ 12/15 -500","core":"3+ 9/15 -172","ceiling":"4+ 7/15 140"},
-    {"player":"Noah Fant","team":"NO","market":"Receptions","floor":"1+ 13/15 -850","core":"2+ 9/15 -180","ceiling":"3+ 8/15 168"},
-    {"player":"Olamide Zaccheaus","team":"ATL","market":"Receptions","floor":"1+ 14/15 -320","core":"2+ 10/15 148","ceiling":"3+ 4/15 410"},
-    {"player":"Austin Hooper","team":"ATL","market":"Receptions","floor":"1+ 14/15 -260","core":"2+ 9/15 182","ceiling":"3+ 2/15 550"},
-    {"player":"Bijan Robinson","team":"ATL","market":"Rushing Yards","floor":"50+ 11/15 -1000","core":"70+ 11/15 -270","ceiling":"80+ 8/15 -166"},
-    {"player":"Brian Robinson Jr.","team":"ATL","market":"Rushing Yards","floor":"10+ 12/15 -1100","core":"20+ 12/15 -260","ceiling":"25+ 8/15 -162"}
-  ]
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "market": "Passing Yards",
+      "floor": "150+ 12/15 -850",
+      "core": "200+ 9/15 -215",
+      "ceiling": "225+ 6/15 -114"
+    },
+    {
+      "player": "Drake London",
+      "team": "ATL",
+      "market": "Receiving Yards",
+      "floor": "40+ 12/15 -850",
+      "core": "50+ 10/15 -450",
+      "ceiling": "60+ 7/15 -270"
+    },
+    {
+      "player": "Chris Olave",
+      "team": "NO",
+      "market": "Receiving Yards",
+      "floor": "40+ 14/15 -1200",
+      "core": "80+ 9/15 -136",
+      "ceiling": "90+ 7/15 112"
+    },
+    {
+      "player": "Juwan Johnson",
+      "team": "NO",
+      "market": "Receiving Yards",
+      "floor": "15+ 15/15 -1400",
+      "core": "50+ 9/15 108",
+      "ceiling": "60+ 6/15 178"
+    },
+    {
+      "player": "Noah Fant",
+      "team": "NO",
+      "market": "Receiving Yards",
+      "floor": "5+ 12/15 -490",
+      "core": "25+ 9/15 174",
+      "ceiling": "30+ 5/15 240"
+    },
+    {
+      "player": "Olamide Zaccheaus",
+      "team": "ATL",
+      "market": "Receiving Yards",
+      "floor": "5+ 13/15 -180",
+      "core": "5+ 13/15 -180",
+      "ceiling": "10+ 7/15 116"
+    },
+    {
+      "player": "Austin Hooper",
+      "team": "ATL",
+      "market": "Receiving Yards",
+      "floor": "5+ 14/15 -166",
+      "core": "10+ 12/15 122",
+      "ceiling": "15+ 8/15 205"
+    },
+    {
+      "player": "Chris Olave",
+      "team": "NO",
+      "market": "Receptions",
+      "floor": "4+ 13/15 -1600",
+      "core": "6+ 10/15 -260",
+      "ceiling": "7+ 8/15 -136"
+    },
+    {
+      "player": "Drake London",
+      "team": "ATL",
+      "market": "Receptions",
+      "floor": "4+ 11/15 -700",
+      "core": "4+ 11/15 -700",
+      "ceiling": "5+ 8/15 -300"
+    },
+    {
+      "player": "Juwan Johnson",
+      "team": "NO",
+      "market": "Receptions",
+      "floor": "2+ 15/15 -1450",
+      "core": "4+ 11/15 -158",
+      "ceiling": "5+ 6/15 140"
+    },
+    {
+      "player": "Alvin Kamara",
+      "team": "NO",
+      "market": "Receptions",
+      "floor": "2+ 12/15 -500",
+      "core": "3+ 9/15 -172",
+      "ceiling": "4+ 7/15 140"
+    },
+    {
+      "player": "Noah Fant",
+      "team": "NO",
+      "market": "Receptions",
+      "floor": "1+ 13/15 -850",
+      "core": "2+ 9/15 -180",
+      "ceiling": "3+ 8/15 168"
+    },
+    {
+      "player": "Olamide Zaccheaus",
+      "team": "ATL",
+      "market": "Receptions",
+      "floor": "1+ 14/15 -320",
+      "core": "2+ 10/15 148",
+      "ceiling": "3+ 4/15 410"
+    },
+    {
+      "player": "Austin Hooper",
+      "team": "ATL",
+      "market": "Receptions",
+      "floor": "1+ 14/15 -260",
+      "core": "2+ 9/15 182",
+      "ceiling": "3+ 2/15 550"
+    },
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "market": "Rushing Yards",
+      "floor": "50+ 11/15 -1000",
+      "core": "70+ 11/15 -270",
+      "ceiling": "80+ 8/15 -166"
+    },
+    {
+      "player": "Brian Robinson Jr.",
+      "team": "ATL",
+      "market": "Rushing Yards",
+      "floor": "10+ 12/15 -1100",
+      "core": "20+ 12/15 -260",
+      "ceiling": "25+ 8/15 -162"
+    }
+  ],
+  "repair_status": "repair_pending"
 }
