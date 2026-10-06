@@ -1,0 +1,195 @@
+{
+  "stage": 5,
+  "season": 2026,
+  "week": 5,
+  "scope": "Thursday only",
+  "historical_sample": "L12",
+  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
+  "state_id": "STATE-5-W5-2026-THU-L12-20261006",
+  "parent_state_id": "STATE-4-W5-2026-THU-L12-20261006",
+  "record_count": 5,
+  "sportsbook": "DraftKings (FanDuel unavailable in latest odds dataset; user-authorized fallback)",
+  "portfolio_rules": {
+    "low_variance": "exactly 2 legs; ≥90% preferred, ≥80% acceptable, 70–79% only when necessary; <70% prohibited",
+    "balanced": "maximum 2 legs; ≥80% preferred, 70–79% permissible when necessary; <70% prohibited",
+    "price_seeking_low": "Balanced + 1 additional permitted leg; maximum 3 legs",
+    "price_seeking_medium": "Balanced + 2 additional permitted legs; maximum 4 legs",
+    "price_seeking_high": "Balanced + 3 additional permitted legs; maximum 5 legs",
+    "do_not_force_payout_target": true,
+    "combined_odds": "mathematical estimate from individual American prices"
+  },
+  "records": [
+    {
+      "portfolio": "LOW VARIANCE",
+      "legs": [
+        {
+          "player": "Chris Godwin",
+          "market": "Receptions",
+          "threshold": "2.5+",
+          "hr": "10/12",
+          "price": "-226 DK"
+        },
+        {
+          "player": "Bucky Irving",
+          "market": "Rushing Yards",
+          "threshold": "53.5+",
+          "hr": "9/12",
+          "price": "-113 DK"
+        }
+      ],
+      "leg_count": 2,
+      "estimated_combined_american": "+197",
+      "construction": "Both legs are 90%+ historical HR preferred tier."
+    },
+    {
+      "portfolio": "BALANCED",
+      "legs": [
+        {
+          "player": "Dak Prescott",
+          "market": "Passing Yards",
+          "threshold": "269.5+",
+          "hr": "8/12",
+          "price": "-101 DK"
+        },
+        {
+          "player": "Bucky Irving",
+          "market": "Rushing Yards",
+          "threshold": "53.5+",
+          "hr": "9/12",
+          "price": "-113 DK"
+        }
+      ],
+      "leg_count": 2,
+      "estimated_combined_american": "+275",
+      "construction": "Two-leg base construction; both legs meet the ≥80% preferred Balanced evidence standard."
+    },
+    {
+      "portfolio": "PRICE SEEKING — LOW",
+      "legs": [
+        {
+          "player": "Dak Prescott",
+          "market": "Passing Yards",
+          "threshold": "269.5+",
+          "hr": "8/12",
+          "price": "-101 DK"
+        },
+        {
+          "player": "Bucky Irving",
+          "market": "Rushing Yards",
+          "threshold": "53.5+",
+          "hr": "9/12",
+          "price": "-113 DK"
+        },
+        {
+          "player": "Emeka Egbuka",
+          "market": "Receptions",
+          "threshold": "2.5+",
+          "hr": "8/12",
+          "price": "-173 DK"
+        }
+      ],
+      "leg_count": 3,
+      "estimated_combined_american": "+492",
+      "construction": "Balanced + 1 permitted ≥80% leg."
+    },
+    {
+      "portfolio": "PRICE SEEKING — MEDIUM",
+      "legs": [
+        {
+          "player": "Dak Prescott",
+          "market": "Passing Yards",
+          "threshold": "269.5+",
+          "hr": "8/12",
+          "price": "-101 DK"
+        },
+        {
+          "player": "Bucky Irving",
+          "market": "Rushing Yards",
+          "threshold": "53.5+",
+          "hr": "9/12",
+          "price": "-113 DK"
+        },
+        {
+          "player": "Emeka Egbuka",
+          "market": "Receptions",
+          "threshold": "2.5+",
+          "hr": "8/12",
+          "price": "-173 DK"
+        },
+        {
+          "player": "Chris Godwin",
+          "market": "Receptions",
+          "threshold": "2.5+",
+          "hr": "10/12",
+          "price": "-226 DK"
+        }
+      ],
+      "leg_count": 4,
+      "estimated_combined_american": "+754",
+      "construction": "Balanced + 2 permitted ≥80% legs."
+    },
+    {
+      "portfolio": "PRICE SEEKING — HIGH",
+      "legs": [
+        {
+          "player": "Dak Prescott",
+          "market": "Passing Yards",
+          "threshold": "269.5+",
+          "hr": "8/12",
+          "price": "-101 DK"
+        },
+        {
+          "player": "Bucky Irving",
+          "market": "Rushing Yards",
+          "threshold": "53.5+",
+          "hr": "9/12",
+          "price": "-113 DK"
+        },
+        {
+          "player": "Emeka Egbuka",
+          "market": "Receptions",
+          "threshold": "2.5+",
+          "hr": "8/12",
+          "price": "-173 DK"
+        },
+        {
+          "player": "Chris Godwin",
+          "market": "Receptions",
+          "threshold": "2.5+",
+          "hr": "10/12",
+          "price": "-226 DK"
+        },
+        {
+          "player": "CeeDee Lamb",
+          "market": "Receiving Yards",
+          "threshold": "59.5+",
+          "hr": "8/12",
+          "price": "-264 DK"
+        }
+      ],
+      "leg_count": 5,
+      "estimated_combined_american": "+1077",
+      "construction": "Balanced + 3 permitted ≥80% legs."
+    }
+  ],
+  "validation": {
+    "stage4_state_loaded_exactly": true,
+    "stage4_record_count_preserved": true,
+    "stage1_state_remains_locked": true,
+    "stage2_state_remains_locked": true,
+    "stage3_state_remains_locked": true,
+    "all_portfolio_legs_are_stage4_selected": true,
+    "all_legs_have_verified_sportsbook_prices": true,
+    "all_legs_meet_minimum_70pct_hr": true,
+    "low_variance_has_exactly_2_legs": true,
+    "low_variance_legs_are_90pct_or_better": true,
+    "balanced_has_max_2_legs": true,
+    "price_seeking_low_max_3_legs": true,
+    "price_seeking_medium_max_4_legs": true,
+    "price_seeking_high_max_5_legs": true,
+    "no_tier3_low_variance": true,
+    "individual_leg_evidence_standard_not_weakened": true,
+    "combined_odds_mathematically_valid": true,
+    "no_portfolio_forced_beyond_available_evidence": true
+  }
+}
