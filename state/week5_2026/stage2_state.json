@@ -1,0 +1,1391 @@
+{
+  "stage": 2,
+  "season": 2026,
+  "week": 5,
+  "scope": "Thursday only",
+  "historical_sample": "L12",
+  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
+  "record_count": 10,
+  "state_id": "STATE-2-W5-2026-THU-L12-20261006",
+  "parent_state_id": "STATE-1-W5-2026-THU-L12-20261006",
+  "sportsbook": "FanDuel (Stage 2 alternate-market source; DraftKings remains the user-authorized sportsbook override for Stage 1)",
+  "records": [
+    {
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "market": "Passing Yards",
+      "line": 265.5,
+      "price": -111,
+      "l12": [
+        335,
+        276,
+        279,
+        175,
+        70,
+        307,
+        244,
+        294,
+        376,
+        320,
+        354,
+        268
+      ],
+      "market_hr": "9/12",
+      "25P": 248.5,
+      "ladder": {
+        "150": "11/12",
+        "175": "10/12",
+        "200": "10/12",
+        "225": "10/12",
+        "250": "9/12",
+        "300": "5/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%",
+        "Ladder >=80%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 175,
+          "historical_hr": "10/12",
+          "price": -1400,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 200,
+          "historical_hr": "10/12",
+          "price": -600,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 225,
+          "historical_hr": "10/12",
+          "price": -300,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 250,
+          "historical_hr": "9/12",
+          "price": -160,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 275,
+          "historical_hr": "8/12",
+          "price": 116,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 300,
+          "historical_hr": "5/12",
+          "price": 200,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 325,
+          "historical_hr": "3/12",
+          "price": 360,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 350,
+          "historical_hr": "2/12",
+          "price": 580,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 375,
+          "historical_hr": "1/12",
+          "price": 920,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 400,
+          "historical_hr": "0/12",
+          "price": 1500,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 175,
+        "historical_hr": "10/12",
+        "price": -1400,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 275,
+        "historical_hr": "8/12",
+        "price": 116,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 300,
+        "historical_hr": "5/12",
+        "price": 200,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "line": 80.5,
+      "price": -111,
+      "l12": [
+        189,
+        112,
+        153,
+        44,
+        4,
+        46,
+        51,
+        111,
+        121,
+        112,
+        75,
+        66
+      ],
+      "market_hr": "6/12",
+      "25P": 72,
+      "ladder": {
+        "20": "11/12",
+        "30": "11/12",
+        "40": "11/12",
+        "50": "9/12",
+        "60": "8/12",
+        "75": "6/12",
+        "100": "6/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 40,
+          "historical_hr": "11/12",
+          "price": -1000,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "9/12",
+          "price": -470,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "8/12",
+          "price": -275,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "7/12",
+          "price": -180,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "6/12",
+          "price": -120,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "6/12",
+          "price": 122,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "6/12",
+          "price": 174,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "6/12",
+          "price": 235,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "2/12",
+          "price": 390,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "2/12",
+          "price": 800,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 175,
+          "historical_hr": "1/12",
+          "price": 1400,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 40,
+        "historical_hr": "11/12",
+        "price": -1000,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 60,
+        "historical_hr": "8/12",
+        "price": -275,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 70,
+        "historical_hr": "7/12",
+        "price": -180,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "line": 63.5,
+      "price": -111,
+      "l12": [
+        75,
+        82,
+        40,
+        28,
+        9,
+        78,
+        130,
+        33,
+        37,
+        88,
+        146,
+        144
+      ],
+      "market_hr": "7/12",
+      "25P": 52.75,
+      "ladder": {
+        "20": "11/12",
+        "30": "10/12",
+        "40": "7/12",
+        "50": "7/12",
+        "60": "7/12",
+        "75": "6/12",
+        "100": "3/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 20,
+          "historical_hr": "11/12",
+          "price": -1800,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "11/12",
+          "price": -1000,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "10/12",
+          "price": -650,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "7/12",
+          "price": -330,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "7/12",
+          "price": -200,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "7/12",
+          "price": -128,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "7/12",
+          "price": 122,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "5/12",
+          "price": 182,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "3/12",
+          "price": 250,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "3/12",
+          "price": 360,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "3/12",
+          "price": 490,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "3/12",
+          "price": 750,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "0/12",
+          "price": 1400,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 20,
+        "historical_hr": "11/12",
+        "price": -1800,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 30,
+        "historical_hr": "10/12",
+        "price": -650,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 40,
+        "historical_hr": "7/12",
+        "price": -330,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receptions",
+      "line": 5.5,
+      "price": -167,
+      "l12": [
+        17,
+        7,
+        8,
+        5,
+        1,
+        5,
+        6,
+        6,
+        6,
+        7,
+        4,
+        5
+      ],
+      "market_hr": "7/12",
+      "25P": 5,
+      "ladder": {
+        "2": "11/12",
+        "3": "11/12",
+        "4": "10/12",
+        "5": "7/12",
+        "6": "4/12",
+        "7": "2/12",
+        "8": "1/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 4,
+          "historical_hr": "10/12",
+          "price": -850,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "7/12",
+          "price": -330,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "4/12",
+          "price": -166,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "2/12",
+          "price": 118,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "1/12",
+          "price": 210,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "1/12",
+          "price": 370,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "1/12",
+          "price": 630,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 11,
+          "historical_hr": "1/12",
+          "price": 920,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 12,
+          "historical_hr": "1/12",
+          "price": 1500,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 4,
+        "historical_hr": "10/12",
+        "price": -850,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 4,
+        "historical_hr": "10/12",
+        "price": -850,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 5,
+        "historical_hr": "7/12",
+        "price": -330,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receptions",
+      "line": 4.5,
+      "price": -115,
+      "l12": [
+        2,
+        7,
+        6,
+        3,
+        1,
+        4,
+        7,
+        3,
+        5,
+        6,
+        9,
+        9
+      ],
+      "market_hr": "7/12",
+      "25P": 3.75,
+      "ladder": {
+        "2": "10/12",
+        "3": "8/12",
+        "4": "7/12",
+        "5": "6/12",
+        "6": "4/12",
+        "7": "2/12",
+        "8": "2/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 3,
+          "historical_hr": "8/12",
+          "price": -650,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "7/12",
+          "price": -240,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "6/12",
+          "price": -108,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "4/12",
+          "price": 182,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "2/12",
+          "price": 350,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "2/12",
+          "price": 640,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": "0/12",
+          "price": 1100,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "0/12",
+          "price": 1700,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 3,
+        "historical_hr": "8/12",
+        "price": -650,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 3,
+        "historical_hr": "8/12",
+        "price": -650,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 4,
+        "historical_hr": "7/12",
+        "price": -240,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Chris Godwin",
+      "team": "TB",
+      "market": "Receptions",
+      "line": 2.5,
+      "price": -226,
+      "l12": [
+        6,
+        3,
+        3,
+        4,
+        1,
+        7,
+        5,
+        4,
+        5,
+        3,
+        2,
+        3
+      ],
+      "market_hr": "10/12",
+      "25P": 3,
+      "ladder": {
+        "2": "10/12",
+        "3": "6/12",
+        "4": "4/12",
+        "5": "2/12",
+        "6": "1/12",
+        "7": "0/12",
+        "8": "0/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%",
+        "Ladder >=80%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 2,
+          "historical_hr": "10/12",
+          "price": -700,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "6/12",
+          "price": -220,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "4/12",
+          "price": 112,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "2/12",
+          "price": 230,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "1/12",
+          "price": 450,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "0/12",
+          "price": 880,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": "0/12",
+          "price": 1400,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "10/12",
+        "price": -700,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "10/12",
+        "price": -700,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "6/12",
+        "price": -220,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Emeka Egbuka",
+      "team": "TB",
+      "market": "Receptions",
+      "line": 2.5,
+      "price": -173,
+      "l12": [
+        2,
+        5,
+        3,
+        5,
+        1,
+        3,
+        1,
+        4,
+        2,
+        4,
+        3,
+        5
+      ],
+      "market_hr": "8/12",
+      "25P": 2.75,
+      "ladder": {
+        "2": "8/12",
+        "3": "5/12",
+        "4": "3/12",
+        "5": "0/12",
+        "6": "0/12",
+        "7": "0/12",
+        "8": "0/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 2,
+          "historical_hr": "8/12",
+          "price": -550,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 3,
+          "historical_hr": "5/12",
+          "price": -172,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": "3/12",
+          "price": 146,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": "0/12",
+          "price": 300,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": "0/12",
+          "price": 630,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": "0/12",
+          "price": 1100,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "8/12",
+        "price": -550,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "8/12",
+        "price": -550,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "5/12",
+        "price": -172,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "line": 72.5,
+      "price": -114,
+      "l12": [
+        62,
+        98,
+        30,
+        41,
+        54,
+        34,
+        91,
+        67,
+        59,
+        87,
+        93,
+        83
+      ],
+      "market_hr": "5/12",
+      "25P": 50.75,
+      "ladder": {
+        "20": "12/12",
+        "30": "11/12",
+        "40": "10/12",
+        "50": "9/12",
+        "60": "7/12",
+        "75": "5/12",
+        "100": "0/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 40,
+          "historical_hr": "10/12",
+          "price": -850,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "9/12",
+          "price": -420,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "7/12",
+          "price": -240,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "5/12",
+          "price": -140,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "5/12",
+          "price": 116,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "3/12",
+          "price": 172,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "0/12",
+          "price": 240,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "0/12",
+          "price": 360,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "0/12",
+          "price": 580,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": "0/12",
+          "price": 1200,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 40,
+        "historical_hr": "10/12",
+        "price": -850,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 50,
+        "historical_hr": "9/12",
+        "price": -420,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "historical_hr": "7/12",
+        "price": -240,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Bucky Irving",
+      "team": "TB",
+      "market": "Rushing Yards",
+      "line": 53.5,
+      "price": -113,
+      "l12": [
+        61,
+        46,
+        89,
+        45,
+        85,
+        19,
+        71,
+        60,
+        55,
+        61,
+        63,
+        66
+      ],
+      "market_hr": "9/12",
+      "25P": 52.75,
+      "ladder": {
+        "20": "11/12",
+        "30": "11/12",
+        "40": "11/12",
+        "50": "9/12",
+        "60": "7/12",
+        "75": "2/12",
+        "100": "0/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%",
+        "Ladder >=80%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 25,
+          "historical_hr": "11/12",
+          "price": -1000,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "11/12",
+          "price": -550,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "11/12",
+          "price": -250,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": "9/12",
+          "price": -130,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": "7/12",
+          "price": 136,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": "3/12",
+          "price": 220,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": "2/12",
+          "price": 320,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": "0/12",
+          "price": 490,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": "0/12",
+          "price": 750,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": "0/12",
+          "price": 920,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": "0/12",
+          "price": 1500,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 25,
+        "historical_hr": "11/12",
+        "price": -1000,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 50,
+        "historical_hr": "9/12",
+        "price": -130,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "historical_hr": "7/12",
+        "price": 136,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Kenneth Gainwell",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "line": 12.5,
+      "price": -112,
+      "l12": [
+        5,
+        -4,
+        10,
+        15,
+        10,
+        26,
+        50,
+        80,
+        15,
+        20,
+        92,
+        24
+      ],
+      "market_hr": "8/12",
+      "25P": 10,
+      "ladder": {
+        "20": "5/12",
+        "30": "3/12",
+        "40": "3/12",
+        "50": "2/12",
+        "60": "2/12",
+        "75": "2/12",
+        "100": "0/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%"
+      ],
+      "alternate_market_data": [
+        {
+          "threshold": 5,
+          "historical_hr": "10/12",
+          "price": -440,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": "8/12",
+          "price": -174,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": "6/12",
+          "price": 116,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": "5/12",
+          "price": 194,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": "4/12",
+          "price": 300,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": "3/12",
+          "price": 450,
+          "sportsbook": "FanDuel"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": "3/12",
+          "price": 880,
+          "sportsbook": "FanDuel"
+        }
+      ],
+      "floor": {
+        "threshold": 5,
+        "historical_hr": "10/12",
+        "price": -440,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 10,
+        "historical_hr": "8/12",
+        "price": -174,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 15,
+        "historical_hr": "6/12",
+        "price": 116,
+        "sportsbook": "FanDuel"
+      }
+    }
+  ],
+  "stage2_candidate_set": [
+    {
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "market": "Passing Yards",
+      "selected_threshold": 275,
+      "historical_hr": "8/12",
+      "price": 116,
+      "floor": {
+        "threshold": 175,
+        "historical_hr": "10/12",
+        "price": -1400,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 275,
+        "historical_hr": "8/12",
+        "price": 116,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 300,
+        "historical_hr": "5/12",
+        "price": 200,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "selected_threshold": 60,
+      "historical_hr": "8/12",
+      "price": -275,
+      "floor": {
+        "threshold": 40,
+        "historical_hr": "11/12",
+        "price": -1000,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 60,
+        "historical_hr": "8/12",
+        "price": -275,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 70,
+        "historical_hr": "7/12",
+        "price": -180,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "selected_threshold": 30,
+      "historical_hr": "10/12",
+      "price": -650,
+      "floor": {
+        "threshold": 20,
+        "historical_hr": "11/12",
+        "price": -1800,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 30,
+        "historical_hr": "10/12",
+        "price": -650,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 40,
+        "historical_hr": "7/12",
+        "price": -330,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receptions",
+      "selected_threshold": 4,
+      "historical_hr": "10/12",
+      "price": -850,
+      "floor": {
+        "threshold": 4,
+        "historical_hr": "10/12",
+        "price": -850,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 4,
+        "historical_hr": "10/12",
+        "price": -850,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 5,
+        "historical_hr": "7/12",
+        "price": -330,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receptions",
+      "selected_threshold": 3,
+      "historical_hr": "8/12",
+      "price": -650,
+      "floor": {
+        "threshold": 3,
+        "historical_hr": "8/12",
+        "price": -650,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 3,
+        "historical_hr": "8/12",
+        "price": -650,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 4,
+        "historical_hr": "7/12",
+        "price": -240,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Chris Godwin",
+      "team": "TB",
+      "market": "Receptions",
+      "selected_threshold": 2,
+      "historical_hr": "10/12",
+      "price": -700,
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "10/12",
+        "price": -700,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "10/12",
+        "price": -700,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "6/12",
+        "price": -220,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Emeka Egbuka",
+      "team": "TB",
+      "market": "Receptions",
+      "selected_threshold": 2,
+      "historical_hr": "8/12",
+      "price": -550,
+      "floor": {
+        "threshold": 2,
+        "historical_hr": "8/12",
+        "price": -550,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 2,
+        "historical_hr": "8/12",
+        "price": -550,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 3,
+        "historical_hr": "5/12",
+        "price": -172,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "selected_threshold": 50,
+      "historical_hr": "9/12",
+      "price": -420,
+      "floor": {
+        "threshold": 40,
+        "historical_hr": "10/12",
+        "price": -850,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 50,
+        "historical_hr": "9/12",
+        "price": -420,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "historical_hr": "7/12",
+        "price": -240,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Bucky Irving",
+      "team": "TB",
+      "market": "Rushing Yards",
+      "selected_threshold": 50,
+      "historical_hr": "9/12",
+      "price": -130,
+      "floor": {
+        "threshold": 25,
+        "historical_hr": "11/12",
+        "price": -1000,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 50,
+        "historical_hr": "9/12",
+        "price": -130,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 60,
+        "historical_hr": "7/12",
+        "price": 136,
+        "sportsbook": "FanDuel"
+      }
+    },
+    {
+      "player": "Kenneth Gainwell",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "selected_threshold": 10,
+      "historical_hr": "8/12",
+      "price": -174,
+      "floor": {
+        "threshold": 5,
+        "historical_hr": "10/12",
+        "price": -440,
+        "sportsbook": "FanDuel"
+      },
+      "core": {
+        "threshold": 10,
+        "historical_hr": "8/12",
+        "price": -174,
+        "sportsbook": "FanDuel"
+      },
+      "ceiling": {
+        "threshold": 15,
+        "historical_hr": "6/12",
+        "price": 116,
+        "sportsbook": "FanDuel"
+      }
+    }
+  ],
+  "exclusions": [],
+  "validation": {
+    "stage1_state_loaded_exactly": true,
+    "stage1_record_count_preserved": true,
+    "historical_samples_reused_without_rebuild": true,
+    "current_week_context_not_analyzed": true,
+    "line_movement_not_analyzed": true,
+    "cross_book_pricing_not_analyzed": true,
+    "all_stage1_qualifiers_have_alternate_market_data": true,
+    "candidate_set_uses_one_material_core_threshold_per_locked_player_market": true
+  }
+}
