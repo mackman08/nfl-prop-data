@@ -1,0 +1,135 @@
+{
+  "stage": 4,
+  "season": 2026,
+  "week": 5,
+  "scope": "Thursday only",
+  "historical_sample": "L12",
+  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
+  "state_id": "STATE-4-W5-2026-THU-L12-20261006",
+  "parent_state_id": "STATE-3-W5-2026-THU-L12-20261006",
+  "record_count": 10,
+  "sportsbook": "DraftKings (FanDuel unavailable in latest odds dataset; user-authorized fallback)",
+  "records": [
+    {
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "market": "Passing Yards",
+      "historical_hr": "8/12",
+      "threshold": "269.5+",
+      "sportsbook_price": "-101 DK",
+      "context": "Supportive",
+      "selected": true,
+      "final_read": "Selected. 8/12 at the current DK threshold, 25P 248.5, and supportive Dallas passing/game-environment context provide multiple aligned evidence streams."
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "historical_hr": "8/12",
+      "threshold": "59.5+",
+      "sportsbook_price": "-264 DK",
+      "context": "Supportive",
+      "selected": true,
+      "final_read": "Selected. 8/12 at 59.5+, 25P 72, Core 60+ at 8/12, and strong current target/usage context support the conservative receiving-yard threshold."
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "historical_hr": "8/12",
+      "threshold": "39.5+",
+      "sportsbook_price": "-306 DK",
+      "context": "Mixed",
+      "selected": false,
+      "final_read": "Not selected. Historical evidence is solid at 39.5+, but the Mixed role/target context and materially negative price reduce the final edge versus stronger candidates."
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receptions",
+      "historical_hr": "10/12",
+      "threshold": "4.5+",
+      "sportsbook_price": "-347 DK",
+      "context": "Supportive",
+      "selected": true,
+      "final_read": "Selected. 10/12 historical hit rate, 25P of 5, and exceptional recent volume plus supportive matchup context make 4.5+ a strong conservative threshold."
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receptions",
+      "historical_hr": "8/12",
+      "threshold": "3.5+",
+      "sportsbook_price": "-262 DK",
+      "context": "Mixed",
+      "selected": false,
+      "final_read": "Not selected. 8/12 is viable, but Mixed role certainty and competition for targets make this weaker than the available Dallas alternatives."
+    },
+    {
+      "player": "Chris Godwin",
+      "team": "TB",
+      "market": "Receptions",
+      "historical_hr": "10/12",
+      "threshold": "2.5+",
+      "sportsbook_price": "-226 DK",
+      "context": "Mixed",
+      "selected": true,
+      "final_read": "Selected. 10/12 historical evidence is strong and the threshold is modest, but the Mixed rookie-QB/target-share context prevents treating it as an automatic high-confidence play."
+    },
+    {
+      "player": "Emeka Egbuka",
+      "team": "TB",
+      "market": "Receptions",
+      "historical_hr": "8/12",
+      "threshold": "2.5+",
+      "sportsbook_price": "-173 DK",
+      "context": "Supportive",
+      "selected": true,
+      "final_read": "Selected. 8/12 historical hit rate combines with a Supportive current role and documented team-leading early target volume."
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "historical_hr": "9/12",
+      "threshold": "49.5+",
+      "sportsbook_price": "-427 DK",
+      "context": "Supportive",
+      "selected": true,
+      "final_read": "Selected. 9/12 at 49.5+, Core 50+ at 9/12, and supportive Dallas game-script/role context provide strong alignment, though the price is expensive."
+    },
+    {
+      "player": "Bucky Irving",
+      "team": "TB",
+      "market": "Rushing Yards",
+      "historical_hr": "9/12",
+      "threshold": "53.5+",
+      "sportsbook_price": "-113 DK",
+      "context": "Mixed",
+      "selected": true,
+      "final_read": "Selected. 9/12 at the current DK line and near-even pricing create a strong historical/value combination, but the three-back rotation is the principal risk."
+    },
+    {
+      "player": "Kenneth Gainwell",
+      "team": "TB",
+      "market": "Rushing Yards",
+      "historical_hr": "8/12",
+      "threshold": "12.5+",
+      "sportsbook_price": "-112 DK",
+      "context": "Mixed",
+      "selected": false,
+      "final_read": "Not selected. 8/12 is viable, but the current three-way backfield and identity/role discrepancy in the locked Stage 1 state reduce confidence relative to the stronger candidates."
+    }
+  ],
+  "validation": {
+    "stage3_state_loaded_exactly": true,
+    "stage3_record_count_preserved": true,
+    "prior_stage_outputs_not_reconstructed": true,
+    "current_sportsbook_verified": true,
+    "sportsbook_fallback_authorized": true,
+    "all_10_candidates_evaluated": true,
+    "historical_denominators_correct": true,
+    "context_classifications_unchanged": true,
+    "identity_mismatch_preserved": true
+  }
+}
