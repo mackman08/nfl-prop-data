@@ -1,0 +1,377 @@
+{
+  "stage": 1,
+  "season": 2026,
+  "week": 5,
+  "scope": "Thursday only",
+  "historical_sample": "L12",
+  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
+  "record_count": 10,
+  "state_id": "STATE-1-W5-2026-THU-L12-20261006",
+  "parent_state_id": "STATE-0-W5-2026-THU-L12-20261006",
+  "sportsbook": "DraftKings (user-authorized override of primary sportsbook requirement for this run)",
+  "records": [
+    {
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "market": "Passing Yards",
+      "line": 265.5,
+      "price": -111,
+      "l12": [
+        335,
+        276,
+        279,
+        175,
+        70,
+        307,
+        244,
+        294,
+        376,
+        320,
+        354,
+        268
+      ],
+      "market_hr": "9/12",
+      "25P": 248.5,
+      "ladder": {
+        "150": "11/12",
+        "175": "10/12",
+        "200": "10/12",
+        "225": "10/12",
+        "250": "9/12",
+        "300": "5/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%",
+        "Ladder >=80%"
+      ]
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "line": 80.5,
+      "price": -111,
+      "l12": [
+        189,
+        112,
+        153,
+        44,
+        4,
+        46,
+        51,
+        111,
+        121,
+        112,
+        75,
+        66
+      ],
+      "market_hr": "6/12",
+      "25P": 72,
+      "ladder": {
+        "20": "11/12",
+        "30": "11/12",
+        "40": "11/12",
+        "50": "9/12",
+        "60": "8/12",
+        "75": "6/12",
+        "100": "6/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ]
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "line": 63.5,
+      "price": -111,
+      "l12": [
+        75,
+        82,
+        40,
+        28,
+        9,
+        78,
+        130,
+        33,
+        37,
+        88,
+        146,
+        144
+      ],
+      "market_hr": "7/12",
+      "25P": 52.75,
+      "ladder": {
+        "20": "11/12",
+        "30": "10/12",
+        "40": "7/12",
+        "50": "7/12",
+        "60": "7/12",
+        "75": "6/12",
+        "100": "3/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ]
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receptions",
+      "line": 5.5,
+      "price": -167,
+      "l12": [
+        17,
+        7,
+        8,
+        5,
+        1,
+        5,
+        6,
+        6,
+        6,
+        7,
+        4,
+        5
+      ],
+      "market_hr": "7/12",
+      "25P": 5,
+      "ladder": {
+        "2": "11/12",
+        "3": "11/12",
+        "4": "10/12",
+        "5": "7/12",
+        "6": "4/12",
+        "7": "2/12",
+        "8": "1/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ]
+    },
+    {
+      "player": "George Pickens",
+      "team": "DAL",
+      "market": "Receptions",
+      "line": 4.5,
+      "price": -115,
+      "l12": [
+        2,
+        7,
+        6,
+        3,
+        1,
+        4,
+        7,
+        3,
+        5,
+        6,
+        9,
+        9
+      ],
+      "market_hr": "7/12",
+      "25P": 3.75,
+      "ladder": {
+        "2": "10/12",
+        "3": "8/12",
+        "4": "7/12",
+        "5": "6/12",
+        "6": "4/12",
+        "7": "2/12",
+        "8": "2/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ]
+    },
+    {
+      "player": "Chris Godwin",
+      "team": "TB",
+      "market": "Receptions",
+      "line": 2.5,
+      "price": -226,
+      "l12": [
+        6,
+        3,
+        3,
+        4,
+        1,
+        7,
+        5,
+        4,
+        5,
+        3,
+        2,
+        3
+      ],
+      "market_hr": "10/12",
+      "25P": 3,
+      "ladder": {
+        "2": "10/12",
+        "3": "6/12",
+        "4": "4/12",
+        "5": "2/12",
+        "6": "1/12",
+        "7": "0/12",
+        "8": "0/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%",
+        "Ladder >=80%"
+      ]
+    },
+    {
+      "player": "Emeka Egbuka",
+      "team": "TB",
+      "market": "Receptions",
+      "line": 2.5,
+      "price": -173,
+      "l12": [
+        2,
+        5,
+        3,
+        5,
+        1,
+        3,
+        1,
+        4,
+        2,
+        4,
+        3,
+        5
+      ],
+      "market_hr": "8/12",
+      "25P": 2.75,
+      "ladder": {
+        "2": "8/12",
+        "3": "5/12",
+        "4": "3/12",
+        "5": "0/12",
+        "6": "0/12",
+        "7": "0/12",
+        "8": "0/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%"
+      ]
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "line": 72.5,
+      "price": -114,
+      "l12": [
+        62,
+        98,
+        30,
+        41,
+        54,
+        34,
+        91,
+        67,
+        59,
+        87,
+        93,
+        83
+      ],
+      "market_hr": "5/12",
+      "25P": 50.75,
+      "ladder": {
+        "20": "12/12",
+        "30": "11/12",
+        "40": "10/12",
+        "50": "9/12",
+        "60": "7/12",
+        "75": "5/12",
+        "100": "0/12"
+      },
+      "qualifies_by": [
+        "Ladder >=80%"
+      ]
+    },
+    {
+      "player": "Bucky Irving",
+      "team": "TB",
+      "market": "Rushing Yards",
+      "line": 53.5,
+      "price": -113,
+      "l12": [
+        61,
+        46,
+        89,
+        45,
+        85,
+        19,
+        71,
+        60,
+        55,
+        61,
+        63,
+        66
+      ],
+      "market_hr": "9/12",
+      "25P": 52.75,
+      "ladder": {
+        "20": "11/12",
+        "30": "11/12",
+        "40": "11/12",
+        "50": "9/12",
+        "60": "7/12",
+        "75": "2/12",
+        "100": "0/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%",
+        "Ladder >=80%"
+      ]
+    },
+    {
+      "player": "Kenneth Gainwell",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "line": 12.5,
+      "price": -112,
+      "l12": [
+        5,
+        -4,
+        10,
+        15,
+        10,
+        26,
+        50,
+        80,
+        15,
+        20,
+        92,
+        24
+      ],
+      "market_hr": "8/12",
+      "25P": 10,
+      "ladder": {
+        "20": "5/12",
+        "30": "3/12",
+        "40": "3/12",
+        "50": "2/12",
+        "60": "2/12",
+        "75": "2/12",
+        "100": "0/12"
+      },
+      "qualifies_by": [
+        "Market HR >=60%"
+      ]
+    }
+  ],
+  "validation": {
+    "historical_source": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
+    "sportsbook_source": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv",
+    "sportsbook_used": "DraftKings",
+    "core_market_rows_screened": 329,
+    "all_l12_exact": true,
+    "all_20_game_25p_separate": true,
+    "unsupported_markets_excluded": true,
+    "stage1_quantitative_only": true,
+    "current_week_scope_only": true
+  }
+}
