@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 95,
-      "Receiving Yards": 269,
-      "Receptions": 171,
-      "Rushing Yards": 146
+      "Passing Yards": 344,
+      "Receiving Yards": 324,
+      "Receptions": 205,
+      "Rushing Yards": 201
     },
     "FanDuel": {
-      "Passing Yards": 10,
-      "Receiving Yards": 40,
-      "Receptions": 40,
-      "Rushing Yards": 21
+      "Passing Yards": 14,
+      "Receiving Yards": 34,
+      "Receptions": 34,
+      "Rushing Yards": 22
     }
   },
   "core_markets_present": [
@@ -21,38 +21,52 @@
   ],
   "duplicates": 0,
   "event_ids": [
+    "34118017",
+    "34118101",
     "34118137",
-    "34118279",
+    "34118176",
+    "34118204",
+    "34118223",
+    "34118254",
     "35605983",
-    "36104928",
     "36132640",
+    "36132641",
+    "36132642",
     "36132646",
+    "36132649",
     "36132650"
   ],
   "games": [
-    "ATL Falcons @ NO Saints",
-    "Atlanta Falcons @ New Orleans Saints",
+    "BUF Bills @ LA Rams",
     "Buffalo Bills @ Los Angeles Rams",
+    "CHI Bears @ GB Packers",
+    "CLE Browns @ NY Jets",
+    "Chicago Bears @ Green Bay Packers",
+    "Cleveland Browns @ New York Jets",
+    "LV Raiders @ NE Patriots",
+    "Las Vegas Raiders @ New England Patriots",
+    "PHI Eagles @ JAX Jaguars",
     "Philadelphia Eagles @ Jacksonville Jaguars",
+    "SF 49ers @ SEA Seahawks",
     "San Francisco 49ers @ Seattle Seahawks",
     "TB Buccaneers @ DAL Cowboys",
     "Tampa Bay Buccaneers @ Dallas Cowboys"
   ],
   "markets": {
-    "Alt Passing Yards": 93,
-    "Alt Receiving Yards": 417,
-    "Alt Receptions": 246,
-    "Alt Rushing Yards": 186,
-    "Passing Yards": 105,
-    "Receiving Yards": 309,
-    "Receptions": 211,
-    "Rush + Receiving Yards": 74,
-    "Rushing Yards": 167
+    "Alt Passing Yards": 110,
+    "Alt Receiving Yards": 354,
+    "Alt Receptions": 198,
+    "Alt Rushing Yards": 176,
+    "Passing Yards": 358,
+    "Receiving Yards": 358,
+    "Receptions": 239,
+    "Rush + Receiving Yards": 90,
+    "Rushing Yards": 223
   },
   "sportsbooks": {
-    "DraftKings": 755,
-    "FanDuel": 1053
+    "DraftKings": 1164,
+    "FanDuel": 942
   },
-  "total_rows": 1808,
+  "total_rows": 2106,
   "validation_mode": "slate-size-agnostic"
 }
