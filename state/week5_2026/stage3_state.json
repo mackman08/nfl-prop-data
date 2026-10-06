@@ -1,0 +1,135 @@
+{
+  "stage": 3,
+  "season": 2026,
+  "week": 5,
+  "scope": "Thursday only",
+  "historical_sample": "L12",
+  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
+  "state_id": "STATE-3-W5-2026-THU-L12-20261006",
+  "parent_state_id": "STATE-2-W5-2026-THU-L12-20261006",
+  "record_count": 10,
+  "records": [
+    {
+      "player": "Dak Prescott",
+      "market": "Passing Yards",
+      "classification": "Supportive",
+      "reasons": [
+        "Tampa Bay is 0-4 and Dallas is 2-2 entering the matchup.",
+        "Dallas scored 34 points in Week 4; Prescott threw for 355 yards against Houston.",
+        "Tampa Bay is without Antoine Winfield Jr. and has additional secondary uncertainty, while Dallas has a favorable game environment.",
+        "Weather forecast at AT&T Stadium is benign/non-factor."
+      ]
+    },
+    {
+      "player": "CeeDee Lamb",
+      "market": "Receiving Yards",
+      "classification": "Supportive",
+      "reasons": [
+        "Lamb is active/expected to play and was a full participant Monday despite a thigh listing.",
+        "He produced 17 receptions for 189 yards and the game-winning TD in Week 4.",
+        "Tampa Bay is missing Winfield Jr., a key safety, and has other defensive absences.",
+        "Dallas' recent passing production supports continued opportunity."
+      ]
+    },
+    {
+      "player": "George Pickens",
+      "market": "Receiving Yards",
+      "classification": "Mixed",
+      "reasons": [
+        "Pickens remains a Dallas receiving option and caught a 54-yard pass against Houston.",
+        "The same Week 4 game featured a historically massive Lamb target/receiving workload, creating competition for targets.",
+        "Current reporting describes Pickens as accepting a supportive role, so the role is less secure than Lamb's."
+      ]
+    },
+    {
+      "player": "CeeDee Lamb",
+      "market": "Receptions",
+      "classification": "Supportive",
+      "reasons": [
+        "Full participation Monday and no reported game-status downgrade.",
+        "17-catch Week 4 performance demonstrates extremely high recent target/volume capability.",
+        "Tampa Bay's missing Winfield Jr. and secondary injuries are favorable for Dallas pass-game efficiency."
+      ]
+    },
+    {
+      "player": "George Pickens",
+      "market": "Receptions",
+      "classification": "Mixed",
+      "reasons": [
+        "Pickens is active in Dallas' receiving corps and produced a 54-yard Week 4 reception.",
+        "However, Week 4 featured Lamb's 17 receptions and reporting characterizes Pickens' role as supportive, limiting confidence in high reception volume."
+      ]
+    },
+    {
+      "player": "Chris Godwin",
+      "market": "Receptions",
+      "classification": "Mixed",
+      "reasons": [
+        "Godwin is listed as a current Buccaneers starting WR.",
+        "Tampa Bay's offense is operating with rookie QB Jalon Daniels, who completed 19 of 27 for 148 yards in his first start.",
+        "Official Bucs reporting noted Godwin had only 11 targets through three games, behind Egbuka, Otton, Irving and Hurst, although the team said it wanted to get him more involved.",
+        "Dallas has defensive-back availability issues, which is a favorable matchup factor."
+      ]
+    },
+    {
+      "player": "Emeka Egbuka",
+      "market": "Receptions",
+      "classification": "Supportive",
+      "reasons": [
+        "Egbuka is listed as a current Buccaneers starting WR.",
+        "Official Bucs reporting had Egbuka leading the team with 20 targets through three games.",
+        "He has already connected with the Bucs offense for a touchdown this season and remains a key receiving option.",
+        "Dallas has secondary injuries/absences, creating a favorable matchup environment."
+      ]
+    },
+    {
+      "player": "Javonte Williams",
+      "market": "Rushing Yards",
+      "classification": "Supportive",
+      "reasons": [
+        "Williams remains Dallas' primary highlighted RB and scored three rushing TDs in Week 4.",
+        "Dallas' offense scored 34 points and Williams handled the second-half goal-line work against Houston.",
+        "Tampa Bay enters 0-4, increasing the likelihood of Dallas controlling game script if the favorite plays from ahead."
+      ]
+    },
+    {
+      "player": "Bucky Irving",
+      "market": "Rushing Yards",
+      "classification": "Mixed",
+      "reasons": [
+        "Irving is listed first in Tampa Bay's RB group and led the Bucs with 61 rushing yards in Week 4.",
+        "The Bucs explicitly used a three-back rotation: Irving 37 snaps, Gainwell 27, with Sean Tucker also involved.",
+        "Dallas has allowed 150.3 rushing yards per game through four games, which is favorable, but the backfield split caps role certainty."
+      ]
+    },
+    {
+      "player": "Kenneth Gainwell",
+      "market": "Rushing Yards",
+      "classification": "Mixed",
+      "reasons": [
+        "Current Week 5 Bucs depth chart lists Gainwell in Tampa Bay's RB group; the Stage 1 state incorrectly tags him as DAL, so the historical state is preserved but current identity is corrected here.",
+        "Gainwell played 27 snaps in Week 4 in Tampa Bay's three-way backfield and scored a receiving TD.",
+        "The split with Bucky Irving and Sean Tucker limits rushing-volume certainty.",
+        "Dallas' run-defense numbers create a favorable matchup, but the rookie-QB/three-back context keeps the signal mixed."
+      ]
+    }
+  ],
+  "game_context": {
+    "matchup": "Tampa Bay Buccaneers at Dallas Cowboys",
+    "kickoff": "2026-10-08T20:15:00-04:00",
+    "venue": "AT&T Stadium",
+    "weather": "Benign; weather non-factor",
+    "sources": [
+      "Buccaneers official game center",
+      "Buccaneers official Week 5 depth chart/injury report",
+      "Dallas Cowboys official Week 4/Week 5 materials"
+    ]
+  },
+  "validation": {
+    "stage2_state_loaded_exactly": true,
+    "all_stage1_candidates_reviewed": true,
+    "historical_numbers_not_recalculated": true,
+    "current_week_context_only": true,
+    "identity_mismatch_flagged": true
+  }
+}
