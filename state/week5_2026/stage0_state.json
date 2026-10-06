@@ -1,0 +1,17 @@
+{
+  "stage": 0,
+  "season": 2026,
+  "week": 5,
+  "scope": "Thursday only",
+  "historical_sample": "L12",
+  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
+  "record_count": 0,
+  "state_id": "STATE-0-W5-2026-THU-L12-20261006",
+  "parent_state_id": null,
+  "records": [],
+  "sources": {
+    "historical_data": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
+    "current_sportsbook": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv"
+  },
+  "locked": true
+}
