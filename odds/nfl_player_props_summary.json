@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 675,
-      "Receiving Yards": 1108,
-      "Receptions": 699,
-      "Rushing Yards": 630
+      "Passing Yards": 674,
+      "Receiving Yards": 1180,
+      "Receptions": 753,
+      "Rushing Yards": 634
     },
     "FanDuel": {
-      "Passing Yards": 26,
-      "Receiving Yards": 87,
-      "Receptions": 87,
-      "Rushing Yards": 50
+      "Passing Yards": 30,
+      "Receiving Yards": 100,
+      "Receptions": 100,
+      "Rushing Yards": 60
     }
   },
   "core_markets_present": [
@@ -36,11 +36,13 @@
     "34118229",
     "34118254",
     "35605983",
+    "36132638",
     "36132639",
     "36132640",
     "36132641",
     "36132642",
     "36132643",
+    "36132644",
     "36132645",
     "36132646",
     "36132647",
@@ -57,12 +59,14 @@
     "CHI Bears @ GB Packers",
     "CLE Browns @ NY Jets",
     "Chicago Bears @ Green Bay Packers",
+    "Cincinnati Bengals @ Miami Dolphins",
     "Cleveland Browns @ New York Jets",
     "DEN Broncos @ LA Chargers",
     "DET Lions @ ARI Cardinals",
     "Denver Broncos @ Los Angeles Chargers",
     "Detroit Lions @ Arizona Cardinals",
     "HOU Texans @ TEN Titans",
+    "Houston Texans @ Tennessee Titans",
     "IND Colts @ PIT Steelers",
     "Indianapolis Colts @ Pittsburgh Steelers",
     "LV Raiders @ NE Patriots",
@@ -79,20 +83,20 @@
     "Tampa Bay Buccaneers @ Dallas Cowboys"
   ],
   "markets": {
-    "Alt Passing Yards": 212,
-    "Alt Receiving Yards": 877,
-    "Alt Receptions": 550,
-    "Alt Rushing Yards": 406,
-    "Passing Yards": 701,
-    "Receiving Yards": 1195,
-    "Receptions": 786,
-    "Rush + Receiving Yards": 211,
-    "Rushing Yards": 680
+    "Alt Passing Yards": 250,
+    "Alt Receiving Yards": 1011,
+    "Alt Receptions": 636,
+    "Alt Rushing Yards": 485,
+    "Passing Yards": 704,
+    "Receiving Yards": 1280,
+    "Receptions": 853,
+    "Rush + Receiving Yards": 240,
+    "Rushing Yards": 694
   },
   "sportsbooks": {
-    "DraftKings": 3323,
-    "FanDuel": 2295
+    "DraftKings": 3481,
+    "FanDuel": 2672
   },
-  "total_rows": 5618,
+  "total_rows": 6153,
   "validation_mode": "slate-size-agnostic"
 }
