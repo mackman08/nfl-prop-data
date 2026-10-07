@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 634,
-      "Receiving Yards": 964,
-      "Receptions": 617,
-      "Rushing Yards": 548
+      "Passing Yards": 675,
+      "Receiving Yards": 1108,
+      "Receptions": 699,
+      "Rushing Yards": 630
     },
     "FanDuel": {
-      "Passing Yards": 24,
-      "Receiving Yards": 83,
-      "Receptions": 83,
-      "Rushing Yards": 44
+      "Passing Yards": 26,
+      "Receiving Yards": 87,
+      "Receptions": 87,
+      "Rushing Yards": 50
     }
   },
   "core_markets_present": [
@@ -22,6 +22,7 @@
   "duplicates": 0,
   "event_ids": [
     "34118017",
+    "34118048",
     "34118065",
     "34118099",
     "34118101",
@@ -45,7 +46,8 @@
     "36132647",
     "36132648",
     "36132649",
-    "36132650"
+    "36132650",
+    "36132651"
   ],
   "games": [
     "BAL Ravens @ ATL Falcons",
@@ -67,6 +69,8 @@
     "Las Vegas Raiders @ New England Patriots",
     "MIN Vikings @ NO Saints",
     "Minnesota Vikings @ New Orleans Saints",
+    "NY Giants @ WAS Commanders",
+    "New York Giants @ Washington Commanders",
     "PHI Eagles @ JAX Jaguars",
     "Philadelphia Eagles @ Jacksonville Jaguars",
     "SF 49ers @ SEA Seahawks",
@@ -75,20 +79,20 @@
     "Tampa Bay Buccaneers @ Dallas Cowboys"
   ],
   "markets": {
-    "Alt Passing Yards": 193,
-    "Alt Receiving Yards": 850,
-    "Alt Receptions": 530,
-    "Alt Rushing Yards": 362,
-    "Passing Yards": 658,
-    "Receiving Yards": 1047,
-    "Receptions": 700,
-    "Rush + Receiving Yards": 212,
-    "Rushing Yards": 592
+    "Alt Passing Yards": 212,
+    "Alt Receiving Yards": 877,
+    "Alt Receptions": 550,
+    "Alt Rushing Yards": 406,
+    "Passing Yards": 701,
+    "Receiving Yards": 1195,
+    "Receptions": 786,
+    "Rush + Receiving Yards": 211,
+    "Rushing Yards": 680
   },
   "sportsbooks": {
-    "DraftKings": 2975,
-    "FanDuel": 2169
+    "DraftKings": 3323,
+    "FanDuel": 2295
   },
-  "total_rows": 5144,
+  "total_rows": 5618,
   "validation_mode": "slate-size-agnostic"
 }
