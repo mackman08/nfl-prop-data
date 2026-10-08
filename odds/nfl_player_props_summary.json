@@ -2,15 +2,15 @@
   "core_markets_by_sportsbook": {
     "DraftKings": {
       "Passing Yards": 727,
-      "Receiving Yards": 1340,
-      "Receptions": 856,
-      "Rushing Yards": 936
+      "Receiving Yards": 1327,
+      "Receptions": 837,
+      "Rushing Yards": 949
     },
     "FanDuel": {
       "Passing Yards": 30,
-      "Receiving Yards": 119,
-      "Receptions": 118,
-      "Rushing Yards": 77
+      "Receiving Yards": 131,
+      "Receptions": 129,
+      "Rushing Yards": 79
     }
   },
   "core_markets_present": [
@@ -85,20 +85,20 @@
     "Tampa Bay Buccaneers @ Dallas Cowboys"
   ],
   "markets": {
-    "Alt Passing Yards": 263,
-    "Alt Receiving Yards": 1188,
-    "Alt Receptions": 751,
-    "Alt Rushing Yards": 665,
+    "Alt Passing Yards": 261,
+    "Alt Receiving Yards": 1277,
+    "Alt Receptions": 791,
+    "Alt Rushing Yards": 690,
     "Passing Yards": 757,
-    "Receiving Yards": 1459,
-    "Receptions": 974,
-    "Rush + Receiving Yards": 384,
-    "Rushing Yards": 1013
+    "Receiving Yards": 1458,
+    "Receptions": 966,
+    "Rush + Receiving Yards": 387,
+    "Rushing Yards": 1028
   },
   "sportsbooks": {
-    "DraftKings": 4243,
-    "FanDuel": 3211
+    "DraftKings": 4227,
+    "FanDuel": 3388
   },
-  "total_rows": 7454,
+  "total_rows": 7615,
   "validation_mode": "slate-size-agnostic"
 }
