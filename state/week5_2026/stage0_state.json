@@ -2,16 +2,54 @@
   "stage": 0,
   "season": 2026,
   "week": 5,
-  "scope": "Thursday only",
-  "historical_sample": "L12",
-  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
-  "record_count": 0,
-  "state_id": "STATE-0-W5-2026-THU-L12-20261006",
+  "scope": "Custom — Sunday, October 11, 2026 games with scheduled kickoff before 2:00 PM Eastern Time",
+  "historical_sample": "L10",
+  "historical_cutoff": "2026-10-06T00:00:00-04:00 — after completion of the final scheduled Week 4 game; no Week 5 games included",
+  "record_count": 9,
+  "state_id": "STATE-0-W5-2026-SUN-EARLY-L10-20261009",
   "parent_state_id": null,
-  "records": [],
+  "records": [
+    {
+      "game": "Philadelphia Eagles at Jacksonville Jaguars",
+      "kickoff_et": "2026-10-11T09:30:00-04:00"
+    },
+    {
+      "game": "Cincinnati Bengals at Miami Dolphins",
+      "kickoff_et": "2026-10-11T13:00:00-04:00"
+    },
+    {
+      "game": "Las Vegas Raiders at New England Patriots",
+      "kickoff_et": "2026-10-11T13:00:00-04:00"
+    },
+    {
+      "game": "Minnesota Vikings at New Orleans Saints",
+      "kickoff_et": "2026-10-11T13:00:00-04:00"
+    },
+    {
+      "game": "Cleveland Browns at New York Jets",
+      "kickoff_et": "2026-10-11T13:00:00-04:00"
+    },
+    {
+      "game": "Indianapolis Colts at Pittsburgh Steelers",
+      "kickoff_et": "2026-10-11T13:00:00-04:00"
+    },
+    {
+      "game": "Houston Texans at Tennessee Titans",
+      "kickoff_et": "2026-10-11T13:00:00-04:00"
+    },
+    {
+      "game": "New York Giants at Washington Commanders",
+      "kickoff_et": "2026-10-11T13:00:00-04:00"
+    },
+    {
+      "game": "Chicago Bears at Green Bay Packers",
+      "kickoff_et": "2026-10-11T13:00:00-04:00"
+    }
+  ],
   "sources": {
     "historical_data": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
-    "current_sportsbook": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv"
+    "current_sportsbook": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv",
+    "schedule_verification": "https://www.nfl.com/news/nfl-how-to-watch-week-5-2026-schedule-london-game-details-and-more"
   },
   "locked": true
 }
