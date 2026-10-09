@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 727,
-      "Receiving Yards": 1327,
-      "Receptions": 837,
-      "Rushing Yards": 949
+      "Passing Yards": 685,
+      "Receiving Yards": 1413,
+      "Receptions": 895,
+      "Rushing Yards": 884
     },
     "FanDuel": {
-      "Passing Yards": 30,
+      "Passing Yards": 28,
       "Receiving Yards": 131,
-      "Receptions": 129,
-      "Rushing Yards": 79
+      "Receptions": 131,
+      "Rushing Yards": 72
     }
   },
   "core_markets_present": [
@@ -27,7 +27,6 @@
     "34118099",
     "34118101",
     "34118121",
-    "34118137",
     "34118147",
     "34118174",
     "34118176",
@@ -39,7 +38,6 @@
     "35605983",
     "36132638",
     "36132639",
-    "36132640",
     "36132641",
     "36132642",
     "36132643",
@@ -80,25 +78,23 @@
     "PHI Eagles @ JAX Jaguars",
     "Philadelphia Eagles @ Jacksonville Jaguars",
     "SF 49ers @ SEA Seahawks",
-    "San Francisco 49ers @ Seattle Seahawks",
-    "TB Buccaneers @ DAL Cowboys",
-    "Tampa Bay Buccaneers @ Dallas Cowboys"
+    "San Francisco 49ers @ Seattle Seahawks"
   ],
   "markets": {
-    "Alt Passing Yards": 261,
-    "Alt Receiving Yards": 1277,
-    "Alt Receptions": 791,
-    "Alt Rushing Yards": 690,
-    "Passing Yards": 757,
-    "Receiving Yards": 1458,
-    "Receptions": 966,
-    "Rush + Receiving Yards": 387,
-    "Rushing Yards": 1028
+    "Alt Passing Yards": 251,
+    "Alt Receiving Yards": 1293,
+    "Alt Receptions": 812,
+    "Alt Rushing Yards": 640,
+    "Passing Yards": 713,
+    "Receiving Yards": 1544,
+    "Receptions": 1026,
+    "Rush + Receiving Yards": 422,
+    "Rushing Yards": 956
   },
   "sportsbooks": {
-    "DraftKings": 4227,
-    "FanDuel": 3388
+    "DraftKings": 4299,
+    "FanDuel": 3358
   },
-  "total_rows": 7615,
+  "total_rows": 7657,
   "validation_mode": "slate-size-agnostic"
 }
