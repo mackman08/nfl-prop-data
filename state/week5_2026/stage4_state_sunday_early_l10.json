@@ -1,0 +1,608 @@
+{
+  "stage": 4,
+  "season": 2026,
+  "week": 5,
+  "scope": "Custom — Sunday, October 11, 2026 games with scheduled kickoff before 2:00 PM Eastern Time",
+  "historical_sample": "L10",
+  "historical_cutoff": "2026-10-06T00:00:00-04:00 — after completion of the final scheduled Week 4 game; no Week 5 games included",
+  "record_count": 5,
+  "state_id": "STATE-4-W5-2026-SUN-EARLY-L10-20261009-ODDS-SNAPSHOT",
+  "parent_state_id": "STATE-3-W5-2026-SUN-EARLY-L10-20261009",
+  "parent_stage3_path": "state/week5_2026/stage3_state.json",
+  "parent_stage3_sha": "1179c4b18032bc2f6ef7991f817318971342d233",
+  "prior_stage_states": [
+    {
+      "stage": 1,
+      "state_id": "STATE-1-W5-2026-SUN-EARLY-L10-20261009",
+      "path": "state/week5_2026/stage1_state.json",
+      "sha": "518ca0bfebfd6d4f94fcbde0698b950bb2787d47",
+      "record_count": 97
+    },
+    {
+      "stage": 2,
+      "state_id": "STATE-2-W5-2026-SUN-EARLY-L10-20261009-R2-PRICECORE",
+      "path": "state/week5_2026/stage2_state.json",
+      "sha": "8630bbb1cca040e35dd291ede98c2907c2fdc76a",
+      "record_count": 97
+    },
+    {
+      "stage": 3,
+      "state_id": "STATE-3-W5-2026-SUN-EARLY-L10-20261009",
+      "path": "state/week5_2026/stage3_state.json",
+      "sha": "1179c4b18032bc2f6ef7991f817318971342d233",
+      "record_count": 97
+    }
+  ],
+  "odds_snapshot": {
+    "repository": "mackman08/nfl-prop-data",
+    "path": "odds/nfl_player_props_latest.csv",
+    "sha": "43bde28b634d581f9613fb580e835a3f5529a9aa",
+    "rows": 7657,
+    "sportsbook_rows": {
+      "FanDuel": 3358,
+      "DraftKings": 4299
+    },
+    "latest_file_commit": "b850aeb93e5ae83dfbbc637f6ae9d93421a10739",
+    "latest_file_commit_utc": "2026-10-09T13:24:24Z",
+    "note": "Exact selected alternate prices matched the repository CSV by player, market, threshold, sportsbook and event_id. This is the latest available repository snapshot; it was not independently live-refreshed during Stage 4."
+  },
+  "selection_summary": {
+    "candidates_contextualized": 46,
+    "final_props_selected": 5,
+    "selection_principles": [
+      "Use locked L10 evidence at the selected threshold",
+      "Consider the independent 20-game 25th percentile",
+      "Prefer supportive current-week context",
+      "Verify exact FanDuel alternate line and price in the latest repository snapshot",
+      "Do not interpret historical hit rate as predicted probability"
+    ],
+    "not_a_portfolio": true
+  },
+  "final_prop_cards": [
+    {
+      "player": "Jakobi Meyers",
+      "team": "JAX",
+      "market": "Receiving Yards",
+      "historical_hr": "10/10",
+      "threshold": "Over 25.0",
+      "threshold_value": 25,
+      "historical_evidence": {
+        "denominator": "L10",
+        "hits": 10,
+        "n": 10,
+        "observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_JAX_CIN",
+            "value": 33
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_NE_JAX",
+            "value": 64
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_JAX_DEN",
+            "value": 28
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CLE_JAX",
+            "value": 40
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_TEN_JAX",
+            "value": 44
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_JAX_IND",
+            "value": 39
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_JAX_DEN",
+            "value": 45
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_NYJ_JAX",
+            "value": 71
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_IND_JAX",
+            "value": 39
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_JAX_TEN",
+            "value": 90
+          }
+        ]
+      },
+      "distribution_floor_evidence": {
+        "twenty_game_25th_percentile": 37.5,
+        "twenty_game_sample_size": 20,
+        "threshold_below_25p_by": 12.5,
+        "band_designation": "FLOOR",
+        "floor_hr": "10/10",
+        "core_hr": "9/10",
+        "ceiling_hr": "5/10"
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "All four recent yardage totals (33, 64, 28, 40) exceeded 30 yards, and Meyers practiced fully. The 40-yard ceiling is materially less supported by the L10 record.",
+        "role_workload": "Jacksonville WR; 3, 7, 1, 2 catches and 33, 64, 28, 40 yards across the first four games. Full participant on the latest surfaced report.",
+        "injury_player_status": "Full participation Thursday; no game designation surfaced.",
+        "opponent_matchup": "Jaguars passing options face an Eagles defense dealing with multiple absences/limited participants; Jacksonville’s own offensive-line availability is a counterweight. Eagles passing props face a Jaguars defense described by Jacksonville coverage as improved and takeaway-oriented.",
+        "game_environment": "London forecast is cool/cloudy with low precipitation risk; no major weather downgrade identified. International travel and early local kickoff are mild routine context, not a standalone adjustment.",
+        "volatility": "Receiving yards are steadier than receptions at the selected thresholds."
+      },
+      "sportsbook_information": {
+        "sportsbook": "FanDuel",
+        "american_odds": "-340",
+        "csv_line": "25.0",
+        "source_market": "Alt Receiving Yards",
+        "event_id": "35605983",
+        "odds_snapshot_path": "odds/nfl_player_props_latest.csv",
+        "odds_snapshot_sha": "43bde28b634d581f9613fb580e835a3f5529a9aa",
+        "snapshot_commit": "b850aeb93e5ae83dfbbc637f6ae9d93421a10739",
+        "snapshot_commit_utc": "2026-10-09T13:24:24Z",
+        "currentness_note": "Latest available repository snapshot; Stage 2 confirms no independent live sportsbook refresh was performed."
+      },
+      "model_judgment": "Selected: 10/10 L10 at a conservative 25-yard threshold, 25th percentile is 37.5 yards, and all four latest games exceeded 25. Stage 3 context is Supportive; -340 is expensive but the historical floor and recent output align."
+    },
+    {
+      "player": "Juwan Johnson",
+      "team": "NO",
+      "market": "Receiving Yards",
+      "historical_hr": "10/10",
+      "threshold": "Over 25.0",
+      "threshold_value": 25,
+      "historical_evidence": {
+        "denominator": "L10",
+        "hits": 10,
+        "n": 10,
+        "observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_ATL_NO",
+            "value": 59
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_LV_NO",
+            "value": 53
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_NO_BAL",
+            "value": 66
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_NO_DET",
+            "value": 54
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_NO_ATL",
+            "value": 61
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_NO_TEN",
+            "value": 95
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_NYJ_NO",
+            "value": 89
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO",
+            "value": 30
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_NO_TB",
+            "value": 38
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_NO_MIA",
+            "value": 39
+          }
+        ]
+      },
+      "distribution_floor_evidence": {
+        "twenty_game_25th_percentile": 36.25,
+        "twenty_game_sample_size": 20,
+        "threshold_below_25p_by": 11.25,
+        "band_designation": "FLOOR",
+        "floor_hr": "10/10",
+        "core_hr": "9/10",
+        "ceiling_hr": "7/10"
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Johnson produced 54, 66, 53, 59 yards in the first four games, clearing the core threshold every time. Minnesota’s defense and Saints OL injuries are the main counterweights.",
+        "role_workload": "New Orleans TE; receiving yards 54, 66, 53, 59 in Weeks 1–4.",
+        "injury_player_status": "Not listed on the surfaced Thursday injury report.",
+        "opponent_matchup": "Recent matchup coverage describes Minnesota’s defense as strong and expects a potentially low-scoring game; Saints offensive-line injuries add pressure risk. Jefferson’s uncertain status may alter Minnesota’s pass distribution but does not directly improve Saints props.",
+        "game_environment": "Caesars Superdome is indoors; weather is not a meaningful game factor.",
+        "volatility": "Four straight strong yardage games support the low 30-yard threshold; opponent defense remains the counterweight."
+      },
+      "sportsbook_information": {
+        "sportsbook": "FanDuel",
+        "american_odds": "-400",
+        "csv_line": "25.0",
+        "source_market": "Alt Receiving Yards",
+        "event_id": "36132639",
+        "odds_snapshot_path": "odds/nfl_player_props_latest.csv",
+        "odds_snapshot_sha": "43bde28b634d581f9613fb580e835a3f5529a9aa",
+        "snapshot_commit": "b850aeb93e5ae83dfbbc637f6ae9d93421a10739",
+        "snapshot_commit_utc": "2026-10-09T13:24:24Z",
+        "currentness_note": "Latest available repository snapshot; Stage 2 confirms no independent live sportsbook refresh was performed."
+      },
+      "model_judgment": "Selected: 10/10 L10 at 25 yards, 25th percentile is 36.25, and all four latest games produced 53+ yards. Stage 3 context is Supportive; Saints offensive-line injuries and Minnesota's defense remain the principal caveats."
+    },
+    {
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "market": "Rushing Yards",
+      "historical_hr": "10/10",
+      "threshold": "Over 30.0",
+      "threshold_value": 30,
+      "historical_evidence": {
+        "denominator": "L10",
+        "hits": 10,
+        "n": 10,
+        "observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_TEN_BAL",
+            "value": 48
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_TEN_NYG",
+            "value": 74
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_PHI_TEN",
+            "value": 64
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_NYJ_TEN",
+            "value": 35
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_TEN_JAX",
+            "value": 48
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_NO_TEN",
+            "value": 85
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_KC_TEN",
+            "value": 102
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_TEN_SF",
+            "value": 104
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_TEN_CLE",
+            "value": 161
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_JAX_TEN",
+            "value": 60
+          }
+        ]
+      },
+      "distribution_floor_evidence": {
+        "twenty_game_25th_percentile": 41.75,
+        "twenty_game_sample_size": 20,
+        "threshold_below_25p_by": 11.75,
+        "band_designation": "FLOOR",
+        "floor_hr": "10/10",
+        "core_hr": "9/10",
+        "ceiling_hr": "7/10"
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Pollard rushed for 35, 64, 74, 48 yards and was full practice Thursday. Wet conditions may favour run volume; game script remains uncertain with both teams 0–4.",
+        "role_workload": "Tennessee RB; rushing yards 35, 64, 74, 48 in Weeks 1–4.",
+        "injury_player_status": "Full participation Thursday.",
+        "opponent_matchup": "Houston’s offensive-line availability is a concern for C.J. Stroud and the receiving group. Tennessee defensive lineman Jeffery Simmons was limited and safety Amani Hooker did not practice, which may help Houston’s passing attack. Titans are 0–4, as are the Texans, so script is uncertain and either side may need to throw if behind.",
+        "game_environment": "Nashville forecast suggests showers are possible, roughly 40% chance around kickoff and winds near 10 mph with higher gusts. Slight concern for passing efficiency; potentially modest support for rushing volume.",
+        "volatility": "Four straight games above 30 yards and three of four above 40; possible rain may support rushing opportunity."
+      },
+      "sportsbook_information": {
+        "sportsbook": "FanDuel",
+        "american_odds": "-490",
+        "csv_line": "30.0",
+        "source_market": "Alt Rushing Yards",
+        "event_id": "36132644",
+        "odds_snapshot_path": "odds/nfl_player_props_latest.csv",
+        "odds_snapshot_sha": "43bde28b634d581f9613fb580e835a3f5529a9aa",
+        "snapshot_commit": "b850aeb93e5ae83dfbbc637f6ae9d93421a10739",
+        "snapshot_commit_utc": "2026-10-09T13:24:24Z",
+        "currentness_note": "Latest available repository snapshot; Stage 2 confirms no independent live sportsbook refresh was performed."
+      },
+      "model_judgment": "Selected: 10/10 L10 at 30 rushing yards, 25th percentile is 41.75, and all four latest games cleared the threshold. Stage 3 context is Supportive and he was full practice Thursday; game script and the 0–4 matchup context remain risks."
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "market": "Receiving Yards",
+      "historical_hr": "10/10",
+      "threshold": "Over 20.0",
+      "threshold_value": 20,
+      "historical_evidence": {
+        "denominator": "L10",
+        "hits": 10,
+        "n": 10,
+        "observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_PIT_CLE",
+            "value": 27
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE",
+            "value": 51
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CLE_TB",
+            "value": 54
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CLE_JAX",
+            "value": 21
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_PIT_CLE",
+            "value": 30
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_BUF_CLE",
+            "value": 34
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CLE_CHI",
+            "value": 48
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_TEN_CLE",
+            "value": 114
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_SF_CLE",
+            "value": 43
+          },
+          {
+            "season": 2025,
+            "week": 12,
+            "game_id": "2025_12_CLE_LV",
+            "value": 40
+          }
+        ]
+      },
+      "distribution_floor_evidence": {
+        "twenty_game_25th_percentile": 26.75,
+        "twenty_game_sample_size": 20,
+        "threshold_below_25p_by": 6.75,
+        "band_designation": "FLOOR",
+        "floor_hr": "10/10",
+        "core_hr": "9/10",
+        "ceiling_hr": "7/10"
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Recent yardage was 21, 54, 51, 27; three of four cleared 25. Rain and Cleveland’s QB/target distribution remain caveats.",
+        "role_workload": "Cleveland TE; receiving yards 21, 54, 51, 27 in Weeks 1–4.",
+        "injury_player_status": "Not listed on the surfaced Thursday injury report.",
+        "opponent_matchup": "Cleveland’s recent results are strong, but defensive-line absences could help Jets pass protection. A Browns rookie-QB setup creates some uncertainty around Cleveland pass volume and target quality. The forecast calls for likely rain/showers and about 7 mph wind with gusts near 14 mph, a mild-to-moderate passing/ball-security concern.",
+        "game_environment": "Outdoor MetLife forecast indicates likely showers, overcast conditions and modest wind. Treat as a modest negative for deep passing/receiving efficiency, not an automatic under.",
+        "volatility": "Three of four recent games exceeded 25 yards; rain and QB/target distribution are the main concerns."
+      },
+      "sportsbook_information": {
+        "sportsbook": "FanDuel",
+        "american_odds": "-420",
+        "csv_line": "20.0",
+        "source_market": "Alt Receiving Yards",
+        "event_id": "36132642",
+        "odds_snapshot_path": "odds/nfl_player_props_latest.csv",
+        "odds_snapshot_sha": "43bde28b634d581f9613fb580e835a3f5529a9aa",
+        "snapshot_commit": "b850aeb93e5ae83dfbbc637f6ae9d93421a10739",
+        "snapshot_commit_utc": "2026-10-09T13:24:24Z",
+        "currentness_note": "Latest available repository snapshot; Stage 2 confirms no independent live sportsbook refresh was performed."
+      },
+      "model_judgment": "Selected: 10/10 L10 at 20 receiving yards, 25th percentile is 26.75, and all four latest games cleared 20. Stage 3 context is Supportive; rain and Cleveland's quarterback/target distribution are meaningful caveats."
+    },
+    {
+      "player": "Brian Thomas Jr.",
+      "team": "JAX",
+      "market": "Receiving Yards",
+      "historical_hr": "9/10",
+      "threshold": "Over 10.0",
+      "threshold_value": 10,
+      "historical_evidence": {
+        "denominator": "L10",
+        "hits": 9,
+        "n": 10,
+        "observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_JAX_CIN",
+            "value": 17
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_NE_JAX",
+            "value": 8
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_JAX_DEN",
+            "value": 40
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CLE_JAX",
+            "value": 40
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_TEN_JAX",
+            "value": 49
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_JAX_IND",
+            "value": 39
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_JAX_DEN",
+            "value": 18
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_NYJ_JAX",
+            "value": 66
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_IND_JAX",
+            "value": 87
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_JAX_TEN",
+            "value": 28
+          }
+        ]
+      },
+      "distribution_floor_evidence": {
+        "twenty_game_25th_percentile": 30.25,
+        "twenty_game_sample_size": 20,
+        "threshold_below_25p_by": 20.25,
+        "band_designation": "FLOOR",
+        "floor_hr": "9/10",
+        "core_hr": "9/10",
+        "ceiling_hr": "7/10"
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Recent yardage was 17, 8, 40, 40; three of four cleared 15 yards. The low threshold is supported better than the reception line, although target volume remains variable.",
+        "role_workload": "Jacksonville WR; recent logged receptions were 2, 1, 3, 3 and receiving yards 17, 8, 40, 40. Low target/reception floor is not stable across the four current-season games.",
+        "injury_player_status": "Not listed on the surfaced Thursday injury report; absence from that report is not a guarantee of full health.",
+        "opponent_matchup": "Jaguars passing options face an Eagles defense dealing with multiple absences/limited participants; Jacksonville’s own offensive-line availability is a counterweight. Eagles passing props face a Jaguars defense described by Jacksonville coverage as improved and takeaway-oriented.",
+        "game_environment": "London forecast is cool/cloudy with low precipitation risk; no major weather downgrade identified. International travel and early local kickoff are mild routine context, not a standalone adjustment.",
+        "volatility": "Receptions have been uneven; yardage has two 40-yard games and two low outputs."
+      },
+      "sportsbook_information": {
+        "sportsbook": "FanDuel",
+        "american_odds": "-420",
+        "csv_line": "10.0",
+        "source_market": "Alt Receiving Yards",
+        "event_id": "35605983",
+        "odds_snapshot_path": "odds/nfl_player_props_latest.csv",
+        "odds_snapshot_sha": "43bde28b634d581f9613fb580e835a3f5529a9aa",
+        "snapshot_commit": "b850aeb93e5ae83dfbbc637f6ae9d93421a10739",
+        "snapshot_commit_utc": "2026-10-09T13:24:24Z",
+        "currentness_note": "Latest available repository snapshot; Stage 2 confirms no independent live sportsbook refresh was performed."
+      },
+      "model_judgment": "Selected: 9/10 L10 at 10 receiving yards, far below the 30.25-yard 25th percentile; three of the last four games cleared 15 yards. Stage 3 context is Supportive, but target volume is variable and one of the four recent games produced only 8 yards."
+    }
+  ],
+  "validation": {
+    "stage3_state_exists_complete": true,
+    "stage2_and_stage1_locked": true,
+    "parent_stage_chain_valid": true,
+    "no_prior_stage_reconstruction": true,
+    "selected_props_have_l10_observations": true,
+    "exact_l10_denominators_valid": true,
+    "selected_thresholds_match_stage2_bands": true,
+    "exact_fanduel_prices_matched_to_csv": true,
+    "current_week_context_preserved_from_stage3": true,
+    "twenty_game_25p_kept_separate": true,
+    "historical_hit_rates_not_presented_as_predicted_probability": true,
+    "stage1_stage2_stage3_artifacts_unchanged": true,
+    "stage4_state_persisted_and_reload_pending": true
+  }
+}
