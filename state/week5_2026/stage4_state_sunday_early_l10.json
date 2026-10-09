@@ -603,6 +603,17 @@
     "twenty_game_25p_kept_separate": true,
     "historical_hit_rates_not_presented_as_predicted_probability": true,
     "stage1_stage2_stage3_artifacts_unchanged": true,
-    "stage4_state_persisted_and_reload_pending": true
+    "stage4_state_persisted_and_reload_pending": false,
+    "stage4_state_persisted_and_reload_validated": true,
+    "final_reload_required_fields": true,
+    "record_count_preserved": true
+  },
+  "persistence_validation": {
+    "status": "VALIDATED_AFTER_PERSISTENCE_AND_RELOAD",
+    "reload_confirmed": true,
+    "reloaded_record_count": 5,
+    "parent_state_id_matches_stage3": true,
+    "exact_l10_denominators_valid": true,
+    "exact_fanduel_price_matches_preserved": true
   }
 }
