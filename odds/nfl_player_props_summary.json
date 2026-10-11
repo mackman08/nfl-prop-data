@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 686,
-      "Receiving Yards": 1601,
-      "Receptions": 1006,
-      "Rushing Yards": 950
+      "Passing Yards": 690,
+      "Receiving Yards": 1714,
+      "Receptions": 1071,
+      "Rushing Yards": 964
     },
     "FanDuel": {
       "Passing Yards": 28,
-      "Receiving Yards": 145,
-      "Receptions": 145,
-      "Rushing Yards": 77
+      "Receiving Yards": 158,
+      "Receptions": 156,
+      "Rushing Yards": 78
     }
   },
   "core_markets_present": [
@@ -81,20 +81,20 @@
     "San Francisco 49ers @ Seattle Seahawks"
   ],
   "markets": {
-    "Alt Passing Yards": 264,
-    "Alt Receiving Yards": 1417,
-    "Alt Receptions": 879,
-    "Alt Rushing Yards": 695,
-    "Passing Yards": 714,
-    "Receiving Yards": 1746,
-    "Receptions": 1151,
-    "Rush + Receiving Yards": 447,
-    "Rushing Yards": 1027
+    "Alt Passing Yards": 262,
+    "Alt Receiving Yards": 1535,
+    "Alt Receptions": 944,
+    "Alt Rushing Yards": 701,
+    "Passing Yards": 718,
+    "Receiving Yards": 1872,
+    "Receptions": 1227,
+    "Rush + Receiving Yards": 494,
+    "Rushing Yards": 1042
   },
   "sportsbooks": {
-    "DraftKings": 4690,
-    "FanDuel": 3650
+    "DraftKings": 4933,
+    "FanDuel": 3862
   },
-  "total_rows": 8340,
+  "total_rows": 8795,
   "validation_mode": "slate-size-agnostic"
 }
