@@ -2,15 +2,15 @@
   "core_markets_by_sportsbook": {
     "DraftKings": {
       "Passing Yards": 101,
-      "Receiving Yards": 295,
+      "Receiving Yards": 291,
       "Receptions": 169,
-      "Rushing Yards": 152
+      "Rushing Yards": 149
     },
     "FanDuel": {
-      "Passing Yards": 6,
-      "Receiving Yards": 28,
-      "Receptions": 28,
-      "Rushing Yards": 13
+      "Passing Yards": 8,
+      "Receiving Yards": 43,
+      "Receptions": 43,
+      "Rushing Yards": 25
     }
   },
   "core_markets_present": [
@@ -25,30 +25,32 @@
     "34118277",
     "35605984",
     "36132650",
-    "36160506"
+    "36160506",
+    "36160515"
   ],
   "games": [
     "BUF Bills @ LA Rams",
     "Buffalo Bills @ Los Angeles Rams",
     "Houston Texans @ Jacksonville Jaguars",
     "SEA Seahawks @ DEN Broncos",
-    "Seattle Seahawks @ Denver Broncos"
+    "Seattle Seahawks @ Denver Broncos",
+    "Washington Commanders @ San Francisco 49ers"
   ],
   "markets": {
-    "Alt Passing Yards": 37,
-    "Alt Receiving Yards": 264,
-    "Alt Receptions": 160,
-    "Alt Rushing Yards": 110,
-    "Passing Yards": 107,
-    "Receiving Yards": 323,
-    "Receptions": 197,
-    "Rush + Receiving Yards": 112,
-    "Rushing Yards": 165
+    "Alt Passing Yards": 56,
+    "Alt Receiving Yards": 385,
+    "Alt Receptions": 234,
+    "Alt Rushing Yards": 158,
+    "Passing Yards": 109,
+    "Receiving Yards": 334,
+    "Receptions": 212,
+    "Rush + Receiving Yards": 115,
+    "Rushing Yards": 174
   },
   "sportsbooks": {
-    "DraftKings": 829,
-    "FanDuel": 646
+    "DraftKings": 825,
+    "FanDuel": 952
   },
-  "total_rows": 1475,
+  "total_rows": 1777,
   "validation_mode": "slate-size-agnostic"
 }
