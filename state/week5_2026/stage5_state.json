@@ -2,194 +2,398 @@
   "stage": 5,
   "season": 2026,
   "week": 5,
-  "scope": "Thursday only",
-  "historical_sample": "L12",
-  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
-  "state_id": "STATE-5-W5-2026-THU-L12-20261006",
-  "parent_state_id": "STATE-4-W5-2026-THU-L12-20261006",
+  "scope": "Custom — Monday only: Buffalo Bills at Los Angeles Rams, Monday, October 12, 2026; scheduled kickoff 8:15 PM Eastern Time",
+  "historical_sample": "L10",
+  "historical_cutoff": "2026-10-06T00:00:00-04:00 — after completion of the final scheduled Week 4 game; no Week 5 games included",
+  "state_id": "STATE-5-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+  "parent_state_id": "STATE-4-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
   "record_count": 5,
-  "sportsbook": "DraftKings (FanDuel unavailable in latest odds dataset; user-authorized fallback)",
-  "portfolio_rules": {
-    "low_variance": "exactly 2 legs; ≥90% preferred, ≥80% acceptable, 70–79% only when necessary; <70% prohibited",
-    "balanced": "maximum 2 legs; ≥80% preferred, 70–79% permissible when necessary; <70% prohibited",
-    "price_seeking_low": "Balanced + 1 additional permitted leg; maximum 3 legs",
-    "price_seeking_medium": "Balanced + 2 additional permitted legs; maximum 4 legs",
-    "price_seeking_high": "Balanced + 3 additional permitted legs; maximum 5 legs",
-    "do_not_force_payout_target": true,
-    "combined_odds": "mathematical estimate from individual American prices"
+  "locked": true,
+  "complete": true,
+  "input_validation": {
+    "stage4": {
+      "state_id": "STATE-4-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+      "path": "state/week5_2026/stage4_state.json",
+      "blob_sha": "86de95ecd3dd33d9b7bab2ee3df780a26d72ee31",
+      "complete": true,
+      "locked": true,
+      "record_count": 12
+    },
+    "stage1": {
+      "state_id": "STATE-1-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+      "locked": true,
+      "blob_sha": "2f42b64c11166da45eb5a04aaf439baf2efbbd4b"
+    },
+    "stage2": {
+      "state_id": "STATE-2-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+      "locked": true,
+      "blob_sha": "341abbcdb62335e5b9e59cabab9c157b2dc783cc"
+    },
+    "stage3": {
+      "state_id": "STATE-3-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+      "locked": true,
+      "blob_sha": "8481e9553c45352bfb95ad9865af17fe88a30961"
+    },
+    "status": "VALID",
+    "no_reconstruction_of_prior_stages": true
   },
-  "records": [
+  "sportsbook_snapshot": {
+    "path": "odds/nfl_player_props_latest.csv",
+    "blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+    "book": "DraftKings",
+    "authorized_fallback": true,
+    "fan_duel_rows_for_game": 0,
+    "note": "FanDuel unavailable; prices verified against latest available repository CSV and use the user-authorized DraftKings fallback."
+  },
+  "methodology": {
+    "minimum_leg_historical_hr": "≥70% L10",
+    "balanced_and_price_seeking_hierarchy": "≥80% preferred; 70–79% permissible when necessary; below 70% prohibited.",
+    "low_variance_hierarchy": "≥90% preferred; ≥80% acceptable; 70–79% permissible when necessary; below 70% prohibited.",
+    "low_variance_leg_count": "Exactly 2",
+    "balanced_max_leg_count": 2,
+    "price_seeking_low_max_leg_count": 3,
+    "price_seeking_medium_max_leg_count": 4,
+    "price_seeking_high_max_leg_count": 5,
+    "threshold_philosophy": "Prefer Floors / strongest conservative lines.",
+    "no_forced_payout_target": true,
+    "estimated_odds_note": "Mathematical odds only, not a sportsbook quote; assumes independent legs. Same-game correlation makes estimates approximate."
+  },
+  "evaluated_legs": [
+    {
+      "player": "Kyren Williams",
+      "market": "Rushing Yards",
+      "threshold": 39.5,
+      "role": "Low Variance conservative leg",
+      "team": "LAR",
+      "historical_hr": "10/10",
+      "price": -610,
+      "sportsbook": "DraftKings",
+      "context": "Supportive",
+      "tier": "FLOOR",
+      "distance_from_25p": -24.25,
+      "quote_verified": true
+    },
+    {
+      "player": "Puka Nacua",
+      "market": "Receiving Yards",
+      "threshold": 59.5,
+      "role": "Low Variance conservative leg",
+      "team": "LAR",
+      "historical_hr": "9/10",
+      "price": -437,
+      "sportsbook": "DraftKings",
+      "context": "Supportive",
+      "tier": "FLOOR",
+      "distance_from_25p": -14,
+      "quote_verified": true
+    },
+    {
+      "player": "Matthew Stafford",
+      "market": "Passing Yards",
+      "threshold": 249.5,
+      "role": "Balanced base leg",
+      "team": "LAR",
+      "historical_hr": "8/10",
+      "price": -242,
+      "sportsbook": "DraftKings",
+      "context": "Supportive",
+      "tier": "CORE",
+      "distance_from_25p": 18.25,
+      "quote_verified": true
+    },
+    {
+      "player": "Davante Adams",
+      "market": "Receptions",
+      "threshold": 3.5,
+      "role": "Balanced base leg",
+      "team": "LAR",
+      "historical_hr": "8/10",
+      "price": -182,
+      "sportsbook": "DraftKings",
+      "context": "Mixed",
+      "tier": "CORE",
+      "distance_from_25p": -0.5,
+      "quote_verified": true
+    },
+    {
+      "player": "Puka Nacua",
+      "market": "Receiving Yards",
+      "threshold": 69.5,
+      "role": "Price-seeking add-on",
+      "team": "LAR",
+      "historical_hr": "9/10",
+      "price": -280,
+      "sportsbook": "DraftKings",
+      "context": "Supportive",
+      "tier": "CORE",
+      "distance_from_25p": -4,
+      "quote_verified": true
+    },
+    {
+      "player": "James Cook",
+      "market": "Rushing Yards",
+      "threshold": 49.5,
+      "role": "Price-seeking add-on",
+      "team": "BUF",
+      "historical_hr": "9/10",
+      "price": -424,
+      "sportsbook": "DraftKings",
+      "context": "Mixed",
+      "tier": "FLOOR",
+      "distance_from_25p": -20.25,
+      "quote_verified": true
+    },
+    {
+      "player": "Keon Coleman",
+      "market": "Receptions",
+      "threshold": 1.5,
+      "role": "Price-seeking add-on",
+      "team": "BUF",
+      "historical_hr": "8/10",
+      "price": -544,
+      "sportsbook": "DraftKings",
+      "context": "Supportive",
+      "tier": "FLOOR",
+      "distance_from_25p": -0.5,
+      "quote_verified": true
+    }
+  ],
+  "portfolios": [
     {
       "portfolio": "LOW VARIANCE",
       "legs": [
         {
-          "player": "Chris Godwin",
-          "market": "Receptions",
-          "threshold": "2.5+",
-          "hr": "10/12",
-          "price": "-226 DK"
+          "player": "Kyren Williams",
+          "team": "LAR",
+          "market": "Rushing Yards",
+          "threshold": "39.5+",
+          "historical_hr": "10/10",
+          "price": "-610 DK",
+          "tier": "FLOOR",
+          "context": "Supportive"
         },
         {
-          "player": "Bucky Irving",
-          "market": "Rushing Yards",
-          "threshold": "53.5+",
-          "hr": "9/12",
-          "price": "-113 DK"
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "market": "Receiving Yards",
+          "threshold": "59.5+",
+          "historical_hr": "9/10",
+          "price": "-437 DK",
+          "tier": "FLOOR",
+          "context": "Supportive"
         }
       ],
       "leg_count": 2,
-      "estimated_combined_american": "+197",
-      "construction": "Both legs are 90%+ historical HR preferred tier."
+      "estimated_combined_decimal_odds": 1.4303,
+      "estimated_combined_american_odds": "-232",
+      "odds_method": "Mathematical product of individual decimal odds; assumes independent legs and is not a quoted sportsbook price.",
+      "construction_rule": "Exactly 2 legs; both Floors and each ≥90% L10. No Ceiling/Tier 3 construction.",
+      "notes": "Conservative prices; strong historical frequency does not guarantee the result."
     },
     {
       "portfolio": "BALANCED",
       "legs": [
         {
-          "player": "Dak Prescott",
+          "player": "Matthew Stafford",
+          "team": "LAR",
           "market": "Passing Yards",
-          "threshold": "269.5+",
-          "hr": "8/12",
-          "price": "-101 DK"
+          "threshold": "249.5+",
+          "historical_hr": "8/10",
+          "price": "-242 DK",
+          "tier": "CORE",
+          "context": "Supportive"
         },
         {
-          "player": "Bucky Irving",
-          "market": "Rushing Yards",
-          "threshold": "53.5+",
-          "hr": "9/12",
-          "price": "-113 DK"
+          "player": "Davante Adams",
+          "team": "LAR",
+          "market": "Receptions",
+          "threshold": "3.5+",
+          "historical_hr": "8/10",
+          "price": "-182 DK",
+          "tier": "CORE",
+          "context": "Mixed"
         }
       ],
       "leg_count": 2,
-      "estimated_combined_american": "+275",
-      "construction": "Two-leg base construction; both legs meet the ≥80% preferred Balanced evidence standard."
+      "estimated_combined_decimal_odds": 2.1897,
+      "estimated_combined_american_odds": "+119",
+      "odds_method": "Mathematical product of individual decimal odds; assumes independent legs and is not a quoted sportsbook price.",
+      "construction_rule": "2-leg base; both Core thresholds meet preferred ≥80% L10 hierarchy.",
+      "notes": "Stafford context is Supportive; Adams context is Mixed."
     },
     {
       "portfolio": "PRICE SEEKING — LOW",
       "legs": [
         {
-          "player": "Dak Prescott",
+          "player": "Matthew Stafford",
+          "team": "LAR",
           "market": "Passing Yards",
-          "threshold": "269.5+",
-          "hr": "8/12",
-          "price": "-101 DK"
+          "threshold": "249.5+",
+          "historical_hr": "8/10",
+          "price": "-242 DK",
+          "tier": "CORE",
+          "context": "Supportive"
         },
         {
-          "player": "Bucky Irving",
-          "market": "Rushing Yards",
-          "threshold": "53.5+",
-          "hr": "9/12",
-          "price": "-113 DK"
-        },
-        {
-          "player": "Emeka Egbuka",
+          "player": "Davante Adams",
+          "team": "LAR",
           "market": "Receptions",
-          "threshold": "2.5+",
-          "hr": "8/12",
-          "price": "-173 DK"
+          "threshold": "3.5+",
+          "historical_hr": "8/10",
+          "price": "-182 DK",
+          "tier": "CORE",
+          "context": "Mixed"
+        },
+        {
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "market": "Receiving Yards",
+          "threshold": "69.5+",
+          "historical_hr": "9/10",
+          "price": "-280 DK",
+          "tier": "CORE",
+          "context": "Supportive"
         }
       ],
       "leg_count": 3,
-      "estimated_combined_american": "+492",
-      "construction": "Balanced + 1 permitted ≥80% leg."
+      "estimated_combined_decimal_odds": 2.9718,
+      "estimated_combined_american_odds": "+197",
+      "odds_method": "Mathematical product of individual decimal odds; assumes independent legs and is not a quoted sportsbook price.",
+      "construction_rule": "Balanced plus 1 additional permitted leg; all legs ≥70% L10.",
+      "notes": "Same-game correlation between Stafford and Rams receivers means mathematical odds are approximate."
     },
     {
       "portfolio": "PRICE SEEKING — MEDIUM",
       "legs": [
         {
-          "player": "Dak Prescott",
+          "player": "Matthew Stafford",
+          "team": "LAR",
           "market": "Passing Yards",
-          "threshold": "269.5+",
-          "hr": "8/12",
-          "price": "-101 DK"
+          "threshold": "249.5+",
+          "historical_hr": "8/10",
+          "price": "-242 DK",
+          "tier": "CORE",
+          "context": "Supportive"
         },
         {
-          "player": "Bucky Irving",
+          "player": "Davante Adams",
+          "team": "LAR",
+          "market": "Receptions",
+          "threshold": "3.5+",
+          "historical_hr": "8/10",
+          "price": "-182 DK",
+          "tier": "CORE",
+          "context": "Mixed"
+        },
+        {
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "market": "Receiving Yards",
+          "threshold": "69.5+",
+          "historical_hr": "9/10",
+          "price": "-280 DK",
+          "tier": "CORE",
+          "context": "Supportive"
+        },
+        {
+          "player": "James Cook",
+          "team": "BUF",
           "market": "Rushing Yards",
-          "threshold": "53.5+",
-          "hr": "9/12",
-          "price": "-113 DK"
-        },
-        {
-          "player": "Emeka Egbuka",
-          "market": "Receptions",
-          "threshold": "2.5+",
-          "hr": "8/12",
-          "price": "-173 DK"
-        },
-        {
-          "player": "Chris Godwin",
-          "market": "Receptions",
-          "threshold": "2.5+",
-          "hr": "10/12",
-          "price": "-226 DK"
+          "threshold": "49.5+",
+          "historical_hr": "9/10",
+          "price": "-424 DK",
+          "tier": "FLOOR",
+          "context": "Mixed"
         }
       ],
       "leg_count": 4,
-      "estimated_combined_american": "+754",
-      "construction": "Balanced + 2 permitted ≥80% legs."
+      "estimated_combined_decimal_odds": 3.6726,
+      "estimated_combined_american_odds": "+267",
+      "odds_method": "Mathematical product of individual decimal odds; assumes independent legs and is not a quoted sportsbook price.",
+      "construction_rule": "Balanced plus 2 additional permitted legs; all legs ≥70% L10.",
+      "notes": "Cook's Mixed context includes reduced Week 4 carries and lower snap share; same-game correlation remains."
     },
     {
       "portfolio": "PRICE SEEKING — HIGH",
       "legs": [
         {
-          "player": "Dak Prescott",
+          "player": "Matthew Stafford",
+          "team": "LAR",
           "market": "Passing Yards",
-          "threshold": "269.5+",
-          "hr": "8/12",
-          "price": "-101 DK"
+          "threshold": "249.5+",
+          "historical_hr": "8/10",
+          "price": "-242 DK",
+          "tier": "CORE",
+          "context": "Supportive"
         },
         {
-          "player": "Bucky Irving",
-          "market": "Rushing Yards",
-          "threshold": "53.5+",
-          "hr": "9/12",
-          "price": "-113 DK"
-        },
-        {
-          "player": "Emeka Egbuka",
+          "player": "Davante Adams",
+          "team": "LAR",
           "market": "Receptions",
-          "threshold": "2.5+",
-          "hr": "8/12",
-          "price": "-173 DK"
+          "threshold": "3.5+",
+          "historical_hr": "8/10",
+          "price": "-182 DK",
+          "tier": "CORE",
+          "context": "Mixed"
         },
         {
-          "player": "Chris Godwin",
-          "market": "Receptions",
-          "threshold": "2.5+",
-          "hr": "10/12",
-          "price": "-226 DK"
-        },
-        {
-          "player": "CeeDee Lamb",
+          "player": "Puka Nacua",
+          "team": "LAR",
           "market": "Receiving Yards",
-          "threshold": "59.5+",
-          "hr": "8/12",
-          "price": "-264 DK"
+          "threshold": "69.5+",
+          "historical_hr": "9/10",
+          "price": "-280 DK",
+          "tier": "CORE",
+          "context": "Supportive"
+        },
+        {
+          "player": "James Cook",
+          "team": "BUF",
+          "market": "Rushing Yards",
+          "threshold": "49.5+",
+          "historical_hr": "9/10",
+          "price": "-424 DK",
+          "tier": "FLOOR",
+          "context": "Mixed"
+        },
+        {
+          "player": "Keon Coleman",
+          "team": "BUF",
+          "market": "Receptions",
+          "threshold": "1.5+",
+          "historical_hr": "8/10",
+          "price": "-544 DK",
+          "tier": "FLOOR",
+          "context": "Supportive"
         }
       ],
       "leg_count": 5,
-      "estimated_combined_american": "+1077",
-      "construction": "Balanced + 3 permitted ≥80% legs."
+      "estimated_combined_decimal_odds": 4.3478,
+      "estimated_combined_american_odds": "+335",
+      "odds_method": "Mathematical product of individual decimal odds; assumes independent legs and is not a quoted sportsbook price.",
+      "construction_rule": "Balanced plus 3 additional permitted legs; all legs ≥70% L10.",
+      "notes": "Five legs increase failure risk; Coleman has 8/10 at 1.5+ but the -544 price adds little payout."
     }
   ],
+  "prior_canonical_state_preservation": {
+    "state_id": "STATE-5-W5-2026-THU-L12-20261006",
+    "scope": "Thursday only",
+    "blob_sha": "63d4f0ea0b167c18cfe0522b9d6fa6c71af1eb15",
+    "record_count": 5,
+    "note": "Prior Thursday/L12 Stage 5 blob remains in Git history. Canonical Stage 5 path now contains Monday/L10; no separate archive copy is claimed."
+  },
   "validation": {
-    "stage4_state_loaded_exactly": true,
-    "stage4_record_count_preserved": true,
-    "stage1_state_remains_locked": true,
-    "stage2_state_remains_locked": true,
-    "stage3_state_remains_locked": true,
-    "all_portfolio_legs_are_stage4_selected": true,
-    "all_legs_have_verified_sportsbook_prices": true,
-    "all_legs_meet_minimum_70pct_hr": true,
-    "low_variance_has_exactly_2_legs": true,
-    "low_variance_legs_are_90pct_or_better": true,
-    "balanced_has_max_2_legs": true,
-    "price_seeking_low_max_3_legs": true,
-    "price_seeking_medium_max_4_legs": true,
-    "price_seeking_high_max_5_legs": true,
-    "no_tier3_low_variance": true,
-    "individual_leg_evidence_standard_not_weakened": true,
-    "combined_odds_mathematically_valid": true,
-    "no_portfolio_forced_beyond_available_evidence": true
+    "five_portfolio_types_constructed": true,
+    "low_variance_exactly_two_legs": true,
+    "balanced_max_two_legs": true,
+    "price_seeking_low_max_three": true,
+    "price_seeking_medium_max_four": true,
+    "price_seeking_high_max_five": true,
+    "all_legs_meet_minimum_70_percent": true,
+    "low_variance_preferred_hr": true,
+    "no_tier3_in_low_variance": true,
+    "quotes_verified_against_latest_dataset": true,
+    "american_odds_valid": true,
+    "stage1_to_stage4_locked_states_unchanged": true
   }
 }
