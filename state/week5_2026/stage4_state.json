@@ -2,134 +2,1621 @@
   "stage": 4,
   "season": 2026,
   "week": 5,
-  "scope": "Thursday only",
-  "historical_sample": "L12",
-  "historical_cutoff": "2026-10-05T20:15:00-04:00 — completion of final scheduled Week 4 game",
-  "state_id": "STATE-4-W5-2026-THU-L12-20261006",
-  "parent_state_id": "STATE-3-W5-2026-THU-L12-20261006",
-  "record_count": 10,
-  "sportsbook": "DraftKings (FanDuel unavailable in latest odds dataset; user-authorized fallback)",
-  "records": [
+  "scope": "Custom — Monday only: Buffalo Bills at Los Angeles Rams, Monday, October 12, 2026; scheduled kickoff 8:15 PM Eastern Time",
+  "historical_sample": "L10",
+  "historical_cutoff": "2026-10-06T00:00:00-04:00 — after completion of the final scheduled Week 4 game; no Week 5 games included",
+  "state_id": "STATE-4-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+  "parent_state_id": "STATE-3-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+  "record_count": 12,
+  "locked": true,
+  "complete": true,
+  "prior_stage_state": {
+    "state_id": "STATE-3-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+    "path": "state/week5_2026/stage3_state.json",
+    "blob_sha": "8481e9553c45352bfb95ad9865af17fe88a30961",
+    "record_count": 12,
+    "validation_status": "VALID"
+  },
+  "input_validation": {
+    "stage0": {
+      "state_id": "STATE-0-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+      "locked": true,
+      "blob_sha": "d5f8020a506bc65b3a86e1e9778873f6395dcabb"
+    },
+    "stage1": {
+      "state_id": "STATE-1-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+      "locked": true,
+      "record_count": 15,
+      "blob_sha": "2f42b64c11166da45eb5a04aaf439baf2efbbd4b"
+    },
+    "stage2": {
+      "state_id": "STATE-2-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+      "locked": true,
+      "record_count": 15,
+      "blob_sha": "341abbcdb62335e5b9e59cabab9c157b2dc783cc"
+    },
+    "stage3": {
+      "state_id": "STATE-3-W5-2026-MONDAY-BILLS-RAMS-L10-20261012",
+      "locked": true,
+      "record_count": 12,
+      "blob_sha": "8481e9553c45352bfb95ad9865af17fe88a30961"
+    },
+    "status": "VALID",
+    "no_prior_stage_reconstruction": true
+  },
+  "sportsbook_snapshot": {
+    "path": "odds/nfl_player_props_latest.csv",
+    "blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+    "book": "DraftKings",
+    "latest_available_dataset": true,
+    "fan_duel_rows_for_game": 0,
+    "fallback_authorization": "User authorized DraftKings fallback for the Bills–Rams analysis.",
+    "limitation": "FanDuel quotes are unavailable in the current dataset; prices shown are DraftKings quotes and are not represented as FanDuel prices."
+  },
+  "methodology": {
+    "selection_basis": "Combine locked Stage 1 L10 evidence, Stage 2 Floor/Core/Ceiling structure, Stage 3 context, 25P distribution evidence and current sportsbook quotes. Historical HR is descriptive, not a predicted probability.",
+    "threshold_policy": "Prefer a conservative Floor/Core when multiple evidence streams support it. Price alone or historical HR alone is insufficient.",
+    "nonselection_policy": "For non-selected records, Floor is the evaluated reference threshold; Puka receptions is not separately selected to avoid duplicating exposure to the same player already selected for receiving yards."
+  },
+  "prior_canonical_state_preservation": {
+    "state_id": "STATE-4-W5-2026-THU-L12-20261006",
+    "scope": "Thursday only",
+    "blob_sha": "1915ca81a18b6aeee58b4b0efaeb44e7c5713c9f",
+    "record_count": 10,
+    "note": "Previous Thursday/L12 Stage 4 blob remains in Git history. The canonical Stage 4 path is now the Monday/L10 run; no separate archive copy is claimed."
+  },
+  "evaluated_prop_cards": [
     {
-      "player": "Dak Prescott",
-      "team": "DAL",
+      "player": "Josh Allen",
+      "team": "BUF",
       "market": "Passing Yards",
-      "historical_hr": "8/12",
-      "threshold": "269.5+",
-      "sportsbook_price": "-101 DK",
-      "context": "Supportive",
-      "selected": true,
-      "final_read": "Selected. 8/12 at the current DK threshold, 25P 248.5, and supportive Dallas passing/game-environment context provide multiple aligned evidence streams."
-    },
-    {
-      "player": "CeeDee Lamb",
-      "team": "DAL",
-      "market": "Receiving Yards",
-      "historical_hr": "8/12",
-      "threshold": "59.5+",
-      "sportsbook_price": "-264 DK",
-      "context": "Supportive",
-      "selected": true,
-      "final_read": "Selected. 8/12 at 59.5+, 25P 72, Core 60+ at 8/12, and strong current target/usage context support the conservative receiving-yard threshold."
-    },
-    {
-      "player": "George Pickens",
-      "team": "DAL",
-      "market": "Receiving Yards",
-      "historical_hr": "8/12",
-      "threshold": "39.5+",
-      "sportsbook_price": "-306 DK",
-      "context": "Mixed",
+      "historical_hr": "7/10",
+      "threshold": "199.5+",
       "selected": false,
-      "final_read": "Not selected. Historical evidence is solid at 39.5+, but the Mixed role/target context and materially negative price reduce the final edge versus stronger candidates."
+      "selection_status": "NOT_SELECTED",
+      "selected_price": "-331",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "NE",
+            "value": 253
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "LAC",
+            "value": 204
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "DET",
+            "value": 248
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "HOU",
+            "value": 334
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "opponent": "PHI",
+            "value": 262
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "CLE",
+            "value": 130
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "NE",
+            "value": 193
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "CIN",
+            "value": 251
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "PIT",
+            "value": 123
+          },
+          {
+            "season": 2025,
+            "week": 12,
+            "opponent": "HOU",
+            "value": 253
+          }
+        ],
+        "historical_25p": 189.75,
+        "historical_hr_at_threshold": "7/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 199.5,
+            "historical_hr": "7/10",
+            "price": "-331",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 9.75
+          },
+          {
+            "designation": "CORE",
+            "threshold": 209.5,
+            "historical_hr": "6/10",
+            "price": "-254",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 19.75
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 219.5,
+            "historical_hr": "6/10",
+            "price": "-199",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 29.75
+          }
+        ],
+        "selected_threshold_distance_from_25p": 9.75,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Floor has volume support, but elite Rams pass defense and Buffalo receiver uncertainty make this matchup-dependent.",
+        "selected_threshold_context": "Floor 199.5 passing yards; Core 209.5; Ceiling 219.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 199.5,
+        "price": "-331",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Not selected: Floor is 7/10 and sits above the historical 25P; Mixed context is weakened by the Rams' elite pass defense and Buffalo receiver-availability uncertainty."
     },
     {
-      "player": "CeeDee Lamb",
-      "team": "DAL",
-      "market": "Receptions",
-      "historical_hr": "10/12",
-      "threshold": "4.5+",
-      "sportsbook_price": "-347 DK",
-      "context": "Supportive",
+      "player": "Matthew Stafford",
+      "team": "LAR",
+      "market": "Passing Yards",
+      "historical_hr": "8/10",
+      "threshold": "249.5+",
       "selected": true,
-      "final_read": "Selected. 10/12 historical hit rate, 25P of 5, and exceptional recent volume plus supportive matchup context make 4.5+ a strong conservative threshold."
+      "selection_status": "SELECTED",
+      "selected_price": "-242",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "PHI",
+            "value": 317
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "DEN",
+            "value": 390
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "NYG",
+            "value": 327
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "SF",
+            "value": 155
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "opponent": "ARI",
+            "value": 259
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "opponent": "ATL",
+            "value": 269
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "SEA",
+            "value": 457
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "DET",
+            "value": 368
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "ARI",
+            "value": 281
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "CAR",
+            "value": 243
+          }
+        ],
+        "historical_25p": 231.25,
+        "historical_hr_at_threshold": "8/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 239.5,
+            "historical_hr": "9/10",
+            "price": "-312",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 8.25
+          },
+          {
+            "designation": "CORE",
+            "threshold": 249.5,
+            "historical_hr": "8/10",
+            "price": "-242",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 18.25
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 259.5,
+            "historical_hr": "7/10",
+            "price": "-190",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 28.25
+          }
+        ],
+        "selected_threshold_distance_from_25p": 18.25,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "High recent attempts and three straight 300-yard games against a weak Bills pass defense support the Floor/Core; pressure and turnover risk are the offsets.",
+        "selected_threshold_context": "Floor 239.5 passing yards; Core 249.5; Ceiling 259.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 249.5,
+        "price": "-242",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Core line at -242 has 8/10 L10 hits, sits above the 25P of 231.25 but below the three most recent 300-yard results, and has Supportive context: sustained high attempt volume, three straight 300-yard games, and a weak Bills pass defense. Pressure and recent interceptions remain the counterweight."
     },
     {
-      "player": "George Pickens",
-      "team": "DAL",
-      "market": "Receptions",
-      "historical_hr": "8/12",
-      "threshold": "3.5+",
-      "sportsbook_price": "-262 DK",
-      "context": "Mixed",
-      "selected": false,
-      "final_read": "Not selected. 8/12 is viable, but Mixed role certainty and competition for targets make this weaker than the available Dallas alternatives."
-    },
-    {
-      "player": "Chris Godwin",
-      "team": "TB",
-      "market": "Receptions",
-      "historical_hr": "10/12",
-      "threshold": "2.5+",
-      "sportsbook_price": "-226 DK",
-      "context": "Mixed",
-      "selected": true,
-      "final_read": "Selected. 10/12 historical evidence is strong and the threshold is modest, but the Mixed rookie-QB/target-share context prevents treating it as an automatic high-confidence play."
-    },
-    {
-      "player": "Emeka Egbuka",
-      "team": "TB",
-      "market": "Receptions",
-      "historical_hr": "8/12",
-      "threshold": "2.5+",
-      "sportsbook_price": "-173 DK",
-      "context": "Supportive",
-      "selected": true,
-      "final_read": "Selected. 8/12 historical hit rate combines with a Supportive current role and documented team-leading early target volume."
-    },
-    {
-      "player": "Javonte Williams",
-      "team": "DAL",
+      "player": "James Cook",
+      "team": "BUF",
       "market": "Rushing Yards",
-      "historical_hr": "9/12",
+      "historical_hr": "9/10",
       "threshold": "49.5+",
-      "sportsbook_price": "-427 DK",
-      "context": "Supportive",
-      "selected": true,
-      "final_read": "Selected. 9/12 at 49.5+, Core 50+ at 9/12, and supportive Dallas game-script/role context provide strong alignment, though the price is expensive."
-    },
-    {
-      "player": "Bucky Irving",
-      "team": "TB",
-      "market": "Rushing Yards",
-      "historical_hr": "9/12",
-      "threshold": "53.5+",
-      "sportsbook_price": "-113 DK",
-      "context": "Mixed",
-      "selected": true,
-      "final_read": "Selected. 9/12 at the current DK line and near-even pricing create a strong historical/value combination, but the three-back rotation is the principal risk."
-    },
-    {
-      "player": "Kenneth Gainwell",
-      "team": "TB",
-      "market": "Rushing Yards",
-      "historical_hr": "8/12",
-      "threshold": "12.5+",
-      "sportsbook_price": "-112 DK",
-      "context": "Mixed",
       "selected": false,
-      "final_read": "Not selected. 8/12 is viable, but the current three-way backfield and identity/role discrepancy in the locked Stage 1 state reduce confidence relative to the stronger candidates."
+      "selection_status": "NOT_SELECTED",
+      "selected_price": "-424",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "NE",
+            "value": 75
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "LAC",
+            "value": 154
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "DET",
+            "value": 135
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "HOU",
+            "value": 57
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "opponent": "NYJ",
+            "value": 15
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "opponent": "PHI",
+            "value": 74
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "CLE",
+            "value": 117
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "NE",
+            "value": 107
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "CIN",
+            "value": 80
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "PIT",
+            "value": 144
+          }
+        ],
+        "historical_25p": 69.75,
+        "historical_hr_at_threshold": "9/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 49.5,
+            "historical_hr": "9/10",
+            "price": "-424",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -20.25
+          },
+          {
+            "designation": "CORE",
+            "threshold": 59.5,
+            "historical_hr": "8/10",
+            "price": "-233",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -10.25
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 69.5,
+            "historical_hr": "8/10",
+            "price": "-141",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -0.25
+          }
+        ],
+        "selected_threshold_distance_from_25p": -20.25,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Efficiency and season workload support the conservative line, but recent carry reduction and uncertain play-calling prevent a strongly supportive read.",
+        "selected_threshold_context": "Floor 49.5 rushing yards; Core 59.5; Ceiling 69.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 49.5,
+        "price": "-424",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Not selected: although the Floor is 9/10, it sits 20.25 yards below the historical 25P and carries are falling; -424 offers little compensation for Mixed role/game-script risk."
+    },
+    {
+      "player": "Kyren Williams",
+      "team": "LAR",
+      "market": "Rushing Yards",
+      "historical_hr": "9/10",
+      "threshold": "49.5+",
+      "selected": true,
+      "selection_status": "SELECTED",
+      "selected_price": "-305",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "PHI",
+            "value": 80
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "DEN",
+            "value": 88
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "NYG",
+            "value": 85
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "SF",
+            "value": 41
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "opponent": "ARI",
+            "value": 60
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "opponent": "ATL",
+            "value": 92
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "SEA",
+            "value": 70
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "DET",
+            "value": 78
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "ARI",
+            "value": 84
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "CAR",
+            "value": 72
+          }
+        ],
+        "historical_25p": 63.75,
+        "historical_hr_at_threshold": "9/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 39.5,
+            "historical_hr": "10/10",
+            "price": "-610",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -24.25
+          },
+          {
+            "designation": "CORE",
+            "threshold": 49.5,
+            "historical_hr": "9/10",
+            "price": "-305",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -14.25
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 59.5,
+            "historical_hr": "9/10",
+            "price": "-174",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -4.25
+          }
+        ],
+        "selected_threshold_distance_from_25p": -14.25,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Rising carries, lead-back snap share and four straight games above the Floor make the Floor contextually supported; higher bands need more yardage.",
+        "selected_threshold_context": "Floor 39.5 rushing yards; Core 49.5; Ceiling 59.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 49.5,
+        "price": "-305",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Core line at -305 has 9/10 L10 hits and is 14.25 yards below the 25P of 63.75. Supportive context includes a rising carry trend and secure lead-back snap share. Game-script risk remains."
+    },
+    {
+      "player": "Blake Corum",
+      "team": "LAR",
+      "market": "Rushing Yards",
+      "historical_hr": "7/10",
+      "threshold": "19.5+",
+      "selected": false,
+      "selection_status": "NOT_SELECTED",
+      "selected_price": "-440",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "PHI",
+            "value": 14
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "DEN",
+            "value": 15
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "NYG",
+            "value": 79
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "SF",
+            "value": 54
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "opponent": "ARI",
+            "value": 59
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "opponent": "ATL",
+            "value": 18
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "SEA",
+            "value": 48
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "DET",
+            "value": 71
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "ARI",
+            "value": 128
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "CAR",
+            "value": 81
+          }
+        ],
+        "historical_25p": 20.25,
+        "historical_hr_at_threshold": "7/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 19.5,
+            "historical_hr": "7/10",
+            "price": "-440",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -0.75
+          },
+          {
+            "designation": "CORE",
+            "threshold": 24.5,
+            "historical_hr": "7/10",
+            "price": "-279",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 4.25
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 29.5,
+            "historical_hr": "7/10",
+            "price": "-189",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 9.25
+          }
+        ],
+        "selected_threshold_distance_from_25p": -0.75,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "Even the low Floor depends on a contracting workload; the role trend is materially unfavorable.",
+        "selected_threshold_context": "Floor 19.5 rushing yards; Core 24.5; Ceiling 29.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 19.5,
+        "price": "-440",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Not selected: 7/10 Floor evidence is modest, the line is near the 25P, and Concern context reflects a shrinking role and recent sub-Floor results."
+    },
+    {
+      "player": "Khalil Shakir",
+      "team": "BUF",
+      "market": "Receptions",
+      "historical_hr": "7/10",
+      "threshold": "2.5+",
+      "selected": false,
+      "selection_status": "NOT_SELECTED",
+      "selected_price": "-534",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "NE",
+            "value": 7
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "LAC",
+            "value": 1
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "DET",
+            "value": 3
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "HOU",
+            "value": 4
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "opponent": "PHI",
+            "value": 6
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "CLE",
+            "value": 4
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "NE",
+            "value": 5
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "CIN",
+            "value": 2
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "PIT",
+            "value": 1
+          },
+          {
+            "season": 2025,
+            "week": 12,
+            "opponent": "HOU",
+            "value": 8
+          }
+        ],
+        "historical_25p": 2.75,
+        "historical_hr_at_threshold": "7/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 2.5,
+            "historical_hr": "7/10",
+            "price": "-534",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -0.25
+          },
+          {
+            "designation": "CORE",
+            "threshold": 3.5,
+            "historical_hr": "6/10",
+            "price": "-211",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 0.75
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 4.5,
+            "historical_hr": "4/10",
+            "price": "100",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 1.75
+          }
+        ],
+        "selected_threshold_distance_from_25p": -0.25,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Playing time and possible target redistribution support the Floor, but uneven catch output and elite Rams coverage leave a mixed read.",
+        "selected_threshold_context": "Floor 2.5 receptions; Core 3.5; Ceiling 4.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 2.5,
+        "price": "-534",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Not selected: 7/10 Floor is just below the 25P and Mixed context combines rising snaps with uneven catch output and an elite Rams secondary; -534 is too expensive for that profile."
+    },
+    {
+      "player": "Keon Coleman",
+      "team": "BUF",
+      "market": "Receptions",
+      "historical_hr": "8/10",
+      "threshold": "1.5+",
+      "selected": false,
+      "selection_status": "NOT_SELECTED",
+      "selected_price": "-544",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "NE",
+            "value": 6
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "LAC",
+            "value": 1
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "DET",
+            "value": 6
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "HOU",
+            "value": 1
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "opponent": "NYJ",
+            "value": 2
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "CIN",
+            "value": 2
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "PIT",
+            "value": 2
+          },
+          {
+            "season": 2025,
+            "week": 10,
+            "opponent": "MIA",
+            "value": 3
+          },
+          {
+            "season": 2025,
+            "week": 9,
+            "opponent": "KC",
+            "value": 2
+          },
+          {
+            "season": 2025,
+            "week": 8,
+            "opponent": "CAR",
+            "value": 3
+          }
+        ],
+        "historical_25p": 2,
+        "historical_hr_at_threshold": "8/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 1.5,
+            "historical_hr": "8/10",
+            "price": "-544",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -0.5
+          },
+          {
+            "designation": "CORE",
+            "threshold": 2.5,
+            "historical_hr": "4/10",
+            "price": "-175",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 0.5
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 3.5,
+            "historical_hr": "2/10",
+            "price": "140",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 1.5
+          }
+        ],
+        "selected_threshold_distance_from_25p": -0.5,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "The low Floor and recent target/playing-time increase are promising, with small-sample volatility and the difficult opponent as cautions.",
+        "selected_threshold_context": "Floor 1.5 receptions; Core 2.5; Ceiling 3.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 1.5,
+        "price": "-544",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Not selected: the 1.5 Floor has 8/10 history and Supportive context, but -544 is highly restrictive and the 2.5 Core has only 4/10 historical hits."
+    },
+    {
+      "player": "Davante Adams",
+      "team": "LAR",
+      "market": "Receiving Yards",
+      "historical_hr": "9/10",
+      "threshold": "24.5+",
+      "selected": false,
+      "selection_status": "NOT_SELECTED",
+      "selected_price": "-730",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "PHI",
+            "value": 32
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "DEN",
+            "value": 137
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "NYG",
+            "value": 195
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "SF",
+            "value": 26
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "DET",
+            "value": 71
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "ARI",
+            "value": 29
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "CAR",
+            "value": 58
+          },
+          {
+            "season": 2025,
+            "week": 12,
+            "opponent": "TB",
+            "value": 62
+          },
+          {
+            "season": 2025,
+            "week": 11,
+            "opponent": "SEA",
+            "value": 1
+          },
+          {
+            "season": 2025,
+            "week": 10,
+            "opponent": "SF",
+            "value": 77
+          }
+        ],
+        "historical_25p": 38,
+        "historical_hr_at_threshold": "9/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 24.5,
+            "historical_hr": "9/10",
+            "price": "-730",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -13.5
+          },
+          {
+            "designation": "CORE",
+            "threshold": 39.5,
+            "historical_hr": "6/10",
+            "price": "-286",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 1.5
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 49.5,
+            "historical_hr": "6/10",
+            "price": "-174",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 11.5
+          }
+        ],
+        "selected_threshold_distance_from_25p": -13.5,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "Secure target volume and a low Floor help, but Week 4's low yardage despite nine targets and Puka's role add volatility.",
+        "selected_threshold_context": "Floor 24.5 receiving yards; Core 39.5; Ceiling 49.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 24.5,
+        "price": "-730",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Not selected: the 24.5 Floor has 9/10 history but is 13.5 yards below the 25P and priced -730; Mixed context includes 32 yards on nine targets in Week 4 and Puka's return."
+    },
+    {
+      "player": "Davante Adams",
+      "team": "LAR",
+      "market": "Receptions",
+      "historical_hr": "8/10",
+      "threshold": "3.5+",
+      "selected": true,
+      "selection_status": "SELECTED",
+      "selected_price": "-182",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "PHI",
+            "value": 4
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "DEN",
+            "value": 7
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "NYG",
+            "value": 8
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "SF",
+            "value": 3
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "DET",
+            "value": 4
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "ARI",
+            "value": 4
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "CAR",
+            "value": 4
+          },
+          {
+            "season": 2025,
+            "week": 12,
+            "opponent": "TB",
+            "value": 5
+          },
+          {
+            "season": 2025,
+            "week": 11,
+            "opponent": "SEA",
+            "value": 1
+          },
+          {
+            "season": 2025,
+            "week": 10,
+            "opponent": "SF",
+            "value": 6
+          }
+        ],
+        "historical_25p": 4,
+        "historical_hr_at_threshold": "8/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 2.5,
+            "historical_hr": "9/10",
+            "price": "-486",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -1.5
+          },
+          {
+            "designation": "CORE",
+            "threshold": 3.5,
+            "historical_hr": "8/10",
+            "price": "-182",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -0.5
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 4.5,
+            "historical_hr": "4/10",
+            "price": "122",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 0.5
+          }
+        ],
+        "selected_threshold_distance_from_25p": -0.5,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Mixed",
+        "summary": "The Floor fits his role, while Core/Ceiling depend on target distribution and conversion.",
+        "selected_threshold_context": "Floor 2.5 receptions; Core 3.5; Ceiling 4.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 3.5,
+        "price": "-182",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Core line at -182 has 8/10 L10 hits and is 0.5 below the 25P of 4. Mixed context: reliable targets and availability support the line, while Puka's return and Week 4 conversion add uncertainty."
+    },
+    {
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "market": "Receiving Yards",
+      "historical_hr": "9/10",
+      "threshold": "69.5+",
+      "selected": true,
+      "selection_status": "SELECTED",
+      "selected_price": "-280",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "PHI",
+            "value": 125
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "SF",
+            "value": 74
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "opponent": "ARI",
+            "value": 76
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "opponent": "ATL",
+            "value": 47
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "SEA",
+            "value": 225
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "DET",
+            "value": 181
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "ARI",
+            "value": 167
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "CAR",
+            "value": 72
+          },
+          {
+            "season": 2025,
+            "week": 12,
+            "opponent": "TB",
+            "value": 97
+          },
+          {
+            "season": 2025,
+            "week": 11,
+            "opponent": "SEA",
+            "value": 75
+          }
+        ],
+        "historical_25p": 73.5,
+        "historical_hr_at_threshold": "9/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 59.5,
+            "historical_hr": "9/10",
+            "price": "-437",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -14
+          },
+          {
+            "designation": "CORE",
+            "threshold": 69.5,
+            "historical_hr": "9/10",
+            "price": "-280",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -4
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 79.5,
+            "historical_hr": "5/10",
+            "price": "-189",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 6
+          }
+        ],
+        "selected_threshold_distance_from_25p": -4,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "Week 4 target volume and snap share support the Floor; return durability and Adams' target share are the main cautions.",
+        "selected_threshold_context": "Floor 59.5 receiving yards; Core 69.5; Ceiling 79.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 69.5,
+        "price": "-280",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Core line at -280 has 9/10 L10 hits and is 4 yards below the 25P of 73.5. Supportive context includes 12 targets, 125 yards, and 90% snaps in Week 4; the first game back after two absences and Adams' target share are cautions."
+    },
+    {
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "market": "Receptions",
+      "historical_hr": "10/10",
+      "threshold": "4.5+",
+      "selected": false,
+      "selection_status": "NOT_SELECTED",
+      "selected_price": "-720",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "PHI",
+            "value": 9
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "SF",
+            "value": 5
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "opponent": "ARI",
+            "value": 10
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "opponent": "ATL",
+            "value": 5
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "SEA",
+            "value": 12
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "DET",
+            "value": 9
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "ARI",
+            "value": 7
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "opponent": "CAR",
+            "value": 6
+          },
+          {
+            "season": 2025,
+            "week": 12,
+            "opponent": "TB",
+            "value": 7
+          },
+          {
+            "season": 2025,
+            "week": 11,
+            "opponent": "SEA",
+            "value": 7
+          }
+        ],
+        "historical_25p": 6.75,
+        "historical_hr_at_threshold": "10/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 4.5,
+            "historical_hr": "10/10",
+            "price": "-720",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -2.25
+          },
+          {
+            "designation": "CORE",
+            "threshold": 5.5,
+            "historical_hr": "8/10",
+            "price": "-326",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -1.25
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 6.5,
+            "historical_hr": "7/10",
+            "price": "-165",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": -0.25
+          }
+        ],
+        "selected_threshold_distance_from_25p": -2.25,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Supportive",
+        "summary": "The Floor is supported by a 12-target role; Core is viable if that usage continues, while 6.5 depends on another high-volume game.",
+        "selected_threshold_context": "Floor 4.5 receptions; Core 5.5; Ceiling 6.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 4.5,
+        "price": "-720",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Not selected as a separate card to avoid duplicating exposure to the same receiver already selected for receiving yards. The 5.5 Core has 8/10 history and Supportive context, but the return-from-absence caveat and target competition remain."
+    },
+    {
+      "player": "Dalton Kincaid",
+      "team": "BUF",
+      "market": "Receiving Yards",
+      "historical_hr": "8/10",
+      "threshold": "24.5+",
+      "selected": false,
+      "selection_status": "NOT_SELECTED",
+      "selected_price": "-421",
+      "sportsbook": "DraftKings (authorized fallback; FanDuel rows unavailable)",
+      "price_verified_in_latest_dataset": true,
+      "historical_evidence": {
+        "l10_observations": [
+          {
+            "season": 2026,
+            "week": 4,
+            "opponent": "NE",
+            "value": 7
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "opponent": "LAC",
+            "value": 38
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "opponent": "DET",
+            "value": 95
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "opponent": "HOU",
+            "value": 130
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "opponent": "NYJ",
+            "value": 48
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "opponent": "CLE",
+            "value": 0
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "opponent": "NE",
+            "value": 34
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "opponent": "CIN",
+            "value": 41
+          },
+          {
+            "season": 2025,
+            "week": 10,
+            "opponent": "MIA",
+            "value": 37
+          },
+          {
+            "season": 2025,
+            "week": 9,
+            "opponent": "KC",
+            "value": 101
+          }
+        ],
+        "historical_25p": 24,
+        "historical_hr_at_threshold": "8/10"
+      },
+      "distribution_floor_evidence": {
+        "floor_core_ceiling": [
+          {
+            "designation": "FLOOR",
+            "threshold": 24.5,
+            "historical_hr": "8/10",
+            "price": "-421",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 0.5
+          },
+          {
+            "designation": "CORE",
+            "threshold": 39.5,
+            "historical_hr": "5/10",
+            "price": "-208",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 15.5
+          },
+          {
+            "designation": "CEILING",
+            "threshold": 49.5,
+            "historical_hr": "3/10",
+            "price": "-141",
+            "sportsbook": "DraftKings",
+            "price_verified_in_latest_csv": true,
+            "distance_from_historical_25p": 25.5
+          }
+        ],
+        "selected_threshold_distance_from_25p": 0.5,
+        "interpretation": "25P and L10 HR are descriptive historical evidence, not predicted probabilities."
+      },
+      "current_week_context": {
+        "classification": "Concern",
+        "summary": "The low Floor does not erase the sharp decline in targets, snap share and output; current role trend is unfavorable.",
+        "selected_threshold_context": "Floor 24.5 receiving yards; Core 39.5; Ceiling 49.5"
+      },
+      "sportsbook_information": {
+        "sportsbook": "DraftKings",
+        "threshold": 24.5,
+        "price": "-421",
+        "source_path": "odds/nfl_player_props_latest.csv",
+        "source_blob_sha": "a9d5be8d8a936ae10017d0678c6c0d11291c497f",
+        "fan_duel_available": false
+      },
+      "final_read": "Not selected: despite 8/10 at the Floor, it is almost exactly at the 25P and Concern context reflects a sharp decline in targets, production and snap share."
+    }
+  ],
+  "selected_cards": [
+    {
+      "player": "Matthew Stafford",
+      "team": "LAR",
+      "market": "Passing Yards",
+      "historical_hr": "8/10",
+      "threshold": "249.5+",
+      "sportsbook_price": "-242 DK",
+      "current_week_context": "Supportive",
+      "final_read": "Core line at -242 has 8/10 L10 hits, sits above the 25P of 231.25 but below the three most recent 300-yard results, and has Supportive context: sustained high attempt volume, three straight 300-yard games, and a weak Bills pass defense. Pressure and recent interceptions remain the counterweight."
+    },
+    {
+      "player": "Kyren Williams",
+      "team": "LAR",
+      "market": "Rushing Yards",
+      "historical_hr": "9/10",
+      "threshold": "49.5+",
+      "sportsbook_price": "-305 DK",
+      "current_week_context": "Supportive",
+      "final_read": "Core line at -305 has 9/10 L10 hits and is 14.25 yards below the 25P of 63.75. Supportive context includes a rising carry trend and secure lead-back snap share. Game-script risk remains."
+    },
+    {
+      "player": "Davante Adams",
+      "team": "LAR",
+      "market": "Receptions",
+      "historical_hr": "8/10",
+      "threshold": "3.5+",
+      "sportsbook_price": "-182 DK",
+      "current_week_context": "Mixed",
+      "final_read": "Core line at -182 has 8/10 L10 hits and is 0.5 below the 25P of 4. Mixed context: reliable targets and availability support the line, while Puka's return and Week 4 conversion add uncertainty."
+    },
+    {
+      "player": "Puka Nacua",
+      "team": "LAR",
+      "market": "Receiving Yards",
+      "historical_hr": "9/10",
+      "threshold": "69.5+",
+      "sportsbook_price": "-280 DK",
+      "current_week_context": "Supportive",
+      "final_read": "Core line at -280 has 9/10 L10 hits and is 4 yards below the 25P of 73.5. Supportive context includes 12 targets, 125 yards, and 90% snaps in Week 4; the first game back after two absences and Adams' target share are cautions."
     }
   ],
   "validation": {
-    "stage3_state_loaded_exactly": true,
-    "stage3_record_count_preserved": true,
-    "prior_stage_outputs_not_reconstructed": true,
-    "current_sportsbook_verified": true,
-    "sportsbook_fallback_authorized": true,
-    "all_10_candidates_evaluated": true,
-    "historical_denominators_correct": true,
-    "context_classifications_unchanged": true,
-    "identity_mismatch_preserved": true
+    "all_12_stage3_candidates_evaluated": true,
+    "all_selected_cards_have_exact_l10_denominator": true,
+    "all_selected_cards_have_verified_latest_dataset_quote": true,
+    "all_cards_include_context_and_distribution": true,
+    "no_locked_stage1_stage2_stage3_outputs_modified": true,
+    "r30_r31_respected": true,
+    "fan_duel_unavailable_and_dk_fallback_disclosed": true,
+    "all_required_stage4_checks_passed": true
   }
 }
