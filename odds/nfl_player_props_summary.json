@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 269,
-      "Receiving Yards": 454,
-      "Receptions": 270,
-      "Rushing Yards": 215
+      "Passing Yards": 342,
+      "Receiving Yards": 591,
+      "Receptions": 349,
+      "Rushing Yards": 246
     },
     "FanDuel": {
-      "Passing Yards": 14,
-      "Receiving Yards": 50,
-      "Receptions": 50,
-      "Rushing Yards": 21
+      "Passing Yards": 16,
+      "Receiving Yards": 52,
+      "Receptions": 52,
+      "Rushing Yards": 23
     }
   },
   "core_markets_present": [
@@ -23,12 +23,14 @@
   "event_ids": [
     "34118064",
     "34118076",
+    "34118108",
     "34118185",
     "34118244",
     "34118253",
     "34118277",
     "35605984",
     "36160506",
+    "36160508",
     "36160509",
     "36160511",
     "36160514",
@@ -44,27 +46,29 @@
     "Houston Texans @ Jacksonville Jaguars",
     "LA Chargers @ KC Chiefs",
     "Los Angeles Chargers @ Kansas City Chiefs",
+    "NO Saints @ NY Giants",
     "New Orleans Saints @ New York Giants",
+    "New York Jets @ New England Patriots",
     "SEA Seahawks @ DEN Broncos",
     "Seattle Seahawks @ Denver Broncos",
     "WAS Commanders @ SF 49ers",
     "Washington Commanders @ San Francisco 49ers"
   ],
   "markets": {
-    "Alt Passing Yards": 112,
-    "Alt Receiving Yards": 460,
-    "Alt Receptions": 286,
-    "Alt Rushing Yards": 184,
-    "Passing Yards": 283,
-    "Receiving Yards": 504,
-    "Receptions": 320,
-    "Rush + Receiving Yards": 83,
-    "Rushing Yards": 236
+    "Alt Passing Yards": 131,
+    "Alt Receiving Yards": 480,
+    "Alt Receptions": 302,
+    "Alt Rushing Yards": 204,
+    "Passing Yards": 358,
+    "Receiving Yards": 643,
+    "Receptions": 401,
+    "Rush + Receiving Yards": 97,
+    "Rushing Yards": 269
   },
   "sportsbooks": {
-    "DraftKings": 1291,
-    "FanDuel": 1177
+    "DraftKings": 1625,
+    "FanDuel": 1260
   },
-  "total_rows": 2468,
+  "total_rows": 2885,
   "validation_mode": "slate-size-agnostic"
 }
