@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 153,
-      "Receiving Yards": 297,
-      "Receptions": 174,
-      "Rushing Yards": 155
+      "Passing Yards": 241,
+      "Receiving Yards": 391,
+      "Receptions": 241,
+      "Rushing Yards": 216
     },
     "FanDuel": {
-      "Passing Yards": 8,
-      "Receiving Yards": 44,
-      "Receptions": 44,
-      "Rushing Yards": 25
+      "Passing Yards": 10,
+      "Receiving Yards": 34,
+      "Receptions": 34,
+      "Rushing Yards": 18
     }
   },
   "core_markets_present": [
@@ -21,38 +21,44 @@
   ],
   "duplicates": 0,
   "event_ids": [
-    "34118101",
+    "34118064",
+    "34118185",
     "34118244",
+    "34118253",
     "34118277",
     "35605984",
-    "36132650",
     "36160506",
-    "36160515"
+    "36160511",
+    "36160515",
+    "36160524"
   ],
   "games": [
-    "BUF Bills @ LA Rams",
-    "Buffalo Bills @ Los Angeles Rams",
+    "DAL Cowboys @ GB Packers",
+    "Dallas Cowboys @ Green Bay Packers",
     "HOU Texans @ JAX Jaguars",
     "Houston Texans @ Jacksonville Jaguars",
+    "LA Chargers @ KC Chiefs",
+    "Los Angeles Chargers @ Kansas City Chiefs",
     "SEA Seahawks @ DEN Broncos",
     "Seattle Seahawks @ Denver Broncos",
+    "WAS Commanders @ SF 49ers",
     "Washington Commanders @ San Francisco 49ers"
   ],
   "markets": {
-    "Alt Passing Yards": 57,
-    "Alt Receiving Yards": 394,
-    "Alt Receptions": 235,
-    "Alt Rushing Yards": 158,
-    "Passing Yards": 161,
-    "Receiving Yards": 341,
-    "Receptions": 218,
-    "Rush + Receiving Yards": 119,
-    "Rushing Yards": 180
+    "Alt Passing Yards": 93,
+    "Alt Receiving Yards": 350,
+    "Alt Receptions": 226,
+    "Alt Rushing Yards": 164,
+    "Passing Yards": 251,
+    "Receiving Yards": 425,
+    "Receptions": 275,
+    "Rush + Receiving Yards": 85,
+    "Rushing Yards": 234
   },
   "sportsbooks": {
-    "DraftKings": 898,
-    "FanDuel": 965
+    "DraftKings": 1174,
+    "FanDuel": 929
   },
-  "total_rows": 1863,
+  "total_rows": 2103,
   "validation_mode": "slate-size-agnostic"
 }
