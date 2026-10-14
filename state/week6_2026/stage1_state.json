@@ -1,16 +1,28 @@
 {
   "schema_version": "1.0",
-  "model_version": "V7.2.8",
   "stage": 1,
-  "status": "INCOMPLETE_BLOCKED",
-  "state_id": "STATE-1-2026-W06-THU-L10-20261014",
-  "parent_stage0_state_id": "STATE-0-2026-W06-THU-L10-20261014",
   "season": 2026,
   "week": 6,
-  "slate": "Thursday only",
-  "game": "Seattle Seahawks at Denver Broncos",
-  "historical_sample": "L10",
-  "historical_cutoff_date": "2026-10-12",
+  "scope": {
+    "analysis_scope": "Thursday only",
+    "games": [
+      {
+        "date": "2026-10-15",
+        "away_team": "Seattle Seahawks",
+        "away_abbreviation": "SEA",
+        "home_team": "Denver Broncos",
+        "home_abbreviation": "DEN"
+      }
+    ]
+  },
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent completed regular-season games per player before the cutoff"
+  },
+  "historical_cutoff": "2026-10-12",
+  "state_id": "STATE-1-2026-W06-THU-L10-20261014",
+  "parent_state_id": "STATE-0-2026-W06-THU-L10-20261014",
   "source_files": [
     {
       "path": "data/nfl_prop_model.txt",
@@ -21,22 +33,1951 @@
     {
       "path": "odds/nfl_player_props_latest.csv",
       "sha": "841e4f450b6442a37c0887db9cc621b24adab8c9",
-      "rows": 2885,
-      "in_scope_game_rows": 354,
-      "in_scope_sportsbook": "DraftKings",
-      "fanduel_rows": 0
+      "total_rows": 2885,
+      "in_scope_draftkings_rows": 319,
+      "source_sportsbook": "DraftKings fallback"
     }
   ],
-  "blockers": [
-    "Sportsbook CSV does not explicitly designate main market lines versus alternate lines.",
-    "Selecting a main line by proximity to -110 would be an assumption, not source-verified.",
-    "Stage 1 cannot be finalized or locked until the main-line identification requirement is satisfied."
-  ],
-  "provisional_screening": {
-    "status": "NOT_LOCKED_NOT_FOR_DOWNSTREAM_STAGES",
-    "qualifier_count": 12,
-    "method_note": "Provisional screening used the operational assumption of selecting the line whose over price was numerically closest to -110. These results are not authoritative and must not be used for Stage 2."
+  "sportsbook_selection": {
+    "primary": "FanDuel",
+    "fallback_used": "DraftKings",
+    "reason": "No FanDuel rows were present for the in-scope game."
   },
-  "persistence_note": "This file records the incomplete stage and blockers only; it does not certify Stage 1 completion.",
-  "created_at": "2026-10-14"
+  "main_market_identification": {
+    "status": "LIMITATION_DISCLOSED",
+    "rule": "For each player/market, selected the DraftKings line whose over odds were closest to -110 because the CSV does not label main vs alternate lines.",
+    "verified_as_source_designated_main_line": false
+  },
+  "screening_rule": "Market HR >= 6/10 OR at least one applicable fixed ladder threshold >= 8/10.",
+  "screened_record_count": 16,
+  "record_count": 12,
+  "records": [
+    {
+      "player": "Jaxon Smith-Njigba",
+      "player_id": "00-0038543",
+      "position": "WR",
+      "historical_name": "J.Smith-Njigba",
+      "market": "Receiving Yards",
+      "current_market": {
+        "line": 91.5,
+        "over_odds": -114,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 102
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "value": 76
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "value": 128
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "value": 155
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "value": 122
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_SEA_SF",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 84
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "SEA",
+          "opponent_team": "CAR",
+          "value": 72
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_LA_SEA",
+          "team": "SEA",
+          "opponent_team": "LA",
+          "value": 96
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_IND_SEA",
+          "team": "SEA",
+          "opponent_team": "IND",
+          "value": 113
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_SEA_ATL",
+          "team": "SEA",
+          "opponent_team": "ATL",
+          "value": 92
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 75,
+          "hit_count": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 100,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 20,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 75,
+          "hit_count": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        }
+      ],
+      "twenty_game_25p": 90,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "player_id": "00-0038543",
+      "position": "WR",
+      "historical_name": "J.Smith-Njigba",
+      "market": "Receptions",
+      "current_market": {
+        "line": 6.5,
+        "over_odds": -128,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "value": 10
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "value": 9
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_SEA_SF",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "SEA",
+          "opponent_team": "CAR",
+          "value": 9
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_LA_SEA",
+          "team": "SEA",
+          "opponent_team": "LA",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_IND_SEA",
+          "team": "SEA",
+          "opponent_team": "IND",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_SEA_ATL",
+          "team": "SEA",
+          "opponent_team": "ATL",
+          "value": 7
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 2,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        }
+      ],
+      "twenty_game_25p": 5,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "Jaylen Waddle",
+      "player_id": "00-0036613",
+      "position": "WR",
+      "historical_name": "J.Waddle",
+      "market": "Receptions",
+      "current_market": {
+        "line": 4.5,
+        "over_odds": -115,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_DEN_LAC",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DEN_SF",
+          "team": "DEN",
+          "opponent_team": "SF",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LA_DEN",
+          "team": "DEN",
+          "opponent_team": "LA",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "team": "DEN",
+          "opponent_team": "JAX",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "MIA",
+          "opponent_team": "TB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "MIA",
+          "opponent_team": "CIN",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_MIA_PIT",
+          "team": "MIA",
+          "opponent_team": "PIT",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_MIA_NYJ",
+          "team": "MIA",
+          "opponent_team": "NYJ",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_NO_MIA",
+          "team": "MIA",
+          "opponent_team": "NO",
+          "value": 3
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 2,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        }
+      ],
+      "twenty_game_25p": 2,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "Courtland Sutton",
+      "player_id": "00-0034348",
+      "position": "WR",
+      "historical_name": "C.Sutton",
+      "market": "Receptions",
+      "current_market": {
+        "line": 2.5,
+        "over_odds": -207,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_DEN_LAC",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DEN_SF",
+          "team": "DEN",
+          "opponent_team": "SF",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LA_DEN",
+          "team": "DEN",
+          "opponent_team": "LA",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "team": "DEN",
+          "opponent_team": "JAX",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_LAC_DEN",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "team": "DEN",
+          "opponent_team": "JAX",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "DEN",
+          "opponent_team": "GB",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_DEN_LV",
+          "team": "DEN",
+          "opponent_team": "LV",
+          "value": 6
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 2,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        }
+      ],
+      "twenty_game_25p": 2,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "Cooper Kupp",
+      "player_id": "00-0033908",
+      "position": "WR",
+      "historical_name": "C.Kupp",
+      "market": "Receiving Yards",
+      "current_market": {
+        "line": 21.5,
+        "over_odds": -110,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "value": 13
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "value": 46
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "value": 20
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "value": 35
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_SEA_SF",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 29
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "SEA",
+          "opponent_team": "CAR",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_LA_SEA",
+          "team": "SEA",
+          "opponent_team": "LA",
+          "value": 39
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_IND_SEA",
+          "team": "SEA",
+          "opponent_team": "IND",
+          "value": 46
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_SEA_ATL",
+          "team": "SEA",
+          "opponent_team": "ATL",
+          "value": 35
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hit_count": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 75,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 100,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": 23.75,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "Cooper Kupp",
+      "player_id": "00-0033908",
+      "position": "WR",
+      "historical_name": "C.Kupp",
+      "market": "Receptions",
+      "current_market": {
+        "line": 1.5,
+        "over_odds": -276,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 8,
+        "denominator": 10,
+        "display": "8/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_SEA_SF",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "SEA",
+          "opponent_team": "CAR",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_LA_SEA",
+          "team": "SEA",
+          "opponent_team": "LA",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_IND_SEA",
+          "team": "SEA",
+          "opponent_team": "IND",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_SEA_ATL",
+          "team": "SEA",
+          "opponent_team": "ATL",
+          "value": 2
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 2,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        }
+      ],
+      "twenty_game_25p": 2,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "A.J. Barner",
+      "player_id": "00-0039793",
+      "position": "TE",
+      "historical_name": "A.Barner",
+      "market": "Receptions",
+      "current_market": {
+        "line": 2.5,
+        "over_odds": -126,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_SEA_SF",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "SEA",
+          "opponent_team": "CAR",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_LA_SEA",
+          "team": "SEA",
+          "opponent_team": "LA",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_IND_SEA",
+          "team": "SEA",
+          "opponent_team": "IND",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_SEA_ATL",
+          "team": "SEA",
+          "opponent_team": "ATL",
+          "value": 3
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 2,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        }
+      ],
+      "twenty_game_25p": 1.75,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "RJ Harvey",
+      "player_id": "00-0040730",
+      "position": "RB",
+      "historical_name": "R.Harvey",
+      "market": "Rushing Yards",
+      "current_market": {
+        "line": 14.5,
+        "over_odds": -106,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 8,
+        "denominator": 10,
+        "display": "8/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_DEN_LAC",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DEN_SF",
+          "team": "DEN",
+          "opponent_team": "SF",
+          "value": 25
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LA_DEN",
+          "team": "DEN",
+          "opponent_team": "LA",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 18
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_LAC_DEN",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 28
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 43
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "team": "DEN",
+          "opponent_team": "JAX",
+          "value": 50
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "DEN",
+          "opponent_team": "GB",
+          "value": 65
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_DEN_LV",
+          "team": "DEN",
+          "opponent_team": "LV",
+          "value": 75
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_DEN_WAS",
+          "team": "DEN",
+          "opponent_team": "WAS",
+          "value": 35
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hit_count": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 75,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 100,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": 6.75,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "Troy Franklin",
+      "player_id": "00-0039868",
+      "position": "WR",
+      "historical_name": "T.Franklin",
+      "market": "Receptions",
+      "current_market": {
+        "line": 1.5,
+        "over_odds": -139,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_DEN_LAC",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LA_DEN",
+          "team": "DEN",
+          "opponent_team": "LA",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "team": "DEN",
+          "opponent_team": "JAX",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_LAC_DEN",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "team": "DEN",
+          "opponent_team": "JAX",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "DEN",
+          "opponent_team": "GB",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_DEN_LV",
+          "team": "DEN",
+          "opponent_team": "LV",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_DEN_WAS",
+          "team": "DEN",
+          "opponent_team": "WAS",
+          "value": 2
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hit_count": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": 2,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "Marvin Mims",
+      "player_id": "00-0038976",
+      "position": "WR",
+      "historical_name": "M.Mims",
+      "market": "Receptions",
+      "current_market": {
+        "line": 1.5,
+        "over_odds": 121,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_DEN_LAC",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DEN_SF",
+          "team": "DEN",
+          "opponent_team": "SF",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_LAC_DEN",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "team": "DEN",
+          "opponent_team": "JAX",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "DEN",
+          "opponent_team": "GB",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_DEN_LV",
+          "team": "DEN",
+          "opponent_team": "LV",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_DEN_WAS",
+          "team": "DEN",
+          "opponent_team": "WAS",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_KC_DEN",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 0
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hit_count": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": 1,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    },
+    {
+      "player": "Tory Horton",
+      "player_id": "00-0040648",
+      "position": "WR",
+      "historical_name": "T.Horton",
+      "market": "Receiving Yards",
+      "current_market": {
+        "line": 4.5,
+        "over_odds": -115,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "value": 48
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "value": 48
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_HOU_SEA",
+          "team": "SEA",
+          "opponent_team": "HOU",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "game_id": "2025_06_SEA_JAX",
+          "team": "SEA",
+          "opponent_team": "JAX",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 5,
+          "game_id": "2025_05_TB_SEA",
+          "team": "SEA",
+          "opponent_team": "TB",
+          "value": 39
+        },
+        {
+          "season": 2025,
+          "week": 4,
+          "game_id": "2025_04_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 3,
+          "game_id": "2025_03_NO_SEA",
+          "team": "SEA",
+          "opponent_team": "NO",
+          "value": 32
+        },
+        {
+          "season": 2025,
+          "week": 2,
+          "game_id": "2025_02_SEA_PIT",
+          "team": "SEA",
+          "opponent_team": "PIT",
+          "value": 32
+        },
+        {
+          "season": 2025,
+          "week": 1,
+          "game_id": "2025_01_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "value": 0
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 75,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 100,
+          "hit_count": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": "Unavailable — <20 games",
+      "twenty_game_sample_count": 10,
+      "qualifies": true
+    },
+    {
+      "player": "J.K. Dobbins",
+      "player_id": "00-0036158",
+      "position": "RB",
+      "historical_name": "J.Dobbins",
+      "market": "Rushing Yards",
+      "current_market": {
+        "line": 47.5,
+        "over_odds": -112,
+        "under_odds": null,
+        "sportsbook": "DraftKings",
+        "event_id": "34118277",
+        "game": "SEA Seahawks @ DEN Broncos",
+        "line_selection_rule": "available line whose over odds are closest to -110; feed does not designate main vs alternate"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_DEN_LAC",
+          "team": "DEN",
+          "opponent_team": "LAC",
+          "value": 68
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DEN_SF",
+          "team": "DEN",
+          "opponent_team": "SF",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LA_DEN",
+          "team": "DEN",
+          "opponent_team": "LA",
+          "value": 49
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "team": "DEN",
+          "opponent_team": "JAX",
+          "value": 36
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_DEN_KC",
+          "team": "DEN",
+          "opponent_team": "KC",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_LV_DEN",
+          "team": "DEN",
+          "opponent_team": "LV",
+          "value": 77
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_DEN_HOU",
+          "team": "DEN",
+          "opponent_team": "HOU",
+          "value": 61
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_DAL_DEN",
+          "team": "DEN",
+          "opponent_team": "DAL",
+          "value": 111
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_NYG_DEN",
+          "team": "DEN",
+          "opponent_team": "NYG",
+          "value": 81
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "game_id": "2025_06_DEN_NYJ",
+          "team": "DEN",
+          "opponent_team": "NYJ",
+          "value": 40
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 75,
+          "hit_count": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 100,
+          "hit_count": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 20,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        }
+      ],
+      "twenty_game_25p": 46.75,
+      "twenty_game_sample_count": 20,
+      "qualifies": true
+    }
+  ]
 }
