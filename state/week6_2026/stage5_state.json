@@ -25,9 +25,9 @@
   "parent_state_id": "STATE-4-2026-W06-THU-L10-20261014",
   "status": "COMPLETE",
   "methodology_override": {
-    "user_authorized_sportsbook": "DraftKings",
     "user_authorized": true,
-    "applied_rule": "Portfolio prices calculated from the exact DraftKings prices locked in Stage 4. No FanDuel prices available in the source snapshot."
+    "sportsbook": "DraftKings",
+    "rule": "Use DraftKings odds locked in Stage 4 because the repository snapshot has no FanDuel rows for this game."
   },
   "input_validation": {
     "stage4_exists_and_complete": true,
@@ -45,7 +45,7 @@
     "path": "odds/nfl_player_props_latest.csv",
     "sha": "841e4f450b6442a37c0887db9cc621b24adab8c9",
     "sportsbook": "DraftKings",
-    "price_status": "Verified against latest available repository snapshot; not guaranteed live at bet placement."
+    "note": "Prices verified against latest available repository snapshot, not guaranteed live at bet placement."
   },
   "eligible_stage4_selected_leg_count": 4,
   "eligible_legs": [
@@ -103,24 +103,21 @@
             "market": "Receiving Yards",
             "threshold": 69.5,
             "hr": "10/10",
-            "american_odds": -272,
-            "context": "Supportive"
+            "american_odds": -272
           },
           {
             "player": "Cooper Kupp",
             "market": "Receiving Yards",
             "threshold": 14.5,
             "hr": "8/10",
-            "american_odds": -195,
-            "context": "Mixed"
+            "american_odds": -195
           }
         ],
         "decimal_odds": 2.069,
         "estimated_american_odds": 107,
-        "estimated_profit_per_100_stake": 106.9,
-        "calculation": "Multiply each leg's decimal odds; convert combined decimal odds to American odds. Mathematical estimate, not a quoted sportsbook price."
+        "estimated_profit_per_100_stake": 106.9
       },
-      "rationale": "Exactly two legs; both selected legs meet the ≥80% fallback reliability level (JSN 10/10, Kupp 8/10). Combined estimated price is approximately +107. The second leg is Mixed context and shares the same passing offense as JSN, so this is valid but not risk-free."
+      "rationale": "Exactly two legs. Both meet the ≥80% acceptable Low Variance reliability level; JSN is 10/10 and Kupp is 8/10. Estimated combined odds +107."
     },
     {
       "type": "BALANCED",
@@ -135,24 +132,21 @@
             "market": "Receiving Yards",
             "threshold": 69.5,
             "hr": "10/10",
-            "american_odds": -272,
-            "context": "Supportive"
+            "american_odds": -272
           },
           {
             "player": "Cooper Kupp",
             "market": "Receiving Yards",
             "threshold": 14.5,
             "hr": "8/10",
-            "american_odds": -195,
-            "context": "Mixed"
+            "american_odds": -195
           }
         ],
         "decimal_odds": 2.069,
         "estimated_american_odds": 107,
-        "estimated_profit_per_100_stake": 106.9,
-        "calculation": "Multiply each leg's decimal odds; convert combined decimal odds to American odds. Mathematical estimate, not a quoted sportsbook price."
+        "estimated_profit_per_100_stake": 106.9
       },
-      "rationale": "The strongest eligible two-leg combination is approximately +107, below the required target. Do not force the payout range."
+      "rationale": "Best eligible two-leg combination is approximately +107, below target. Do not force the payout range."
     },
     {
       "type": "PRICE SEEKING — LOW",
@@ -167,32 +161,28 @@
             "market": "Receiving Yards",
             "threshold": 69.5,
             "hr": "10/10",
-            "american_odds": -272,
-            "context": "Supportive"
+            "american_odds": -272
           },
           {
             "player": "Cooper Kupp",
             "market": "Receiving Yards",
             "threshold": 14.5,
             "hr": "8/10",
-            "american_odds": -195,
-            "context": "Mixed"
+            "american_odds": -195
           },
           {
             "player": "J.K. Dobbins",
             "market": "Rushing Yards",
             "threshold": 29.5,
             "hr": "10/10",
-            "american_odds": -403,
-            "context": "Supportive"
+            "american_odds": -403
           }
         ],
         "decimal_odds": 2.58241,
         "estimated_american_odds": 158,
-        "estimated_profit_per_100_stake": 158.24,
-        "calculation": "Multiply each leg's decimal odds; convert combined decimal odds to American odds. Mathematical estimate, not a quoted sportsbook price."
+        "estimated_profit_per_100_stake": 158.24
       },
-      "rationale": "Using up to three Stage 4 selected legs yields at most approximately +158 among the available selected-leg combinations, below target. Price-seeking does not weaken the individual-leg standard."
+      "rationale": "Best eligible three-leg combination is approximately +158, below target. Individual-leg standards are not relaxed."
     },
     {
       "type": "PRICE SEEKING — MEDIUM",
@@ -207,40 +197,35 @@
             "market": "Receiving Yards",
             "threshold": 69.5,
             "hr": "10/10",
-            "american_odds": -272,
-            "context": "Supportive"
+            "american_odds": -272
           },
           {
             "player": "Jaxon Smith-Njigba",
             "market": "Receptions",
             "threshold": 4.5,
             "hr": "10/10",
-            "american_odds": -531,
-            "context": "Supportive"
+            "american_odds": -531
           },
           {
             "player": "Cooper Kupp",
             "market": "Receiving Yards",
             "threshold": 14.5,
             "hr": "8/10",
-            "american_odds": -195,
-            "context": "Mixed"
+            "american_odds": -195
           },
           {
             "player": "J.K. Dobbins",
             "market": "Rushing Yards",
             "threshold": 29.5,
             "hr": "10/10",
-            "american_odds": -403,
-            "context": "Supportive"
+            "american_odds": -403
           }
         ],
         "decimal_odds": 3.06873,
         "estimated_american_odds": 207,
-        "estimated_profit_per_100_stake": 206.87,
-        "calculation": "Multiply each leg's decimal odds; convert combined decimal odds to American odds. Mathematical estimate, not a quoted sportsbook price."
+        "estimated_profit_per_100_stake": 206.87
       },
-      "rationale": "All four selected legs combine to approximately +207, below target. No eligible fifth leg exists in the locked Stage 4 selected set; not forcing construction."
+      "rationale": "All four Stage 4 selected legs combine to approximately +207, below target."
     },
     {
       "type": "PRICE SEEKING — HIGH",
@@ -255,52 +240,47 @@
             "market": "Receiving Yards",
             "threshold": 69.5,
             "hr": "10/10",
-            "american_odds": -272,
-            "context": "Supportive"
+            "american_odds": -272
           },
           {
             "player": "Jaxon Smith-Njigba",
             "market": "Receptions",
             "threshold": 4.5,
             "hr": "10/10",
-            "american_odds": -531,
-            "context": "Supportive"
+            "american_odds": -531
           },
           {
             "player": "Cooper Kupp",
             "market": "Receiving Yards",
             "threshold": 14.5,
             "hr": "8/10",
-            "american_odds": -195,
-            "context": "Mixed"
+            "american_odds": -195
           },
           {
             "player": "J.K. Dobbins",
             "market": "Rushing Yards",
             "threshold": 29.5,
             "hr": "10/10",
-            "american_odds": -403,
-            "context": "Supportive"
+            "american_odds": -403
           }
         ],
         "decimal_odds": 3.06873,
         "estimated_american_odds": 207,
-        "estimated_profit_per_100_stake": 206.87,
-        "calculation": "Multiply each leg's decimal odds; convert combined decimal odds to American odds. Mathematical estimate, not a quoted sportsbook price."
+        "estimated_profit_per_100_stake": 206.87
       },
-      "rationale": "Only four props were selected in Stage 4. Combining all four gives approximately +207; no fifth selected leg is available and no evidence standard is relaxed."
+      "rationale": "Only four Stage 4 selected legs are eligible. All four combine to approximately +207; no fifth selected leg exists."
     }
   ],
   "feasibility_diagnostics": {
-    "max_combined_odds_by_leg_count": {
+    "max_combined_odds": {
       "two_legs": 107,
       "three_legs": 158,
       "four_legs": 207
     },
     "notes": [
-      "Combined odds are mathematical estimates, not automatically a DraftKings quote.",
-      "Only Stage 4 SELECTED props were eligible for portfolio construction; not-selected props were not reintroduced.",
-      "No payout target was forced, and no individual-leg evidence threshold was relaxed."
+      "Combined odds are mathematical estimates, not a quoted sportsbook price.",
+      "Only Stage 4 SELECTED props were eligible; not-selected props were not reintroduced.",
+      "No payout target was forced and no leg evidence standard was relaxed."
     ]
   },
   "locked_prior_states": {
