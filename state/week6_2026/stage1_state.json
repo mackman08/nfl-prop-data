@@ -1979,5 +1979,20 @@
       "twenty_game_sample_count": 20,
       "qualifies": true
     }
-  ]
+  ],
+  "status": "INCOMPLETE_BLOCKED",
+  "authoritative_lock": false,
+  "blockers": [
+    "DraftKings fallback was used because no FanDuel rows exist for the in-scope game.",
+    "The sportsbook CSV does not designate which rows are main-market lines versus alternate lines.",
+    "The closest-to-minus-110 line rule is an operational proxy, not source-verified main-market identification; the 12 records therefore remain provisional and cannot be locked as a completed Stage 1."
+  ],
+  "validation": {
+    "persisted_and_reloadable": true,
+    "parent_stage0_state_validated": true,
+    "qualifying_records_present": 12,
+    "l10_observations_complete": true,
+    "main_market_lines_source_verified": false,
+    "stage_complete": false
+  }
 }
