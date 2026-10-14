@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "model_version": "V7.2.8",
+  "stage": 1,
+  "status": "INCOMPLETE_BLOCKED",
+  "state_id": "STATE-1-2026-W06-THU-L10-20261014",
+  "parent_stage0_state_id": "STATE-0-2026-W06-THU-L10-20261014",
+  "season": 2026,
+  "week": 6,
+  "slate": "Thursday only",
+  "game": "Seattle Seahawks at Denver Broncos",
+  "historical_sample": "L10",
+  "historical_cutoff_date": "2026-10-12",
+  "source_files": [
+    {
+      "path": "data/nfl_prop_model.txt",
+      "sha": "0c271f2b90196a491a1676ac6a51a8c5ac38c93c",
+      "bytes": 463253,
+      "player_records": 496
+    },
+    {
+      "path": "odds/nfl_player_props_latest.csv",
+      "sha": "841e4f450b6442a37c0887db9cc621b24adab8c9",
+      "rows": 2885,
+      "in_scope_game_rows": 354,
+      "in_scope_sportsbook": "DraftKings",
+      "fanduel_rows": 0
+    }
+  ],
+  "blockers": [
+    "Sportsbook CSV does not explicitly designate main market lines versus alternate lines.",
+    "Selecting a main line by proximity to -110 would be an assumption, not source-verified.",
+    "Stage 1 cannot be finalized or locked until the main-line identification requirement is satisfied."
+  ],
+  "provisional_screening": {
+    "status": "NOT_LOCKED_NOT_FOR_DOWNSTREAM_STAGES",
+    "qualifier_count": 12,
+    "method_note": "Provisional screening used the operational assumption of selecting the line whose over price was numerically closest to -110. These results are not authoritative and must not be used for Stage 2."
+  },
+  "persistence_note": "This file records the incomplete stage and blockers only; it does not certify Stage 1 completion.",
+  "created_at": "2026-10-14"
+}
