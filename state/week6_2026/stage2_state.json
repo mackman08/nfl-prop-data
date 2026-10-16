@@ -86,7 +86,7 @@
     "status": "completed"
   },
   "record_count": 89,
-  "state_id": "STATE-2-2026-W06-CUSTOM-SUN-BEFORE-1400-L10-20261016-R1",
+  "state_id": "STATE-2-2026-W06-CUSTOM-SUN-BEFORE-1400-L10-20261016-R2",
   "parent_state_id": "STATE-1-2026-W06-CUSTOM-SUN-BEFORE-1400-L10-20261016-R2",
   "source_snapshot": {
     "sportsbook": {
@@ -95,6 +95,17 @@
       "primary_sportsbook": "FanDuel",
       "rows_in_scope": 195,
       "alternate_rows_for_locked_shortlist": 0
+    },
+    "draftkings_fallback_check": {
+      "checked_at_utc": "2026-10-16",
+      "file_path": "odds/nfl_player_props_latest.csv",
+      "blob_sha": "740d6fa28afcee8646bdad4c0e295f16aebc0226",
+      "total_rows": 6759,
+      "draftkings_rows": 3746,
+      "draftkings_alternate_market_rows": 0,
+      "draftkings_alternate_market_names": [],
+      "result": "UNAVAILABLE",
+      "note": "The current source snapshot contains DraftKings main markets only (Passing Yards, Receiving Yards, Receptions, Rushing Yards, Rush + Receiving Yards). No DraftKings alternate-market rows were present for the locked Stage 1 shortlist; no DraftKings alternate lines or prices were substituted."
     }
   },
   "alternate_band_rule": {
@@ -142,7 +153,8 @@
         "core_available": 0,
         "stage3_candidates": 0
       }
-    }
+    },
+    "draftkings_fallback_check": "Performed at user request. No DraftKings alternate markets exist in the current odds snapshot; Stage 2 remains with zero qualifying CORE lines and zero Stage 3 context candidates."
   },
   "records": [
     {
