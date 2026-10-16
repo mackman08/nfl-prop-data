@@ -3,14 +3,74 @@
   "season": 2026,
   "week": 6,
   "scope": {
-    "analysis_scope": "Thursday only",
+    "analysis_scope": "Custom — Sunday games kicking off before 2:00 p.m. ET",
+    "timezone": "America/Toronto (Eastern Time)",
+    "date": "2026-10-18",
+    "kickoff_rule": "Include Sunday games with scheduled kickoff strictly earlier than 2:00 p.m. ET",
     "games": [
       {
-        "date": "2026-10-15",
-        "away_team": "Seattle Seahawks",
-        "away_abbreviation": "SEA",
-        "home_team": "Denver Broncos",
-        "home_abbreviation": "DEN"
+        "date": "2026-10-18",
+        "kickoff_et": "09:30",
+        "away_team": "Houston Texans",
+        "away_abbreviation": "HOU",
+        "home_team": "Jacksonville Jaguars",
+        "home_abbreviation": "JAX"
+      },
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "13:00",
+        "away_team": "Tennessee Titans",
+        "away_abbreviation": "TEN",
+        "home_team": "Indianapolis Colts",
+        "home_abbreviation": "IND"
+      },
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "13:00",
+        "away_team": "Carolina Panthers",
+        "away_abbreviation": "CAR",
+        "home_team": "Philadelphia Eagles",
+        "home_abbreviation": "PHI"
+      },
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "13:00",
+        "away_team": "Pittsburgh Steelers",
+        "away_abbreviation": "PIT",
+        "home_team": "Tampa Bay Buccaneers",
+        "home_abbreviation": "TB"
+      },
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "13:00",
+        "away_team": "Baltimore Ravens",
+        "away_abbreviation": "BAL",
+        "home_team": "Cleveland Browns",
+        "home_abbreviation": "CLE"
+      },
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "13:00",
+        "away_team": "New Orleans Saints",
+        "away_abbreviation": "NO",
+        "home_team": "New York Giants",
+        "home_abbreviation": "NYG"
+      },
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "13:00",
+        "away_team": "Chicago Bears",
+        "away_abbreviation": "CHI",
+        "home_team": "Atlanta Falcons",
+        "home_abbreviation": "ATL"
+      },
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "13:00",
+        "away_team": "New York Jets",
+        "away_abbreviation": "NYJ",
+        "home_team": "New England Patriots",
+        "home_abbreviation": "NE"
       }
     ]
   },
@@ -26,25 +86,15 @@
     "status": "completed"
   },
   "record_count": 1,
-  "state_id": "STATE-0-2026-W06-THU-L10-20261014",
+  "state_id": "STATE-0-2026-W06-CUSTOM-SUN-BEFORE-1400-L10-20261016",
   "parent_state_id": null,
   "records": [
     {
-      "analysis_scope": "Thursday only",
-      "season": 2026,
-      "week": 6,
-      "historical_sample_n": 10,
-      "historical_sample_label": "L10",
+      "analysis_scope": "Custom — Sunday games kicking off before 2:00 p.m. ET",
+      "historical_sample": "L10",
       "historical_cutoff": "2026-10-12",
-      "historical_source": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
-      "current_sportsbook_source": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv",
-      "game_scope": [
-        {
-          "date": "2026-10-15",
-          "away": "SEA",
-          "home": "DEN"
-        }
-      ]
+      "included_game_count": 8,
+      "excluded_rule": "Games kicking off at or after 2:00 p.m. ET are excluded."
     }
   ]
 }
