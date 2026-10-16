@@ -1,0 +1,23 @@
+{
+  "stage": 0,
+  "season": 2026,
+  "week": 7,
+  "scope": "Sunday games with scheduled kickoff before 2:00 PM Eastern Time",
+  "historical_sample": {
+    "label": "L20",
+    "n": 20
+  },
+  "historical_cutoff_rule": "Completion of the final scheduled game of Week 6, 2026",
+  "record_count": 1,
+  "state_id": "STATE-0-WEEK7-2026-SUN-BEFORE-1400-L20",
+  "parent_state_id": null,
+  "records": [
+    {
+      "analysis_scope": "NFL Week 7, 2026 Regular Season — Sunday games kicking off before 2:00 PM Eastern Time",
+      "historical_sample": "L20 — 20 most recent qualifying completed regular-season games",
+      "historical_data_source": "data/nfl_prop_model.txt",
+      "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
+      "sportsbook_priority": "FanDuel primary; DraftKings fallback only when specified"
+    }
+  ]
+}
