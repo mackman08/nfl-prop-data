@@ -75,9 +75,9 @@
     ]
   },
   "historical_sample": {
-    "label": "L10",
-    "n": 10,
-    "definition": "10 most recent completed regular-season games per player before the cutoff"
+    "label": "L20",
+    "n": 20,
+    "definition": "20 most recent qualifying completed regular-season games per player before the cutoff"
   },
   "historical_cutoff": {
     "rule": "Completion of the final scheduled game of Week 5",
@@ -86,15 +86,18 @@
     "status": "completed"
   },
   "record_count": 1,
-  "state_id": "STATE-0-2026-W06-CUSTOM-SUN-BEFORE-1400-L10-20261016",
+  "state_id": "STATE-0-2026-W06-CUSTOM-SUN-BEFORE-1400-L20-20261016",
   "parent_state_id": null,
   "records": [
     {
-      "analysis_scope": "Custom — Sunday games kicking off before 2:00 p.m. ET",
-      "historical_sample": "L10",
+      "analysis_scope": "NFL Week 6, 2026 Regular Season — Sunday games kicking off before 2:00 p.m. Eastern Time",
+      "historical_sample": "L20 — 20 most recent qualifying completed regular-season games",
       "historical_cutoff": "2026-10-12",
       "included_game_count": 8,
-      "excluded_rule": "Games kicking off at or after 2:00 p.m. ET are excluded."
+      "excluded_rule": "Games kicking off at or after 2:00 p.m. ET are excluded.",
+      "historical_data_source": "data/nfl_prop_model.txt",
+      "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
+      "sportsbook_priority": "FanDuel primary; DraftKings fallback only when specified"
     }
   ]
 }
