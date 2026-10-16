@@ -2,15 +2,15 @@
   "core_markets_by_sportsbook": {
     "DraftKings": {
       "Passing Yards": 629,
-      "Receiving Yards": 1328,
-      "Receptions": 814,
-      "Rushing Yards": 753
+      "Receiving Yards": 1452,
+      "Receptions": 895,
+      "Rushing Yards": 793
     },
     "FanDuel": {
       "Passing Yards": 26,
-      "Receiving Yards": 124,
-      "Receptions": 124,
-      "Rushing Yards": 68
+      "Receiving Yards": 131,
+      "Receptions": 131,
+      "Rushing Yards": 70
     }
   },
   "core_markets_present": [
@@ -77,20 +77,20 @@
     "Washington Commanders @ San Francisco 49ers"
   ],
   "markets": {
-    "Alt Passing Yards": 246,
-    "Alt Receiving Yards": 1214,
-    "Alt Receptions": 766,
-    "Alt Rushing Yards": 575,
+    "Alt Passing Yards": 245,
+    "Alt Receiving Yards": 1263,
+    "Alt Receptions": 803,
+    "Alt Rushing Yards": 594,
     "Passing Yards": 655,
-    "Receiving Yards": 1452,
-    "Receptions": 938,
-    "Rush + Receiving Yards": 367,
-    "Rushing Yards": 821
+    "Receiving Yards": 1583,
+    "Receptions": 1026,
+    "Rush + Receiving Yards": 404,
+    "Rushing Yards": 863
   },
   "sportsbooks": {
-    "DraftKings": 3891,
-    "FanDuel": 3143
+    "DraftKings": 4173,
+    "FanDuel": 3263
   },
-  "total_rows": 7034,
+  "total_rows": 7436,
   "validation_mode": "slate-size-agnostic"
 }
