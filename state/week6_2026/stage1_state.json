@@ -19,7 +19,7 @@
     "game": "Buffalo Bills at Los Angeles Rams",
     "status": "completed"
   },
-  "record_count": 14,
+  "record_count": 13,
   "state_id": "STATE-1-2026-W06-WAS-SF-L20-20261018-R1",
   "parent_state_id": "STATE-0-2026-W06-CUSTOM-WAS-SF-L20-20261018-R1",
   "source_snapshot": {
@@ -30,9 +30,10 @@
     "book_priority": "FanDuel primary; DraftKings fallback only if FanDuel unavailable"
   },
   "stage1_summary": {
-    "eligible_player_market_combinations_screened": 18,
-    "qualifying_player_market_combinations": 14,
-    "qualification_rule": "Current Market HR >=60% OR at least one applicable fixed ladder HR >=80%; L20 equivalents are >=12/20 or >=16/20."
+    "eligible_player_market_combinations_screened": 15,
+    "qualifying_player_market_combinations": 13,
+    "qualification_rule": "Current Market HR >=60% OR at least one applicable fixed ladder HR >=80%; L20 equivalents are >=12/20 or >=16/20.",
+    "market_scope": "Only QB Passing Yards, RB Rushing Yards, WR/TE Receiving Yards, and WR/TE Receptions."
   },
   "records": [
     {
@@ -638,211 +639,6 @@
         20,
         30,
         40
-      ],
-      "qualifies": true,
-      "status": "QUALIFIES"
-    },
-    {
-      "player": "Christian McCaffrey",
-      "team": "SF",
-      "position": "RB",
-      "player_id": "00-0033280",
-      "player_record": "C.McCaffrey",
-      "market": "Receiving Yards",
-      "L20": [
-        15,
-        18,
-        41,
-        43,
-        20,
-        34,
-        41,
-        29,
-        14,
-        21,
-        53,
-        40,
-        66,
-        67,
-        43,
-        72,
-        57,
-        82,
-        92,
-        88
-      ],
-      "game_ids": [
-        "2026_05_SF_SEA",
-        "2026_04_DEN_SF",
-        "2026_03_ARI_SF",
-        "2026_02_MIA_SF",
-        "2026_01_SF_LA",
-        "2025_18_SEA_SF",
-        "2025_17_CHI_SF",
-        "2025_16_SF_IND",
-        "2025_15_TEN_SF",
-        "2025_13_SF_CLE",
-        "2025_12_CAR_SF",
-        "2025_11_SF_ARI",
-        "2025_10_LA_SF",
-        "2025_09_SF_NYG",
-        "2025_08_SF_HOU",
-        "2025_07_ATL_SF",
-        "2025_06_SF_TB",
-        "2025_05_SF_LA",
-        "2025_04_JAX_SF",
-        "2025_03_ARI_SF"
-      ],
-      "game_weeks": [
-        {
-          "season": 2026,
-          "week": 5,
-          "game_id": "2026_05_SF_SEA"
-        },
-        {
-          "season": 2026,
-          "week": 4,
-          "game_id": "2026_04_DEN_SF"
-        },
-        {
-          "season": 2026,
-          "week": 3,
-          "game_id": "2026_03_ARI_SF"
-        },
-        {
-          "season": 2026,
-          "week": 2,
-          "game_id": "2026_02_MIA_SF"
-        },
-        {
-          "season": 2026,
-          "week": 1,
-          "game_id": "2026_01_SF_LA"
-        },
-        {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_SEA_SF"
-        },
-        {
-          "season": 2025,
-          "week": 17,
-          "game_id": "2025_17_CHI_SF"
-        },
-        {
-          "season": 2025,
-          "week": 16,
-          "game_id": "2025_16_SF_IND"
-        },
-        {
-          "season": 2025,
-          "week": 15,
-          "game_id": "2025_15_TEN_SF"
-        },
-        {
-          "season": 2025,
-          "week": 13,
-          "game_id": "2025_13_SF_CLE"
-        },
-        {
-          "season": 2025,
-          "week": 12,
-          "game_id": "2025_12_CAR_SF"
-        },
-        {
-          "season": 2025,
-          "week": 11,
-          "game_id": "2025_11_SF_ARI"
-        },
-        {
-          "season": 2025,
-          "week": 10,
-          "game_id": "2025_10_LA_SF"
-        },
-        {
-          "season": 2025,
-          "week": 9,
-          "game_id": "2025_09_SF_NYG"
-        },
-        {
-          "season": 2025,
-          "week": 8,
-          "game_id": "2025_08_SF_HOU"
-        },
-        {
-          "season": 2025,
-          "week": 7,
-          "game_id": "2025_07_ATL_SF"
-        },
-        {
-          "season": 2025,
-          "week": 6,
-          "game_id": "2025_06_SF_TB"
-        },
-        {
-          "season": 2025,
-          "week": 5,
-          "game_id": "2025_05_SF_LA"
-        },
-        {
-          "season": 2025,
-          "week": 4,
-          "game_id": "2025_04_JAX_SF"
-        },
-        {
-          "season": 2025,
-          "week": 3,
-          "game_id": "2025_03_ARI_SF"
-        }
-      ],
-      "current_market": {
-        "line": "38.5",
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_hr": "13/20",
-      "market_hits": 13,
-      "twenty_game_25P": 27,
-      "ladder": [
-        {
-          "threshold": 20,
-          "hit_count": 17,
-          "hr": "17/20"
-        },
-        {
-          "threshold": 30,
-          "hit_count": 14,
-          "hr": "14/20"
-        },
-        {
-          "threshold": 40,
-          "hit_count": 13,
-          "hr": "13/20"
-        },
-        {
-          "threshold": 50,
-          "hit_count": 8,
-          "hr": "8/20"
-        },
-        {
-          "threshold": 60,
-          "hit_count": 6,
-          "hr": "6/20"
-        },
-        {
-          "threshold": 75,
-          "hit_count": 3,
-          "hr": "3/20"
-        },
-        {
-          "threshold": 100,
-          "hit_count": 0,
-          "hr": "0/20"
-        }
-      ],
-      "qualifying_ladder_thresholds": [
-        20
       ],
       "qualifies": true,
       "status": "QUALIFIES"
