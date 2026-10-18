@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 585,
-      "Receiving Yards": 1649,
-      "Receptions": 1019,
-      "Rushing Yards": 907
+      "Passing Yards": 142,
+      "Receiving Yards": 485,
+      "Receptions": 303,
+      "Rushing Yards": 262
     },
     "FanDuel": {
-      "Passing Yards": 24,
-      "Receiving Yards": 148,
-      "Receptions": 147,
-      "Rushing Yards": 74
+      "Passing Yards": 10,
+      "Receiving Yards": 46,
+      "Receptions": 21,
+      "Rushing Yards": 24
     }
   },
   "core_markets_present": [
@@ -22,75 +22,43 @@
   "duplicates": 0,
   "event_ids": [
     "34118064",
-    "34118076",
     "34118080",
-    "34118081",
-    "34118086",
-    "34118108",
-    "34118154",
     "34118185",
-    "34118215",
     "34118242",
-    "34118244",
     "34118253",
-    "34118265",
-    "35605984",
     "36160495",
-    "36160507",
-    "36160508",
-    "36160509",
-    "36160510",
     "36160511",
-    "36160512",
     "36160513",
-    "36160514",
     "36160515",
-    "36160516",
     "36160524"
   ],
   "games": [
     "ARI Cardinals @ LA Rams",
     "Arizona Cardinals @ Los Angeles Rams",
-    "BAL Ravens @ CLE Browns",
     "BUF Bills @ LV Raiders",
-    "Baltimore Ravens @ Cleveland Browns",
     "Buffalo Bills @ Las Vegas Raiders",
-    "CAR Panthers @ PHI Eagles",
-    "CHI Bears @ ATL Falcons",
-    "Carolina Panthers @ Philadelphia Eagles",
-    "Chicago Bears @ Atlanta Falcons",
     "DAL Cowboys @ GB Packers",
     "Dallas Cowboys @ Green Bay Packers",
-    "HOU Texans @ JAX Jaguars",
-    "Houston Texans @ Jacksonville Jaguars",
     "LA Chargers @ KC Chiefs",
     "Los Angeles Chargers @ Kansas City Chiefs",
-    "NO Saints @ NY Giants",
-    "NY Jets @ NE Patriots",
-    "New Orleans Saints @ New York Giants",
-    "New York Jets @ New England Patriots",
-    "PIT Steelers @ TB Buccaneers",
-    "Pittsburgh Steelers @ Tampa Bay Buccaneers",
-    "TEN Titans @ IND Colts",
-    "Tennessee Titans @ Indianapolis Colts",
     "WAS Commanders @ SF 49ers",
     "Washington Commanders @ San Francisco 49ers"
   ],
   "markets": {
-    "Alt Passing Yards": 234,
-    "Alt Receiving Yards": 1473,
-    "Alt Receptions": 896,
-    "Alt Rushing Yards": 643,
-    "Passing Yards": 609,
-    "Receiving Yards": 1797,
-    "Receptions": 1166,
-    "Rush + Receiving Yards": 574,
-    "Rushing Yards": 981
+    "Alt Passing Yards": 70,
+    "Alt Receiving Yards": 414,
+    "Alt Receptions": 251,
+    "Alt Rushing Yards": 171,
+    "Passing Yards": 152,
+    "Receiving Yards": 531,
+    "Receptions": 324,
+    "Rush + Receiving Yards": 173,
+    "Rushing Yards": 286
   },
   "sportsbooks": {
-    "DraftKings": 4734,
-    "FanDuel": 3639
+    "DraftKings": 1365,
+    "FanDuel": 1007
   },
-  "total_rows": 8373,
+  "total_rows": 2372,
   "validation_mode": "slate-size-agnostic"
 }
