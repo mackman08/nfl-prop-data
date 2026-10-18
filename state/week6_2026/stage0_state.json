@@ -3,74 +3,42 @@
   "season": 2026,
   "week": 6,
   "scope": {
-    "analysis_scope": "Custom — Sunday games kicking off before 2:00 p.m. ET",
+    "analysis_scope": "Custom — Sunday games kicking off after 4:00 p.m. ET",
     "timezone": "America/Toronto (Eastern Time)",
     "date": "2026-10-18",
-    "kickoff_rule": "Include Sunday games with scheduled kickoff strictly earlier than 2:00 p.m. ET",
+    "kickoff_rule": "Include Sunday games with scheduled kickoff strictly later than 4:00 p.m. ET",
     "games": [
       {
         "date": "2026-10-18",
-        "kickoff_et": "09:30",
-        "away_team": "Houston Texans",
-        "away_abbreviation": "HOU",
-        "home_team": "Jacksonville Jaguars",
-        "home_abbreviation": "JAX"
+        "kickoff_et": "16:05",
+        "away_team": "Arizona Cardinals",
+        "away_abbreviation": "ARI",
+        "home_team": "Los Angeles Rams",
+        "home_abbreviation": "LAR"
       },
       {
         "date": "2026-10-18",
-        "kickoff_et": "13:00",
-        "away_team": "Tennessee Titans",
-        "away_abbreviation": "TEN",
-        "home_team": "Indianapolis Colts",
-        "home_abbreviation": "IND"
+        "kickoff_et": "16:25",
+        "away_team": "Los Angeles Chargers",
+        "away_abbreviation": "LAC",
+        "home_team": "Kansas City Chiefs",
+        "home_abbreviation": "KC"
       },
       {
         "date": "2026-10-18",
-        "kickoff_et": "13:00",
-        "away_team": "Carolina Panthers",
-        "away_abbreviation": "CAR",
-        "home_team": "Philadelphia Eagles",
-        "home_abbreviation": "PHI"
+        "kickoff_et": "16:25",
+        "away_team": "Buffalo Bills",
+        "away_abbreviation": "BUF",
+        "home_team": "Las Vegas Raiders",
+        "home_abbreviation": "LV"
       },
       {
         "date": "2026-10-18",
-        "kickoff_et": "13:00",
-        "away_team": "Pittsburgh Steelers",
-        "away_abbreviation": "PIT",
-        "home_team": "Tampa Bay Buccaneers",
-        "home_abbreviation": "TB"
-      },
-      {
-        "date": "2026-10-18",
-        "kickoff_et": "13:00",
-        "away_team": "Baltimore Ravens",
-        "away_abbreviation": "BAL",
-        "home_team": "Cleveland Browns",
-        "home_abbreviation": "CLE"
-      },
-      {
-        "date": "2026-10-18",
-        "kickoff_et": "13:00",
-        "away_team": "New Orleans Saints",
-        "away_abbreviation": "NO",
-        "home_team": "New York Giants",
-        "home_abbreviation": "NYG"
-      },
-      {
-        "date": "2026-10-18",
-        "kickoff_et": "13:00",
-        "away_team": "Chicago Bears",
-        "away_abbreviation": "CHI",
-        "home_team": "Atlanta Falcons",
-        "home_abbreviation": "ATL"
-      },
-      {
-        "date": "2026-10-18",
-        "kickoff_et": "13:00",
-        "away_team": "New York Jets",
-        "away_abbreviation": "NYJ",
-        "home_team": "New England Patriots",
-        "home_abbreviation": "NE"
+        "kickoff_et": "20:20",
+        "away_team": "Dallas Cowboys",
+        "away_abbreviation": "DAL",
+        "home_team": "Green Bay Packers",
+        "home_abbreviation": "GB"
       }
     ]
   },
@@ -86,15 +54,15 @@
     "status": "completed"
   },
   "record_count": 1,
-  "state_id": "STATE-0-2026-W06-CUSTOM-SUN-BEFORE-1400-L20-20261016",
+  "state_id": "STATE-0-2026-W06-CUSTOM-SUN-AFTER-1600-L20-20261018",
   "parent_state_id": null,
   "records": [
     {
-      "analysis_scope": "NFL Week 6, 2026 Regular Season — Sunday games kicking off before 2:00 p.m. Eastern Time",
+      "analysis_scope": "NFL Week 6, 2026 Regular Season — Sunday games kicking off after 4:00 p.m. Eastern Time",
       "historical_sample": "L20 — 20 most recent qualifying completed regular-season games",
       "historical_cutoff": "2026-10-12",
-      "included_game_count": 8,
-      "excluded_rule": "Games kicking off at or after 2:00 p.m. ET are excluded.",
+      "included_game_count": 4,
+      "excluded_rule": "Games kicking off at or before 4:00 p.m. ET are excluded.",
       "historical_data_source": "data/nfl_prop_model.txt",
       "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
       "sportsbook_priority": "FanDuel primary; DraftKings fallback only when specified"
