@@ -1,0 +1,56 @@
+{
+  "stage": 0,
+  "season": 2026,
+  "week": 6,
+  "scope": {
+    "analysis_scope": "Custom — Dallas Cowboys at Green Bay Packers on Sunday, October 18, 2026, and Washington Commanders at San Francisco 49ers on Monday, October 19, 2026",
+    "timezone": "America/Toronto (Eastern Time)",
+    "games": [
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "20:20",
+        "away_team": "Dallas Cowboys",
+        "away_abbreviation": "DAL",
+        "home_team": "Green Bay Packers",
+        "home_abbreviation": "GB"
+      },
+      {
+        "date": "2026-10-19",
+        "kickoff_et": "20:15",
+        "away_team": "Washington Commanders",
+        "away_abbreviation": "WAS",
+        "home_team": "San Francisco 49ers",
+        "home_abbreviation": "SF"
+      }
+    ]
+  },
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent qualifying completed regular-season games per player before the cutoff"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of the final scheduled game of Week 5",
+    "date": "2026-10-12",
+    "game": "Buffalo Bills at Los Angeles Rams",
+    "status": "reported in the existing repository Stage 0 artifact; not independently re-verified in this retry"
+  },
+  "record_count": 1,
+  "state_id": "STATE-0-2026-W06-CUSTOM-DAL-GB-WAS-SF-L10-20261018-R2",
+  "parent_state_id": null,
+  "records": [
+    {
+      "analysis_scope": "NFL Week 6, 2026 Regular Season — Dallas Cowboys at Green Bay Packers (Sunday, October 18, 8:20 p.m. ET) and Washington Commanders at San Francisco 49ers (Monday, October 19, 8:15 p.m. ET)",
+      "historical_sample": "L10 — 10 most recent qualifying completed regular-season games",
+      "historical_cutoff": "2026-10-12",
+      "included_game_count": 2,
+      "included_games": [
+        "DAL at GB (Sunday, October 18, 8:20 p.m. ET)",
+        "WAS at SF (Monday, October 19, 8:15 p.m. ET)"
+      ],
+      "historical_data_source": "data/nfl_prop_model.txt",
+      "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
+      "sportsbook_priority": "FanDuel primary; DraftKings fallback only when FanDuel data is unavailable for a required market."
+    }
+  ]
+}
