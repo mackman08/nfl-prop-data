@@ -54,7 +54,7 @@
     "status": "completed"
   },
   "record_count": 1,
-  "state_id": "STATE-0-2026-W06-CUSTOM-SUN-AFTER-1600-L20-20261018",
+  "state_id": "STATE-0-2026-W06-CUSTOM-SUN-AFTER-1600-L20-20261018-R1",
   "parent_state_id": null,
   "records": [
     {
@@ -62,10 +62,16 @@
       "historical_sample": "L20 — 20 most recent qualifying completed regular-season games",
       "historical_cutoff": "2026-10-12",
       "included_game_count": 4,
+      "included_games": [
+        "ARI at LAR (4:05 p.m. ET)",
+        "LAC at KC (4:25 p.m. ET)",
+        "BUF at LV (4:25 p.m. ET)",
+        "DAL at GB (8:20 p.m. ET)"
+      ],
       "excluded_rule": "Games kicking off at or before 4:00 p.m. ET are excluded.",
       "historical_data_source": "data/nfl_prop_model.txt",
       "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
-      "sportsbook_priority": "FanDuel primary; DraftKings fallback only when specified"
+      "sportsbook_priority": "FanDuel primary; DraftKings explicitly authorized as fallback for this run if FanDuel data is unavailable for a required market."
     }
   ]
 }
