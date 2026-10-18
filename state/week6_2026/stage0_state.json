@@ -3,42 +3,17 @@
   "season": 2026,
   "week": 6,
   "scope": {
-    "analysis_scope": "Custom — Sunday games kicking off after 4:00 p.m. ET",
+    "analysis_scope": "Custom — Monday, October 19 game only",
     "timezone": "America/Toronto (Eastern Time)",
-    "date": "2026-10-18",
-    "kickoff_rule": "Include Sunday games with scheduled kickoff strictly later than 4:00 p.m. ET",
+    "date": "2026-10-19",
     "games": [
       {
-        "date": "2026-10-18",
-        "kickoff_et": "16:05",
-        "away_team": "Arizona Cardinals",
-        "away_abbreviation": "ARI",
-        "home_team": "Los Angeles Rams",
-        "home_abbreviation": "LAR"
-      },
-      {
-        "date": "2026-10-18",
-        "kickoff_et": "16:25",
-        "away_team": "Los Angeles Chargers",
-        "away_abbreviation": "LAC",
-        "home_team": "Kansas City Chiefs",
-        "home_abbreviation": "KC"
-      },
-      {
-        "date": "2026-10-18",
-        "kickoff_et": "16:25",
-        "away_team": "Buffalo Bills",
-        "away_abbreviation": "BUF",
-        "home_team": "Las Vegas Raiders",
-        "home_abbreviation": "LV"
-      },
-      {
-        "date": "2026-10-18",
-        "kickoff_et": "20:20",
-        "away_team": "Dallas Cowboys",
-        "away_abbreviation": "DAL",
-        "home_team": "Green Bay Packers",
-        "home_abbreviation": "GB"
+        "date": "2026-10-19",
+        "kickoff_et": "20:15",
+        "away_team": "Washington Commanders",
+        "away_abbreviation": "WAS",
+        "home_team": "San Francisco 49ers",
+        "home_abbreviation": "SF"
       }
     ]
   },
@@ -54,24 +29,20 @@
     "status": "completed"
   },
   "record_count": 1,
-  "state_id": "STATE-0-2026-W06-CUSTOM-SUN-AFTER-1600-L20-20261018-R1",
+  "state_id": "STATE-0-2026-W06-CUSTOM-WAS-SF-L20-20261018-R1",
   "parent_state_id": null,
   "records": [
     {
-      "analysis_scope": "NFL Week 6, 2026 Regular Season — Sunday games kicking off after 4:00 p.m. Eastern Time",
+      "analysis_scope": "NFL Week 6, 2026 Regular Season — Monday, October 19 game only: Washington Commanders at San Francisco 49ers",
       "historical_sample": "L20 — 20 most recent qualifying completed regular-season games",
       "historical_cutoff": "2026-10-12",
-      "included_game_count": 4,
+      "included_game_count": 1,
       "included_games": [
-        "ARI at LAR (4:05 p.m. ET)",
-        "LAC at KC (4:25 p.m. ET)",
-        "BUF at LV (4:25 p.m. ET)",
-        "DAL at GB (8:20 p.m. ET)"
+        "WAS at SF (Monday, October 19, 8:15 p.m. ET)"
       ],
-      "excluded_rule": "Games kicking off at or before 4:00 p.m. ET are excluded.",
       "historical_data_source": "data/nfl_prop_model.txt",
       "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
-      "sportsbook_priority": "FanDuel primary; DraftKings explicitly authorized as fallback for this run if FanDuel data is unavailable for a required market."
+      "sportsbook_priority": "FanDuel primary; DraftKings fallback only when FanDuel data is unavailable for a required market."
     }
   ]
 }
