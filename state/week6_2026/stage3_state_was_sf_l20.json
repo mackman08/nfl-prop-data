@@ -1,0 +1,5271 @@
+{
+  "stage": 3,
+  "season": 2026,
+  "week": 6,
+  "scope": {
+    "analysis_scope": "NFL Week 6, 2026 Regular Season — Custom: Washington Commanders at San Francisco 49ers, Monday October 19, 2026, 8:15 p.m. ET",
+    "game": "WAS at SF",
+    "date": "2026-10-19",
+    "timezone": "America/Toronto"
+  },
+  "historical_sample": {
+    "label": "L20",
+    "n": 20,
+    "definition": "20 most recent qualifying completed regular-season games per player before the cutoff"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of the final scheduled game of Week 5",
+    "date": "2026-10-12",
+    "game": "Buffalo Bills at Los Angeles Rams",
+    "status": "completed"
+  },
+  "state_id": "STATE-3-2026-W06-CUSTOM-WAS-SF-L20-20261018-R2",
+  "parent_state_id": "STATE-2-2026-W06-CUSTOM-WAS-SF-L20-20261018-R1",
+  "status": "COMPLETE",
+  "completed_at": "2026-10-18",
+  "state_path": "state/week6_2026/stage3_state_was_sf_l20.json",
+  "source_snapshot": {
+    "stage1_state_path": "state/week6_2026/stage1_state.json",
+    "stage1_state_id": "STATE-1-2026-W06-WAS-SF-L20-20261018-R1",
+    "stage1_blob_sha": "6a25099c6d33e8fb652e7732f2641b303b462b9d",
+    "stage2_state_path": "state/week6_2026/stage2_state.json",
+    "stage2_state_id": "STATE-2-2026-W06-CUSTOM-WAS-SF-L20-20261018-R1",
+    "stage2_blob_sha": "1918c0a3a90ebd2d4f6f1165c03f4b231e995d3a",
+    "research_as_of": "2026-10-18",
+    "context_sources": [
+      {
+        "source": "NFL/Commanders official injury reporting",
+        "url": "https://www.nfl.com/news/nfl-week-6-injury-report-2026",
+        "notes": "Week 6 statuses for Daniels, Diggs, McLaurin, Evans, Kirk, Samuel and Bosa."
+      },
+      {
+        "source": "Commanders Week 6 depth chart",
+        "url": "https://www.commanders.com/news/commanders-release-2026-week-6-depth-chart",
+        "notes": "Starting roles for Daniels, Diggs, McLaurin and Okonkwo."
+      },
+      {
+        "source": "Commanders Week 5 stats/snaps",
+        "url": "https://www.commanders.com/news/commanders-giants-stats-snaps-week-5-2026",
+        "notes": "Week 5 passing, rushing, receiving and snap context."
+      },
+      {
+        "source": "Reuters Week 5 Jayden Daniels report",
+        "url": "https://www.reuters.com/sports/jayden-daniels-takes-blame-commanders-ot-clock-gaffe--flm-2026-10-12/",
+        "notes": "Daniels 199 passing yards and 103 rushing yards in his return."
+      },
+      {
+        "source": "49ers official Week 6 status",
+        "url": "https://www.49ers.com/news/kyle-juszczyk-available-deebo-ruled-out-vs-commanders-in-week-6-wasvssf",
+        "notes": "Deebo Samuel ruled out; Evans and Kirk status context."
+      },
+      {
+        "source": "Slate Stats player pages",
+        "url": "https://slatestats.com/nfl/players/",
+        "notes": "Current-season role, targets, carries, receptions, yards and snaps where available."
+      },
+      {
+        "source": "LineupExperts George Kittle game log",
+        "url": "https://www.lineupexperts.com/football/players/george-kittle/game-log",
+        "notes": "Week 1–5 targets, receptions and snaps."
+      },
+      {
+        "source": "49ers-Commanders matchup preview",
+        "url": "https://www.ninersnation.com/san-francisco-49ers-analysis/164371/3-things-to-watch-for-49ers-commanders-keep-jayden-daniels-in-the-pocket",
+        "notes": "Opponent matchup and Washington pass-protection concerns."
+      },
+      {
+        "source": "NFLWeather Levi's Stadium forecast",
+        "url": "https://www.nflweather.com/stadium/levi-s-stadium",
+        "notes": "Forecast described as mild with light wind and slight shower chance; recheck near kickoff."
+      }
+    ]
+  },
+  "record_count": 10,
+  "stage3_summary": {
+    "candidates_analyzed": 10,
+    "stage2_candidates_in": 10,
+    "overall_classification_counts": {
+      "Supportive": 2,
+      "Mixed": 5,
+      "Concern": 3
+    },
+    "historical_hr_changed": false,
+    "locked_L20_changed": false,
+    "stage2_alternate_structure_changed": false
+  },
+  "records": [
+    {
+      "player": "Jayden Daniels",
+      "team": "WAS",
+      "position": "QB",
+      "market": "Passing Yards",
+      "main_market": {
+        "line": "207.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel",
+        "market_hr": "9/20"
+      },
+      "locked_L20": [
+        199,
+        96,
+        164,
+        78,
+        153,
+        156,
+        211,
+        231,
+        200,
+        233,
+        38,
+        227,
+        258,
+        226,
+        206,
+        275,
+        191,
+        202,
+        209,
+        326
+      ],
+      "all_alternates": [
+        {
+          "threshold": 125,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -1200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 150,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -500,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 175,
+          "hit_count": 14,
+          "hr": "14/20",
+          "hit_rate": 0.7,
+          "american_odds": -260,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 200,
+          "hit_count": 12,
+          "hr": "12/20",
+          "hit_rate": 0.6,
+          "american_odds": -140,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 225,
+          "hit_count": 7,
+          "hr": "7/20",
+          "hit_rate": 0.35,
+          "american_odds": 132,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 250,
+          "hit_count": 3,
+          "hr": "3/20",
+          "hit_rate": 0.15,
+          "american_odds": 225,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 275,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 390,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 300,
+          "hit_count": 1,
+          "hr": "1/20",
+          "hit_rate": 0.05,
+          "american_odds": 640,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 325,
+          "hit_count": 1,
+          "hr": "1/20",
+          "hit_rate": 0.05,
+          "american_odds": 1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        },
+        {
+          "threshold": 350,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 1700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 150,
+        "hr": "17/20",
+        "american_odds": -500
+      },
+      "core": {
+        "threshold": 175,
+        "hr": "14/20",
+        "american_odds": -260
+      },
+      "ceiling": {
+        "threshold": 200,
+        "hr": "12/20",
+        "american_odds": -140
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 175+ Passing Yards",
+        "historical_hr": "14/20",
+        "floor": {
+          "threshold": 150,
+          "hr": "17/20",
+          "american_odds": -500
+        },
+        "core": {
+          "threshold": 175,
+          "hr": "14/20",
+          "american_odds": -260
+        },
+        "ceiling": {
+          "threshold": 200,
+          "hr": "12/20",
+          "american_odds": -140
+        },
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "QB1; Week 5 return produced 199 passing yards plus 103 rushing yards, sustaining overall offensive involvement."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "Week 5 was his first game back after missing two games with an elbow dislocation; passing yards exceeded 175 but sample is one game."
+          },
+          {
+            "factor": "Injury/status",
+            "classification": "Mixed",
+            "finding": "Reported full participation and no game designation; recent elbow dislocation remains relevant context."
+          },
+          {
+            "factor": "Opponent/pass rush/O-line",
+            "classification": "Concern",
+            "finding": "San Francisco defense is generally rated strongly and Washington's left-tackle situation raises pressure risk; Nick Bosa is out, partially offsetting this."
+          },
+          {
+            "factor": "Game script",
+            "classification": "Mixed",
+            "finding": "Washington could throw more if trailing, but pressure and offensive efficiency are countervailing risks."
+          }
+        ],
+        "overall_classification": "Mixed",
+        "final_selection_implication": "175+ has supportive L20 and he cleared it in Week 5, but this is only one post-elbow-injury game and Washington's protection is a concern."
+      }
+    },
+    {
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "main_market": {
+        "line": "59.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel",
+        "market_hr": "10/20"
+      },
+      "locked_L20": [
+        68,
+        52,
+        75,
+        23,
+        68,
+        23,
+        140,
+        117,
+        73,
+        53,
+        89,
+        81,
+        30,
+        106,
+        25,
+        129,
+        54,
+        57,
+        49,
+        52
+      ],
+      "all_alternates": [
+        {
+          "threshold": 30,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -1000,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 16,
+          "hr": "16/20",
+          "hit_rate": 0.8,
+          "american_odds": -400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 15,
+          "hr": "15/20",
+          "hit_rate": 0.75,
+          "american_odds": -205,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 10,
+          "hr": "10/20",
+          "hit_rate": 0.5,
+          "american_odds": -114,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 70,
+          "hit_count": 8,
+          "hr": "8/20",
+          "hit_rate": 0.4,
+          "american_odds": 144,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 80,
+          "hit_count": 6,
+          "hr": "6/20",
+          "hit_rate": 0.3,
+          "american_odds": 220,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 90,
+          "hit_count": 4,
+          "hr": "4/20",
+          "hit_rate": 0.2,
+          "american_odds": 320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 100,
+          "hit_count": 4,
+          "hr": "4/20",
+          "hit_rate": 0.2,
+          "american_odds": 490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 110,
+          "hit_count": 3,
+          "hr": "3/20",
+          "hit_rate": 0.15,
+          "american_odds": 700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        },
+        {
+          "threshold": 125,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 40,
+        "hr": "16/20",
+        "american_odds": -400
+      },
+      "core": {
+        "threshold": 50,
+        "hr": "15/20",
+        "american_odds": -205
+      },
+      "ceiling": {
+        "threshold": 60,
+        "hr": "10/20",
+        "american_odds": -114
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 50+ Rushing Yards",
+        "historical_hr": "15/20",
+        "floor": {
+          "threshold": 40,
+          "hr": "16/20",
+          "american_odds": -400
+        },
+        "core": {
+          "threshold": 50,
+          "hr": "15/20",
+          "american_odds": -205
+        },
+        "ceiling": {
+          "threshold": 60,
+          "hr": "10/20",
+          "american_odds": -114
+        },
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Primary back; 61 carries through five games (12.2/game), Week 5 had 11 carries for 68 yards and an 82% snap share."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "Week 1–5 rushing yards: 68, 23, 75, 52, 68; four of five reached 50+, but carry volume is relatively low."
+          },
+          {
+            "factor": "Opponent defense",
+            "classification": "Concern",
+            "finding": "Current matchup reports characterize Washington as stronger against the run than against the pass."
+          },
+          {
+            "factor": "Scheme/O-line",
+            "classification": "Supportive",
+            "finding": "San Francisco outside-zone/play-action scheme and offensive line are described as strengths."
+          },
+          {
+            "factor": "Game script",
+            "classification": "Supportive",
+            "finding": "San Francisco is favored; a lead could support late rushing volume, though script is uncertain."
+          }
+        ],
+        "overall_classification": "Mixed",
+        "final_selection_implication": "50+ is supported by primary-back role and four of five current-season games, but average carry volume is modest and Washington's run defense is a concern."
+      }
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": "41.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel",
+        "market_hr": "10/20"
+      },
+      "locked_L20": [
+        35,
+        33,
+        47,
+        55,
+        43,
+        101,
+        138,
+        26,
+        26,
+        20,
+        105,
+        46,
+        38,
+        14,
+        69,
+        28,
+        146,
+        101,
+        23,
+        32
+      ],
+      "all_alternates": [
+        {
+          "threshold": 15,
+          "hit_count": 19,
+          "hr": "19/20",
+          "hit_rate": 0.95,
+          "american_odds": -1000,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 20,
+          "hit_count": 19,
+          "hr": "19/20",
+          "hit_rate": 0.95,
+          "american_odds": -580,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 25,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -350,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 14,
+          "hr": "14/20",
+          "hit_rate": 0.7,
+          "american_odds": -245,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 10,
+          "hr": "10/20",
+          "hit_rate": 0.5,
+          "american_odds": -130,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 7,
+          "hr": "7/20",
+          "hit_rate": 0.35,
+          "american_odds": 134,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 6,
+          "hr": "6/20",
+          "hit_rate": 0.3,
+          "american_odds": 220,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 70,
+          "hit_count": 5,
+          "hr": "5/20",
+          "hit_rate": 0.25,
+          "american_odds": 320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 80,
+          "hit_count": 5,
+          "hr": "5/20",
+          "hit_rate": 0.25,
+          "american_odds": 490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 90,
+          "hit_count": 5,
+          "hr": "5/20",
+          "hit_rate": 0.25,
+          "american_odds": 700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 100,
+          "hit_count": 5,
+          "hr": "5/20",
+          "hit_rate": 0.25,
+          "american_odds": 920,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 110,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 1280,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 25,
+        "hr": "17/20",
+        "american_odds": -350
+      },
+      "core": {
+        "threshold": 30,
+        "hr": "14/20",
+        "american_odds": -245
+      },
+      "ceiling": {
+        "threshold": 40,
+        "hr": "10/20",
+        "american_odds": -130
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 30+ Receiving Yards",
+        "historical_hr": "14/20",
+        "floor": {
+          "threshold": 25,
+          "hr": "17/20",
+          "american_odds": -350
+        },
+        "core": {
+          "threshold": 30,
+          "hr": "14/20",
+          "american_odds": -245
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hr": "10/20",
+          "american_odds": -130
+        },
+        "factors": [
+          {
+            "factor": "Role/targets",
+            "classification": "Supportive",
+            "finding": "Starting WR; first four games averaged 4.5 catches, 42.5 yards and about 24% target share."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Mixed",
+            "finding": "Receiving yards in Weeks 1–4: 35, 33, 47, 55; current-season log lacks a Week 5 appearance and he is returning from a hamstring issue."
+          },
+          {
+            "factor": "Injury/status",
+            "classification": "Concern",
+            "finding": "Questionable with hamstring issue after missed/limited practices; active status and route load uncertain."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "49ers defense is strong overall, though Nick Bosa being out may ease pressure."
+          },
+          {
+            "factor": "Game script",
+            "classification": "Mixed",
+            "finding": "Potential trailing script may raise pass volume, but health and efficiency are key unknowns."
+          }
+        ],
+        "overall_classification": "Concern",
+        "final_selection_implication": "30+ has a favorable baseline when active, but hamstring status and uncertain workload dominate the current assessment."
+      }
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "position": "WR",
+      "market": "Receptions",
+      "main_market": {
+        "line": "4.5",
+        "over_price": "120",
+        "under_price": "-160",
+        "sportsbook": "FanDuel",
+        "market_hr": "9/20"
+      },
+      "locked_L20": [
+        5,
+        4,
+        5,
+        4,
+        3,
+        6,
+        9,
+        3,
+        3,
+        2,
+        9,
+        5,
+        3,
+        3,
+        7,
+        3,
+        10,
+        6,
+        3,
+        4
+      ],
+      "all_alternates": [
+        {
+          "threshold": 3,
+          "hit_count": 19,
+          "hr": "19/20",
+          "hit_rate": 0.95,
+          "american_odds": -470,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 12,
+          "hr": "12/20",
+          "hit_rate": 0.6,
+          "american_odds": -188,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 9,
+          "hr": "9/20",
+          "hit_rate": 0.45,
+          "american_odds": 118,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 6,
+          "hr": "6/20",
+          "hit_rate": 0.3,
+          "american_odds": 230,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 4,
+          "hr": "4/20",
+          "hit_rate": 0.2,
+          "american_odds": 410,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 3,
+          "hr": "3/20",
+          "hit_rate": 0.15,
+          "american_odds": 750,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 9,
+          "hit_count": 3,
+          "hr": "3/20",
+          "hit_rate": 0.15,
+          "american_odds": 1200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 3,
+        "hr": "19/20",
+        "american_odds": -470
+      },
+      "core": {
+        "threshold": 4,
+        "hr": "12/20",
+        "american_odds": -188
+      },
+      "ceiling": {
+        "threshold": 5,
+        "hr": "9/20",
+        "american_odds": 118
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 4+ Receptions",
+        "historical_hr": "12/20",
+        "floor": {
+          "threshold": 3,
+          "hr": "19/20",
+          "american_odds": -470
+        },
+        "core": {
+          "threshold": 4,
+          "hr": "12/20",
+          "american_odds": -188
+        },
+        "ceiling": {
+          "threshold": 5,
+          "hr": "9/20",
+          "american_odds": 118
+        },
+        "factors": [
+          {
+            "factor": "Role/targets",
+            "classification": "Supportive",
+            "finding": "Starting WR; 4.5 receptions on 7.75 targets per game in first four games, about 24% target share."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Mixed",
+            "finding": "Caught 4, 5, 4 and 5 passes in Weeks 1–4; Week 5 absence/current injury status interrupts the trend."
+          },
+          {
+            "factor": "Injury/status",
+            "classification": "Concern",
+            "finding": "Questionable after missed/limited practice; reception volume depends on being active and running a normal route load."
+          },
+          {
+            "factor": "Competition",
+            "classification": "Mixed",
+            "finding": "McLaurin is another starting receiver and Okonkwo had six targets in Week 5; target distribution may vary."
+          }
+        ],
+        "overall_classification": "Concern",
+        "final_selection_implication": "4+ receptions fits his role when healthy, but Core L20 is 12/20 and the hamstring designation creates material workload uncertainty."
+      }
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": "45.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel",
+        "market_hr": "16/20"
+      },
+      "locked_L20": [
+        62,
+        77,
+        50,
+        14,
+        57,
+        63,
+        53,
+        69,
+        41,
+        96,
+        54,
+        74,
+        48,
+        27,
+        62,
+        5,
+        60,
+        73,
+        73,
+        102
+      ],
+      "all_alternates": [
+        {
+          "threshold": 15,
+          "hit_count": 18,
+          "hr": "18/20",
+          "hit_rate": 0.9,
+          "american_odds": -1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 20,
+          "hit_count": 18,
+          "hr": "18/20",
+          "hit_rate": 0.9,
+          "american_odds": -600,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 25,
+          "hit_count": 18,
+          "hr": "18/20",
+          "hit_rate": 0.9,
+          "american_odds": -400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -280,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -158,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 15,
+          "hr": "15/20",
+          "hit_rate": 0.75,
+          "american_odds": 104,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 11,
+          "hr": "11/20",
+          "hit_rate": 0.55,
+          "american_odds": 164,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 70,
+          "hit_count": 6,
+          "hr": "6/20",
+          "hit_rate": 0.3,
+          "american_odds": 235,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 80,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 350,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 90,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 100,
+          "hit_count": 1,
+          "hr": "1/20",
+          "hit_rate": 0.05,
+          "american_odds": 700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 110,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 920,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 125,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 1400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 25,
+        "hr": "18/20",
+        "american_odds": -400
+      },
+      "core": {
+        "threshold": 30,
+        "hr": "17/20",
+        "american_odds": -280
+      },
+      "ceiling": {
+        "threshold": 40,
+        "hr": "17/20",
+        "american_odds": -158
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 30+ Receiving Yards",
+        "historical_hr": "17/20",
+        "floor": {
+          "threshold": 25,
+          "hr": "18/20",
+          "american_odds": -400
+        },
+        "core": {
+          "threshold": 30,
+          "hr": "17/20",
+          "american_odds": -280
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hr": "17/20",
+          "american_odds": -158
+        },
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Starting WR; Week 5 he caught all four targets for 62 yards after returning from a hamstring issue."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Supportive",
+            "finding": "Yards in four appearances: 14, 50, 77, 62; three straight appearances at 50+."
+          },
+          {
+            "factor": "Injury/status",
+            "classification": "Mixed",
+            "finding": "Cleared for Week 6 after a recent hamstring issue; Week 5 return was productive but recent."
+          },
+          {
+            "factor": "Opponent/O-line",
+            "classification": "Mixed",
+            "finding": "49ers defense is strong overall and Washington's left-tackle situation may invite pressure; trailing script may raise pass attempts."
+          },
+          {
+            "factor": "Competition",
+            "classification": "Mixed",
+            "finding": "Diggs has a meaningful share if active and Okonkwo drew six Week 5 targets, so allocation may fluctuate."
+          }
+        ],
+        "overall_classification": "Supportive",
+        "final_selection_implication": "30+ has strong locked L20 support and a productive Week 5 return; main caveats are limited target volume in that game and a tough overall opponent."
+      }
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "position": "WR",
+      "market": "Receptions",
+      "main_market": {
+        "line": "3.5",
+        "over_price": "-130",
+        "under_price": "-102",
+        "sportsbook": "FanDuel",
+        "market_hr": "11/20"
+      },
+      "locked_L20": [
+        4,
+        6,
+        2,
+        2,
+        4,
+        5,
+        3,
+        3,
+        3,
+        7,
+        3,
+        3,
+        5,
+        2,
+        8,
+        1,
+        5,
+        7,
+        8,
+        5
+      ],
+      "all_alternates": [
+        {
+          "threshold": 2,
+          "hit_count": 19,
+          "hr": "19/20",
+          "hit_rate": 0.95,
+          "american_odds": -1200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 16,
+          "hr": "16/20",
+          "hit_rate": 0.8,
+          "american_odds": -320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 11,
+          "hr": "11/20",
+          "hit_rate": 0.55,
+          "american_odds": -130,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 9,
+          "hr": "9/20",
+          "hit_rate": 0.45,
+          "american_odds": 168,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 5,
+          "hr": "5/20",
+          "hit_rate": 0.25,
+          "american_odds": 320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 4,
+          "hr": "4/20",
+          "hit_rate": 0.2,
+          "american_odds": 630,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 2,
+        "hr": "19/20",
+        "american_odds": -1200
+      },
+      "core": {
+        "threshold": 3,
+        "hr": "16/20",
+        "american_odds": -320
+      },
+      "ceiling": {
+        "threshold": 4,
+        "hr": "11/20",
+        "american_odds": -130
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 3+ Receptions",
+        "historical_hr": "16/20",
+        "floor": {
+          "threshold": 2,
+          "hr": "19/20",
+          "american_odds": -1200
+        },
+        "core": {
+          "threshold": 3,
+          "hr": "16/20",
+          "american_odds": -320
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hr": "11/20",
+          "american_odds": -130
+        },
+        "factors": [
+          {
+            "factor": "Role/targets",
+            "classification": "Supportive",
+            "finding": "Starting WR; 4 catches on 4 targets in Week 5, following 6 catches on 9 targets in Week 3."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Mixed",
+            "finding": "Receptions in four appearances: 2, 2, 6, 4; reached 3+ in the last two but not the first two."
+          },
+          {
+            "factor": "Injury/status",
+            "classification": "Mixed",
+            "finding": "Cleared after a recent hamstring issue; monitor whether target volume stays limited."
+          },
+          {
+            "factor": "Competition",
+            "classification": "Mixed",
+            "finding": "Diggs and Okonkwo can absorb targets depending on health and game plan."
+          }
+        ],
+        "overall_classification": "Supportive",
+        "final_selection_implication": "3+ is supported by the latest two games and L20 history, though his earlier low-target games show catch volume can vary."
+      }
+    },
+    {
+      "player": "Mike Evans",
+      "team": "SF",
+      "position": "WR",
+      "market": "Receptions",
+      "main_market": {
+        "line": "5.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel",
+        "market_hr": "7/20"
+      },
+      "locked_L20": [
+        7,
+        5,
+        3,
+        3,
+        6,
+        2,
+        3,
+        5,
+        6,
+        0,
+        4,
+        5,
+        5,
+        9,
+        8,
+        5,
+        9,
+        4,
+        8,
+        5
+      ],
+      "all_alternates": [
+        {
+          "threshold": 4,
+          "hit_count": 15,
+          "hr": "15/20",
+          "hit_rate": 0.75,
+          "american_odds": -580,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 13,
+          "hr": "13/20",
+          "hit_rate": 0.65,
+          "american_odds": -245,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 7,
+          "hr": "7/20",
+          "hit_rate": 0.35,
+          "american_odds": -114,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 5,
+          "hr": "5/20",
+          "hit_rate": 0.25,
+          "american_odds": 164,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 4,
+          "hr": "4/20",
+          "hit_rate": 0.2,
+          "american_odds": 290,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 9,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 520,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 10,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 880,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 11,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 1280,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 4,
+        "hr": "15/20",
+        "american_odds": -580
+      },
+      "core": {
+        "threshold": 5,
+        "hr": "13/20",
+        "american_odds": -245
+      },
+      "ceiling": {
+        "threshold": 6,
+        "hr": "7/20",
+        "american_odds": -114
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 5+ Receptions",
+        "historical_hr": "13/20",
+        "floor": {
+          "threshold": 4,
+          "hr": "15/20",
+          "american_odds": -580
+        },
+        "core": {
+          "threshold": 5,
+          "hr": "13/20",
+          "american_odds": -245
+        },
+        "ceiling": {
+          "threshold": 6,
+          "hr": "7/20",
+          "american_odds": -114
+        },
+        "factors": [
+          {
+            "factor": "Role/targets",
+            "classification": "Supportive",
+            "finding": "Starting WR1; season-to-date around 4.8 catches on 6.8 targets per game and 24.5% target share reported."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Supportive",
+            "finding": "Week 5: 7 catches on 10 targets; Week 4: 5 catches on 8 targets."
+          },
+          {
+            "factor": "Injury/status",
+            "classification": "Concern",
+            "finding": "Questionable with ribs/Achilles issues and missed practice; workload is unresolved."
+          },
+          {
+            "factor": "Competition/receiver room",
+            "classification": "Mixed",
+            "finding": "Deebo Samuel ruled out and Christian Kirk questionable may concentrate targets if Evans plays; not guaranteed."
+          },
+          {
+            "factor": "Game script",
+            "classification": "Mixed",
+            "finding": "A San Francisco lead could reduce pass volume, potentially offset by receiver absences."
+          }
+        ],
+        "overall_classification": "Concern",
+        "final_selection_implication": "Recent usage supports 5+ when active, but questionable status for ribs/Achilles makes availability and workload the deciding uncertainty."
+      }
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "position": "TE",
+      "market": "Receptions",
+      "main_market": {
+        "line": "5.5",
+        "over_price": "102",
+        "under_price": "-136",
+        "sportsbook": "FanDuel",
+        "market_hr": "8/20"
+      },
+      "locked_L20": [
+        5,
+        4,
+        6,
+        4,
+        2,
+        5,
+        7,
+        8,
+        4,
+        6,
+        6,
+        9,
+        4,
+        4,
+        0,
+        4,
+        2,
+        8,
+        8,
+        4
+      ],
+      "all_alternates": [
+        {
+          "threshold": 3,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -1450,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -450,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 10,
+          "hr": "10/20",
+          "hit_rate": 0.5,
+          "american_odds": -205,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 8,
+          "hr": "8/20",
+          "hit_rate": 0.4,
+          "american_odds": 100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 5,
+          "hr": "5/20",
+          "hit_rate": 0.25,
+          "american_odds": 188,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 8,
+          "hit_count": 4,
+          "hr": "4/20",
+          "hit_rate": 0.2,
+          "american_odds": 320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 9,
+          "hit_count": 1,
+          "hr": "1/20",
+          "hit_rate": 0.05,
+          "american_odds": 580,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 10,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 920,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 11,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 1400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 4,
+        "hr": "17/20",
+        "american_odds": -450
+      },
+      "core": {
+        "threshold": 5,
+        "hr": "10/20",
+        "american_odds": -205
+      },
+      "ceiling": {
+        "threshold": 6,
+        "hr": "8/20",
+        "american_odds": 100
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 5+ Receptions",
+        "historical_hr": "10/20",
+        "floor": {
+          "threshold": 4,
+          "hr": "17/20",
+          "american_odds": -450
+        },
+        "core": {
+          "threshold": 5,
+          "hr": "10/20",
+          "american_odds": -205
+        },
+        "ceiling": {
+          "threshold": 6,
+          "hr": "8/20",
+          "american_odds": 100
+        },
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "TE1; 21 catches on 28 targets through Week 5 and reported 92% snap share in Week 5."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Mixed",
+            "finding": "Receptions Weeks 1–5: 2, 4, 6, 4, 5; three of five reached 5+."
+          },
+          {
+            "factor": "Competition/receiver room",
+            "classification": "Supportive",
+            "finding": "Deebo Samuel is out and Evans/Kirk are questionable, potentially concentrating targets."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Washington is reported stronger against run than pass, but outcomes remain uncertain."
+          },
+          {
+            "factor": "Game script",
+            "classification": "Mixed",
+            "finding": "A lead could reduce passing volume; receiver absences could counteract this."
+          }
+        ],
+        "overall_classification": "Mixed",
+        "final_selection_implication": "Full-time role supports involvement, but 5+ catches occurred in only three of five current-season games and Core L20 is 10/20; Floor is more historically reliable."
+      }
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "team": "WAS",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": "25.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel",
+        "market_hr": "12/20"
+      },
+      "locked_L20": [
+        60,
+        5,
+        16,
+        2,
+        55,
+        44,
+        33,
+        20,
+        29,
+        40,
+        56,
+        10,
+        53,
+        0,
+        46,
+        48,
+        4,
+        66,
+        35,
+        19
+      ],
+      "all_alternates": [
+        {
+          "threshold": 5,
+          "hit_count": 17,
+          "hr": "17/20",
+          "hit_rate": 0.85,
+          "american_odds": -1450,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 10,
+          "hit_count": 16,
+          "hr": "16/20",
+          "hit_rate": 0.8,
+          "american_odds": -580,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 15,
+          "hit_count": 15,
+          "hr": "15/20",
+          "hit_rate": 0.75,
+          "american_odds": -320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 20,
+          "hit_count": 13,
+          "hr": "13/20",
+          "hit_rate": 0.65,
+          "american_odds": -194,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 25,
+          "hit_count": 12,
+          "hr": "12/20",
+          "hit_rate": 0.6,
+          "american_odds": -125,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 30,
+          "hit_count": 11,
+          "hr": "11/20",
+          "hit_rate": 0.55,
+          "american_odds": 118,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 40,
+          "hit_count": 9,
+          "hr": "9/20",
+          "hit_rate": 0.45,
+          "american_odds": 225,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 50,
+          "hit_count": 5,
+          "hr": "5/20",
+          "hit_rate": 0.25,
+          "american_odds": 400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 60,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 640,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 70,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 920,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        },
+        {
+          "threshold": 80,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 1500,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 15,
+        "hr": "15/20",
+        "american_odds": -320
+      },
+      "core": {
+        "threshold": 20,
+        "hr": "13/20",
+        "american_odds": -194
+      },
+      "ceiling": {
+        "threshold": 25,
+        "hr": "12/20",
+        "american_odds": -125
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 20+ Receiving Yards",
+        "historical_hr": "13/20",
+        "floor": {
+          "threshold": 15,
+          "hr": "15/20",
+          "american_odds": -320
+        },
+        "core": {
+          "threshold": 20,
+          "hr": "13/20",
+          "american_odds": -194
+        },
+        "ceiling": {
+          "threshold": 25,
+          "hr": "12/20",
+          "american_odds": -125
+        },
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Starting TE; Week 5 played 71% of snaps and caught 4 of 6 targets for 60 yards."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Mixed",
+            "finding": "Three 2026 appearances show 16, 5 and 60 receiving yards; Week 5 is a marked rebound but sample is small."
+          },
+          {
+            "factor": "Injury/status",
+            "classification": "Mixed",
+            "finding": "No current Week 6 designation surfaced in reviewed official report results, but he missed games earlier this season."
+          },
+          {
+            "factor": "Competition",
+            "classification": "Mixed",
+            "finding": "McLaurin and Diggs are starting receivers; Diggs status could change target distribution."
+          },
+          {
+            "factor": "Opponent/game script",
+            "classification": "Mixed",
+            "finding": "Trailing script may increase passing volume, but 49ers defense and Washington protection concerns may reduce efficiency."
+          }
+        ],
+        "overall_classification": "Mixed",
+        "final_selection_implication": "20+ has a useful Week 5 role/production rebound, but the three-game season sample is volatile and locked Core HR is 13/20."
+      }
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "team": "WAS",
+      "position": "TE",
+      "market": "Receptions",
+      "main_market": {
+        "line": "2.5",
+        "over_price": "-158",
+        "under_price": "118",
+        "sportsbook": "FanDuel",
+        "market_hr": "13/20"
+      },
+      "locked_L20": [
+        4,
+        2,
+        2,
+        2,
+        3,
+        6,
+        4,
+        2,
+        4,
+        3,
+        3,
+        2,
+        4,
+        0,
+        6,
+        4,
+        1,
+        5,
+        4,
+        3
+      ],
+      "all_alternates": [
+        {
+          "threshold": 2,
+          "hit_count": 18,
+          "hr": "18/20",
+          "hit_rate": 0.9,
+          "american_odds": -490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 3,
+          "hit_count": 13,
+          "hr": "13/20",
+          "hit_rate": 0.65,
+          "american_odds": -160,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 4,
+          "hit_count": 9,
+          "hr": "9/20",
+          "hit_rate": 0.45,
+          "american_odds": 154,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 5,
+          "hit_count": 3,
+          "hr": "3/20",
+          "hit_rate": 0.15,
+          "american_odds": 320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 6,
+          "hit_count": 2,
+          "hr": "2/20",
+          "hit_rate": 0.1,
+          "american_odds": 640,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        },
+        {
+          "threshold": 7,
+          "hit_count": 0,
+          "hr": "0/20",
+          "hit_rate": 0,
+          "american_odds": 1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions"
+        }
+      ],
+      "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+      "floor": {
+        "threshold": 2,
+        "hr": "18/20",
+        "american_odds": -490
+      },
+      "core": {
+        "threshold": 3,
+        "hr": "13/20",
+        "american_odds": -160
+      },
+      "ceiling": {
+        "threshold": 4,
+        "hr": "9/20",
+        "american_odds": 154
+      },
+      "core_status": "SELECTED",
+      "stage3_candidate": true,
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context.",
+      "stage3_context": {
+        "selected_market": "Over 3+ Receptions",
+        "historical_hr": "13/20",
+        "floor": {
+          "threshold": 2,
+          "hr": "18/20",
+          "american_odds": -490
+        },
+        "core": {
+          "threshold": 3,
+          "hr": "13/20",
+          "american_odds": -160
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hr": "9/20",
+          "american_odds": 154
+        },
+        "factors": [
+          {
+            "factor": "Role/targets",
+            "classification": "Supportive",
+            "finding": "Starting TE with six targets and four catches in Week 5; 71% snap share."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Mixed",
+            "finding": "Receptions in three appearances: 2, 2, 4; only one game at 3+, although latest usage increased."
+          },
+          {
+            "factor": "Injury/status",
+            "classification": "Mixed",
+            "finding": "No Week 6 designation found in reviewed results, but he missed two of the first five weeks."
+          },
+          {
+            "factor": "Competition",
+            "classification": "Mixed",
+            "finding": "Starting receivers and play-calling can shift TE targets; Diggs's status may alter distribution."
+          },
+          {
+            "factor": "Game script",
+            "classification": "Mixed",
+            "finding": "Underdog script could support passing volume, while protection and offensive consistency remain concerns."
+          }
+        ],
+        "overall_classification": "Mixed",
+        "final_selection_implication": "3+ benefits from the latest six-target game and strong locked Floor HR, but current-season receptions are inconsistent and Core HR is 13/20."
+      }
+    }
+  ],
+  "locked_stage2_state_snapshot": {
+    "stage": 2,
+    "season": 2026,
+    "week": 6,
+    "scope": {
+      "analysis_scope": "NFL Week 6, 2026 Regular Season — Custom: Washington Commanders at San Francisco 49ers, Monday October 19, 2026, 8:15 p.m. ET",
+      "game": "WAS at SF",
+      "date": "2026-10-19",
+      "timezone": "America/Toronto"
+    },
+    "historical_sample": {
+      "label": "L20",
+      "n": 20,
+      "definition": "20 most recent qualifying completed regular-season games per player before the cutoff"
+    },
+    "historical_cutoff": {
+      "rule": "Completion of the final scheduled game of Week 5",
+      "date": "2026-10-12",
+      "game": "Buffalo Bills at Los Angeles Rams",
+      "status": "completed"
+    },
+    "record_count": 13,
+    "state_id": "STATE-2-2026-W06-CUSTOM-WAS-SF-L20-20261018-R1",
+    "parent_state_id": "STATE-1-2026-W06-WAS-SF-L20-20261018-R1",
+    "source_snapshot": {
+      "historical_source": "locked Stage 1 State only",
+      "stage1_state_path": "state/week6_2026/stage1_state.json",
+      "stage1_content_sha": "6a25099c6d33e8fb652e7732f2641b303b462b9d",
+      "alternate_odds_path": "odds/nfl_player_props_latest.csv",
+      "alternate_odds_blob_sha": "fa05dd3cc515f479199827905c74a78a0c3de173",
+      "sportsbook": "FanDuel",
+      "scope_filter": "Washington Commanders at San Francisco 49ers"
+    },
+    "stage2_summary": {
+      "stage1_records_in": 13,
+      "stage1_records_analyzed": 13,
+      "fanDuel_alternate_rows_for_game": 213,
+      "records_with_core": 13,
+      "records_without_core": 0,
+      "stage3_candidates": 10,
+      "excluded": 3,
+      "candidate_rule": "Carry forward a player/market when at least one selected Floor/Core/Ceiling band has L20 HR ≥70% (14/20), matching the historical materiality screen; this is descriptive, not predictive."
+    },
+    "validation": {
+      "stage1_state_valid": true,
+      "exact_locked_stage1_universe_used": true,
+      "exact_locked_L20_used": true,
+      "stage1_qualification_status_preserved": true,
+      "current_fanduel_alternate_data_used": true,
+      "line_movement_and_cross_book_analysis_excluded": true,
+      "detailed_current_week_context_performed": false,
+      "stage1_state_changed": false
+    },
+    "records": [
+      {
+        "player": "Brock Purdy",
+        "team": "SF",
+        "position": "QB",
+        "market": "Passing Yards",
+        "main_market": {
+          "line": "246.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "10/20"
+        },
+        "locked_L20": [
+          189,
+          218,
+          297,
+          287,
+          205,
+          127,
+          303,
+          295,
+          295,
+          168,
+          193,
+          200,
+          309,
+          277,
+          377,
+          313,
+          142,
+          325,
+          94,
+          159
+        ],
+        "all_alternates": [
+          {
+            "threshold": 175,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": -750,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 200,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -360,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 225,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -200,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 250,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -106,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 275,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": 172,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 300,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 290,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 325,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 520,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 350,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 850,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 375,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 1280,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 200,
+          "hr": "13/20",
+          "american_odds": -360
+        },
+        "core": {
+          "threshold": 225,
+          "hr": "10/20",
+          "american_odds": -200
+        },
+        "ceiling": {
+          "threshold": 250,
+          "hr": "10/20",
+          "american_odds": -106
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": false,
+        "stage3_candidate_rationale": "No selected Floor/Core/Ceiling band reaches 14/20; exclude from Stage 3 context set under the historical materiality screen."
+      },
+      {
+        "player": "Jayden Daniels",
+        "team": "WAS",
+        "position": "QB",
+        "market": "Passing Yards",
+        "main_market": {
+          "line": "207.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "9/20"
+        },
+        "locked_L20": [
+          199,
+          96,
+          164,
+          78,
+          153,
+          156,
+          211,
+          231,
+          200,
+          233,
+          38,
+          227,
+          258,
+          226,
+          206,
+          275,
+          191,
+          202,
+          209,
+          326
+        ],
+        "all_alternates": [
+          {
+            "threshold": 125,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1200,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 150,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -500,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 175,
+            "hit_count": 14,
+            "hr": "14/20",
+            "hit_rate": 0.7,
+            "american_odds": -260,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 200,
+            "hit_count": 12,
+            "hr": "12/20",
+            "hit_rate": 0.6,
+            "american_odds": -140,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 225,
+            "hit_count": 7,
+            "hr": "7/20",
+            "hit_rate": 0.35,
+            "american_odds": 132,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 250,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 225,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 275,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 390,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 300,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 640,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 325,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 350,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1700,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 150,
+          "hr": "17/20",
+          "american_odds": -500
+        },
+        "core": {
+          "threshold": 175,
+          "hr": "14/20",
+          "american_odds": -260
+        },
+        "ceiling": {
+          "threshold": 200,
+          "hr": "12/20",
+          "american_odds": -140
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Christian McCaffrey",
+        "team": "SF",
+        "position": "RB",
+        "market": "Rushing Yards",
+        "main_market": {
+          "line": "59.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "10/20"
+        },
+        "locked_L20": [
+          68,
+          52,
+          75,
+          23,
+          68,
+          23,
+          140,
+          117,
+          73,
+          53,
+          89,
+          81,
+          30,
+          106,
+          25,
+          129,
+          54,
+          57,
+          49,
+          52
+        ],
+        "all_alternates": [
+          {
+            "threshold": 30,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1000,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 16,
+            "hr": "16/20",
+            "hit_rate": 0.8,
+            "american_odds": -400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": -205,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -114,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 8,
+            "hr": "8/20",
+            "hit_rate": 0.4,
+            "american_odds": 144,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 220,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 90,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 100,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 490,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 110,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 700,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 125,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 40,
+          "hr": "16/20",
+          "american_odds": -400
+        },
+        "core": {
+          "threshold": 50,
+          "hr": "15/20",
+          "american_odds": -205
+        },
+        "ceiling": {
+          "threshold": 60,
+          "hr": "10/20",
+          "american_odds": -114
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Stefon Diggs",
+        "team": "WAS",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "main_market": {
+          "line": "41.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "10/20"
+        },
+        "locked_L20": [
+          35,
+          33,
+          47,
+          55,
+          43,
+          101,
+          138,
+          26,
+          26,
+          20,
+          105,
+          46,
+          38,
+          14,
+          69,
+          28,
+          146,
+          101,
+          23,
+          32
+        ],
+        "all_alternates": [
+          {
+            "threshold": 15,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -1000,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 20,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -580,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 25,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -350,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 30,
+            "hit_count": 14,
+            "hr": "14/20",
+            "hit_rate": 0.7,
+            "american_odds": -245,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -130,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 7,
+            "hr": "7/20",
+            "hit_rate": 0.35,
+            "american_odds": 134,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 220,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 490,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 90,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 700,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 100,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 920,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 110,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 1280,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 25,
+          "hr": "17/20",
+          "american_odds": -350
+        },
+        "core": {
+          "threshold": 30,
+          "hr": "14/20",
+          "american_odds": -245
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hr": "10/20",
+          "american_odds": -130
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Stefon Diggs",
+        "team": "WAS",
+        "position": "WR",
+        "market": "Receptions",
+        "main_market": {
+          "line": "4.5",
+          "over_price": "120",
+          "under_price": "-160",
+          "sportsbook": "FanDuel",
+          "market_hr": "9/20"
+        },
+        "locked_L20": [
+          5,
+          4,
+          5,
+          4,
+          3,
+          6,
+          9,
+          3,
+          3,
+          2,
+          9,
+          5,
+          3,
+          3,
+          7,
+          3,
+          10,
+          6,
+          3,
+          4
+        ],
+        "all_alternates": [
+          {
+            "threshold": 3,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -470,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 4,
+            "hit_count": 12,
+            "hr": "12/20",
+            "hit_rate": 0.6,
+            "american_odds": -188,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 118,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 230,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 410,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 8,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 750,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 9,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 1200,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 3,
+          "hr": "19/20",
+          "american_odds": -470
+        },
+        "core": {
+          "threshold": 4,
+          "hr": "12/20",
+          "american_odds": -188
+        },
+        "ceiling": {
+          "threshold": 5,
+          "hr": "9/20",
+          "american_odds": 118
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Terry McLaurin",
+        "team": "WAS",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "main_market": {
+          "line": "45.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "16/20"
+        },
+        "locked_L20": [
+          62,
+          77,
+          50,
+          14,
+          57,
+          63,
+          53,
+          69,
+          41,
+          96,
+          54,
+          74,
+          48,
+          27,
+          62,
+          5,
+          60,
+          73,
+          73,
+          102
+        ],
+        "all_alternates": [
+          {
+            "threshold": 15,
+            "hit_count": 18,
+            "hr": "18/20",
+            "hit_rate": 0.9,
+            "american_odds": -1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 20,
+            "hit_count": 18,
+            "hr": "18/20",
+            "hit_rate": 0.9,
+            "american_odds": -600,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 25,
+            "hit_count": 18,
+            "hr": "18/20",
+            "hit_rate": 0.9,
+            "american_odds": -400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 30,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -280,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -158,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": 104,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 11,
+            "hr": "11/20",
+            "hit_rate": 0.55,
+            "american_odds": 164,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 235,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 350,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 90,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 490,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 100,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 700,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 110,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 920,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 125,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 25,
+          "hr": "18/20",
+          "american_odds": -400
+        },
+        "core": {
+          "threshold": 30,
+          "hr": "17/20",
+          "american_odds": -280
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hr": "17/20",
+          "american_odds": -158
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Terry McLaurin",
+        "team": "WAS",
+        "position": "WR",
+        "market": "Receptions",
+        "main_market": {
+          "line": "3.5",
+          "over_price": "-130",
+          "under_price": "-102",
+          "sportsbook": "FanDuel",
+          "market_hr": "11/20"
+        },
+        "locked_L20": [
+          4,
+          6,
+          2,
+          2,
+          4,
+          5,
+          3,
+          3,
+          3,
+          7,
+          3,
+          3,
+          5,
+          2,
+          8,
+          1,
+          5,
+          7,
+          8,
+          5
+        ],
+        "all_alternates": [
+          {
+            "threshold": 2,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -1200,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 3,
+            "hit_count": 16,
+            "hr": "16/20",
+            "hit_rate": 0.8,
+            "american_odds": -320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 4,
+            "hit_count": 11,
+            "hr": "11/20",
+            "hit_rate": 0.55,
+            "american_odds": -130,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 168,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 630,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 8,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 2,
+          "hr": "19/20",
+          "american_odds": -1200
+        },
+        "core": {
+          "threshold": 3,
+          "hr": "16/20",
+          "american_odds": -320
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hr": "11/20",
+          "american_odds": -130
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Mike Evans",
+        "team": "SF",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "main_market": {
+          "line": "72.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "7/20"
+        },
+        "locked_L20": [
+          113,
+          76,
+          34,
+          54,
+          49,
+          34,
+          31,
+          31,
+          132,
+          0,
+          33,
+          56,
+          51,
+          89,
+          97,
+          69,
+          159,
+          69,
+          118,
+          68
+        ],
+        "all_alternates": [
+          {
+            "threshold": 30,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -1450,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 14,
+            "hr": "14/20",
+            "hit_rate": 0.7,
+            "american_odds": -600,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -205,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 7,
+            "hr": "7/20",
+            "hit_rate": 0.35,
+            "american_odds": -130,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 116,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 90,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 168,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 100,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 235,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 110,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 125,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 550,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 150,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 50,
+          "hr": "13/20",
+          "american_odds": -320
+        },
+        "core": {
+          "threshold": 60,
+          "hr": "10/20",
+          "american_odds": -205
+        },
+        "ceiling": {
+          "threshold": 70,
+          "hr": "7/20",
+          "american_odds": -130
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": false,
+        "stage3_candidate_rationale": "No selected Floor/Core/Ceiling band reaches 14/20; exclude from Stage 3 context set under the historical materiality screen."
+      },
+      {
+        "player": "Mike Evans",
+        "team": "SF",
+        "position": "WR",
+        "market": "Receptions",
+        "main_market": {
+          "line": "5.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "7/20"
+        },
+        "locked_L20": [
+          7,
+          5,
+          3,
+          3,
+          6,
+          2,
+          3,
+          5,
+          6,
+          0,
+          4,
+          5,
+          5,
+          9,
+          8,
+          5,
+          9,
+          4,
+          8,
+          5
+        ],
+        "all_alternates": [
+          {
+            "threshold": 4,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": -580,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -245,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 7,
+            "hr": "7/20",
+            "hit_rate": 0.35,
+            "american_odds": -114,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 164,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 8,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 290,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 9,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 520,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 10,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 880,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 11,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1280,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 4,
+          "hr": "15/20",
+          "american_odds": -580
+        },
+        "core": {
+          "threshold": 5,
+          "hr": "13/20",
+          "american_odds": -245
+        },
+        "ceiling": {
+          "threshold": 6,
+          "hr": "7/20",
+          "american_odds": -114
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "George Kittle",
+        "team": "SF",
+        "position": "TE",
+        "market": "Receiving Yards",
+        "main_market": {
+          "line": "65.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "11/20"
+        },
+        "locked_L20": [
+          24,
+          70,
+          82,
+          80,
+          12,
+          29,
+          115,
+          88,
+          67,
+          78,
+          67,
+          84,
+          32,
+          43,
+          0,
+          25,
+          27,
+          112,
+          106,
+          61
+        ],
+        "all_alternates": [
+          {
+            "threshold": 25,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1800,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 30,
+            "hit_count": 14,
+            "hr": "14/20",
+            "hit_rate": 0.7,
+            "american_odds": -1000,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -450,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 12,
+            "hr": "12/20",
+            "hit_rate": 0.6,
+            "american_odds": -250,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 12,
+            "hr": "12/20",
+            "hit_rate": 0.6,
+            "american_odds": -154,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 104,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 7,
+            "hr": "7/20",
+            "hit_rate": 0.35,
+            "american_odds": 158,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 90,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 230,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 100,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 110,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 470,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 125,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 750,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 150,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1500,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 40,
+          "hr": "13/20",
+          "american_odds": -450
+        },
+        "core": {
+          "threshold": 50,
+          "hr": "12/20",
+          "american_odds": -250
+        },
+        "ceiling": {
+          "threshold": 60,
+          "hr": "12/20",
+          "american_odds": -154
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": false,
+        "stage3_candidate_rationale": "No selected Floor/Core/Ceiling band reaches 14/20; exclude from Stage 3 context set under the historical materiality screen."
+      },
+      {
+        "player": "George Kittle",
+        "team": "SF",
+        "position": "TE",
+        "market": "Receptions",
+        "main_market": {
+          "line": "5.5",
+          "over_price": "102",
+          "under_price": "-136",
+          "sportsbook": "FanDuel",
+          "market_hr": "8/20"
+        },
+        "locked_L20": [
+          5,
+          4,
+          6,
+          4,
+          2,
+          5,
+          7,
+          8,
+          4,
+          6,
+          6,
+          9,
+          4,
+          4,
+          0,
+          4,
+          2,
+          8,
+          8,
+          4
+        ],
+        "all_alternates": [
+          {
+            "threshold": 3,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1450,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 4,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -450,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -205,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 8,
+            "hr": "8/20",
+            "hit_rate": 0.4,
+            "american_odds": 100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 188,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 8,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 9,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 580,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 10,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 920,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 11,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 4,
+          "hr": "17/20",
+          "american_odds": -450
+        },
+        "core": {
+          "threshold": 5,
+          "hr": "10/20",
+          "american_odds": -205
+        },
+        "ceiling": {
+          "threshold": 6,
+          "hr": "8/20",
+          "american_odds": 100
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Chigoziem Okonkwo",
+        "team": "WAS",
+        "position": "TE",
+        "market": "Receiving Yards",
+        "main_market": {
+          "line": "25.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "12/20"
+        },
+        "locked_L20": [
+          60,
+          5,
+          16,
+          2,
+          55,
+          44,
+          33,
+          20,
+          29,
+          40,
+          56,
+          10,
+          53,
+          0,
+          46,
+          48,
+          4,
+          66,
+          35,
+          19
+        ],
+        "all_alternates": [
+          {
+            "threshold": 5,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1450,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 10,
+            "hit_count": 16,
+            "hr": "16/20",
+            "hit_rate": 0.8,
+            "american_odds": -580,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 15,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": -320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 20,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -194,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 25,
+            "hit_count": 12,
+            "hr": "12/20",
+            "hit_rate": 0.6,
+            "american_odds": -125,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 30,
+            "hit_count": 11,
+            "hr": "11/20",
+            "hit_rate": 0.55,
+            "american_odds": 118,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 225,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 640,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 920,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1500,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 15,
+          "hr": "15/20",
+          "american_odds": -320
+        },
+        "core": {
+          "threshold": 20,
+          "hr": "13/20",
+          "american_odds": -194
+        },
+        "ceiling": {
+          "threshold": 25,
+          "hr": "12/20",
+          "american_odds": -125
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Chigoziem Okonkwo",
+        "team": "WAS",
+        "position": "TE",
+        "market": "Receptions",
+        "main_market": {
+          "line": "2.5",
+          "over_price": "-158",
+          "under_price": "118",
+          "sportsbook": "FanDuel",
+          "market_hr": "13/20"
+        },
+        "locked_L20": [
+          4,
+          2,
+          2,
+          2,
+          3,
+          6,
+          4,
+          2,
+          4,
+          3,
+          3,
+          2,
+          4,
+          0,
+          6,
+          4,
+          1,
+          5,
+          4,
+          3
+        ],
+        "all_alternates": [
+          {
+            "threshold": 2,
+            "hit_count": 18,
+            "hr": "18/20",
+            "hit_rate": 0.9,
+            "american_odds": -490,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 3,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -160,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 4,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 154,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 640,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "core_selection_rule": "Over odds -350 to -150 inclusive; closest numerically to -250; tie favors more negative odds",
+        "floor": {
+          "threshold": 2,
+          "hr": "18/20",
+          "american_odds": -490
+        },
+        "core": {
+          "threshold": 3,
+          "hr": "13/20",
+          "american_odds": -160
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hr": "9/20",
+          "american_odds": 154
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate": true,
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      }
+    ],
+    "stage3_context_candidate_set": [
+      {
+        "player": "Jayden Daniels",
+        "team": "WAS",
+        "position": "QB",
+        "market": "Passing Yards",
+        "main_market": {
+          "line": "207.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "9/20"
+        },
+        "locked_L20": [
+          199,
+          96,
+          164,
+          78,
+          153,
+          156,
+          211,
+          231,
+          200,
+          233,
+          38,
+          227,
+          258,
+          226,
+          206,
+          275,
+          191,
+          202,
+          209,
+          326
+        ],
+        "all_alternates": [
+          {
+            "threshold": 125,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1200,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 150,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -500,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 175,
+            "hit_count": 14,
+            "hr": "14/20",
+            "hit_rate": 0.7,
+            "american_odds": -260,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 200,
+            "hit_count": 12,
+            "hr": "12/20",
+            "hit_rate": 0.6,
+            "american_odds": -140,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 225,
+            "hit_count": 7,
+            "hr": "7/20",
+            "hit_rate": 0.35,
+            "american_odds": 132,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 250,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 225,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 275,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 390,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 300,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 640,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 325,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          },
+          {
+            "threshold": 350,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1700,
+            "sportsbook": "FanDuel",
+            "market": "Alt Passing Yards"
+          }
+        ],
+        "floor": {
+          "threshold": 150,
+          "hr": "17/20",
+          "american_odds": -500
+        },
+        "core": {
+          "threshold": 175,
+          "hr": "14/20",
+          "american_odds": -260
+        },
+        "ceiling": {
+          "threshold": 200,
+          "hr": "12/20",
+          "american_odds": -140
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Christian McCaffrey",
+        "team": "SF",
+        "position": "RB",
+        "market": "Rushing Yards",
+        "main_market": {
+          "line": "59.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "10/20"
+        },
+        "locked_L20": [
+          68,
+          52,
+          75,
+          23,
+          68,
+          23,
+          140,
+          117,
+          73,
+          53,
+          89,
+          81,
+          30,
+          106,
+          25,
+          129,
+          54,
+          57,
+          49,
+          52
+        ],
+        "all_alternates": [
+          {
+            "threshold": 30,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1000,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 16,
+            "hr": "16/20",
+            "hit_rate": 0.8,
+            "american_odds": -400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": -205,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -114,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 8,
+            "hr": "8/20",
+            "hit_rate": 0.4,
+            "american_odds": 144,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 220,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 90,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 100,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 490,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 110,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 700,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          },
+          {
+            "threshold": 125,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Rushing Yards"
+          }
+        ],
+        "floor": {
+          "threshold": 40,
+          "hr": "16/20",
+          "american_odds": -400
+        },
+        "core": {
+          "threshold": 50,
+          "hr": "15/20",
+          "american_odds": -205
+        },
+        "ceiling": {
+          "threshold": 60,
+          "hr": "10/20",
+          "american_odds": -114
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Stefon Diggs",
+        "team": "WAS",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "main_market": {
+          "line": "41.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "10/20"
+        },
+        "locked_L20": [
+          35,
+          33,
+          47,
+          55,
+          43,
+          101,
+          138,
+          26,
+          26,
+          20,
+          105,
+          46,
+          38,
+          14,
+          69,
+          28,
+          146,
+          101,
+          23,
+          32
+        ],
+        "all_alternates": [
+          {
+            "threshold": 15,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -1000,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 20,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -580,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 25,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -350,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 30,
+            "hit_count": 14,
+            "hr": "14/20",
+            "hit_rate": 0.7,
+            "american_odds": -245,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -130,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 7,
+            "hr": "7/20",
+            "hit_rate": 0.35,
+            "american_odds": 134,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 220,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 490,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 90,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 700,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 100,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 920,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 110,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 1280,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          }
+        ],
+        "floor": {
+          "threshold": 25,
+          "hr": "17/20",
+          "american_odds": -350
+        },
+        "core": {
+          "threshold": 30,
+          "hr": "14/20",
+          "american_odds": -245
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hr": "10/20",
+          "american_odds": -130
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Stefon Diggs",
+        "team": "WAS",
+        "position": "WR",
+        "market": "Receptions",
+        "main_market": {
+          "line": "4.5",
+          "over_price": "120",
+          "under_price": "-160",
+          "sportsbook": "FanDuel",
+          "market_hr": "9/20"
+        },
+        "locked_L20": [
+          5,
+          4,
+          5,
+          4,
+          3,
+          6,
+          9,
+          3,
+          3,
+          2,
+          9,
+          5,
+          3,
+          3,
+          7,
+          3,
+          10,
+          6,
+          3,
+          4
+        ],
+        "all_alternates": [
+          {
+            "threshold": 3,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -470,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 4,
+            "hit_count": 12,
+            "hr": "12/20",
+            "hit_rate": 0.6,
+            "american_odds": -188,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 118,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 230,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 410,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 8,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 750,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 9,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 1200,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "floor": {
+          "threshold": 3,
+          "hr": "19/20",
+          "american_odds": -470
+        },
+        "core": {
+          "threshold": 4,
+          "hr": "12/20",
+          "american_odds": -188
+        },
+        "ceiling": {
+          "threshold": 5,
+          "hr": "9/20",
+          "american_odds": 118
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Terry McLaurin",
+        "team": "WAS",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "main_market": {
+          "line": "45.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "16/20"
+        },
+        "locked_L20": [
+          62,
+          77,
+          50,
+          14,
+          57,
+          63,
+          53,
+          69,
+          41,
+          96,
+          54,
+          74,
+          48,
+          27,
+          62,
+          5,
+          60,
+          73,
+          73,
+          102
+        ],
+        "all_alternates": [
+          {
+            "threshold": 15,
+            "hit_count": 18,
+            "hr": "18/20",
+            "hit_rate": 0.9,
+            "american_odds": -1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 20,
+            "hit_count": 18,
+            "hr": "18/20",
+            "hit_rate": 0.9,
+            "american_odds": -600,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 25,
+            "hit_count": 18,
+            "hr": "18/20",
+            "hit_rate": 0.9,
+            "american_odds": -400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 30,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -280,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -158,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": 104,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 11,
+            "hr": "11/20",
+            "hit_rate": 0.55,
+            "american_odds": 164,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 6,
+            "hr": "6/20",
+            "hit_rate": 0.3,
+            "american_odds": 235,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 350,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 90,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 490,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 100,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 700,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 110,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 920,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 125,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          }
+        ],
+        "floor": {
+          "threshold": 25,
+          "hr": "18/20",
+          "american_odds": -400
+        },
+        "core": {
+          "threshold": 30,
+          "hr": "17/20",
+          "american_odds": -280
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hr": "17/20",
+          "american_odds": -158
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Terry McLaurin",
+        "team": "WAS",
+        "position": "WR",
+        "market": "Receptions",
+        "main_market": {
+          "line": "3.5",
+          "over_price": "-130",
+          "under_price": "-102",
+          "sportsbook": "FanDuel",
+          "market_hr": "11/20"
+        },
+        "locked_L20": [
+          4,
+          6,
+          2,
+          2,
+          4,
+          5,
+          3,
+          3,
+          3,
+          7,
+          3,
+          3,
+          5,
+          2,
+          8,
+          1,
+          5,
+          7,
+          8,
+          5
+        ],
+        "all_alternates": [
+          {
+            "threshold": 2,
+            "hit_count": 19,
+            "hr": "19/20",
+            "hit_rate": 0.95,
+            "american_odds": -1200,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 3,
+            "hit_count": 16,
+            "hr": "16/20",
+            "hit_rate": 0.8,
+            "american_odds": -320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 4,
+            "hit_count": 11,
+            "hr": "11/20",
+            "hit_rate": 0.55,
+            "american_odds": -130,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 168,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 630,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 8,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "floor": {
+          "threshold": 2,
+          "hr": "19/20",
+          "american_odds": -1200
+        },
+        "core": {
+          "threshold": 3,
+          "hr": "16/20",
+          "american_odds": -320
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hr": "11/20",
+          "american_odds": -130
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Mike Evans",
+        "team": "SF",
+        "position": "WR",
+        "market": "Receptions",
+        "main_market": {
+          "line": "5.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "7/20"
+        },
+        "locked_L20": [
+          7,
+          5,
+          3,
+          3,
+          6,
+          2,
+          3,
+          5,
+          6,
+          0,
+          4,
+          5,
+          5,
+          9,
+          8,
+          5,
+          9,
+          4,
+          8,
+          5
+        ],
+        "all_alternates": [
+          {
+            "threshold": 4,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": -580,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -245,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 7,
+            "hr": "7/20",
+            "hit_rate": 0.35,
+            "american_odds": -114,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 164,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 8,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 290,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 9,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 520,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 10,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 880,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 11,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1280,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "floor": {
+          "threshold": 4,
+          "hr": "15/20",
+          "american_odds": -580
+        },
+        "core": {
+          "threshold": 5,
+          "hr": "13/20",
+          "american_odds": -245
+        },
+        "ceiling": {
+          "threshold": 6,
+          "hr": "7/20",
+          "american_odds": -114
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "George Kittle",
+        "team": "SF",
+        "position": "TE",
+        "market": "Receptions",
+        "main_market": {
+          "line": "5.5",
+          "over_price": "102",
+          "under_price": "-136",
+          "sportsbook": "FanDuel",
+          "market_hr": "8/20"
+        },
+        "locked_L20": [
+          5,
+          4,
+          6,
+          4,
+          2,
+          5,
+          7,
+          8,
+          4,
+          6,
+          6,
+          9,
+          4,
+          4,
+          0,
+          4,
+          2,
+          8,
+          8,
+          4
+        ],
+        "all_alternates": [
+          {
+            "threshold": 3,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1450,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 4,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -450,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 10,
+            "hr": "10/20",
+            "hit_rate": 0.5,
+            "american_odds": -205,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 8,
+            "hr": "8/20",
+            "hit_rate": 0.4,
+            "american_odds": 100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 188,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 8,
+            "hit_count": 4,
+            "hr": "4/20",
+            "hit_rate": 0.2,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 9,
+            "hit_count": 1,
+            "hr": "1/20",
+            "hit_rate": 0.05,
+            "american_odds": 580,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 10,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 920,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 11,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "floor": {
+          "threshold": 4,
+          "hr": "17/20",
+          "american_odds": -450
+        },
+        "core": {
+          "threshold": 5,
+          "hr": "10/20",
+          "american_odds": -205
+        },
+        "ceiling": {
+          "threshold": 6,
+          "hr": "8/20",
+          "american_odds": 100
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Chigoziem Okonkwo",
+        "team": "WAS",
+        "position": "TE",
+        "market": "Receiving Yards",
+        "main_market": {
+          "line": "25.5",
+          "over_price": "-114",
+          "under_price": "-114",
+          "sportsbook": "FanDuel",
+          "market_hr": "12/20"
+        },
+        "locked_L20": [
+          60,
+          5,
+          16,
+          2,
+          55,
+          44,
+          33,
+          20,
+          29,
+          40,
+          56,
+          10,
+          53,
+          0,
+          46,
+          48,
+          4,
+          66,
+          35,
+          19
+        ],
+        "all_alternates": [
+          {
+            "threshold": 5,
+            "hit_count": 17,
+            "hr": "17/20",
+            "hit_rate": 0.85,
+            "american_odds": -1450,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 10,
+            "hit_count": 16,
+            "hr": "16/20",
+            "hit_rate": 0.8,
+            "american_odds": -580,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 15,
+            "hit_count": 15,
+            "hr": "15/20",
+            "hit_rate": 0.75,
+            "american_odds": -320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 20,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -194,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 25,
+            "hit_count": 12,
+            "hr": "12/20",
+            "hit_rate": 0.6,
+            "american_odds": -125,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 30,
+            "hit_count": 11,
+            "hr": "11/20",
+            "hit_rate": 0.55,
+            "american_odds": 118,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 40,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 225,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 50,
+            "hit_count": 5,
+            "hr": "5/20",
+            "hit_rate": 0.25,
+            "american_odds": 400,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 60,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 640,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 70,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 920,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          },
+          {
+            "threshold": 80,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1500,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receiving Yards"
+          }
+        ],
+        "floor": {
+          "threshold": 15,
+          "hr": "15/20",
+          "american_odds": -320
+        },
+        "core": {
+          "threshold": 20,
+          "hr": "13/20",
+          "american_odds": -194
+        },
+        "ceiling": {
+          "threshold": 25,
+          "hr": "12/20",
+          "american_odds": -125
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      },
+      {
+        "player": "Chigoziem Okonkwo",
+        "team": "WAS",
+        "position": "TE",
+        "market": "Receptions",
+        "main_market": {
+          "line": "2.5",
+          "over_price": "-158",
+          "under_price": "118",
+          "sportsbook": "FanDuel",
+          "market_hr": "13/20"
+        },
+        "locked_L20": [
+          4,
+          2,
+          2,
+          2,
+          3,
+          6,
+          4,
+          2,
+          4,
+          3,
+          3,
+          2,
+          4,
+          0,
+          6,
+          4,
+          1,
+          5,
+          4,
+          3
+        ],
+        "all_alternates": [
+          {
+            "threshold": 2,
+            "hit_count": 18,
+            "hr": "18/20",
+            "hit_rate": 0.9,
+            "american_odds": -490,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 3,
+            "hit_count": 13,
+            "hr": "13/20",
+            "hit_rate": 0.65,
+            "american_odds": -160,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 4,
+            "hit_count": 9,
+            "hr": "9/20",
+            "hit_rate": 0.45,
+            "american_odds": 154,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 5,
+            "hit_count": 3,
+            "hr": "3/20",
+            "hit_rate": 0.15,
+            "american_odds": 320,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 6,
+            "hit_count": 2,
+            "hr": "2/20",
+            "hit_rate": 0.1,
+            "american_odds": 640,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          },
+          {
+            "threshold": 7,
+            "hit_count": 0,
+            "hr": "0/20",
+            "hit_rate": 0,
+            "american_odds": 1100,
+            "sportsbook": "FanDuel",
+            "market": "Alt Receptions"
+          }
+        ],
+        "floor": {
+          "threshold": 2,
+          "hr": "18/20",
+          "american_odds": -490
+        },
+        "core": {
+          "threshold": 3,
+          "hr": "13/20",
+          "american_odds": -160
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hr": "9/20",
+          "american_odds": 154
+        },
+        "core_status": "SELECTED",
+        "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical HR ≥14/20; retain for Stage 3 context."
+      }
+    ]
+  },
+  "validation": {
+    "stage1_state_exists_and_locked": true,
+    "stage2_state_exists_and_complete": true,
+    "stage2_parent_matches_stage1": true,
+    "only_locked_stage2_candidates_analyzed": true,
+    "no_new_players_or_markets_added": true,
+    "no_stage1_player_market_rescreened": true,
+    "historical_hit_rates_unchanged": true,
+    "historical_samples_unchanged": true,
+    "stage2_alternate_market_structure_unchanged": true,
+    "current_week_information_separate_from_historical_evidence": true,
+    "R13_satisfied": true,
+    "R14_satisfied": true,
+    "R30_R31_satisfied": true,
+    "R45_R54_satisfied": true,
+    "stage3_state_complete": true,
+    "canonical_stage3_path_conflict_preserved": true
+  }
+}
