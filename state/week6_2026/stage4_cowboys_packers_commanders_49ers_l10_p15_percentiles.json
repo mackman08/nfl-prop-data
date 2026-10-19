@@ -1,0 +1,824 @@
+{
+  "stage": 4,
+  "model_version": "V7.2.9",
+  "season": 2026,
+  "week": 6,
+  "scope": {
+    "analysis_scope": "Custom — Dallas Cowboys at Green Bay Packers on Sunday, October 18, 2026, and Washington Commanders at San Francisco 49ers on Monday, October 19, 2026",
+    "timezone": "America/Toronto (Eastern Time)",
+    "games": [
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "20:20",
+        "away_team": "Dallas Cowboys",
+        "away_abbreviation": "DAL",
+        "home_team": "Green Bay Packers",
+        "home_abbreviation": "GB"
+      },
+      {
+        "date": "2026-10-19",
+        "kickoff_et": "20:15",
+        "away_team": "Washington Commanders",
+        "away_abbreviation": "WAS",
+        "home_team": "San Francisco 49ers",
+        "home_abbreviation": "SF"
+      }
+    ]
+  },
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent qualifying completed regular-season games per player before the cutoff"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of the final scheduled game of Week 5",
+    "date": "2026-10-12",
+    "game": "Buffalo Bills at Los Angeles Rams",
+    "status": "reported in the existing repository Stage 0 artifact; not independently re-verified in this retry"
+  },
+  "state_id": "STATE-4-2026-W06-CUSTOM-DAL-GB-WAS-SF-L10-PERCENTILE15-20261018-R1",
+  "parent_state_id": "STATE-4-2026-W06-CUSTOM-DAL-GB-WAS-SF-L10-20261018-R1",
+  "parent_state_path": "state/week6_2026/stage3_cowboys_packers_commanders_49ers_l10_p15_percentiles.json",
+  "parent_stage3_blob_sha": "25da3dba15769fd10f3cfa8adefa3ae21a3e38ae",
+  "state_path": "state/week6_2026/stage4_cowboys_packers_commanders_49ers_l10_p15_percentiles.json",
+  "status": "COMPLETE",
+  "completed_at": "2026-10-18",
+  "selection_methodology": {
+    "purpose": "Final Prop Selection only; no portfolio construction performed.",
+    "inputs": "Exact 21-record Stage 3 universe and its locked L10 samples; Stage 2 bands; Stage 3 contextual classifications; current public DraftKings Network prop listing.",
+    "sportsbook_priority": "FanDuel primary; DraftKings fallback when FanDuel data is unavailable.",
+    "sportsbook_decision": "No FanDuel rows were present in the repository odds CSV. DraftKings prices were used; current public listing independently confirmed the four selected prices.",
+    "selection_principles": [
+      "Preserve Stage 3 universe, L10 values, and Stage 2 bands without alteration.",
+      "Combine historical threshold hit count with Stage 3 context and current price verification.",
+      "Avoid Stage 3 Concern-classified markets.",
+      "Do not represent historical hit rates as future probabilities or expected value.",
+      "Odds can change; recheck the sportsbook before placing any wager."
+    ],
+    "price_snapshot_note": "The repository odds CSV has no snapshot timestamp. For the four selected props, prices were taken from the DraftKings Network page retrieved on 2026-10-18; this is a public odds listing, not an account-specific Ontario sportsbook confirmation."
+  },
+  "summary": {
+    "stage3_candidates_in": 21,
+    "final_props_selected": 4,
+    "selected_by_game": {
+      "DAL_GB": 2,
+      "WAS_SF": 2
+    },
+    "selected_by_stage3_classification": {
+      "Supportive": 2,
+      "Mixed": 2,
+      "Concern": 0
+    },
+    "fanDuel_rows_in_repository_csv": 0,
+    "final_sportsbook": "DraftKings",
+    "portfolio_construction_performed": false
+  },
+  "source_snapshot": {
+    "stage3_state_path": "state/week6_2026/stage3_cowboys_packers_commanders_49ers_l10_p15_percentiles.json",
+    "stage3_blob_sha": "25da3dba15769fd10f3cfa8adefa3ae21a3e38ae",
+    "odds_csv_path": "odds/nfl_player_props_latest.csv",
+    "odds_csv_blob_sha": "84dfaddb901724ffb100497d97393e06108b7089",
+    "live_price_source": "https://dknetwork.draftkings.com/draftkings-sportsbook-player-props/?itm_content=pills",
+    "injury_context_sources": [
+      "https://www.nfl.com/injuries/league/2026/reg6",
+      "https://www.commanders.com/news/commanders-vs-49ers-week-6-injury-report-2026",
+      "https://www.49ers.com/news/kyle-juszczyk-available-deebo-ruled-out-vs-commanders-in-week-6-wasvssf"
+    ],
+    "stage1_state_path": "state/week6_2026/stage1_cowboys_packers_commanders_49ers_l10_p15_percentiles.json",
+    "stage1_blob_sha": "c1e3499b84359bae62a430b9ad121755b498dd67"
+  },
+  "final_prop_card": [
+    {
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "market": "Rushing Yards",
+      "selection": "Over 50+ Rushing Yards",
+      "threshold": 50,
+      "historical_L10_hits": "8/10",
+      "historical_L10_hit_rate": null,
+      "Stage2_band": "core",
+      "Stage2_line": 49.5,
+      "Stage2_snapshot_odds": -220,
+      "selected_price_american": -220,
+      "selected_price_sportsbook": "DraftKings",
+      "selected_price_source": "DraftKings Network live player-props listing, retrieved 2026-10-18",
+      "selected_price_source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-player-props/?itm_content=pills",
+      "Stage3_classification": "Mixed",
+      "rationale": "L10 hit 8/10; central rushing role, full practice, and 68 rushing yards in Week 5. Context remains Mixed because Washington's run defense is described as strong.",
+      "locked_L10": [
+        68,
+        52,
+        75,
+        23,
+        68,
+        23,
+        140,
+        117,
+        73,
+        53
+      ],
+      "risk_flags": [
+        {
+          "factor": "Opponent matchup",
+          "classification": "Concern",
+          "finding": "Washington's run defense has been described as a top-10 unit."
+        }
+      ],
+      "P16": 26.2,
+      "P7": 23,
+      "percentile_sample_count": 15,
+      "percentile_sample_method": "15 most recent qualifying games; linear interpolation"
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "market": "Receptions",
+      "selection": "Over 3.5 Receptions (4+)",
+      "threshold": 4,
+      "historical_L10_hits": "9/10",
+      "historical_L10_hit_rate": null,
+      "Stage2_band": "floor",
+      "Stage2_line": 3.5,
+      "Stage2_snapshot_odds": -460,
+      "selected_price_american": -460,
+      "selected_price_sportsbook": "DraftKings",
+      "selected_price_source": "DraftKings Network live player-props listing, retrieved 2026-10-18",
+      "selected_price_source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-player-props/?itm_content=pills",
+      "Stage3_classification": "Mixed",
+      "rationale": "L10 hit 4+ receptions in 9/10; Deebo Samuel is out and other 49ers receivers are questionable, potentially concentrating targets. Overall context Mixed; price is heavily juiced.",
+      "locked_L10": [
+        5,
+        4,
+        6,
+        4,
+        2,
+        5,
+        7,
+        8,
+        4,
+        6
+      ],
+      "risk_flags": [
+        {
+          "factor": "Recent usage/current trend",
+          "classification": "Mixed",
+          "finding": "His recent reception totals vary, and the 5+ catch threshold hit in 6/10 L10 games."
+        },
+        {
+          "factor": "Opponent matchup",
+          "classification": "Mixed",
+          "finding": "Washington's pass defense presents opportunity, but San Francisco may distribute targets among McCaffrey and available receivers."
+        },
+        {
+          "factor": "Threshold reliability",
+          "classification": "Mixed",
+          "finding": "The 4+ floor hit in 9/10, but 5+ hit in 6/10 and 6+ in 4/10."
+        }
+      ],
+      "P16": 4,
+      "P7": 1.96,
+      "percentile_sample_count": 15,
+      "percentile_sample_method": "15 most recent qualifying games; linear interpolation"
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receptions",
+      "selection": "Over 5.5 Receptions (6+)",
+      "threshold": 6,
+      "historical_L10_hits": "6/10",
+      "historical_L10_hit_rate": null,
+      "Stage2_band": "core",
+      "Stage2_line": 5.5,
+      "Stage2_snapshot_odds": -193,
+      "selected_price_american": -203,
+      "selected_price_sportsbook": "DraftKings",
+      "selected_price_source": "DraftKings Network live player-props listing, retrieved 2026-10-18",
+      "selected_price_source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-player-props/?itm_content=pills",
+      "Stage3_classification": "Supportive",
+      "rationale": "L10 hit 6+ in 6/10; contextual classification Supportive, with full participation and potential quick throws against Green Bay pressure. 7+ only hit 3/10, so do not move up.",
+      "locked_L10": [
+        2,
+        17,
+        7,
+        8,
+        5,
+        1,
+        5,
+        6,
+        6,
+        6
+      ],
+      "risk_flags": [
+        {
+          "factor": "Threshold reliability",
+          "classification": "Mixed",
+          "finding": "The 6+ threshold hit in 6/10, while 7+ hit in only 3/10; the higher threshold has substantially less historical support."
+        }
+      ],
+      "P16": 4.24,
+      "P7": 1.98,
+      "percentile_sample_count": 15,
+      "percentile_sample_method": "15 most recent qualifying games; linear interpolation"
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "market": "Receiving Yards",
+      "selection": "Over 59.5 Receiving Yards (60+)",
+      "threshold": 60,
+      "historical_L10_hits": "6/10",
+      "historical_L10_hit_rate": null,
+      "Stage2_band": "core",
+      "Stage2_line": 59.5,
+      "Stage2_snapshot_odds": -213,
+      "selected_price_american": -213,
+      "selected_price_sportsbook": "DraftKings",
+      "selected_price_source": "DraftKings Network live player-props listing, retrieved 2026-10-18",
+      "selected_price_source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-player-props/?itm_content=pills",
+      "Stage3_classification": "Supportive",
+      "rationale": "L10 hit 60+ in 6/10; context Supportive due to deep-threat role, 143 yards in Week 5, and Dallas' vulnerable secondary. High-variance receiving profile remains a key risk.",
+      "locked_L10": [
+        143,
+        47,
+        96,
+        41,
+        147,
+        113,
+        17,
+        29,
+        89,
+        80
+      ],
+      "risk_flags": [
+        {
+          "factor": "Threshold reliability",
+          "classification": "Mixed",
+          "finding": "Watson reached 60+ yards in 6/10 L10 games; his recent explosive performance is not proof of repeatability."
+        }
+      ],
+      "P16": 41.96,
+      "P7": 28.76,
+      "percentile_sample_count": 15,
+      "percentile_sample_method": "15 most recent qualifying games; linear interpolation"
+    }
+  ],
+  "all_candidate_dispositions": [
+    {
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "market": "Passing Yards",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 220,
+        "hr": "8/10",
+        "odds": -533
+      },
+      "Stage2_core": {
+        "threshold": 250,
+        "hr": "7/10",
+        "odds": -225
+      },
+      "Stage2_ceiling": {
+        "threshold": 260,
+        "hr": "7/10",
+        "odds": -172
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 201.44,
+      "P7": 172.9,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Brock Purdy",
+      "team": "SF",
+      "market": "Passing Yards",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 200,
+        "hr": "7/10",
+        "odds": -451
+      },
+      "Stage2_core": {
+        "threshold": 220,
+        "hr": "5/10",
+        "odds": -249
+      },
+      "Stage2_ceiling": {
+        "threshold": 230,
+        "hr": "5/10",
+        "odds": -190
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — core threshold historical hit rate below preferred profile",
+      "P16": 189.96,
+      "P7": 167.18,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "market": "Rushing Yards",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 40,
+        "hr": "8/10",
+        "odds": -670
+      },
+      "Stage2_core": {
+        "threshold": 60,
+        "hr": "4/10",
+        "odds": -186
+      },
+      "Stage2_ceiling": {
+        "threshold": 70,
+        "hr": "2/10",
+        "odds": -112
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — core threshold historical hit rate below preferred profile",
+      "P16": 41,
+      "P7": 33.92,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Austin Ekeler",
+      "team": "WAS",
+      "market": "Rushing Yards",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": null,
+      "Stage2_core": {
+        "threshold": 15,
+        "hr": "7/10",
+        "odds": -174
+      },
+      "Stage2_ceiling": {
+        "threshold": 20,
+        "hr": "6/10",
+        "odds": -107
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 13.2,
+      "P7": 6.84,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "market": "Rushing Yards",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 40,
+        "hr": "8/10",
+        "odds": -436
+      },
+      "Stage2_core": {
+        "threshold": 50,
+        "hr": "8/10",
+        "odds": -220
+      },
+      "Stage2_ceiling": {
+        "threshold": 60,
+        "hr": "6/10",
+        "odds": -122
+      },
+      "final_selection": true,
+      "disposition": "SELECTED",
+      "P16": 26.2,
+      "P7": 23,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "market": "Receptions",
+      "stage3_classification": "Supportive",
+      "Stage2_floor": {
+        "threshold": 5,
+        "hr": "8/10",
+        "odds": -394
+      },
+      "Stage2_core": {
+        "threshold": 6,
+        "hr": "6/10",
+        "odds": -193
+      },
+      "Stage2_ceiling": {
+        "threshold": 7,
+        "hr": "3/10",
+        "odds": -102
+      },
+      "final_selection": true,
+      "disposition": "SELECTED",
+      "P16": 4.24,
+      "P7": 1.98,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Ryan Flournoy",
+      "team": "DAL",
+      "market": "Receiving Yards",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 15,
+        "hr": "10/10",
+        "odds": -437
+      },
+      "Stage2_core": {
+        "threshold": 25,
+        "hr": "6/10",
+        "odds": -192
+      },
+      "Stage2_ceiling": {
+        "threshold": 33,
+        "hr": "6/10",
+        "odds": -115
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 3.2,
+      "P7": 0,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Ryan Flournoy",
+      "team": "DAL",
+      "market": "Receptions",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 2,
+        "hr": "10/10",
+        "odds": -620
+      },
+      "Stage2_core": {
+        "threshold": 3,
+        "hr": "7/10",
+        "odds": -194
+      },
+      "Stage2_ceiling": {
+        "threshold": 4,
+        "hr": "5/10",
+        "odds": 129
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 1,
+      "P7": 0,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "market": "Receiving Yards",
+      "stage3_classification": "Supportive",
+      "Stage2_floor": {
+        "threshold": 40,
+        "hr": "8/10",
+        "odds": -559
+      },
+      "Stage2_core": {
+        "threshold": 60,
+        "hr": "6/10",
+        "odds": -213
+      },
+      "Stage2_ceiling": {
+        "threshold": 70,
+        "hr": "6/10",
+        "odds": -143
+      },
+      "final_selection": true,
+      "disposition": "SELECTED",
+      "P16": 41.96,
+      "P7": 28.76,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "market": "Receptions",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": null,
+      "Stage2_core": {
+        "threshold": 4,
+        "hr": "7/10",
+        "odds": -343
+      },
+      "Stage2_ceiling": {
+        "threshold": 5,
+        "hr": "4/10",
+        "odds": -152
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 2.24,
+      "P7": 2,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 15,
+        "hr": "9/10",
+        "odds": -670
+      },
+      "Stage2_core": {
+        "threshold": 25,
+        "hr": "9/10",
+        "odds": -327
+      },
+      "Stage2_ceiling": {
+        "threshold": 40,
+        "hr": "9/10",
+        "odds": -144
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 42.68,
+      "P7": 26.74,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "market": "Receptions",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": null,
+      "Stage2_core": {
+        "threshold": 3,
+        "hr": "8/10",
+        "odds": -308
+      },
+      "Stage2_ceiling": {
+        "threshold": 4,
+        "hr": "5/10",
+        "odds": -125
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 2.24,
+      "P7": 2,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "stage3_classification": "Concern",
+      "Stage2_floor": null,
+      "Stage2_core": {
+        "threshold": 25,
+        "hr": "9/10",
+        "odds": -321
+      },
+      "Stage2_ceiling": {
+        "threshold": 40,
+        "hr": "5/10",
+        "odds": -118
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — material role/availability concern",
+      "P16": 26,
+      "P7": 19.88,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "market": "Receptions",
+      "stage3_classification": "Concern",
+      "Stage2_floor": {
+        "threshold": 3,
+        "hr": "9/10",
+        "odds": -435
+      },
+      "Stage2_core": {
+        "threshold": 4,
+        "hr": "6/10",
+        "odds": -168
+      },
+      "Stage2_ceiling": {
+        "threshold": 5,
+        "hr": "4/10",
+        "odds": 131
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — material role/availability concern",
+      "P16": 3,
+      "P7": 2.98,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Jake Ferguson",
+      "team": "DAL",
+      "market": "Receptions",
+      "stage3_classification": "Concern",
+      "Stage2_floor": {
+        "threshold": 2,
+        "hr": "8/10",
+        "odds": -650
+      },
+      "Stage2_core": {
+        "threshold": 3,
+        "hr": "6/10",
+        "odds": -205
+      },
+      "Stage2_ceiling": {
+        "threshold": 4,
+        "hr": "2/10",
+        "odds": 121
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — material role/availability concern",
+      "P16": 1.24,
+      "P7": 0.98,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "market": "Receiving Yards",
+      "stage3_classification": "Supportive",
+      "Stage2_floor": {
+        "threshold": 25,
+        "hr": "8/10",
+        "odds": -489
+      },
+      "Stage2_core": {
+        "threshold": 40,
+        "hr": "7/10",
+        "odds": -190
+      },
+      "Stage2_ceiling": {
+        "threshold": 50,
+        "hr": "5/10",
+        "odds": -115
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 21.44,
+      "P7": 15.98,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "market": "Receptions",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 3,
+        "hr": "7/10",
+        "odds": -513
+      },
+      "Stage2_core": {
+        "threshold": 4,
+        "hr": "6/10",
+        "odds": -191
+      },
+      "Stage2_ceiling": {
+        "threshold": 5,
+        "hr": "5/10",
+        "odds": 114
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 2,
+      "P7": 2,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": null,
+      "Stage2_core": {
+        "threshold": 15,
+        "hr": "8/10",
+        "odds": -263
+      },
+      "Stage2_ceiling": {
+        "threshold": 25,
+        "hr": "6/10",
+        "odds": -116
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 6.2,
+      "P7": 1.96,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "team": "WAS",
+      "market": "Receptions",
+      "stage3_classification": "Supportive",
+      "Stage2_floor": {
+        "threshold": 2,
+        "hr": "10/10",
+        "odds": -465
+      },
+      "Stage2_core": {
+        "threshold": 3,
+        "hr": "6/10",
+        "odds": -152
+      },
+      "Stage2_ceiling": {
+        "threshold": 4,
+        "hr": "4/10",
+        "odds": 154
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 2,
+      "P7": 1.96,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "market": "Receiving Yards",
+      "stage3_classification": "Supportive",
+      "Stage2_floor": {
+        "threshold": 40,
+        "hr": "7/10",
+        "odds": -355
+      },
+      "Stage2_core": {
+        "threshold": 50,
+        "hr": "7/10",
+        "odds": -213
+      },
+      "Stage2_ceiling": {
+        "threshold": 60,
+        "hr": "7/10",
+        "odds": -138
+      },
+      "final_selection": false,
+      "disposition": "NOT SELECTED — lower combined historical/context priority or no current market price independently verified",
+      "P16": 25.2,
+      "P7": 11.76,
+      "percentile_sample_count": 15
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "market": "Receptions",
+      "stage3_classification": "Mixed",
+      "Stage2_floor": {
+        "threshold": 4,
+        "hr": "9/10",
+        "odds": -460
+      },
+      "Stage2_core": {
+        "threshold": 5,
+        "hr": "6/10",
+        "odds": -208
+      },
+      "Stage2_ceiling": {
+        "threshold": 6,
+        "hr": "4/10",
+        "odds": -107
+      },
+      "final_selection": true,
+      "disposition": "SELECTED",
+      "P16": 4,
+      "P7": 1.96,
+      "percentile_sample_count": 15
+    }
+  ],
+  "validation": {
+    "stage3_state_reloaded": true,
+    "exact_stage3_candidate_universe_used": true,
+    "locked_L10_preserved": true,
+    "stage2_bands_preserved": true,
+    "selected_props_in_stage3_universe": true,
+    "all_selected_odds_independently_verified": true,
+    "fanduel_primary_draftkings_fallback_applied": true,
+    "stage3_state_changed": false,
+    "no_probability_or_EV_claims": true,
+    "portfolio_construction_deferred": true,
+    "P16_P7_recalculated_from_last_15": true,
+    "original_final_selections_preserved": true,
+    "odds_preserved": true,
+    "context_classifications_preserved": true
+  },
+  "revision_note": "Updates P16 and P7 on the final prop card and candidate dispositions to use the 15 most recent qualifying games; all prior selections, prices, rationale, locked L10 values and context classifications are preserved.",
+  "percentile_sample": {
+    "label": "Last 15 qualifying games",
+    "n": 15,
+    "cutoff": {
+      "rule": "Completion of the final scheduled game of Week 5",
+      "date": "2026-10-12",
+      "game": "Buffalo Bills at Los Angeles Rams",
+      "status": "reported in the existing repository Stage 0 artifact; not independently re-verified in this retry"
+    },
+    "quantile_method": "linear interpolation; rank=(n-1)*q",
+    "P16_quantile": 0.16,
+    "P7_quantile": 0.07
+  }
+}
