@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 142,
-      "Receiving Yards": 485,
-      "Receptions": 303,
-      "Rushing Yards": 262
+      "Passing Yards": 97,
+      "Receiving Yards": 235,
+      "Receptions": 149,
+      "Rushing Yards": 143
     },
     "FanDuel": {
-      "Passing Yards": 10,
-      "Receiving Yards": 46,
-      "Receptions": 21,
-      "Rushing Yards": 24
+      "Passing Yards": 4,
+      "Receiving Yards": 18,
+      "Receptions": 18,
+      "Rushing Yards": 11
     }
   },
   "core_markets_present": [
@@ -21,44 +21,32 @@
   ],
   "duplicates": 0,
   "event_ids": [
+    "34118033",
     "34118064",
-    "34118080",
-    "34118185",
-    "34118242",
-    "34118253",
-    "36160495",
-    "36160511",
-    "36160513",
     "36160515",
-    "36160524"
+    "36190129"
   ],
   "games": [
-    "ARI Cardinals @ LA Rams",
-    "Arizona Cardinals @ Los Angeles Rams",
-    "BUF Bills @ LV Raiders",
-    "Buffalo Bills @ Las Vegas Raiders",
-    "DAL Cowboys @ GB Packers",
-    "Dallas Cowboys @ Green Bay Packers",
-    "LA Chargers @ KC Chiefs",
-    "Los Angeles Chargers @ Kansas City Chiefs",
+    "NE Patriots @ CHI Bears",
+    "New England Patriots @ Chicago Bears",
     "WAS Commanders @ SF 49ers",
     "Washington Commanders @ San Francisco 49ers"
   ],
   "markets": {
-    "Alt Passing Yards": 70,
-    "Alt Receiving Yards": 414,
-    "Alt Receptions": 251,
-    "Alt Rushing Yards": 171,
-    "Passing Yards": 152,
-    "Receiving Yards": 531,
-    "Receptions": 324,
-    "Rush + Receiving Yards": 173,
-    "Rushing Yards": 286
+    "Alt Passing Yards": 37,
+    "Alt Receiving Yards": 197,
+    "Alt Receptions": 125,
+    "Alt Rushing Yards": 107,
+    "Passing Yards": 101,
+    "Receiving Yards": 253,
+    "Receptions": 167,
+    "Rush + Receiving Yards": 78,
+    "Rushing Yards": 154
   },
   "sportsbooks": {
-    "DraftKings": 1365,
-    "FanDuel": 1007
+    "DraftKings": 702,
+    "FanDuel": 517
   },
-  "total_rows": 2372,
+  "total_rows": 1219,
   "validation_mode": "slate-size-agnostic"
 }
