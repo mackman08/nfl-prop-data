@@ -1,0 +1,1679 @@
+{
+  "stage": 3,
+  "season": 2026,
+  "week": 6,
+  "scope": {
+    "analysis_scope": "Custom — Dallas Cowboys at Green Bay Packers on Sunday, October 18, 2026, and Washington Commanders at San Francisco 49ers on Monday, October 19, 2026",
+    "timezone": "America/Toronto (Eastern Time)",
+    "games": [
+      {
+        "date": "2026-10-18",
+        "kickoff_et": "20:20",
+        "away_team": "Dallas Cowboys",
+        "away_abbreviation": "DAL",
+        "home_team": "Green Bay Packers",
+        "home_abbreviation": "GB"
+      },
+      {
+        "date": "2026-10-19",
+        "kickoff_et": "20:15",
+        "away_team": "Washington Commanders",
+        "away_abbreviation": "WAS",
+        "home_team": "San Francisco 49ers",
+        "home_abbreviation": "SF"
+      }
+    ]
+  },
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent qualifying completed regular-season games per player before the cutoff"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of the final scheduled game of Week 5",
+    "date": "2026-10-12",
+    "game": "Buffalo Bills at Los Angeles Rams",
+    "status": "reported in the existing repository Stage 0 artifact; not independently re-verified in this retry"
+  },
+  "record_count": 21,
+  "state_id": "STATE-3-2026-W06-CUSTOM-DAL-GB-WAS-SF-L10-20261018-R2",
+  "parent_state_id": "STATE-3-2026-W06-CUSTOM-DAL-GB-WAS-SF-L10-20261018-R1",
+  "status": "COMPLETE",
+  "completed_at": "2026-10-18",
+  "state_path": "state/week6_2026/stage3_cowboys_packers_commanders_49ers_l10_p16_p7.json",
+  "source_snapshot": {
+    "stage2_state_path": "state/week6_2026/stage2_cowboys_packers_commanders_49ers_l10.json",
+    "stage2_blob_sha": "dac4e6904623dec31562dd3dcd78708125741643",
+    "research_as_of": "2026-10-18",
+    "sources": [
+      {
+        "source": "Official NFL Week 6 injury report",
+        "url": "https://www.nfl.com/injuries/league/2026/reg6",
+        "notes": "Dallas/Green Bay Sunday injury designations; Commanders/49ers Monday statuses including Diggs, Evans, Deebo, Bosa, McCaffrey and Ekeler."
+      },
+      {
+        "source": "Commanders official Week 6 injury report",
+        "url": "https://www.commanders.com/news/commanders-vs-49ers-week-6-injury-report-2026",
+        "notes": "Week 6 practice participation; Croskey-Merritt out; Diggs questionable; Ekeler limited; McLaurin limited then DNP Friday; Daniels full."
+      },
+      {
+        "source": "49ers official Week 6 matchup update",
+        "url": "https://www.49ers.com/news/kyle-juszczyk-available-deebo-ruled-out-vs-commanders-in-week-6-wasvssf",
+        "notes": "Deebo Samuel and Nick Bosa ruled out; Evans and Christian Kirk questionable."
+      },
+      {
+        "source": "Cowboys-Packers pregame matchup analysis",
+        "url": "https://www.bloggingtheboys.com/dallas-cowboys-analysis/222879/keys-kickoff-cowboys-packers-week-6",
+        "notes": "Packers blitz tendency; discussion of Dallas running game; concerns about Ferguson's role; Green Bay deep-pass production and Dallas secondary."
+      },
+      {
+        "source": "Packers Week 5 stats",
+        "url": "https://www.acmepackingcompany.com/green-bay-packers-analysis/87957/packers-by-the-numbers-stats-from-the-week-5-win-over-the-bears",
+        "notes": "Watson 143 receiving yards and Matthew Golden 123 in the 31-7 win."
+      },
+      {
+        "source": "49ers Week 5 game report",
+        "url": "https://www.reuters.com/sports/nfl/49ers-capitalize-four-turnovers-down-seahawks-remain-undefeated--flm-2026-10-12/",
+        "notes": "Purdy 189 passing yards; McCaffrey 68 rushing yards and a touchdown; Evans 113 receiving yards."
+      },
+      {
+        "source": "Commanders-49ers pregame matchup analysis",
+        "url": "https://www.hogshaven.com/the-5-oclock-club/448911/commanders-49ers-matchup-week-6-kyle-shanahan-dan-quinn",
+        "notes": "Daniels' return performance; San Francisco offensive and defensive form; receiver availability; Washington run defense."
+      },
+      {
+        "source": "Packers official Week 6 inactives",
+        "url": "https://www.packers.com/news/packers-cowboys-week-6-inactives-oct-18-2026",
+        "notes": "Game-day availability context for Sunday; official article reported selected Packers inactives."
+      }
+    ],
+    "odds_snapshot_note": "Stage 2 odds are carried forward unchanged from the repository CSV; snapshot timestamp and current live prices were not independently verified.",
+    "stage1_state_path": "state/week6_2026/stage1_cowboys_packers_commanders_49ers_l10.json",
+    "stage1_blob_sha": "ed7b4270474460b22f2c965ad1903e58c07377ff"
+  },
+  "stage3_summary": {
+    "stage2_candidates_in": 21,
+    "candidates_analyzed": 21,
+    "overall_classification_counts": {
+      "Mixed": 13,
+      "Supportive": 5,
+      "Concern": 3
+    },
+    "historical_hr_changed": false,
+    "locked_L10_changed": false,
+    "stage2_alternate_structure_changed": false,
+    "injury_uncertainty_flags": [
+      "Stefon Diggs questionable (hamstring) for Monday",
+      "Mike Evans questionable (ribs/Achilles) for Monday",
+      "Christian Kirk questionable (calf) for Monday",
+      "Terry McLaurin had recent hamstring/rest-related practice limitations",
+      "Austin Ekeler limited with chest issue"
+    ],
+    "excluded_stage2_candidates": [
+      {
+        "player": "Jayden Daniels",
+        "market": "Passing Yards",
+        "reason": "No selected Floor/Core/Ceiling band reaches 7/10; exclude from Stage 3 context set under the historical materiality screen."
+      },
+      {
+        "player": "CeeDee Lamb",
+        "market": "Receiving Yards",
+        "reason": "No selected Floor/Core/Ceiling band reaches 7/10; exclude from Stage 3 context set under the historical materiality screen."
+      },
+      {
+        "player": "George Pickens",
+        "market": "Receiving Yards",
+        "reason": "No selected Floor/Core/Ceiling band reaches 7/10; exclude from Stage 3 context set under the historical materiality screen."
+      },
+      {
+        "player": "George Pickens",
+        "market": "Receptions",
+        "reason": "No selected Floor/Core/Ceiling band reaches 7/10; exclude from Stage 3 context set under the historical materiality screen."
+      }
+    ]
+  },
+  "validation": {
+    "stage2_state_reloaded": true,
+    "exact_stage2_candidate_universe_used": true,
+    "locked_L10_preserved": true,
+    "stage2_bands_preserved": true,
+    "injury_context_researched": true,
+    "no_probability_or_EV_claims": true,
+    "stage2_state_changed": false,
+    "P16_P7_added_from_locked_stage1": true,
+    "all_21_stage3_candidates_preserved": true,
+    "stage3_context_classifications_preserved": true
+  },
+  "records": [
+    {
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "position": "QB",
+      "market": "Passing Yards",
+      "main_market": {
+        "line": 276.5,
+        "over_price": -113,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        316,
+        335,
+        276,
+        279,
+        175,
+        70,
+        307,
+        244,
+        294,
+        376
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 219.5,
+          "threshold": 220,
+          "hr": "8/10",
+          "american_odds": -533
+        },
+        "core": {
+          "line": 249.5,
+          "threshold": 250,
+          "hr": "7/10",
+          "american_odds": -225
+        },
+        "ceiling": {
+          "line": 259.5,
+          "threshold": 260,
+          "hr": "7/10",
+          "american_odds": -172
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 250+ Passing Yards",
+        "historical_core_hit_rate": "7/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Established starting quarterback with substantial passing volume; L10 cleared 220 yards in 8/10 and 250 in 7/10."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "L10 includes four strong recent results of 276–335 yards, but the latest sample also includes a 175-yard game; output has meaningful spread."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Concern",
+            "finding": "Pre-game matchup analysis described Green Bay as a strong pass defense and noted its frequent blitz packages, which can pressure Dallas' pass protection."
+          },
+          {
+            "factor": "Game environment/script",
+            "classification": "Mixed",
+            "finding": "The matchup has shootout potential, but Dallas could also lean on Javonte Williams if it establishes the run."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 237.28,
+      "P7": 179.29
+    },
+    {
+      "player": "Brock Purdy",
+      "team": "SF",
+      "position": "QB",
+      "market": "Passing Yards",
+      "main_market": {
+        "line": 249.5,
+        "over_price": -111,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        189,
+        218,
+        297,
+        287,
+        205,
+        127,
+        303,
+        295,
+        295,
+        168
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 199.5,
+          "threshold": 200,
+          "hr": "7/10",
+          "american_odds": -451
+        },
+        "core": {
+          "line": 219.5,
+          "threshold": 220,
+          "hr": "5/10",
+          "american_odds": -249
+        },
+        "ceiling": {
+          "line": 229.5,
+          "threshold": 230,
+          "hr": "5/10",
+          "american_odds": -190
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 220+ Passing Yards",
+        "historical_core_hit_rate": "5/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Purdy remains the starting quarterback and has produced strong passing totals in several recent games."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "His latest 189-yard outing was below the 200-yard floor, although his L10 reached 200 yards in 7/10."
+          },
+          {
+            "factor": "Receiver availability",
+            "classification": "Concern",
+            "finding": "Deebo Samuel is ruled out; Mike Evans and Christian Kirk are questionable for Monday, creating material uncertainty in the receiving group."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Washington's secondary has been a weakness, but San Francisco's receivers' availability and recent offensive inconsistency temper the matchup case."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 159.36,
+      "P7": 131.95
+    },
+    {
+      "player": "Javonte Williams",
+      "team": "DAL",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "main_market": {
+        "line": 69.5,
+        "over_price": -112,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        45,
+        62,
+        98,
+        30,
+        41,
+        54,
+        34,
+        91,
+        67,
+        59
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 39.5,
+          "threshold": 40,
+          "hr": "8/10",
+          "american_odds": -670
+        },
+        "core": {
+          "line": 59.5,
+          "threshold": 60,
+          "hr": "4/10",
+          "american_odds": -186
+        },
+        "ceiling": {
+          "line": 69.5,
+          "threshold": 70,
+          "hr": "2/10",
+          "american_odds": -112
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 60+ Rushing Yards",
+        "historical_core_hit_rate": "4/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Mixed",
+            "finding": "The pre-game analysis argues Dallas should commit to Williams on the ground, but his carry volume remains play-caller dependent."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "He cleared 40 yards in 8/10 L10 games but reached 60 in only 4/10 and 70 in 2/10."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Previews disagree on Green Bay's run defense: one describes weak run-stop performance and injuries, another highlights a strong run-defense performance against Chicago."
+          },
+          {
+            "factor": "Game environment/script",
+            "classification": "Mixed",
+            "finding": "A balanced Dallas plan could create volume; falling behind or abandoning the run would undermine it."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 41,
+      "P7": 31.32
+    },
+    {
+      "player": "Austin Ekeler",
+      "team": "WAS",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "main_market": {
+        "line": 19.5,
+        "over_price": -107,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        -1,
+        29,
+        17,
+        26,
+        12,
+        22,
+        7,
+        44,
+        42,
+        52
+      ],
+      "stage2_bands": {
+        "floor": null,
+        "core": {
+          "line": 14.5,
+          "threshold": 15,
+          "hr": "7/10",
+          "american_odds": -174
+        },
+        "ceiling": {
+          "line": 19.5,
+          "threshold": 20,
+          "hr": "6/10",
+          "american_odds": -107
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 15+ Rushing Yards",
+        "historical_core_hit_rate": "7/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Jacory Croskey-Merritt is ruled out, leaving Ekeler and Rachaad White positioned for greater opportunity."
+          },
+          {
+            "factor": "Availability",
+            "classification": "Mixed",
+            "finding": "Ekeler practiced on a limited basis with a chest issue; the official report did not list him as out or questionable."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Concern",
+            "finding": "San Francisco has been described as a strong defense, and Washington's ground game faces a difficult overall matchup."
+          },
+          {
+            "factor": "Historical profile",
+            "classification": "Supportive",
+            "finding": "Ekeler cleared 15 rushing yards in 7/10 L10 games, though his results range from negative yardage to 52."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": "Unavailable — fewer than 20 games",
+      "P7": "Unavailable — fewer than 20 games"
+    },
+    {
+      "player": "Christian McCaffrey",
+      "team": "SF",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "main_market": {
+        "line": 61.5,
+        "over_price": -111,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        68,
+        52,
+        75,
+        23,
+        68,
+        23,
+        140,
+        117,
+        73,
+        53
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 39.5,
+          "threshold": 40,
+          "hr": "8/10",
+          "american_odds": -436
+        },
+        "core": {
+          "line": 49.5,
+          "threshold": 50,
+          "hr": "8/10",
+          "american_odds": -220
+        },
+        "ceiling": {
+          "line": 59.5,
+          "threshold": 60,
+          "hr": "6/10",
+          "american_odds": -122
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 50+ Rushing Yards",
+        "historical_core_hit_rate": "8/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "McCaffrey was a full participant in practice and remains a central part of the 49ers offense."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Supportive",
+            "finding": "He rushed for 68 yards and a touchdown against Seattle in Week 5."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Concern",
+            "finding": "Washington's run defense has been described as a top-10 unit."
+          },
+          {
+            "factor": "Game environment/script",
+            "classification": "Supportive",
+            "finding": "San Francisco enters undefeated and favored at home, a script that could support continued rushing volume."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 30.76,
+      "P7": 23.66
+    },
+    {
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "position": "WR",
+      "market": "Receptions",
+      "main_market": {
+        "line": 6.5,
+        "over_price": -102,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        2,
+        17,
+        7,
+        8,
+        5,
+        1,
+        5,
+        6,
+        6,
+        6
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 4.5,
+          "threshold": 5,
+          "hr": "8/10",
+          "american_odds": -394
+        },
+        "core": {
+          "line": 5.5,
+          "threshold": 6,
+          "hr": "6/10",
+          "american_odds": -193
+        },
+        "ceiling": {
+          "line": 6.5,
+          "threshold": 7,
+          "hr": "3/10",
+          "american_odds": -102
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 6+ Receptions",
+        "historical_core_hit_rate": "6/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Availability",
+            "classification": "Supportive",
+            "finding": "Lamb was listed as a full participant in the official Week 6 injury report."
+          },
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "He remains a primary Dallas receiving option and has reached 5+ receptions in 8/10 L10 games."
+          },
+          {
+            "factor": "Opponent/game plan",
+            "classification": "Supportive",
+            "finding": "Green Bay's blitz tendency may encourage quick, short throws if Dallas can identify pressure and get the ball out."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 6+ threshold hit in 6/10, while 7+ hit in only 3/10; the higher threshold has substantially less historical support."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 5,
+      "P7": 2.66
+    },
+    {
+      "player": "Ryan Flournoy",
+      "team": "DAL",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": 32.5,
+        "over_price": -115,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        90,
+        37,
+        22,
+        23,
+        22,
+        68,
+        18,
+        40,
+        115,
+        34
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 14.5,
+          "threshold": 15,
+          "hr": "10/10",
+          "american_odds": -437
+        },
+        "core": {
+          "line": 24.5,
+          "threshold": 25,
+          "hr": "6/10",
+          "american_odds": -192
+        },
+        "ceiling": {
+          "line": 32.5,
+          "threshold": 33,
+          "hr": "6/10",
+          "american_odds": -115
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 25+ Receiving Yards",
+        "historical_core_hit_rate": "6/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Historical profile",
+            "classification": "Supportive",
+            "finding": "Flournoy reached 15 receiving yards in all 10 L10 games and 25 yards in 6/10."
+          },
+          {
+            "factor": "Role/workload",
+            "classification": "Concern",
+            "finding": "His target and snap share is less secure than the team's established top receiving options; current-week target volume was not independently confirmed."
+          },
+          {
+            "factor": "Opponent/game plan",
+            "classification": "Mixed",
+            "finding": "Dallas may need quick passing against Green Bay's pressure looks, but the distribution of targets among Lamb, Pickens and Flournoy is uncertain."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 25+ Core threshold hit in 6/10; the historical 10/10 floor is at a much lower 15-yard threshold."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 2.2,
+      "P7": 0
+    },
+    {
+      "player": "Ryan Flournoy",
+      "team": "DAL",
+      "position": "WR",
+      "market": "Receptions",
+      "main_market": {
+        "line": 2.5,
+        "over_price": -194,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        3,
+        4,
+        2,
+        5,
+        2,
+        5,
+        2,
+        4,
+        9,
+        3
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 1.5,
+          "threshold": 2,
+          "hr": "10/10",
+          "american_odds": -620
+        },
+        "core": {
+          "line": 2.5,
+          "threshold": 3,
+          "hr": "7/10",
+          "american_odds": -194
+        },
+        "ceiling": {
+          "line": 3.5,
+          "threshold": 4,
+          "hr": "5/10",
+          "american_odds": 129
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 3+ Receptions",
+        "historical_core_hit_rate": "7/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Historical profile",
+            "classification": "Supportive",
+            "finding": "Flournoy recorded 2+ receptions in all 10 L10 games and 3+ in 7/10."
+          },
+          {
+            "factor": "Role/workload",
+            "classification": "Concern",
+            "finding": "His role and weekly target count are less established than Lamb's or Pickens'; no verified Week 6 snap projection was available."
+          },
+          {
+            "factor": "Opponent/game plan",
+            "classification": "Mixed",
+            "finding": "A short passing approach against Green Bay pressure could create catch opportunities, but targets are shared among several receivers."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 3+ Core line is 7/10 historically; 4+ drops to 5/10."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 1,
+      "P7": 0
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": 76.5,
+        "over_price": -110,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        143,
+        47,
+        96,
+        41,
+        147,
+        113,
+        17,
+        29,
+        89,
+        80
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 39.5,
+          "threshold": 40,
+          "hr": "8/10",
+          "american_odds": -559
+        },
+        "core": {
+          "line": 59.5,
+          "threshold": 60,
+          "hr": "6/10",
+          "american_odds": -213
+        },
+        "ceiling": {
+          "line": 69.5,
+          "threshold": 70,
+          "hr": "6/10",
+          "american_odds": -143
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 60+ Receiving Yards",
+        "historical_core_hit_rate": "6/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Watson is a major deep-threat option in Green Bay's passing attack."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Supportive",
+            "finding": "He recorded 143 receiving yards and two touchdowns against Chicago in Week 5."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Supportive",
+            "finding": "Pre-game analysis highlighted Dallas' vulnerable secondary and difficulty preventing explosive passing plays."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "Watson reached 60+ yards in 6/10 L10 games; his recent explosive performance is not proof of repeatability."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 29.48,
+      "P7": 5.61
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receptions",
+      "main_market": {
+        "line": 4.5,
+        "over_price": -152,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        6,
+        3,
+        7,
+        4,
+        6,
+        5,
+        2,
+        3,
+        4,
+        4
+      ],
+      "stage2_bands": {
+        "floor": null,
+        "core": {
+          "line": 3.5,
+          "threshold": 4,
+          "hr": "7/10",
+          "american_odds": -343
+        },
+        "ceiling": {
+          "line": 4.5,
+          "threshold": 5,
+          "hr": "4/10",
+          "american_odds": -152
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 4+ Receptions",
+        "historical_core_hit_rate": "7/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Watson's downfield role and strong Week 5 performance support continued involvement."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "His L10 includes several games with only 2–4 catches despite substantial receiving-yard upside."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Supportive",
+            "finding": "Dallas has had difficulty limiting explosive passes, though that can produce yardage without a high catch count."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 4+ reception threshold hit in 7/10; 5+ hit in only 4/10."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 2,
+      "P7": 0.66
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": 44.5,
+        "over_price": -114,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        62,
+        77,
+        50,
+        14,
+        57,
+        63,
+        53,
+        69,
+        41,
+        96
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 14.5,
+          "threshold": 15,
+          "hr": "9/10",
+          "american_odds": -670
+        },
+        "core": {
+          "line": 24.5,
+          "threshold": 25,
+          "hr": "9/10",
+          "american_odds": -327
+        },
+        "ceiling": {
+          "line": 39.5,
+          "threshold": 40,
+          "hr": "9/10",
+          "american_odds": -144
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 25+ Receiving Yards",
+        "historical_core_hit_rate": "9/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Availability",
+            "classification": "Mixed",
+            "finding": "McLaurin was limited on Thursday and did not practice Friday with hamstring/rest designation; the NFL report did not list a game-status designation, but the issue warrants monitoring."
+          },
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "He is a primary Washington receiver and has exceeded 25 receiving yards in 9/10 L10 games."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Concern",
+            "finding": "San Francisco has played well defensively and generated pressure against Seattle in Week 5."
+          },
+          {
+            "factor": "Target distribution",
+            "classification": "Supportive",
+            "finding": "Stefon Diggs is questionable with a hamstring injury; if limited or inactive, McLaurin could see more opportunities."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 41.28,
+      "P7": 18.29
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WAS",
+      "position": "WR",
+      "market": "Receptions",
+      "main_market": {
+        "line": 3.5,
+        "over_price": -125,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        4,
+        6,
+        2,
+        2,
+        4,
+        5,
+        3,
+        3,
+        3,
+        7
+      ],
+      "stage2_bands": {
+        "floor": null,
+        "core": {
+          "line": 2.5,
+          "threshold": 3,
+          "hr": "8/10",
+          "american_odds": -308
+        },
+        "ceiling": {
+          "line": 3.5,
+          "threshold": 4,
+          "hr": "5/10",
+          "american_odds": -125
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 3+ Receptions",
+        "historical_core_hit_rate": "8/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Availability",
+            "classification": "Mixed",
+            "finding": "Recent hamstring/rest-related practice limitations create some uncertainty even though no official game-status designation was listed."
+          },
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "McLaurin is a primary target and recorded 3+ receptions in 8/10 L10 games."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Concern",
+            "finding": "San Francisco's defense and pass rush could disrupt Washington's passing rhythm."
+          },
+          {
+            "factor": "Target distribution",
+            "classification": "Supportive",
+            "finding": "Diggs' questionable status could concentrate more targets on McLaurin."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 2.04,
+      "P7": 2
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": 40.5,
+        "over_price": -112,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        35,
+        33,
+        47,
+        55,
+        43,
+        101,
+        138,
+        26,
+        26,
+        20
+      ],
+      "stage2_bands": {
+        "floor": null,
+        "core": {
+          "line": 24.5,
+          "threshold": 25,
+          "hr": "9/10",
+          "american_odds": -321
+        },
+        "ceiling": {
+          "line": 39.5,
+          "threshold": 40,
+          "hr": "5/10",
+          "american_odds": -118
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 25+ Receiving Yards",
+        "historical_core_hit_rate": "9/10",
+        "overall_classification": "Concern",
+        "factors": [
+          {
+            "factor": "Availability",
+            "classification": "Concern",
+            "finding": "Diggs is officially questionable with a hamstring injury after missing Thursday practice and returning to limited participation Friday."
+          },
+          {
+            "factor": "Historical profile",
+            "classification": "Supportive",
+            "finding": "The 25+ receiving-yard threshold hit in 9/10 L10 games."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "San Francisco's defense is playing well, but Washington may need to throw if trailing."
+          },
+          {
+            "factor": "Conditional use",
+            "classification": "Concern",
+            "finding": "The historical hit rate assumes a usable role; injury limitation or reduced routes could materially change the opportunity."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 26,
+      "P7": 20.99
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "position": "WR",
+      "market": "Receptions",
+      "main_market": {
+        "line": 3.5,
+        "over_price": -168,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        5,
+        4,
+        5,
+        4,
+        3,
+        6,
+        9,
+        3,
+        3,
+        2
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 2.5,
+          "threshold": 3,
+          "hr": "9/10",
+          "american_odds": -435
+        },
+        "core": {
+          "line": 3.5,
+          "threshold": 4,
+          "hr": "6/10",
+          "american_odds": -168
+        },
+        "ceiling": {
+          "line": 4.5,
+          "threshold": 5,
+          "hr": "4/10",
+          "american_odds": 131
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 4+ Receptions",
+        "historical_core_hit_rate": "6/10",
+        "overall_classification": "Concern",
+        "factors": [
+          {
+            "factor": "Availability",
+            "classification": "Concern",
+            "finding": "Diggs is officially questionable with a hamstring injury."
+          },
+          {
+            "factor": "Historical profile",
+            "classification": "Supportive",
+            "finding": "He recorded 3+ receptions in 9/10 L10 games, but 4+ in 6/10."
+          },
+          {
+            "factor": "Opponent/game script",
+            "classification": "Mixed",
+            "finding": "A trailing Washington script may increase pass volume, but a hamstring issue can limit routes and separation."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 4+ Core threshold has only 6/10 historical hits."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 3,
+      "P7": 3
+    },
+    {
+      "player": "Jake Ferguson",
+      "team": "DAL",
+      "position": "TE",
+      "market": "Receptions",
+      "main_market": {
+        "line": 2.5,
+        "over_price": -205,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        3,
+        3,
+        3,
+        4,
+        2,
+        1,
+        1,
+        3,
+        2,
+        5
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 1.5,
+          "threshold": 2,
+          "hr": "8/10",
+          "american_odds": -650
+        },
+        "core": {
+          "line": 2.5,
+          "threshold": 3,
+          "hr": "6/10",
+          "american_odds": -205
+        },
+        "ceiling": {
+          "line": 3.5,
+          "threshold": 4,
+          "hr": "2/10",
+          "american_odds": 121
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 3+ Receptions",
+        "historical_core_hit_rate": "6/10",
+        "overall_classification": "Concern",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Concern",
+            "finding": "A game-week preview raised the possibility of more tight-end snaps for Brevyn Spann-Ford and fewer for Ferguson, citing blocking and production concerns."
+          },
+          {
+            "factor": "Historical profile",
+            "classification": "Supportive",
+            "finding": "Ferguson reached 2+ receptions in 8/10 L10 games."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 3+ Core line hit in 6/10, while 4+ hit in 2/10."
+          },
+          {
+            "factor": "Opponent/game plan",
+            "classification": "Mixed",
+            "finding": "If Dallas uses extra blocking personnel against Green Bay pressure, Ferguson's route volume could be affected."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 2,
+      "P7": 1
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": 50.5,
+        "over_price": -109,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        64,
+        42,
+        26,
+        15,
+        65,
+        20,
+        143,
+        58,
+        43,
+        56
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 24.5,
+          "threshold": 25,
+          "hr": "8/10",
+          "american_odds": -489
+        },
+        "core": {
+          "line": 39.5,
+          "threshold": 40,
+          "hr": "7/10",
+          "american_odds": -190
+        },
+        "ceiling": {
+          "line": 49.5,
+          "threshold": 50,
+          "hr": "5/10",
+          "american_odds": -115
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 40+ Receiving Yards",
+        "historical_core_hit_rate": "7/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Kraft is an important receiving option in Green Bay's tight-end rotation."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Supportive",
+            "finding": "He recorded a 46-yard catch in the Week 5 win over Chicago."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Supportive",
+            "finding": "Dallas' defense has allowed explosive plays and has had trouble pressuring opposing quarterbacks consistently."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Supportive",
+            "finding": "Kraft reached 25 yards in 8/10 and 40 yards in 7/10 L10 games; 50+ falls to 5/10."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 26,
+      "P7": 17.32
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "market": "Receptions",
+      "main_market": {
+        "line": 3.5,
+        "over_price": -191,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        5,
+        6,
+        4,
+        2,
+        3,
+        2,
+        7,
+        5,
+        2,
+        5
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 2.5,
+          "threshold": 3,
+          "hr": "7/10",
+          "american_odds": -513
+        },
+        "core": {
+          "line": 3.5,
+          "threshold": 4,
+          "hr": "6/10",
+          "american_odds": -191
+        },
+        "ceiling": {
+          "line": 4.5,
+          "threshold": 5,
+          "hr": "5/10",
+          "american_odds": 114
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 4+ Receptions",
+        "historical_core_hit_rate": "6/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Kraft has a meaningful role in Green Bay's passing game."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "His Week 5 long catch supports yardage upside but does not itself imply a high reception count."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Supportive",
+            "finding": "Dallas' defense may permit receiving opportunities, especially if Green Bay attacks through the air."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 3+ catch floor hit in 7/10, but 4+ in 6/10 and 5+ in 5/10."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 2,
+      "P7": 2
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "team": "WAS",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": 24.5,
+        "over_price": -116,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        60,
+        5,
+        16,
+        2,
+        55,
+        44,
+        33,
+        20,
+        29,
+        40
+      ],
+      "stage2_bands": {
+        "floor": null,
+        "core": {
+          "line": 14.5,
+          "threshold": 15,
+          "hr": "8/10",
+          "american_odds": -263
+        },
+        "ceiling": {
+          "line": 24.5,
+          "threshold": 25,
+          "hr": "6/10",
+          "american_odds": -116
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 15+ Receiving Yards",
+        "historical_core_hit_rate": "8/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Mixed",
+            "finding": "Okonkwo remains a receiving option, but his yardage results vary sharply from game to game."
+          },
+          {
+            "factor": "Historical profile",
+            "classification": "Supportive",
+            "finding": "He reached 15 receiving yards in 8/10 L10 games."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "San Francisco has defended well overall; no verified current-week matchup statistic specific to tight-end receiving yards was found."
+          },
+          {
+            "factor": "Game script",
+            "classification": "Mixed",
+            "finding": "Washington could need more passing volume if playing from behind, but protection and offensive consistency are concerns."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 5.2,
+      "P7": 2.66
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "team": "WAS",
+      "position": "TE",
+      "market": "Receptions",
+      "main_market": {
+        "line": 2.5,
+        "over_price": -152,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        4,
+        2,
+        2,
+        2,
+        3,
+        6,
+        4,
+        2,
+        4,
+        3
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 1.5,
+          "threshold": 2,
+          "hr": "10/10",
+          "american_odds": -465
+        },
+        "core": {
+          "line": 2.5,
+          "threshold": 3,
+          "hr": "6/10",
+          "american_odds": -152
+        },
+        "ceiling": {
+          "line": 3.5,
+          "threshold": 4,
+          "hr": "4/10",
+          "american_odds": 154
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 3+ Receptions",
+        "historical_core_hit_rate": "6/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Historical profile",
+            "classification": "Supportive",
+            "finding": "Okonkwo recorded 2+ receptions in all 10 L10 games."
+          },
+          {
+            "factor": "Role/workload",
+            "classification": "Mixed",
+            "finding": "His catch volume has been steadier than yardage, but target share can vary with Washington's other receivers."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "San Francisco's overall defense is strong; current opponent-specific tight-end coverage data was not independently confirmed."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 3+ reception Core line hit in 6/10, despite the 2+ floor hitting 10/10."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 2,
+      "P7": 1.33
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "main_market": {
+        "line": 64.5,
+        "over_price": -113,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        24,
+        70,
+        82,
+        80,
+        12,
+        29,
+        115,
+        88,
+        67,
+        78
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 39.5,
+          "threshold": 40,
+          "hr": "7/10",
+          "american_odds": -355
+        },
+        "core": {
+          "line": 49.5,
+          "threshold": 50,
+          "hr": "7/10",
+          "american_odds": -213
+        },
+        "ceiling": {
+          "line": 59.5,
+          "threshold": 60,
+          "hr": "7/10",
+          "american_odds": -138
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 50+ Receiving Yards",
+        "historical_core_hit_rate": "7/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "Kittle is a key receiving option; with Deebo Samuel out and other wide receivers questionable, his target opportunity could increase."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "Pre-game analysis noted that Kittle's production had slowed somewhat, despite his established role."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Washington's defense has struggled in coverage but has also been described as strong against the run; no verified Kittle-specific matchup split was available."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Supportive",
+            "finding": "Kittle reached 40, 50 and 60 receiving yards in 7/10 L10 games."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 25.08,
+      "P7": 15.96
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "position": "TE",
+      "market": "Receptions",
+      "main_market": {
+        "line": 5.5,
+        "over_price": -107,
+        "sportsbook": "DraftKings",
+        "selection_method": "Selected from the available lines for this player/market as the listed over price closest to -110; source file has no explicit main-line flag."
+      },
+      "locked_L10": [
+        5,
+        4,
+        6,
+        4,
+        2,
+        5,
+        7,
+        8,
+        4,
+        6
+      ],
+      "stage2_bands": {
+        "floor": {
+          "line": 3.5,
+          "threshold": 4,
+          "hr": "9/10",
+          "american_odds": -460
+        },
+        "core": {
+          "line": 4.5,
+          "threshold": 5,
+          "hr": "6/10",
+          "american_odds": -208
+        },
+        "ceiling": {
+          "line": 5.5,
+          "threshold": 6,
+          "hr": "4/10",
+          "american_odds": -107
+        }
+      },
+      "stage3_context": {
+        "selected_market": "Over 5+ Receptions",
+        "historical_core_hit_rate": "6/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role/workload",
+            "classification": "Supportive",
+            "finding": "The 49ers' receiver injuries could funnel more targets toward Kittle."
+          },
+          {
+            "factor": "Recent usage/current trend",
+            "classification": "Mixed",
+            "finding": "His recent reception totals vary, and the 5+ catch threshold hit in 6/10 L10 games."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Washington's pass defense presents opportunity, but San Francisco may distribute targets among McCaffrey and available receivers."
+          },
+          {
+            "factor": "Threshold reliability",
+            "classification": "Mixed",
+            "finding": "The 4+ floor hit in 9/10, but 5+ hit in 6/10 and 6+ in 4/10."
+          }
+        ],
+        "decision_note": "Context classification only; not a probability estimate, expected-value calculation, or bet recommendation."
+      },
+      "P16": 4,
+      "P7": 2
+    }
+  ],
+  "revision_note": "Adds P16 and P7 to each Stage 3 candidate using matching locked Stage 1 percentile values; all prior Stage 3 fields and records are preserved."
+}
