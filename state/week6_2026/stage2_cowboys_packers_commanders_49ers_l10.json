@@ -67,9 +67,9 @@
     "scoped_alternate_rows": 738,
     "records_with_core": 25,
     "records_without_core": 0,
-    "stage3_candidates": 25,
-    "excluded": 0,
-    "candidate_rule": "Carry forward a player/market when at least one selected Floor/Core/Ceiling band has historical L10 HR ≥60% (6/10). This is descriptive historical screening, not a prediction."
+    "stage3_candidates": 21,
+    "excluded": 4,
+    "candidate_rule": "Carry forward a player/market when at least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10), consistent with the established Stage 2 materiality screen. This is descriptive historical screening, not a prediction."
   },
   "validation": {
     "stage0_state_reloaded": true,
@@ -82,7 +82,8 @@
     "detailed_current_week_context_performed": false,
     "stage1_state_changed": false,
     "all_records_have_alternate_odds": true,
-    "candidate_counts_reconcile": true
+    "candidate_counts_reconcile": true,
+    "candidate_threshold_applied": "L10 selected-band hit rate ≥7/10"
   },
   "records": [
     {
@@ -442,7 +443,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Jayden Daniels",
@@ -752,8 +753,8 @@
         "american_odds": -178
       },
       "core_status": "SELECTED",
-      "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate": false,
+      "stage3_candidate_rationale": "No selected Floor/Core/Ceiling band reaches 7/10; exclude from Stage 3 context set under the historical materiality screen."
     },
     {
       "player": "Brock Purdy",
@@ -1088,7 +1089,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Javonte Williams",
@@ -1315,7 +1316,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Austin Ekeler",
@@ -1489,7 +1490,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Christian McCaffrey",
@@ -1728,7 +1729,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "CeeDee Lamb",
@@ -1990,8 +1991,8 @@
         "american_odds": -195
       },
       "core_status": "SELECTED",
-      "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate": false,
+      "stage3_candidate_rationale": "No selected Floor/Core/Ceiling band reaches 7/10; exclude from Stage 3 context set under the historical materiality screen."
     },
     {
       "player": "CeeDee Lamb",
@@ -2170,7 +2171,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "George Pickens",
@@ -2408,8 +2409,8 @@
         "american_odds": -174
       },
       "core_status": "SELECTED",
-      "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate": false,
+      "stage3_candidate_rationale": "No selected Floor/Core/Ceiling band reaches 7/10; exclude from Stage 3 context set under the historical materiality screen."
     },
     {
       "player": "George Pickens",
@@ -2563,8 +2564,8 @@
         "american_odds": 121
       },
       "core_status": "SELECTED",
-      "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate": false,
+      "stage3_candidate_rationale": "No selected Floor/Core/Ceiling band reaches 7/10; exclude from Stage 3 context set under the historical materiality screen."
     },
     {
       "player": "Ryan Flournoy",
@@ -2755,7 +2756,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Ryan Flournoy",
@@ -2886,7 +2887,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Christian Watson",
@@ -3149,7 +3150,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Christian Watson",
@@ -3299,7 +3300,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Terry McLaurin",
@@ -3526,7 +3527,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Terry McLaurin",
@@ -3664,7 +3665,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Stefon Diggs",
@@ -3850,7 +3851,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Stefon Diggs",
@@ -3993,7 +3994,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Jake Ferguson",
@@ -4124,7 +4125,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Tucker Kraft",
@@ -4351,7 +4352,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Tucker Kraft",
@@ -4506,7 +4507,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Chigoziem Okonkwo",
@@ -4656,7 +4657,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "Chigoziem Okonkwo",
@@ -4787,7 +4788,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "George Kittle",
@@ -5038,7 +5039,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     },
     {
       "player": "George Kittle",
@@ -5217,7 +5218,7 @@
       },
       "core_status": "SELECTED",
       "stage3_candidate": true,
-      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥6/10; retain for Stage 3 context."
+      "stage3_candidate_rationale": "At least one selected Floor/Core/Ceiling band has historical L10 HR ≥70% (7/10); retain for Stage 3 context."
     }
   ]
 }
