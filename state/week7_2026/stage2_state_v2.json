@@ -1,0 +1,103 @@
+{
+  "stage": 2,
+  "season": 2026,
+  "week": 7,
+  "scope": "Thursday only",
+  "sample": "L10",
+  "state_id": "STATE-2-WEEK7-2026-THU-L10-V2",
+  "parent_state_id": "STATE-1-WEEK7-2026-THU-L10-RETRY",
+  "method": "Rank qualifiers by mean relative distance of P16 and P7 to the market line: abs(line-percentile)/line*100. Lower is closer; percentiles are not hit probabilities.",
+  "records": [
+    {
+      "player": "TreVeyon Henderson",
+      "market": "Rushing Yards",
+      "line": 30.5,
+      "l10_hr": "7/10",
+      "p16": 23.04,
+      "p7": 10.61,
+      "mean_relative_distance_pct": 44.8,
+      "context": "Supportive"
+    },
+    {
+      "player": "A.J. Brown",
+      "market": "Receptions",
+      "line": 4.5,
+      "l10_hr": "6/10",
+      "p16": 2.04,
+      "p7": 2,
+      "mean_relative_distance_pct": 55.1,
+      "context": "Concern — identity and injury status require verification"
+    },
+    {
+      "player": "Cole Kmet",
+      "market": "Receptions",
+      "line": 1.5,
+      "l10_hr": "7/10",
+      "p16": 1,
+      "p7": 0.33,
+      "mean_relative_distance_pct": 55.7,
+      "context": "Mixed"
+    },
+    {
+      "player": "Hunter Henry",
+      "market": "Receiving Yards",
+      "line": 33.5,
+      "l10_hr": "7/10",
+      "p16": 18.32,
+      "p7": 7.66,
+      "mean_relative_distance_pct": 61.2,
+      "context": "Mixed"
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "market": "Rushing Yards",
+      "line": 44.5,
+      "l10_hr": "7/10",
+      "p16": 18,
+      "p7": 14.33,
+      "mean_relative_distance_pct": 63.7,
+      "context": "Mixed"
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "market": "Receptions",
+      "line": 2.5,
+      "l10_hr": "6/10",
+      "p16": 1,
+      "p7": 0.33,
+      "mean_relative_distance_pct": 73.4,
+      "context": "Mixed"
+    },
+    {
+      "player": "Luther Burden III",
+      "market": "Receiving Yards",
+      "line": 55.5,
+      "l10_hr": "7/10",
+      "p16": 22.2,
+      "p7": 0.98,
+      "mean_relative_distance_pct": 79.1,
+      "context": "Mixed"
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "market": "Receiving Yards",
+      "line": 18.5,
+      "l10_hr": "7/10",
+      "p16": 3,
+      "p7": 0,
+      "mean_relative_distance_pct": 91.9,
+      "context": "Concern"
+    },
+    {
+      "player": "Kalif Raymond",
+      "market": "Receptions",
+      "line": 2.5,
+      "l10_hr": "6/10",
+      "p16": 0.04,
+      "p7": 0,
+      "mean_relative_distance_pct": 99.2,
+      "context": "Mixed"
+    }
+  ],
+  "caveat": "Current-week context based on Monday injury report only; refresh before final selection."
+}
