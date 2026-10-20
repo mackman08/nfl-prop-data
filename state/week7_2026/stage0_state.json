@@ -7,9 +7,15 @@
     "label": "L10",
     "n": 10
   },
-  "historical_cutoff": "Completion of the final scheduled game of Week 6, 2026",
+  "historical_cutoff": {
+    "rule": "Completion of the final scheduled game of Week X-1",
+    "week": 6,
+    "date": "2026-10-19",
+    "description": "Completion of the final scheduled Week 6 game",
+    "exclusion": "No game from Week 7 may enter the historical sample"
+  },
   "record_count": 1,
-  "state_id": "STATE-0-WEEK7-2026-THU-L10",
+  "state_id": "STATE-0-WEEK7-2026-THU-L10-20261020",
   "parent_state_id": null,
   "records": [
     {
