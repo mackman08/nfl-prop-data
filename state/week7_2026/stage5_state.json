@@ -1,0 +1,264 @@
+{
+  "stage": 5,
+  "model_version": "V7.2.8",
+  "season": 2026,
+  "week": 7,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10
+  },
+  "state_id": "STATE-5-WEEK7-2026-THU-L10-PORTFOLIOS-20261020",
+  "parent_state_id": "STATE-4-WEEK7-2026-THU-L10-FINAL-SELECTION-20261020",
+  "parent_state_blob_sha": "7683846554f82f24196d887ec88f4daffe1cbe4b",
+  "parent_chain": [
+    {
+      "stage": 0,
+      "state_id": "STATE-0-WEEK7-2026-THU-L10-20261020",
+      "blob_sha": "a1697e71fa018ef947ad9650724e3782d4855749"
+    },
+    {
+      "stage": 1,
+      "state_id": "STATE-1-WEEK7-2026-THU-L10-FD-OR-20261020",
+      "blob_sha": "88ea1e7a8ec4d8c81607248ff23c091377d7c922"
+    },
+    {
+      "stage": 2,
+      "state_id": "STATE-2-WEEK7-2026-THU-L10-FD-PRICE-TARGET-20261020",
+      "blob_sha": "c1dec1c81ca1b042f2866a903b176681865ccf09"
+    },
+    {
+      "stage": 3,
+      "state_id": "STATE-3-WEEK7-2026-THU-L10-CONTEXT-20261020",
+      "blob_sha": "814e27f25079c570c899a3fb193150a060bca271"
+    },
+    {
+      "stage": 4,
+      "state_id": "STATE-4-WEEK7-2026-THU-L10-FINAL-SELECTION-20261020",
+      "blob_sha": "7683846554f82f24196d887ec88f4daffe1cbe4b"
+    }
+  ],
+  "input_validation": {
+    "stage4_state_exists": true,
+    "stage4_state_complete": true,
+    "stage1_locked": true,
+    "stage2_locked": true,
+    "stage3_locked": true,
+    "no_reconstruction_required": true,
+    "parent_chain_valid": true,
+    "stage4_sha_verified": true
+  },
+  "eligible_legs": [
+    {
+      "player": "Rhamondre Stevenson",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "threshold": "30+",
+      "historical_hr": "9/10",
+      "band": "Core",
+      "core_alternate": {
+        "threshold": 30,
+        "over_odds": -330,
+        "sportsbook": "FanDuel",
+        "historical_hr": "9/10"
+      },
+      "context_classification": "Supportive",
+      "source_stage4_selected": true
+    },
+    {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "threshold": "30+",
+      "historical_hr": "9/10",
+      "band": "Core",
+      "core_alternate": {
+        "threshold": 30,
+        "over_odds": -275,
+        "sportsbook": "FanDuel",
+        "historical_hr": "9/10"
+      },
+      "context_classification": "Supportive",
+      "source_stage4_selected": true
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "threshold": "40+",
+      "historical_hr": "8/10",
+      "band": "Core",
+      "core_alternate": {
+        "threshold": 40,
+        "over_odds": -260,
+        "sportsbook": "FanDuel",
+        "historical_hr": "8/10"
+      },
+      "context_classification": "Supportive",
+      "source_stage4_selected": true
+    }
+  ],
+  "eligibility_summary": {
+    "stage4_selected": 4,
+    "stage4_selected_meeting_minimum": 3,
+    "excluded_selected_legs": [
+      {
+        "player": "Caleb Williams",
+        "historical_hr": "6/10",
+        "reason": "Below Stage 5 mandatory ≥70% L10 historical hit-rate requirement."
+      }
+    ]
+  },
+  "portfolios": [
+    {
+      "portfolio_type": "LOW VARIANCE",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Rhamondre Stevenson",
+          "team": "NE",
+          "market": "Rushing Yards",
+          "threshold": "30+",
+          "historical_hr": "9/10",
+          "historical_hit_rate": 0.9,
+          "sportsbook": "FanDuel",
+          "american_odds": -330,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 21
+        },
+        {
+          "player": "Rome Odunze",
+          "team": "CHI",
+          "market": "Receiving Yards",
+          "threshold": "30+",
+          "historical_hr": "9/10",
+          "historical_hit_rate": 0.9,
+          "sportsbook": "FanDuel",
+          "american_odds": -275,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 31.75
+        }
+      ],
+      "leg_count": 2,
+      "estimated_combined_american_odds": -129,
+      "odds_note": "Mathematically combined from Stage 4 FanDuel alternate prices; estimate only, not a verified same-slip FanDuel quote.",
+      "rationale": "Exactly two legs. Both are 9/10 (90%) and Core, satisfying the preferred ≥90% hierarchy; no Tier 3 construction."
+    },
+    {
+      "portfolio_type": "BALANCED",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Rome Odunze",
+          "team": "CHI",
+          "market": "Receiving Yards",
+          "threshold": "30+",
+          "historical_hr": "9/10",
+          "historical_hit_rate": 0.9,
+          "sportsbook": "FanDuel",
+          "american_odds": -275,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 31.75
+        },
+        {
+          "player": "Luther Burden III",
+          "team": "CHI",
+          "market": "Receiving Yards",
+          "threshold": "40+",
+          "historical_hr": "8/10",
+          "historical_hit_rate": 0.8,
+          "sportsbook": "FanDuel",
+          "american_odds": -260,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 30.75
+        }
+      ],
+      "leg_count": 2,
+      "estimated_combined_american_odds": -113,
+      "odds_note": "Mathematically combined from Stage 4 FanDuel alternate prices; estimate only, not a verified same-slip FanDuel quote.",
+      "rationale": "Two-leg base using 9/10 and 8/10 Core legs, both at or above the preferred 80% L10 HR threshold."
+    },
+    {
+      "portfolio_type": "PRICE SEEKING — LOW",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Rome Odunze",
+          "team": "CHI",
+          "market": "Receiving Yards",
+          "threshold": "30+",
+          "historical_hr": "9/10",
+          "historical_hit_rate": 0.9,
+          "sportsbook": "FanDuel",
+          "american_odds": -275,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 31.75
+        },
+        {
+          "player": "Luther Burden III",
+          "team": "CHI",
+          "market": "Receiving Yards",
+          "threshold": "40+",
+          "historical_hr": "8/10",
+          "historical_hit_rate": 0.8,
+          "sportsbook": "FanDuel",
+          "american_odds": -260,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 30.75
+        },
+        {
+          "player": "Rhamondre Stevenson",
+          "team": "NE",
+          "market": "Rushing Yards",
+          "threshold": "30+",
+          "historical_hr": "9/10",
+          "historical_hit_rate": 0.9,
+          "sportsbook": "FanDuel",
+          "american_odds": -330,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 21
+        }
+      ],
+      "leg_count": 3,
+      "estimated_combined_american_odds": 146,
+      "odds_note": "Mathematically combined from Stage 4 FanDuel alternate prices; estimate only, not a verified same-slip FanDuel quote.",
+      "rationale": "Balanced base plus one additional permitted leg. No payout target was forced."
+    },
+    {
+      "portfolio_type": "PRICE SEEKING — MEDIUM",
+      "status": "NOT CONSTRUCTIBLE",
+      "legs": [],
+      "leg_count": 0,
+      "estimated_combined_american_odds": null,
+      "odds_note": "No odds calculated because the portfolio cannot be constructed without weakening or inventing eligible legs.",
+      "rationale": "Requires Balanced plus two additional permitted legs (four total). Only three Stage 4 selected legs meet the mandatory ≥70% L10 minimum."
+    },
+    {
+      "portfolio_type": "PRICE SEEKING — HIGH",
+      "status": "NOT CONSTRUCTIBLE",
+      "legs": [],
+      "leg_count": 0,
+      "estimated_combined_american_odds": null,
+      "odds_note": "No odds calculated because the portfolio cannot be constructed without weakening or inventing eligible legs.",
+      "rationale": "Requires Balanced plus three additional permitted legs (five total). Only three Stage 4 selected legs meet the mandatory ≥70% L10 minimum."
+    }
+  ],
+  "validation": {
+    "every_constructed_leg_from_stage4_selected": true,
+    "every_constructed_leg_l10_hr_at_least_70_percent": true,
+    "low_variance_exactly_two_legs": true,
+    "low_variance_all_preferred_90_percent_or_higher": true,
+    "balanced_maximum_two_legs": true,
+    "price_seeking_low_balanced_plus_one": true,
+    "price_seeking_medium_high_not_forced": true,
+    "no_tier3_low_variance": true,
+    "no_prior_state_modified": true
+  }
+}
