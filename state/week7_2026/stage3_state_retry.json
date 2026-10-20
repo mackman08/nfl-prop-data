@@ -1,0 +1,194 @@
+{
+  "stage": 3,
+  "season": 2026,
+  "week": 7,
+  "scope": "Thursday only",
+  "sample": "L10",
+  "state_id": "STATE-3-WEEK7-2026-THU-L10-RETRY",
+  "parent_state_id": "STATE-2-WEEK7-2026-THU-L10-V2",
+  "source_snapshot": {
+    "historical_blob_sha": "80490d73c0c306d1df2f1c2cef8ce39d77ee5f66",
+    "odds_blob_sha": "36088166d562ad7c76869201931040dbed153792",
+    "sportsbook": "FanDuel"
+  },
+  "rule": "Floor=lowest actual alternate threshold with L10 HR >=60%; Core=highest actual alternate threshold with L10 HR >=60%; Ceiling=next higher available threshold above Core.",
+  "records": [
+    {
+      "player": "Kalif Raymond",
+      "market": "Receptions",
+      "floor": [
+        2,
+        "8/10",
+        -350
+      ],
+      "core": [
+        3,
+        "6/10",
+        -114
+      ],
+      "ceiling": [
+        4,
+        "4/10",
+        210
+      ]
+    },
+    {
+      "player": "Hunter Henry",
+      "market": "Receiving Yards",
+      "floor": [
+        10,
+        "9/10",
+        -1100
+      ],
+      "core": [
+        40,
+        "6/10",
+        126
+      ],
+      "ceiling": [
+        50,
+        "2/10",
+        210
+      ]
+    },
+    {
+      "player": "TreVeyon Henderson",
+      "market": "Rushing Yards",
+      "floor": [
+        10,
+        "9/10",
+        -1400
+      ],
+      "core": [
+        40,
+        "6/10",
+        158
+      ],
+      "ceiling": [
+        50,
+        "5/10",
+        280
+      ]
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "market": "Receiving Yards",
+      "floor": [
+        5,
+        "8/10",
+        -750
+      ],
+      "core": [
+        20,
+        "7/10",
+        -104
+      ],
+      "ceiling": [
+        25,
+        "5/10",
+        148
+      ]
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "market": "Receptions",
+      "floor": [
+        2,
+        "8/10",
+        -390
+      ],
+      "core": [
+        3,
+        "6/10",
+        -130
+      ],
+      "ceiling": [
+        4,
+        "2/10",
+        182
+      ]
+    },
+    {
+      "player": "Luther Burden III",
+      "market": "Receiving Yards",
+      "floor": [
+        20,
+        "10/10",
+        -1400
+      ],
+      "core": [
+        60,
+        "7/10",
+        104
+      ],
+      "ceiling": [
+        70,
+        "3/10",
+        164
+      ]
+    },
+    {
+      "player": "Cole Kmet",
+      "market": "Receptions",
+      "floor": [
+        1,
+        "8/10",
+        -300
+      ],
+      "core": [
+        2,
+        "7/10",
+        158
+      ],
+      "ceiling": [
+        3,
+        "0/10",
+        470
+      ]
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "market": "Rushing Yards",
+      "floor": [
+        20,
+        "10/10",
+        -1000
+      ],
+      "core": [
+        40,
+        "8/10",
+        -160
+      ],
+      "ceiling": [
+        50,
+        "5/10",
+        116
+      ]
+    },
+    {
+      "player": "A.J. Brown",
+      "market": "Receptions",
+      "floor": [
+        3,
+        "8/10",
+        -1100
+      ],
+      "core": [
+        5,
+        "6/10",
+        -158
+      ],
+      "ceiling": [
+        6,
+        "5/10",
+        132
+      ],
+      "data_quality_flag": "Player/team identity inconsistent in historical source and matchup odds; exclude pending verification"
+    }
+  ],
+  "caveats": [
+    "Odds snapshot may not reflect latest live prices.",
+    "Historical hit rate is based on the locked L10 sample; alt thresholds use actual FanDuel lines in the snapshot.",
+    "A.J. Brown's player/team mapping is inconsistent and should not be used until corrected."
+  ]
+}
