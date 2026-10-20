@@ -2,22 +2,22 @@
   "stage": 0,
   "season": 2026,
   "week": 7,
-  "scope": "Sunday games with scheduled kickoff before 2:00 PM Eastern Time",
+  "scope": "Thursday only",
   "historical_sample": {
-    "label": "L20",
-    "n": 20
+    "label": "L10",
+    "n": 10
   },
-  "historical_cutoff_rule": "Completion of the final scheduled game of Week 6, 2026",
+  "historical_cutoff": "Completion of the final scheduled game of Week 6, 2026",
   "record_count": 1,
-  "state_id": "STATE-0-WEEK7-2026-SUN-BEFORE-1400-L20",
+  "state_id": "STATE-0-WEEK7-2026-THU-L10",
   "parent_state_id": null,
   "records": [
     {
-      "analysis_scope": "NFL Week 7, 2026 Regular Season — Sunday games kicking off before 2:00 PM Eastern Time",
-      "historical_sample": "L20 — 20 most recent qualifying completed regular-season games",
+      "analysis_scope": "NFL Week 7, 2026 Regular Season — Thursday only",
+      "historical_sample": "L10 — 10 most recent qualifying completed regular-season games",
       "historical_data_source": "data/nfl_prop_model.txt",
       "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
-      "sportsbook_priority": "FanDuel primary; DraftKings fallback only when specified"
+      "sportsbook_priority": "FanDuel primary; DraftKings fallback only when FanDuel data is unavailable for the required market"
     }
   ]
 }
