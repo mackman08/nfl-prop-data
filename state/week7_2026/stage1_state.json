@@ -1,0 +1,4582 @@
+{
+  "stage": 1,
+  "season": 2026,
+  "week": 7,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10
+  },
+  "historical_cutoff": "Completion of final scheduled Week 6 game; 2026-10-19",
+  "state_id": "STATE-1-WEEK7-2026-THU-L10-DK-OR-20261020",
+  "parent_state_id": "STATE-0-WEEK7-2026-THU-L10-20261020",
+  "source_snapshot": {
+    "historical_file": "data/nfl_prop_model.txt",
+    "historical_blob_sha": "80490d73c0c306d1df2f1c2cef8ce39d77ee5f66",
+    "sportsbook_file": "odds/nfl_player_props_latest.csv",
+    "sportsbook_blob_sha": "36088166d562ad7c76869201931040dbed153792",
+    "sportsbook": "DraftKings fallback",
+    "game": "NE Patriots @ CHI Bears",
+    "event_rows": 323,
+    "screened_rows": 23
+  },
+  "rules": {
+    "qualification": "Market HR >= 6/10 OR at least one available DraftKings ladder has HR >= 8/10",
+    "main_line_proxy": "The CSV lacks a main/alternate flag and under prices. Main line provisionally inferred as the listed line whose over odds are numerically closest to -110; not explicitly source-designated.",
+    "over_hit": "Historical value > half-point line",
+    "ladder_target": "line + 0.5",
+    "p16_p7": "Interpolated 16th and 7th percentiles across up to 20 most recent qualifying completed regular-season games before cutoff"
+  },
+  "summary": {
+    "screened_rows": 23,
+    "qualifying_rows": 18,
+    "excluded_rows": 5,
+    "issues": [],
+    "qualification_rule": "OR",
+    "main_line_status": "PROVISIONAL"
+  },
+  "qualifying_records": [
+    {
+      "player": "Drake Maye",
+      "historical_player_name": "D.Maye",
+      "historical_player_id": "00-0039851",
+      "position": "QB",
+      "team": "NE",
+      "market": "Passing Yards",
+      "market_line": 251.5,
+      "over_odds": -111,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 235
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 374
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 269
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 199
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": 208
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent": "SEA",
+          "value": 178
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 191
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 256
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent": "BAL",
+          "value": 380
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 155
+        }
+      ],
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10",
+        "pct": 40
+      },
+      "ladders": [
+        {
+          "line": 169.5,
+          "target_over": 170,
+          "odds": -1380,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 179.5,
+          "target_over": 180,
+          "odds": -900,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 189.5,
+          "target_over": 190,
+          "odds": -640,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 199.5,
+          "target_over": 200,
+          "odds": -457,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 209.5,
+          "target_over": 210,
+          "odds": -336,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 219.5,
+          "target_over": 220,
+          "odds": -257,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 229.5,
+          "target_over": 230,
+          "odds": -196,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 239.5,
+          "target_over": 240,
+          "odds": -150,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 249.5,
+          "target_over": 250,
+          "odds": -116,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 251.5,
+          "target_over": 252,
+          "odds": -111,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 259.5,
+          "target_over": 260,
+          "odds": 109,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 269.5,
+          "target_over": 270,
+          "odds": 140,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 279.5,
+          "target_over": 280,
+          "odds": 179,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 289.5,
+          "target_over": 290,
+          "odds": 227,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 299.5,
+          "target_over": 300,
+          "odds": 291,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 309.5,
+          "target_over": 310,
+          "odds": 372,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 319.5,
+          "target_over": 320,
+          "odds": 471,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 329.5,
+          "target_over": 330,
+          "odds": 597,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 339.5,
+          "target_over": 340,
+          "odds": 780,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 349.5,
+          "target_over": 350,
+          "odds": 980,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 359.5,
+          "target_over": 360,
+          "odds": 1240,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 369.5,
+          "target_over": 370,
+          "odds": 1560,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 379.5,
+          "target_over": 380,
+          "odds": 2000,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 389.5,
+          "target_over": 390,
+          "odds": 2600,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 399.5,
+          "target_over": 400,
+          "odds": 3200,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 409.5,
+          "target_over": 410,
+          "odds": 3800,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        170,
+        180,
+        190
+      ],
+      "p16": 199.16,
+      "p7": 182.29,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Caleb Williams",
+      "historical_player_name": "C.Williams",
+      "historical_player_id": "00-0039918",
+      "position": "QB",
+      "team": "CHI",
+      "market": "Passing Yards",
+      "market_line": 249.5,
+      "over_odds": -109,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 305
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 138
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 269
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent": "DET",
+          "value": 212
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent": "SF",
+          "value": 330
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 250
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent": "CLE",
+          "value": 242
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 186
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CHI_PHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 154
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_PIT_CHI",
+          "team": "CHI",
+          "opponent": "PIT",
+          "value": 239
+        }
+      ],
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10",
+        "pct": 40
+      },
+      "ladders": [
+        {
+          "line": 169.5,
+          "target_over": 170,
+          "odds": -1340,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 179.5,
+          "target_over": 180,
+          "odds": -880,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 189.5,
+          "target_over": 190,
+          "odds": -620,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 199.5,
+          "target_over": 200,
+          "odds": -439,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 209.5,
+          "target_over": 210,
+          "odds": -323,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 219.5,
+          "target_over": 220,
+          "odds": -242,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 229.5,
+          "target_over": 230,
+          "odds": -184,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 239.5,
+          "target_over": 240,
+          "odds": -142,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 248.5,
+          "target_over": 249,
+          "odds": -112,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 249.5,
+          "target_over": 250,
+          "odds": -109,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 259.5,
+          "target_over": 260,
+          "odds": 119,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 269.5,
+          "target_over": 270,
+          "odds": 152,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 279.5,
+          "target_over": 280,
+          "odds": 195,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 289.5,
+          "target_over": 290,
+          "odds": 247,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 299.5,
+          "target_over": 300,
+          "odds": 319,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 309.5,
+          "target_over": 310,
+          "odds": 409,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 319.5,
+          "target_over": 320,
+          "odds": 515,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 329.5,
+          "target_over": 330,
+          "odds": 660,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 339.5,
+          "target_over": 340,
+          "odds": 860,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 349.5,
+          "target_over": 350,
+          "odds": 1100,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 359.5,
+          "target_over": 360,
+          "odds": 1400,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 369.5,
+          "target_over": 370,
+          "odds": 1800,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 379.5,
+          "target_over": 380,
+          "odds": 2300,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 389.5,
+          "target_over": 390,
+          "odds": 2900,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 399.5,
+          "target_over": 400,
+          "odds": 3600,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        170,
+        180
+      ],
+      "p16": 186.28,
+      "p7": 159.94,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "A.J. Brown",
+      "historical_player_name": "A.Brown",
+      "historical_player_id": "00-0035676",
+      "position": "WR",
+      "team": "NE",
+      "market": "Receiving Yards",
+      "market_line": 69.5,
+      "over_odds": -113,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 27
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent": "SEA",
+          "value": 26
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_PHI_BUF",
+          "team": "PHI",
+          "opponent": "BUF",
+          "value": 68
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_PHI_WAS",
+          "team": "PHI",
+          "opponent": "WAS",
+          "value": 95
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_LV_PHI",
+          "team": "PHI",
+          "opponent": "LV",
+          "value": 41
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_PHI_LAC",
+          "team": "PHI",
+          "opponent": "LAC",
+          "value": 100
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CHI_PHI",
+          "team": "PHI",
+          "opponent": "CHI",
+          "value": 132
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_PHI_DAL",
+          "team": "PHI",
+          "opponent": "DAL",
+          "value": 110
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_DET_PHI",
+          "team": "PHI",
+          "opponent": "DET",
+          "value": 49
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "PHI",
+          "opponent": "GB",
+          "value": 13
+        }
+      ],
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10",
+        "pct": 40
+      },
+      "ladders": [
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -1300,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": -455,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": -269,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": -169,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": -113,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 129,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 188,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 268,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 379,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 119.5,
+          "target_over": 120,
+          "odds": 533,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 129.5,
+          "target_over": 130,
+          "odds": 750,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 139.5,
+          "target_over": 140,
+          "odds": 1040,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 149.5,
+          "target_over": 150,
+          "odds": 1440,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 159.5,
+          "target_over": 160,
+          "odds": 1980,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 169.5,
+          "target_over": 170,
+          "odds": 2700,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 179.5,
+          "target_over": 180,
+          "odds": 3500,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        25
+      ],
+      "p16": 26.04,
+      "p7": 9.65,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "A.J. Brown",
+      "historical_player_name": "A.Brown",
+      "historical_player_id": "00-0035676",
+      "position": "WR",
+      "team": "NE",
+      "market": "Receptions",
+      "market_line": 4.5,
+      "over_odds": -174,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent": "SEA",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_PHI_BUF",
+          "team": "PHI",
+          "opponent": "BUF",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_PHI_WAS",
+          "team": "PHI",
+          "opponent": "WAS",
+          "value": 9
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_LV_PHI",
+          "team": "PHI",
+          "opponent": "LV",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_PHI_LAC",
+          "team": "PHI",
+          "opponent": "LAC",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CHI_PHI",
+          "team": "PHI",
+          "opponent": "CHI",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_PHI_DAL",
+          "team": "PHI",
+          "opponent": "DAL",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_DET_PHI",
+          "team": "PHI",
+          "opponent": "DET",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "PHI",
+          "opponent": "GB",
+          "value": 2
+        }
+      ],
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10",
+        "pct": 60
+      },
+      "ladders": [
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": -1200,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": -390,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 4.5,
+          "target_over": 5,
+          "odds": -174,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 5.5,
+          "target_over": 6,
+          "odds": 116,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 6.5,
+          "target_over": 7,
+          "odds": 227,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 7.5,
+          "target_over": 8,
+          "odds": 422,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 8.5,
+          "target_over": 9,
+          "odds": 760,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 9.5,
+          "target_over": 10,
+          "odds": 1340,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 10.5,
+          "target_over": 11,
+          "odds": 2200,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        3
+      ],
+      "p16": 2.04,
+      "p7": 2,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Luther Burden III",
+      "historical_player_name": "L.Burden",
+      "historical_player_id": "00-0040735",
+      "position": "WR",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "market_line": 56.5,
+      "over_odds": -113,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 95
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 63
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 61
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 32
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 63
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent": "DET",
+          "value": 35
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent": "SF",
+          "value": 138
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent": "CLE",
+          "value": 84
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 67
+        }
+      ],
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10",
+        "pct": 70
+      },
+      "ladders": [
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -1380,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -589,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": -243,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": -151,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 56.5,
+          "target_over": 57,
+          "odds": -113,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 100,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 146,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 212,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 300,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 426,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 600,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 119.5,
+          "target_over": 120,
+          "odds": 860,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 129.5,
+          "target_over": 130,
+          "odds": 1200,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 139.5,
+          "target_over": 140,
+          "odds": 1640,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 149.5,
+          "target_over": 150,
+          "odds": 2300,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 159.5,
+          "target_over": 160,
+          "odds": 3000,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 169.5,
+          "target_over": 170,
+          "odds": 3800,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        15,
+        25,
+        40
+      ],
+      "p16": 22.2,
+      "p7": 0.98,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Luther Burden III",
+      "historical_player_name": "L.Burden",
+      "historical_player_id": "00-0040735",
+      "position": "WR",
+      "team": "CHI",
+      "market": "Receptions",
+      "market_line": 4.5,
+      "over_odds": -123,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent": "DET",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent": "SF",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent": "CLE",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 4
+        }
+      ],
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10",
+        "pct": 50
+      },
+      "ladders": [
+        {
+          "line": 1.5,
+          "target_over": 2,
+          "odds": -3200,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": -680,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": -264,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 4.5,
+          "target_over": 5,
+          "odds": -123,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 5.5,
+          "target_over": 6,
+          "odds": 163,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 6.5,
+          "target_over": 7,
+          "odds": 308,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 7.5,
+          "target_over": 8,
+          "odds": 585,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 8.5,
+          "target_over": 9,
+          "odds": 1040,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 9.5,
+          "target_over": 10,
+          "odds": 1800,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 10.5,
+          "target_over": 11,
+          "odds": 2700,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        2,
+        3,
+        4
+      ],
+      "p16": 2.04,
+      "p7": 1,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Rome Odunze",
+      "historical_player_name": "R.Odunze",
+      "historical_player_id": "00-0039919",
+      "position": "WR",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "market_line": 45.5,
+      "over_odds": -111,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 94
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 43
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 52
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CHI_PHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_PIT_CHI",
+          "team": "CHI",
+          "opponent": "PIT",
+          "value": 53
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_CHI_MIN",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 41
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_NYG_CHI",
+          "team": "CHI",
+          "opponent": "NYG",
+          "value": 86
+        }
+      ],
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10",
+        "pct": 40
+      },
+      "ladders": [
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -780,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -348,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": -148,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 45.5,
+          "target_over": 46,
+          "odds": -111,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 108,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 165,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 246,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 365,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 532,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 780,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 1140,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 119.5,
+          "target_over": 120,
+          "odds": 1620,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 129.5,
+          "target_over": 130,
+          "odds": 2300,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 139.5,
+          "target_over": 140,
+          "odds": 3100,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 149.5,
+          "target_over": 150,
+          "odds": 4000,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        15,
+        25,
+        40
+      ],
+      "p16": 18.52,
+      "p7": 10.31,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Rome Odunze",
+      "historical_player_name": "R.Odunze",
+      "historical_player_id": "00-0039919",
+      "position": "WR",
+      "team": "CHI",
+      "market": "Receptions",
+      "market_line": 2.5,
+      "over_odds": -230,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CHI_PHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_PIT_CHI",
+          "team": "CHI",
+          "opponent": "PIT",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_CHI_MIN",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_NYG_CHI",
+          "team": "CHI",
+          "opponent": "NYG",
+          "value": 6
+        }
+      ],
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10",
+        "pct": 70
+      },
+      "ladders": [
+        {
+          "line": 1.5,
+          "target_over": 2,
+          "odds": -780,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": -230,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": 110,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 4.5,
+          "target_over": 5,
+          "odds": 240,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 5.5,
+          "target_over": 6,
+          "odds": 504,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 6.5,
+          "target_over": 7,
+          "odds": 1060,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 7.5,
+          "target_over": 8,
+          "odds": 1980,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        2
+      ],
+      "p16": 2,
+      "p7": 1.33,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Colston Loveland",
+      "historical_player_name": "C.Loveland",
+      "historical_player_id": "00-0040126",
+      "position": "TE",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "market_line": 43.5,
+      "over_odds": -111,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 65
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 19
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 31
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent": "DET",
+          "value": 91
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent": "SF",
+          "value": 94
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 30
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent": "CLE",
+          "value": 63
+        }
+      ],
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10",
+        "pct": 50
+      },
+      "ladders": [
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -870,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -349,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": -137,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 43.5,
+          "target_over": 44,
+          "odds": -111,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 120,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 191,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 293,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 447,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 660,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 970,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 1400,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 119.5,
+          "target_over": 120,
+          "odds": 1980,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 129.5,
+          "target_over": 130,
+          "odds": 2700,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 139.5,
+          "target_over": 140,
+          "odds": 3800,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        15
+      ],
+      "p16": 19.2,
+      "p7": 5.64,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Colston Loveland",
+      "historical_player_name": "C.Loveland",
+      "historical_player_id": "00-0040126",
+      "position": "TE",
+      "team": "CHI",
+      "market": "Receptions",
+      "market_line": 3.5,
+      "over_odds": -180,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent": "DET",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent": "SF",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent": "CLE",
+          "value": 4
+        }
+      ],
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10",
+        "pct": 60
+      },
+      "ladders": [
+        {
+          "line": 1.5,
+          "target_over": 2,
+          "odds": -1920,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": -476,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": -180,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 4.5,
+          "target_over": 5,
+          "odds": 121,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 5.5,
+          "target_over": 6,
+          "odds": 243,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 6.5,
+          "target_over": 7,
+          "odds": 487,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 7.5,
+          "target_over": 8,
+          "odds": 900,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 8.5,
+          "target_over": 9,
+          "odds": 1680,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 9.5,
+          "target_over": 10,
+          "odds": 2600,
+          "hits": 1,
+          "rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        2
+      ],
+      "p16": 2,
+      "p7": 1,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Hunter Henry",
+      "historical_player_name": "H.Henry",
+      "historical_player_id": "00-0033090",
+      "position": "TE",
+      "team": "NE",
+      "market": "Receiving Yards",
+      "market_line": 33.5,
+      "over_odds": -112,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 48
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 62
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent": "SEA",
+          "value": 26
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 56
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 49
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent": "BAL",
+          "value": 35
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 18
+        }
+      ],
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10",
+        "pct": 70
+      },
+      "ladders": [
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -453,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -198,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 33.5,
+          "target_over": 34,
+          "odds": -112,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": 125,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 205,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 333,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 533,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 830,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 1240,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 1880,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 2600,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 119.5,
+          "target_over": 120,
+          "odds": 3500,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        15,
+        25
+      ],
+      "p16": 18.32,
+      "p7": 7.66,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Hunter Henry",
+      "historical_player_name": "H.Henry",
+      "historical_player_id": "00-0033090",
+      "position": "TE",
+      "team": "NE",
+      "market": "Receptions",
+      "market_line": 2.5,
+      "over_odds": -206,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent": "SEA",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent": "BAL",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 1
+        }
+      ],
+      "market_hr": {
+        "hits": 8,
+        "denominator": 10,
+        "display": "8/10",
+        "pct": 80
+      },
+      "ladders": [
+        {
+          "line": 1.5,
+          "target_over": 2,
+          "odds": -680,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": -206,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": 120,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 4.5,
+          "target_over": 5,
+          "odds": 272,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 5.5,
+          "target_over": 6,
+          "odds": 575,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 6.5,
+          "target_over": 7,
+          "odds": 1160,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 7.5,
+          "target_over": 8,
+          "odds": 2200,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        2,
+        3
+      ],
+      "p16": 1.04,
+      "p7": 1,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Kalif Raymond",
+      "historical_player_name": "K.Raymond",
+      "historical_player_id": "00-0032464",
+      "position": "WR",
+      "team": "CHI",
+      "market": "Receptions",
+      "market_line": 2.5,
+      "over_odds": -117,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "DET",
+          "opponent": "CHI",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DET_MIN",
+          "team": "DET",
+          "opponent": "MIN",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_PIT_DET",
+          "team": "DET",
+          "opponent": "PIT",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_DET_LA",
+          "team": "DET",
+          "opponent": "LA",
+          "value": 1
+        }
+      ],
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10",
+        "pct": 60
+      },
+      "ladders": [
+        {
+          "line": 1.5,
+          "target_over": 2,
+          "odds": -351,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": -117,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": 213,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 4.5,
+          "target_over": 5,
+          "odds": 488,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 5.5,
+          "target_over": 6,
+          "odds": 1060,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 6.5,
+          "target_over": 7,
+          "odds": 2000,
+          "hits": 1,
+          "rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        2
+      ],
+      "p16": 0.04,
+      "p7": 0,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "D'Andre Swift",
+      "historical_player_name": "D.Swift",
+      "historical_player_id": "00-0036275",
+      "position": "RB",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "market_line": 61.5,
+      "over_odds": -111,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 43
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 58
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 84
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 45
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 124
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent": "DET",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent": "SF",
+          "value": 54
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 58
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent": "CLE",
+          "value": 98
+        }
+      ],
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10",
+        "pct": 30
+      },
+      "ladders": [
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -1800,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 29.5,
+          "target_over": 30,
+          "odds": -1000,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": -425,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": -215,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": -124,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 61.5,
+          "target_over": 62,
+          "odds": -111,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 131,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 203,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 307,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 467,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 690,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 119.5,
+          "target_over": 120,
+          "odds": 1000,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 129.5,
+          "target_over": 130,
+          "odds": 1440,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 139.5,
+          "target_over": 140,
+          "odds": 2000,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 149.5,
+          "target_over": 150,
+          "odds": 2900,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 159.5,
+          "target_over": 160,
+          "odds": 3700,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        25,
+        30,
+        40
+      ],
+      "p16": 40.12,
+      "p7": 34.65,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "historical_player_name": "R.Stevenson",
+      "historical_player_id": "00-0036875",
+      "position": "RB",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "market_line": 44.5,
+      "over_odds": -109,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 36
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 22
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": 43
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent": "SEA",
+          "value": 51
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 131
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 47
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent": "BAL",
+          "value": 51
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 50
+        }
+      ],
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10",
+        "pct": 70
+      },
+      "ladders": [
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -1980,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 19.5,
+          "target_over": 20,
+          "odds": -900,
+          "hits": 10,
+          "rate": "10/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -494,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 29.5,
+          "target_over": 30,
+          "odds": -315,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": -151,
+          "hits": 8,
+          "rate": "8/10"
+        },
+        {
+          "line": 44.5,
+          "target_over": 45,
+          "odds": -109,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 123,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 207,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 328,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 513,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 780,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 1160,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 1680,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 119.5,
+          "target_over": 120,
+          "odds": 2300,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 129.5,
+          "target_over": 130,
+          "odds": 3200,
+          "hits": 1,
+          "rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        15,
+        20,
+        25,
+        30,
+        40
+      ],
+      "p16": 18,
+      "p7": 14.33,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Cole Kmet",
+      "historical_player_name": "C.Kmet",
+      "historical_player_id": "00-0036290",
+      "position": "TE",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "market_line": 8.5,
+      "over_odds": -110,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 13
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 35
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent": "DET",
+          "value": 16
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent": "SF",
+          "value": 16
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 14
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent": "CLE",
+          "value": 28
+        }
+      ],
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10",
+        "pct": 60
+      },
+      "ladders": [
+        {
+          "line": 8.5,
+          "target_over": 9,
+          "odds": -110,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": 164,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": 329,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": 840,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 1400,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 2100,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 3300,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [],
+      "p16": 3,
+      "p7": 0,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": false,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "Cole Kmet",
+      "historical_player_name": "C.Kmet",
+      "historical_player_id": "00-0036290",
+      "position": "TE",
+      "team": "CHI",
+      "market": "Receptions",
+      "market_line": 1.5,
+      "over_odds": 157,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent": "DET",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent": "SF",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent": "CLE",
+          "value": 2
+        }
+      ],
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10",
+        "pct": 70
+      },
+      "ladders": [
+        {
+          "line": 1.5,
+          "target_over": 2,
+          "odds": 157,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": 508,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": 1440,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [],
+      "p16": 1,
+      "p7": 0.33,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": false,
+        "rule": "OR",
+        "qualified": true
+      }
+    },
+    {
+      "player": "TreVeyon Henderson",
+      "historical_player_name": "T.Henderson",
+      "historical_player_id": "00-0040734",
+      "position": "RB",
+      "team": "NE",
+      "market": "Rushing Yards",
+      "market_line": 28.5,
+      "over_odds": -114,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 31
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 22
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 42
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 23
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": 76
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 53
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 82
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent": "BAL",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 148
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_NYG_NE",
+          "team": "NE",
+          "opponent": "NYG",
+          "value": 67
+        }
+      ],
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10",
+        "pct": 70
+      },
+      "ladders": [
+        {
+          "line": 9.5,
+          "target_over": 10,
+          "odds": -1100,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -482,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 19.5,
+          "target_over": 20,
+          "odds": -261,
+          "hits": 9,
+          "rate": "9/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -159,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 28.5,
+          "target_over": 29,
+          "odds": -114,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 29.5,
+          "target_over": 30,
+          "odds": -105,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": 193,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 354,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 620,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 1000,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 1520,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 2300,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 3300,
+          "hits": 1,
+          "rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_targets": [
+        10,
+        15,
+        20
+      ],
+      "p16": 23.04,
+      "p7": 10.61,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": true,
+        "ladder_gate": true,
+        "rule": "OR",
+        "qualified": true
+      }
+    }
+  ],
+  "excluded_records": [
+    {
+      "player": "Kalif Raymond",
+      "historical_player_name": "K.Raymond",
+      "historical_player_id": "00-0032464",
+      "position": "WR",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "market_line": 27.5,
+      "over_odds": -113,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent": "ATL",
+          "value": 18
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent": "GB",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent": "NYJ",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent": "PHI",
+          "value": 90
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent": "MIN",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent": "CAR",
+          "value": 84
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "DET",
+          "opponent": "CHI",
+          "value": 52
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DET_MIN",
+          "team": "DET",
+          "opponent": "MIN",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_PIT_DET",
+          "team": "DET",
+          "opponent": "PIT",
+          "value": 62
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_DET_LA",
+          "team": "DET",
+          "opponent": "LA",
+          "value": 20
+        }
+      ],
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10",
+        "pct": 50
+      },
+      "ladders": [
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -289,
+          "hits": 7,
+          "rate": "7/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -135,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 27.5,
+          "target_over": 28,
+          "odds": -113,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": 177,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 293,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 472,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 730,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 1100,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 1680,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 2500,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 3400,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [],
+      "p16": 0.16,
+      "p7": 0,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": false,
+        "rule": "OR",
+        "qualified": false
+      }
+    },
+    {
+      "player": "Demario Douglas",
+      "historical_player_name": "D.Douglas",
+      "historical_player_id": "00-0038621",
+      "position": "WR",
+      "team": "NE",
+      "market": "Receiving Yards",
+      "market_line": 30.5,
+      "over_odds": -111,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 86
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 65
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 38
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": 9
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent": "SEA",
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 29
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent": "BAL",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 0
+        }
+      ],
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10",
+        "pct": 30
+      },
+      "ladders": [
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -390,
+          "hits": 6,
+          "rate": "6/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": -166,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 30.5,
+          "target_over": 31,
+          "odds": -111,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": 154,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 257,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 427,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 670,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 1080,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 1680,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 99.5,
+          "target_over": 100,
+          "odds": 2400,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 109.5,
+          "target_over": 110,
+          "odds": 3500,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [],
+      "p16": 9.04,
+      "p7": 6.33,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": false,
+        "rule": "OR",
+        "qualified": false
+      }
+    },
+    {
+      "player": "Demario Douglas",
+      "historical_player_name": "D.Douglas",
+      "historical_player_id": "00-0038621",
+      "position": "WR",
+      "team": "NE",
+      "market": "Receptions",
+      "market_line": 2.5,
+      "over_odds": -192,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent": "SEA",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent": "BAL",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 0
+        }
+      ],
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10",
+        "pct": 30
+      },
+      "ladders": [
+        {
+          "line": 1.5,
+          "target_over": 2,
+          "odds": -640,
+          "hits": 5,
+          "rate": "5/10"
+        },
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": -192,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": 130,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 4.5,
+          "target_over": 5,
+          "odds": 293,
+          "hits": 2,
+          "rate": "2/10"
+        },
+        {
+          "line": 5.5,
+          "target_over": 6,
+          "odds": 630,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 6.5,
+          "target_over": 7,
+          "odds": 1280,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 7.5,
+          "target_over": 8,
+          "odds": 2200,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [],
+      "p16": 1,
+      "p7": 1,
+      "p16_p7_n": 20,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": false,
+        "rule": "OR",
+        "qualified": false
+      }
+    },
+    {
+      "player": "Efton Chism III",
+      "historical_player_name": "E.Chism",
+      "historical_player_id": "00-0040563",
+      "position": "WR",
+      "team": "NE",
+      "market": "Receiving Yards",
+      "market_line": 20.5,
+      "over_odds": -115,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 42
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": -2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 35
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_NYG_NE",
+          "team": "NE",
+          "opponent": "NYG",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_NE_TB",
+          "team": "NE",
+          "opponent": "TB",
+          "value": 0
+        }
+      ],
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10",
+        "pct": 40
+      },
+      "ladders": [
+        {
+          "line": 14.5,
+          "target_over": 15,
+          "odds": -189,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 20.5,
+          "target_over": 21,
+          "odds": -115,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 24.5,
+          "target_over": 25,
+          "odds": 117,
+          "hits": 4,
+          "rate": "4/10"
+        },
+        {
+          "line": 39.5,
+          "target_over": 40,
+          "odds": 293,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 49.5,
+          "target_over": 50,
+          "odds": 510,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 59.5,
+          "target_over": 60,
+          "odds": 850,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 69.5,
+          "target_over": 70,
+          "odds": 1380,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 79.5,
+          "target_over": 80,
+          "odds": 2200,
+          "hits": 0,
+          "rate": "0/10"
+        },
+        {
+          "line": 89.5,
+          "target_over": 90,
+          "odds": 3100,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [],
+      "p16": 0,
+      "p7": -0.32,
+      "p16_p7_n": 13,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": false,
+        "rule": "OR",
+        "qualified": false
+      }
+    },
+    {
+      "player": "Efton Chism III",
+      "historical_player_name": "E.Chism",
+      "historical_player_id": "00-0040563",
+      "position": "WR",
+      "team": "NE",
+      "market": "Receptions",
+      "market_line": 1.5,
+      "over_odds": -222,
+      "sportsbook": "DraftKings",
+      "game": "NE Patriots @ CHI Bears",
+      "event_id": "34118033",
+      "l10": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent": "LV",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent": "BUF",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent": "JAX",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent": "PIT",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_NYG_NE",
+          "team": "NE",
+          "opponent": "NYG",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_NYJ_NE",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_NE_TB",
+          "team": "NE",
+          "opponent": "TB",
+          "value": 0
+        }
+      ],
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10",
+        "pct": 30
+      },
+      "ladders": [
+        {
+          "line": 1.5,
+          "target_over": 2,
+          "odds": -222,
+          "hits": 3,
+          "rate": "3/10"
+        },
+        {
+          "line": 2.5,
+          "target_over": 3,
+          "odds": 139,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 3.5,
+          "target_over": 4,
+          "odds": 354,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 4.5,
+          "target_over": 5,
+          "odds": 880,
+          "hits": 1,
+          "rate": "1/10"
+        },
+        {
+          "line": 5.5,
+          "target_over": 6,
+          "odds": 1820,
+          "hits": 0,
+          "rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_targets": [],
+      "p16": 0,
+      "p7": 0,
+      "p16_p7_n": 13,
+      "qualification": {
+        "market_hr_gate": false,
+        "ladder_gate": false,
+        "rule": "OR",
+        "qualified": false
+      }
+    }
+  ]
+}
