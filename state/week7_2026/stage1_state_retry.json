@@ -1,0 +1,15 @@
+{
+  "stage": 1,
+  "season": 2026,
+  "week": 7,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10
+  },
+  "historical_cutoff": "Completion of the final scheduled game of Week 6, 2026",
+  "record_count": 0,
+  "state_id": "STATE-1-WEEK7-2026-THU-L10-RETRY",
+  "parent_state_id": "STATE-0-WEEK7-2026-THU-L10",
+  "records": []
+}
