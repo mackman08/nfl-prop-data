@@ -2,7 +2,7 @@
   "stage": 0,
   "season": 2026,
   "week": 7,
-  "scope": "Thursday only",
+  "scope": "Sunday only",
   "historical_sample": {
     "label": "L10",
     "n": 10
@@ -11,15 +11,15 @@
     "rule": "Completion of the final scheduled game of Week X-1",
     "week": 6,
     "date": "2026-10-19",
-    "description": "Completion of the final scheduled Week 6 game",
+    "description": "Completion of the final scheduled Week 6 game (Monday, October 19, 2026)",
     "exclusion": "No game from Week 7 may enter the historical sample"
   },
   "record_count": 1,
-  "state_id": "STATE-0-WEEK7-2026-THU-L10-20261020",
+  "state_id": "STATE-0-WEEK7-2026-SUN-L10-20261023",
   "parent_state_id": null,
   "records": [
     {
-      "analysis_scope": "NFL Week 7, 2026 Regular Season — Thursday only",
+      "analysis_scope": "NFL Week 7, 2026 Regular Season — Sunday only",
       "historical_sample": "L10 — 10 most recent qualifying completed regular-season games",
       "historical_data_source": "data/nfl_prop_model.txt",
       "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
