@@ -1,0 +1,21 @@
+{
+  "stage": 0,
+  "season": 2026,
+  "week": 8,
+  "scope": "Sunday only",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent qualifying completed regular-season games"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of the final scheduled game of Week 7",
+    "final_scheduled_game": "Dallas Cowboys @ Philadelphia Eagles",
+    "scheduled_kickoff_local": "2026-10-26T20:15:00-04:00",
+    "cutoff_event_status": "Pending completion as of Stage 0 creation; use actual game completion as cutoff before Stage 1 historical screening"
+  },
+  "record_count": 0,
+  "state_id": "STATE-0-W8-2026-20261023T0908EDT",
+  "parent_state_id": null,
+  "records": []
+}
