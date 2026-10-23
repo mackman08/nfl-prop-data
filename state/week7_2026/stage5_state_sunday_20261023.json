@@ -1,0 +1,347 @@
+{
+  "stage": 5,
+  "model_version": "V7.2.8",
+  "season": 2026,
+  "week": 7,
+  "scope": "Sunday only",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10
+  },
+  "state_id": "STATE-5-WEEK7-2026-SUN-L10-PORTFOLIOS-20261023",
+  "parent_state_id": "STATE-4-WEEK7-2026-SUN-L10-FINAL-SELECTION-20261023",
+  "parent_state_blob_sha": "49782f75215173533c619e86e11f019ff36a6278",
+  "parent_chain": [
+    {
+      "stage": 0,
+      "state_id": "STATE-0-WEEK7-2026-SUN-L10-20261023",
+      "blob_sha": "0f2ff6c7b8d7301833ee5d134d2939dfe8b71820"
+    },
+    {
+      "stage": 1,
+      "state_id": "STATE-1-WEEK7-2026-SUN-L10-FD-OR-RETRY2-20261023",
+      "blob_sha": "9da1d908323a6cee45ef83be0591f498bf83f2a1"
+    },
+    {
+      "stage": 2,
+      "state_id": "STATE-2-WEEK7-2026-SUN-L10-FD-PRICE-CORE-20261023",
+      "blob_sha": "0fa735cd7edce2902f4dd54291ccc3231acfde0d"
+    },
+    {
+      "stage": 3,
+      "state_id": "STATE-3-WEEK7-2026-SUN-L10-CONTEXT-20261023",
+      "blob_sha": "125e58b230ddc621726fdc17b61e8c140a11d511"
+    },
+    {
+      "stage": 4,
+      "state_id": "STATE-4-WEEK7-2026-SUN-L10-FINAL-SELECTION-20261023",
+      "blob_sha": "49782f75215173533c619e86e11f019ff36a6278"
+    }
+  ],
+  "source_snapshot": {
+    "stage0": "state/week7_2026/stage0_state.json",
+    "stage1": "state/week7_2026/stage1_state_retry2_20261023.json",
+    "stage2": "state/week7_2026/stage2_state.json",
+    "stage3": "state/week7_2026/stage3_state.json",
+    "stage4": "state/week7_2026/stage4_state.json"
+  },
+  "input_validation": {
+    "stage4_state_exists": true,
+    "stage4_state_complete": true,
+    "stage1_locked": true,
+    "stage2_locked": true,
+    "stage3_locked": true,
+    "no_reconstruction_required": true,
+    "parent_chain_valid": true,
+    "stage4_sha_verified": true
+  },
+  "portfolios": [
+    {
+      "portfolio_type": "LOW VARIANCE",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Puka Nacua",
+          "team": "LAR",
+          "market": "Receiving Yards",
+          "threshold": "Over 70.0",
+          "historical_hr": "9/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -360,
+          "band": "Floor",
+          "context_classification": "Mixed",
+          "p25_20_game": 74.75,
+          "stage4_candidate_id": "S4-106"
+        },
+        {
+          "player": "Jaylen Warren",
+          "team": "PIT",
+          "market": "Rushing Yards",
+          "threshold": "Over 40.0",
+          "historical_hr": "9/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -490,
+          "band": "Floor",
+          "context_classification": "Supportive",
+          "p25_20_game": 45.25,
+          "stage4_candidate_id": "S4-086"
+        }
+      ],
+      "leg_count": 2,
+      "estimated_combined_american_odds": -186,
+      "combined_decimal_odds": 1.5385,
+      "profit_per_100_stake": 53.85,
+      "total_return_per_100_stake": 153.85,
+      "odds_note": "Mathematical estimate from locked FanDuel alternate prices; not a verified same-slip quote."
+    },
+    {
+      "portfolio_type": "BALANCED",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Alvin Kamara",
+          "team": "NO",
+          "market": "Rushing Yards",
+          "threshold": "Over 10.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -280,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 19.5,
+          "stage4_candidate_id": "S4-088"
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "market": "Receiving Yards",
+          "threshold": "Over 50.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -270,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 54.25,
+          "stage4_candidate_id": "S4-026"
+        }
+      ],
+      "leg_count": 2,
+      "estimated_combined_american_odds": -116,
+      "combined_decimal_odds": 1.8598,
+      "profit_per_100_stake": 85.98,
+      "total_return_per_100_stake": 185.98,
+      "odds_note": "Mathematical estimate from locked FanDuel alternate prices; not a verified same-slip quote."
+    },
+    {
+      "portfolio_type": "PRICE SEEKING — LOW",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Alvin Kamara",
+          "team": "NO",
+          "market": "Rushing Yards",
+          "threshold": "Over 10.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -280,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 19.5,
+          "stage4_candidate_id": "S4-088"
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "market": "Receiving Yards",
+          "threshold": "Over 50.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -270,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 54.25,
+          "stage4_candidate_id": "S4-026"
+        },
+        {
+          "player": "Matthew Stafford",
+          "team": "LAR",
+          "market": "Passing Yards",
+          "threshold": "Over 250.0",
+          "historical_hr": "8/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -192,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 237.75,
+          "stage4_candidate_id": "S4-012"
+        }
+      ],
+      "leg_count": 3,
+      "estimated_combined_american_odds": 183,
+      "combined_decimal_odds": 2.8284,
+      "profit_per_100_stake": 182.84,
+      "total_return_per_100_stake": 282.84,
+      "odds_note": "Mathematical estimate from locked FanDuel alternate prices; not a verified same-slip quote."
+    },
+    {
+      "portfolio_type": "PRICE SEEKING — MEDIUM",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Alvin Kamara",
+          "team": "NO",
+          "market": "Rushing Yards",
+          "threshold": "Over 10.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -280,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 19.5,
+          "stage4_candidate_id": "S4-088"
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "market": "Receiving Yards",
+          "threshold": "Over 50.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -270,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 54.25,
+          "stage4_candidate_id": "S4-026"
+        },
+        {
+          "player": "Matthew Stafford",
+          "team": "LAR",
+          "market": "Passing Yards",
+          "threshold": "Over 250.0",
+          "historical_hr": "8/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -192,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 237.75,
+          "stage4_candidate_id": "S4-012"
+        },
+        {
+          "player": "Jaxon Smith-Njigba",
+          "team": "SEA",
+          "market": "Receiving Yards",
+          "threshold": "Over 70.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -290,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 90,
+          "stage4_candidate_id": "S4-053"
+        }
+      ],
+      "leg_count": 4,
+      "estimated_combined_american_odds": 280,
+      "combined_decimal_odds": 3.8037,
+      "profit_per_100_stake": 280.37,
+      "total_return_per_100_stake": 380.37,
+      "odds_note": "Mathematical estimate from locked FanDuel alternate prices; not a verified same-slip quote."
+    },
+    {
+      "portfolio_type": "PRICE SEEKING — HIGH",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Alvin Kamara",
+          "team": "NO",
+          "market": "Rushing Yards",
+          "threshold": "Over 10.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -280,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 19.5,
+          "stage4_candidate_id": "S4-088"
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "market": "Receiving Yards",
+          "threshold": "Over 50.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -270,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 54.25,
+          "stage4_candidate_id": "S4-026"
+        },
+        {
+          "player": "Matthew Stafford",
+          "team": "LAR",
+          "market": "Passing Yards",
+          "threshold": "Over 250.0",
+          "historical_hr": "8/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -192,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 237.75,
+          "stage4_candidate_id": "S4-012"
+        },
+        {
+          "player": "Jaxon Smith-Njigba",
+          "team": "SEA",
+          "market": "Receiving Yards",
+          "threshold": "Over 70.0",
+          "historical_hr": "10/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -290,
+          "band": "Core",
+          "context_classification": "Supportive",
+          "p25_20_game": 90,
+          "stage4_candidate_id": "S4-053"
+        },
+        {
+          "player": "Derrick Henry",
+          "team": "BAL",
+          "market": "Rushing Yards",
+          "threshold": "Over 70.0",
+          "historical_hr": "8/10",
+          "sportsbook": "FanDuel",
+          "american_odds": -240,
+          "band": "Core",
+          "context_classification": "Mixed",
+          "p25_20_game": 67,
+          "stage4_candidate_id": "S4-094"
+        }
+      ],
+      "leg_count": 5,
+      "estimated_combined_american_odds": 439,
+      "combined_decimal_odds": 5.3886,
+      "profit_per_100_stake": 438.86,
+      "total_return_per_100_stake": 538.86,
+      "odds_note": "Mathematical estimate from locked FanDuel alternate prices; not a verified same-slip quote."
+    }
+  ],
+  "validation": {
+    "every_constructed_leg_from_stage4_selected": true,
+    "every_constructed_leg_l10_hr_at_least_70_percent": true,
+    "all_portfolio_legs_l10_hr_at_least_80_percent": true,
+    "low_variance_exactly_two_legs": true,
+    "low_variance_all_preferred_90_percent_or_higher": true,
+    "low_variance_all_floor_band": true,
+    "balanced_base_exactly_two_legs": true,
+    "price_seeking_low_balanced_plus_one": true,
+    "price_seeking_medium_balanced_plus_two": true,
+    "price_seeking_high_balanced_plus_three": true,
+    "no_concern_context": true,
+    "no_duplicate_players_within_portfolio": true,
+    "no_same_game_stacking_within_portfolio": true,
+    "fanduel_prices_from_locked_stage2_snapshot": true,
+    "combined_odds_mathematically_valid": true,
+    "payout_target_not_forced": true,
+    "no_tier3_low_variance": true
+  }
+}
