@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 606,
-      "Receiving Yards": 1798,
-      "Receptions": 920,
-      "Rushing Yards": 833
+      "Passing Yards": 618,
+      "Receiving Yards": 1848,
+      "Receptions": 935,
+      "Rushing Yards": 855
     },
     "FanDuel": {
       "Passing Yards": 25,
-      "Receiving Yards": 137,
-      "Receptions": 137,
-      "Rushing Yards": 69
+      "Receiving Yards": 139,
+      "Receptions": 139,
+      "Rushing Yards": 72
     }
   },
   "core_markets_present": [
@@ -77,20 +77,20 @@
     "Tampa Bay Buccaneers @ Carolina Panthers"
   ],
   "markets": {
-    "Alt Passing Yards": 233,
-    "Alt Receiving Yards": 1332,
-    "Alt Receptions": 837,
-    "Alt Rushing Yards": 581,
-    "Passing Yards": 631,
-    "Receiving Yards": 1935,
-    "Receptions": 1057,
-    "Rush + Receiving Yards": 451,
-    "Rushing Yards": 902
+    "Alt Passing Yards": 230,
+    "Alt Receiving Yards": 1376,
+    "Alt Receptions": 859,
+    "Alt Rushing Yards": 590,
+    "Passing Yards": 643,
+    "Receiving Yards": 1987,
+    "Receptions": 1074,
+    "Rush + Receiving Yards": 478,
+    "Rushing Yards": 927
   },
   "sportsbooks": {
-    "DraftKings": 4608,
-    "FanDuel": 3351
+    "DraftKings": 4734,
+    "FanDuel": 3430
   },
-  "total_rows": 7959,
+  "total_rows": 8164,
   "validation_mode": "slate-size-agnostic"
 }
