@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 642,
-      "Receiving Yards": 2014,
-      "Receptions": 1021,
-      "Rushing Yards": 867
+      "Passing Yards": 595,
+      "Receiving Yards": 1953,
+      "Receptions": 985,
+      "Rushing Yards": 807
     },
     "FanDuel": {
-      "Passing Yards": 26,
-      "Receiving Yards": 151,
-      "Receptions": 152,
-      "Rushing Yards": 75
+      "Passing Yards": 24,
+      "Receiving Yards": 142,
+      "Receptions": 143,
+      "Rushing Yards": 66
     }
   },
   "core_markets_present": [
@@ -21,7 +21,6 @@
   ],
   "duplicates": 0,
   "event_ids": [
-    "34118009",
     "34118024",
     "34118035",
     "34118038",
@@ -34,7 +33,6 @@
     "34118203",
     "34118233",
     "34118247",
-    "35605985",
     "36188995",
     "36188996",
     "36188997",
@@ -69,28 +67,26 @@
     "Miami Dolphins @ New York Jets",
     "NY Giants @ HOU Texans",
     "New York Giants @ Houston Texans",
-    "PIT Steelers @ NO Saints",
-    "Pittsburgh Steelers @ New Orleans Saints",
     "SF 49ers @ ATL Falcons",
     "San Francisco 49ers @ Atlanta Falcons",
     "TB Buccaneers @ CAR Panthers",
     "Tampa Bay Buccaneers @ Carolina Panthers"
   ],
   "markets": {
-    "Alt Passing Yards": 240,
-    "Alt Receiving Yards": 1501,
-    "Alt Receptions": 942,
-    "Alt Rushing Yards": 605,
-    "Passing Yards": 668,
-    "Receiving Yards": 2165,
-    "Receptions": 1173,
-    "Rush + Receiving Yards": 501,
-    "Rushing Yards": 942
+    "Alt Passing Yards": 228,
+    "Alt Receiving Yards": 1444,
+    "Alt Receptions": 899,
+    "Alt Rushing Yards": 549,
+    "Passing Yards": 619,
+    "Receiving Yards": 2095,
+    "Receptions": 1128,
+    "Rush + Receiving Yards": 465,
+    "Rushing Yards": 873
   },
   "sportsbooks": {
-    "DraftKings": 5045,
-    "FanDuel": 3692
+    "DraftKings": 4805,
+    "FanDuel": 3495
   },
-  "total_rows": 8737,
+  "total_rows": 8300,
   "validation_mode": "slate-size-agnostic"
 }
