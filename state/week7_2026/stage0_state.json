@@ -2,7 +2,7 @@
   "stage": 0,
   "season": 2026,
   "week": 7,
-  "scope": "Sunday only",
+  "scope": "Custom — today's game only: Dallas Cowboys at Philadelphia Eagles (Monday, October 26, 2026)",
   "historical_sample": {
     "label": "L10",
     "n": 10
@@ -15,11 +15,11 @@
     "exclusion": "No game from Week 7 may enter the historical sample"
   },
   "record_count": 1,
-  "state_id": "STATE-0-WEEK7-2026-SUN-L10-20261023",
+  "state_id": "STATE-0-WEEK7-2026-COWBOYS-EAGLES-L10-20261026",
   "parent_state_id": null,
   "records": [
     {
-      "analysis_scope": "NFL Week 7, 2026 Regular Season — Sunday only",
+      "analysis_scope": "NFL Week 7, 2026 Regular Season — Custom scope: Dallas Cowboys at Philadelphia Eagles only",
       "historical_sample": "L10 — 10 most recent qualifying completed regular-season games",
       "historical_data_source": "data/nfl_prop_model.txt",
       "current_sportsbook_source": "odds/nfl_player_props_latest.csv",
