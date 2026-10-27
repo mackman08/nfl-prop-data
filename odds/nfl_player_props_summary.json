@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 70,
-      "Receiving Yards": 287,
-      "Receptions": 148,
-      "Rushing Yards": 112
+      "Passing Yards": 150,
+      "Receiving Yards": 356,
+      "Receptions": 180,
+      "Rushing Yards": 76
     },
     "FanDuel": {
-      "Passing Yards": 4,
+      "Passing Yards": 6,
       "Receiving Yards": 22,
-      "Receptions": 8,
-      "Rushing Yards": 11
+      "Receptions": 21,
+      "Rushing Yards": 6
     }
   },
   "core_markets_present": [
@@ -21,32 +21,36 @@
   ],
   "duplicates": 0,
   "event_ids": [
-    "34118071",
+    "34118031",
     "34118182",
-    "36189007",
-    "36215311"
+    "34118206",
+    "36215311",
+    "36215318",
+    "36215323"
   ],
   "games": [
     "CAR Panthers @ GB Packers",
+    "CHI Bears @ SEA Seahawks",
     "Carolina Panthers @ Green Bay Packers",
-    "DAL Cowboys @ PHI Eagles",
-    "Dallas Cowboys @ Philadelphia Eagles"
+    "Chicago Bears @ Seattle Seahawks",
+    "MIN Vikings @ DET Lions",
+    "Minnesota Vikings @ Detroit Lions"
   ],
   "markets": {
-    "Alt Passing Yards": 34,
-    "Alt Receiving Yards": 192,
-    "Alt Receptions": 119,
-    "Alt Rushing Yards": 75,
-    "Passing Yards": 74,
-    "Receiving Yards": 309,
-    "Receptions": 156,
-    "Rush + Receiving Yards": 58,
-    "Rushing Yards": 123
+    "Alt Passing Yards": 39,
+    "Alt Receiving Yards": 156,
+    "Alt Receptions": 108,
+    "Alt Rushing Yards": 52,
+    "Passing Yards": 156,
+    "Receiving Yards": 378,
+    "Receptions": 201,
+    "Rush + Receiving Yards": 62,
+    "Rushing Yards": 82
   },
   "sportsbooks": {
-    "DraftKings": 675,
-    "FanDuel": 465
+    "DraftKings": 824,
+    "FanDuel": 410
   },
-  "total_rows": 1140,
+  "total_rows": 1234,
   "validation_mode": "slate-size-agnostic"
 }
