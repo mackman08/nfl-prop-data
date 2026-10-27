@@ -2,7 +2,8 @@
   "stage": 0,
   "season": 2026,
   "week": 8,
-  "scope": "Sunday only",
+  "scope": "Thursday only",
+  "scope_description": "NFL Week 8, 2026 Regular Season — Thursday only",
   "historical_sample": {
     "label": "L10",
     "n": 10,
@@ -12,10 +13,20 @@
     "rule": "Completion of the final scheduled game of Week 7",
     "final_scheduled_game": "Dallas Cowboys @ Philadelphia Eagles",
     "scheduled_kickoff_local": "2026-10-26T20:15:00-04:00",
-    "cutoff_event_status": "Pending completion as of Stage 0 creation; use actual game completion as cutoff before Stage 1 historical screening"
+    "cutoff_date": "2026-10-27",
+    "note": "Historical screening must include only games completed before the actual completion of this Week 7 game; verify completion before Stage 1."
+  },
+  "historical_data_source": {
+    "repository": "mackman08/nfl-prop-data",
+    "path": "data/nfl_prop_model.txt"
+  },
+  "current_sportsbook_source": {
+    "primary": "FanDuel",
+    "dataset": "odds/nfl_player_props_latest.csv",
+    "fallback": "DraftKings only if FanDuel data is unavailable for the required market"
   },
   "record_count": 0,
-  "state_id": "STATE-0-W8-2026-20261023T0908EDT",
+  "state_id": "STATE-0-W8-2026-20261027-THU-L10",
   "parent_state_id": null,
   "records": []
 }
