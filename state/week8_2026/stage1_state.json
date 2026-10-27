@@ -28,7 +28,7 @@
   },
   "qualification_rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
   "record_count": 12,
-  "state_id": "STATE-1-W8-2026-20261027-THU-L10",
+  "state_id": "STATE-1R-W8-2026-20261027-THU-L10-P17-P6",
   "parent_state_id": "STATE-0-W8-2026-20261027-THU-L10",
   "records": [
     {
@@ -124,7 +124,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": true,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 26.69,
+      "percentile_6": 16.56
     },
     {
       "player": "Bryce Young",
@@ -218,7 +220,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": true,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 127.22,
+      "percentile_6": 104.66
     },
     {
       "player": "Tetairoa McMillan",
@@ -313,7 +317,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": false,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 29.92,
+      "percentile_6": 18.12
     },
     {
       "player": "Jalen Coker",
@@ -408,7 +414,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": false,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 2,
+      "percentile_6": 1
     },
     {
       "player": "Tucker Kraft",
@@ -503,7 +511,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": false,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 2,
+      "percentile_6": 2
     },
     {
       "player": "Jordan Love",
@@ -597,7 +607,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": true,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 174.46,
+      "percentile_6": 139.84
     },
     {
       "player": "Chuba Hubbard",
@@ -692,7 +704,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": false,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 16.23,
+      "percentile_6": 12.28
     },
     {
       "player": "Tetairoa McMillan",
@@ -787,7 +801,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": false,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 2,
+      "percentile_6": 1.14
     },
     {
       "player": "Christian Watson",
@@ -882,7 +898,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": false,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 31.76,
+      "percentile_6": 2.38
     },
     {
       "player": "Josh Jacobs",
@@ -977,7 +995,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": false,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 36,
+      "percentile_6": 30.42
     },
     {
       "player": "Christian Watson",
@@ -1072,7 +1092,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": false,
         "any_fixed_ladder_at_least_8_of_10": true
-      }
+      },
+      "percentile_17": 2,
+      "percentile_6": 0.28
     },
     {
       "player": "Darren Waller",
@@ -1167,7 +1189,9 @@
       "qualification": {
         "market_HR_at_least_6_of_10": true,
         "any_fixed_ladder_at_least_8_of_10": false
-      }
+      },
+      "percentile_17": "Unavailable — <20 games",
+      "percentile_6": "Unavailable — <20 games"
     }
   ],
   "screening_notes": {
@@ -1182,5 +1206,6 @@
         "count": 8
       }
     ]
-  }
+  },
+  "methodology_change": "User-directed Stage 1 rerun: add 17th and 6th percentiles from the same 20-game sample, preserving the Stage 1 shortlist, L10 samples, markets, and ladder results."
 }
