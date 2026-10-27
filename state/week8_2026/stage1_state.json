@@ -1,0 +1,1186 @@
+{
+  "stage": 1,
+  "season": 2026,
+  "week": 8,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent qualifying completed regular-season games"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of final scheduled game of Week 7",
+    "game": "Dallas Cowboys @ Philadelphia Eagles",
+    "result": "Final, 38-21, October 26 2026"
+  },
+  "sources": {
+    "historical": {
+      "repository": "mackman08/nfl-prop-data",
+      "path": "data/nfl_prop_model.txt",
+      "sha": "535ab11806078bd021416dbd9ff76a0f946d4aa1"
+    },
+    "sportsbook": {
+      "repository": "mackman08/nfl-prop-data",
+      "path": "odds/nfl_player_props_latest.csv",
+      "sha": "7f9065619f0f426a2b5ebba7b1f200b44ca3828e",
+      "primary": "FanDuel"
+    }
+  },
+  "qualification_rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+  "record_count": 12,
+  "state_id": "STATE-1-W8-2026-20261027-THU-L10",
+  "parent_state_id": "STATE-0-W8-2026-20261027-THU-L10",
+  "records": [
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          48,
+          37,
+          64,
+          42,
+          26,
+          15,
+          65,
+          20,
+          143,
+          58
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 9,
+            "game_id": "2025_09_CAR_GB"
+          },
+          {
+            "season": 2025,
+            "week": 8,
+            "game_id": "2025_08_GB_PIT"
+          },
+          {
+            "season": 2025,
+            "week": 7,
+            "game_id": "2025_07_GB_ARI"
+          }
+        ],
+        "hit_rate_at_market": "6/10"
+      },
+      "sportsbook": {
+        "line": 41.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "6/10",
+      "twenty_game_25P": 32.75,
+      "ladder_results": {
+        "20+": "9/10",
+        "30+": "7/10",
+        "40+": "6/10",
+        "50+": "4/10",
+        "60+": "3/10",
+        "75+": "1/10",
+        "100+": "1/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": true,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Bryce Young",
+      "team": "CAR",
+      "position": "QB",
+      "market": "Passing Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          163,
+          281,
+          329,
+          291,
+          287,
+          361,
+          266,
+          54,
+          191,
+          163
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          }
+        ],
+        "hit_rate_at_market": "6/10"
+      },
+      "sportsbook": {
+        "line": 250.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "6/10",
+      "twenty_game_25P": 147,
+      "ladder_results": {
+        "150+": "9/10",
+        "175+": "7/10",
+        "200+": "6/10",
+        "225+": "6/10",
+        "250+": "6/10",
+        "300+": "2/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": true,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          40,
+          86,
+          192,
+          17,
+          101,
+          75,
+          85,
+          5,
+          73,
+          25
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          }
+        ],
+        "hit_rate_at_market": "5/10"
+      },
+      "sportsbook": {
+        "line": 73.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "5/10",
+      "twenty_game_25P": 34.5,
+      "ladder_results": {
+        "20+": "8/10",
+        "30+": "7/10",
+        "40+": "7/10",
+        "50+": "6/10",
+        "60+": "6/10",
+        "75+": "5/10",
+        "100+": "2/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "market": "Receptions",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          1,
+          6,
+          2,
+          8,
+          8,
+          6,
+          2,
+          3,
+          4,
+          4
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_LA_CAR"
+          }
+        ],
+        "hit_rate_at_market": "4/10"
+      },
+      "sportsbook": {
+        "line": 4.5,
+        "over_price": "-172",
+        "under_price": "128",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "4/10",
+      "twenty_game_25P": 2,
+      "ladder_results": {
+        "2+": "9/10",
+        "3+": "7/10",
+        "4+": "6/10",
+        "5+": "4/10",
+        "6+": "4/10",
+        "7+": "2/10",
+        "8+": "2/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "market": "Receptions",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          4,
+          5,
+          5,
+          6,
+          4,
+          2,
+          3,
+          2,
+          7,
+          5
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 9,
+            "game_id": "2025_09_CAR_GB"
+          },
+          {
+            "season": 2025,
+            "week": 8,
+            "game_id": "2025_08_GB_PIT"
+          },
+          {
+            "season": 2025,
+            "week": 7,
+            "game_id": "2025_07_GB_ARI"
+          }
+        ],
+        "hit_rate_at_market": "5/10"
+      },
+      "sportsbook": {
+        "line": 4.5,
+        "over_price": "106",
+        "under_price": "-140",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "5/10",
+      "twenty_game_25P": 2,
+      "ladder_results": {
+        "2+": "10/10",
+        "3+": "8/10",
+        "4+": "7/10",
+        "5+": "5/10",
+        "6+": "2/10",
+        "7+": "1/10",
+        "8+": "0/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Jordan Love",
+      "team": "GB",
+      "position": "QB",
+      "market": "Passing Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          274,
+          276,
+          367,
+          197,
+          312,
+          145,
+          387,
+          77,
+          276,
+          234
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_GB_CHI"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_GB_DEN"
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_CHI_GB"
+          }
+        ],
+        "hit_rate_at_market": "6/10"
+      },
+      "sportsbook": {
+        "line": 258.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "6/10",
+      "twenty_game_25P": 178.25,
+      "ladder_results": {
+        "150+": "8/10",
+        "175+": "8/10",
+        "200+": "7/10",
+        "225+": "7/10",
+        "250+": "6/10",
+        "300+": "3/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": true,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Chuba Hubbard",
+      "team": "CAR",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          33,
+          120,
+          122,
+          82,
+          53,
+          49,
+          10,
+          12,
+          27,
+          29
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          }
+        ],
+        "hit_rate_at_market": "3/10"
+      },
+      "sportsbook": {
+        "line": 70.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "3/10",
+      "twenty_game_25P": 20,
+      "ladder_results": {
+        "20+": "8/10",
+        "30+": "6/10",
+        "40+": "5/10",
+        "50+": "4/10",
+        "60+": "3/10",
+        "75+": "3/10",
+        "100+": "2/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "market": "Receptions",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          4,
+          6,
+          14,
+          2,
+          5,
+          5,
+          4,
+          1,
+          6,
+          2
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          }
+        ],
+        "hit_rate_at_market": "3/10"
+      },
+      "sportsbook": {
+        "line": 5.5,
+        "over_price": "106",
+        "under_price": "-140",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "3/10",
+      "twenty_game_25P": 2.75,
+      "ladder_results": {
+        "2+": "9/10",
+        "3+": "7/10",
+        "4+": "7/10",
+        "5+": "5/10",
+        "6+": "3/10",
+        "7+": "1/10",
+        "8+": "1/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          57,
+          64,
+          143,
+          47,
+          96,
+          41,
+          147,
+          113,
+          17,
+          29
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_BAL_GB"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_GB_CHI"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_GB_DEN"
+          }
+        ],
+        "hit_rate_at_market": "4/10"
+      },
+      "sportsbook": {
+        "line": 68.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "4/10",
+      "twenty_game_25P": 44,
+      "ladder_results": {
+        "20+": "9/10",
+        "30+": "8/10",
+        "40+": "8/10",
+        "50+": "6/10",
+        "60+": "5/10",
+        "75+": "4/10",
+        "100+": "3/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Josh Jacobs",
+      "team": "GB",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          36,
+          3,
+          36,
+          73,
+          86,
+          83,
+          40,
+          74,
+          87,
+          33
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_BAL_GB"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_GB_CHI"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_GB_DEN"
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_CHI_GB"
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_GB_DET"
+          },
+          {
+            "season": 2025,
+            "week": 11,
+            "game_id": "2025_11_GB_NYG"
+          },
+          {
+            "season": 2025,
+            "week": 10,
+            "game_id": "2025_10_PHI_GB"
+          },
+          {
+            "season": 2025,
+            "week": 9,
+            "game_id": "2025_09_CAR_GB"
+          },
+          {
+            "season": 2025,
+            "week": 8,
+            "game_id": "2025_08_GB_PIT"
+          }
+        ],
+        "hit_rate_at_market": "5/10"
+      },
+      "sportsbook": {
+        "line": 58.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "5/10",
+      "twenty_game_25P": 39,
+      "ladder_results": {
+        "20+": "9/10",
+        "30+": "9/10",
+        "40+": "6/10",
+        "50+": "5/10",
+        "60+": "5/10",
+        "75+": "3/10",
+        "100+": "0/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receptions",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          5,
+          3,
+          6,
+          3,
+          7,
+          4,
+          6,
+          5,
+          2,
+          3
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_BAL_GB"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_GB_CHI"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_GB_DEN"
+          }
+        ],
+        "hit_rate_at_market": "5/10"
+      },
+      "sportsbook": {
+        "line": 4.5,
+        "over_price": "-106",
+        "under_price": "-125",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "5/10",
+      "twenty_game_25P": 2.75,
+      "ladder_results": {
+        "2+": "10/10",
+        "3+": "9/10",
+        "4+": "6/10",
+        "5+": "5/10",
+        "6+": "3/10",
+        "7+": "1/10",
+        "8+": "0/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      }
+    },
+    {
+      "player": "Darren Waller",
+      "team": "CAR",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          50,
+          0,
+          36,
+          51,
+          33,
+          28,
+          0,
+          40,
+          66,
+          13
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_TB_MIA"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_CIN_MIA"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_MIA_PIT"
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_MIA_NYJ"
+          }
+        ],
+        "hit_rate_at_market": "7/10"
+      },
+      "sportsbook": {
+        "line": 18.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "7/10",
+      "twenty_game_25P": "Unavailable — <20 games",
+      "ladder_results": {
+        "20+": "7/10",
+        "30+": "6/10",
+        "40+": "4/10",
+        "50+": "3/10",
+        "60+": "1/10",
+        "75+": "0/10",
+        "100+": "0/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": true,
+        "any_fixed_ladder_at_least_8_of_10": false
+      }
+    }
+  ],
+  "screening_notes": {
+    "fan_duel_core_market_rows": 23,
+    "unique_player_market_rows": 23,
+    "excluded_unavailable": [
+      {
+        "player": "MarShawn Lloyd",
+        "team": "GB",
+        "market": "Rushing Yards",
+        "issue": "Unavailable — fewer than 10 qualifying games",
+        "count": 8
+      }
+    ]
+  }
+}
