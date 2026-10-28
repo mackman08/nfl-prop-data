@@ -1,0 +1,2170 @@
+{
+  "stage": 3,
+  "season": 2026,
+  "week": 8,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent qualifying completed regular-season games"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of final scheduled game of Week 7",
+    "game": "Dallas Cowboys @ Philadelphia Eagles",
+    "result": "Final, 38-21, October 26 2026"
+  },
+  "sources": {
+    "historical": {
+      "repository": "mackman08/nfl-prop-data",
+      "path": "data/nfl_prop_model.txt",
+      "sha": "535ab11806078bd021416dbd9ff76a0f946d4aa1"
+    },
+    "sportsbook": {
+      "repository": "mackman08/nfl-prop-data",
+      "path": "odds/nfl_player_props_latest.csv",
+      "sha": "7f9065619f0f426a2b5ebba7b1f200b44ca3828e",
+      "primary": "FanDuel"
+    },
+    "stage2_alternate_market_snapshot": {
+      "repository": "mackman08/nfl-prop-data",
+      "branch": "main",
+      "path": "odds/nfl_player_props_latest.csv",
+      "blob_sha": "da439f6bcaeccc1beab6b9966f38869c2c896c47",
+      "sha256_or_blob_sha": "GitHub blob SHA",
+      "sportsbook_used": "DraftKings",
+      "reason": "No FanDuel rows were present in the current retrieved odds snapshot; DraftKings fallback used for available required markets."
+    },
+    "stage3_context_sources": [
+      {
+        "id": "NFL official Week 8 game preview",
+        "url": "https://www.nfl.com/news/panthers-vs-packers-three-must-know-storylines-for-thursday-s-week-8-prime-time-game",
+        "published": "2026-10-28",
+        "supports": [
+          "Bryce Young pressure and offensive-line concerns",
+          "Packers pressure rate",
+          "Panthers rush defense and Packers rushing offense"
+        ]
+      },
+      {
+        "id": "Panthers official Week 8 injury report",
+        "url": "https://www.panthers.com/news/week-8-wednesday-injury-report-four-ruled-out-for-packers-game",
+        "published": "2026-10-28",
+        "supports": [
+          "Jalen Coker full participation and no game designation",
+          "Bryce Young full participation and no game designation",
+          "Panthers offensive-line and cornerback absences"
+        ]
+      },
+      {
+        "id": "Packers official Week 7 recap",
+        "url": "https://www.packers.com/news/in-game-updates-week-7-lions-2026",
+        "published": "2026-10-25",
+        "supports": [
+          "Jordan Love, Christian Watson, Tucker Kraft Week 7 production"
+        ]
+      },
+      {
+        "id": "Packers official injury report",
+        "url": "https://www.packers.com/team/injury-report/",
+        "published": "2026-10-28",
+        "supports": [
+          "Packers injury status; Matthew Golden absence uncertainty and offensive-line injuries"
+        ]
+      },
+      {
+        "id": "NFL.com Jordan Love game log",
+        "url": "https://www.nfl.com/players/jordan-love/stats/logs/",
+        "published": "2026-10-28",
+        "supports": [
+          "Jordan Love recent passing production"
+        ]
+      },
+      {
+        "id": "NFL.com Tetairoa McMillan game log",
+        "url": "https://www.nfl.com/players/tetairoa-mcmillan/stats/logs/2026/",
+        "published": "2026-10-28",
+        "supports": [
+          "McMillan recent receiving production"
+        ]
+      },
+      {
+        "id": "LeagueLogs Carolina target share",
+        "url": "https://leaguelogs.com/guides/nfl-target-share/teams/carolina-panthers",
+        "published": "2026-10-28",
+        "supports": [
+          "McMillan, Coker, Waller role and target shares through Week 7"
+        ]
+      },
+      {
+        "id": "StatChasers Green Bay usage",
+        "url": "https://statchasers.com/nfl/teams/green-bay-packers/usage/",
+        "published": "2026-10-28",
+        "supports": [
+          "Watson and Kraft target shares through Week 7"
+        ]
+      },
+      {
+        "id": "Panthers Week 7 box score",
+        "url": "https://www.buccaneers.com/news/bucs-win-carolina-panthers-week-7-2026-score-43-13",
+        "published": "2026-10-25",
+        "supports": [
+          "Bryce Young, Chuba Hubbard, Darren Waller Week 7 production"
+        ]
+      },
+      {
+        "id": "PFF Tucker Kraft matchup and usage",
+        "url": "https://www.pff.com/nfl/players/tucker-kraft/104034",
+        "published": "2026-10-28",
+        "supports": [
+          "Kraft targets, catches, yards, recent form, matchup projection"
+        ]
+      },
+      {
+        "id": "Sharp Football Analysis game weather",
+        "url": "https://www.sharpfootballanalysis.com/betting/nfl-weather-betting/",
+        "published": "2026-10-28",
+        "supports": [
+          "Lambeau weather forecast: clear, low wind, no rain"
+        ]
+      },
+      {
+        "id": "Packers defensive performance by position",
+        "url": "https://www.getbettor.pro/nfl/defense/gb",
+        "published": "2026-10-28",
+        "supports": [
+          "Packers defensive yards allowed by position"
+        ]
+      },
+      {
+        "id": "Panthers Week 7 Jalen Coker recap",
+        "url": "https://sports.yahoo.com/articles/jalen-coker-not-big-factor-211322150.html",
+        "published": "2026-10-25",
+        "supports": [
+          "Coker Week 7 one catch, four targets"
+        ]
+      }
+    ]
+  },
+  "record_count": 12,
+  "state_id": "STATE-3-W8-2026-20261028-THU-L10-CONTEXT",
+  "parent_state_id": "STATE-2-W8-2026-20261028-THU-L10-PRICE-TARGET-CORE",
+  "prior_stage_state": {
+    "path": "state/week8_2026/stage2_state.json",
+    "blob_sha": "ff924fac285847fe2b880e0b3b7b4859de9e1e78",
+    "state_id": "STATE-2-W8-2026-20261028-THU-L10-PRICE-TARGET-CORE",
+    "record_count": 12
+  },
+  "records": [
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          48,
+          37,
+          64,
+          42,
+          26,
+          15,
+          65,
+          20,
+          143,
+          58
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 9,
+            "game_id": "2025_09_CAR_GB"
+          },
+          {
+            "season": 2025,
+            "week": 8,
+            "game_id": "2025_08_GB_PIT"
+          },
+          {
+            "season": 2025,
+            "week": 7,
+            "game_id": "2025_07_GB_ARI"
+          }
+        ],
+        "hit_rate_at_market": "6/10"
+      },
+      "sportsbook": {
+        "line": 41.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "6/10",
+      "twenty_game_25P": 32.75,
+      "ladder_results": {
+        "20+": "9/10",
+        "30+": "7/10",
+        "40+": "6/10",
+        "50+": "4/10",
+        "60+": "3/10",
+        "75+": "1/10",
+        "100+": "1/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": true,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 26.69,
+      "percentile_6": 16.56,
+      "alternate_market_analysis": {
+        "player": "Tucker Kraft",
+        "market": "Receiving Yards",
+        "floor": {
+          "threshold": 24.5,
+          "historical_HR": "8/10",
+          "over_price_american": "-383",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 29.5,
+          "historical_HR": "7/10",
+          "over_price_american": "-270",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 39.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-151",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 29.5,
+        "selected_band": "Core",
+        "historical_HR": "7/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Role and workload",
+            "classification": "Supportive",
+            "finding": "Established receiving role: 29 catches for 297 yards and 2 TDs on 43 targets through Week 7; PFF lists 205 routes and a 43.4-yard receiving average over his last five games."
+          },
+          {
+            "factor": "Recent form",
+            "classification": "Supportive",
+            "finding": "Week 7: four catches for 48 yards and a touchdown; recent five receiving-yard outputs shown by PFF were 26, 42, 64, 37 and 48."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Supportive",
+            "finding": "PFF matchup data grades the Panthers' tight-end coverage as a favorable matchup. A separate defensive-by-position source shows Carolina allowing 46.3 TE receiving yards per game through Week 7, near league average rather than an extreme weakness."
+          },
+          {
+            "factor": "Teammate availability",
+            "classification": "Mixed",
+            "finding": "Matthew Golden's shoulder/foot status was uncertain and he had missed practice early in the week; if unavailable, targets could redistribute, but the final status was not verified as of this analysis."
+          },
+          {
+            "factor": "Game environment and weather",
+            "classification": "Supportive",
+            "finding": "Packers at home in a competitive game environment; forecast is clear with light winds and no expected rain."
+          },
+          {
+            "factor": "Volatility",
+            "classification": "Mixed",
+            "finding": "Kraft's role is steady, but yardage remains dependent on targets and receiving efficiency; the Core line is a modest threshold relative to his recent production."
+          }
+        ],
+        "implication": "Strongest contextual profile among the candidates: stable usage, recent production above the Core threshold, and a generally favorable TE matchup. Preserve normal target/short-week variance."
+      }
+    },
+    {
+      "player": "Bryce Young",
+      "team": "CAR",
+      "position": "QB",
+      "market": "Passing Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          163,
+          281,
+          329,
+          291,
+          287,
+          361,
+          266,
+          54,
+          191,
+          163
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          }
+        ],
+        "hit_rate_at_market": "6/10"
+      },
+      "sportsbook": {
+        "line": 250.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "6/10",
+      "twenty_game_25P": 147,
+      "ladder_results": {
+        "150+": "9/10",
+        "175+": "7/10",
+        "200+": "6/10",
+        "225+": "6/10",
+        "250+": "6/10",
+        "300+": "2/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": true,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 127.22,
+      "percentile_6": 104.66,
+      "alternate_market_analysis": {
+        "player": "Bryce Young",
+        "market": "Passing Yards",
+        "floor": {
+          "threshold": 209.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-329",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 219.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-250",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 229.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-193",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 219.5,
+        "selected_band": "Core",
+        "historical_HR": "6/10",
+        "overall_classification": "Concern",
+        "factors": [
+          {
+            "factor": "Player status",
+            "classification": "Supportive",
+            "finding": "The Panthers' final Week 8 report listed Young as a full participant with no game designation."
+          },
+          {
+            "factor": "Recent performance",
+            "classification": "Concern",
+            "finding": "Young passed for 163 yards with 1 TD and 2 INTs in the Week 7 43–13 loss to Tampa Bay."
+          },
+          {
+            "factor": "Pass protection and pressure",
+            "classification": "Concern",
+            "finding": "NFL.com's Week 8 preview reports five sacks and pressure on 51.5% of Young's dropbacks in Week 7; Green Bay had generated pressure on 38.5% of dropbacks without blitzing. Carolina also lost RT Taylor Moton for the season, and LG Damien Lewis is out."
+          },
+          {
+            "factor": "Opponent defense",
+            "classification": "Concern",
+            "finding": "Green Bay's defense had 9 interceptions through Week 7, seven generated without blitzing, per NFL.com; this creates pressure and turnover risk."
+          },
+          {
+            "factor": "Passing volume and game script",
+            "classification": "Mixed",
+            "finding": "A close projected game could keep Carolina passing, but sustained pressure or an early deficit could also reduce efficiency and disrupt drives."
+          },
+          {
+            "factor": "Weather",
+            "classification": "Supportive",
+            "finding": "Clear, dry conditions and light wind are not expected to materially impede passing."
+          }
+        ],
+        "implication": "The passing-yard Core has a plausible volume path but major pass-protection and pressure concerns. Context does not support treating the historical 6/10 as a forecast."
+      }
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          40,
+          86,
+          192,
+          17,
+          101,
+          75,
+          85,
+          5,
+          73,
+          25
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          }
+        ],
+        "hit_rate_at_market": "5/10"
+      },
+      "sportsbook": {
+        "line": 73.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "5/10",
+      "twenty_game_25P": 34.5,
+      "ladder_results": {
+        "20+": "8/10",
+        "30+": "7/10",
+        "40+": "7/10",
+        "50+": "6/10",
+        "60+": "6/10",
+        "75+": "5/10",
+        "100+": "2/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 29.92,
+      "percentile_6": 18.12,
+      "alternate_market_analysis": {
+        "player": "Tetairoa McMillan",
+        "market": "Receiving Yards",
+        "floor": {
+          "threshold": 39.5,
+          "historical_HR": "7/10",
+          "over_price_american": "-478",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 49.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-278",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 59.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-176",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 49.5,
+        "selected_band": "Core",
+        "historical_HR": "6/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Role and target share",
+            "classification": "Supportive",
+            "finding": "Team-leading 25.6% target share through Week 7 (54 targets reported across six games)."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Mixed",
+            "finding": "Week 6: six catches for 86 yards; Week 7: four catches for 40 yards on six targets. The latest game cleared neither the 49.5-yard Core nor the 59.5-yard Ceiling."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Supportive",
+            "finding": "Green Bay had allowed 156.7 receiving yards per game to wide receivers through Week 7, a relatively permissive position-level figure in the cited dataset."
+          },
+          {
+            "factor": "Quarterback and offensive line",
+            "classification": "Concern",
+            "finding": "Young's Week 7 pressure and turnover issues, Taylor Moton's season-ending injury, and Damien Lewis being out can constrain downfield passing and sustained drives."
+          },
+          {
+            "factor": "Competition and volatility",
+            "classification": "Mixed",
+            "finding": "McMillan is the lead target, but Coker and tight ends remain part of the target distribution; yardage output has varied substantially across recent games."
+          },
+          {
+            "factor": "Weather",
+            "classification": "Supportive",
+            "finding": "No meaningful wind or precipitation concern is forecast."
+          }
+        ],
+        "implication": "Primary Carolina receiving option by target share, but quarterback pressure limits confidence. Core is more defensible than Ceiling; contextual read remains mixed."
+      }
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "market": "Receptions",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          1,
+          6,
+          2,
+          8,
+          8,
+          6,
+          2,
+          3,
+          4,
+          4
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_LA_CAR"
+          }
+        ],
+        "hit_rate_at_market": "4/10"
+      },
+      "sportsbook": {
+        "line": 4.5,
+        "over_price": "-172",
+        "under_price": "128",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "4/10",
+      "twenty_game_25P": 2,
+      "ladder_results": {
+        "2+": "9/10",
+        "3+": "7/10",
+        "4+": "6/10",
+        "5+": "4/10",
+        "6+": "4/10",
+        "7+": "2/10",
+        "8+": "2/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 2,
+      "percentile_6": 1,
+      "alternate_market_analysis": {
+        "player": "Jalen Coker",
+        "market": "Receptions",
+        "floor": {
+          "threshold": 2.5,
+          "historical_HR": "7/10",
+          "over_price_american": "-890",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 3.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-319",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 4.5,
+          "historical_HR": "4/10",
+          "over_price_american": "-145",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 3.5,
+        "selected_band": "Core",
+        "historical_HR": "6/10",
+        "overall_classification": "Concern",
+        "factors": [
+          {
+            "factor": "Player status",
+            "classification": "Supportive",
+            "finding": "The Panthers' final Week 8 report listed Coker as full participation and without a game designation despite the earlier shoulder issue."
+          },
+          {
+            "factor": "Role and target share",
+            "classification": "Supportive",
+            "finding": "Coker accounted for 18.5% of Carolina's reported targets through Week 7 across five games."
+          },
+          {
+            "factor": "Recent usage and trend",
+            "classification": "Concern",
+            "finding": "Week 7: one catch for 9 yards on four targets. Usage tracking reports a recent decline in target share and snap share over the last three games versus the earlier comparison window."
+          },
+          {
+            "factor": "Quarterback/offensive line",
+            "classification": "Concern",
+            "finding": "Young's pressure problems and losses on the offensive line create a risk to drive success and catch conversion."
+          },
+          {
+            "factor": "Weather",
+            "classification": "Supportive",
+            "finding": "Forecast is clear and dry."
+          },
+          {
+            "factor": "Volatility",
+            "classification": "Concern",
+            "finding": "Reception count depends on route/snap share and target conversion; Week 7 did not support the Core threshold despite four targets."
+          }
+        ],
+        "implication": "Availability is reassuring, but recent production and declining usage are warning signs. The Core reception threshold is not contextually strong enough to upgrade."
+      }
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "market": "Receptions",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          4,
+          5,
+          5,
+          6,
+          4,
+          2,
+          3,
+          2,
+          7,
+          5
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 9,
+            "game_id": "2025_09_CAR_GB"
+          },
+          {
+            "season": 2025,
+            "week": 8,
+            "game_id": "2025_08_GB_PIT"
+          },
+          {
+            "season": 2025,
+            "week": 7,
+            "game_id": "2025_07_GB_ARI"
+          }
+        ],
+        "hit_rate_at_market": "5/10"
+      },
+      "sportsbook": {
+        "line": 4.5,
+        "over_price": "106",
+        "under_price": "-140",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "5/10",
+      "twenty_game_25P": 2,
+      "ladder_results": {
+        "2+": "10/10",
+        "3+": "8/10",
+        "4+": "7/10",
+        "5+": "5/10",
+        "6+": "2/10",
+        "7+": "1/10",
+        "8+": "0/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 2,
+      "percentile_6": 2,
+      "alternate_market_analysis": {
+        "player": "Tucker Kraft",
+        "market": "Receptions",
+        "floor": {
+          "threshold": 2.5,
+          "historical_HR": "8/10",
+          "over_price_american": "-542",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 3.5,
+          "historical_HR": "7/10",
+          "over_price_american": "-215",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 4.5,
+          "historical_HR": "5/10",
+          "over_price_american": "-102",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 3.5,
+        "selected_band": "Core",
+        "historical_HR": "7/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Role and workload",
+            "classification": "Supportive",
+            "finding": "29 receptions on 43 targets through Week 7; PFF lists 205 routes and 6.6 projected targets for this matchup."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Supportive",
+            "finding": "Kraft recorded four catches on the way to 48 yards and a touchdown in Week 7."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Supportive",
+            "finding": "PFF's matchup analysis identifies Carolina's TE coverage as a favorable matchup; the receptions Core is below the recent typical catch count."
+          },
+          {
+            "factor": "Teammate availability",
+            "classification": "Mixed",
+            "finding": "Matthew Golden's status remained uncertain in the early-week reports; a potential absence could alter target distribution, but the final status was not confirmed."
+          },
+          {
+            "factor": "Game environment",
+            "classification": "Supportive",
+            "finding": "Home game, competitive spread, and benign weather offer no obvious environmental obstacle."
+          },
+          {
+            "factor": "Volatility",
+            "classification": "Mixed",
+            "finding": "Reception volume is generally less dependent on a single long catch than yardage, but target distribution among Green Bay's receivers remains a factor."
+          }
+        ],
+        "implication": "Stable role and recent four-catch game support the 3.5 Core. Context is favorable, while final receiver availability and target competition remain watch items."
+      }
+    },
+    {
+      "player": "Jordan Love",
+      "team": "GB",
+      "position": "QB",
+      "market": "Passing Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          274,
+          276,
+          367,
+          197,
+          312,
+          145,
+          387,
+          77,
+          276,
+          234
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_GB_CHI"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_GB_DEN"
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_CHI_GB"
+          }
+        ],
+        "hit_rate_at_market": "6/10"
+      },
+      "sportsbook": {
+        "line": 258.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "6/10",
+      "twenty_game_25P": 178.25,
+      "ladder_results": {
+        "150+": "8/10",
+        "175+": "8/10",
+        "200+": "7/10",
+        "225+": "7/10",
+        "250+": "6/10",
+        "300+": "3/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": true,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 174.46,
+      "percentile_6": 139.84,
+      "alternate_market_analysis": {
+        "player": "Jordan Love",
+        "market": "Passing Yards",
+        "floor": {
+          "threshold": 219.5,
+          "historical_HR": "7/10",
+          "over_price_american": "-295",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 229.5,
+          "historical_HR": "7/10",
+          "over_price_american": "-221",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 239.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-169",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 229.5,
+        "selected_band": "Core",
+        "historical_HR": "7/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Recent passing production",
+            "classification": "Supportive",
+            "finding": "Love threw for 274 yards on 45 attempts in Week 7; his previous three games produced 276, 367 and 197 yards. Season total was 1,958 passing yards through seven games."
+          },
+          {
+            "factor": "Player status",
+            "classification": "Supportive",
+            "finding": "Love played all 67 offensive snaps in Week 7 and was off the early-week estimated injury report after a prior back issue."
+          },
+          {
+            "factor": "Receiver availability",
+            "classification": "Concern",
+            "finding": "Matthew Golden, who led Green Bay with 36 catches and ranked second with 540 receiving yards, had missed the first two early-week practices with shoulder/foot issues. His final status was not verified at research cutoff."
+          },
+          {
+            "factor": "Offensive line and scheme",
+            "classification": "Concern",
+            "finding": "Green Bay's offensive line is banged up; the NFL preview notes the Packers had not rushed for 100 yards in a game and averaged 2.9 yards per carry, but Carolina's weak run defense could tempt Green Bay to lean on the ground game."
+          },
+          {
+            "factor": "Opponent pass defense",
+            "classification": "Mixed",
+            "finding": "Carolina had allowed 208.2 passing yards per game through Week 7 in the cited defensive-by-position dataset, while Green Bay may have to throw more if its run game remains ineffective."
+          },
+          {
+            "factor": "Game environment and weather",
+            "classification": "Supportive",
+            "finding": "A competitive game and benign weather are compatible with passing volume."
+          }
+        ],
+        "implication": "Recent passing volume and production support the Core, but receiver availability, a short week, and the possibility of a deliberate run-game approach keep the overall context mixed."
+      }
+    },
+    {
+      "player": "Chuba Hubbard",
+      "team": "CAR",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          33,
+          120,
+          122,
+          82,
+          53,
+          49,
+          10,
+          12,
+          27,
+          29
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          }
+        ],
+        "hit_rate_at_market": "3/10"
+      },
+      "sportsbook": {
+        "line": 70.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "3/10",
+      "twenty_game_25P": 20,
+      "ladder_results": {
+        "20+": "8/10",
+        "30+": "6/10",
+        "40+": "5/10",
+        "50+": "4/10",
+        "60+": "3/10",
+        "75+": "3/10",
+        "100+": "2/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 16.23,
+      "percentile_6": 12.28,
+      "alternate_market_analysis": {
+        "player": "Chuba Hubbard",
+        "market": "Rushing Yards",
+        "floor": {
+          "threshold": 39.5,
+          "historical_HR": "5/10",
+          "over_price_american": "-640",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 49.5,
+          "historical_HR": "4/10",
+          "over_price_american": "-306",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 59.5,
+          "historical_HR": "3/10",
+          "over_price_american": "-168",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": false,
+      "stage3_exclusion_rationale": "Core alternate historical HR is 4/10; available structure does not provide a viable candidate path for later evaluation.",
+      "stage3_context": null
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "market": "Receptions",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          4,
+          6,
+          14,
+          2,
+          5,
+          5,
+          4,
+          1,
+          6,
+          2
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_CAR_TB"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_SEA_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_TB_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_CAR_NO"
+          }
+        ],
+        "hit_rate_at_market": "3/10"
+      },
+      "sportsbook": {
+        "line": 5.5,
+        "over_price": "106",
+        "under_price": "-140",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "3/10",
+      "twenty_game_25P": 2.75,
+      "ladder_results": {
+        "2+": "9/10",
+        "3+": "7/10",
+        "4+": "7/10",
+        "5+": "5/10",
+        "6+": "3/10",
+        "7+": "1/10",
+        "8+": "1/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 2,
+      "percentile_6": 1.14,
+      "alternate_market_analysis": {
+        "player": "Tetairoa McMillan",
+        "market": "Receptions",
+        "floor": {
+          "threshold": 3.5,
+          "historical_HR": "7/10",
+          "over_price_american": "-358",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 4.5,
+          "historical_HR": "5/10",
+          "over_price_american": "-161",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 5.5,
+          "historical_HR": "3/10",
+          "over_price_american": "+126",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": false,
+      "stage3_exclusion_rationale": "Core alternate historical HR is 5/10 and the ceiling is 3/10; available structure does not provide a sufficiently supported candidate path for later evaluation.",
+      "stage3_context": null
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          57,
+          64,
+          143,
+          47,
+          96,
+          41,
+          147,
+          113,
+          17,
+          29
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_BAL_GB"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_GB_CHI"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_GB_DEN"
+          }
+        ],
+        "hit_rate_at_market": "4/10"
+      },
+      "sportsbook": {
+        "line": 68.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "4/10",
+      "twenty_game_25P": 44,
+      "ladder_results": {
+        "20+": "9/10",
+        "30+": "8/10",
+        "40+": "8/10",
+        "50+": "6/10",
+        "60+": "5/10",
+        "75+": "4/10",
+        "100+": "3/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 31.76,
+      "percentile_6": 2.38,
+      "alternate_market_analysis": {
+        "player": "Christian Watson",
+        "market": "Receiving Yards",
+        "floor": {
+          "threshold": 39.5,
+          "historical_HR": "8/10",
+          "over_price_american": "-363",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 49.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-227",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 59.5,
+          "historical_HR": "5/10",
+          "over_price_american": "-152",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 49.5,
+        "selected_band": "Core",
+        "historical_HR": "6/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Role and target share",
+            "classification": "Supportive",
+            "finding": "Usage tracking shows Watson with a 21.3% target share through Week 7. He was among the league leaders in receiving touchdowns with six through seven appearances, per the Panthers' official opponent preview."
+          },
+          {
+            "factor": "Recent production",
+            "classification": "Supportive",
+            "finding": "Week 7: five catches for 57 yards on eight targets, leading Green Bay in receiving yards."
+          },
+          {
+            "factor": "Opponent secondary",
+            "classification": "Supportive",
+            "finding": "Carolina entered the game with significant cornerback availability problems; the Panthers' official report ruled out Akayleb Evans and the team's preview noted only two healthy cornerbacks at that point."
+          },
+          {
+            "factor": "Player status",
+            "classification": "Mixed",
+            "finding": "Watson had been managed with an ankle issue in the prior week; the early-week Packers injury report did not list him, but final Thursday status was not independently confirmed at research cutoff."
+          },
+          {
+            "factor": "Quarterback and environment",
+            "classification": "Supportive",
+            "finding": "Love is active and has recently generated high pass volume; weather is clear with light wind."
+          },
+          {
+            "factor": "Volatility",
+            "classification": "Mixed",
+            "finding": "Watson's explosive-play role can clear yardage thresholds efficiently, but yardage remains sensitive to depth of target and the number of downfield opportunities."
+          }
+        ],
+        "implication": "Role, Week 7 production and Carolina's depleted cornerback group support the Core receiving-yard threshold, with the main uncertainty being short-week availability and volatile big-play dependence."
+      }
+    },
+    {
+      "player": "Josh Jacobs",
+      "team": "GB",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          36,
+          3,
+          36,
+          73,
+          86,
+          83,
+          40,
+          74,
+          87,
+          33
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_BAL_GB"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_GB_CHI"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_GB_DEN"
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_CHI_GB"
+          },
+          {
+            "season": 2025,
+            "week": 13,
+            "game_id": "2025_13_GB_DET"
+          },
+          {
+            "season": 2025,
+            "week": 11,
+            "game_id": "2025_11_GB_NYG"
+          },
+          {
+            "season": 2025,
+            "week": 10,
+            "game_id": "2025_10_PHI_GB"
+          },
+          {
+            "season": 2025,
+            "week": 9,
+            "game_id": "2025_09_CAR_GB"
+          },
+          {
+            "season": 2025,
+            "week": 8,
+            "game_id": "2025_08_GB_PIT"
+          }
+        ],
+        "hit_rate_at_market": "5/10"
+      },
+      "sportsbook": {
+        "line": 58.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "5/10",
+      "twenty_game_25P": 39,
+      "ladder_results": {
+        "20+": "9/10",
+        "30+": "9/10",
+        "40+": "6/10",
+        "50+": "5/10",
+        "60+": "5/10",
+        "75+": "3/10",
+        "100+": "0/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 36,
+      "percentile_6": 30.42,
+      "alternate_market_analysis": {
+        "player": "Josh Jacobs",
+        "market": "Rushing Yards",
+        "floor": {
+          "threshold": 39.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-338",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 49.5,
+          "historical_HR": "5/10",
+          "over_price_american": "-176",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 57.5,
+          "historical_HR": "5/10",
+          "over_price_american": "-112",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": false,
+      "stage3_exclusion_rationale": "Core alternate historical HR is 5/10 and ceiling is 5/10; available structure does not provide a sufficiently supported candidate path for later evaluation.",
+      "stage3_context": null
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receptions",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          5,
+          3,
+          6,
+          3,
+          7,
+          4,
+          6,
+          5,
+          2,
+          3
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_GB_DET"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_DAL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_CHI_GB"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_GB_TB"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_ATL_GB"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_GB_NYJ"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_GB_MIN"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_BAL_GB"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_GB_CHI"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_GB_DEN"
+          }
+        ],
+        "hit_rate_at_market": "5/10"
+      },
+      "sportsbook": {
+        "line": 4.5,
+        "over_price": "-106",
+        "under_price": "-125",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "5/10",
+      "twenty_game_25P": 2.75,
+      "ladder_results": {
+        "2+": "10/10",
+        "3+": "9/10",
+        "4+": "6/10",
+        "5+": "5/10",
+        "6+": "3/10",
+        "7+": "1/10",
+        "8+": "0/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": false,
+        "any_fixed_ladder_at_least_8_of_10": true
+      },
+      "percentile_17": 2,
+      "percentile_6": 0.28,
+      "alternate_market_analysis": {
+        "player": "Christian Watson",
+        "market": "Receptions",
+        "floor": {
+          "threshold": 2.5,
+          "historical_HR": "9/10",
+          "over_price_american": "-670",
+          "sportsbook": "DraftKings",
+          "designation": "Floor"
+        },
+        "core": {
+          "threshold": 3.5,
+          "historical_HR": "6/10",
+          "over_price_american": "-251",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 4.5,
+          "historical_HR": "5/10",
+          "over_price_american": "-114",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 3.5,
+        "selected_band": "Core",
+        "historical_HR": "6/10",
+        "overall_classification": "Supportive",
+        "factors": [
+          {
+            "factor": "Role and target share",
+            "classification": "Supportive",
+            "finding": "Watson's 21.3% target share through Week 7 and eight Week 7 targets support a repeatable opportunity path."
+          },
+          {
+            "factor": "Recent catch volume",
+            "classification": "Supportive",
+            "finding": "He caught five of eight targets in Week 7."
+          },
+          {
+            "factor": "Opponent secondary",
+            "classification": "Supportive",
+            "finding": "Carolina's cornerback depth was depleted entering Thursday's game."
+          },
+          {
+            "factor": "Player status",
+            "classification": "Mixed",
+            "finding": "Prior ankle management is noted, though Watson was not listed on the early-week estimated report available at research cutoff; final status was not independently confirmed."
+          },
+          {
+            "factor": "Target competition",
+            "classification": "Mixed",
+            "finding": "Matthew Golden's potential absence could redirect targets to Watson, but Green Bay has multiple capable receivers and the final status was uncertain."
+          },
+          {
+            "factor": "Weather",
+            "classification": "Supportive",
+            "finding": "Clear conditions and light wind create no obvious receiving obstacle."
+          }
+        ],
+        "implication": "The 3.5 Core has a clear role-based path from recent target and catch volume. The context is favorable, subject to final availability and target-distribution uncertainty."
+      }
+    },
+    {
+      "player": "Darren Waller",
+      "team": "CAR",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "historical_sample": {
+        "label": "L10",
+        "observations": [
+          50,
+          0,
+          36,
+          51,
+          33,
+          28,
+          0,
+          40,
+          66,
+          13
+        ],
+        "game_weeks": [
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_TB_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_CAR_PHI"
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DET_CAR"
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_CAR_CLE"
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CAR_ATL"
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_CHI_CAR"
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_TB_MIA"
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_CIN_MIA"
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_MIA_PIT"
+          },
+          {
+            "season": 2025,
+            "week": 14,
+            "game_id": "2025_14_MIA_NYJ"
+          }
+        ],
+        "hit_rate_at_market": "7/10"
+      },
+      "sportsbook": {
+        "line": 18.5,
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_HR": "7/10",
+      "twenty_game_25P": "Unavailable — <20 games",
+      "ladder_results": {
+        "20+": "7/10",
+        "30+": "6/10",
+        "40+": "4/10",
+        "50+": "3/10",
+        "60+": "1/10",
+        "75+": "0/10",
+        "100+": "0/10"
+      },
+      "qualification": {
+        "market_HR_at_least_6_of_10": true,
+        "any_fixed_ladder_at_least_8_of_10": false
+      },
+      "percentile_17": "Unavailable — <20 games",
+      "percentile_6": "Unavailable — <20 games",
+      "alternate_market_analysis": {
+        "player": "Darren Waller",
+        "market": "Receiving Yards",
+        "floor": null,
+        "core": {
+          "threshold": 9.5,
+          "historical_HR": "8/10",
+          "over_price_american": "-291",
+          "sportsbook": "DraftKings",
+          "designation": "Core"
+        },
+        "ceiling": {
+          "threshold": 14.5,
+          "historical_HR": "7/10",
+          "over_price_american": "-166",
+          "sportsbook": "DraftKings",
+          "designation": "Ceiling"
+        }
+      },
+      "stage3_context_candidate": true,
+      "stage3_exclusion_rationale": null,
+      "stage3_context": {
+        "selected_threshold": 9.5,
+        "selected_band": "Core",
+        "historical_HR": "8/10",
+        "overall_classification": "Mixed",
+        "factors": [
+          {
+            "factor": "Player status",
+            "classification": "Supportive",
+            "finding": "The Panthers' final Week 8 report listed Waller as full participation and without a game designation."
+          },
+          {
+            "factor": "Recent production",
+            "classification": "Mixed",
+            "finding": "Week 7: one catch for 50 yards and a touchdown on two targets; the low yardage threshold was cleared, but the result was driven by one explosive reception."
+          },
+          {
+            "factor": "Role and target share",
+            "classification": "Mixed",
+            "finding": "Waller had a 10.9% target share through Week 7, below McMillan and Coker, and competes with other tight ends and receivers."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Concern",
+            "finding": "Green Bay had allowed only 32.9 tight-end receiving yards per game through Week 7, the lowest figure in the cited defensive-by-position source."
+          },
+          {
+            "factor": "Quarterback/offensive line",
+            "classification": "Concern",
+            "finding": "Carolina's pass protection and Young's pressure rate are significant concerns that can disrupt target volume and conversion."
+          },
+          {
+            "factor": "Threshold and volatility",
+            "classification": "Mixed",
+            "finding": "The 9.5-yard Core is a low bar relative to his L10 evidence, but recent production is volatile and the 14.5-yard Ceiling requires another meaningful gain."
+          }
+        ],
+        "implication": "The low Core threshold and locked historical HR are supportive, but the modest target share, volatile Week 7 output, difficult TE matchup and Carolina pass-protection concerns make the contextual read mixed."
+      }
+    }
+  ],
+  "stage3_context_candidate_set": [
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "core": {
+        "threshold": 29.5,
+        "historical_HR": "7/10",
+        "over_price_american": "-270",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "6/10",
+      "selected_threshold": 29.5,
+      "selected_band": "Core",
+      "overall_classification": "Supportive",
+      "implication": "Strongest contextual profile among the candidates: stable usage, recent production above the Core threshold, and a generally favorable TE matchup. Preserve normal target/short-week variance."
+    },
+    {
+      "player": "Bryce Young",
+      "team": "CAR",
+      "position": "QB",
+      "market": "Passing Yards",
+      "core": {
+        "threshold": 219.5,
+        "historical_HR": "6/10",
+        "over_price_american": "-250",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "6/10",
+      "selected_threshold": 219.5,
+      "selected_band": "Core",
+      "overall_classification": "Concern",
+      "implication": "The passing-yard Core has a plausible volume path but major pass-protection and pressure concerns. Context does not support treating the historical 6/10 as a forecast."
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "core": {
+        "threshold": 49.5,
+        "historical_HR": "6/10",
+        "over_price_american": "-278",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "5/10",
+      "selected_threshold": 49.5,
+      "selected_band": "Core",
+      "overall_classification": "Mixed",
+      "implication": "Primary Carolina receiving option by target share, but quarterback pressure limits confidence. Core is more defensible than Ceiling; contextual read remains mixed."
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "market": "Receptions",
+      "core": {
+        "threshold": 3.5,
+        "historical_HR": "6/10",
+        "over_price_american": "-319",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "4/10",
+      "selected_threshold": 3.5,
+      "selected_band": "Core",
+      "overall_classification": "Concern",
+      "implication": "Availability is reassuring, but recent production and declining usage are warning signs. The Core reception threshold is not contextually strong enough to upgrade."
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "market": "Receptions",
+      "core": {
+        "threshold": 3.5,
+        "historical_HR": "7/10",
+        "over_price_american": "-215",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "5/10",
+      "selected_threshold": 3.5,
+      "selected_band": "Core",
+      "overall_classification": "Supportive",
+      "implication": "Stable role and recent four-catch game support the 3.5 Core. Context is favorable, while final receiver availability and target competition remain watch items."
+    },
+    {
+      "player": "Jordan Love",
+      "team": "GB",
+      "position": "QB",
+      "market": "Passing Yards",
+      "core": {
+        "threshold": 229.5,
+        "historical_HR": "7/10",
+        "over_price_american": "-221",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "6/10",
+      "selected_threshold": 229.5,
+      "selected_band": "Core",
+      "overall_classification": "Mixed",
+      "implication": "Recent passing volume and production support the Core, but receiver availability, a short week, and the possibility of a deliberate run-game approach keep the overall context mixed."
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "core": {
+        "threshold": 49.5,
+        "historical_HR": "6/10",
+        "over_price_american": "-227",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "4/10",
+      "selected_threshold": 49.5,
+      "selected_band": "Core",
+      "overall_classification": "Supportive",
+      "implication": "Role, Week 7 production and Carolina's depleted cornerback group support the Core receiving-yard threshold, with the main uncertainty being short-week availability and volatile big-play dependence."
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receptions",
+      "core": {
+        "threshold": 3.5,
+        "historical_HR": "6/10",
+        "over_price_american": "-251",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "5/10",
+      "selected_threshold": 3.5,
+      "selected_band": "Core",
+      "overall_classification": "Supportive",
+      "implication": "The 3.5 Core has a clear role-based path from recent target and catch volume. The context is favorable, subject to final availability and target-distribution uncertainty."
+    },
+    {
+      "player": "Darren Waller",
+      "team": "CAR",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "core": {
+        "threshold": 9.5,
+        "historical_HR": "8/10",
+        "over_price_american": "-291",
+        "sportsbook": "DraftKings",
+        "designation": "Core"
+      },
+      "stage1_market_HR": "7/10",
+      "selected_threshold": 9.5,
+      "selected_band": "Core",
+      "overall_classification": "Mixed",
+      "implication": "The low Core threshold and locked historical HR are supportive, but the modest target share, volatile Week 7 output, difficult TE matchup and Carolina pass-protection concerns make the contextual read mixed."
+    }
+  ],
+  "validation": {
+    "exact_stage2_state_loaded": true,
+    "exact_stage1_state_remains_available": true,
+    "parent_state_id_matches_stage2": "STATE-2-W8-2026-20261028-THU-L10-PRICE-TARGET-CORE",
+    "stage2_record_count_preserved": true,
+    "only_locked_stage2_candidates_analyzed": true,
+    "no_new_players_or_markets_added": true,
+    "stage1_historical_observations_changed": false,
+    "stage1_ladder_results_changed": false,
+    "stage2_alternate_market_structure_changed": false,
+    "context_separated_from_historical_evidence": true,
+    "research_cutoff": "2026-10-28; final Thursday injury statuses not available for every Packers player at time of analysis"
+  }
+}
