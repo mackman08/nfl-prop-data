@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 265,
-      "Receiving Yards": 360,
-      "Receptions": 175,
-      "Rushing Yards": 115
+      "Passing Yards": 493,
+      "Receiving Yards": 914,
+      "Receptions": 464,
+      "Rushing Yards": 414
     },
     "FanDuel": {
-      "Passing Yards": 8,
-      "Receiving Yards": 22,
-      "Receptions": 21,
-      "Rushing Yards": 11
+      "Passing Yards": 18,
+      "Receiving Yards": 64,
+      "Receptions": 64,
+      "Rushing Yards": 35
     }
   },
   "core_markets_present": [
@@ -22,43 +22,61 @@
   "duplicates": 0,
   "event_ids": [
     "34118031",
+    "34118130",
+    "34118133",
     "34118182",
     "34118184",
     "34118199",
     "34118206",
+    "34118214",
+    "34118246",
     "34118271",
     "36215311",
+    "36215312",
+    "36215313",
+    "36215316",
+    "36215317",
     "36215318",
     "36215321",
+    "36215322",
     "36215323"
   ],
   "games": [
+    "ATL Falcons @ TB Buccaneers",
+    "BAL Ravens @ BUF Bills",
+    "Baltimore Ravens @ Buffalo Bills",
     "CAR Panthers @ GB Packers",
     "CHI Bears @ SEA Seahawks",
     "Carolina Panthers @ Green Bay Packers",
     "Chicago Bears @ Seattle Seahawks",
+    "IND Colts @ JAX Jaguars",
+    "Indianapolis Colts @ Jacksonville Jaguars",
     "KC Chiefs @ DEN Broncos",
     "Kansas City Chiefs @ Denver Broncos",
     "LV Raiders @ NY Jets",
+    "Los Angeles Chargers @ Los Angeles Rams",
     "MIN Vikings @ DET Lions",
     "Minnesota Vikings @ Detroit Lions",
-    "NE Patriots @ MIA Dolphins"
+    "NE Patriots @ MIA Dolphins",
+    "New England Patriots @ Miami Dolphins",
+    "TEN Titans @ CIN Bengals",
+    "Tennessee Titans @ Cincinnati Bengals"
   ],
   "markets": {
-    "Alt Passing Yards": 56,
-    "Alt Receiving Yards": 159,
-    "Alt Receptions": 110,
-    "Alt Rushing Yards": 84,
-    "Passing Yards": 273,
-    "Receiving Yards": 382,
-    "Receptions": 196,
-    "Rush + Receiving Yards": 61,
-    "Rushing Yards": 126
+    "Alt Passing Yards": 131,
+    "Alt Receiving Yards": 509,
+    "Alt Receptions": 328,
+    "Alt Rushing Yards": 260,
+    "Passing Yards": 511,
+    "Receiving Yards": 978,
+    "Receptions": 528,
+    "Rush + Receiving Yards": 223,
+    "Rushing Yards": 449
   },
   "sportsbooks": {
-    "DraftKings": 976,
-    "FanDuel": 471
+    "DraftKings": 2508,
+    "FanDuel": 1409
   },
-  "total_rows": 1447,
+  "total_rows": 3917,
   "validation_mode": "slate-size-agnostic"
 }
