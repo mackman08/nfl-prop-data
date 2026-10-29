@@ -3,1209 +3,5850 @@
   "season": 2026,
   "week": 8,
   "scope": "Thursday only",
+  "scope_description": "NFL Week 8, 2026 Regular Season — Thursday only",
   "historical_sample": {
     "label": "L10",
     "n": 10,
     "definition": "10 most recent qualifying completed regular-season games"
   },
   "historical_cutoff": {
-    "rule": "Completion of final scheduled game of Week 7",
-    "game": "Dallas Cowboys @ Philadelphia Eagles",
-    "result": "Final, 38-21, October 26 2026"
+    "rule": "Completion of the final scheduled game of Week 7",
+    "final_scheduled_game": "Dallas Cowboys @ Philadelphia Eagles",
+    "scheduled_kickoff_local": "2026-10-26T20:15:00-04:00",
+    "cutoff_date": "2026-10-27",
+    "note": "Historical screening must include only games completed before the actual completion of this Week 7 game; verify completion before Stage 1."
   },
-  "sources": {
+  "record_count": 12,
+  "state_id": "STATE-1-W8-2026-20261029-THU-L10",
+  "parent_state_id": "STATE-0-W8-2026-20261029-THU-L10",
+  "source_snapshots": {
     "historical": {
       "repository": "mackman08/nfl-prop-data",
       "path": "data/nfl_prop_model.txt",
-      "sha": "535ab11806078bd021416dbd9ff76a0f946d4aa1"
+      "blob_sha": "535ab11806078bd021416dbd9ff76a0f946d4aa1",
+      "records": 522
     },
     "sportsbook": {
       "repository": "mackman08/nfl-prop-data",
       "path": "odds/nfl_player_props_latest.csv",
-      "sha": "7f9065619f0f426a2b5ebba7b1f200b44ca3828e",
-      "primary": "FanDuel"
-    }
+      "blob_sha": "f28860782f0770cc0902085a9e821a8a1d5406a5",
+      "rows": 7427,
+      "game_market_rows": 817
+    },
+    "eligibility_sources": [
+      "https://www.packers.com/team/depth-chart",
+      "https://www.panthers.com/news/panthers-release-depth-chart-ahead-of-week-8-of-the-2026-season-packers"
+    ]
   },
-  "qualification_rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
-  "record_count": 12,
-  "state_id": "STATE-1R-W8-2026-20261027-THU-L10-P17-P6",
-  "parent_state_id": "STATE-0-W8-2026-20261027-THU-L10",
-  "records": [
+  "screened_market_count": 22,
+  "qualifying_record_count": 12,
+  "screened_records": [
     {
-      "player": "Tucker Kraft",
+      "player": "Jordan Love",
       "team": "GB",
-      "position": "TE",
-      "market": "Receiving Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          48,
-          37,
-          64,
-          42,
-          26,
-          15,
-          65,
-          20,
-          143,
-          58
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 9,
-            "game_id": "2025_09_CAR_GB"
-          },
-          {
-            "season": 2025,
-            "week": 8,
-            "game_id": "2025_08_GB_PIT"
-          },
-          {
-            "season": 2025,
-            "week": 7,
-            "game_id": "2025_07_GB_ARI"
-          }
-        ],
-        "hit_rate_at_market": "6/10"
-      },
-      "sportsbook": {
-        "line": 41.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "6/10",
-      "twenty_game_25P": 32.75,
-      "ladder_results": {
-        "20+": "9/10",
-        "30+": "7/10",
-        "40+": "6/10",
-        "50+": "4/10",
-        "60+": "3/10",
-        "75+": "1/10",
-        "100+": "1/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": true,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 26.69,
-      "percentile_6": 16.56
-    },
-    {
-      "player": "Bryce Young",
-      "team": "CAR",
       "position": "QB",
+      "player_id": "00-0036264",
       "market": "Passing Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          163,
-          281,
-          329,
-          291,
-          287,
-          361,
-          266,
-          54,
-          191,
-          163
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          }
-        ],
-        "hit_rate_at_market": "6/10"
+      "market_data": {
+        "line": 264.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "sportsbook": {
-        "line": 250.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+      "historical_market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
       },
-      "market_HR": "6/10",
-      "twenty_game_25P": 147,
-      "ladder_results": {
-        "150+": "9/10",
-        "175+": "7/10",
-        "200+": "6/10",
-        "225+": "6/10",
-        "250+": "6/10",
-        "300+": "2/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": true,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 127.22,
-      "percentile_6": 104.66
-    },
-    {
-      "player": "Tetairoa McMillan",
-      "team": "CAR",
-      "position": "WR",
-      "market": "Receiving Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          40,
-          86,
-          192,
-          17,
-          101,
-          75,
-          85,
-          5,
-          73,
-          25
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          }
-        ],
-        "hit_rate_at_market": "5/10"
-      },
-      "sportsbook": {
-        "line": 73.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "5/10",
-      "twenty_game_25P": 34.5,
-      "ladder_results": {
-        "20+": "8/10",
-        "30+": "7/10",
-        "40+": "7/10",
-        "50+": "6/10",
-        "60+": "6/10",
-        "75+": "5/10",
-        "100+": "2/10"
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 274
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 276
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 367
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 197
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 312
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 145
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 387
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 77
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 276
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 234
+        }
+      ],
+      "l10_values": [
+        274,
+        276,
+        367,
+        197,
+        312,
+        145,
+        387,
+        77,
+        276,
+        234
+      ],
+      "ladder_results": [
+        {
+          "threshold": 150,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 175,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 200,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 225,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 250,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 300,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        150,
+        175
+      ],
+      "twenty_game_25p": {
+        "value": 178.25,
+        "display": 178.25,
+        "sample_count": 20
       },
       "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 29.92,
-      "percentile_6": 18.12
-    },
-    {
-      "player": "Jalen Coker",
-      "team": "CAR",
-      "position": "WR",
-      "market": "Receptions",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          1,
-          6,
-          2,
-          8,
-          8,
-          6,
-          2,
-          3,
-          4,
-          4
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          },
-          {
-            "season": 2025,
-            "week": 13,
-            "game_id": "2025_13_LA_CAR"
-          }
-        ],
-        "hit_rate_at_market": "4/10"
-      },
-      "sportsbook": {
-        "line": 4.5,
-        "over_price": "-172",
-        "under_price": "128",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "4/10",
-      "twenty_game_25P": 2,
-      "ladder_results": {
-        "2+": "9/10",
-        "3+": "7/10",
-        "4+": "6/10",
-        "5+": "4/10",
-        "6+": "4/10",
-        "7+": "2/10",
-        "8+": "2/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 2,
-      "percentile_6": 1
-    },
-    {
-      "player": "Tucker Kraft",
-      "team": "GB",
-      "position": "TE",
-      "market": "Receptions",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          4,
-          5,
-          5,
-          6,
-          4,
-          2,
-          3,
-          2,
-          7,
-          5
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 9,
-            "game_id": "2025_09_CAR_GB"
-          },
-          {
-            "season": 2025,
-            "week": 8,
-            "game_id": "2025_08_GB_PIT"
-          },
-          {
-            "season": 2025,
-            "week": 7,
-            "game_id": "2025_07_GB_ARI"
-          }
-        ],
-        "hit_rate_at_market": "5/10"
-      },
-      "sportsbook": {
-        "line": 4.5,
-        "over_price": "106",
-        "under_price": "-140",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "5/10",
-      "twenty_game_25P": 2,
-      "ladder_results": {
-        "2+": "10/10",
-        "3+": "8/10",
-        "4+": "7/10",
-        "5+": "5/10",
-        "6+": "2/10",
-        "7+": "1/10",
-        "8+": "0/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 2,
-      "percentile_6": 2
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
     },
     {
       "player": "Jordan Love",
       "team": "GB",
       "position": "QB",
-      "market": "Passing Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          274,
-          276,
-          367,
-          197,
-          312,
-          145,
-          387,
-          77,
-          276,
-          234
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_GB_CHI"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_GB_DEN"
-          },
-          {
-            "season": 2025,
-            "week": 14,
-            "game_id": "2025_14_CHI_GB"
-          }
-        ],
-        "hit_rate_at_market": "6/10"
-      },
-      "sportsbook": {
-        "line": 258.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "6/10",
-      "twenty_game_25P": 178.25,
-      "ladder_results": {
-        "150+": "8/10",
-        "175+": "8/10",
-        "200+": "7/10",
-        "225+": "7/10",
-        "250+": "6/10",
-        "300+": "3/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": true,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 174.46,
-      "percentile_6": 139.84
-    },
-    {
-      "player": "Chuba Hubbard",
-      "team": "CAR",
-      "position": "RB",
+      "player_id": "00-0036264",
       "market": "Rushing Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          33,
-          120,
-          122,
-          82,
-          53,
-          49,
-          10,
-          12,
-          27,
-          29
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          }
-        ],
-        "hit_rate_at_market": "3/10"
-      },
-      "sportsbook": {
-        "line": 70.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "3/10",
-      "twenty_game_25P": 20,
-      "ladder_results": {
-        "20+": "8/10",
-        "30+": "6/10",
-        "40+": "5/10",
-        "50+": "4/10",
-        "60+": "3/10",
-        "75+": "3/10",
-        "100+": "2/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 16.23,
-      "percentile_6": 12.28
-    },
-    {
-      "player": "Tetairoa McMillan",
-      "team": "CAR",
-      "position": "WR",
-      "market": "Receptions",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          4,
-          6,
-          14,
-          2,
-          5,
-          5,
-          4,
-          1,
-          6,
-          2
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          }
-        ],
-        "hit_rate_at_market": "3/10"
-      },
-      "sportsbook": {
+      "market_data": {
         "line": 5.5,
-        "over_price": "106",
-        "under_price": "-140",
-        "sportsbook": "FanDuel"
+        "over_odds": -111,
+        "under_odds": -115,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "market_HR": "3/10",
-      "twenty_game_25P": 2.75,
-      "ladder_results": {
-        "2+": "9/10",
-        "3+": "7/10",
-        "4+": "7/10",
-        "5+": "5/10",
-        "6+": "3/10",
-        "7+": "1/10",
-        "8+": "1/10"
+      "historical_market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 12
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": -8
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 29
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": -1
+        }
+      ],
+      "l10_values": [
+        0,
+        12,
+        6,
+        -8,
+        0,
+        0,
+        0,
+        7,
+        29,
+        -1
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": 0,
+        "display": 0,
+        "sample_count": 20
       },
       "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 2,
-      "percentile_6": 1.14
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
     },
     {
-      "player": "Christian Watson",
-      "team": "GB",
-      "position": "WR",
-      "market": "Receiving Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          57,
-          64,
-          143,
-          47,
-          96,
-          41,
-          147,
-          113,
-          17,
-          29
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_BAL_GB"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_GB_CHI"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_GB_DEN"
-          }
-        ],
-        "hit_rate_at_market": "4/10"
+      "player": "Bryce Young",
+      "team": "CAR",
+      "position": "QB",
+      "player_id": "00-0039150",
+      "market": "Passing Yards",
+      "market_data": {
+        "line": 252.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "sportsbook": {
-        "line": 68.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+      "historical_market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
       },
-      "market_HR": "4/10",
-      "twenty_game_25P": 44,
-      "ladder_results": {
-        "20+": "9/10",
-        "30+": "8/10",
-        "40+": "8/10",
-        "50+": "6/10",
-        "60+": "5/10",
-        "75+": "4/10",
-        "100+": "3/10"
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 163
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 281
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 329
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 291
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 287
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 361
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 266
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 54
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 191
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 163
+        }
+      ],
+      "l10_values": [
+        163,
+        281,
+        329,
+        291,
+        287,
+        361,
+        266,
+        54,
+        191,
+        163
+      ],
+      "ladder_results": [
+        {
+          "threshold": 150,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 175,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 200,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 225,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 250,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 300,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        150
+      ],
+      "twenty_game_25p": {
+        "value": 147,
+        "display": 147,
+        "sample_count": 20
       },
       "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
+    },
+    {
+      "player": "Bryce Young",
+      "team": "CAR",
+      "position": "QB",
+      "player_id": "00-0039150",
+      "market": "Rushing Yards",
+      "market_data": {
+        "line": 9.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "percentile_17": 31.76,
-      "percentile_6": 2.38
+      "historical_market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 9
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": -1
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 27
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 49
+        }
+      ],
+      "l10_values": [
+        9,
+        6,
+        3,
+        0,
+        6,
+        10,
+        -1,
+        27,
+        20,
+        49
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": 3,
+        "display": 3,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
     },
     {
       "player": "Josh Jacobs",
       "team": "GB",
       "position": "RB",
+      "player_id": "00-0035700",
       "market": "Rushing Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          36,
-          3,
-          36,
-          73,
-          86,
-          83,
-          40,
-          74,
-          87,
-          33
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_BAL_GB"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_GB_CHI"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_GB_DEN"
-          },
-          {
-            "season": 2025,
-            "week": 14,
-            "game_id": "2025_14_CHI_GB"
-          },
-          {
-            "season": 2025,
-            "week": 13,
-            "game_id": "2025_13_GB_DET"
-          },
-          {
-            "season": 2025,
-            "week": 11,
-            "game_id": "2025_11_GB_NYG"
-          },
-          {
-            "season": 2025,
-            "week": 10,
-            "game_id": "2025_10_PHI_GB"
-          },
-          {
-            "season": 2025,
-            "week": 9,
-            "game_id": "2025_09_CAR_GB"
-          },
-          {
-            "season": 2025,
-            "week": 8,
-            "game_id": "2025_08_GB_PIT"
-          }
-        ],
-        "hit_rate_at_market": "5/10"
+      "market_data": {
+        "line": 59.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "sportsbook": {
-        "line": 58.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
       },
-      "market_HR": "5/10",
-      "twenty_game_25P": 39,
-      "ladder_results": {
-        "20+": "9/10",
-        "30+": "9/10",
-        "40+": "6/10",
-        "50+": "5/10",
-        "60+": "5/10",
-        "75+": "3/10",
-        "100+": "0/10"
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 73
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 86
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 83
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "team": "GB",
+          "opponent_team": "NYG",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "GB",
+          "opponent_team": "PHI",
+          "value": 74
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 87
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 33
+        }
+      ],
+      "l10_values": [
+        36,
+        3,
+        36,
+        73,
+        86,
+        83,
+        40,
+        74,
+        87,
+        33
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20,
+        30
+      ],
+      "twenty_game_25p": {
+        "value": 39,
+        "display": 39,
+        "sample_count": 20
       },
       "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "MarShawn Lloyd",
+      "team": "GB",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "available": false,
+      "reason": "Only 8 qualifying historical games; L10 unavailable",
+      "main_market": {
+        "line": 16.5,
+        "over_odds": "-113",
+        "under_odds": "-113",
+        "sportsbook": "FanDuel"
       },
-      "percentile_17": 36,
-      "percentile_6": 30.42
+      "player_id": "00-0039811"
+    },
+    {
+      "player": "Chuba Hubbard",
+      "team": "CAR",
+      "position": "RB",
+      "player_id": "00-0036555",
+      "market": "Rushing Yards",
+      "market_data": {
+        "line": 67.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 120
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 122
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 82
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 53
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 49
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 27
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 29
+        }
+      ],
+      "l10_values": [
+        33,
+        120,
+        122,
+        82,
+        53,
+        49,
+        10,
+        12,
+        27,
+        29
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20
+      ],
+      "twenty_game_25p": {
+        "value": 20,
+        "display": 20,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0040124",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 72.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 86
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 192
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 17
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 101
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 75
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 85
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 73
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 25
+        }
+      ],
+      "l10_values": [
+        40,
+        86,
+        192,
+        17,
+        101,
+        75,
+        85,
+        5,
+        73,
+        25
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20
+      ],
+      "twenty_game_25p": {
+        "value": 34.5,
+        "display": 34.5,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0040124",
+      "market": "Receptions",
+      "market_data": {
+        "line": 5.5,
+        "over_odds": 112,
+        "under_odds": -148,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 14
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 2
+        }
+      ],
+      "l10_values": [
+        4,
+        6,
+        14,
+        2,
+        5,
+        5,
+        4,
+        1,
+        6,
+        2
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        2
+      ],
+      "twenty_game_25p": {
+        "value": 2.75,
+        "display": 2.75,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0039491",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 62.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 9
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 97
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 18
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 66
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 138
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 47
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 16
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 47
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 60
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_LA_CAR",
+          "team": "CAR",
+          "opponent_team": "LA",
+          "value": 74
+        }
+      ],
+      "l10_values": [
+        9,
+        97,
+        18,
+        66,
+        138,
+        47,
+        16,
+        47,
+        60,
+        74
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": 17.5,
+        "display": 17.5,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0039491",
+      "market": "Receptions",
+      "market_data": {
+        "line": 4.5,
+        "over_odds": -160,
+        "under_odds": 120,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_LA_CAR",
+          "team": "CAR",
+          "opponent_team": "LA",
+          "value": 4
+        }
+      ],
+      "l10_values": [
+        1,
+        6,
+        2,
+        8,
+        8,
+        6,
+        2,
+        3,
+        4,
+        4
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        2
+      ],
+      "twenty_game_25p": {
+        "value": 2,
+        "display": 2,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Brycen Tremayne",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0038840",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 5.5,
+        "over_odds": -102,
+        "under_odds": -125,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 32
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 83
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 27
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 0
+        }
+      ],
+      "l10_values": [
+        0,
+        0,
+        32,
+        83,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": 0,
+        "display": 0,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
+    },
+    {
+      "player": "Brycen Tremayne",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0038840",
+      "market": "Receptions",
+      "market_data": {
+        "line": 0.5,
+        "over_odds": -130,
+        "under_odds": -102,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 0
+        }
+      ],
+      "l10_values": [
+        0,
+        0,
+        2,
+        4,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": 0,
+        "display": 0,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
     },
     {
       "player": "Christian Watson",
       "team": "GB",
       "position": "WR",
-      "market": "Receptions",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          5,
-          3,
-          6,
-          3,
-          7,
-          4,
-          6,
-          5,
-          2,
-          3
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_BAL_GB"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_GB_CHI"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_GB_DEN"
-          }
-        ],
-        "hit_rate_at_market": "5/10"
+      "player_id": "00-0038124",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 70.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "sportsbook": {
-        "line": 4.5,
-        "over_price": "-106",
-        "under_price": "-125",
-        "sportsbook": "FanDuel"
+      "historical_market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
       },
-      "market_HR": "5/10",
-      "twenty_game_25P": 2.75,
-      "ladder_results": {
-        "2+": "10/10",
-        "3+": "9/10",
-        "4+": "6/10",
-        "5+": "5/10",
-        "6+": "3/10",
-        "7+": "1/10",
-        "8+": "0/10"
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 143
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 96
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 41
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 147
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 113
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 17
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 29
+        }
+      ],
+      "l10_values": [
+        57,
+        64,
+        143,
+        47,
+        96,
+        41,
+        147,
+        113,
+        17,
+        29
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20,
+        30,
+        40
+      ],
+      "twenty_game_25p": {
+        "value": 44,
+        "display": 44,
+        "sample_count": 20
       },
       "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0038124",
+      "market": "Receptions",
+      "market_data": {
+        "line": 4.5,
+        "over_odds": -130,
+        "under_odds": -102,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "percentile_17": 2,
-      "percentile_6": 0.28
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 3
+        }
+      ],
+      "l10_values": [
+        5,
+        3,
+        6,
+        3,
+        7,
+        4,
+        6,
+        5,
+        2,
+        3
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        2,
+        3
+      ],
+      "twenty_game_25p": {
+        "value": 2.75,
+        "display": 2.75,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Matthew Golden",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0040667",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 58.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 104
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 123
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 21
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 100
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 58
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 95
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 0
+        }
+      ],
+      "l10_values": [
+        39,
+        104,
+        123,
+        21,
+        100,
+        58,
+        95,
+        8,
+        12,
+        0
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": 8.75,
+        "display": 8.75,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
+    },
+    {
+      "player": "Matthew Golden",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0040667",
+      "market": "Receptions",
+      "market_data": {
+        "line": 4.5,
+        "over_odds": -106,
+        "under_odds": -125,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 0
+        }
+      ],
+      "l10_values": [
+        6,
+        6,
+        6,
+        3,
+        5,
+        4,
+        6,
+        1,
+        1,
+        0
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": 1,
+        "display": 1,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
+    },
+    {
+      "player": "Savion Williams",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0040009",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 23.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 32
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_MIN_GB",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "team": "GB",
+          "opponent_team": "NYG",
+          "value": 33
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "GB",
+          "opponent_team": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_GB_ARI",
+          "team": "GB",
+          "opponent_team": "ARI",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "game_id": "2025_06_CIN_GB",
+          "team": "GB",
+          "opponent_team": "CIN",
+          "value": 0
+        }
+      ],
+      "l10_values": [
+        47,
+        32,
+        0,
+        0,
+        33,
+        2,
+        12,
+        8,
+        0,
+        0
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": null,
+        "display": "Unavailable — <20 games",
+        "sample_count": 14
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
+    },
+    {
+      "player": "Savion Williams",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0040009",
+      "market": "Receptions",
+      "market_data": {
+        "line": 2.5,
+        "over_odds": -110,
+        "under_odds": -120,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 2,
+        "denominator": 10,
+        "display": "2/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_MIN_GB",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "team": "GB",
+          "opponent_team": "NYG",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "GB",
+          "opponent_team": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_GB_ARI",
+          "team": "GB",
+          "opponent_team": "ARI",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "game_id": "2025_06_CIN_GB",
+          "team": "GB",
+          "opponent_team": "CIN",
+          "value": 0
+        }
+      ],
+      "l10_values": [
+        3,
+        4,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": null,
+        "display": "Unavailable — <20 games",
+        "sample_count": 14
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "player_id": "00-0038996",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 43.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 48
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 42
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 26
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 65
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 143
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_GB_ARI",
+          "team": "GB",
+          "opponent_team": "ARI",
+          "value": 58
+        }
+      ],
+      "l10_values": [
+        48,
+        37,
+        64,
+        42,
+        26,
+        15,
+        65,
+        20,
+        143,
+        58
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20
+      ],
+      "twenty_game_25p": {
+        "value": 32.75,
+        "display": 32.75,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "player_id": "00-0038996",
+      "market": "Receptions",
+      "market_data": {
+        "line": 4.5,
+        "over_odds": 116,
+        "under_odds": -154,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_GB_ARI",
+          "team": "GB",
+          "opponent_team": "ARI",
+          "value": 5
+        }
+      ],
+      "l10_values": [
+        4,
+        5,
+        5,
+        6,
+        4,
+        2,
+        3,
+        2,
+        7,
+        5
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        2,
+        3
+      ],
+      "twenty_game_25p": {
+        "value": 2,
+        "display": 2,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
     },
     {
       "player": "Darren Waller",
       "team": "CAR",
       "position": "TE",
+      "player_id": "00-0031610",
       "market": "Receiving Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          50,
-          0,
-          36,
-          51,
-          33,
-          28,
-          0,
-          40,
-          66,
-          13
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_TB_MIA"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_CIN_MIA"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_MIA_PIT"
-          },
-          {
-            "season": 2025,
-            "week": 14,
-            "game_id": "2025_14_MIA_NYJ"
-          }
-        ],
-        "hit_rate_at_market": "7/10"
+      "market_data": {
+        "line": 21.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "sportsbook": {
-        "line": 18.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+      "historical_market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10"
       },
-      "market_HR": "7/10",
-      "twenty_game_25P": "Unavailable — <20 games",
-      "ladder_results": {
-        "20+": "7/10",
-        "30+": "6/10",
-        "40+": "4/10",
-        "50+": "3/10",
-        "60+": "1/10",
-        "75+": "0/10",
-        "100+": "0/10"
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 50
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 36
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 51
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 28
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "MIA",
+          "opponent_team": "TB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "MIA",
+          "opponent_team": "CIN",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_MIA_PIT",
+          "team": "MIA",
+          "opponent_team": "PIT",
+          "value": 66
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_MIA_NYJ",
+          "team": "MIA",
+          "opponent_team": "NYJ",
+          "value": 13
+        }
+      ],
+      "l10_values": [
+        50,
+        0,
+        36,
+        51,
+        33,
+        28,
+        0,
+        40,
+        66,
+        13
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": null,
+        "display": "Unavailable — <20 games",
+        "sample_count": 15
       },
       "qualification": {
-        "market_HR_at_least_6_of_10": true,
-        "any_fixed_ladder_at_least_8_of_10": false
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
+    },
+    {
+      "player": "Darren Waller",
+      "team": "CAR",
+      "position": "TE",
+      "player_id": "00-0031610",
+      "market": "Receptions",
+      "market_data": {
+        "line": 2.5,
+        "over_odds": 134,
+        "under_odds": -180,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "percentile_17": "Unavailable — <20 games",
-      "percentile_6": "Unavailable — <20 games"
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "MIA",
+          "opponent_team": "TB",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "MIA",
+          "opponent_team": "CIN",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_MIA_PIT",
+          "team": "MIA",
+          "opponent_team": "PIT",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_MIA_NYJ",
+          "team": "MIA",
+          "opponent_team": "NYJ",
+          "value": 1
+        }
+      ],
+      "l10_values": [
+        1,
+        0,
+        3,
+        5,
+        3,
+        2,
+        1,
+        3,
+        7,
+        1
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": null,
+        "display": "Unavailable — <20 games",
+        "sample_count": 15
+      },
+      "qualification": {
+        "qualifies": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Neither qualification condition met"
+      }
     }
   ],
-  "screening_notes": {
-    "fan_duel_core_market_rows": 23,
-    "unique_player_market_rows": 23,
-    "excluded_unavailable": [
-      {
-        "player": "MarShawn Lloyd",
-        "team": "GB",
-        "market": "Rushing Yards",
-        "issue": "Unavailable — fewer than 10 qualifying games",
-        "count": 8
+  "records": [
+    {
+      "player": "Jordan Love",
+      "team": "GB",
+      "position": "QB",
+      "player_id": "00-0036264",
+      "market": "Passing Yards",
+      "market_data": {
+        "line": 264.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 274
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 276
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 367
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 197
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 312
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 145
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 387
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 77
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 276
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 234
+        }
+      ],
+      "l10_values": [
+        274,
+        276,
+        367,
+        197,
+        312,
+        145,
+        387,
+        77,
+        276,
+        234
+      ],
+      "ladder_results": [
+        {
+          "threshold": 150,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 175,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 200,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 225,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 250,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 300,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        150,
+        175
+      ],
+      "twenty_game_25p": {
+        "value": 178.25,
+        "display": 178.25,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
       }
-    ]
-  },
-  "methodology_change": "User-directed Stage 1 rerun: add 17th and 6th percentiles from the same 20-game sample, preserving the Stage 1 shortlist, L10 samples, markets, and ladder results."
+    },
+    {
+      "player": "Bryce Young",
+      "team": "CAR",
+      "position": "QB",
+      "player_id": "00-0039150",
+      "market": "Passing Yards",
+      "market_data": {
+        "line": 252.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 163
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 281
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 329
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 291
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 287
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 361
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 266
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 54
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 191
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 163
+        }
+      ],
+      "l10_values": [
+        163,
+        281,
+        329,
+        291,
+        287,
+        361,
+        266,
+        54,
+        191,
+        163
+      ],
+      "ladder_results": [
+        {
+          "threshold": 150,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 175,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 200,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 225,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 250,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 300,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        150
+      ],
+      "twenty_game_25p": {
+        "value": 147,
+        "display": 147,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
+    },
+    {
+      "player": "Josh Jacobs",
+      "team": "GB",
+      "position": "RB",
+      "player_id": "00-0035700",
+      "market": "Rushing Yards",
+      "market_data": {
+        "line": 59.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 73
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 86
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 83
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "team": "GB",
+          "opponent_team": "NYG",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "GB",
+          "opponent_team": "PHI",
+          "value": 74
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 87
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 33
+        }
+      ],
+      "l10_values": [
+        36,
+        3,
+        36,
+        73,
+        86,
+        83,
+        40,
+        74,
+        87,
+        33
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20,
+        30
+      ],
+      "twenty_game_25p": {
+        "value": 39,
+        "display": 39,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Chuba Hubbard",
+      "team": "CAR",
+      "position": "RB",
+      "player_id": "00-0036555",
+      "market": "Rushing Yards",
+      "market_data": {
+        "line": 67.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 120
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 122
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 82
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 53
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 49
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 27
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 29
+        }
+      ],
+      "l10_values": [
+        33,
+        120,
+        122,
+        82,
+        53,
+        49,
+        10,
+        12,
+        27,
+        29
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20
+      ],
+      "twenty_game_25p": {
+        "value": 20,
+        "display": 20,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0040124",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 72.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 86
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 192
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 17
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 101
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 75
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 85
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 73
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 25
+        }
+      ],
+      "l10_values": [
+        40,
+        86,
+        192,
+        17,
+        101,
+        75,
+        85,
+        5,
+        73,
+        25
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20
+      ],
+      "twenty_game_25p": {
+        "value": 34.5,
+        "display": 34.5,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0040124",
+      "market": "Receptions",
+      "market_data": {
+        "line": 5.5,
+        "over_odds": 112,
+        "under_odds": -148,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 14
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 2
+        }
+      ],
+      "l10_values": [
+        4,
+        6,
+        14,
+        2,
+        5,
+        5,
+        4,
+        1,
+        6,
+        2
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        2
+      ],
+      "twenty_game_25p": {
+        "value": 2.75,
+        "display": 2.75,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0039491",
+      "market": "Receptions",
+      "market_data": {
+        "line": 4.5,
+        "over_odds": -160,
+        "under_odds": 120,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_LA_CAR",
+          "team": "CAR",
+          "opponent_team": "LA",
+          "value": 4
+        }
+      ],
+      "l10_values": [
+        1,
+        6,
+        2,
+        8,
+        8,
+        6,
+        2,
+        3,
+        4,
+        4
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        2
+      ],
+      "twenty_game_25p": {
+        "value": 2,
+        "display": 2,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0038124",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 70.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 4,
+        "denominator": 10,
+        "display": "4/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 143
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 96
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 41
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 147
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 113
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 17
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 29
+        }
+      ],
+      "l10_values": [
+        57,
+        64,
+        143,
+        47,
+        96,
+        41,
+        147,
+        113,
+        17,
+        29
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20,
+        30,
+        40
+      ],
+      "twenty_game_25p": {
+        "value": 44,
+        "display": 44,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0038124",
+      "market": "Receptions",
+      "market_data": {
+        "line": 4.5,
+        "over_odds": -130,
+        "under_odds": -102,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 3
+        }
+      ],
+      "l10_values": [
+        5,
+        3,
+        6,
+        3,
+        7,
+        4,
+        6,
+        5,
+        2,
+        3
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        2,
+        3
+      ],
+      "twenty_game_25p": {
+        "value": 2.75,
+        "display": 2.75,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "player_id": "00-0038996",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 43.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 48
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 42
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 26
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 65
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 143
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_GB_ARI",
+          "team": "GB",
+          "opponent_team": "ARI",
+          "value": 58
+        }
+      ],
+      "l10_values": [
+        48,
+        37,
+        64,
+        42,
+        26,
+        15,
+        65,
+        20,
+        143,
+        58
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10,
+          "hit_rate": "9/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        20
+      ],
+      "twenty_game_25p": {
+        "value": 32.75,
+        "display": 32.75,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "player_id": "00-0038996",
+      "market": "Receptions",
+      "market_data": {
+        "line": 4.5,
+        "over_odds": 116,
+        "under_odds": -154,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_GB_ARI",
+          "team": "GB",
+          "opponent_team": "ARI",
+          "value": 5
+        }
+      ],
+      "l10_values": [
+        4,
+        5,
+        5,
+        6,
+        4,
+        2,
+        3,
+        2,
+        7,
+        5
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10,
+          "hit_rate": "10/10"
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "denominator": 10,
+          "hit_rate": "8/10"
+        },
+        {
+          "threshold": 4,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10,
+          "hit_rate": "5/10"
+        },
+        {
+          "threshold": 6,
+          "hits": 2,
+          "denominator": 10,
+          "hit_rate": "2/10"
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [
+        2,
+        3
+      ],
+      "twenty_game_25p": {
+        "value": 2,
+        "display": 2,
+        "sample_count": 20
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
+    },
+    {
+      "player": "Darren Waller",
+      "team": "CAR",
+      "position": "TE",
+      "player_id": "00-0031610",
+      "market": "Receiving Yards",
+      "market_data": {
+        "line": 21.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "historical_market_hr": {
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10"
+      },
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 50
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 36
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 51
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 28
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "MIA",
+          "opponent_team": "TB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "MIA",
+          "opponent_team": "CIN",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_MIA_PIT",
+          "team": "MIA",
+          "opponent_team": "PIT",
+          "value": 66
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_MIA_NYJ",
+          "team": "MIA",
+          "opponent_team": "NYJ",
+          "value": 13
+        }
+      ],
+      "l10_values": [
+        50,
+        0,
+        36,
+        51,
+        33,
+        28,
+        0,
+        40,
+        66,
+        13
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 7,
+          "denominator": 10,
+          "hit_rate": "7/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 6,
+          "denominator": 10,
+          "hit_rate": "6/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 4,
+          "denominator": 10,
+          "hit_rate": "4/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 3,
+          "denominator": 10,
+          "hit_rate": "3/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 1,
+          "denominator": 10,
+          "hit_rate": "1/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hit_rate": "0/10"
+        }
+      ],
+      "qualifying_ladder_thresholds": [],
+      "twenty_game_25p": {
+        "value": null,
+        "display": "Unavailable — <20 games",
+        "sample_count": 15
+      },
+      "qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
+    }
+  ],
+  "identity_exclusions": [],
+  "validation": {
+    "stage0_reloaded_and_validated": true,
+    "exact_l10_used_for_all_qualifying_records": true,
+    "historical_games_limited_to_before_week8_cutoff": true,
+    "current_main_market_fanduel_primary": true,
+    "ladder_hit_rates_use_same_l10": true,
+    "twenty_game_25p_separate_from_l10": true,
+    "qualification_rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+    "no_context_analysis_performed": true,
+    "all_four_market_families_represented": true
+  }
 }
