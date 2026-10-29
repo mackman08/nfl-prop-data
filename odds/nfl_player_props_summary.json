@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 704,
-      "Receiving Yards": 1710,
-      "Receptions": 851,
-      "Rushing Yards": 734
+      "Passing Yards": 708,
+      "Receiving Yards": 1807,
+      "Receptions": 903,
+      "Rushing Yards": 799
     },
     "FanDuel": {
       "Passing Yards": 28,
-      "Receiving Yards": 119,
-      "Receptions": 118,
-      "Rushing Yards": 61
+      "Receiving Yards": 130,
+      "Receptions": 129,
+      "Rushing Yards": 69
     }
   },
   "core_markets_present": [
@@ -81,20 +81,20 @@
     "Tennessee Titans @ Cincinnati Bengals"
   ],
   "markets": {
-    "Alt Passing Yards": 262,
-    "Alt Receiving Yards": 1205,
-    "Alt Receptions": 745,
-    "Alt Rushing Yards": 508,
-    "Passing Yards": 732,
-    "Receiving Yards": 1829,
-    "Receptions": 969,
-    "Rush + Receiving Yards": 382,
-    "Rushing Yards": 795
+    "Alt Passing Yards": 263,
+    "Alt Receiving Yards": 1303,
+    "Alt Receptions": 820,
+    "Alt Rushing Yards": 564,
+    "Passing Yards": 736,
+    "Receiving Yards": 1937,
+    "Receptions": 1032,
+    "Rush + Receiving Yards": 406,
+    "Rushing Yards": 868
   },
   "sportsbooks": {
-    "DraftKings": 4381,
-    "FanDuel": 3046
+    "DraftKings": 4623,
+    "FanDuel": 3306
   },
-  "total_rows": 7427,
+  "total_rows": 7929,
   "validation_mode": "slate-size-agnostic"
 }
