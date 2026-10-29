@@ -2,25 +2,32 @@
   "stage": 0,
   "season": 2026,
   "week": 8,
-  "scope": "Thursday only",
-  "scope_description": "NFL Week 8, 2026 Regular Season — Thursday only",
-  "selected_game": {
-    "matchup": "Carolina Panthers at Green Bay Packers",
-    "date": "2026-10-29",
-    "kickoff_local": "8:15 PM ET",
-    "source": "NFL.com 2026 Thursday Night Football schedule"
+  "scope": "Sunday only",
+  "scope_description": "NFL Week 8, 2026 Regular Season — Sunday only",
+  "selected_games_scope": {
+    "date": "2026-11-01",
+    "description": "All scheduled Sunday Week 8 games only; exclude Thursday October 29 and Monday November 2 games",
+    "schedule_source": "NFL.com 2026 schedule; CBS Sports Week 8 schedule cross-check"
   },
   "historical_sample": {
     "label": "L10",
     "n": 10,
     "definition": "10 most recent qualifying completed regular-season games"
   },
+  "distribution_statistic_override": {
+    "requested_change": "Replace 20-game 25P with 7P",
+    "statistic": "7th percentile",
+    "sample_definition": "Use the 20 most recent qualifying completed regular-season games before the historical cutoff, separate from L10",
+    "calculation": "Standard linear interpolation",
+    "availability_rule": "Unavailable — <20 games",
+    "qualification_use": "Not a Stage 1 qualification requirement; do not use sportsbook pricing to calculate 7P"
+  },
   "historical_cutoff": {
     "rule": "Completion of the final scheduled game of Week 7",
     "final_scheduled_game": "Dallas Cowboys @ Philadelphia Eagles",
     "scheduled_kickoff_local": "2026-10-26T20:15:00-04:00",
     "cutoff_date": "2026-10-27",
-    "note": "Historical screening must include only games completed before the actual completion of this Week 7 game; verify completion before Stage 1."
+    "note": "Stage 1 must verify that this game completed and use only qualifying games completed before its actual completion."
   },
   "historical_data_source": {
     "repository": "mackman08/nfl-prop-data",
@@ -32,7 +39,7 @@
     "fallback": "DraftKings only if FanDuel data is unavailable for the required market"
   },
   "record_count": 0,
-  "state_id": "STATE-0-W8-2026-20261029-THU-L10",
+  "state_id": "STATE-0-W8-2026-20261029-SUN-L10-7P",
   "parent_state_id": null,
   "records": []
 }
