@@ -3,1697 +3,3686 @@
   "season": 2026,
   "week": 8,
   "scope": "Thursday only",
+  "scope_description": "NFL Week 8, 2026 Regular Season — Thursday only",
   "historical_sample": {
     "label": "L10",
     "n": 10,
     "definition": "10 most recent qualifying completed regular-season games"
   },
   "historical_cutoff": {
-    "rule": "Completion of final scheduled game of Week 7",
-    "game": "Dallas Cowboys @ Philadelphia Eagles",
-    "result": "Final, 38-21, October 26 2026"
+    "rule": "Completion of the final scheduled game of Week 7",
+    "final_scheduled_game": "Dallas Cowboys @ Philadelphia Eagles",
+    "scheduled_kickoff_local": "2026-10-26T20:15:00-04:00",
+    "cutoff_date": "2026-10-27",
+    "note": "Historical screening must include only games completed before the actual completion of this Week 7 game; verify completion before Stage 1."
   },
-  "sources": {
-    "historical": {
-      "repository": "mackman08/nfl-prop-data",
-      "path": "data/nfl_prop_model.txt",
-      "sha": "535ab11806078bd021416dbd9ff76a0f946d4aa1"
-    },
+  "record_count": 12,
+  "state_id": "STATE-2-W8-2026-20261029-THU-L10",
+  "parent_state_id": "STATE-1-W8-2026-20261029-THU-L10",
+  "source_snapshots": {
     "sportsbook": {
       "repository": "mackman08/nfl-prop-data",
       "path": "odds/nfl_player_props_latest.csv",
-      "sha": "7f9065619f0f426a2b5ebba7b1f200b44ca3828e",
-      "primary": "FanDuel"
-    },
-    "stage2_alternate_market_snapshot": {
-      "repository": "mackman08/nfl-prop-data",
-      "branch": "main",
-      "path": "odds/nfl_player_props_latest.csv",
-      "blob_sha": "da439f6bcaeccc1beab6b9966f38869c2c896c47",
-      "sha256_or_blob_sha": "GitHub blob SHA",
-      "sportsbook_used": "DraftKings",
-      "reason": "No FanDuel rows were present in the current retrieved odds snapshot; DraftKings fallback used for available required markets."
+      "blob_sha": "f28860782f0770cc0902085a9e821a8a1d5406a5",
+      "rows": 7427,
+      "game_rows": 333
     }
-  },
-  "qualification_rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
-  "record_count": 12,
-  "state_id": "STATE-2-W8-2026-20261028-THU-L10-PRICE-TARGET-CORE",
-  "parent_state_id": "STATE-1R-W8-2026-20261027-THU-L10-P17-P6",
-  "prior_stage_state": {
-    "path": "state/week8_2026/stage1_state.json",
-    "blob_sha": "86c4d691be68f016dd6e0bc4eecf90f62f9be2e2",
-    "state_id": "STATE-1R-W8-2026-20261027-THU-L10-P17-P6",
-    "record_count": 12
-  },
-  "alternate_market_methodology": {
-    "version": "V7.2.8 PRICE-TARGET CORE",
-    "core_rule": "Available alternate with American odds between -350 and -150 inclusive; choose odds numerically closest to -250; ties resolve to the more negative price.",
-    "floor_rule": "Immediately lower available alternate threshold than Core; unavailable if no lower threshold exists.",
-    "ceiling_rule": "Immediately higher available alternate threshold than Core; unavailable if no higher threshold exists.",
-    "historical_HR_rule": "Hits divided by locked L10 observations from Stage 1; descriptive only, not predicted probability.",
-    "exclusions": "No line movement, price movement, cross-book pricing analysis, or detailed current-week context used.",
-    "snapshot_note": "Current odds CSV blob SHA differs from the odds snapshot SHA recorded in Stage 1. Stage 1 remains unchanged; current snapshot is the Stage 2 source snapshot."
   },
   "records": [
     {
-      "player": "Tucker Kraft",
+      "player": "Jordan Love",
       "team": "GB",
-      "position": "TE",
-      "market": "Receiving Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          48,
-          37,
-          64,
-          42,
-          26,
-          15,
-          65,
-          20,
-          143,
-          58
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 9,
-            "game_id": "2025_09_CAR_GB"
-          },
-          {
-            "season": 2025,
-            "week": 8,
-            "game_id": "2025_08_GB_PIT"
-          },
-          {
-            "season": 2025,
-            "week": 7,
-            "game_id": "2025_07_GB_ARI"
-          }
-        ],
-        "hit_rate_at_market": "6/10"
+      "position": "QB",
+      "player_id": "00-0036264",
+      "main_market": "Passing Yards",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
       },
-      "sportsbook": {
-        "line": 41.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+      "locked_stage1_market_data": {
+        "line": 264.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "market_HR": "6/10",
-      "twenty_game_25P": 32.75,
-      "ladder_results": {
-        "20+": "9/10",
-        "30+": "7/10",
-        "40+": "6/10",
-        "50+": "4/10",
-        "60+": "3/10",
-        "75+": "1/10",
-        "100+": "1/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": true,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 26.69,
-      "percentile_6": 16.56,
-      "alternate_market_analysis": {
-        "player": "Tucker Kraft",
-        "market": "Receiving Yards",
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 274
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 276
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 367
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 197
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 312
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 145
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 387
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 77
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 276
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 234
+        }
+      ],
+      "locked_l10_values": [
+        274,
+        276,
+        367,
+        197,
+        312,
+        145,
+        387,
+        77,
+        276,
+        234
+      ],
+      "alternate_market": "Alt Passing Yards",
+      "available_alternate_count": 10,
+      "alternates": [
+        {
+          "threshold": 175,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -1450,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 200,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -650,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 225,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 250,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -168,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 275,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": 110,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 300,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": 194,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 325,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 350,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 580,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 375,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 880,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 400,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
         "floor": {
-          "threshold": 24.5,
-          "historical_HR": "8/10",
-          "over_price_american": "-383",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
+          "threshold": 200,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -650,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
         },
         "core": {
-          "threshold": 29.5,
-          "historical_HR": "7/10",
-          "over_price_american": "-270",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
+          "threshold": 225,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
         },
         "ceiling": {
-          "threshold": 39.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-151",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
+          "threshold": 250,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -168,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
         }
       },
       "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
+      "rationale": "Carried forward: complete Floor/Core/Ceiling structure and historical support at Floor (>=8/10) or Core (>=7/10)."
     },
     {
       "player": "Bryce Young",
       "team": "CAR",
       "position": "QB",
-      "market": "Passing Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          163,
-          281,
-          329,
-          291,
-          287,
-          361,
-          266,
-          54,
-          191,
-          163
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          }
-        ],
-        "hit_rate_at_market": "6/10"
+      "player_id": "00-0039150",
+      "main_market": "Passing Yards",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
       },
-      "sportsbook": {
-        "line": 250.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+      "locked_stage1_market_data": {
+        "line": 252.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "market_HR": "6/10",
-      "twenty_game_25P": 147,
-      "ladder_results": {
-        "150+": "9/10",
-        "175+": "7/10",
-        "200+": "6/10",
-        "225+": "6/10",
-        "250+": "6/10",
-        "300+": "2/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": true,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 127.22,
-      "percentile_6": 104.66,
-      "alternate_market_analysis": {
-        "player": "Bryce Young",
-        "market": "Passing Yards",
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 163
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 281
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 329
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 291
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 287
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 361
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 266
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 54
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 191
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 163
+        }
+      ],
+      "locked_l10_values": [
+        163,
+        281,
+        329,
+        291,
+        287,
+        361,
+        266,
+        54,
+        191,
+        163
+      ],
+      "alternate_market": "Alt Passing Yards",
+      "available_alternate_count": 9,
+      "alternates": [
+        {
+          "threshold": 175,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 200,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -470,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 225,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -240,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 250,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -128,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 275,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": 142,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 300,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 240,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 325,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 410,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 350,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 375,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
         "floor": {
-          "threshold": 209.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-329",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
+          "threshold": 200,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -470,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
         },
         "core": {
-          "threshold": 219.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-250",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
+          "threshold": 225,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -240,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
         },
         "ceiling": {
-          "threshold": 229.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-193",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
+          "threshold": 250,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -128,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
         }
       },
-      "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
+      "stage3_context_candidate": false,
+      "rationale": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
     },
     {
-      "player": "Tetairoa McMillan",
-      "team": "CAR",
-      "position": "WR",
-      "market": "Receiving Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          40,
-          86,
-          192,
-          17,
-          101,
-          75,
-          85,
-          5,
-          73,
-          25
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          }
-        ],
-        "hit_rate_at_market": "5/10"
-      },
-      "sportsbook": {
-        "line": 73.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "5/10",
-      "twenty_game_25P": 34.5,
-      "ladder_results": {
-        "20+": "8/10",
-        "30+": "7/10",
-        "40+": "7/10",
-        "50+": "6/10",
-        "60+": "6/10",
-        "75+": "5/10",
-        "100+": "2/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 29.92,
-      "percentile_6": 18.12,
-      "alternate_market_analysis": {
-        "player": "Tetairoa McMillan",
-        "market": "Receiving Yards",
-        "floor": {
-          "threshold": 39.5,
-          "historical_HR": "7/10",
-          "over_price_american": "-478",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
-        },
-        "core": {
-          "threshold": 49.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-278",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
-        },
-        "ceiling": {
-          "threshold": 59.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-176",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
-        }
-      },
-      "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
-    },
-    {
-      "player": "Jalen Coker",
-      "team": "CAR",
-      "position": "WR",
-      "market": "Receptions",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          1,
-          6,
-          2,
-          8,
-          8,
-          6,
-          2,
-          3,
-          4,
-          4
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          },
-          {
-            "season": 2025,
-            "week": 13,
-            "game_id": "2025_13_LA_CAR"
-          }
-        ],
-        "hit_rate_at_market": "4/10"
-      },
-      "sportsbook": {
-        "line": 4.5,
-        "over_price": "-172",
-        "under_price": "128",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "4/10",
-      "twenty_game_25P": 2,
-      "ladder_results": {
-        "2+": "9/10",
-        "3+": "7/10",
-        "4+": "6/10",
-        "5+": "4/10",
-        "6+": "4/10",
-        "7+": "2/10",
-        "8+": "2/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 2,
-      "percentile_6": 1,
-      "alternate_market_analysis": {
-        "player": "Jalen Coker",
-        "market": "Receptions",
-        "floor": {
-          "threshold": 2.5,
-          "historical_HR": "7/10",
-          "over_price_american": "-890",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
-        },
-        "core": {
-          "threshold": 3.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-319",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
-        },
-        "ceiling": {
-          "threshold": 4.5,
-          "historical_HR": "4/10",
-          "over_price_american": "-145",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
-        }
-      },
-      "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
-    },
-    {
-      "player": "Tucker Kraft",
+      "player": "Josh Jacobs",
       "team": "GB",
-      "position": "TE",
-      "market": "Receptions",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          4,
-          5,
-          5,
-          6,
-          4,
-          2,
-          3,
-          2,
-          7,
-          5
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 9,
-            "game_id": "2025_09_CAR_GB"
-          },
-          {
-            "season": 2025,
-            "week": 8,
-            "game_id": "2025_08_GB_PIT"
-          },
-          {
-            "season": 2025,
-            "week": 7,
-            "game_id": "2025_07_GB_ARI"
-          }
-        ],
-        "hit_rate_at_market": "5/10"
+      "position": "RB",
+      "player_id": "00-0035700",
+      "main_market": "Rushing Yards",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
       },
-      "sportsbook": {
-        "line": 4.5,
-        "over_price": "106",
-        "under_price": "-140",
-        "sportsbook": "FanDuel"
+      "locked_stage1_market_data": {
+        "line": 59.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "market_HR": "5/10",
-      "twenty_game_25P": 2,
-      "ladder_results": {
-        "2+": "10/10",
-        "3+": "8/10",
-        "4+": "7/10",
-        "5+": "5/10",
-        "6+": "2/10",
-        "7+": "1/10",
-        "8+": "0/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 2,
-      "percentile_6": 2,
-      "alternate_market_analysis": {
-        "player": "Tucker Kraft",
-        "market": "Receptions",
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 73
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 86
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 83
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "team": "GB",
+          "opponent_team": "NYG",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "GB",
+          "opponent_team": "PHI",
+          "value": 74
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 87
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 33
+        }
+      ],
+      "locked_l10_values": [
+        36,
+        3,
+        36,
+        73,
+        86,
+        83,
+        40,
+        74,
+        87,
+        33
+      ],
+      "alternate_market": "Alt Rushing Yards",
+      "available_alternate_count": 11,
+      "alternates": [
+        {
+          "threshold": 25,
+          "historical_hr": {
+            "hits": 9,
+            "denominator": 10,
+            "display": "9/10"
+          },
+          "price_american": -1800,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": {
+            "hits": 9,
+            "denominator": 10,
+            "display": "9/10"
+          },
+          "price_american": -900,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -210,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -114,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": 146,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": 220,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 470,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 680,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
         "floor": {
-          "threshold": 2.5,
-          "historical_HR": "8/10",
-          "over_price_american": "-542",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
         },
         "core": {
-          "threshold": 3.5,
-          "historical_HR": "7/10",
-          "over_price_american": "-215",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -210,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
         },
         "ceiling": {
-          "threshold": 4.5,
-          "historical_HR": "5/10",
-          "over_price_american": "-102",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -114,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
         }
       },
-      "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
-    },
-    {
-      "player": "Jordan Love",
-      "team": "GB",
-      "position": "QB",
-      "market": "Passing Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          274,
-          276,
-          367,
-          197,
-          312,
-          145,
-          387,
-          77,
-          276,
-          234
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_GB_CHI"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_GB_DEN"
-          },
-          {
-            "season": 2025,
-            "week": 14,
-            "game_id": "2025_14_CHI_GB"
-          }
-        ],
-        "hit_rate_at_market": "6/10"
-      },
-      "sportsbook": {
-        "line": 258.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "6/10",
-      "twenty_game_25P": 178.25,
-      "ladder_results": {
-        "150+": "8/10",
-        "175+": "8/10",
-        "200+": "7/10",
-        "225+": "7/10",
-        "250+": "6/10",
-        "300+": "3/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": true,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 174.46,
-      "percentile_6": 139.84,
-      "alternate_market_analysis": {
-        "player": "Jordan Love",
-        "market": "Passing Yards",
-        "floor": {
-          "threshold": 219.5,
-          "historical_HR": "7/10",
-          "over_price_american": "-295",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
-        },
-        "core": {
-          "threshold": 229.5,
-          "historical_HR": "7/10",
-          "over_price_american": "-221",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
-        },
-        "ceiling": {
-          "threshold": 239.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-169",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
-        }
-      },
-      "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
+      "stage3_context_candidate": false,
+      "rationale": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
     },
     {
       "player": "Chuba Hubbard",
       "team": "CAR",
       "position": "RB",
-      "market": "Rushing Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          33,
-          120,
-          122,
-          82,
-          53,
-          49,
-          10,
-          12,
-          27,
-          29
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          }
-        ],
-        "hit_rate_at_market": "3/10"
+      "player_id": "00-0036555",
+      "main_market": "Rushing Yards",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
       },
-      "sportsbook": {
-        "line": 70.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+      "locked_stage1_market_data": {
+        "line": 67.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "market_HR": "3/10",
-      "twenty_game_25P": 20,
-      "ladder_results": {
-        "20+": "8/10",
-        "30+": "6/10",
-        "40+": "5/10",
-        "50+": "4/10",
-        "60+": "3/10",
-        "75+": "3/10",
-        "100+": "2/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 16.23,
-      "percentile_6": 12.28,
-      "alternate_market_analysis": {
-        "player": "Chuba Hubbard",
-        "market": "Rushing Yards",
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 120
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 122
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 82
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 53
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 49
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 27
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 29
+        }
+      ],
+      "locked_l10_values": [
+        33,
+        120,
+        122,
+        82,
+        53,
+        49,
+        10,
+        12,
+        27,
+        29
+      ],
+      "alternate_market": "Alt Rushing Yards",
+      "available_alternate_count": 11,
+      "alternates": [
+        {
+          "threshold": 30,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -1600,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -600,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": -290,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": -172,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": -104,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": 148,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 220,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 310,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 430,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
         "floor": {
-          "threshold": 39.5,
-          "historical_HR": "5/10",
-          "over_price_american": "-640",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -600,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
         },
         "core": {
-          "threshold": 49.5,
-          "historical_HR": "4/10",
-          "over_price_american": "-306",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": -290,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
         },
         "ceiling": {
-          "threshold": 59.5,
-          "historical_HR": "3/10",
-          "over_price_american": "-168",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": -172,
+          "sportsbook": "FanDuel",
+          "market": "Alt Rushing Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
         }
       },
       "stage3_context_candidate": false,
-      "stage3_exclusion_rationale": "Core alternate historical HR is 4/10; available structure does not provide a viable candidate path for later evaluation."
+      "rationale": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
     },
     {
       "player": "Tetairoa McMillan",
       "team": "CAR",
       "position": "WR",
-      "market": "Receptions",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          4,
-          6,
-          14,
-          2,
-          5,
-          5,
-          4,
-          1,
-          6,
-          2
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 18,
-            "game_id": "2025_18_CAR_TB"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_SEA_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_TB_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_CAR_NO"
-          }
-        ],
-        "hit_rate_at_market": "3/10"
+      "player_id": "00-0040124",
+      "main_market": "Receiving Yards",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
       },
-      "sportsbook": {
+      "locked_stage1_market_data": {
+        "line": 72.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 86
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 192
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 17
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 101
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 75
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 85
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 73
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 25
+        }
+      ],
+      "locked_l10_values": [
+        40,
+        86,
+        192,
+        17,
+        101,
+        75,
+        85,
+        5,
+        73,
+        25
+      ],
+      "alternate_market": "Alt Receiving Yards",
+      "available_alternate_count": 11,
+      "alternates": [
+        {
+          "threshold": 30,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -1200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -550,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -310,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -192,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -122,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": 124,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 178,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 240,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 350,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 550,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -310,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -192,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 70,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -122,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
+      },
+      "stage3_context_candidate": false,
+      "rationale": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "position": "WR",
+      "player_id": "00-0040124",
+      "main_market": "Receptions",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      },
+      "locked_stage1_market_data": {
         "line": 5.5,
-        "over_price": "106",
-        "under_price": "-140",
-        "sportsbook": "FanDuel"
+        "over_odds": 112,
+        "under_odds": -148,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
       },
-      "market_HR": "3/10",
-      "twenty_game_25P": 2.75,
-      "ladder_results": {
-        "2+": "9/10",
-        "3+": "7/10",
-        "4+": "7/10",
-        "5+": "5/10",
-        "6+": "3/10",
-        "7+": "1/10",
-        "8+": "1/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 2,
-      "percentile_6": 1.14,
-      "alternate_market_analysis": {
-        "player": "Tetairoa McMillan",
-        "market": "Receptions",
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 14
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 2
+        }
+      ],
+      "locked_l10_values": [
+        4,
+        6,
+        14,
+        2,
+        5,
+        5,
+        4,
+        1,
+        6,
+        2
+      ],
+      "alternate_market": "Alt Receptions",
+      "available_alternate_count": 9,
+      "alternates": [
+        {
+          "threshold": 3,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -1450,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -450,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": -200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 102,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 194,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 350,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 630,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 920,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 11,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 1500,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
         "floor": {
-          "threshold": 3.5,
-          "historical_HR": "7/10",
-          "over_price_american": "-358",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
+          "threshold": 4,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -450,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "FLOOR"
         },
         "core": {
-          "threshold": 4.5,
-          "historical_HR": "5/10",
-          "over_price_american": "-161",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": -200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "CORE"
         },
         "ceiling": {
-          "threshold": 5.5,
-          "historical_HR": "3/10",
-          "over_price_american": "+126",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
+          "threshold": 6,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 102,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "CEILING"
         }
       },
       "stage3_context_candidate": false,
-      "stage3_exclusion_rationale": "Core alternate historical HR is 5/10 and the ceiling is 3/10; available structure does not provide a sufficiently supported candidate path for later evaluation."
-    },
-    {
-      "player": "Christian Watson",
-      "team": "GB",
-      "position": "WR",
-      "market": "Receiving Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          57,
-          64,
-          143,
-          47,
-          96,
-          41,
-          147,
-          113,
-          17,
-          29
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_BAL_GB"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_GB_CHI"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_GB_DEN"
-          }
-        ],
-        "hit_rate_at_market": "4/10"
-      },
-      "sportsbook": {
-        "line": 68.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "4/10",
-      "twenty_game_25P": 44,
-      "ladder_results": {
-        "20+": "9/10",
-        "30+": "8/10",
-        "40+": "8/10",
-        "50+": "6/10",
-        "60+": "5/10",
-        "75+": "4/10",
-        "100+": "3/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 31.76,
-      "percentile_6": 2.38,
-      "alternate_market_analysis": {
-        "player": "Christian Watson",
-        "market": "Receiving Yards",
-        "floor": {
-          "threshold": 39.5,
-          "historical_HR": "8/10",
-          "over_price_american": "-363",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
-        },
-        "core": {
-          "threshold": 49.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-227",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
-        },
-        "ceiling": {
-          "threshold": 59.5,
-          "historical_HR": "5/10",
-          "over_price_american": "-152",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
-        }
-      },
-      "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
-    },
-    {
-      "player": "Josh Jacobs",
-      "team": "GB",
-      "position": "RB",
-      "market": "Rushing Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          36,
-          3,
-          36,
-          73,
-          86,
-          83,
-          40,
-          74,
-          87,
-          33
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_BAL_GB"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_GB_CHI"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_GB_DEN"
-          },
-          {
-            "season": 2025,
-            "week": 14,
-            "game_id": "2025_14_CHI_GB"
-          },
-          {
-            "season": 2025,
-            "week": 13,
-            "game_id": "2025_13_GB_DET"
-          },
-          {
-            "season": 2025,
-            "week": 11,
-            "game_id": "2025_11_GB_NYG"
-          },
-          {
-            "season": 2025,
-            "week": 10,
-            "game_id": "2025_10_PHI_GB"
-          },
-          {
-            "season": 2025,
-            "week": 9,
-            "game_id": "2025_09_CAR_GB"
-          },
-          {
-            "season": 2025,
-            "week": 8,
-            "game_id": "2025_08_GB_PIT"
-          }
-        ],
-        "hit_rate_at_market": "5/10"
-      },
-      "sportsbook": {
-        "line": 58.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "5/10",
-      "twenty_game_25P": 39,
-      "ladder_results": {
-        "20+": "9/10",
-        "30+": "9/10",
-        "40+": "6/10",
-        "50+": "5/10",
-        "60+": "5/10",
-        "75+": "3/10",
-        "100+": "0/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 36,
-      "percentile_6": 30.42,
-      "alternate_market_analysis": {
-        "player": "Josh Jacobs",
-        "market": "Rushing Yards",
-        "floor": {
-          "threshold": 39.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-338",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
-        },
-        "core": {
-          "threshold": 49.5,
-          "historical_HR": "5/10",
-          "over_price_american": "-176",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
-        },
-        "ceiling": {
-          "threshold": 57.5,
-          "historical_HR": "5/10",
-          "over_price_american": "-112",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
-        }
-      },
-      "stage3_context_candidate": false,
-      "stage3_exclusion_rationale": "Core alternate historical HR is 5/10 and ceiling is 5/10; available structure does not provide a sufficiently supported candidate path for later evaluation."
-    },
-    {
-      "player": "Christian Watson",
-      "team": "GB",
-      "position": "WR",
-      "market": "Receptions",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          5,
-          3,
-          6,
-          3,
-          7,
-          4,
-          6,
-          5,
-          2,
-          3
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_GB_DET"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_DAL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 5,
-            "game_id": "2026_05_CHI_GB"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_GB_TB"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_ATL_GB"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_GB_NYJ"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_GB_MIN"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_BAL_GB"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_GB_CHI"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_GB_DEN"
-          }
-        ],
-        "hit_rate_at_market": "5/10"
-      },
-      "sportsbook": {
-        "line": 4.5,
-        "over_price": "-106",
-        "under_price": "-125",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "5/10",
-      "twenty_game_25P": 2.75,
-      "ladder_results": {
-        "2+": "10/10",
-        "3+": "9/10",
-        "4+": "6/10",
-        "5+": "5/10",
-        "6+": "3/10",
-        "7+": "1/10",
-        "8+": "0/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": false,
-        "any_fixed_ladder_at_least_8_of_10": true
-      },
-      "percentile_17": 2,
-      "percentile_6": 0.28,
-      "alternate_market_analysis": {
-        "player": "Christian Watson",
-        "market": "Receptions",
-        "floor": {
-          "threshold": 2.5,
-          "historical_HR": "9/10",
-          "over_price_american": "-670",
-          "sportsbook": "DraftKings",
-          "designation": "Floor"
-        },
-        "core": {
-          "threshold": 3.5,
-          "historical_HR": "6/10",
-          "over_price_american": "-251",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
-        },
-        "ceiling": {
-          "threshold": 4.5,
-          "historical_HR": "5/10",
-          "over_price_american": "-114",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
-        }
-      },
-      "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
-    },
-    {
-      "player": "Darren Waller",
-      "team": "CAR",
-      "position": "TE",
-      "market": "Receiving Yards",
-      "historical_sample": {
-        "label": "L10",
-        "observations": [
-          50,
-          0,
-          36,
-          51,
-          33,
-          28,
-          0,
-          40,
-          66,
-          13
-        ],
-        "game_weeks": [
-          {
-            "season": 2026,
-            "week": 7,
-            "game_id": "2026_07_TB_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 6,
-            "game_id": "2026_06_CAR_PHI"
-          },
-          {
-            "season": 2026,
-            "week": 4,
-            "game_id": "2026_04_DET_CAR"
-          },
-          {
-            "season": 2026,
-            "week": 3,
-            "game_id": "2026_03_CAR_CLE"
-          },
-          {
-            "season": 2026,
-            "week": 2,
-            "game_id": "2026_02_CAR_ATL"
-          },
-          {
-            "season": 2026,
-            "week": 1,
-            "game_id": "2026_01_CHI_CAR"
-          },
-          {
-            "season": 2025,
-            "week": 17,
-            "game_id": "2025_17_TB_MIA"
-          },
-          {
-            "season": 2025,
-            "week": 16,
-            "game_id": "2025_16_CIN_MIA"
-          },
-          {
-            "season": 2025,
-            "week": 15,
-            "game_id": "2025_15_MIA_PIT"
-          },
-          {
-            "season": 2025,
-            "week": 14,
-            "game_id": "2025_14_MIA_NYJ"
-          }
-        ],
-        "hit_rate_at_market": "7/10"
-      },
-      "sportsbook": {
-        "line": 18.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
-      },
-      "market_HR": "7/10",
-      "twenty_game_25P": "Unavailable — <20 games",
-      "ladder_results": {
-        "20+": "7/10",
-        "30+": "6/10",
-        "40+": "4/10",
-        "50+": "3/10",
-        "60+": "1/10",
-        "75+": "0/10",
-        "100+": "0/10"
-      },
-      "qualification": {
-        "market_HR_at_least_6_of_10": true,
-        "any_fixed_ladder_at_least_8_of_10": false
-      },
-      "percentile_17": "Unavailable — <20 games",
-      "percentile_6": "Unavailable — <20 games",
-      "alternate_market_analysis": {
-        "player": "Darren Waller",
-        "market": "Receiving Yards",
-        "floor": null,
-        "core": {
-          "threshold": 9.5,
-          "historical_HR": "8/10",
-          "over_price_american": "-291",
-          "sportsbook": "DraftKings",
-          "designation": "Core"
-        },
-        "ceiling": {
-          "threshold": 14.5,
-          "historical_HR": "7/10",
-          "over_price_american": "-166",
-          "sportsbook": "DraftKings",
-          "designation": "Ceiling"
-        }
-      },
-      "stage3_context_candidate": true,
-      "stage3_exclusion_rationale": null
-    }
-  ],
-  "stage3_context_candidate_set": [
-    {
-      "player": "Tucker Kraft",
-      "team": "GB",
-      "position": "TE",
-      "market": "Receiving Yards",
-      "core": {
-        "threshold": 29.5,
-        "historical_HR": "7/10",
-        "over_price_american": "-270",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
-      },
-      "stage1_market_HR": "6/10"
-    },
-    {
-      "player": "Bryce Young",
-      "team": "CAR",
-      "position": "QB",
-      "market": "Passing Yards",
-      "core": {
-        "threshold": 219.5,
-        "historical_HR": "6/10",
-        "over_price_american": "-250",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
-      },
-      "stage1_market_HR": "6/10"
-    },
-    {
-      "player": "Tetairoa McMillan",
-      "team": "CAR",
-      "position": "WR",
-      "market": "Receiving Yards",
-      "core": {
-        "threshold": 49.5,
-        "historical_HR": "6/10",
-        "over_price_american": "-278",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
-      },
-      "stage1_market_HR": "5/10"
+      "rationale": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
     },
     {
       "player": "Jalen Coker",
       "team": "CAR",
       "position": "WR",
-      "market": "Receptions",
-      "core": {
-        "threshold": 3.5,
-        "historical_HR": "6/10",
-        "over_price_american": "-319",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
+      "player_id": "00-0039491",
+      "main_market": "Receptions",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
       },
-      "stage1_market_HR": "4/10"
+      "locked_stage1_market_data": {
+        "line": 4.5,
+        "over_odds": -160,
+        "under_odds": 120,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_SEA_CAR",
+          "team": "CAR",
+          "opponent_team": "SEA",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CAR_NO",
+          "team": "CAR",
+          "opponent_team": "NO",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_LA_CAR",
+          "team": "CAR",
+          "opponent_team": "LA",
+          "value": 4
+        }
+      ],
+      "locked_l10_values": [
+        1,
+        6,
+        2,
+        8,
+        8,
+        6,
+        2,
+        3,
+        4,
+        4
+      ],
+      "alternate_market": "Alt Receptions",
+      "available_alternate_count": 9,
+      "alternates": [
+        {
+          "threshold": 3,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -1200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": -390,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": -174,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 118,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 220,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 390,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 640,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 11,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 4,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": -390,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": -174,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 6,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 118,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
+      },
+      "stage3_context_candidate": false,
+      "rationale": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0038124",
+      "main_market": "Receiving Yards",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      },
+      "locked_stage1_market_data": {
+        "line": 70.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 143
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 96
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 41
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 147
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 113
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 17
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 29
+        }
+      ],
+      "locked_l10_values": [
+        57,
+        64,
+        143,
+        47,
+        96,
+        41,
+        147,
+        113,
+        17,
+        29
+      ],
+      "alternate_market": "Alt Receiving Yards",
+      "available_alternate_count": 12,
+      "alternates": [
+        {
+          "threshold": 25,
+          "historical_hr": {
+            "hits": 9,
+            "denominator": 10,
+            "display": "9/10"
+          },
+          "price_american": -1800,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -1000,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -275,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -174,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": -114,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": 128,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": 182,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": 260,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": 360,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 125,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 580,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 150,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1100,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -275,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -174,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
+      },
+      "stage3_context_candidate": true,
+      "rationale": "Carried forward: complete Floor/Core/Ceiling structure and historical support at Floor (>=8/10) or Core (>=7/10)."
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "position": "WR",
+      "player_id": "00-0038124",
+      "main_market": "Receptions",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      },
+      "locked_stage1_market_data": {
+        "line": 4.5,
+        "over_odds": -130,
+        "under_odds": -102,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "value": 3
+        }
+      ],
+      "locked_l10_values": [
+        5,
+        3,
+        6,
+        3,
+        7,
+        4,
+        6,
+        5,
+        2,
+        3
+      ],
+      "alternate_market": "Alt Receptions",
+      "available_alternate_count": 8,
+      "alternates": [
+        {
+          "threshold": 3,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -900,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -310,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": -136,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 154,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 280,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 520,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 880,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 3,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -900,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 4,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -310,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": -136,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
+      },
+      "stage3_context_candidate": false,
+      "rationale": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
     },
     {
       "player": "Tucker Kraft",
       "team": "GB",
       "position": "TE",
-      "market": "Receptions",
-      "core": {
-        "threshold": 3.5,
-        "historical_HR": "7/10",
-        "over_price_american": "-215",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
+      "player_id": "00-0038996",
+      "main_market": "Receiving Yards",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
       },
-      "stage1_market_HR": "5/10"
+      "locked_stage1_market_data": {
+        "line": 43.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 48
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 42
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 26
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 65
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 143
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_GB_ARI",
+          "team": "GB",
+          "opponent_team": "ARI",
+          "value": 58
+        }
+      ],
+      "locked_l10_values": [
+        48,
+        37,
+        64,
+        42,
+        26,
+        15,
+        65,
+        20,
+        143,
+        58
+      ],
+      "alternate_market": "Alt Receiving Yards",
+      "available_alternate_count": 12,
+      "alternates": [
+        {
+          "threshold": 15,
+          "historical_hr": {
+            "hits": 9,
+            "denominator": 10,
+            "display": "9/10"
+          },
+          "price_american": -1400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -420,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -280,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -144,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 4,
+            "denominator": 10,
+            "display": "4/10"
+          },
+          "price_american": 126,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": 205,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 90,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 750,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 100,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 1000,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 110,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 1400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 25,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -420,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 30,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -280,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -144,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
+      },
+      "stage3_context_candidate": true,
+      "rationale": "Carried forward: complete Floor/Core/Ceiling structure and historical support at Floor (>=8/10) or Core (>=7/10)."
     },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "player_id": "00-0038996",
+      "main_market": "Receptions",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      },
+      "locked_stage1_market_data": {
+        "line": 4.5,
+        "over_odds": 116,
+        "under_odds": -154,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "GB",
+          "opponent_team": "TB",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "GB",
+          "opponent_team": "ATL",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "GB",
+          "opponent_team": "NYJ",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_GB_PIT",
+          "team": "GB",
+          "opponent_team": "PIT",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_GB_ARI",
+          "team": "GB",
+          "opponent_team": "ARI",
+          "value": 5
+        }
+      ],
+      "locked_l10_values": [
+        4,
+        5,
+        5,
+        6,
+        4,
+        2,
+        3,
+        2,
+        7,
+        5
+      ],
+      "alternate_market": "Alt Receptions",
+      "available_alternate_count": 7,
+      "alternates": [
+        {
+          "threshold": 3,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -550,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 4,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -205,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 110,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 6,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 220,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 7,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 400,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 8,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 9,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 3,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -550,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 4,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -205,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 110,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receptions",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
+      },
+      "stage3_context_candidate": false,
+      "rationale": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Darren Waller",
+      "team": "CAR",
+      "position": "TE",
+      "player_id": "00-0031610",
+      "main_market": "Receiving Yards",
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      },
+      "locked_stage1_market_data": {
+        "line": 21.5,
+        "over_odds": -113,
+        "under_odds": -113,
+        "sportsbook": "FanDuel",
+        "game": "Carolina Panthers @ Green Bay Packers",
+        "event_id": "36215311"
+      },
+      "locked_l10_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "CAR",
+          "opponent_team": "TB",
+          "value": 50
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CAR_PHI",
+          "team": "CAR",
+          "opponent_team": "PHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DET_CAR",
+          "team": "CAR",
+          "opponent_team": "DET",
+          "value": 36
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CAR",
+          "opponent_team": "CLE",
+          "value": 51
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "CAR",
+          "opponent_team": "ATL",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CAR",
+          "opponent_team": "CHI",
+          "value": 28
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "MIA",
+          "opponent_team": "TB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "MIA",
+          "opponent_team": "CIN",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_MIA_PIT",
+          "team": "MIA",
+          "opponent_team": "PIT",
+          "value": 66
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_MIA_NYJ",
+          "team": "MIA",
+          "opponent_team": "NYJ",
+          "value": 13
+        }
+      ],
+      "locked_l10_values": [
+        50,
+        0,
+        36,
+        51,
+        33,
+        28,
+        0,
+        40,
+        66,
+        13
+      ],
+      "alternate_market": "Alt Receiving Yards",
+      "available_alternate_count": 11,
+      "alternates": [
+        {
+          "threshold": 5,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -750,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 10,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -350,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 15,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -210,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 20,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -136,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 25,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": 114,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 30,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": 158,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 3,
+            "denominator": 10,
+            "display": "3/10"
+          },
+          "price_american": 290,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 2,
+            "denominator": 10,
+            "display": "2/10"
+          },
+          "price_american": 490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 1,
+            "denominator": 10,
+            "display": "1/10"
+          },
+          "price_american": 800,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 70,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1200,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        },
+        {
+          "threshold": 80,
+          "historical_hr": {
+            "hits": 0,
+            "denominator": 10,
+            "display": "0/10"
+          },
+          "price_american": 1700,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311"
+        }
+      ],
+      "bands": {
+        "floor": {
+          "threshold": 10,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -350,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 15,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -210,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 20,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -136,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
+      },
+      "stage3_context_candidate": true,
+      "rationale": "Carried forward: complete Floor/Core/Ceiling structure and historical support at Floor (>=8/10) or Core (>=7/10)."
+    }
+  ],
+  "context_candidate_set": [
     {
       "player": "Jordan Love",
       "team": "GB",
       "position": "QB",
       "market": "Passing Yards",
-      "core": {
-        "threshold": 229.5,
-        "historical_HR": "7/10",
-        "over_price_american": "-221",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
+      "alternate_market": "Alt Passing Yards",
+      "bands": {
+        "floor": {
+          "threshold": 200,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -650,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 225,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -320,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 250,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -168,
+          "sportsbook": "FanDuel",
+          "market": "Alt Passing Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
       },
-      "stage1_market_HR": "6/10"
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
     },
     {
       "player": "Christian Watson",
       "team": "GB",
       "position": "WR",
       "market": "Receiving Yards",
-      "core": {
-        "threshold": 49.5,
-        "historical_HR": "6/10",
-        "over_price_american": "-227",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
+      "alternate_market": "Alt Receiving Yards",
+      "bands": {
+        "floor": {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -490,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 50,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -275,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 60,
+          "historical_hr": {
+            "hits": 5,
+            "denominator": 10,
+            "display": "5/10"
+          },
+          "price_american": -174,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
       },
-      "stage1_market_HR": "4/10"
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
     },
     {
-      "player": "Christian Watson",
+      "player": "Tucker Kraft",
       "team": "GB",
-      "position": "WR",
-      "market": "Receptions",
-      "core": {
-        "threshold": 3.5,
-        "historical_HR": "6/10",
-        "over_price_american": "-251",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
+      "position": "TE",
+      "market": "Receiving Yards",
+      "alternate_market": "Alt Receiving Yards",
+      "bands": {
+        "floor": {
+          "threshold": 25,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -420,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 30,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -280,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 40,
+          "historical_hr": {
+            "hits": 6,
+            "denominator": 10,
+            "display": "6/10"
+          },
+          "price_american": -144,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
       },
-      "stage1_market_HR": "5/10"
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "At least one fixed ladder >= 8/10"
+      }
     },
     {
       "player": "Darren Waller",
       "team": "CAR",
       "position": "TE",
       "market": "Receiving Yards",
-      "core": {
-        "threshold": 9.5,
-        "historical_HR": "8/10",
-        "over_price_american": "-291",
-        "sportsbook": "DraftKings",
-        "designation": "Core"
+      "alternate_market": "Alt Receiving Yards",
+      "bands": {
+        "floor": {
+          "threshold": 10,
+          "historical_hr": {
+            "hits": 8,
+            "denominator": 10,
+            "display": "8/10"
+          },
+          "price_american": -350,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "FLOOR"
+        },
+        "core": {
+          "threshold": 15,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -210,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CORE"
+        },
+        "ceiling": {
+          "threshold": 20,
+          "historical_hr": {
+            "hits": 7,
+            "denominator": 10,
+            "display": "7/10"
+          },
+          "price_american": -136,
+          "sportsbook": "FanDuel",
+          "market": "Alt Receiving Yards",
+          "event_id": "36215311",
+          "designation": "CEILING"
+        }
       },
-      "stage1_market_HR": "7/10"
+      "stage1_qualification": {
+        "qualifies": true,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder >= 8/10",
+        "reason": "Market HR >= 6/10"
+      }
     }
   ],
-  "exclusions": [
+  "excluded_candidates": [
     {
-      "player": "Chuba Hubbard",
+      "player": "Bryce Young",
       "team": "CAR",
-      "position": "RB",
-      "market": "Rushing Yards",
-      "reason": "Core alternate historical HR is 4/10; available structure does not provide a viable candidate path for later evaluation."
-    },
-    {
-      "player": "Tetairoa McMillan",
-      "team": "CAR",
-      "position": "WR",
-      "market": "Receptions",
-      "reason": "Core alternate historical HR is 5/10 and the ceiling is 3/10; available structure does not provide a sufficiently supported candidate path for later evaluation."
+      "market": "Passing Yards",
+      "reason": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
     },
     {
       "player": "Josh Jacobs",
       "team": "GB",
-      "position": "RB",
       "market": "Rushing Yards",
-      "reason": "Core alternate historical HR is 5/10 and ceiling is 5/10; available structure does not provide a sufficiently supported candidate path for later evaluation."
+      "reason": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Chuba Hubbard",
+      "team": "CAR",
+      "market": "Rushing Yards",
+      "reason": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "market": "Receiving Yards",
+      "reason": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Tetairoa McMillan",
+      "team": "CAR",
+      "market": "Receptions",
+      "reason": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "market": "Receptions",
+      "reason": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Christian Watson",
+      "team": "GB",
+      "market": "Receptions",
+      "reason": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
+    },
+    {
+      "player": "Tucker Kraft",
+      "team": "GB",
+      "market": "Receptions",
+      "reason": "Excluded: available Floor/Core/Ceiling structure lacks sufficient historical support at Floor (<8/10) and Core (<7/10)."
     }
   ],
   "validation": {
-    "exact_stage1_state_loaded": true,
-    "exact_stage1_state_id_preserved": "STATE-1R-W8-2026-20261027-THU-L10-P17-P6",
-    "exact_stage1_record_count_preserved": true,
-    "exact_locked_L10_observations_preserved": true,
-    "current_week_context_performed": false,
-    "stage1_state_modified": false,
-    "sportsbook_source_note": "DraftKings fallback used because the current odds snapshot contains no FanDuel rows."
+    "stage1_state_loaded_and_validated": true,
+    "stage1_record_count_preserved": true,
+    "exact_stage1_player_market_universe_used": true,
+    "exact_locked_l10_used": true,
+    "stage1_qualification_preserved": true,
+    "current_fanduel_alternate_data_used": true,
+    "line_movement_excluded": true,
+    "cross_book_analysis_excluded": true,
+    "no_context_research_performed": true,
+    "no_alternate_lines_or_prices_fabricated": true,
+    "stage1_results_unchanged": true,
+    "stage1_records_included": 12,
+    "alternate_hr_rule": "Over hit counts use locked L10 values strictly greater than the listed alternate line; exact ties are not counted as wins.",
+    "core_rule": "Available FanDuel alternate odds between -350 and -150 inclusive; choose odds numerically closest to -250; ties choose more negative odds.",
+    "floor_rule": "Immediately lower available alternate threshold than Core.",
+    "ceiling_rule": "Immediately higher available alternate threshold than Core.",
+    "narrowing_rule": "Carry forward complete Floor/Core/Ceiling structures where Floor historical HR >=8/10 or Core historical HR >=7/10; no context research used."
   }
 }
