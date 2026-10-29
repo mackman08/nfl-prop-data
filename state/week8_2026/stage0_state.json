@@ -4,6 +4,12 @@
   "week": 8,
   "scope": "Thursday only",
   "scope_description": "NFL Week 8, 2026 Regular Season — Thursday only",
+  "selected_game": {
+    "matchup": "Carolina Panthers at Green Bay Packers",
+    "date": "2026-10-29",
+    "kickoff_local": "8:15 PM ET",
+    "source": "NFL.com 2026 Thursday Night Football schedule"
+  },
   "historical_sample": {
     "label": "L10",
     "n": 10,
@@ -26,7 +32,7 @@
     "fallback": "DraftKings only if FanDuel data is unavailable for the required market"
   },
   "record_count": 0,
-  "state_id": "STATE-0-W8-2026-20261027-THU-L10",
+  "state_id": "STATE-0-W8-2026-20261029-THU-L10",
   "parent_state_id": null,
   "records": []
 }
