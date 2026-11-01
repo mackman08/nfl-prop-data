@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 423,
-      "Receiving Yards": 1959,
-      "Receptions": 973,
-      "Rushing Yards": 937
+      "Passing Yards": 150,
+      "Receiving Yards": 604,
+      "Receptions": 298,
+      "Rushing Yards": 299
     },
     "FanDuel": {
-      "Passing Yards": 25,
-      "Receiving Yards": 158,
-      "Receptions": 60,
-      "Rushing Yards": 80
+      "Passing Yards": 10,
+      "Receiving Yards": 52,
+      "Receptions": 22,
+      "Rushing Yards": 28
     }
   },
   "core_markets_present": [
@@ -23,74 +23,42 @@
   "event_ids": [
     "34118031",
     "34118045",
-    "34118052",
     "34118097",
-    "34118130",
-    "34118131",
-    "34118133",
     "34118184",
-    "34118199",
-    "34118206",
-    "34118214",
-    "34118246",
     "34118271",
-    "36215312",
-    "36215313",
-    "36215314",
-    "36215315",
     "36215316",
-    "36215317",
-    "36215318",
-    "36215319",
-    "36215320",
     "36215321",
     "36215322",
     "36215323",
     "36215324"
   ],
   "games": [
-    "ARI Cardinals @ DAL Cowboys",
-    "ATL Falcons @ TB Buccaneers",
-    "Arizona Cardinals @ Dallas Cowboys",
-    "Atlanta Falcons @ Tampa Bay Buccaneers",
-    "BAL Ravens @ BUF Bills",
-    "Baltimore Ravens @ Buffalo Bills",
     "CHI Bears @ SEA Seahawks",
-    "CLE Browns @ PIT Steelers",
     "Chicago Bears @ Seattle Seahawks",
-    "Cleveland Browns @ Pittsburgh Steelers",
-    "IND Colts @ JAX Jaguars",
-    "Indianapolis Colts @ Jacksonville Jaguars",
     "KC Chiefs @ DEN Broncos",
     "Kansas City Chiefs @ Denver Broncos",
     "LA Chargers @ LA Rams",
-    "LV Raiders @ NY Jets",
-    "Las Vegas Raiders @ New York Jets",
     "Los Angeles Chargers @ Los Angeles Rams",
-    "MIN Vikings @ DET Lions",
-    "Minnesota Vikings @ Detroit Lions",
     "NE Patriots @ MIA Dolphins",
     "New England Patriots @ Miami Dolphins",
     "PHI Eagles @ WAS Commanders",
-    "Philadelphia Eagles @ Washington Commanders",
-    "TEN Titans @ CIN Bengals",
-    "Tennessee Titans @ Cincinnati Bengals"
+    "Philadelphia Eagles @ Washington Commanders"
   ],
   "markets": {
-    "Alt Passing Yards": 212,
-    "Alt Receiving Yards": 1474,
-    "Alt Receptions": 873,
-    "Alt Rushing Yards": 630,
-    "Passing Yards": 448,
-    "Receiving Yards": 2117,
-    "Receptions": 1033,
-    "Rush + Receiving Yards": 524,
-    "Rushing Yards": 1017
+    "Alt Passing Yards": 69,
+    "Alt Receiving Yards": 426,
+    "Alt Receptions": 249,
+    "Alt Rushing Yards": 233,
+    "Passing Yards": 160,
+    "Receiving Yards": 656,
+    "Receptions": 320,
+    "Rush + Receiving Yards": 172,
+    "Rushing Yards": 327
   },
   "sportsbooks": {
-    "DraftKings": 4816,
-    "FanDuel": 3512
+    "DraftKings": 1523,
+    "FanDuel": 1089
   },
-  "total_rows": 8328,
+  "total_rows": 2612,
   "validation_mode": "slate-size-agnostic"
 }
