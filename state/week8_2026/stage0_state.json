@@ -2,12 +2,14 @@
   "stage": 0,
   "season": 2026,
   "week": 8,
-  "scope": "Sunday only",
-  "scope_description": "NFL Week 8, 2026 Regular Season — Sunday only",
+  "scope": "Custom — Chicago Bears @ Seattle Seahawks only",
+  "scope_description": "NFL Week 8, 2026 Regular Season — tonight's game only: Chicago Bears @ Seattle Seahawks, Monday November 2, 2026, 8:15 PM ET",
   "selected_games_scope": {
-    "date": "2026-11-01",
-    "description": "All scheduled Sunday Week 8 games only; exclude Thursday October 29 and Monday November 2 games",
-    "schedule_source": "NFL.com 2026 schedule; CBS Sports Week 8 schedule cross-check"
+    "date": "2026-11-02",
+    "games": [
+      "Chicago Bears @ Seattle Seahawks"
+    ],
+    "schedule_source": "NFL.com 2026 Monday Night Football schedule"
   },
   "historical_sample": {
     "label": "L10",
@@ -15,19 +17,18 @@
     "definition": "10 most recent qualifying completed regular-season games"
   },
   "distribution_statistic_override": {
-    "requested_change": "Replace 20-game 25P with 7P",
-    "statistic": "7th percentile",
+    "requested_change": "Replace 20-game 25P with 16P",
+    "statistic": "16th percentile",
     "sample_definition": "Use the 20 most recent qualifying completed regular-season games before the historical cutoff, separate from L10",
     "calculation": "Standard linear interpolation",
     "availability_rule": "Unavailable — <20 games",
-    "qualification_use": "Not a Stage 1 qualification requirement; do not use sportsbook pricing to calculate 7P"
+    "qualification_use": "Not a Stage 1 qualification requirement; do not use sportsbook pricing to calculate 16P"
   },
   "historical_cutoff": {
     "rule": "Completion of the final scheduled game of Week 7",
     "final_scheduled_game": "Dallas Cowboys @ Philadelphia Eagles",
     "scheduled_kickoff_local": "2026-10-26T20:15:00-04:00",
-    "cutoff_date": "2026-10-27",
-    "note": "Stage 1 must verify that this game completed and use only qualifying games completed before its actual completion."
+    "cutoff": "Immediately after actual completion of the final scheduled Week 7 game; Stage 1 must verify completion and exclude all Week 8 games."
   },
   "historical_data_source": {
     "repository": "mackman08/nfl-prop-data",
@@ -39,7 +40,7 @@
     "fallback": "DraftKings only if FanDuel data is unavailable for the required market"
   },
   "record_count": 0,
-  "state_id": "STATE-0-W8-2026-20261029-SUN-L10-7P",
+  "state_id": "STATE-0-W8-2026-20261102-CUSTOM-BEAR-SEA-L10-P16",
   "parent_state_id": null,
   "records": []
 }
