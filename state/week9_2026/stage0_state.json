@@ -1,0 +1,25 @@
+{
+  "stage": 0,
+  "season": 2026,
+  "week": 9,
+  "scope": "Thursday only",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent completed qualifying regular-season games"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of the final scheduled game of Week 8",
+    "final_game": "Chicago Bears at Seattle Seahawks",
+    "cutoff_date": "2026-11-02",
+    "exact_completion_time": "Not independently verified"
+  },
+  "model_version": "V7.2.8",
+  "user_methodology_overrides": [
+    "Use P16 in place of P25 for the 20-game percentile statistic."
+  ],
+  "record_count": 0,
+  "state_id": "STATE-0-W9-2026-20261103-THU-L10",
+  "parent_state_id": null,
+  "records": []
+}
