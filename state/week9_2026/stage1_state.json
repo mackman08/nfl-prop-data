@@ -1,0 +1,2515 @@
+{
+  "stage": 1,
+  "season": 2026,
+  "week": 9,
+  "scope": "Thursday only — Jacksonville Jaguars at Baltimore Ravens, November 5, 2026",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10,
+    "definition": "10 most recent completed qualifying regular-season games"
+  },
+  "historical_cutoff": {
+    "rule": "Completion of final scheduled game of Week 8",
+    "final_game": "Chicago Bears at Seattle Seahawks",
+    "cutoff_date": "2026-11-02",
+    "source": "NFL Week 8 schedule"
+  },
+  "percentile_statistic": {
+    "name": "P16",
+    "method": "20 most recent qualifying completed regular-season games; standard linear interpolation at 0.16",
+    "user_override": "P16 replaces P25 at user's explicit direction"
+  },
+  "model_version": "V7.2.8",
+  "parent_state_id": "STATE-0-W9-2026-20261103-THU-L10",
+  "state_id": "STATE-1-W9-2026-THU-L10-20261103",
+  "source_snapshot": {
+    "historical_file": "data/nfl_prop_model.txt",
+    "historical_blob_sha": "f78bb4d69976428b0560ce65f41634d057d6fb34",
+    "sportsbook_file": "odds/nfl_player_props_latest.csv",
+    "sportsbook_blob_sha": "d7179960da4a54e86a58b3592ff223cf8fc1541d",
+    "sportsbook": "FanDuel primary; DraftKings not used",
+    "event_filter": "Jacksonville Jaguars @ Baltimore Ravens",
+    "current_eligibility_source": "ESPN depth chart snapshot reproduced by Scores & Stats, updated November 3, 2026"
+  },
+  "screening": {
+    "eligible_players": 14,
+    "available_player_market_combinations": 22,
+    "qualifying_player_market_records": 17,
+    "unavailable_for_insufficient_L10": 2,
+    "non_qualifying_records": 3,
+    "main_fanduel_lines_available": 19
+  },
+  "qualification_rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >= 8/10",
+  "records": [
+    {
+      "player": "Trevor Lawrence",
+      "player_id": "00-0036971",
+      "position": "QB",
+      "team": "JAX",
+      "market_type": "Passing Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 210
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 306
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 331
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 227
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 182
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 189
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 245
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 255
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 263
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 279
+        }
+      ],
+      "market": {
+        "line": 237.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 150,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 175,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 200,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 225,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 250,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 300,
+          "hits": 2,
+          "denominator": 10
+        }
+      ],
+      "p16": 189.84,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10",
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Tyler Huntley",
+      "player_id": "00-0035993",
+      "position": "QB",
+      "team": "BAL",
+      "market_type": "Passing Yards",
+      "historical_games_available": 15,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 298
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 165
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 201
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 63
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "value": 107
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "value": 65
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BAL_CIN",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_CHI_BAL",
+          "value": 186
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "game_id": "2025_06_LA_BAL",
+          "value": 68
+        }
+      ],
+      "market": null,
+      "market_hr": null,
+      "ladder": [
+        {
+          "threshold": 150,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 175,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 200,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 225,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 250,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 300,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": null,
+      "p16_status": "unavailable — 15 games, requires 20",
+      "qualification": "DOES NOT QUALIFY",
+      "qualification_basis": []
+    },
+    {
+      "player": "Bhayshul Tuten",
+      "player_id": "00-0040719",
+      "position": "RB",
+      "team": "JAX",
+      "market_type": "Rushing Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 104
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 72
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 73
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 73
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 65
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 66
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 23
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_NYJ_JAX",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_IND_JAX",
+          "value": 5
+        }
+      ],
+      "market": null,
+      "market_hr": null,
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "denominator": 10
+        }
+      ],
+      "p16": 7.28,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Chris Rodriguez Jr.",
+      "player_id": "00-0038611",
+      "position": "RB",
+      "team": "JAX",
+      "market_type": "Rushing Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 41
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 55
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 35
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 13
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 23
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_WAS_PHI",
+          "value": 65
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_PHI_WAS",
+          "value": 63
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_WAS_MIN",
+          "value": 52
+        }
+      ],
+      "market": null,
+      "market_hr": null,
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 7.2,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Derrick Henry",
+      "player_id": "00-0032764",
+      "position": "RB",
+      "team": "BAL",
+      "market_type": "Rushing Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 53
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 45
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 58
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 102
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 73
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "value": 89
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "value": 68
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BAL_IND",
+          "value": 144
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_BAL_PIT",
+          "value": 126
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "value": 216
+        }
+      ],
+      "market": {
+        "line": 69.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 4,
+          "denominator": 10
+        }
+      ],
+      "p16": 60.16,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10",
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Justice Hill",
+      "player_id": "00-0034975",
+      "position": "RB",
+      "team": "BAL",
+      "market_type": "Rushing Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 73
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BAL_IND",
+          "value": 18
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_NYJ_BAL",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_BAL_MIN",
+          "value": 1
+        }
+      ],
+      "market": {
+        "line": 13.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 0.04,
+      "p16_status": "available",
+      "qualification": "DOES NOT QUALIFY",
+      "qualification_basis": []
+    },
+    {
+      "player": "Parker Washington",
+      "player_id": "00-0038606",
+      "position": "WR",
+      "team": "JAX",
+      "market_type": "Receiving Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 16
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 124
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 98
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 83
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 87
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 115
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 145
+        }
+      ],
+      "market": {
+        "line": 63.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "denominator": 10
+        }
+      ],
+      "p16": 16.16,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10",
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Parker Washington",
+      "player_id": "00-0038606",
+      "position": "WR",
+      "team": "JAX",
+      "market_type": "Receptions",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 6
+        }
+      ],
+      "market": {
+        "line": 4.5,
+        "over_odds": "-102",
+        "under_odds": "-130",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 1,
+          "denominator": 10
+        }
+      ],
+      "p16": 1.04,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10",
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Jakobi Meyers",
+      "player_id": "00-0034960",
+      "position": "WR",
+      "team": "JAX",
+      "market_type": "Receiving Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 24
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 83
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 28
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 44
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 39
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 45
+        }
+      ],
+      "market": {
+        "line": 40.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 30.08,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Jakobi Meyers",
+      "player_id": "00-0034960",
+      "position": "WR",
+      "team": "JAX",
+      "market_type": "Receptions",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 4
+        }
+      ],
+      "market": {
+        "line": 3.5,
+        "over_odds": "116",
+        "under_odds": "-154",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 2.04,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Brian Thomas Jr.",
+      "player_id": "00-0039893",
+      "position": "WR",
+      "team": "JAX",
+      "market_type": "Receiving Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 12
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 17
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 49
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 39
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 18
+        }
+      ],
+      "market": {
+        "line": 10.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 12.2,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10"
+      ]
+    },
+    {
+      "player": "Brian Thomas Jr.",
+      "player_id": "00-0039893",
+      "position": "WR",
+      "team": "JAX",
+      "market_type": "Receptions",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 2
+        }
+      ],
+      "market": {
+        "line": 1.5,
+        "over_odds": "158",
+        "under_odds": "-215",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 1.04,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10"
+      ]
+    },
+    {
+      "player": "Zay Flowers",
+      "player_id": "00-0039064",
+      "position": "WR",
+      "team": "BAL",
+      "market_type": "Receiving Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 137
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 66
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 53
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 118
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "value": 84
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BAL_IND",
+          "value": 150
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_BAL_PIT",
+          "value": 138
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "value": 30
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "value": 84
+        }
+      ],
+      "market": {
+        "line": 45.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 8,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 4,
+          "denominator": 10
+        }
+      ],
+      "p16": 46.28,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10",
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Zay Flowers",
+      "player_id": "00-0039064",
+      "position": "WR",
+      "team": "BAL",
+      "market_type": "Receptions",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BAL_IND",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_BAL_PIT",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "value": 7
+        }
+      ],
+      "market": {
+        "line": 4.5,
+        "over_odds": "140",
+        "under_odds": "-188",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 3,
+          "denominator": 10
+        }
+      ],
+      "p16": 3.04,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10",
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Rashod Bateman",
+      "player_id": "00-0036550",
+      "position": "WR",
+      "team": "BAL",
+      "market_type": "Receiving Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 22
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 62
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 46
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "value": 88
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BAL_IND",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "value": 0
+        }
+      ],
+      "market": {
+        "line": 14.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 0,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10"
+      ]
+    },
+    {
+      "player": "Rashod Bateman",
+      "player_id": "00-0036550",
+      "position": "WR",
+      "team": "BAL",
+      "market_type": "Receptions",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BAL_IND",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "value": 0
+        }
+      ],
+      "market": {
+        "line": 1.5,
+        "over_odds": "-106",
+        "under_odds": "-125",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 0,
+      "p16_status": "available",
+      "qualification": "DOES NOT QUALIFY",
+      "qualification_basis": []
+    },
+    {
+      "player": "Ja'Kobi Lane",
+      "player_id": "00-0040870",
+      "position": "WR",
+      "team": "BAL",
+      "market_type": "Receiving Yards",
+      "historical_games_available": 4,
+      "l10": null,
+      "market": {
+        "line": 16.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": null,
+      "ladder": null,
+      "p16": null,
+      "p16_status": "unavailable — 4 games, requires 20",
+      "qualification": "UNAVAILABLE — fewer than 10 games",
+      "qualification_basis": []
+    },
+    {
+      "player": "Ja'Kobi Lane",
+      "player_id": "00-0040870",
+      "position": "WR",
+      "team": "BAL",
+      "market_type": "Receptions",
+      "historical_games_available": 4,
+      "l10": null,
+      "market": {
+        "line": 1.5,
+        "over_odds": "-122",
+        "under_odds": "-108",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": null,
+      "ladder": null,
+      "p16": null,
+      "p16_status": "unavailable — 4 games, requires 20",
+      "qualification": "UNAVAILABLE — fewer than 10 games",
+      "qualification_basis": []
+    },
+    {
+      "player": "Brenton Strange",
+      "player_id": "00-0038935",
+      "position": "TE",
+      "team": "JAX",
+      "market_type": "Receiving Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 55
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 68
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 95
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 32
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 17
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 23
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 52
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 54
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 39
+        }
+      ],
+      "market": {
+        "line": 35.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 23.12,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10",
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Brenton Strange",
+      "player_id": "00-0038935",
+      "position": "TE",
+      "team": "JAX",
+      "market_type": "Receptions",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_JAX_IND",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_JAX_DEN",
+          "value": 5
+        }
+      ],
+      "market": {
+        "line": 3.5,
+        "over_odds": "-122",
+        "under_odds": "-108",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 2,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Fixed ladder ≥8/10"
+      ]
+    },
+    {
+      "player": "Mark Andrews",
+      "player_id": "00-0034753",
+      "position": "TE",
+      "team": "BAL",
+      "market_type": "Receiving Yards",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 14
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 23
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 28
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 27
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "value": 24
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "value": 49
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BAL_IND",
+          "value": 49
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_BAL_PIT",
+          "value": 14
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "value": 28
+        }
+      ],
+      "market": {
+        "line": 18.5,
+        "over_odds": "-114",
+        "under_odds": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 7,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 14,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10"
+      ]
+    },
+    {
+      "player": "Mark Andrews",
+      "player_id": "00-0034753",
+      "position": "TE",
+      "team": "BAL",
+      "market_type": "Receptions",
+      "historical_games_available": 20,
+      "l10": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BAL_IND",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_BAL_PIT",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "value": 4
+        }
+      ],
+      "market": {
+        "line": 2.5,
+        "over_odds": "-130",
+        "under_odds": "-102",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": {
+        "hits": 8,
+        "denominator": 10
+      },
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "p16": 2,
+      "p16_status": "available",
+      "qualification": "QUALIFY",
+      "qualification_basis": [
+        "Market HR ≥6/10",
+        "Fixed ladder ≥8/10"
+      ]
+    }
+  ]
+}
