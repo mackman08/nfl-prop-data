@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 150,
-      "Receiving Yards": 406,
-      "Receptions": 196,
-      "Rushing Yards": 205
+      "Passing Yards": 148,
+      "Receiving Yards": 363,
+      "Receptions": 202,
+      "Rushing Yards": 153
     },
     "FanDuel": {
-      "Passing Yards": 8,
-      "Receiving Yards": 37,
-      "Receptions": 36,
-      "Rushing Yards": 19
+      "Passing Yards": 7,
+      "Receiving Yards": 29,
+      "Receptions": 23,
+      "Rushing Yards": 15
     }
   },
   "core_markets_present": [
@@ -22,6 +22,7 @@
   "duplicates": 0,
   "event_ids": [
     "34118031",
+    "34118128",
     "34118164",
     "34118221",
     "35603243",
@@ -31,6 +32,7 @@
   ],
   "games": [
     "CHI Bears @ SEA Seahawks",
+    "CIN Bengals @ ATL Falcons",
     "Chicago Bears @ Seattle Seahawks",
     "Cincinnati Bengals @ Atlanta Falcons",
     "GB Packers @ NE Patriots",
@@ -39,20 +41,20 @@
     "Jacksonville Jaguars @ Baltimore Ravens"
   ],
   "markets": {
-    "Alt Passing Yards": 76,
-    "Alt Receiving Yards": 365,
-    "Alt Receptions": 230,
-    "Alt Rushing Yards": 177,
-    "Passing Yards": 158,
-    "Receiving Yards": 443,
-    "Receptions": 232,
-    "Rush + Receiving Yards": 114,
-    "Rushing Yards": 224
+    "Alt Passing Yards": 64,
+    "Alt Receiving Yards": 283,
+    "Alt Receptions": 180,
+    "Alt Rushing Yards": 106,
+    "Passing Yards": 155,
+    "Receiving Yards": 392,
+    "Receptions": 225,
+    "Rush + Receiving Yards": 72,
+    "Rushing Yards": 168
   },
   "sportsbooks": {
-    "DraftKings": 1071,
-    "FanDuel": 948
+    "DraftKings": 938,
+    "FanDuel": 707
   },
-  "total_rows": 2019,
+  "total_rows": 1645,
   "validation_mode": "slate-size-agnostic"
 }
