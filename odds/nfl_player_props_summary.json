@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 330,
-      "Receiving Yards": 685,
-      "Receptions": 373,
-      "Rushing Yards": 266
+      "Passing Yards": 613,
+      "Receiving Yards": 1239,
+      "Receptions": 634,
+      "Rushing Yards": 541
     },
     "FanDuel": {
-      "Passing Yards": 16,
-      "Receiving Yards": 59,
-      "Receptions": 59,
-      "Rushing Yards": 29
+      "Passing Yards": 28,
+      "Receiving Yards": 99,
+      "Receptions": 99,
+      "Rushing Yards": 51
     }
   },
   "core_markets_present": [
@@ -21,54 +21,80 @@
   ],
   "duplicates": 0,
   "event_ids": [
+    "34118008",
     "34118027",
     "34118046",
+    "34118050",
+    "34118068",
+    "34118070",
     "34118128",
     "34118162",
     "34118164",
     "34118167",
+    "34118198",
     "34118221",
+    "34118272",
     "35603243",
     "36244867",
+    "36244868",
+    "36244869",
     "36244870",
+    "36244871",
+    "36244872",
+    "36244873",
     "36244874",
     "36244875",
+    "36244876",
     "36244877",
+    "36244878",
     "36244879",
     "36244880"
   ],
   "games": [
+    "Arizona Cardinals @ Seattle Seahawks",
     "BUF Bills @ MIN Vikings",
     "Buffalo Bills @ Minnesota Vikings",
     "CIN Bengals @ ATL Falcons",
+    "CLE Browns @ NO Saints",
     "Cincinnati Bengals @ Atlanta Falcons",
+    "Cleveland Browns @ New Orleans Saints",
+    "DAL Cowboys @ IND Colts",
     "DEN Broncos @ CAR Panthers",
+    "DET Lions @ MIA Dolphins",
+    "Dallas Cowboys @ Indianapolis Colts",
     "Denver Broncos @ Carolina Panthers",
+    "Detroit Lions @ Miami Dolphins",
     "GB Packers @ NE Patriots",
     "Green Bay Packers @ New England Patriots",
     "HOU Texans @ LA Chargers",
     "Houston Texans @ Los Angeles Chargers",
     "JAX Jaguars @ BAL Ravens",
     "Jacksonville Jaguars @ Baltimore Ravens",
+    "LA Rams @ WAS Commanders",
+    "LV Raiders @ SF 49ers",
     "Las Vegas Raiders @ San Francisco 49ers",
+    "Los Angeles Rams @ Washington Commanders",
+    "NY Giants @ PHI Eagles",
+    "New York Giants @ Philadelphia Eagles",
+    "New York Jets @ Kansas City Chiefs",
     "TB Buccaneers @ CHI Bears",
     "Tampa Bay Buccaneers @ Chicago Bears"
   ],
   "markets": {
-    "Alt Passing Yards": 153,
-    "Alt Receiving Yards": 605,
-    "Alt Receptions": 372,
-    "Alt Rushing Yards": 259,
-    "Passing Yards": 346,
-    "Receiving Yards": 744,
-    "Receptions": 432,
-    "Rush + Receiving Yards": 123,
-    "Rushing Yards": 295
+    "Alt Passing Yards": 269,
+    "Alt Receiving Yards": 1059,
+    "Alt Receptions": 661,
+    "Alt Rushing Yards": 444,
+    "Passing Yards": 641,
+    "Receiving Yards": 1338,
+    "Receptions": 733,
+    "Rush + Receiving Yards": 210,
+    "Rushing Yards": 592
   },
   "sportsbooks": {
-    "DraftKings": 1777,
-    "FanDuel": 1552
+    "DraftKings": 3237,
+    "FanDuel": 2710
   },
-  "total_rows": 3329,
+  "total_rows": 5947,
   "validation_mode": "slate-size-agnostic"
 }
