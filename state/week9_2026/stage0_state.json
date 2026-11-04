@@ -3,6 +3,15 @@
   "season": 2026,
   "week": 9,
   "scope": "Thursday only",
+  "analysis_games": [
+    {
+      "away_team": "Jacksonville Jaguars",
+      "home_team": "Baltimore Ravens",
+      "game_date": "2026-11-05",
+      "kickoff_local": "20:15",
+      "timezone": "America/Toronto"
+    }
+  ],
   "historical_sample": {
     "label": "L10",
     "n": 10,
@@ -16,10 +25,11 @@
   },
   "model_version": "V7.2.8",
   "user_methodology_overrides": [
-    "Use P16 in place of P25 for the 20-game percentile statistic."
+    "Use the 20-game 25th percentile (P25); replace the prior P16 measure.",
+    "Prioritize candidates whose P7 statistic is above the selected alternate line; exact P7 definition is pending user clarification and must not be assumed."
   ],
   "record_count": 0,
-  "state_id": "STATE-0-W9-2026-20261103-THU-L10",
+  "state_id": "STATE-0-W9-2026-20261104-THU-L10-P25",
   "parent_state_id": null,
   "records": []
 }
