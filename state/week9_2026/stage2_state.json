@@ -11303,5 +11303,151 @@
     "detailed_current_week_context_not_performed": true,
     "stage1_state_not_modified": true,
     "stage2_candidate_narrowing_performed": true
-  }
+  },
+  "stage3_candidate_context_targets": [
+    {
+      "player": "Trevor Lawrence",
+      "market": "Passing Yards",
+      "priority": "P7 PRIORITY",
+      "context_target": {
+        "threshold": 150,
+        "historical_hr": "10/10",
+        "price": "-1450",
+        "basis": "P7 strictly above threshold",
+        "priority": "P7 PRIORITY"
+      }
+    },
+    {
+      "player": "Derrick Henry",
+      "market": "Rushing Yards",
+      "priority": "P7 PRIORITY",
+      "context_target": {
+        "threshold": 50,
+        "historical_hr": "9/10",
+        "price": "-340",
+        "basis": "P7 strictly above threshold",
+        "priority": "P7 PRIORITY"
+      }
+    },
+    {
+      "player": "Parker Washington",
+      "market": "Receiving Yards",
+      "priority": "SECONDARY — 8/10+ ALTERNATE HR",
+      "context_target": {
+        "threshold": 40,
+        "historical_hr": "8/10",
+        "price": "-350",
+        "basis": "Highest available alternate with at least 8/10 L10 hits",
+        "priority": "SECONDARY"
+      }
+    },
+    {
+      "player": "Parker Washington",
+      "market": "Receptions",
+      "priority": "SECONDARY — 8/10+ ALTERNATE HR",
+      "context_target": {
+        "threshold": 3,
+        "historical_hr": "8/10",
+        "price": "-670",
+        "basis": "Highest available alternate with at least 8/10 L10 hits",
+        "priority": "SECONDARY"
+      }
+    },
+    {
+      "player": "Jakobi Meyers",
+      "market": "Receiving Yards",
+      "priority": "P7 PRIORITY",
+      "context_target": {
+        "threshold": 25,
+        "historical_hr": "9/10",
+        "price": "-310",
+        "basis": "P7 strictly above threshold",
+        "priority": "P7 PRIORITY"
+      }
+    },
+    {
+      "player": "Jakobi Meyers",
+      "market": "Receptions",
+      "priority": "SECONDARY — 8/10+ ALTERNATE HR",
+      "context_target": {
+        "threshold": 2,
+        "historical_hr": "9/10",
+        "price": "-750",
+        "basis": "Highest available alternate with at least 8/10 L10 hits",
+        "priority": "SECONDARY"
+      }
+    },
+    {
+      "player": "Zay Flowers",
+      "market": "Receiving Yards",
+      "priority": "SECONDARY — 8/10+ ALTERNATE HR",
+      "context_target": {
+        "threshold": 50,
+        "historical_hr": "8/10",
+        "price": "-106",
+        "basis": "Highest available alternate with at least 8/10 L10 hits",
+        "priority": "SECONDARY"
+      }
+    },
+    {
+      "player": "Zay Flowers",
+      "market": "Receptions",
+      "priority": "P7 PRIORITY",
+      "context_target": {
+        "threshold": 2,
+        "historical_hr": "9/10",
+        "price": "-1800",
+        "basis": "P7 strictly above threshold",
+        "priority": "P7 PRIORITY"
+      }
+    },
+    {
+      "player": "Brenton Strange",
+      "market": "Receiving Yards",
+      "priority": "P7 PRIORITY",
+      "context_target": {
+        "threshold": 15,
+        "historical_hr": "10/10",
+        "price": "-670",
+        "basis": "P7 strictly above threshold",
+        "priority": "P7 PRIORITY"
+      }
+    },
+    {
+      "player": "Brenton Strange",
+      "market": "Receptions",
+      "priority": "SECONDARY — 8/10+ ALTERNATE HR",
+      "context_target": {
+        "threshold": 2,
+        "historical_hr": "10/10",
+        "price": "-1200",
+        "basis": "Highest available alternate with at least 8/10 L10 hits",
+        "priority": "SECONDARY"
+      }
+    },
+    {
+      "player": "Mark Andrews",
+      "market": "Receiving Yards",
+      "priority": "P7 PRIORITY",
+      "context_target": {
+        "threshold": 5,
+        "historical_hr": "9/10",
+        "price": "-750",
+        "basis": "P7 strictly above threshold",
+        "priority": "P7 PRIORITY"
+      }
+    },
+    {
+      "player": "Mark Andrews",
+      "market": "Receptions",
+      "priority": "SECONDARY — 8/10+ ALTERNATE HR",
+      "context_target": {
+        "threshold": 3,
+        "historical_hr": "8/10",
+        "price": "-130",
+        "basis": "Highest available alternate with at least 8/10 L10 hits",
+        "priority": "SECONDARY"
+      }
+    }
+  ]
 }
