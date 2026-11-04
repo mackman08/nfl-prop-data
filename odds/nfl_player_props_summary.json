@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 277,
-      "Receiving Yards": 554,
-      "Receptions": 311,
-      "Rushing Yards": 191
+      "Passing Yards": 330,
+      "Receiving Yards": 685,
+      "Receptions": 373,
+      "Rushing Yards": 266
     },
     "FanDuel": {
-      "Passing Yards": 11,
-      "Receiving Yards": 48,
-      "Receptions": 48,
-      "Rushing Yards": 19
+      "Passing Yards": 16,
+      "Receiving Yards": 59,
+      "Receptions": 59,
+      "Rushing Yards": 29
     }
   },
   "core_markets_present": [
@@ -26,15 +26,20 @@
     "34118128",
     "34118162",
     "34118164",
+    "34118167",
     "34118221",
     "35603243",
     "36244867",
     "36244870",
     "36244874",
+    "36244875",
     "36244877",
-    "36244879"
+    "36244879",
+    "36244880"
   ],
   "games": [
+    "BUF Bills @ MIN Vikings",
+    "Buffalo Bills @ Minnesota Vikings",
     "CIN Bengals @ ATL Falcons",
     "Cincinnati Bengals @ Atlanta Falcons",
     "DEN Broncos @ CAR Panthers",
@@ -45,24 +50,25 @@
     "Houston Texans @ Los Angeles Chargers",
     "JAX Jaguars @ BAL Ravens",
     "Jacksonville Jaguars @ Baltimore Ravens",
+    "Las Vegas Raiders @ San Francisco 49ers",
     "TB Buccaneers @ CHI Bears",
     "Tampa Bay Buccaneers @ Chicago Bears"
   ],
   "markets": {
-    "Alt Passing Yards": 105,
-    "Alt Receiving Yards": 478,
-    "Alt Receptions": 292,
-    "Alt Rushing Yards": 162,
-    "Passing Yards": 288,
-    "Receiving Yards": 602,
-    "Receptions": 359,
-    "Rush + Receiving Yards": 99,
-    "Rushing Yards": 210
+    "Alt Passing Yards": 153,
+    "Alt Receiving Yards": 605,
+    "Alt Receptions": 372,
+    "Alt Rushing Yards": 259,
+    "Passing Yards": 346,
+    "Receiving Yards": 744,
+    "Receptions": 432,
+    "Rush + Receiving Yards": 123,
+    "Rushing Yards": 295
   },
   "sportsbooks": {
-    "DraftKings": 1432,
-    "FanDuel": 1163
+    "DraftKings": 1777,
+    "FanDuel": 1552
   },
-  "total_rows": 2595,
+  "total_rows": 3329,
   "validation_mode": "slate-size-agnostic"
 }
