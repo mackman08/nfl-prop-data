@@ -26,10 +26,16 @@
   "model_version": "V7.2.8",
   "user_methodology_overrides": [
     "Use the 20-game 25th percentile (P25); replace the prior P16 measure.",
-    "Prioritize candidates whose P7 statistic is above the selected alternate line; exact P7 definition is pending user clarification and must not be assumed."
+    "Prioritize alternate lines where the player's 7th percentile (P7), calculated from the same 20-game historical distribution used for P25, is above the selected alternate line."
   ],
   "record_count": 0,
   "state_id": "STATE-0-W9-2026-20261104-THU-L10-P25",
   "parent_state_id": null,
-  "records": []
+  "records": [],
+  "p7_definition": {
+    "statistic": "7th percentile",
+    "sample_size": 20,
+    "sample_basis": "20 most recent qualifying completed regular-season games before the Week 9 historical cutoff",
+    "prioritization_rule": "Prioritize candidates when P7 is above the selected alternate line."
+  }
 }
