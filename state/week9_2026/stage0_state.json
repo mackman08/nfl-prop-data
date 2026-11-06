@@ -2,20 +2,12 @@
   "stage": 0,
   "season": 2026,
   "week": 9,
-  "scope": "Thursday only",
-  "analysis_games": [
-    {
-      "away_team": "Jacksonville Jaguars",
-      "home_team": "Baltimore Ravens",
-      "game_date": "2026-11-05",
-      "kickoff_local": "20:15",
-      "timezone": "America/Toronto"
-    }
-  ],
+  "scope": "Sunday only",
+  "analysis_games_scope": "All NFL Week 9 regular-season games scheduled Sunday, November 8, 2026; exclude Thursday November 5 and Monday November 9.",
   "historical_sample": {
     "label": "L10",
     "n": 10,
-    "definition": "10 most recent completed qualifying regular-season games"
+    "definition": "10 most recent completed qualifying regular-season games before the historical cutoff."
   },
   "historical_cutoff": {
     "rule": "Completion of the final scheduled game of Week 8",
@@ -23,19 +15,32 @@
     "cutoff_date": "2026-11-02",
     "exact_completion_time": "Not independently verified"
   },
+  "historical_data_source": {
+    "repository": "mackman08/nfl-prop-data",
+    "branch": "main",
+    "path": "data/nfl_prop_model.txt",
+    "record_type": "Actual individual player game logs"
+  },
+  "current_sportsbook_source": {
+    "repository": "mackman08/nfl-prop-data",
+    "branch": "main",
+    "path": "odds/nfl_player_props_latest.csv",
+    "primary": "FanDuel",
+    "fallback": "DraftKings only where FanDuel data is unavailable"
+  },
   "model_version": "V7.2.8",
   "user_methodology_overrides": [
-    "Use the 20-game 25th percentile (P25); replace the prior P16 measure.",
-    "Prioritize alternate lines where the player's 7th percentile (P7), calculated from the same 20-game historical distribution used for P25, is above the selected alternate line."
+    "Use the 20-game 25th percentile (P25) instead of the 16th percentile measure."
   ],
-  "record_count": 0,
-  "state_id": "STATE-0-W9-2026-20261104-THU-L10-P25",
-  "parent_state_id": null,
-  "records": [],
-  "p7_definition": {
-    "statistic": "7th percentile",
+  "percentile_definition": {
+    "statistic": "25th percentile (P25)",
     "sample_size": 20,
     "sample_basis": "20 most recent qualifying completed regular-season games before the Week 9 historical cutoff",
-    "prioritization_rule": "Prioritize candidates when P7 is above the selected alternate line."
-  }
+    "calculation": "Standard linear interpolation",
+    "independence": "P25 is calculated independently of the locked L10 sample."
+  },
+  "record_count": 0,
+  "state_id": "STATE-0-W9-2026-20261106-SUN-L10-P25",
+  "parent_state_id": null,
+  "records": []
 }
