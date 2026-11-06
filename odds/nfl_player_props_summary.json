@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 735,
-      "Receiving Yards": 1745,
-      "Receptions": 879,
-      "Rushing Yards": 896
+      "Passing Yards": 707,
+      "Receiving Yards": 1973,
+      "Receptions": 1005,
+      "Rushing Yards": 939
     },
     "FanDuel": {
-      "Passing Yards": 29,
-      "Receiving Yards": 137,
-      "Receptions": 136,
-      "Rushing Yards": 74
+      "Passing Yards": 28,
+      "Receiving Yards": 144,
+      "Receptions": 143,
+      "Rushing Yards": 73
     }
   },
   "core_markets_present": [
@@ -30,7 +30,6 @@
     "34118070",
     "34118128",
     "34118162",
-    "34118164",
     "34118167",
     "34118198",
     "34118221",
@@ -40,7 +39,6 @@
     "36244867",
     "36244868",
     "36244869",
-    "36244870",
     "36244871",
     "36244872",
     "36244873",
@@ -71,8 +69,6 @@
     "Green Bay Packers @ New England Patriots",
     "HOU Texans @ LA Chargers",
     "Houston Texans @ Los Angeles Chargers",
-    "JAX Jaguars @ BAL Ravens",
-    "Jacksonville Jaguars @ Baltimore Ravens",
     "LA Rams @ WAS Commanders",
     "LV Raiders @ SF 49ers",
     "Las Vegas Raiders @ San Francisco 49ers",
@@ -85,20 +81,20 @@
     "Tampa Bay Buccaneers @ Chicago Bears"
   ],
   "markets": {
-    "Alt Passing Yards": 274,
-    "Alt Receiving Yards": 1359,
-    "Alt Receptions": 838,
-    "Alt Rushing Yards": 654,
-    "Passing Yards": 764,
-    "Receiving Yards": 1882,
-    "Receptions": 1015,
-    "Rush + Receiving Yards": 442,
-    "Rushing Yards": 970
+    "Alt Passing Yards": 270,
+    "Alt Receiving Yards": 1409,
+    "Alt Receptions": 879,
+    "Alt Rushing Yards": 655,
+    "Passing Yards": 735,
+    "Receiving Yards": 2117,
+    "Receptions": 1148,
+    "Rush + Receiving Yards": 494,
+    "Rushing Yards": 1012
   },
   "sportsbooks": {
-    "DraftKings": 4697,
-    "FanDuel": 3501
+    "DraftKings": 5118,
+    "FanDuel": 3601
   },
-  "total_rows": 8198,
+  "total_rows": 8719,
   "validation_mode": "slate-size-agnostic"
 }
