@@ -28,9 +28,11 @@
     "primary": "FanDuel",
     "fallback": "DraftKings only where FanDuel data is unavailable"
   },
-  "model_version": "V7.2.8",
+  "model_version": "V7.2.8 with user-directed methodology overrides",
   "user_methodology_overrides": [
-    "Use the 20-game 25th percentile (P25) instead of the 16th percentile measure."
+    "Replace the 7th-percentile statistic (P7) with the 20-game 25th percentile (P25).",
+    "Include P25 as an explicit reference in the Stage 1 ladder output (Step 2), alongside the fixed ladder hit rates.",
+    "For Stage 2 output ordering, group players by position, then order by proximity of the relevant alternate threshold to the current main-market line. Within each position, candidates whose percentile reference is above the market line appear first. Because P25 replaces P7, use P25 for this ordering."
   ],
   "percentile_definition": {
     "statistic": "25th percentile (P25)",
@@ -40,7 +42,7 @@
     "independence": "P25 is calculated independently of the locked L10 sample."
   },
   "record_count": 0,
-  "state_id": "STATE-0-W9-2026-20261106-SUN-L10-P25",
+  "state_id": "STATE-0-W9-2026-20261106-SUN-L10-P25-SORT",
   "parent_state_id": null,
   "records": []
 }
