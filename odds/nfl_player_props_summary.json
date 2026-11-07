@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 712,
-      "Receiving Yards": 2103,
-      "Receptions": 1057,
-      "Rushing Yards": 993
+      "Passing Yards": 710,
+      "Receiving Yards": 2129,
+      "Receptions": 1055,
+      "Rushing Yards": 976
     },
     "FanDuel": {
-      "Passing Yards": 28,
-      "Receiving Yards": 150,
-      "Receptions": 149,
-      "Rushing Yards": 75
+      "Passing Yards": 27,
+      "Receiving Yards": 151,
+      "Receptions": 150,
+      "Rushing Yards": 74
     }
   },
   "core_markets_present": [
@@ -81,20 +81,20 @@
     "Tampa Bay Buccaneers @ Chicago Bears"
   ],
   "markets": {
-    "Alt Passing Yards": 267,
-    "Alt Receiving Yards": 1459,
-    "Alt Receptions": 912,
-    "Alt Rushing Yards": 679,
-    "Passing Yards": 740,
-    "Receiving Yards": 2253,
-    "Receptions": 1206,
-    "Rush + Receiving Yards": 508,
-    "Rushing Yards": 1068
+    "Alt Passing Yards": 256,
+    "Alt Receiving Yards": 1489,
+    "Alt Receptions": 930,
+    "Alt Rushing Yards": 666,
+    "Passing Yards": 737,
+    "Receiving Yards": 2280,
+    "Receptions": 1205,
+    "Rush + Receiving Yards": 528,
+    "Rushing Yards": 1050
   },
   "sportsbooks": {
-    "DraftKings": 5373,
-    "FanDuel": 3719
+    "DraftKings": 5398,
+    "FanDuel": 3743
   },
-  "total_rows": 9092,
+  "total_rows": 9141,
   "validation_mode": "slate-size-agnostic"
 }
