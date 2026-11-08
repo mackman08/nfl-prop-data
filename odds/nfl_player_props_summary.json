@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 713,
-      "Receiving Yards": 2265,
-      "Receptions": 1131,
-      "Rushing Yards": 1026
+      "Passing Yards": 449,
+      "Receiving Yards": 2045,
+      "Receptions": 1036,
+      "Rushing Yards": 875
     },
     "FanDuel": {
-      "Passing Yards": 28,
-      "Receiving Yards": 168,
-      "Receptions": 167,
-      "Rushing Yards": 78
+      "Passing Yards": 26,
+      "Receiving Yards": 163,
+      "Receptions": 77,
+      "Rushing Yards": 72
     }
   },
   "core_markets_present": [
@@ -28,14 +28,12 @@
     "34118050",
     "34118068",
     "34118070",
-    "34118128",
     "34118162",
     "34118167",
     "34118198",
     "34118221",
     "34118259",
     "34118272",
-    "35603243",
     "36244867",
     "36244868",
     "36244869",
@@ -55,9 +53,7 @@
     "Arizona Cardinals @ Seattle Seahawks",
     "BUF Bills @ MIN Vikings",
     "Buffalo Bills @ Minnesota Vikings",
-    "CIN Bengals @ ATL Falcons",
     "CLE Browns @ NO Saints",
-    "Cincinnati Bengals @ Atlanta Falcons",
     "Cleveland Browns @ New Orleans Saints",
     "DAL Cowboys @ IND Colts",
     "DEN Broncos @ CAR Panthers",
@@ -81,20 +77,20 @@
     "Tampa Bay Buccaneers @ Chicago Bears"
   ],
   "markets": {
-    "Alt Passing Yards": 266,
-    "Alt Receiving Yards": 1684,
-    "Alt Receptions": 1039,
-    "Alt Rushing Yards": 708,
-    "Passing Yards": 741,
-    "Receiving Yards": 2433,
-    "Receptions": 1298,
-    "Rush + Receiving Yards": 582,
-    "Rushing Yards": 1104
+    "Alt Passing Yards": 227,
+    "Alt Receiving Yards": 1519,
+    "Alt Receptions": 925,
+    "Alt Rushing Yards": 612,
+    "Passing Yards": 475,
+    "Receiving Yards": 2208,
+    "Receptions": 1113,
+    "Rush + Receiving Yards": 546,
+    "Rushing Yards": 947
   },
   "sportsbooks": {
-    "DraftKings": 5717,
-    "FanDuel": 4138
+    "DraftKings": 4951,
+    "FanDuel": 3621
   },
-  "total_rows": 9855,
+  "total_rows": 8572,
   "validation_mode": "slate-size-agnostic"
 }
