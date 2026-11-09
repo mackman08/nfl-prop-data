@@ -70,11 +70,6 @@
         "team": "BUF"
       },
       {
-        "player": "Ray Davis",
-        "position": "RB",
-        "team": "BUF"
-      },
-      {
         "player": "Jordan Mason",
         "position": "RB",
         "team": "MIN"
@@ -110,7 +105,7 @@
         "team": "MIN"
       },
       {
-        "player": "Tai Felton",
+        "player": "Myles Price",
         "position": "WR",
         "team": "MIN"
       },
@@ -125,6 +120,12 @@
         "team": "MIN"
       }
     ],
+    "role_basis": {
+      "QB": "Named starters: Josh Allen and Carson Wentz",
+      "RB": "Primary/secondary backs with meaningful expected usage: James Cook, Ty Johnson, Jordan Mason and Aaron Jones",
+      "WR": "Three expected WR roles: Bills DJ Moore, Khalil Shakir, Keon Coleman; Vikings Justin Jefferson, Jordan Addison and Myles Price as next man at WR3 while Jauan Jennings is out",
+      "TE": "Top expected TE: Dalton Kincaid and T.J. Hockenson"
+    },
     "exclusions": [
       {
         "player": "Joshua Palmer",
@@ -139,22 +140,33 @@
       {
         "player": "Jauan Jennings",
         "team": "MIN",
-        "reason": "Ruled out; calf"
+        "reason": "Ruled out; calf; Myles Price is next at WR3"
+      },
+      {
+        "player": "Ray Davis",
+        "team": "BUF",
+        "reason": "RB3 with limited expected touch volume; not included as a meaningful secondary back"
+      },
+      {
+        "player": "Tai Felton",
+        "team": "MIN",
+        "reason": "Depth-chart backup to Justin Jefferson rather than one of the three expected active WR roles"
       }
     ],
     "evidence_urls": [
       "https://www.nfl.com/news/nfl-week-9-injury-report-2026-season",
       "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-vikings-week-9",
       "https://www.vikings.com/news/bills-injury-report-week-9-2026-nfl-season",
-      "https://www.fsroundup.com/nfl/depth-charts/buffalo-bills"
+      "https://www.vikings.com/team/depth-chart",
+      "https://www.nbcsports.com/nfl/buffalo-bills/depth-chart"
     ]
   },
   "qualification_rule": "Current Market HR >= 6/10 OR at least one fixed ladder threshold >= 8/10",
-  "screened_player_market_records": 23,
-  "l10_available_records": 22,
-  "current_fanduel_main_market_records": 20,
+  "screened_player_market_records": 22,
+  "l10_available_records": 21,
+  "current_fanduel_main_market_records": 19,
   "qualifying_record_count": 10,
-  "record_count": 23,
+  "record_count": 22,
   "records": [
     {
       "player": "Josh Allen",
@@ -1204,316 +1216,6 @@
         {
           "threshold": 100,
           "hits": 0,
-          "denominator": 10
-        }
-      ],
-      "qualifying": false,
-      "qualification_basis": null
-    },
-    {
-      "player": "Ray Davis",
-      "player_id": "00-0039875",
-      "position": "RB",
-      "team": "BUF",
-      "market": "Rushing Yards",
-      "historical_games_available": 20,
-      "l10_available": true,
-      "l10_observations": [
-        {
-          "season": 2026,
-          "week": 8,
-          "game_id": "2026_08_BAL_BUF",
-          "team": "BUF",
-          "opponent_team": "BAL",
-          "value": 30
-        },
-        {
-          "season": 2026,
-          "week": 6,
-          "game_id": "2026_06_BUF_LV",
-          "team": "BUF",
-          "opponent_team": "LV",
-          "value": 4
-        },
-        {
-          "season": 2026,
-          "week": 5,
-          "game_id": "2026_05_BUF_LA",
-          "team": "BUF",
-          "opponent_team": "LA",
-          "value": 2
-        },
-        {
-          "season": 2026,
-          "week": 4,
-          "game_id": "2026_04_NE_BUF",
-          "team": "BUF",
-          "opponent_team": "NE",
-          "value": 3
-        },
-        {
-          "season": 2026,
-          "week": 2,
-          "game_id": "2026_02_DET_BUF",
-          "team": "BUF",
-          "opponent_team": "DET",
-          "value": 0
-        },
-        {
-          "season": 2026,
-          "week": 1,
-          "game_id": "2026_01_BUF_HOU",
-          "team": "BUF",
-          "opponent_team": "HOU",
-          "value": 3
-        },
-        {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_NYJ_BUF",
-          "team": "BUF",
-          "opponent_team": "NYJ",
-          "value": 151
-        },
-        {
-          "season": 2025,
-          "week": 17,
-          "game_id": "2025_17_PHI_BUF",
-          "team": "BUF",
-          "opponent_team": "PHI",
-          "value": 4
-        },
-        {
-          "season": 2025,
-          "week": 16,
-          "game_id": "2025_16_BUF_CLE",
-          "team": "BUF",
-          "opponent_team": "CLE",
-          "value": 14
-        },
-        {
-          "season": 2025,
-          "week": 15,
-          "game_id": "2025_15_BUF_NE",
-          "team": "BUF",
-          "opponent_team": "NE",
-          "value": 0
-        }
-      ],
-      "p15_observations": [
-        {
-          "season": 2026,
-          "week": 8,
-          "game_id": "2026_08_BAL_BUF",
-          "team": "BUF",
-          "opponent_team": "BAL",
-          "value": 30
-        },
-        {
-          "season": 2026,
-          "week": 6,
-          "game_id": "2026_06_BUF_LV",
-          "team": "BUF",
-          "opponent_team": "LV",
-          "value": 4
-        },
-        {
-          "season": 2026,
-          "week": 5,
-          "game_id": "2026_05_BUF_LA",
-          "team": "BUF",
-          "opponent_team": "LA",
-          "value": 2
-        },
-        {
-          "season": 2026,
-          "week": 4,
-          "game_id": "2026_04_NE_BUF",
-          "team": "BUF",
-          "opponent_team": "NE",
-          "value": 3
-        },
-        {
-          "season": 2026,
-          "week": 2,
-          "game_id": "2026_02_DET_BUF",
-          "team": "BUF",
-          "opponent_team": "DET",
-          "value": 0
-        },
-        {
-          "season": 2026,
-          "week": 1,
-          "game_id": "2026_01_BUF_HOU",
-          "team": "BUF",
-          "opponent_team": "HOU",
-          "value": 3
-        },
-        {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_NYJ_BUF",
-          "team": "BUF",
-          "opponent_team": "NYJ",
-          "value": 151
-        },
-        {
-          "season": 2025,
-          "week": 17,
-          "game_id": "2025_17_PHI_BUF",
-          "team": "BUF",
-          "opponent_team": "PHI",
-          "value": 4
-        },
-        {
-          "season": 2025,
-          "week": 16,
-          "game_id": "2025_16_BUF_CLE",
-          "team": "BUF",
-          "opponent_team": "CLE",
-          "value": 14
-        },
-        {
-          "season": 2025,
-          "week": 15,
-          "game_id": "2025_15_BUF_NE",
-          "team": "BUF",
-          "opponent_team": "NE",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 14,
-          "game_id": "2025_14_CIN_BUF",
-          "team": "BUF",
-          "opponent_team": "CIN",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 13,
-          "game_id": "2025_13_BUF_PIT",
-          "team": "BUF",
-          "opponent_team": "PIT",
-          "value": 62
-        },
-        {
-          "season": 2025,
-          "week": 12,
-          "game_id": "2025_12_BUF_HOU",
-          "team": "BUF",
-          "opponent_team": "HOU",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 11,
-          "game_id": "2025_11_TB_BUF",
-          "team": "BUF",
-          "opponent_team": "TB",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 10,
-          "game_id": "2025_10_BUF_MIA",
-          "team": "BUF",
-          "opponent_team": "MIA",
-          "value": -2
-        },
-        {
-          "season": 2025,
-          "week": 9,
-          "game_id": "2025_09_KC_BUF",
-          "team": "BUF",
-          "opponent_team": "KC",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 8,
-          "game_id": "2025_08_BUF_CAR",
-          "team": "BUF",
-          "opponent_team": "CAR",
-          "value": 16
-        },
-        {
-          "season": 2025,
-          "week": 6,
-          "game_id": "2025_06_BUF_ATL",
-          "team": "BUF",
-          "opponent_team": "ATL",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 5,
-          "game_id": "2025_05_NE_BUF",
-          "team": "BUF",
-          "opponent_team": "NE",
-          "value": 1
-        },
-        {
-          "season": 2025,
-          "week": 4,
-          "game_id": "2025_04_NO_BUF",
-          "team": "BUF",
-          "opponent_team": "NO",
-          "value": 3
-        }
-      ],
-      "current_market": {
-        "line": 5.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel",
-        "game": "Buffalo Bills @ Minnesota Vikings",
-        "event_id": "36244880"
-      },
-      "market_hr": {
-        "hits": 3,
-        "denominator": 10
-      },
-      "p15": {
-        "value": 0,
-        "sample_size": 20,
-        "available": true,
-        "method": "standard linear interpolation"
-      },
-      "ladder_results": [
-        {
-          "threshold": 20,
-          "hits": 2,
-          "denominator": 10
-        },
-        {
-          "threshold": 30,
-          "hits": 2,
-          "denominator": 10
-        },
-        {
-          "threshold": 40,
-          "hits": 1,
-          "denominator": 10
-        },
-        {
-          "threshold": 50,
-          "hits": 1,
-          "denominator": 10
-        },
-        {
-          "threshold": 60,
-          "hits": 1,
-          "denominator": 10
-        },
-        {
-          "threshold": 75,
-          "hits": 1,
-          "denominator": 10
-        },
-        {
-          "threshold": 100,
-          "hits": 1,
           "denominator": 10
         }
       ],
@@ -5259,14 +4961,22 @@
       "qualification_basis": null
     },
     {
-      "player": "Tai Felton",
-      "player_id": "00-0040154",
+      "player": "Myles Price",
+      "player_id": "00-0040506",
       "position": "WR",
       "team": "MIN",
       "market": "Receiving Yards",
-      "historical_games_available": 16,
+      "historical_games_available": 20,
       "l10_available": true,
       "l10_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_MIN_DET",
+          "team": "MIN",
+          "opponent_team": "DET",
+          "value": 0
+        },
         {
           "season": 2026,
           "week": 7,
@@ -5281,7 +4991,7 @@
           "game_id": "2026_05_MIN_NO",
           "team": "MIN",
           "opponent_team": "NO",
-          "value": 27
+          "value": 20
         },
         {
           "season": 2026,
@@ -5289,7 +4999,7 @@
           "game_id": "2026_04_MIA_MIN",
           "team": "MIN",
           "opponent_team": "MIA",
-          "value": 14
+          "value": 6
         },
         {
           "season": 2026,
@@ -5300,11 +5010,27 @@
           "value": 0
         },
         {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_GB_MIN",
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "MIN",
+          "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
           "team": "MIN",
           "opponent_team": "GB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DET_MIN",
+          "team": "MIN",
+          "opponent_team": "DET",
           "value": 0
         },
         {
@@ -5313,44 +5039,28 @@
           "game_id": "2025_16_MIN_NYG",
           "team": "MIN",
           "opponent_team": "NYG",
-          "value": 6
-        },
-        {
-          "season": 2025,
-          "week": 14,
-          "game_id": "2025_14_WAS_MIN",
-          "team": "MIN",
-          "opponent_team": "WAS",
-          "value": 10
-        },
-        {
-          "season": 2025,
-          "week": 13,
-          "game_id": "2025_13_MIN_SEA",
-          "team": "MIN",
-          "opponent_team": "SEA",
           "value": 0
         },
         {
           "season": 2025,
-          "week": 12,
-          "game_id": "2025_12_MIN_GB",
+          "week": 15,
+          "game_id": "2025_15_MIN_DAL",
           "team": "MIN",
-          "opponent_team": "GB",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 11,
-          "game_id": "2025_11_CHI_MIN",
-          "team": "MIN",
-          "opponent_team": "CHI",
+          "opponent_team": "DAL",
           "value": 0
         }
       ],
       "p15_observations": [
         {
           "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_MIN_DET",
+          "team": "MIN",
+          "opponent_team": "DET",
+          "value": 0
+        },
+        {
+          "season": 2026,
           "week": 7,
           "game_id": "2026_07_IND_MIN",
           "team": "MIN",
@@ -5363,7 +5073,7 @@
           "game_id": "2026_05_MIN_NO",
           "team": "MIN",
           "opponent_team": "NO",
-          "value": 27
+          "value": 20
         },
         {
           "season": 2026,
@@ -5371,7 +5081,7 @@
           "game_id": "2026_04_MIA_MIN",
           "team": "MIN",
           "opponent_team": "MIA",
-          "value": 14
+          "value": 6
         },
         {
           "season": 2026,
@@ -5382,11 +5092,27 @@
           "value": 0
         },
         {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_GB_MIN",
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "MIN",
+          "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
           "team": "MIN",
           "opponent_team": "GB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DET_MIN",
+          "team": "MIN",
+          "opponent_team": "DET",
           "value": 0
         },
         {
@@ -5395,7 +5121,15 @@
           "game_id": "2025_16_MIN_NYG",
           "team": "MIN",
           "opponent_team": "NYG",
-          "value": 6
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_MIN_DAL",
+          "team": "MIN",
+          "opponent_team": "DAL",
+          "value": 0
         },
         {
           "season": 2025,
@@ -5403,7 +5137,7 @@
           "game_id": "2025_14_WAS_MIN",
           "team": "MIN",
           "opponent_team": "WAS",
-          "value": 10
+          "value": 0
         },
         {
           "season": 2025,
@@ -5427,6 +5161,14 @@
           "game_id": "2025_11_CHI_MIN",
           "team": "MIN",
           "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_BAL_MIN",
+          "team": "MIN",
+          "opponent_team": "BAL",
           "value": 0
         },
         {
@@ -5435,6 +5177,14 @@
           "game_id": "2025_09_MIN_DET",
           "team": "MIN",
           "opponent_team": "DET",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_MIN_LAC",
+          "team": "MIN",
+          "opponent_team": "LAC",
           "value": 0
         },
         {
@@ -5460,30 +5210,14 @@
           "team": "MIN",
           "opponent_team": "PIT",
           "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 3,
-          "game_id": "2025_03_CIN_MIN",
-          "team": "MIN",
-          "opponent_team": "CIN",
-          "value": 9
-        },
-        {
-          "season": 2025,
-          "week": 1,
-          "game_id": "2025_01_MIN_CHI",
-          "team": "MIN",
-          "opponent_team": "CHI",
-          "value": 0
         }
       ],
       "current_market": null,
       "market_hr": null,
       "p15": {
-        "value": null,
-        "sample_size": 16,
-        "available": false,
+        "value": 0,
+        "sample_size": 20,
+        "available": true,
         "method": "standard linear interpolation"
       },
       "ladder_results": [
@@ -5527,14 +5261,22 @@
       "qualification_basis": null
     },
     {
-      "player": "Tai Felton",
-      "player_id": "00-0040154",
+      "player": "Myles Price",
+      "player_id": "00-0040506",
       "position": "WR",
       "team": "MIN",
       "market": "Receptions",
-      "historical_games_available": 16,
+      "historical_games_available": 20,
       "l10_available": true,
       "l10_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_MIN_DET",
+          "team": "MIN",
+          "opponent_team": "DET",
+          "value": 0
+        },
         {
           "season": 2026,
           "week": 7,
@@ -5549,7 +5291,7 @@
           "game_id": "2026_05_MIN_NO",
           "team": "MIN",
           "opponent_team": "NO",
-          "value": 2
+          "value": 3
         },
         {
           "season": 2026,
@@ -5557,7 +5299,7 @@
           "game_id": "2026_04_MIA_MIN",
           "team": "MIN",
           "opponent_team": "MIA",
-          "value": 1
+          "value": 2
         },
         {
           "season": 2026,
@@ -5568,11 +5310,27 @@
           "value": 0
         },
         {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_GB_MIN",
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "MIN",
+          "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
           "team": "MIN",
           "opponent_team": "GB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DET_MIN",
+          "team": "MIN",
+          "opponent_team": "DET",
           "value": 0
         },
         {
@@ -5581,44 +5339,28 @@
           "game_id": "2025_16_MIN_NYG",
           "team": "MIN",
           "opponent_team": "NYG",
-          "value": 1
-        },
-        {
-          "season": 2025,
-          "week": 14,
-          "game_id": "2025_14_WAS_MIN",
-          "team": "MIN",
-          "opponent_team": "WAS",
-          "value": 1
-        },
-        {
-          "season": 2025,
-          "week": 13,
-          "game_id": "2025_13_MIN_SEA",
-          "team": "MIN",
-          "opponent_team": "SEA",
           "value": 0
         },
         {
           "season": 2025,
-          "week": 12,
-          "game_id": "2025_12_MIN_GB",
+          "week": 15,
+          "game_id": "2025_15_MIN_DAL",
           "team": "MIN",
-          "opponent_team": "GB",
-          "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 11,
-          "game_id": "2025_11_CHI_MIN",
-          "team": "MIN",
-          "opponent_team": "CHI",
+          "opponent_team": "DAL",
           "value": 0
         }
       ],
       "p15_observations": [
         {
           "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_MIN_DET",
+          "team": "MIN",
+          "opponent_team": "DET",
+          "value": 0
+        },
+        {
+          "season": 2026,
           "week": 7,
           "game_id": "2026_07_IND_MIN",
           "team": "MIN",
@@ -5631,7 +5373,7 @@
           "game_id": "2026_05_MIN_NO",
           "team": "MIN",
           "opponent_team": "NO",
-          "value": 2
+          "value": 3
         },
         {
           "season": 2026,
@@ -5639,7 +5381,7 @@
           "game_id": "2026_04_MIA_MIN",
           "team": "MIN",
           "opponent_team": "MIA",
-          "value": 1
+          "value": 2
         },
         {
           "season": 2026,
@@ -5650,11 +5392,27 @@
           "value": 0
         },
         {
-          "season": 2025,
-          "week": 18,
-          "game_id": "2025_18_GB_MIN",
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "MIN",
+          "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
           "team": "MIN",
           "opponent_team": "GB",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DET_MIN",
+          "team": "MIN",
+          "opponent_team": "DET",
           "value": 0
         },
         {
@@ -5663,7 +5421,15 @@
           "game_id": "2025_16_MIN_NYG",
           "team": "MIN",
           "opponent_team": "NYG",
-          "value": 1
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_MIN_DAL",
+          "team": "MIN",
+          "opponent_team": "DAL",
+          "value": 0
         },
         {
           "season": 2025,
@@ -5671,7 +5437,7 @@
           "game_id": "2025_14_WAS_MIN",
           "team": "MIN",
           "opponent_team": "WAS",
-          "value": 1
+          "value": 0
         },
         {
           "season": 2025,
@@ -5695,6 +5461,14 @@
           "game_id": "2025_11_CHI_MIN",
           "team": "MIN",
           "opponent_team": "CHI",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_BAL_MIN",
+          "team": "MIN",
+          "opponent_team": "BAL",
           "value": 0
         },
         {
@@ -5703,6 +5477,14 @@
           "game_id": "2025_09_MIN_DET",
           "team": "MIN",
           "opponent_team": "DET",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "game_id": "2025_08_MIN_LAC",
+          "team": "MIN",
+          "opponent_team": "LAC",
           "value": 0
         },
         {
@@ -5728,41 +5510,25 @@
           "team": "MIN",
           "opponent_team": "PIT",
           "value": 0
-        },
-        {
-          "season": 2025,
-          "week": 3,
-          "game_id": "2025_03_CIN_MIN",
-          "team": "MIN",
-          "opponent_team": "CIN",
-          "value": 1
-        },
-        {
-          "season": 2025,
-          "week": 1,
-          "game_id": "2025_01_MIN_CHI",
-          "team": "MIN",
-          "opponent_team": "CHI",
-          "value": 0
         }
       ],
       "current_market": null,
       "market_hr": null,
       "p15": {
-        "value": null,
-        "sample_size": 16,
-        "available": false,
+        "value": 0,
+        "sample_size": 20,
+        "available": true,
         "method": "standard linear interpolation"
       },
       "ladder_results": [
         {
           "threshold": 2,
-          "hits": 1,
+          "hits": 2,
           "denominator": 10
         },
         {
           "threshold": 3,
-          "hits": 0,
+          "hits": 1,
           "denominator": 10
         },
         {
