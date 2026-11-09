@@ -826,4 +826,192 @@ R11 and R12 were satisfied
 R44 was satisfied
 R45–R54 were satisfied
 Then:
+STOP.e current main-market line appear first. Within this group, sort by the smallest positive difference first.
+4. Players whose P15 exactly equals the current main-market line appear after the above-line group and before the below-line group.
+5. Players whose P15 is below the current main-market line appear last. Within this group, sort by the smallest absolute difference first (closest below the line first).
+
+Calculate and retain:
+`P15 Difference = P15 - Current Main-Market Line`
+
+Use the actual P15 and market-line values. Do not round values before sorting. If P15 or the corresponding Stage 1 main-market line is unavailable, place the player after players with calculable ordering values within the same position group and label the ordering value unavailable; do not invent or estimate it.
+
+Stage 2 Output
+Provide:
+Alternate-market analysis for the locked Stage 1 shortlist.
+Floor/Core/Ceiling structure.
+The narrowed Stage 3 Context Candidate Set.
+A concise explanation of why candidates were carried forward or excluded when necessary.
+Validation
+Confirm:
+exact locked Stage 1 L[N] was used
+exact locked Stage 1 player/market universe was used
+exact Stage 1 qualification status was preserved
+current FanDuel alternate data was used
+line movement and cross-book analysis were excluded
+no alternate line or price was fabricated
+detailed current-week context was not performed
+Stage 2 materially narrowed the candidate set where possible
+no locked Stage 1 result was changed
+Stage 2 State is complete
+R11 and R12 were satisfied
+R44 was satisfied
+R45–R54 were satisfied
+Then:
 STOP.
+---
+STAGE 3 — CURRENT-WEEK CONTEXT
+Purpose
+Stage 3 performs detailed current-week research only for the narrowed Stage 2 candidate set.
+This is intentionally later than the historical and alternate-market screening stages.
+Do not perform context analysis for Stage 1 qualifiers that did not survive Stage 2.
+Stage 3 Input Validation
+Before beginning Stage 3:
+Confirm:
+Stage 2 State exists
+Stage 2 State is complete
+narrowed Context Candidate Set is available
+Stage 1 State remains available and locked
+no reconstruction of Stage 1 or Stage 2 is required
+State:
+> **Stage Input: Stage 2 State**
+>
+> **Status: VALID**
+If unavailable:
+> **STOP. Recover the exact Stage 2 State before proceeding.**
+Input
+Analyze only the locked Stage 2 Context Candidate Set.
+Use:
+locked Stage 1 historical evidence
+locked Stage 2 alternate-market structure
+current-week information required for context analysis
+Do not reconstruct Stage 1.
+Do not reconstruct Stage 2.
+Do not introduce new players or markets solely because of interesting current-week context.
+Evaluate
+For every Stage 2 candidate assess:
+expected role
+expected workload
+recent usage
+recent target/touch trends
+snap or route involvement where relevant
+opponent defensive matchup
+injuries
+player status
+QB situation
+offensive-line situation
+offensive scheme
+game environment
+weather
+current-season role/trends
+competition for touches/targets
+volatility
+potential game-script effects
+Classification
+Classify each factor/result as:
+Supportive
+Mixed
+Concern
+Do not alter historical HR.
+Do not retroactively change the historical dataset based on current-week information.
+Stage 3 is contextual analysis only.
+Stage 3 Output
+For every Stage 2 candidate provide:
+candidate
+selected market/threshold
+historical HR
+Floor/Core/Ceiling position
+current-week context
+Supportive / Mixed / Concern classification
+concise implications for final selection
+Stage 3 State Lock
+At completion, lock:
+analyzed candidate set
+contextual findings
+Supportive / Mixed / Concern classifications
+implications for final selection
+Do not change:
+Stage 1 historical evidence
+Stage 1 qualification
+Stage 1 L[N]
+Stage 1 ladder results
+Stage 2 alternate-market structure
+Validation
+Confirm:
+only locked Stage 2 candidates were analyzed
+no new players were added
+no Stage 1 player/market was re-screened
+historical HR was unchanged
+historical samples were unchanged
+Stage 2 alternate-market structure was unchanged
+current-week information remained separate from historical evidence
+Stage 3 State is complete
+R13 and R14 were satisfied
+R30 and R31 were satisfied
+R45–R54 were satisfied
+Then:
+STOP.
+---
+STAGE 4 — FINAL PROP SELECTION
+Input Validation
+Before beginning Stage 4:
+Confirm:
+Stage 3 State exists
+Stage 3 State is complete
+Stage 2 State remains locked
+Stage 1 State remains locked
+no reconstruction of prior stages is required
+State:
+> **Stage Input: Stage 3 State**
+>
+> **Status: VALID**
+If unavailable:
+> **STOP. Recover the exact Stage 3 State before proceeding.**
+Input
+Use only the locked outputs from:
+Stage 1 historical evidence
+Stage 2 alternate-market structure
+Stage 3 current-week context
+Combine these with:
+Current verified sportsbook information required for final selection
+Historical distribution/floor evidence
+Model judgment
+Do not reconstruct or rerun prior stages.
+Separate Evidence
+For every final prop explicitly separate:
+Historical Evidence
+Actual L[N] hit rate and relevant historical observations.
+Distribution / Floor Evidence
+Where relevant discuss:
+15P
+distance between selected threshold and 15P
+Floor/Core/Ceiling position
+relevant historical distribution characteristics
+Do not convert these statistics into a predicted probability.
+Current-Week Context
+Supportive, Mixed, or Concern, with relevant facts.
+Sportsbook Information
+Current FanDuel line and price.
+Model Judgment
+Explain why the final prop is or is not selected after combining the evidence.
+Do not select a prop merely because:
+it has the shortest odds
+it has the highest historical HR
+it has plus money
+it has a favorable public narrative
+The selection should be supported by multiple evidence streams.
+Final Prop Card
+PlayerTeamMarketHistorical HRThresholdSportsbookPriceCurrent-Week ContextFinal Read
+Strict Formatting
+Player
+Name only.
+Team
+Team abbreviation only.
+Market
+Market only.
+Historical HR
+Exact L[N] hit rate.
+Example: `8/10`
+Threshold
+Example: `50+`
+Sportsbook Price
+Example: `-
