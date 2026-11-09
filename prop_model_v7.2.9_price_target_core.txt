@@ -1,0 +1,119 @@
+NFL WEEKLY PLAYER-PROP ANALYSIS — V7.2.9
+Run a rigorous, data-driven NFL player-prop analysis for the specified regular-season week.
+MASTER EXECUTION CONTRACT
+Core Objective
+Identify NFL player-prop opportunities using three distinct, non-substitutable evidence streams:
+Actual historical game logs from the dedicated GitHub dataset.
+Current sportsbook markets from the live sportsbook dataset.
+Current-week contextual analysis based on current team, player, matchup, injury, role, and game-environment information.
+Historical performance, sportsbook information, and current-week context are separate evidence streams and must never be substituted for one another.
+Execution Rules
+Execute exactly one stage at a time.
+Complete the current stage before doing any work belonging to a later stage.
+After completing each stage, STOP and wait for the user to say:
+> **Next**
+Do not automatically continue.
+Do not preview later stages unless specifically asked.
+Preserve all locked inputs and methodology throughout the analysis.
+Never fabricate missing historical data, sportsbook lines, prices, players, or outcomes.
+Never silently relax a constraint.
+Historical HR is descriptive evidence, not a predicted probability.
+When a required constraint cannot be satisfied, use the universal feasibility rule rather than forcing a construction.
+Stage Continuity and State Lock
+Each completed stage creates an authoritative, immutable Stage State for every subsequent stage.
+Locked Stage Outputs
+Stage 0: Analysis Scope, Historical Sample N, and automatically determined historical cutoff
+Stage 1: Complete eligible player/market shortlist, exact L[N] observations, historical HR, ladder results, 20-game 15P, and current main-market data
+Stage 2: Alternate-market analysis, Floor/Core/Ceiling bands, and narrowed Stage 3 Context Candidate Set
+Stage 3: Current-week context classifications for the narrowed Stage 2 candidate set
+Stage 4: Final evaluated prop cards
+Stage 5: Portfolio constructions
+Stage State Persistence
+A Stage State means the actual complete output produced by that stage.
+A Stage State is not merely:
+a summary
+a record count
+a methodology description
+a list of conclusions
+a description of what the stage did
+The Stage State must contain the actual data/output required by the next stage.
+For example, the Stage 1 State must contain the actual player/market rows and their locked historical observations, not merely:
+> "Stage 1 produced 127 qualifiers."
+Durable Stage State Artifacts
+Each completed Stage State must be persisted as a durable artifact, not merely retained in conversational context.
+
+DURABLE STATE REPOSITORY
+All Stage State artifacts MUST be persisted in the GitHub repository:
+`mackman08/nfl-prop-data`
+
+Branch:
+`main`
+
+State root:
+`state/`
+
+Therefore:
+```text
+state/weekX_YYYY/stage0_state.json
+state/weekX_YYYY/stage1_state.json
+state/weekX_YYYY/stage2_state.json
+state/weekX_YYYY/stage3_state.json
+state/weekX_YYYY/stage4_state.json
+state/weekX_YYYY/stage5_state.json
+```
+
+The `state/weekX_YYYY/` location refers specifically to the `state/` directory in the `mackman08/nfl-prop-data` GitHub repository on the `main` branch. It does not refer to a temporary execution filesystem path, Project/Library storage, or conversational context.
+
+Replace `X` and `YYYY` with the actual analysis week and season.
+Each State file must contain the complete State, including all actual records/data required by the next stage. Do not store only a summary or compressed representation that would require reconstruction.
+Each State artifact must include, at minimum:
+```text
+stage
+season
+week
+scope
+historical_sample
+historical_cutoff
+record_count
+state_id
+parent_state_id
+records
+```
+Include all additional stage-specific fields required by that stage.
+For Stage 1, `records` must contain the complete qualifying player/market records, exact locked L[N] observations, ladder results, 20-game 15P, current main-market data, identifiers, and every other required Stage 1 field.
+For later stages, preserve the complete prior-stage information required for downstream validation and the complete additions produced by the current stage.
+State Identity and Parent Chain
+Every completed State must receive a unique `state_id`.
+Every State after Stage 0 must include the `state_id` of the immediately preceding State as `parent_state_id`.
+The resulting chain must be:
+```text
+STATE-0
+   ↓
+STATE-1
+   ↓
+STATE-2
+   ↓
+STATE-3
+   ↓
+STATE-4
+   ↓
+STATE-5
+```
+A later State is valid only when its `parent_state_id` exactly matches the `state_id` of the immediately preceding locked State.
+Where supported by the execution environment, also store a content hash of the complete State artifact and verify that hash when the State is reloaded. A changed or corrupted artifact must fail validation rather than silently becoming the new authoritative State.
+Mandatory Persist → Validate → Lock → Reload Workflow
+At the end of every stage:
+Produce the complete Stage State.
+Validate that all required records, fields, and counts are present.
+Assign the `state_id` and `parent_state_id` where applicable.
+Persist the complete State artifact by writing it to the GitHub repository `mackman08/nfl-prop-data`, branch `main`, at the required `state/weekX_YYYY/` location.
+Fetch the exact State artifact back from the GitHub repository and verify that it can be read successfully.
+Confirm the persisted record count and required fields match the completed stage output.
+Lock the persisted artifact as the authoritative State.
+Only then present the normal stage output and stop.
+At the beginning of every stage after Stage 0:
+Load the exact persisted State artifact for the immediately preceding stage.
+Validate its existence, completeness, record count, required fields, `state_id`, `parent_state_id`, and content integrity where supported.
+Use the loaded artifact as the sole authoritative prior-stage State.
+Do not reconstruct the prior State from raw sources or conversational history.
+Do not replace the
