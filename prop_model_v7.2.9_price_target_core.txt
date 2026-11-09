@@ -481,4 +481,193 @@ current-week eligibility
 verified current sportsbook markets
 historical game logs
 Stage Rule
-Stage 1 is strictly quantitativ
+Stage 1 is strictly quantitative.
+Do not perform current-week narrative analysis.
+Do not perform alternate-market analysis beyond what is required to establish the current main-market screen.
+Do not perform detailed current-week context research.
+Step 1 — Build L[N]
+For every eligible player:
+retrieve qualifying completed regular-season games before the cutoff
+sort newest to oldest
+select exactly N
+preserve the individual observations
+lock the resulting historical sample
+Do not change the historical sample afterward.
+Step 2 — Calculate Ladder Hit Rates
+Calculate every ladder threshold independently from the same N game logs.
+Every result must be expressed as:
+> **X/N**
+Do not change the denominator.
+QB Passing Yards
+150+ | 175+ | 200+ | 225+ | 250+ | 300+
+RB Rushing Yards
+20+ | 30+ | 40+ | 50+ | 60+ | 75+ | 100+
+WR/TE Receiving Yards
+20+ | 30+ | 40+ | 50+ | 60+ | 75+ | 100+
+WR/TE Receptions
+2+ | 3+ | 4+ | 5+ | 6+ | 7+ | 8+
+These thresholds are fixed.
+Do not substitute other thresholds unless explicitly directed.
+Step 3 — Current Main Market
+For every eligible player:
+Retrieve the current verified main FanDuel line.
+Calculate the exact historical HR at that line using L[N].
+Keep sportsbook information separate from historical hit rate.
+Market
+Contains only:
+> `Line / Price / Sportsbook`
+Example:
+> `238.5 / -113 FD`
+Market HR
+Contains only:
+> `Hits / N`
+Example:
+> `7/10`
+Never combine these fields.
+---
+Stage 1 Qualification Gate
+A player/market qualifies for the Stage 1 shortlist when at least ONE of the two conditions is satisfied.
+Condition 1 — Current Market HR
+The current FanDuel main-market line must have:
+> **Historical Market HR ≥60%**
+For L10:
+> **Market HR ≥6/10**
+Condition 2 — Strong Ladder Evidence
+At least one applicable fixed ladder threshold must have:
+> **Historical Ladder HR ≥80%**
+For L10, this means at least one ladder threshold must hit:
+> **8/10, 9/10, or 10/10**
+The ladder threshold does not need to be identical to the current FanDuel sportsbook line.
+It only needs to be an applicable threshold within the fixed ladder for that market.
+OR Rule
+A player/market with:
+> Market HR = 6/10
+> Ladder maximum = 7/10
+DOES NOT QUALIFY.
+A player/market with:
+> Market HR = 5/10
+> Ladder = 9/10
+DOES NOT QUALIFY.
+A player/market with:
+> Market HR = 6/10
+> Ladder = 8/10
+QUALIFIES.
+A player/market with:
+> Market HR = 8/10
+> Ladder = 9/10
+QUALIFIES.
+Either condition is sufficient; the two conditions do not need to be satisfied simultaneously.
+L10 Qualification Examples
+Current Market HRBest Ladder HRStage 1		
+6/10	7/10	QUALIFY
+6/10	8/10	QUALIFY
+5/10	8/10	QUALIFY
+5/10	9/10	QUALIFY
+5/10	10/10	QUALIFY
+7/10	7/10	QUALIFY
+8/10	8/10	QUALIFY
+10/10	10/10	QUALIFY
+5/10	7/10	NO
+General N Rule
+The exact 6/10 OR 8/10 thresholds above apply to the current L10 methodology.
+For a different explicitly selected N, do not silently invent or carry forward an L10 denominator. Apply the corresponding locked-N qualification rule only if explicitly defined for that analysis.
+Do not assume L10 merely because this structure is being used.
+---
+Stage 1 Shortlist
+Only player/market combinations satisfying at least one qualification condition appear in the Stage 1 shortlist.
+The Stage 1 shortlist is therefore:
+> **Current Market HR ≥60% OR at least one fixed ladder threshold ≥80%.**
+This is the only Stage 1 qualification gate.
+Do not add subjective context filters.
+Do not add price filters.
+Do not use 15P as a qualification requirement.
+Do not add matchup analysis.
+Do not add injury analysis.
+Do not add game-script analysis.
+Those belong to later stages.
+---
+Required Tables
+Produce exactly four ladder tables:
+QB Passing Yards
+RB Rushing Yards
+WR/TE Receiving Yards
+WR/TE Receptions
+Each table must include:
+PlayerTML[N] Game LogsMarketMarket HR15PLadder Thresholds
+The actual N game observations must appear before the ladder hit-rate columns.
+Field Rules
+Player
+Name only.
+TM
+Team abbreviation only.
+L[N] Game Logs
+Actual N observations only.
+No commentary.
+No percentages.
+No odds.
+Market
+Current verified sportsbook line / price / sportsbook only.
+Market HR
+Historical hits / N at the exact current market line.
+15P
+Separate 20-game 15th percentile.
+Ladder Columns
+Historical hits / N at the exact fixed threshold.
+Every threshold calculated independently from the same L[N].
+Never combine Market, Market HR, 15P, and ladder rates into one field.
+Stage 1 15P
+For every player appearing in the ladder tables:
+Identify the 20 most recent qualifying completed regular-season games before the cutoff.
+Calculate the applicable statistic's 15th percentile.
+Display the result.
+If fewer than 20 games exist:
+> **Unavailable — <20 games**
+L[N] and the 20-game 15P sample must remain completely separate.
+---
+Stage 1 State Lock
+At completion, lock the complete Stage 1 State.
+The Stage 1 State must contain:
+exact qualifying player/market universe
+exact current Market HR
+exact L[N] observations
+exact ladder results
+exact qualifying ≥80% ladder threshold(s)
+exact 20-game 15P
+current FanDuel main-market line and price
+applicable team/player identifiers
+all required Stage 1 table fields
+The Stage 1 State must be the actual complete dataset/output, not merely the number of qualifiers.
+Example:
+> **Stage 1 produced 127 qualifiers**
+is not sufficient Stage State.
+The actual 127 rows and required fields must be preserved.
+Once locked:
+> **Stage 1 is authoritative.**
+No later stage may reconstruct, re-screen, or replace the Stage 1 State.
+---
+Stage 1 Summary
+After the four tables provide:
+number of available markets screened
+number of qualifying historical props
+highest historical hit rates
+relevant line/price observations
+important data-integrity notes
+Then provide the concise Historical Shortlist.
+Clearly state:
+> **Stage 1 Qualification = Market HR ≥60% OR at least one fixed ladder threshold ≥80%.**
+For L10:
+> **6/10 Market HR OR at least one 8/10+ ladder hit.**
+Stage 1 Validation
+Confirm:
+R01
+R02
+R03
+R04
+R05
+R06
+R07
+R08
+R09
+R10
+all four ladder tables were produced
+all required fiel
