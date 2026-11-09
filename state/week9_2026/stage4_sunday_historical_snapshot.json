@@ -1,0 +1,1996 @@
+{
+  "stage": 4,
+  "season": 2026,
+  "week": 9,
+  "scope": "Sunday night single game — Tampa Bay Buccaneers @ Chicago Bears",
+  "state_id": "STATE-4-W9-2026-20261108-TB-CHI-L10-P15-HISTORICAL-PRICE-OVERRIDE",
+  "parent_state_id": "STATE-3-W9-2026-20261108-TB-CHI-L10-P15",
+  "historical_sample": {
+    "label": "L10",
+    "n": 10
+  },
+  "percentile_override": "15P",
+  "execution_status": "COMPLETE — HISTORICAL SNAPSHOT EVALUATION ONLY",
+  "user_authorization": "Explicitly authorized historical Stage 4 evaluation using locked pregame snapshot prices.",
+  "methodology_override": {
+    "normal_requirement": "Current verified sportsbook information.",
+    "authorized_exception": "Use locked pregame FanDuel snapshot prices because current post-kickoff quotes are unavailable.",
+    "disclosure": "All prices are historical pregame snapshot prices captured 2026-11-08 20:12:48 ET. Not current, live, or actionable quotes."
+  },
+  "input_validation": {
+    "stage1": {
+      "state_id": "STATE-1-W9-2026-20261108-TB-CHI-L10-P15",
+      "blob_sha": "98923ccc2a94e1f729ca8bc8561a727ff7b0ef8f",
+      "record_count": 14,
+      "status": "VALID"
+    },
+    "stage2": {
+      "state_id": "STATE-2-W9-2026-20261108-TB-CHI-L10-P15",
+      "blob_sha": "a47a721c48d497991be503b26715fc1289a1d224",
+      "record_count": 14,
+      "status": "VALID"
+    },
+    "stage3": {
+      "state_id": "STATE-3-W9-2026-20261108-TB-CHI-L10-P15",
+      "blob_sha": "194261fc98b7bdef2c19fb2d3c583aa16ea2c059",
+      "record_count": 14,
+      "status": "VALID"
+    },
+    "parent_chain_valid": true,
+    "no_reconstruction": true,
+    "prior_states_unchanged": true
+  },
+  "price_source": {
+    "file": "odds/nfl_player_props_latest.csv",
+    "blob_sha": "cc8edb123dcd702bdd5ab4bc2baf57e544720c67",
+    "sportsbook": "FanDuel",
+    "event_id": "36244879",
+    "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+    "status": "STALE PRE-GAME SNAPSHOT"
+  },
+  "selection_summary": {
+    "evaluated_count": 14,
+    "selected_count": 4,
+    "selected": [
+      "Rome Odunze — Receiving Yards — 30+",
+      "Chris Godwin — Receiving Yards — 20+",
+      "Chris Godwin — Receptions — 3+",
+      "Colston Loveland — Receiving Yards — 40+"
+    ]
+  },
+  "final_prop_cards": [
+    {
+      "player": "Caleb Williams",
+      "team": "CHI",
+      "market": "Passing Yards",
+      "historical_hr": "7/10",
+      "threshold": "225+",
+      "sportsbook_price": "-182 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 183.9,
+      "threshold_minus_15p": 41.1,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "200+",
+        "historical_hr": "8/10",
+        "price": "-340 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "225+ passing has a full-time starter and productive offense behind it, but Tampa's pass defense is solid (205.9 passing yards allowed/game in team stats) and the Bears -6 spread may reduce late pass volume.",
+      "selected": false,
+      "final_read": "Pass: 7/10 at 225+ is respectable, but Tampa's pass defense and possible negative pass-volume script offset the supportive quarterback role.",
+      "historical_values": [
+        247,
+        308,
+        305,
+        138,
+        269,
+        212,
+        330,
+        250,
+        242,
+        186
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 247
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 308
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 305
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 138
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 269
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent_team": "DET",
+          "value": 212
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent_team": "SF",
+          "value": 330
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 250
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_CLE_CHI",
+          "team": "CHI",
+          "opponent_team": "CLE",
+          "value": 242
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 186
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Bucky Irving",
+      "team": "TB",
+      "market": "Rushing Yards",
+      "historical_hr": "6/10",
+      "threshold": "50+",
+      "sportsbook_price": "-245 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 45.85,
+      "threshold_minus_15p": 4.15,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "40+",
+        "historical_hr": "9/10",
+        "price": "-470 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "Irving is Tampa's lead back with excellent season efficiency, but Week 8 was a 30-30 snap split with Gainwell and Chicago's run defense is strong.",
+      "selected": false,
+      "final_read": "Pass: 6/10 at 50+ and 15P 45.85 leave a narrow cushion; Gainwell's 30-30 Week 8 snap split and Chicago's run defense weaken the case.",
+      "historical_values": [
+        170,
+        106,
+        46,
+        165,
+        61,
+        46,
+        89,
+        45,
+        85,
+        19
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ATL_TB",
+          "team": "TB",
+          "opponent_team": "ATL",
+          "value": 170
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 106
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_PIT_TB",
+          "team": "TB",
+          "opponent_team": "PIT",
+          "value": 46
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_TB_DAL",
+          "team": "TB",
+          "opponent_team": "DAL",
+          "value": 165
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "TB",
+          "opponent_team": "GB",
+          "value": 61
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_MIN_TB",
+          "team": "TB",
+          "opponent_team": "MIN",
+          "value": 46
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CLE_TB",
+          "team": "TB",
+          "opponent_team": "CLE",
+          "value": 89
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "TB",
+          "opponent_team": "CIN",
+          "value": 45
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 85
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "TB",
+          "opponent_team": "MIA",
+          "value": 19
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "D'Andre Swift",
+      "team": "CHI",
+      "market": "Rushing Yards",
+      "historical_hr": "6/10",
+      "threshold": "50+",
+      "sportsbook_price": "-235 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 43.85,
+      "threshold_minus_15p": 6.15,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "40+",
+        "historical_hr": "10/10",
+        "price": "-450 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "Monangai's inactivity concentrates more opportunity toward Swift, but Tampa's run defense is a significant matchup headwind.",
+      "selected": false,
+      "final_read": "Pass: 6/10 at 50+; 15P 43.85 sits below the threshold. Monangai inactive improves workload, but Tampa's run defense is a material headwind.",
+      "historical_values": [
+        69,
+        78,
+        44,
+        43,
+        58,
+        84,
+        45,
+        124,
+        40,
+        54
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 69
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 78
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 43
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent_team": "NYJ",
+          "value": 58
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 84
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 45
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 124
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent_team": "DET",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent_team": "SF",
+          "value": 54
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "historical_hr": "9/10",
+      "threshold": "30+",
+      "sportsbook_price": "-310 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 31.85,
+      "threshold_minus_15p": -1.85,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "25+",
+        "historical_hr": "9/10",
+        "price": "-420 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "Odunze has a stable high-snap role and a reasonable matchup, offset by target competition and a recent target-share dip.",
+      "selected": true,
+      "final_read": "Select: 9/10 at 30+ with 15P 31.85 just above the threshold. Stable high-snap role and reasonable matchup offset the recent target-share dip and competition.",
+      "historical_values": [
+        87,
+        69,
+        39,
+        40,
+        94,
+        44,
+        43,
+        52,
+        8,
+        53
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 87
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 69
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 40
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent_team": "NYJ",
+          "value": 94
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 43
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 52
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CHI_PHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_PIT_CHI",
+          "team": "CHI",
+          "opponent_team": "PIT",
+          "value": 53
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "market": "Receptions",
+      "historical_hr": "8/10",
+      "threshold": "3+",
+      "sportsbook_price": "-194 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 2,
+      "threshold_minus_15p": 1,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "2+",
+        "historical_hr": "10/10",
+        "price": "-650 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "High snap share supports catch volume, but Burden and Loveland share the target pie; the 3+ CORE is more context-aligned than 4+.",
+      "selected": false,
+      "final_read": "Pass: 8/10 at 3+ with 15P 2.0; target competition from Burden and Loveland makes the catch-volume case less clean than the yardage market.",
+      "historical_values": [
+        4,
+        4,
+        3,
+        3,
+        6,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent_team": "NYJ",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CHI_PHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_PIT_CHI",
+          "team": "CHI",
+          "opponent_team": "PIT",
+          "value": 3
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "historical_hr": "7/10",
+      "threshold": "50+",
+      "sportsbook_price": "-245 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 26.25,
+      "threshold_minus_15p": 23.75,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "40+",
+        "historical_hr": "8/10",
+        "price": "-420 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "Burden's 22% target share and production are strong, but his 60% season snap share adds route-volume variability.",
+      "selected": false,
+      "final_read": "Pass: 7/10 at 50+, but 15P 26.25 is well below the threshold and 60% season snap share adds route-volume volatility.",
+      "historical_values": [
+        56,
+        130,
+        95,
+        47,
+        63,
+        61,
+        32,
+        63,
+        35,
+        138
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 56
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 130
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 95
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent_team": "NYJ",
+          "value": 63
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 61
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 32
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 63
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent_team": "DET",
+          "value": 35
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent_team": "SF",
+          "value": 138
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "market": "Receptions",
+      "historical_hr": "5/10",
+      "threshold": "5+",
+      "sportsbook_price": "-168 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 2.85,
+      "threshold_minus_15p": 2.15,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "4+",
+        "historical_hr": "8/10",
+        "price": "-380 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "Target efficiency is strong, but a part-time snap profile and target competition make 5+ catches less secure than the 4+ floor.",
+      "selected": false,
+      "final_read": "Pass: 5/10 at 5+; 15P 2.85 and a part-time snap profile do not support the CORE threshold.",
+      "historical_values": [
+        7,
+        4,
+        8,
+        4,
+        4,
+        7,
+        3,
+        5,
+        3,
+        8
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 8
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent_team": "NYJ",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent_team": "DET",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent_team": "SF",
+          "value": 8
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Kalif Raymond",
+      "team": "CHI",
+      "market": "Receptions",
+      "historical_hr": "8/10",
+      "threshold": "2+",
+      "sportsbook_price": "-188 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 0,
+      "threshold_minus_15p": 2,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "1+",
+        "historical_hr": "9/10",
+        "price": "-1000 FD"
+      },
+      "current_week_context": "Concern",
+      "context_summary": "Raymond has a real rotational role but his recent target share is small and declining versus Chicago's main pass catchers.",
+      "selected": false,
+      "final_read": "Pass: 8/10 at 2+, but 15P is 0 and recent target share is small and declining; Stage 3 classified this as Concern.",
+      "historical_values": [
+        2,
+        0,
+        2,
+        3,
+        2,
+        6,
+        5,
+        8,
+        3,
+        1
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent_team": "NYJ",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "DET",
+          "opponent_team": "CHI",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DET_MIN",
+          "team": "DET",
+          "opponent_team": "MIN",
+          "value": 1
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Emeka Egbuka",
+      "team": "TB",
+      "market": "Receptions",
+      "historical_hr": "7/10",
+      "threshold": "3+",
+      "sportsbook_price": "-290 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 2,
+      "threshold_minus_15p": 1,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "2+",
+        "historical_hr": "8/10",
+        "price": "-1100 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "Egbuka's team-leading target share is compelling, but his return after missing two games with a foot injury makes immediate workload uncertain.",
+      "selected": false,
+      "final_read": "Pass: 7/10 at 3+; 15P 2.0 and return from a two-game foot-injury absence make immediate workload uncertain.",
+      "historical_values": [
+        7,
+        6,
+        2,
+        5,
+        3,
+        5,
+        1,
+        3,
+        1,
+        4
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_PIT_TB",
+          "team": "TB",
+          "opponent_team": "PIT",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_TB_DAL",
+          "team": "TB",
+          "opponent_team": "DAL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "TB",
+          "opponent_team": "GB",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_MIN_TB",
+          "team": "TB",
+          "opponent_team": "MIN",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CLE_TB",
+          "team": "TB",
+          "opponent_team": "CLE",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "TB",
+          "opponent_team": "CIN",
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "TB",
+          "opponent_team": "MIA",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_ATL_TB",
+          "team": "TB",
+          "opponent_team": "ATL",
+          "value": 4
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Chris Godwin",
+      "team": "TB",
+      "market": "Receiving Yards",
+      "historical_hr": "8/10",
+      "threshold": "20+",
+      "sportsbook_price": "-300 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 18.35,
+      "threshold_minus_15p": 1.65,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "15+",
+        "historical_hr": "8/10",
+        "price": "-500 FD"
+      },
+      "current_week_context": "Supportive",
+      "context_summary": "Godwin's recent target share is rising and his snap role is stable; Egbuka's return is the main counterweight.",
+      "selected": true,
+      "final_read": "Select: 8/10 at 20+; 15P 18.35 is close to the threshold. Rising target share and stable snap role support the low yardage bar; Egbuka's return is the main counterweight.",
+      "historical_values": [
+        0,
+        27,
+        37,
+        37,
+        31,
+        25,
+        46,
+        40,
+        8,
+        108
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ATL_TB",
+          "team": "TB",
+          "opponent_team": "ATL",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 27
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_PIT_TB",
+          "team": "TB",
+          "opponent_team": "PIT",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_TB_DAL",
+          "team": "TB",
+          "opponent_team": "DAL",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "TB",
+          "opponent_team": "GB",
+          "value": 31
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_MIN_TB",
+          "team": "TB",
+          "opponent_team": "MIN",
+          "value": 25
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CLE_TB",
+          "team": "TB",
+          "opponent_team": "CLE",
+          "value": 46
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "TB",
+          "opponent_team": "CIN",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "TB",
+          "opponent_team": "MIA",
+          "value": 108
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Chris Godwin",
+      "team": "TB",
+      "market": "Receptions",
+      "historical_hr": "8/10",
+      "threshold": "3+",
+      "sportsbook_price": "-310 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 2.85,
+      "threshold_minus_15p": 0.15,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "2+",
+        "historical_hr": "8/10",
+        "price": "-1200 FD"
+      },
+      "current_week_context": "Supportive",
+      "context_summary": "Godwin's full-time role and rising target trend support catches, though Egbuka's return may redistribute targets.",
+      "selected": true,
+      "final_read": "Select: 8/10 at 3+; 15P 2.85 is close to the threshold. Full-time role and rising target trend support catches, with target redistribution risk from Egbuka.",
+      "historical_values": [
+        0,
+        4,
+        4,
+        3,
+        6,
+        3,
+        3,
+        4,
+        1,
+        7
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ATL_TB",
+          "team": "TB",
+          "opponent_team": "ATL",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_PIT_TB",
+          "team": "TB",
+          "opponent_team": "PIT",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_TB_DAL",
+          "team": "TB",
+          "opponent_team": "DAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "TB",
+          "opponent_team": "GB",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_MIN_TB",
+          "team": "TB",
+          "opponent_team": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CLE_TB",
+          "team": "TB",
+          "opponent_team": "CLE",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "TB",
+          "opponent_team": "CIN",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "TB",
+          "opponent_team": "MIA",
+          "value": 7
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Colston Loveland",
+      "team": "CHI",
+      "market": "Receiving Yards",
+      "historical_hr": "6/10",
+      "threshold": "40+",
+      "sportsbook_price": "-250 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 23.25,
+      "threshold_minus_15p": 16.75,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "30+",
+        "historical_hr": "7/10",
+        "price": "-500 FD"
+      },
+      "current_week_context": "Supportive",
+      "context_summary": "Loveland has a high-snap role and a rising target share; matchup is not a major boost but does not erase the usage signal.",
+      "selected": true,
+      "final_read": "Select: 6/10 at 40+; 15P 23.25 is 16.75 yards below the threshold, so floor cushion is limited. High snap share and rising target share plus Supportive context justify inclusion, but with lower historical support.",
+      "historical_values": [
+        65,
+        69,
+        65,
+        19,
+        57,
+        31,
+        3,
+        0,
+        91,
+        94
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 65
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 69
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 65
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 19
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent_team": "NYJ",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 31
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent_team": "DET",
+          "value": 91
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent_team": "SF",
+          "value": 94
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Colston Loveland",
+      "team": "CHI",
+      "market": "Receptions",
+      "historical_hr": "6/10",
+      "threshold": "5+",
+      "sportsbook_price": "-210 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 2.85,
+      "threshold_minus_15p": 2.15,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "4+",
+        "historical_hr": "7/10",
+        "price": "-450 FD"
+      },
+      "current_week_context": "Supportive",
+      "context_summary": "A strong and increasing involvement profile for Chicago's primary tight end, with secondary TE competition and a middling matchup.",
+      "selected": false,
+      "final_read": "Pass: 6/10 at 5+; 15P 2.85 is 2.15 catches below threshold. Role and target trend are supportive, but historical floor evidence is weaker than selected alternatives.",
+      "historical_values": [
+        7,
+        7,
+        6,
+        2,
+        6,
+        4,
+        1,
+        0,
+        10,
+        6
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "CHI",
+          "opponent_team": "SEA",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "CHI",
+          "opponent_team": "NE",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "CHI",
+          "opponent_team": "ATL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "team": "CHI",
+          "opponent_team": "GB",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "CHI",
+          "opponent_team": "NYJ",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_PHI_CHI",
+          "team": "CHI",
+          "opponent_team": "PHI",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIN_CHI",
+          "team": "CHI",
+          "opponent_team": "MIN",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CHI_CAR",
+          "team": "CHI",
+          "opponent_team": "CAR",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_DET_CHI",
+          "team": "CHI",
+          "opponent_team": "DET",
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_CHI_SF",
+          "team": "CHI",
+          "opponent_team": "SF",
+          "value": 6
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    },
+    {
+      "player": "Cade Otton",
+      "team": "TB",
+      "market": "Receptions",
+      "historical_hr": "7/10",
+      "threshold": "3+",
+      "sportsbook_price": "-194 FD",
+      "price_type": "PRE-GAME SNAPSHOT ONLY — NOT A CURRENT QUOTE",
+      "snapshot_as_of": "2026-11-08T20:12:48-05:00",
+      "percentile_15p": 2,
+      "threshold_minus_15p": 1,
+      "band_position": "CORE",
+      "floor": {
+        "threshold": "2+",
+        "historical_hr": "8/10",
+        "price": "-650 FD"
+      },
+      "current_week_context": "Mixed",
+      "context_summary": "Otton's 94% season snap share is strong, but his recent target share fell, Durham had a large Week 8 role, and Chicago has been restrictive against TEs.",
+      "selected": false,
+      "final_read": "Pass: 7/10 at 3+, but 15P 2.0, declining target share, Durham's meaningful Week 8 role and Chicago's restrictive TE matchup make this less attractive.",
+      "historical_values": [
+        0,
+        1,
+        3,
+        4,
+        3,
+        5,
+        3,
+        7,
+        4,
+        2
+      ],
+      "historical_observations": [
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_TB_CAR",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_PIT_TB",
+          "team": "TB",
+          "opponent_team": "PIT",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_TB_DAL",
+          "team": "TB",
+          "opponent_team": "DAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "team": "TB",
+          "opponent_team": "GB",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_MIN_TB",
+          "team": "TB",
+          "opponent_team": "MIN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CLE_TB",
+          "team": "TB",
+          "opponent_team": "CLE",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "TB",
+          "opponent_team": "CIN",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "TB",
+          "opponent_team": "MIA",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_TB_CAR",
+          "team": "TB",
+          "opponent_team": "CAR",
+          "value": 2
+        }
+      ],
+      "source_refs": [
+        "turn425322search0",
+        "turn425322search1",
+        "turn425322search7",
+        "turn425322search10",
+        "turn132680search0",
+        "turn132680search1",
+        "turn132680search7",
+        "turn132680search10",
+        "turn668328search0",
+        "turn668328search1",
+        "turn668328search4",
+        "turn668328search5",
+        "turn618220search3",
+        "turn618220search7",
+        "turn618220search9",
+        "turn984652search5",
+        "turn984652search8",
+        "turn984652search11",
+        "turn132680search6"
+      ]
+    }
+  ],
+  "validation": {
+    "all_14_stage3_candidates_evaluated": true,
+    "exact_l10_denominator": true,
+    "historical_evidence_present": true,
+    "locked_15p_present": true,
+    "current_week_context_present": true,
+    "thresholds_from_locked_stage2_structure": true,
+    "price_provenance_disclosed": true,
+    "prices_are_current": false,
+    "R30_respected": true,
+    "R31_respected": true,
+    "prior_stage_states_modified": false,
+    "stage5_not_run": true
+  },
+  "stage5_gate": "STOP — await explicit NEXT before Stage 5."
+}
