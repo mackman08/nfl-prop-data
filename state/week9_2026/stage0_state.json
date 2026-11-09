@@ -2,8 +2,17 @@
   "stage": 0,
   "season": 2026,
   "week": 9,
-  "scope": "Sunday only",
-  "analysis_games_scope": "All NFL Week 9 regular-season games scheduled Sunday, November 8, 2026; exclude Thursday November 5 and Monday November 9.",
+  "scope": "Custom — today's 8:20 PM ET game only",
+  "analysis_games_scope": {
+    "date": "2026-11-08",
+    "game": "Tampa Bay Buccaneers at Chicago Bears",
+    "kickoff": "8:20 PM ET",
+    "included_teams": [
+      "TB",
+      "CHI"
+    ],
+    "excluded_scope": "All other Week 9 games"
+  },
   "historical_sample": {
     "label": "L10",
     "n": 10,
@@ -28,22 +37,22 @@
     "primary": "FanDuel",
     "fallback": "DraftKings only where FanDuel data is unavailable"
   },
-  "model_version": "V7.2.8 with explicit user-directed P7 methodology override",
+  "model_version": "V7.2.8 with explicit user-directed 15P override",
   "user_methodology_overrides": [
-    "Use the 7th percentile (P7), calculated from the 20 most recent qualifying completed regular-season games before the Week 9 historical cutoff, instead of P25.",
-    "Include P7 as an explicit reference in the Stage 1 ladder output alongside the fixed ladder hit rates.",
-    "For Stage 2 output ordering, group players by position; within each position, candidates whose P7 is above the current main-market line appear first; then order by absolute proximity of P7 to the main-market line.",
-    "P7 is unavailable when fewer than 20 qualifying historical games exist; do not substitute P25."
+    "Use the 15th percentile (15P), calculated from the 20 most recent qualifying completed regular-season games before the Week 9 historical cutoff, instead of P25.",
+    "Use standard linear interpolation for 15P.",
+    "15P is calculated independently of the locked L10 sample.",
+    "15P is unavailable when fewer than 20 qualifying historical games exist; do not substitute another percentile."
   ],
   "percentile_definition": {
-    "statistic": "7th percentile (P7)",
+    "statistic": "15th percentile (15P)",
     "sample_size": 20,
     "sample_basis": "20 most recent qualifying completed regular-season games before the Week 9 historical cutoff",
     "calculation": "Standard linear interpolation",
-    "independence": "P7 is calculated independently of the locked L10 sample."
+    "independence": "15P is calculated independently of the locked L10 sample."
   },
   "record_count": 0,
-  "state_id": "STATE-0-W9-2026-20261106-SUN-L10-P7-SORT",
+  "state_id": "STATE-0-W9-2026-20261108-TB-CHI-L10-P15",
   "parent_state_id": null,
   "records": []
 }
