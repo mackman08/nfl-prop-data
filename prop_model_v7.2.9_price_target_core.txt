@@ -826,37 +826,6 @@ R11 and R12 were satisfied
 R44 was satisfied
 R45–R54 were satisfied
 Then:
-STOP.e current main-market line appear first. Within this group, sort by the smallest positive difference first.
-4. Players whose P15 exactly equals the current main-market line appear after the above-line group and before the below-line group.
-5. Players whose P15 is below the current main-market line appear last. Within this group, sort by the smallest absolute difference first (closest below the line first).
-
-Calculate and retain:
-`P15 Difference = P15 - Current Main-Market Line`
-
-Use the actual P15 and market-line values. Do not round values before sorting. If P15 or the corresponding Stage 1 main-market line is unavailable, place the player after players with calculable ordering values within the same position group and label the ordering value unavailable; do not invent or estimate it.
-
-Stage 2 Output
-Provide:
-Alternate-market analysis for the locked Stage 1 shortlist.
-Floor/Core/Ceiling structure.
-The narrowed Stage 3 Context Candidate Set.
-A concise explanation of why candidates were carried forward or excluded when necessary.
-Validation
-Confirm:
-exact locked Stage 1 L[N] was used
-exact locked Stage 1 player/market universe was used
-exact Stage 1 qualification status was preserved
-current FanDuel alternate data was used
-line movement and cross-book analysis were excluded
-no alternate line or price was fabricated
-detailed current-week context was not performed
-Stage 2 materially narrowed the candidate set where possible
-no locked Stage 1 result was changed
-Stage 2 State is complete
-R11 and R12 were satisfied
-R44 was satisfied
-R45–R54 were satisfied
-Then:
 STOP.
 ---
 STAGE 3 — CURRENT-WEEK CONTEXT
