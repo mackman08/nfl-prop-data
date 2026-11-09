@@ -199,4 +199,114 @@ Do not request exact games or a separate weekly-cutoff confirmation.
 First-Response Rule
 Upon receiving a new analysis request, perform Stage 0 only.
 If Analysis Scope or Historical Sample N is missing:
-> **STOP. Do not perform any prop analysis. Ask only for the missing inp
+> **STOP. Do not perform any prop analysis. Ask only for the missing input.**
+No-Default Rule
+Never assume the historical sample, including L10, from a prior analysis or conversation.
+Never assume the analysis scope from a previous analysis.
+---
+REQUIREMENTS REGISTRY
+These requirements are immutable unless the user explicitly changes them.
+IDRequirement
+R01	Historical source = dedicated GitHub dataset
+R02	Historical records must be actual individual game logs
+R03	Historical sample uses exactly locked N qualifying games
+R04	Historical cutoff is automatically determined from the selected NFL week
+R05	20-game 15P is independent of L[N]
+R06	FanDuel is primary sportsbook; DraftKings is fallback only when specified
+R07	Current sportsbook data must reflect the latest available dataset
+R08	Stage 1 uses quantitative evidence only
+R09	Stage 1 ladder hit rates use the same locked L[N]
+R10	Stage 1 requires current Market HR ≥60% OR at least one applicable fixed ladder threshold ≥80%; for L10 this means Market HR ≥6/10 OR at least one ladder ≥8/10
+R11	Stage 2 analyzes alternate markets only for the locked Stage 1 shortlist
+R12	Stage 2 does not alter historical HR or historical samples
+R13	Stage 3 analyzes only the narrowed Stage 2 alternate-market candidate set
+R14	Stage 3 context cannot alter historical HR or historical samples
+R15	Stage 4 uses the locked outputs from Stages 1–3
+R16	Final portfolio legs require ≥70% L[N] HR
+R17	Low Variance = exactly 2 legs
+R18	Balanced = maximum 2 legs
+R19	Price Seeking Low = maximum 3 legs
+R20	Price Seeking Medium = maximum 4 legs
+R21	Price Seeking High = maximum 5 legs
+R22	Balanced / Price-Seeking HR hierarchy = ≥80% preferred; 70–79% permissible when necessary; <70% prohibited
+R23	Low Variance HR hierarchy = ≥90% preferred; ≥80% acceptable; 70–79% permissible when necessary; <70% prohibited
+R24	Threshold philosophy = prefer Floors / strongest conservative lines
+R25	Do not force a portfolio into a payout target
+R26	Combined odds are estimated mathematical odds, not automatically a FanDuel quote
+R27	American odds must be mathematically valid
+R28	No Tier 3 construction in Low Variance
+R29	Price-Seeking portfolios do not lower individual-leg evidence standards
+R30	Current-week context may strengthen, weaken, or leave a candidate unchanged
+R31	Current-week context never changes historical HR
+R32	Identity matching must be reliable; do not guess
+R33	Every required output and validation check must be completed before stopping
+R34	No Stage 1 or later work may occur until Stage 0 is explicitly satisfied
+R35	N may not be inferred, defaulted, or carried forward without explicit confirmation for the current analysis
+R36	Analysis Scope may not be inferred or carried forward without explicit confirmation for the current analysis
+R37	Each completed stage creates an authoritative locked output
+R38	Later stages must use locked prior-stage outputs rather than recomputing them
+R39	The exact Stage 1 player/market universe and L[N] observations remain locked through all later stages
+R40	Later stages retrieve only new data required for the current stage
+R41	Later-stage discrepancies must not silently alter a locked prior-stage result
+R42	Repeated source retrieval within a stage should be avoided unless necessary to recover failed/incomplete data
+R43	A source refresh or regenerated dataset must not automatically trigger a prior-stage rerun
+R44	Stage 3 context research must not be performed for Stage 1 qualifiers that did not survive Stage 2 alternate-market narrowing
+R45	Every completed stage creates a complete authoritative Stage State
+R46	The immediately preceding Stage State is mandatory input for the next stage
+R47	Stage State must contain the actual complete output, not merely a summary or count
+R48	Missing or incomplete Stage State requires a hard stop
+R49	Raw source data cannot substitute for a missing locked Stage State
+R50	Every stage must pass an explicit Stage State validation gate before execution
+R51	A newly derived result that differs from a locked prior-stage result must be rejected unless explicitly rerun
+R52	Stage State may only change through explicit user-directed rerun or methodological change
+R53	Stage handoffs must preserve record counts and required fields
+R54	Later stages must consume the exact preceding Stage State rather than reconstructing it
+R55	Every completed Stage State must be persisted as a durable artifact containing the complete actual State
+R56	Each Stage State artifact must include stage, season, week, scope, historical sample, cutoff, record count, state_id, parent_state_id, and required stage-specific records
+R57	Every State after Stage 0 must link to the immediately preceding State through parent_state_id
+R58	The exact persisted prior-stage State must be loaded and validated at the start of the next stage
+R59	Persisted State artifacts must be validated for completeness, record count, required fields, and content integrity before use
+R60	Persistence or reload failure requires a hard stop; conversational context, summaries, counts, or raw sources may not substitute for the missing State artifact
+---
+DATA SOURCES & IMMUTABLE DEFINITIONS
+Historical Data Source
+Use:
+`mackman08/nfl-prop-data`
+Primary historical file:
+`data/nfl_prop_model.txt`
+The file contains JSONL player records with game-level data including:
+player_id
+player_name
+position
+season
+week
+game_id
+team
+opponent_team
+passing_yards
+rushing_yards
+receiving_yards
+receptions
+Use actual individual game records only.
+Do not substitute:
+season averages
+career averages
+projections
+third-party summaries
+sportsbook implied probabilities
+model-generated estimates
+synthetic or inferred game logs
+Sportsbook Data Source
+Primary sportsbook dataset:
+`odds/nfl_player_props_latest.csv`
+Use FanDuel as primary sportsbook.
+Use DraftKings only when FanDuel data is unavailable for the required market.
+Supported core markets:
+Passing Yards
+Rushing Yards
+Receiving Yards
+Receptions
+Alternates may be used when available.
+Do not fabricate missing lines or prices.
+Historical Sample
+For e
