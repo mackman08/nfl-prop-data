@@ -57,7 +57,7 @@
         "line": 200,
         "display": "Over 200.0",
         "band": "CORE",
-        "alternate_over_price": "-1800"
+        "alternate_over_price": "-310"
       },
       "distribution_floor_evidence": {
         "l10_min": 130,
@@ -74,7 +74,7 @@
         "main_market_over_price": "-114",
         "alternate_market": "Alt Passing Yards",
         "alternate_line": 200,
-        "alternate_over_price": "-1800",
+        "alternate_over_price": "-310",
         "source_csv_sha": "cc8edb123dcd702bdd5ab4bc2baf57e544720c67",
         "game": "Buffalo Bills @ Minnesota Vikings",
         "event_id": "36244880",
@@ -98,7 +98,7 @@
         "line": 25,
         "display": "Over 25.0",
         "band": "CORE",
-        "alternate_over_price": "-1600"
+        "alternate_over_price": "-210"
       },
       "distribution_floor_evidence": {
         "l10_min": 22,
@@ -115,7 +115,7 @@
         "main_market_over_price": "-114",
         "alternate_market": "Alt Rushing Yards",
         "alternate_line": 25,
-        "alternate_over_price": "-1600",
+        "alternate_over_price": "-210",
         "source_csv_sha": "cc8edb123dcd702bdd5ab4bc2baf57e544720c67",
         "game": "Buffalo Bills @ Minnesota Vikings",
         "event_id": "36244880",
@@ -139,7 +139,7 @@
         "line": 40,
         "display": "Over 40.0",
         "band": "CORE",
-        "alternate_over_price": "-1200"
+        "alternate_over_price": "-188"
       },
       "distribution_floor_evidence": {
         "l10_min": 5,
@@ -156,7 +156,7 @@
         "main_market_over_price": "-114",
         "alternate_market": "Alt Rushing Yards",
         "alternate_line": 40,
-        "alternate_over_price": "-1200",
+        "alternate_over_price": "-188",
         "source_csv_sha": "cc8edb123dcd702bdd5ab4bc2baf57e544720c67",
         "game": "Buffalo Bills @ Minnesota Vikings",
         "event_id": "36244880",
@@ -180,7 +180,7 @@
         "line": 70,
         "display": "Over 70.0",
         "band": "CORE",
-        "alternate_over_price": "-1600"
+        "alternate_over_price": "-210"
       },
       "distribution_floor_evidence": {
         "l10_min": 15,
@@ -197,7 +197,7 @@
         "main_market_over_price": "-114",
         "alternate_market": "Alt Rushing Yards",
         "alternate_line": 70,
-        "alternate_over_price": "-1600",
+        "alternate_over_price": "-210",
         "source_csv_sha": "cc8edb123dcd702bdd5ab4bc2baf57e544720c67",
         "game": "Buffalo Bills @ Minnesota Vikings",
         "event_id": "36244880",
@@ -221,7 +221,7 @@
         "line": 3,
         "display": "Over 3.0",
         "band": "FLOOR",
-        "alternate_over_price": "-1450"
+        "alternate_over_price": "-380"
       },
       "distribution_floor_evidence": {
         "l10_min": 1,
@@ -238,7 +238,7 @@
         "main_market_over_price": "-154",
         "alternate_market": "Alt Receptions",
         "alternate_line": 3,
-        "alternate_over_price": "-1450",
+        "alternate_over_price": "-380",
         "source_csv_sha": "cc8edb123dcd702bdd5ab4bc2baf57e544720c67",
         "game": "Buffalo Bills @ Minnesota Vikings",
         "event_id": "36244880",
@@ -262,7 +262,7 @@
         "line": 30,
         "display": "Over 30.0",
         "band": "CORE",
-        "alternate_over_price": "-1600"
+        "alternate_over_price": "-210"
       },
       "distribution_floor_evidence": {
         "l10_min": 6,
@@ -279,7 +279,7 @@
         "main_market_over_price": "-114",
         "alternate_market": "Alt Receiving Yards",
         "alternate_line": 30,
-        "alternate_over_price": "-1600",
+        "alternate_over_price": "-210",
         "source_csv_sha": "cc8edb123dcd702bdd5ab4bc2baf57e544720c67",
         "game": "Buffalo Bills @ Minnesota Vikings",
         "event_id": "36244880",
@@ -303,7 +303,7 @@
         "line": 25,
         "display": "Over 25.0",
         "band": "CORE",
-        "alternate_over_price": "-1200"
+        "alternate_over_price": "-260"
       },
       "distribution_floor_evidence": {
         "l10_min": 0,
@@ -320,7 +320,7 @@
         "main_market_over_price": "-114",
         "alternate_market": "Alt Receiving Yards",
         "alternate_line": 25,
-        "alternate_over_price": "-1200",
+        "alternate_over_price": "-260",
         "source_csv_sha": "cc8edb123dcd702bdd5ab4bc2baf57e544720c67",
         "game": "Buffalo Bills @ Minnesota Vikings",
         "event_id": "36244880",
@@ -10378,6 +10378,7 @@
     "odds_source_hash_matches_stage2": true,
     "all_seven_final_reads_complete": true,
     "historical_samples_unchanged": true,
-    "stage1_and_stage2_locked": true
+    "stage1_and_stage2_locked": true,
+    "exact_selected_alternate_prices_verified": true
   }
 }
