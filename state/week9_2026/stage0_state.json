@@ -2,14 +2,14 @@
   "stage": 0,
   "season": 2026,
   "week": 9,
-  "scope": "Custom — today's 8:20 PM ET game only",
+  "scope": "Custom — Monday, November 9 only",
   "analysis_games_scope": {
-    "date": "2026-11-08",
-    "game": "Tampa Bay Buccaneers at Chicago Bears",
-    "kickoff": "8:20 PM ET",
+    "date": "2026-11-09",
+    "game": "Buffalo Bills at Minnesota Vikings",
+    "kickoff": "8:15 PM ET",
     "included_teams": [
-      "TB",
-      "CHI"
+      "BUF",
+      "MIN"
     ],
     "excluded_scope": "All other Week 9 games"
   },
@@ -35,24 +35,11 @@
     "branch": "main",
     "path": "odds/nfl_player_props_latest.csv",
     "primary": "FanDuel",
-    "fallback": "DraftKings only where FanDuel data is unavailable"
+    "fallback": "DraftKings only where FanDuel data is unavailable and fallback is applicable"
   },
-  "model_version": "V7.2.8 with explicit user-directed 15P override",
-  "user_methodology_overrides": [
-    "Use the 15th percentile (15P), calculated from the 20 most recent qualifying completed regular-season games before the Week 9 historical cutoff, instead of P25.",
-    "Use standard linear interpolation for 15P.",
-    "15P is calculated independently of the locked L10 sample.",
-    "15P is unavailable when fewer than 20 qualifying historical games exist; do not substitute another percentile."
-  ],
-  "percentile_definition": {
-    "statistic": "15th percentile (15P)",
-    "sample_size": 20,
-    "sample_basis": "20 most recent qualifying completed regular-season games before the Week 9 historical cutoff",
-    "calculation": "Standard linear interpolation",
-    "independence": "15P is calculated independently of the locked L10 sample."
-  },
+  "model_version": "V7.2.9 Price-Target Core",
   "record_count": 0,
-  "state_id": "STATE-0-W9-2026-20261108-TB-CHI-L10-P15",
+  "state_id": "STATE-0-W9-2026-20261109-BUF-MIN-L10-V729",
   "parent_state_id": null,
   "records": []
 }
