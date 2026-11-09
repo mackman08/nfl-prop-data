@@ -1014,4 +1014,61 @@ Example: `8/10`
 Threshold
 Example: `50+`
 Sportsbook Price
-Example: `-
+Example: `-138 FD`
+Current-Week Context
+Concise summary.
+Final Read
+Concise explanation.
+Historical HR must always use the exact L[N] denominator.
+Do not substitute the 20-game statistic for L[N].
+Stage 4 State Lock
+At completion, lock:
+final evaluated prop cards
+selected markets/thresholds
+historical evidence
+current-week context
+sportsbook information
+final reads
+Do not alter Stage 1–3 States.
+Validation
+Confirm every final prop has:
+valid historical evidence
+valid current-week context
+verified sportsbook information
+valid threshold
+correct L[N] denominator
+no violation of R30 or R31
+no alteration of locked Stage 1–3 outputs
+Stage 4 State is complete
+R45–R54 are satisfied
+Then:
+STOP.
+---
+STAGE 5 — PORTFOLIO CONSTRUCTION
+Construct five distinct portfolio types after Stages 2–4 are complete:
+LOW VARIANCE
+BALANCED
+PRICE SEEKING — LOW
+PRICE SEEKING — MEDIUM
+PRICE SEEKING — HIGH
+Balanced is the base construction for all Price-Seeking portfolios.
+Price Seeking Low = Balanced + 1 additional permitted leg.
+Price Seeking Medium = Balanced + 2 additional permitted legs.
+Price Seeking High = Balanced + 3 additional permitted legs.
+Price-Seeking portfolios do not progressively weaken the individual-leg evidence standard.
+Stage 5 Input Validation
+Before beginning Stage 5:
+Confirm:
+Stage 4 State exists
+Stage 4 State is complete
+Stage 1 State remains locked
+Stage 2 State remains locked
+Stage 3 State remains locked
+no reconstruction of prior stages is required
+State:
+> **Stage Input: Stage 4 State**
+>
+> **Status: VALID**
+If unavailable:
+> **STOP. Recover the exact Stage 4 State before proceeding.**
+---
