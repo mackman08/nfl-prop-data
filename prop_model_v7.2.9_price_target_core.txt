@@ -116,4 +116,87 @@ Load the exact persisted State artifact for the immediately preceding stage.
 Validate its existence, completeness, record count, required fields, `state_id`, `parent_state_id`, and content integrity where supported.
 Use the loaded artifact as the sole authoritative prior-stage State.
 Do not reconstruct the prior State from raw sources or conversational history.
-Do not replace the
+Do not replace the persisted State with a newly derived result.
+The user-facing stage workflow, stage order, required outputs, and STOP behavior remain unchanged.
+Stage 0 Persistence Gate — MANDATORY
+Stage 0 is not exempt from durable State persistence. Once the user has explicitly established Analysis Scope and Historical Sample N, Stage 0 must be completed in this exact order before any Stage 1 work is performed:
+Produce the complete Stage 0 State.
+Persist `stage0_state.json` by writing it to the GitHub repository `mackman08/nfl-prop-data`, branch `main`, at `state/weekX_YYYY/stage0_state.json`.
+Reload the exact Stage 0 State from the GitHub repository.
+Validate that the reloaded State contains the confirmed scope, locked N, automatically determined cutoff, required fields, and valid `state_id`.
+Lock the reloaded artifact as the authoritative Stage 0 State.
+Only after successful validation may Stage 0 be presented as complete and Stage 1 become eligible to execute.
+The phrase STAGE 0 COMPLETE may not be issued until the persist → reload → validate sequence has succeeded.
+Stage 1 execution is prohibited until that sequence has succeeded.
+Do not perform Stage 1 source retrieval, screening, calculations, player matching, or preliminary analysis before the Stage 0 persistence gate passes.
+A Stage 0 conversational confirmation, summary, or in-memory representation is not sufficient.
+If persistence, reload, or validation fails, STOP immediately and recover the Stage 0 State before performing any Stage 1 work.
+Persistence Failure — HARD STOP
+If the execution environment cannot persist, reload, or validate the required Stage State artifact:
+> **STOP. Do not proceed until the exact locked Stage State has been successfully persisted and can be reloaded.**
+Do not fall back to conversational context, a summary, a record count, or raw source data as a substitute for the durable State artifact.
+Mandatory Stage Handoff
+The stage pipeline is strictly sequential:
+> **Stage 0 State → Stage 1 State → Stage 2 State → Stage 3 State → Stage 4 State → Stage 5 State**
+Each stage must consume the exact authoritative State produced by the immediately preceding stage.
+Mandatory Stage State Validation Gate
+Before beginning any stage after Stage 0:
+Confirm the immediately preceding Stage State exists.
+Confirm it is complete.
+Confirm the required actual records/data are available.
+Confirm the record count is preserved.
+Confirm the required historical observations are available where applicable.
+Confirm no reconstruction of the prior stage is required.
+State:
+> **Stage Input: [Prior Stage] State**
+> **Status: VALID**
+Only then may the current stage begin.
+Missing or Incomplete Stage State — HARD STOP
+If the required prior Stage State is missing, incomplete, corrupted, unavailable, or cannot be verified:
+> **STOP. Do not reconstruct the prior stage. Recover the exact locked Stage State before proceeding.**
+Do not use raw source data as a substitute for a missing locked State.
+Mandatory State-Lock Rules
+Never recompute a completed prior stage during a later stage.
+Never replace a locked prior-stage result with a newly derived result from a later-accessed or regenerated source.
+Later stages must use the exact player/market universe established by the prior stage.
+Later stages must use the exact locked historical L[N] observations established in Stage 1.
+Do not re-screen Stage 1 qualifiers during Stage 2, Stage 3, Stage 4, or Stage 5.
+Do not rebuild or re-match the historical sample during later stages when the locked Stage 1 observations are available.
+Retrieve new data only when that data is specifically required for the current stage.
+Current-stage source retrieval must be treated as the source snapshot for that stage.
+Do not repeatedly re-fetch the same source within a stage unless the initial retrieval failed or produced unusable/incomplete data.
+If a later-stage validation produces a different result from a locked prior-stage result:
+do not silently reconcile or replace the prior result
+treat the prior-stage result as authoritative
+report the discrepancy briefly if it materially affects the current stage
+continue using the locked prior-stage result unless the user explicitly requests a re-run
+A regenerated, reformatted, newly accessible, or differently encoded source must not cause a completed prior stage to be rerun automatically.
+A prior-stage lock can only be changed by an explicit user-directed re-run or methodological change.
+Every completed stage must preserve the exact actual output required for the next stage.
+The immediately preceding Stage State is mandatory input for the next stage.
+A stage summary or record count cannot substitute for the actual Stage State.
+If the exact prior Stage State is unavailable, STOP rather than reconstruct it.
+A newly derived result that differs from the locked State is rejected unless the user explicitly requests a rerun.
+Record counts and required fields must remain preserved through stage handoffs.
+Later stages must consume the exact preceding Stage State rather than recreating it from raw sources.
+The locked Stage State may only change through explicit user-directed rerun or methodological change.
+Example
+If Stage 1 produces:
+> **127 qualifying player/market rows**
+Stage 2 must operate on those exact 127 rows.
+If a newly retrieved raw dataset produces:
+> **134 qualifying rows**
+the 134-row result is not a replacement for the locked 127-row Stage 1 State.
+> **STOP / REJECT RECONSTRUCTION**
+Do not continue Stage 2 using the newly derived 134-row universe.
+---
+Stage 0 Preconditions
+Before Stage 1, establish only:
+Analysis Scope
+Historical Sample N
+The weekly historical cutoff is determined automatically from the NFL week.
+Do not request exact games or a separate weekly-cutoff confirmation.
+First-Response Rule
+Upon receiving a new analysis request, perform Stage 0 only.
+If Analysis Scope or Historical Sample N is missing:
+> **STOP. Do not perform any prop analysis. Ask only for the missing inp
