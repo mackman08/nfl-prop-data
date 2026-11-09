@@ -670,4 +670,160 @@ R08
 R09
 R10
 all four ladder tables were produced
-all required fiel
+all required fields are present
+the locked N was used consistently
+every Stage 1 qualifier satisfied at least one qualification condition
+every Stage 1 qualifier has Market HR ≥60%
+every Stage 1 qualifier has at least one applicable ladder ≥80%
+a player/market may qualify solely because it has Market HR ≥60%
+a player/market may qualify solely because it has an 80%+ ladder
+the complete Stage 1 State is preserved
+Stage 1 record count is locked
+exact Stage 1 player/market qualifiers and exact L[N] observations are now locked for all later stages
+Then:
+STOP.
+---
+STAGE 2 — ALTERNATE MARKET ANALYSIS
+Purpose
+Stage 2 is the candidate-narrowing stage.
+Its purpose is to determine which alternate thresholds and market structures are actually worth carrying forward into detailed current-week contextual analysis.
+Do not perform detailed current-week context research in Stage 2.
+This stage exists specifically to prevent unnecessary context analysis of Stage 1 qualifiers that will never become meaningful final candidates.
+Stage 2 Input Validation
+Before beginning Stage 2, validate the Stage 1 State.
+Confirm:
+Stage 1 State exists
+Stage 1 State is complete
+exact Stage 1 player/market universe is available
+exact Stage 1 L[N] observations are available
+exact Stage 1 ladder results are available
+exact Stage 1 qualification status is available
+Stage 1 record count is preserved
+no reconstruction of Stage 1 is required
+State:
+> **Stage Input: Stage 1 State**
+>
+> **Status: VALID**
+If any required Stage 1 State component is unavailable:
+> **STOP. Do not execute Stage 2. Recover the exact Stage 1 State before proceeding.**
+Input
+Use only:
+exact locked Stage 1 player/market shortlist
+exact locked Stage 1 L[N] historical observations
+current FanDuel alternate-market data
+The Stage 1 State is authoritative.
+Do not reconstruct Stage 1.
+Do not re-screen Stage 1.
+Do not rebuild or re-match the historical sample.
+Do not substitute a newly calculated Stage 1 universe.
+Do Not Analyze
+Do not use:
+line movement
+price movement
+cross-book differences
+market steam
+sportsbook-to-sportsbook pricing discrepancies
+Do not perform detailed analysis of:
+injuries
+weather
+matchup
+offensive scheme
+game script
+role changes
+workload
+current-season trends
+Those belong to Stage 3.
+Alternate HR
+For every valid alternate:
+> **Historical HR = hits / N**
+Use the locked Stage 1 L[N] observations.
+Do not rebuild the historical sample from the source dataset.
+Alternate Bands — PRICE-TARGET CORE (V7.2.9)
+Use the available FanDuel alternate lines and their listed American odds. Do not invent missing lines or prices.
+
+CORE
+Select an available alternate line with American odds between -350 and -150 inclusive.
+If multiple lines qualify, choose the line whose odds are numerically closest to -250.
+If two or more qualifying lines are equally close to -250, choose the more conservative price (the more negative odds, closer to -350).
+If no available line falls within the inclusive -350 to -150 band, set CORE to **NO QUALIFYING LINE**. Do not force a selection.
+
+FLOOR
+The immediately lower available alternate threshold than CORE. If no lower available threshold exists, Floor is unavailable.
+
+CEILING
+The immediately higher available alternate threshold than CORE, whether or not its historical HR meets any threshold. If no higher available threshold exists, Ceiling is unavailable.
+
+Historical HR remains descriptive evidence calculated from the exact locked Stage 1 L[N] observations. It does not select CORE under this price-target rule and is not a predicted probability. Retain historical HR for supporting evidence and all downstream eligibility rules.
+These are market-organization bands, not separate predictive models.
+Do not automatically label CORE as Low Variance. A CORE line may have insufficient historical hits for a Low-Variance construction.
+Candidate Narrowing
+After constructing Floor/Core/Ceiling bands, identify the Stage 2 candidate set that will receive detailed current-week context analysis in Stage 3.
+Carry forward only alternate-market candidates that are materially relevant to the final-selection process.
+Do not carry every Stage 1 qualifier forward simply because it qualified.
+The purpose of Stage 2 is to narrow the candidate universe before Stage 3 context research.
+A candidate may be excluded from Stage 3 when:
+no meaningful alternate market is available
+the available alternate structure provides no useful threshold
+the market structure does not provide a viable candidate for later evaluation
+the available alternatives are materially inferior to the existing main-market structure and provide no useful final-selection path
+Do not exclude a candidate solely because of current-week context.
+Current-week context belongs to Stage 3.
+Required Alternate Data
+For every valid alternate capture:
+threshold
+historical HR
+FanDuel price
+Floor/Core/Ceiling designation
+Do not invent unavailable lines or prices.
+Stage 2 State Lock
+At completion, lock:
+alternate-market analysis
+Floor/Core/Ceiling bands
+FanDuel alternate lines/prices
+narrowed Stage 3 Context Candidate Set
+exclusions from the Stage 3 candidate set
+rationale for material exclusions
+Do not alter the Stage 1 State.
+Stage 2 Source Rule
+Retrieve the current FanDuel alternate market data required for Stage 2.
+Do not repeatedly retrieve or reprocess the same alternate-market source unnecessarily.
+The current alternate-market retrieval is the authoritative Stage 2 sportsbook snapshot.
+Stage 2 Player Ordering — PRESENTATION ONLY
+
+Order Stage 2 player-level output using this hierarchy. This ordering does not change eligibility, qualification, alternate-market selection, candidate narrowing, or any locked Stage 1 result.
+
+1. Position group, in this exact order:
+   QB → RB → WR → TE.
+2. Within each position group, compare the player's locked 20-game P15 with the corresponding current main-market line carried forward in the locked Stage 1 State. Do not compare P15 with an alternate threshold.
+3. Players whose P15 is above the current main-market line appear first. Within this group, sort by the smallest positive difference first.
+4. Players whose P15 exactly equals the current main-market line appear after the above-line group and before the below-line group.
+5. Players whose P15 is below the current main-market line appear last. Within this group, sort by the smallest absolute difference first (closest below the line first).
+
+Calculate and retain:
+`P15 Difference = P15 - Current Main-Market Line`
+
+Use the actual P15 and market-line values. Do not round values before sorting. If P15 or the corresponding Stage 1 main-market line is unavailable, place the player after players with calculable ordering values within the same position group and label the ordering value unavailable; do not invent or estimate it.
+
+Stage 2 Output
+Provide:
+Alternate-market analysis for the locked Stage 1 shortlist.
+Floor/Core/Ceiling structure.
+The narrowed Stage 3 Context Candidate Set.
+A concise explanation of why candidates were carried forward or excluded when necessary.
+Validation
+Confirm:
+exact locked Stage 1 L[N] was used
+exact locked Stage 1 player/market universe was used
+exact Stage 1 qualification status was preserved
+current FanDuel alternate data was used
+line movement and cross-book analysis were excluded
+no alternate line or price was fabricated
+detailed current-week context was not performed
+Stage 2 materially narrowed the candidate set where possible
+no locked Stage 1 result was changed
+Stage 2 State is complete
+R11 and R12 were satisfied
+R44 was satisfied
+R45–R54 were satisfied
+Then:
+STOP.
