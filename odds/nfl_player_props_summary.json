@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 152,
-      "Receiving Yards": 432,
-      "Receptions": 210,
-      "Rushing Yards": 186
+      "Passing Yards": 175,
+      "Receiving Yards": 377,
+      "Receptions": 199,
+      "Rushing Yards": 203
     },
     "FanDuel": {
-      "Passing Yards": 6,
-      "Receiving Yards": 34,
-      "Receptions": 31,
-      "Rushing Yards": 14
+      "Passing Yards": 9,
+      "Receiving Yards": 36,
+      "Receptions": 36,
+      "Rushing Yards": 23
     }
   },
   "core_markets_present": [
@@ -22,35 +22,41 @@
   "duplicates": 0,
   "event_ids": [
     "34118102",
-    "34118167",
+    "34118114",
     "34118220",
+    "34118249",
     "35605986",
-    "36244880",
-    "36275757"
+    "36275757",
+    "36275764",
+    "36275765",
+    "36275769"
   ],
   "games": [
-    "BUF Bills @ MIN Vikings",
-    "Buffalo Bills @ Minnesota Vikings",
     "NE Patriots @ DET Lions",
     "New England Patriots @ Detroit Lions",
+    "PIT Steelers @ CIN Bengals",
+    "Pittsburgh Steelers @ Cincinnati Bengals",
+    "SEA Seahawks @ LV Raiders",
+    "San Francisco 49ers @ Dallas Cowboys",
+    "Seattle Seahawks @ Las Vegas Raiders",
     "WAS Commanders @ NY Giants",
     "Washington Commanders @ New York Giants"
   ],
   "markets": {
-    "Alt Passing Yards": 58,
-    "Alt Receiving Yards": 312,
-    "Alt Receptions": 187,
-    "Alt Rushing Yards": 138,
-    "Passing Yards": 158,
-    "Receiving Yards": 466,
-    "Receptions": 241,
-    "Rush + Receiving Yards": 77,
-    "Rushing Yards": 200
+    "Alt Passing Yards": 79,
+    "Alt Receiving Yards": 369,
+    "Alt Receptions": 238,
+    "Alt Rushing Yards": 213,
+    "Passing Yards": 184,
+    "Receiving Yards": 413,
+    "Receptions": 235,
+    "Rush + Receiving Yards": 117,
+    "Rushing Yards": 226
   },
   "sportsbooks": {
-    "DraftKings": 1057,
-    "FanDuel": 780
+    "DraftKings": 1071,
+    "FanDuel": 1003
   },
-  "total_rows": 1837,
+  "total_rows": 2074,
   "validation_mode": "slate-size-agnostic"
 }
