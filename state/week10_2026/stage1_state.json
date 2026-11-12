@@ -22,7 +22,7 @@
     "exclusion": "No Week 10 game may enter the historical sample"
   },
   "record_count": 26,
-  "state_id": "STATE-1-W10-2026-20261111T1955EST",
+  "state_id": "STATE-1-W10-2026-20261111T2035EST",
   "parent_state_id": "STATE-0-W10-2026-20261111T1949EST",
   "records": [
     {
@@ -34,6 +34,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -115,8 +117,7 @@
             "opponent_team": "CHI",
             "value": 150
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 211.5,
@@ -127,7 +128,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "J.J. McCarthy"
       },
       "market_hr": {
         "hits": 3,
@@ -138,8 +140,9 @@
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 14,
+        "observations": null
       },
       "ladder": {
         "150+": {
@@ -174,11 +177,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": false,
         "qualified": false,
-        "reason": "Neither condition met or required data unavailable"
+        "reason": "Neither condition met"
       }
     },
     {
@@ -190,6 +193,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -271,8 +276,7 @@
             "opponent_team": "CHI",
             "value": 211
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 200.5,
@@ -283,7 +287,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Jayden Daniels"
       },
       "market_hr": {
         "hits": 4,
@@ -294,6 +299,8 @@
       "p15": {
         "percentile": 15,
         "value": 144.45,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -415,8 +422,7 @@
             "game_id": "2024_11_WAS_PHI",
             "value": 191
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "150+": {
@@ -451,11 +457,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR condition"
+        "reason": "Ladder condition"
       }
     },
     {
@@ -467,6 +473,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -548,27 +556,32 @@
             "opponent_team": "NO",
             "value": 59
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
-        "line": null,
-        "over_odds": null,
+        "line": 52.5,
+        "over_odds": "-115",
         "under_odds": null,
         "sportsbook": "DraftKings",
-        "status": "No matching DraftKings row in odds snapshot"
+        "game": "WAS Commanders @ NY Giants",
+        "event_id": "34118102",
+        "quote_source": "GitHub odds CSV snapshot",
+        "line_selection": "Available over-price closest to -110; proxy for main market line",
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Cameron Skattebo"
       },
       "market_hr": {
-        "hits": null,
+        "hits": 8,
         "denominator": 10,
-        "display": "UNAVAILABLE",
-        "rate": null
+        "display": "8/10",
+        "rate": 0.8
       },
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 14,
+        "observations": null
       },
       "ladder": {
         "20+": {
@@ -608,11 +621,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
-        "market_hr_condition": false,
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
+        "market_hr_condition": true,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR condition"
+        "reason": "Both conditions"
       }
     },
     {
@@ -624,6 +637,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -705,8 +720,7 @@
             "opponent_team": "NE",
             "value": 68
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 23.5,
@@ -717,7 +731,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Devin Singletary"
       },
       "market_hr": {
         "hits": 6,
@@ -728,6 +743,8 @@
       "p15": {
         "percentile": 15,
         "value": 9.85,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -849,8 +866,7 @@
             "game_id": "2025_03_KC_NYG",
             "value": 11
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "20+": {
@@ -890,7 +906,7 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": false,
         "qualified": true,
@@ -906,6 +922,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -987,8 +1005,7 @@
             "opponent_team": "CAR",
             "value": 45
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 37.5,
@@ -999,7 +1016,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Rachaad White"
       },
       "market_hr": {
         "hits": 3,
@@ -1010,6 +1028,8 @@
       "p15": {
         "percentile": 15,
         "value": 19.7,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -1131,8 +1151,7 @@
             "game_id": "2025_05_TB_SEA",
             "value": 41
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "20+": {
@@ -1172,11 +1191,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR condition"
+        "reason": "Ladder condition"
       }
     },
     {
@@ -1188,6 +1207,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -1269,8 +1290,7 @@
             "opponent_team": "PHI",
             "value": 7
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 29.5,
@@ -1281,7 +1301,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Austin Ekeler"
       },
       "market_hr": {
         "hits": 1,
@@ -1292,8 +1313,9 @@
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 19,
+        "observations": null
       },
       "ladder": {
         "20+": {
@@ -1333,11 +1355,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": false,
         "qualified": false,
-        "reason": "Neither condition met or required data unavailable"
+        "reason": "Neither condition met"
       }
     },
     {
@@ -1349,6 +1371,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -1430,8 +1454,7 @@
             "opponent_team": "KC",
             "value": 13
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 69.5,
@@ -1442,7 +1465,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Malik Nabers"
       },
       "market_hr": {
         "hits": 4,
@@ -1453,6 +1477,8 @@
       "p15": {
         "percentile": 15,
         "value": 25.1,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -1574,8 +1600,7 @@
             "game_id": "2024_10_NYG_CAR",
             "value": 50
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "20+": {
@@ -1615,11 +1640,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR condition"
+        "reason": "Ladder condition"
       }
     },
     {
@@ -1631,6 +1656,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -1712,8 +1739,7 @@
             "opponent_team": "KC",
             "value": 2
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 5.5,
@@ -1724,7 +1750,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Malik Nabers"
       },
       "market_hr": {
         "hits": 5,
@@ -1735,6 +1762,8 @@
       "p15": {
         "percentile": 15,
         "value": 4.55,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -1856,8 +1885,7 @@
             "game_id": "2024_10_NYG_CAR",
             "value": 6
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "2+": {
@@ -1897,11 +1925,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR condition"
+        "reason": "Ladder condition"
       }
     },
     {
@@ -1913,8 +1941,9 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 8,
+        "observations": null
       },
       "current_market": {
         "line": 26.5,
@@ -1925,7 +1954,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Malachi Fields"
       },
       "market_hr": {
         "hits": null,
@@ -1936,16 +1966,53 @@
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 8,
+        "observations": null
       },
-      "ladder": null,
+      "ladder": {
+        "20+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "30+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "40+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "50+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "60+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "75+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "100+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        }
+      },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": false,
         "qualified": false,
-        "reason": "Neither condition met or required data unavailable"
+        "reason": "Neither condition met"
       }
     },
     {
@@ -1957,8 +2024,9 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 8,
+        "observations": null
       },
       "current_market": {
         "line": 1.5,
@@ -1969,7 +2037,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Malachi Fields"
       },
       "market_hr": {
         "hits": null,
@@ -1980,16 +2049,53 @@
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 8,
+        "observations": null
       },
-      "ladder": null,
+      "ladder": {
+        "2+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "3+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "4+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "5+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "6+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "7+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "8+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        }
+      },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": false,
         "qualified": false,
-        "reason": "Neither condition met or required data unavailable"
+        "reason": "Neither condition met"
       }
     },
     {
@@ -2001,6 +2107,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -2082,8 +2190,7 @@
             "opponent_team": "LA",
             "value": 35
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 15.5,
@@ -2094,7 +2201,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Darnell Mooney"
       },
       "market_hr": {
         "hits": 6,
@@ -2105,6 +2213,8 @@
       "p15": {
         "percentile": 15,
         "value": 5.7,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -2226,8 +2336,7 @@
             "game_id": "2025_07_ATL_SF",
             "value": 68
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "20+": {
@@ -2267,7 +2376,7 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": false,
         "qualified": true,
@@ -2283,6 +2392,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -2364,8 +2475,7 @@
             "opponent_team": "LA",
             "value": 2
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 1.5,
@@ -2376,7 +2486,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Darnell Mooney"
       },
       "market_hr": {
         "hits": 7,
@@ -2387,6 +2498,8 @@
       "p15": {
         "percentile": 15,
         "value": 1,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -2508,8 +2621,7 @@
             "game_id": "2025_07_ATL_SF",
             "value": 3
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "2+": {
@@ -2549,7 +2661,7 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": false,
         "qualified": true,
@@ -2565,6 +2677,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -2646,8 +2760,7 @@
             "opponent_team": "BAL",
             "value": 138
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 41.5,
@@ -2658,7 +2771,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Stefon Diggs"
       },
       "market_hr": {
         "hits": 7,
@@ -2669,6 +2783,8 @@
       "p15": {
         "percentile": 15,
         "value": 26,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -2790,8 +2906,7 @@
             "game_id": "2025_05_NE_BUF",
             "value": 146
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "20+": {
@@ -2831,11 +2946,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR and ladder conditions"
+        "reason": "Both conditions"
       }
     },
     {
@@ -2847,6 +2962,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -2928,8 +3045,7 @@
             "opponent_team": "BAL",
             "value": 9
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 3.5,
@@ -2940,7 +3056,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Stefon Diggs"
       },
       "market_hr": {
         "hits": 7,
@@ -2951,6 +3068,8 @@
       "p15": {
         "percentile": 15,
         "value": 3,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -3072,8 +3191,7 @@
             "game_id": "2025_05_NE_BUF",
             "value": 10
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "2+": {
@@ -3113,11 +3231,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR and ladder conditions"
+        "reason": "Both conditions"
       }
     },
     {
@@ -3129,8 +3247,9 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 8,
+        "observations": null
       },
       "current_market": {
         "line": 38.5,
@@ -3141,7 +3260,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Antonio Williams"
       },
       "market_hr": {
         "hits": null,
@@ -3152,16 +3272,53 @@
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 8,
+        "observations": null
       },
-      "ladder": null,
+      "ladder": {
+        "20+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "30+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "40+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "50+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "60+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "75+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "100+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        }
+      },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": false,
         "qualified": false,
-        "reason": "Neither condition met or required data unavailable"
+        "reason": "Neither condition met"
       }
     },
     {
@@ -3173,8 +3330,9 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 8,
+        "observations": null
       },
       "current_market": {
         "line": 3.5,
@@ -3185,7 +3343,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Antonio Williams"
       },
       "market_hr": {
         "hits": null,
@@ -3196,16 +3355,53 @@
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 8,
+        "observations": null
       },
-      "ladder": null,
+      "ladder": {
+        "2+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "3+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "4+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "5+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "6+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "7+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        },
+        "8+": {
+          "hits": null,
+          "denominator": null,
+          "display": "UNAVAILABLE"
+        }
+      },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": false,
         "qualified": false,
-        "reason": "Neither condition met or required data unavailable"
+        "reason": "Neither condition met"
       }
     },
     {
@@ -3217,6 +3413,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -3298,8 +3496,7 @@
             "opponent_team": "NYG",
             "value": 0
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 31.5,
@@ -3310,7 +3507,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Treylon Burks"
       },
       "market_hr": {
         "hits": 3,
@@ -3321,8 +3519,9 @@
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 19,
+        "observations": null
       },
       "ladder": {
         "20+": {
@@ -3362,11 +3561,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": false,
         "qualified": false,
-        "reason": "Neither condition met or required data unavailable"
+        "reason": "Neither condition met"
       }
     },
     {
@@ -3378,6 +3577,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -3459,8 +3660,7 @@
             "opponent_team": "NYG",
             "value": 0
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 1.5,
@@ -3471,7 +3671,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Treylon Burks"
       },
       "market_hr": {
         "hits": 6,
@@ -3482,8 +3683,9 @@
       "p15": {
         "percentile": 15,
         "value": null,
-        "observations": null,
-        "available": false
+        "available": false,
+        "available_game_count": 19,
+        "observations": null
       },
       "ladder": {
         "2+": {
@@ -3523,7 +3725,7 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": false,
         "qualified": true,
@@ -3539,6 +3741,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -3620,8 +3824,7 @@
             "opponent_team": "LAC",
             "value": 21
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 7.5,
@@ -3632,7 +3835,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Van Jefferson"
       },
       "market_hr": {
         "hits": 9,
@@ -3643,6 +3847,8 @@
       "p15": {
         "percentile": 15,
         "value": 5.1,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -3764,12 +3970,47 @@
             "game_id": "2024_15_PIT_PHI",
             "value": 0
           }
-        ],
-        "available": true
+        ]
       },
-      "ladder": null,
+      "ladder": {
+        "20+": {
+          "hits": 7,
+          "denominator": 10,
+          "display": "7/10"
+        },
+        "30+": {
+          "hits": 3,
+          "denominator": 10,
+          "display": "3/10"
+        },
+        "40+": {
+          "hits": 3,
+          "denominator": 10,
+          "display": "3/10"
+        },
+        "50+": {
+          "hits": 1,
+          "denominator": 10,
+          "display": "1/10"
+        },
+        "60+": {
+          "hits": 0,
+          "denominator": 10,
+          "display": "0/10"
+        },
+        "75+": {
+          "hits": 0,
+          "denominator": 10,
+          "display": "0/10"
+        },
+        "100+": {
+          "hits": 0,
+          "denominator": 10,
+          "display": "0/10"
+        }
+      },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": false,
         "qualified": true,
@@ -3785,6 +4026,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -3866,8 +4109,7 @@
             "opponent_team": "LAC",
             "value": 1
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 1.5,
@@ -3878,7 +4120,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Van Jefferson"
       },
       "market_hr": {
         "hits": 6,
@@ -3889,6 +4132,8 @@
       "p15": {
         "percentile": 15,
         "value": 1,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -4010,12 +4255,47 @@
             "game_id": "2024_15_PIT_PHI",
             "value": 1
           }
-        ],
-        "available": true
+        ]
       },
-      "ladder": null,
+      "ladder": {
+        "2+": {
+          "hits": 6,
+          "denominator": 10,
+          "display": "6/10"
+        },
+        "3+": {
+          "hits": 4,
+          "denominator": 10,
+          "display": "4/10"
+        },
+        "4+": {
+          "hits": 1,
+          "denominator": 10,
+          "display": "1/10"
+        },
+        "5+": {
+          "hits": 1,
+          "denominator": 10,
+          "display": "1/10"
+        },
+        "6+": {
+          "hits": 0,
+          "denominator": 10,
+          "display": "0/10"
+        },
+        "7+": {
+          "hits": 0,
+          "denominator": 10,
+          "display": "0/10"
+        },
+        "8+": {
+          "hits": 0,
+          "denominator": 10,
+          "display": "0/10"
+        }
+      },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": false,
         "qualified": true,
@@ -4031,6 +4311,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -4112,8 +4394,7 @@
             "opponent_team": "GB",
             "value": 27
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 47.5,
@@ -4124,7 +4405,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Isaiah Likely"
       },
       "market_hr": {
         "hits": 5,
@@ -4135,6 +4417,8 @@
       "p15": {
         "percentile": 15,
         "value": 9.7,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -4256,8 +4540,7 @@
             "game_id": "2025_05_HOU_BAL",
             "value": 12
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "20+": {
@@ -4297,11 +4580,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR condition"
+        "reason": "Ladder condition"
       }
     },
     {
@@ -4313,6 +4596,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -4394,8 +4679,7 @@
             "opponent_team": "GB",
             "value": 3
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 4.5,
@@ -4406,7 +4690,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Isaiah Likely"
       },
       "market_hr": {
         "hits": 6,
@@ -4417,6 +4702,8 @@
       "p15": {
         "percentile": 15,
         "value": 1.85,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -4538,8 +4825,7 @@
             "game_id": "2025_05_HOU_BAL",
             "value": 1
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "2+": {
@@ -4579,11 +4865,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR and ladder conditions"
+        "reason": "Both conditions"
       }
     },
     {
@@ -4595,6 +4881,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -4676,8 +4964,7 @@
             "opponent_team": "CHI",
             "value": 75
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 5.5,
@@ -4688,7 +4975,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Theo Johnson"
       },
       "market_hr": {
         "hits": 8,
@@ -4699,6 +4987,8 @@
       "p15": {
         "percentile": 15,
         "value": 8.4,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -4820,12 +5110,47 @@
             "game_id": "2024_13_NYG_DAL",
             "value": 54
           }
-        ],
-        "available": true
+        ]
       },
-      "ladder": null,
+      "ladder": {
+        "20+": {
+          "hits": 6,
+          "denominator": 10,
+          "display": "6/10"
+        },
+        "30+": {
+          "hits": 5,
+          "denominator": 10,
+          "display": "5/10"
+        },
+        "40+": {
+          "hits": 3,
+          "denominator": 10,
+          "display": "3/10"
+        },
+        "50+": {
+          "hits": 3,
+          "denominator": 10,
+          "display": "3/10"
+        },
+        "60+": {
+          "hits": 3,
+          "denominator": 10,
+          "display": "3/10"
+        },
+        "75+": {
+          "hits": 2,
+          "denominator": 10,
+          "display": "2/10"
+        },
+        "100+": {
+          "hits": 0,
+          "denominator": 10,
+          "display": "0/10"
+        }
+      },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": false,
         "qualified": true,
@@ -4841,6 +5166,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -4922,8 +5249,7 @@
             "opponent_team": "CHI",
             "value": 7
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 1.5,
@@ -4934,7 +5260,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Theo Johnson"
       },
       "market_hr": {
         "hits": 6,
@@ -4945,6 +5272,8 @@
       "p15": {
         "percentile": 15,
         "value": 1,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -5066,12 +5395,47 @@
             "game_id": "2024_13_NYG_DAL",
             "value": 5
           }
-        ],
-        "available": true
+        ]
       },
-      "ladder": null,
+      "ladder": {
+        "2+": {
+          "hits": 6,
+          "denominator": 10,
+          "display": "6/10"
+        },
+        "3+": {
+          "hits": 5,
+          "denominator": 10,
+          "display": "5/10"
+        },
+        "4+": {
+          "hits": 1,
+          "denominator": 10,
+          "display": "1/10"
+        },
+        "5+": {
+          "hits": 1,
+          "denominator": 10,
+          "display": "1/10"
+        },
+        "6+": {
+          "hits": 1,
+          "denominator": 10,
+          "display": "1/10"
+        },
+        "7+": {
+          "hits": 1,
+          "denominator": 10,
+          "display": "1/10"
+        },
+        "8+": {
+          "hits": 0,
+          "denominator": 10,
+          "display": "0/10"
+        }
+      },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": true,
         "ladder_condition": false,
         "qualified": true,
@@ -5087,6 +5451,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -5168,8 +5534,7 @@
             "opponent_team": "SF",
             "value": 33
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 35.5,
@@ -5180,7 +5545,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Chigoziem Okonkwo"
       },
       "market_hr": {
         "hits": 5,
@@ -5191,6 +5557,8 @@
       "p15": {
         "percentile": 15,
         "value": 4.85,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -5312,8 +5680,7 @@
             "game_id": "2025_04_TEN_HOU",
             "value": 4
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "20+": {
@@ -5353,11 +5720,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": false,
         "qualified": false,
-        "reason": "Neither condition met or required data unavailable"
+        "reason": "Neither condition met"
       }
     },
     {
@@ -5369,6 +5736,8 @@
       "historical_sample": {
         "label": "L10",
         "n": 10,
+        "available": true,
+        "available_game_count": 10,
         "observations": [
           {
             "season": 2026,
@@ -5450,8 +5819,7 @@
             "opponent_team": "SF",
             "value": 4
           }
-        ],
-        "available": true
+        ]
       },
       "current_market": {
         "line": 3.5,
@@ -5462,7 +5830,8 @@
         "event_id": "34118102",
         "quote_source": "GitHub odds CSV snapshot",
         "line_selection": "Available over-price closest to -110; proxy for main market line",
-        "quote_type": "snapshot; not independently verified live"
+        "quote_type": "snapshot; not independently verified live",
+        "source_player_label": "Chigoziem Okonkwo"
       },
       "market_hr": {
         "hits": 5,
@@ -5473,6 +5842,8 @@
       "p15": {
         "percentile": 15,
         "value": 2,
+        "available": true,
+        "available_game_count": 20,
         "observations": [
           {
             "season": 2026,
@@ -5594,8 +5965,7 @@
             "game_id": "2025_04_TEN_HOU",
             "value": 1
           }
-        ],
-        "available": true
+        ]
       },
       "ladder": {
         "2+": {
@@ -5635,11 +6005,11 @@
         }
       },
       "qualification": {
-        "rule": "Market HR >= 6/10 OR at least one fixed ladder >=8/10",
+        "rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >=8/10",
         "market_hr_condition": false,
         "ladder_condition": true,
         "qualified": true,
-        "reason": "Market HR condition"
+        "reason": "Ladder condition"
       }
     }
   ],
@@ -5809,6 +6179,7 @@
         "team": "WAS",
         "market": "Passing Yards",
         "market_line": 200.5,
+        "over_odds": "-113",
         "market_hr": "4/10",
         "qualifying_ladders": [
           {
@@ -5821,8 +6192,9 @@
         "player": "Cam Skattebo",
         "team": "NYG",
         "market": "Rushing Yards",
-        "market_line": null,
-        "market_hr": "UNAVAILABLE",
+        "market_line": 52.5,
+        "over_odds": "-115",
+        "market_hr": "8/10",
         "qualifying_ladders": [
           {
             "threshold": "20+",
@@ -5847,6 +6219,7 @@
         "team": "NYG",
         "market": "Rushing Yards",
         "market_line": 23.5,
+        "over_odds": "-113",
         "market_hr": "6/10",
         "qualifying_ladders": []
       },
@@ -5855,6 +6228,7 @@
         "team": "WAS",
         "market": "Rushing Yards",
         "market_line": 37.5,
+        "over_odds": "-113",
         "market_hr": "3/10",
         "qualifying_ladders": [
           {
@@ -5868,6 +6242,7 @@
         "team": "NYG",
         "market": "Receiving Yards",
         "market_line": 69.5,
+        "over_odds": "-114",
         "market_hr": "4/10",
         "qualifying_ladders": [
           {
@@ -5881,6 +6256,7 @@
         "team": "NYG",
         "market": "Receptions",
         "market_line": 5.5,
+        "over_odds": "-143",
         "market_hr": "5/10",
         "qualifying_ladders": [
           {
@@ -5894,6 +6270,7 @@
         "team": "NYG",
         "market": "Receiving Yards",
         "market_line": 15.5,
+        "over_odds": "-114",
         "market_hr": "6/10",
         "qualifying_ladders": []
       },
@@ -5902,6 +6279,7 @@
         "team": "NYG",
         "market": "Receptions",
         "market_line": 1.5,
+        "over_odds": "-112",
         "market_hr": "7/10",
         "qualifying_ladders": []
       },
@@ -5910,6 +6288,7 @@
         "team": "WAS",
         "market": "Receiving Yards",
         "market_line": 41.5,
+        "over_odds": "-112",
         "market_hr": "7/10",
         "qualifying_ladders": [
           {
@@ -5927,6 +6306,7 @@
         "team": "WAS",
         "market": "Receptions",
         "market_line": 3.5,
+        "over_odds": "-163",
         "market_hr": "7/10",
         "qualifying_ladders": [
           {
@@ -5944,6 +6324,7 @@
         "team": "WAS",
         "market": "Receptions",
         "market_line": 1.5,
+        "over_odds": "-216",
         "market_hr": "6/10",
         "qualifying_ladders": []
       },
@@ -5952,6 +6333,7 @@
         "team": "WAS",
         "market": "Receiving Yards",
         "market_line": 7.5,
+        "over_odds": "-114",
         "market_hr": "9/10",
         "qualifying_ladders": []
       },
@@ -5960,6 +6342,7 @@
         "team": "WAS",
         "market": "Receptions",
         "market_line": 1.5,
+        "over_odds": "139",
         "market_hr": "6/10",
         "qualifying_ladders": []
       },
@@ -5968,6 +6351,7 @@
         "team": "NYG",
         "market": "Receiving Yards",
         "market_line": 47.5,
+        "over_odds": "-113",
         "market_hr": "5/10",
         "qualifying_ladders": [
           {
@@ -5981,6 +6365,7 @@
         "team": "NYG",
         "market": "Receptions",
         "market_line": 4.5,
+        "over_odds": "-124",
         "market_hr": "6/10",
         "qualifying_ladders": [
           {
@@ -5994,6 +6379,7 @@
         "team": "NYG",
         "market": "Receiving Yards",
         "market_line": 5.5,
+        "over_odds": "-108",
         "market_hr": "8/10",
         "qualifying_ladders": []
       },
@@ -6002,6 +6388,7 @@
         "team": "NYG",
         "market": "Receptions",
         "market_line": 1.5,
+        "over_odds": "276",
         "market_hr": "6/10",
         "qualifying_ladders": []
       },
@@ -6010,6 +6397,7 @@
         "team": "WAS",
         "market": "Receptions",
         "market_line": 3.5,
+        "over_odds": "-152",
         "market_hr": "5/10",
         "qualifying_ladders": [
           {
@@ -6029,7 +6417,7 @@
       "authorized_primary": "DraftKings",
       "used_sportsbook": "DraftKings",
       "authorization": "User explicitly approved DraftKings throughout",
-      "quote_limitations": "CSV snapshot only; not independently verified live; over-side quotes only; main line proxied by available over price closest to -110"
+      "limitations": "Snapshot only; not independently verified live. CSV contains over-side prices only; under odds blank. Main line proxied by available over quote closest to -110."
     },
     "historical_snapshot": {
       "file": "data/nfl_prop_model.txt",
@@ -6037,22 +6425,27 @@
       "format": "JSONL individual game logs"
     },
     "methodology": {
-      "historical_cutoff": "Completion of final scheduled Week 9 game",
+      "historical_cutoff": "Completion of final scheduled Week 9 game; exclude all Week 10",
       "l10_sort": "Season descending, then week descending",
-      "p15": "20 most recent qualifying completed regular-season games; standard linear interpolation; unavailable if fewer than 20",
+      "p15": "15th percentile of 20 most recent qualifying completed regular-season games; linear interpolation; unavailable below 20 games",
+      "market_hr": "Count L10 values strictly greater than selected DraftKings line; half-point lines avoid pushes",
+      "ladder": "Fixed threshold hit rates from L10; >= threshold counts as hit",
       "qualification": "Market HR >=60% OR at least one fixed ladder threshold >=80%; L10 denominator",
-      "current_market": "DraftKings; choose available line with over odds closest to -110 as a main-line proxy; record one-sided price as snapshot, not independently verified live",
-      "market_hr": "For each market, count L10 game results strictly greater than the selected half-point line; no pushes possible"
+      "current_market": "Use only DraftKings rows; select available over price closest to -110 as proxy for main line; label snapshot and not live verified",
+      "alias": "Cam Skattebo historical player ID matched to DraftKings CSV display name Cameron Skattebo."
     },
     "notes": [
-      "User explicitly authorized DraftKings throughout the analysis.",
-      "DraftKings matchup odds CSV has 440 rows for WAS Commanders @ NY Giants.",
-      "The file provides over-side odds only; no under prices are populated.",
-      "Main-market line is proxied by the available over-price closest to -110. It is not independently confirmed as the book's canonical main line.",
-      "Odds are from the GitHub CSV snapshot, not independently verified live quotes.",
-      "Cam Skattebo has no matching DraftKings player rows in the retrieved matchup snapshot; his historical ladder data remains, but current market and market HR are unavailable.",
-      "All eligible players identified in the matchup odds feed are included, including Van Jefferson and Theo Johnson, which were omitted from the first Stage 1 export.",
-      "Players with fewer than 10 historical games have unavailable L10 and cannot qualify through Market HR; ladder qualification remains unavailable."
-    ]
+      "All 26 player-market combinations were recomputed from the locked Stage 0 cutoff and raw JSONL game logs.",
+      "Cam Skattebo is listed as Cameron Skattebo in DraftKings CSV; alias matched and DraftKings rushing quote is available.",
+      "The DraftKings CSV contains only over-side odds; under odds are blank.",
+      "Odds are a repository snapshot, not independently verified live quotes.",
+      "Main-line proxy is the available over price closest to -110; where the odds feed contains alternate lines only, this proxy may not equal the book's canonical main line.",
+      "Stage 2 artifact still points to the previous Stage 1 state ID and is stale until Stage 2 is rerun."
+    ],
+    "source_paths": {
+      "stage0": "state/week10_2026/stage0_state.json",
+      "historical": "data/nfl_prop_model.txt",
+      "odds": "odds/nfl_player_props_latest.csv"
+    }
   }
 }
