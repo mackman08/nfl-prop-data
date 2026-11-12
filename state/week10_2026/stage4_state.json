@@ -1,0 +1,1227 @@
+{
+  "schema_version": "V7.2.9",
+  "stage": 4,
+  "stage_name": "Final Prop Selection",
+  "state_id": "STATE-4-W10-2026-20261111T2120EST",
+  "parent_state_id": "STATE-3-W10-2026-20261111T2105EST",
+  "stage2_parent_state_id": "STATE-2-W10-2026-20261111T2045EST",
+  "stage1_parent_state_id": "STATE-1-W10-2026-20261111T2035EST",
+  "stage0_parent_state_id": "STATE-0-W10-2026-20261111T1949EST",
+  "created_at": "2026-11-11T21:20:00-05:00",
+  "scope": {
+    "season": 2026,
+    "week": 10,
+    "game": "WAS Commanders @ NYG Giants",
+    "game_date": "2026-11-12",
+    "kickoff_local": "20:15 ET",
+    "historical_cutoff": "End of final scheduled Week 9 game; exclude all Week 10 games",
+    "sportsbook": "DraftKings",
+    "input_candidates": 8,
+    "final_card_count": 8
+  },
+  "methodology": {
+    "percentiles": "P7 and P16 are the 7th and 16th percentiles of the player's 20 most recent qualifying completed regular-season games before the Stage 0 cutoff, using linear interpolation. If fewer than 20 observations exist, both percentiles are unavailable; do not impute.",
+    "support_tiers": "P7_SUPPORTED when P7 >= selected Over line; otherwise P16_SUPPORTED when P16 >= selected Over line; otherwise UNSUPPORTED. Rank P7-supported first, then P16-supported, then unsupported.",
+    "distance": "D16=(L-P16)/abs(L); D7=(L-P7)/abs(L). Lower distance/higher percentile-to-line ratio is better; used as a within-tier comparison input.",
+    "ranking": "Within percentile tiers, compare available L20 hit rate, Stage 2 current-week context, graduated odds/value, then percentile distance. Current role/injury concerns may override historical profile. Do not allow odds to override tier, hit rate, context, or eligibility.",
+    "odds": "No hard -300 eligibility cutoff. Preserve the actual DraftKings American odds and calculate raw break-even implied probability for transparent graduated price comparison. Under-side prices are blank in the repository snapshot, so these probabilities are not de-vigged and are not model probabilities. No undocumented composite odds-score formula was invented.",
+    "hit_rate": "L20 hit rate is the count of historical game stats strictly greater than the selected CORE line divided by available qualifying games; where fewer than 20 games exist, show the actual denominator.",
+    "selection": "Final card retains all eight Stage 3 qualifiers in ranked order; Stage 4 ranking is not a claim that each is a recommended bet."
+  },
+  "percentile_tier_counts": {
+    "P7_SUPPORTED": 0,
+    "P16_SUPPORTED": 1,
+    "UNSUPPORTED": 7
+  },
+  "candidates": [
+    {
+      "player": "Malik Nabers",
+      "player_id": "00-0039337",
+      "team": "NYG",
+      "market": "Receptions",
+      "selection": "OVER",
+      "core_line": 4.5,
+      "american_odds": "-288",
+      "implied_break_even_probability": 74.23,
+      "stage1_main_line": 5.5,
+      "stage1_market_hit_rate": "5/10",
+      "stage3_core_l10_hit_rate": "7/10",
+      "available_recent_games": 20,
+      "l20_hit_count": 17,
+      "l20_hit_rate": "17/20",
+      "P7": 2,
+      "P16": 5,
+      "D7": 0.5556,
+      "D16": -0.1111,
+      "percentile_tier": "P16_SUPPORTED",
+      "stage2_context": "SUPPORTIVE",
+      "stage2_rationale": null,
+      "stage3_floor": {
+        "line": 3.5,
+        "over_odds": "-640",
+        "under_odds": null,
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10"
+      },
+      "stage3_ceiling": {
+        "line": 5.5,
+        "over_odds": "-143",
+        "under_odds": null,
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "ranking_inputs": {
+        "l20_hit_rate": "17/20",
+        "context": "SUPPORTIVE",
+        "american_odds": "-288",
+        "implied_break_even_probability": 74.23,
+        "D16": -0.1111,
+        "D7": 0.5556
+      },
+      "history": [
+        {
+          "season": 2026,
+          "week": 9,
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "value": 12
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "value": 11
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 4,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 3,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 2,
+          "value": 9
+        },
+        {
+          "season": 2025,
+          "week": 1,
+          "value": 5
+        },
+        {
+          "season": 2024,
+          "week": 18,
+          "value": 5
+        },
+        {
+          "season": 2024,
+          "week": 17,
+          "value": 7
+        },
+        {
+          "season": 2024,
+          "week": 16,
+          "value": 7
+        },
+        {
+          "season": 2024,
+          "week": 15,
+          "value": 10
+        },
+        {
+          "season": 2024,
+          "week": 14,
+          "value": 5
+        },
+        {
+          "season": 2024,
+          "week": 13,
+          "value": 8
+        },
+        {
+          "season": 2024,
+          "week": 12,
+          "value": 6
+        },
+        {
+          "season": 2024,
+          "week": 10,
+          "value": 6
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "player": "Darnell Mooney",
+      "player_id": "00-0036309",
+      "team": "NYG",
+      "market": "Receiving Yards",
+      "selection": "OVER",
+      "core_line": 9.5,
+      "american_odds": "-199",
+      "implied_break_even_probability": 66.56,
+      "stage1_main_line": 15.5,
+      "stage1_market_hit_rate": "6/10",
+      "stage3_core_l10_hit_rate": "7/10",
+      "available_recent_games": 20,
+      "l20_hit_count": 16,
+      "l20_hit_rate": "16/20",
+      "P7": 1.32,
+      "P16": 6.2,
+      "D7": 0.8611,
+      "D16": 0.3474,
+      "percentile_tier": "UNSUPPORTED",
+      "stage2_context": "CONCERN",
+      "stage2_rationale": null,
+      "stage3_floor": null,
+      "stage3_ceiling": {
+        "line": 14.5,
+        "over_odds": "-124",
+        "under_odds": null,
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "ranking_inputs": {
+        "l20_hit_rate": "16/20",
+        "context": "CONCERN",
+        "american_odds": "-199",
+        "implied_break_even_probability": 66.56,
+        "D16": 0.3474,
+        "D7": 0.8611
+      },
+      "history": [
+        {
+          "season": 2026,
+          "week": 9,
+          "value": 54
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "value": 14
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "value": 20
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "value": 48
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "value": 27
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "value": 35
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "value": 24
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "value": 35
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "value": 25
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "value": 74
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "value": 34
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "value": 17
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "value": 15
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "value": 11
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "value": 68
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "player": "Cam Skattebo",
+      "player_id": "00-0040715",
+      "team": "NYG",
+      "market": "Rushing Yards",
+      "selection": "OVER",
+      "core_line": 39.5,
+      "american_odds": "-254",
+      "implied_break_even_probability": 71.75,
+      "stage1_main_line": 52.5,
+      "stage1_market_hit_rate": "8/10",
+      "stage3_core_l10_hit_rate": "8/10",
+      "available_recent_games": 14,
+      "l20_hit_count": 11,
+      "l20_hit_rate": "11/14",
+      "P7": null,
+      "P16": null,
+      "D7": null,
+      "D16": null,
+      "percentile_tier": "UNSUPPORTED",
+      "stage2_context": "MIXED",
+      "stage2_rationale": null,
+      "stage3_floor": {
+        "line": 29.5,
+        "over_odds": "-571",
+        "under_odds": null,
+        "hits": 9,
+        "denominator": 10,
+        "display": "9/10"
+      },
+      "stage3_ceiling": {
+        "line": 49.5,
+        "over_odds": "-135",
+        "under_odds": null,
+        "hits": 8,
+        "denominator": 10,
+        "display": "8/10"
+      },
+      "ranking_inputs": {
+        "l20_hit_rate": "11/14",
+        "context": "MIXED",
+        "american_odds": "-254",
+        "implied_break_even_probability": 71.75,
+        "D16": null,
+        "D7": null
+      },
+      "history": [
+        {
+          "season": 2026,
+          "week": 7,
+          "value": 124
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "value": 59
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "value": 58
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "value": 60
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "value": 36
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "value": 81
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "value": 60
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "value": 98
+        },
+        {
+          "season": 2025,
+          "week": 5,
+          "value": 59
+        },
+        {
+          "season": 2025,
+          "week": 4,
+          "value": 79
+        },
+        {
+          "season": 2025,
+          "week": 3,
+          "value": 60
+        },
+        {
+          "season": 2025,
+          "week": 2,
+          "value": 45
+        },
+        {
+          "season": 2025,
+          "week": 1,
+          "value": -3
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "player": "Stefon Diggs",
+      "player_id": "00-0031588",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "selection": "OVER",
+      "core_line": 29.5,
+      "american_odds": "-230",
+      "implied_break_even_probability": 69.7,
+      "stage1_main_line": 41.5,
+      "stage1_market_hit_rate": "7/10",
+      "stage3_core_l10_hit_rate": "10/10",
+      "available_recent_games": 20,
+      "l20_hit_count": 15,
+      "l20_hit_rate": "15/20",
+      "P7": 21.98,
+      "P16": 26.08,
+      "D7": 0.2549,
+      "D16": 0.1159,
+      "percentile_tier": "UNSUPPORTED",
+      "stage2_context": "MIXED",
+      "stage2_rationale": null,
+      "stage3_floor": {
+        "line": 24.5,
+        "over_odds": "-333",
+        "under_odds": null,
+        "hits": 10,
+        "denominator": 10,
+        "display": "10/10"
+      },
+      "stage3_ceiling": {
+        "line": 39.5,
+        "over_odds": "-125",
+        "under_odds": null,
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10"
+      },
+      "ranking_inputs": {
+        "l20_hit_rate": "15/20",
+        "context": "MIXED",
+        "american_odds": "-230",
+        "implied_break_even_probability": 69.7,
+        "D16": 0.1159,
+        "D7": 0.2549
+      },
+      "history": [
+        {
+          "season": 2026,
+          "week": 9,
+          "value": 51
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "value": 38
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "value": 35
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "value": 55
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "value": 43
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "value": 101
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "value": 138
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "value": 26
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "value": 26
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "value": 105
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "value": 46
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "value": 38
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "value": 14
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "value": 69
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "value": 28
+        },
+        {
+          "season": 2025,
+          "week": 5,
+          "value": 146
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "player": "Devin Singletary",
+      "player_id": "00-0035250",
+      "team": "NYG",
+      "market": "Rushing Yards",
+      "selection": "OVER",
+      "core_line": 14.5,
+      "american_odds": "-296",
+      "implied_break_even_probability": 74.75,
+      "stage1_main_line": 23.5,
+      "stage1_market_hit_rate": "6/10",
+      "stage3_core_l10_hit_rate": "7/10",
+      "available_recent_games": 20,
+      "l20_hit_count": 13,
+      "l20_hit_rate": "13/20",
+      "P7": 4.31,
+      "P16": 10.04,
+      "D7": 0.7028,
+      "D16": 0.3076,
+      "percentile_tier": "UNSUPPORTED",
+      "stage2_context": "CONCERN",
+      "stage2_rationale": null,
+      "stage3_floor": {
+        "line": 9.5,
+        "over_odds": "-610",
+        "under_odds": null,
+        "hits": 9,
+        "denominator": 10,
+        "display": "9/10"
+      },
+      "stage3_ceiling": {
+        "line": 19.5,
+        "over_odds": "-165",
+        "under_odds": null,
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "ranking_inputs": {
+        "l20_hit_rate": "13/20",
+        "context": "CONCERN",
+        "american_odds": "-296",
+        "implied_break_even_probability": 74.75,
+        "D16": 0.3076,
+        "D7": 0.7028
+      },
+      "history": [
+        {
+          "season": 2026,
+          "week": 9,
+          "value": 31
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "value": 41
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "value": 14
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "value": 9
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "value": 16
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "value": 26
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "value": 45
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "value": 47
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "value": 13
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "value": 68
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "value": 47
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "value": 44
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "value": 43
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 5,
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 4,
+          "value": 28
+        },
+        {
+          "season": 2025,
+          "week": 3,
+          "value": 11
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "player": "Stefon Diggs",
+      "player_id": "00-0031588",
+      "team": "WAS",
+      "market": "Receptions",
+      "selection": "OVER",
+      "core_line": 3.5,
+      "american_odds": "-163",
+      "implied_break_even_probability": 61.98,
+      "stage1_main_line": 3.5,
+      "stage1_market_hit_rate": "7/10",
+      "stage3_core_l10_hit_rate": "7/10",
+      "available_recent_games": 20,
+      "l20_hit_count": 11,
+      "l20_hit_rate": "11/20",
+      "P7": 3,
+      "P16": 3,
+      "D7": 0.1429,
+      "D16": 0.1429,
+      "percentile_tier": "UNSUPPORTED",
+      "stage2_context": "MIXED",
+      "stage2_rationale": null,
+      "stage3_floor": {
+        "line": 2.5,
+        "over_odds": "-410",
+        "under_odds": null,
+        "hits": 10,
+        "denominator": 10,
+        "display": "10/10"
+      },
+      "stage3_ceiling": {
+        "line": 4.5,
+        "over_odds": "129",
+        "under_odds": null,
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "ranking_inputs": {
+        "l20_hit_rate": "11/20",
+        "context": "MIXED",
+        "american_odds": "-163",
+        "implied_break_even_probability": 61.98,
+        "D16": 0.1429,
+        "D7": 0.1429
+      },
+      "history": [
+        {
+          "season": 2026,
+          "week": 9,
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "value": 9
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "value": 9
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "value": 7
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 5,
+          "value": 10
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "player": "Isaiah Likely",
+      "player_id": "00-0037838",
+      "team": "NYG",
+      "market": "Receiving Yards",
+      "selection": "OVER",
+      "core_line": 29.5,
+      "american_odds": "-327",
+      "implied_break_even_probability": 76.58,
+      "stage1_main_line": 47.5,
+      "stage1_market_hit_rate": "5/10",
+      "stage3_core_l10_hit_rate": "7/10",
+      "available_recent_games": 20,
+      "l20_hit_count": 9,
+      "l20_hit_rate": "9/20",
+      "P7": 6.66,
+      "P16": 10.08,
+      "D7": 0.7742,
+      "D16": 0.6583,
+      "percentile_tier": "UNSUPPORTED",
+      "stage2_context": "SUPPORTIVE",
+      "stage2_rationale": null,
+      "stage3_floor": {
+        "line": 24.5,
+        "over_odds": "-482",
+        "under_odds": null,
+        "hits": 8,
+        "denominator": 10,
+        "display": "8/10"
+      },
+      "stage3_ceiling": {
+        "line": 39.5,
+        "over_odds": "-172",
+        "under_odds": null,
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
+      "ranking_inputs": {
+        "l20_hit_rate": "9/20",
+        "context": "SUPPORTIVE",
+        "american_odds": "-327",
+        "implied_break_even_probability": 76.58,
+        "D16": 0.6583,
+        "D7": 0.7742
+      },
+      "history": [
+        {
+          "season": 2026,
+          "week": 9,
+          "value": 53
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "value": 12
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "value": 99
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "value": 94
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "value": 66
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "value": 13
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "value": 78
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "value": 32
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "value": 27
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "value": 25
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "value": 95
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "value": 10
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "value": 15
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "value": 17
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "value": 60
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "value": 6
+        },
+        {
+          "season": 2025,
+          "week": 5,
+          "value": 12
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "player": "Isaiah Likely",
+      "player_id": "00-0037838",
+      "team": "NYG",
+      "market": "Receptions",
+      "selection": "OVER",
+      "core_line": 3.5,
+      "american_odds": "-274",
+      "implied_break_even_probability": 73.26,
+      "stage1_main_line": 4.5,
+      "stage1_market_hit_rate": "6/10",
+      "stage3_core_l10_hit_rate": "6/10",
+      "available_recent_games": 20,
+      "l20_hit_count": 8,
+      "l20_hit_rate": "8/20",
+      "P7": 1,
+      "P16": 2,
+      "D7": 0.7143,
+      "D16": 0.4286,
+      "percentile_tier": "UNSUPPORTED",
+      "stage2_context": "SUPPORTIVE",
+      "stage2_rationale": null,
+      "stage3_floor": {
+        "line": 2.5,
+        "over_odds": "-760",
+        "under_odds": null,
+        "hits": 7,
+        "denominator": 10,
+        "display": "7/10"
+      },
+      "stage3_ceiling": {
+        "line": 4.5,
+        "over_odds": "-124",
+        "under_odds": null,
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "ranking_inputs": {
+        "l20_hit_rate": "8/20",
+        "context": "SUPPORTIVE",
+        "american_odds": "-274",
+        "implied_break_even_probability": 73.26,
+        "D16": 0.4286,
+        "D7": 0.7143
+      },
+      "history": [
+        {
+          "season": 2026,
+          "week": 9,
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "value": 11
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "value": 5
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 8,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 6,
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 5,
+          "value": 1
+        }
+      ],
+      "rank": 8
+    }
+  ],
+  "current_week_validation": {
+    "official_injury_report": "NFL Week 10 report retrieved Nov 11, 2026. The eight selected candidates have no game-status designation in the official report; Cam Skattebo and Darnell Mooney are listed as full participants. Washington has Lucas Patrick and Colson Yankoff OUT; Giants LB Malik Harrison is questionable.",
+    "sources": [
+      "https://www.nfl.com/injuries/?team=atl",
+      "https://amp.nfl.com/news/nfl-week-10-injury-report-2026-season"
+    ],
+    "stage2_context_preserved": true
+  },
+  "source_files": {
+    "historical_file": "data/nfl_prop_model.txt",
+    "historical_blob_sha": "5865db84cb2ca12fa68e56144982865b798ac49a",
+    "stage0_file": "state/week10_2026/stage0_state.json",
+    "stage1_file": "state/week10_2026/stage1_state.json",
+    "stage2_file": "state/week10_2026/stage2_state.json",
+    "stage3_file": "state/week10_2026/stage3_state.json",
+    "odds_file": "odds/nfl_player_props_latest.csv",
+    "odds_blob_sha": "307b807a26757041b9c2630e7ea95dd44858e3d4",
+    "odds_type": "DraftKings repository snapshot, not independently verified live"
+  },
+  "notes": [
+    "Malik Nabers receptions is the sole P16-supported candidate; no candidate meets P7 support.",
+    "Cam Skattebo has only 14 qualifying historical games in the source file; P7/P16 are unavailable and L20 is reported as 11/14 rather than padded to 20.",
+    "The official injury report has no game-status designation for any of the eight Stage 4 candidates. This does not remove Stage 2 workload/role concerns.",
+    "No composite graduated odds score was generated because the exact numeric scoring formula was not present in the retrieved V7.2.9 specification. Raw prices and implied break-even probabilities are retained as continuous inputs; no -300 cutoff was applied.",
+    "All eight candidates remain on the ranked final card for Stage 5 portfolio construction; this stage does not construct portfolios."
+  ]
+}
