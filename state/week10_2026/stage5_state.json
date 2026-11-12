@@ -1,0 +1,288 @@
+{
+  "schema_version": "V7.2.9",
+  "stage": 5,
+  "stage_name": "Portfolio Construction",
+  "season": 2026,
+  "week": 10,
+  "scope": "Thursday only — WAS Commanders at NYG Giants, November 12, 2026, 8:15 PM ET",
+  "historical_sample": "L10, locked at Stage 0 cutoff after final Week 9 game",
+  "state_id": "STATE-5-W10-2026-20261111T2140EST",
+  "parent_state_id": "STATE-4-W10-2026-20261111T2120EST",
+  "input_state_id": "STATE-4-W10-2026-20261111T2120EST",
+  "created_at": "2026-11-11T21:40:00-05:00",
+  "methodology": {
+    "purpose": "Construct five portfolio types from the locked Stage 4 final prop card only.",
+    "evidence_rule": "All legs must have L10 hit rate >=70%. Balanced and Price-Seeking prefer >=80%; 70–79% is permitted when necessary. Low Variance prefers >=90%, then >=80%, then 70–79% when necessary; <70% is prohibited.",
+    "low_variance": "Exactly 2 legs.",
+    "portfolio_sizes": {
+      "BALANCED": 2,
+      "PRICE SEEKING — LOW": 3,
+      "PRICE SEEKING — MEDIUM": 4,
+      "PRICE SEEKING — HIGH": 5
+    },
+    "threshold_rule": "Use Stage 4's persisted FLOOR, CORE, or CEILING line and price; do not invent a new line. Prefer conservative qualifying thresholds while respecting the portfolio payout objective.",
+    "payout_targets": {
+      "LOW VARIANCE": "No numeric payout target recovered from the locked prior Stage 5 specification",
+      "BALANCED": "+200 to +400",
+      "PRICE SEEKING — LOW": "+400 to +700",
+      "PRICE SEEKING — MEDIUM": "+700 to +1000",
+      "PRICE SEEKING — HIGH": ">+1000"
+    },
+    "payout_rule": "Combined odds are mathematical estimates from multiplying decimal equivalents of individual American prices, not sportsbook parlay quotes. Payout targets are not forced when doing so would weaken evidence or violate portfolio constraints.",
+    "correlation_rule": "No same-player duplicate legs were used. No explicit same-game correlation adjustment is available in the saved specification; combined odds are therefore indicative only, not a priced correlated-parlay quote.",
+    "odds_source": "DraftKings repository snapshot. Prices are not independently verified live.",
+    "selection_rule": "Only the eight Stage 4 final-card candidates are eligible; do not add Stage 1 or Stage 3 candidates that failed to reach Stage 4."
+  },
+  "portfolios": [
+    {
+      "type": "LOW VARIANCE",
+      "legs": 2,
+      "legs_detail": [
+        {
+          "player": "Cam Skattebo",
+          "team": "NYG",
+          "market": "Rushing Yards",
+          "threshold": "29.5+",
+          "price": -571,
+          "hr": "9/10",
+          "context": "Mixed",
+          "band": "FLOOR"
+        },
+        {
+          "player": "Stefon Diggs",
+          "team": "WAS",
+          "market": "Receiving Yards",
+          "threshold": "24.5+",
+          "price": -333,
+          "hr": "10/10",
+          "context": "Mixed",
+          "band": "FLOOR"
+        }
+      ],
+      "combined_decimal": 1.5280236454,
+      "estimated_american": "-189",
+      "target_range": "none",
+      "target_met": null,
+      "hr_tier": "Both legs >=90%; preferred tier met"
+    },
+    {
+      "type": "BALANCED",
+      "legs": 2,
+      "legs_detail": [
+        {
+          "player": "Cam Skattebo",
+          "team": "NYG",
+          "market": "Rushing Yards",
+          "threshold": "49.5+",
+          "price": -135,
+          "hr": "8/10",
+          "context": "Mixed",
+          "band": "CEILING"
+        },
+        {
+          "player": "Stefon Diggs",
+          "team": "WAS",
+          "market": "Receiving Yards",
+          "threshold": "39.5+",
+          "price": -125,
+          "hr": "7/10",
+          "context": "Mixed",
+          "band": "CEILING"
+        }
+      ],
+      "combined_decimal": 3.1333333333,
+      "estimated_american": "+213",
+      "target_range": "+200 to +400",
+      "target_met": true,
+      "hr_tier": "One leg 8/10, one leg 7/10; 70–79% used where required to reach payout target"
+    },
+    {
+      "type": "PRICE SEEKING — LOW",
+      "legs": 3,
+      "legs_detail": [
+        {
+          "player": "Cam Skattebo",
+          "team": "NYG",
+          "market": "Rushing Yards",
+          "threshold": "49.5+",
+          "price": -135,
+          "hr": "8/10",
+          "context": "Mixed",
+          "band": "CEILING"
+        },
+        {
+          "player": "Stefon Diggs",
+          "team": "WAS",
+          "market": "Receiving Yards",
+          "threshold": "39.5+",
+          "price": -125,
+          "hr": "7/10",
+          "context": "Mixed",
+          "band": "CEILING"
+        },
+        {
+          "player": "Darnell Mooney",
+          "team": "NYG",
+          "market": "Receiving Yards",
+          "threshold": "9.5+",
+          "price": -199,
+          "hr": "7/10",
+          "context": "Concern",
+          "band": "CORE"
+        }
+      ],
+      "combined_decimal": 4.7078726968,
+      "estimated_american": "+371",
+      "target_range": "+400 to +700",
+      "target_met": false,
+      "hr_tier": "All legs >=70%; 70–79% accepted because no 3-leg distinct-player combination of stronger available bands reaches target"
+    },
+    {
+      "type": "PRICE SEEKING — MEDIUM",
+      "legs": 4,
+      "legs_detail": [
+        {
+          "player": "Cam Skattebo",
+          "team": "NYG",
+          "market": "Rushing Yards",
+          "threshold": "49.5+",
+          "price": -135,
+          "hr": "8/10",
+          "context": "Mixed",
+          "band": "CEILING"
+        },
+        {
+          "player": "Stefon Diggs",
+          "team": "WAS",
+          "market": "Receiving Yards",
+          "threshold": "39.5+",
+          "price": -125,
+          "hr": "7/10",
+          "context": "Mixed",
+          "band": "CEILING"
+        },
+        {
+          "player": "Darnell Mooney",
+          "team": "NYG",
+          "market": "Receiving Yards",
+          "threshold": "9.5+",
+          "price": -199,
+          "hr": "7/10",
+          "context": "Concern",
+          "band": "CORE"
+        },
+        {
+          "player": "Malik Nabers",
+          "team": "NYG",
+          "market": "Receptions",
+          "threshold": "4.5+",
+          "price": -288,
+          "hr": "7/10",
+          "context": "Supportive",
+          "band": "CORE"
+        }
+      ],
+      "combined_decimal": 6.3425507165,
+      "estimated_american": "+534",
+      "target_range": "+700 to +1000",
+      "target_met": false,
+      "hr_tier": "All legs >=70%; strongest available distinct-player 4-leg construction"
+    },
+    {
+      "type": "PRICE SEEKING — HIGH",
+      "legs": 5,
+      "legs_detail": [
+        {
+          "player": "Cam Skattebo",
+          "team": "NYG",
+          "market": "Rushing Yards",
+          "threshold": "49.5+",
+          "price": -135,
+          "hr": "8/10",
+          "context": "Mixed",
+          "band": "CEILING"
+        },
+        {
+          "player": "Stefon Diggs",
+          "team": "WAS",
+          "market": "Receiving Yards",
+          "threshold": "39.5+",
+          "price": -125,
+          "hr": "7/10",
+          "context": "Mixed",
+          "band": "CEILING"
+        },
+        {
+          "player": "Darnell Mooney",
+          "team": "NYG",
+          "market": "Receiving Yards",
+          "threshold": "9.5+",
+          "price": -199,
+          "hr": "7/10",
+          "context": "Concern",
+          "band": "CORE"
+        },
+        {
+          "player": "Malik Nabers",
+          "team": "NYG",
+          "market": "Receptions",
+          "threshold": "4.5+",
+          "price": -288,
+          "hr": "7/10",
+          "context": "Supportive",
+          "band": "CORE"
+        },
+        {
+          "player": "Isaiah Likely",
+          "team": "NYG",
+          "market": "Receiving Yards",
+          "threshold": "29.5+",
+          "price": -327,
+          "hr": "7/10",
+          "context": "Supportive",
+          "band": "CORE"
+        }
+      ],
+      "combined_decimal": 8.2821686727,
+      "estimated_american": "+728",
+      "target_range": ">+1000",
+      "target_met": false,
+      "hr_tier": "All legs >=70%; strongest available distinct-player 5-leg construction"
+    }
+  ],
+  "validation": {
+    "stage4_state_exists": true,
+    "stage4_state_complete": true,
+    "stage4_state_id": "STATE-4-W10-2026-20261111T2120EST",
+    "stage1_locked": true,
+    "stage2_locked": true,
+    "stage3_locked": true,
+    "stage4_locked": true,
+    "low_variance_exactly_2": true,
+    "balanced_legs": 2,
+    "price_seeking_low_legs": 3,
+    "price_seeking_medium_legs": 4,
+    "price_seeking_high_legs": 5,
+    "all_legs_gte_70": true,
+    "low_variance_all_gte_90": true,
+    "balanced_prefer_80_or_higher": true,
+    "distinct_players_within_each_portfolio": true,
+    "combined_odds_mathematically_valid": true,
+    "payout_targets_not_forced": true,
+    "prior_states_altered": false
+  },
+  "notes": [
+    "Only Stage 4 final-card candidates were used.",
+    "Low Variance uses the two available >=90% L10 lines from two distinct players.",
+    "Balanced meets its +200 to +400 target using one 8/10 and one 7/10 line; the 7/10 leg is used because the stronger available lines do not reach the payout range.",
+    "Price Seeking Low, Medium and High use nested 3-, 4- and 5-leg constructions. Their estimated payouts remain below their target ranges; no evidence threshold was relaxed below 70% and no additional legs or lines were invented.",
+    "The five-leg construction contains five distinct players. It uses four 7/10 legs and one 8/10 leg.",
+    "Combined odds are independent-leg mathematical estimates. No same-game correlation pricing is supplied by the repository."
+  ],
+  "source_files": {
+    "stage4_file": "state/week10_2026/stage4_state.json",
+    "stage4_blob_sha": "bc107258af31e383b799b1dea016ec3bc6a1aee5",
+    "odds_file": "odds/nfl_player_props_latest.csv",
+    "odds_blob_sha": "307b807a26757041b9c2630e7ea95dd44858e3d4"
+  }
+}
