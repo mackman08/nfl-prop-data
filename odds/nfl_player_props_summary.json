@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 697,
-      "Receiving Yards": 1593,
-      "Receptions": 840,
-      "Rushing Yards": 864
+      "Passing Yards": 693,
+      "Receiving Yards": 1774,
+      "Receptions": 915,
+      "Rushing Yards": 872
     },
     "FanDuel": {
-      "Passing Yards": 26,
-      "Receiving Yards": 109,
-      "Receptions": 109,
-      "Rushing Yards": 70
+      "Passing Yards": 28,
+      "Receiving Yards": 134,
+      "Receptions": 134,
+      "Rushing Yards": 74
     }
   },
   "core_markets_present": [
@@ -45,6 +45,7 @@
     "36275763",
     "36275764",
     "36275765",
+    "36275766",
     "36275767",
     "36275768",
     "36275769"
@@ -63,6 +64,7 @@
     "LA Chargers @ BAL Ravens",
     "LA Rams @ ARI Cardinals",
     "Los Angeles Chargers @ Baltimore Ravens",
+    "Los Angeles Rams @ Arizona Cardinals",
     "MIA Dolphins @ IND Colts",
     "MIN Vikings @ GB Packers",
     "Miami Dolphins @ Indianapolis Colts",
@@ -79,20 +81,20 @@
     "Washington Commanders @ New York Giants"
   ],
   "markets": {
-    "Alt Passing Yards": 251,
-    "Alt Receiving Yards": 1102,
-    "Alt Receptions": 704,
-    "Alt Rushing Yards": 563,
-    "Passing Yards": 723,
-    "Receiving Yards": 1702,
-    "Receptions": 949,
-    "Rush + Receiving Yards": 429,
-    "Rushing Yards": 934
+    "Alt Passing Yards": 266,
+    "Alt Receiving Yards": 1322,
+    "Alt Receptions": 827,
+    "Alt Rushing Yards": 621,
+    "Passing Yards": 721,
+    "Receiving Yards": 1908,
+    "Receptions": 1049,
+    "Rush + Receiving Yards": 519,
+    "Rushing Yards": 946
   },
   "sportsbooks": {
-    "DraftKings": 4423,
-    "FanDuel": 2934
+    "DraftKings": 4773,
+    "FanDuel": 3406
   },
-  "total_rows": 7357,
+  "total_rows": 8179,
   "validation_mode": "slate-size-agnostic"
 }
