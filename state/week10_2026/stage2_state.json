@@ -2,18 +2,18 @@
   "schema_version": "V7.2.9",
   "stage": 2,
   "stage_name": "Current-Week Context",
-  "state_id": "STATE-2-W10-2026-20261111T2005EST",
-  "parent_state_id": "STATE-1-W10-2026-20261111T1955EST",
-  "created_at": "2026-11-11T20:05:00-05:00",
+  "state_id": "STATE-2-W10-2026-20261111T2045EST",
+  "parent_state_id": "STATE-1-W10-2026-20261111T2035EST",
+  "created_at": "2026-11-11T20:45:00-05:00",
   "scope": {
     "season": 2026,
     "week": 10,
     "game": "WAS Commanders @ NYG Giants",
     "game_date": "2026-11-12",
     "kickoff": "20:15 ET",
-    "historical_sample": "L10 locked",
+    "historical_sample": "L10 locked at Week 9 cutoff",
     "sportsbook": "DraftKings",
-    "qualifying_player_market_count": 18
+    "qualifying_records": 18
   },
   "methodology": {
     "labels": [
@@ -21,47 +21,32 @@
       "MIXED",
       "CONCERN"
     ],
-    "purpose": "Qualitative context for Stage 1 qualifiers only; no final prop selection.",
-    "evidence_policy": "Separate facts from interpretation; do not equate fantasy points allowed with receiving yards/receptions allowed.",
-    "odds": "DraftKings lines/prices carried from Stage 1 snapshot; not independently live-verified."
+    "purpose": "Qualitative matchup, injury, role and volume context for the exact Stage 1 qualifiers; no prop selection.",
+    "evidence_policy": "Distinguish sourced facts from inference; do not equate team defense rank or fantasy points allowed with direct player-market allowance.",
+    "market_reference": "Use updated Stage 1 DraftKings snapshot lines only; snapshot not independently verified live."
   },
   "game_context": {
-    "team_records": {
+    "records": {
       "NYG": "5-2-1",
       "WAS": "2-5-1"
     },
-    "recent_results": {
-      "NYG": "Beat Philadelphia 19-11",
-      "WAS": "Lost to LA Rams 20-13"
-    },
-    "team_stats": {
-      "WAS": {
-        "offense_yards_per_game": 325.4,
-        "pass_yards_per_game": 207.1,
-        "rush_yards_per_game": 118.3,
-        "pass_defense_rank": 30,
-        "pass_yards_allowed_per_game": 240,
-        "rush_defense_rank": 12,
-        "rush_yards_allowed_per_game": 102.3
-      },
+    "pace_and_game_environment": "Matchup model source estimates 42.5 total points and Giants 22.5 implied points; secondary projection, not DraftKings quote.",
+    "defense": {
       "NYG": {
-        "offense_yards_per_game": 333.1,
-        "pass_yards_per_game": 221,
-        "rush_yards_per_game": 112.1,
         "pass_defense_rank": 3,
         "pass_yards_allowed_per_game": 177.8,
-        "rush_defense_rank": 21,
-        "rush_yards_allowed_per_game": 123.6
+        "total_defense_rank": 5
+      },
+      "WAS": {
+        "total_defense_rank": 20
       }
     },
-    "injury_notes": [
-      "WAS C Lucas Patrick ruled out; Nick Allegretti expected to start.",
-      "Jayden Daniels full participation; no game designation in official report.",
-      "Chig Okonkwo full participation Tuesday after Monday limited.",
-      "Treylon Burks Monday DNP, Tuesday limited; secondary report expects him to play, final official designation not confirmed.",
-      "J.J. McCarthy and Cam Skattebo full participation Tuesday; no injury designations Wednesday.",
-      "Malik Nabers, Darnell Mooney and Theo Johnson full participation.",
-      "Terry McLaurin listed out by secondary matchup report."
+    "injuries": [
+      "NFL official Week 10 injury report lists Cam Skattebo and J.J. McCarthy full participation and no game designation.",
+      "Jayden Daniels full participation; Lucas Patrick ruled out.",
+      "Treylon Burks has no game designation after Wednesday DNP; final report says Wednesday was planned rest after Tuesday work.",
+      "Chig Okonkwo full participation Tuesday and Wednesday.",
+      "Malik Nabers, Darnell Mooney and Theo Johnson full participation."
     ]
   },
   "assessments": [
@@ -70,194 +55,188 @@
       "market": "Passing Yards",
       "classification": "MIXED",
       "confidence": "MEDIUM",
-      "supporting_evidence": "Full practice; 1,250 passing yards/7 TDs. WAS averages 207.1 pass yds/game.",
-      "contrary_evidence": "NYG pass defense ranks 3rd (177.8 allowed/game); starting C Lucas Patrick ruled out; Allegretti expected to start.",
-      "interpretation": "Health and baseline volume are positive, but a strong pass defense and OL change temper the outlook."
+      "supporting_evidence": "NFL official Week 10 report lists full participation; Washington had 207.1 passing yards/game through Week 9.",
+      "contrary_evidence": "NYG ranked 3rd in passing yards allowed (177.8/game); Washington center Lucas Patrick ruled out.",
+      "interpretation": "Availability is positive, but a strong pass defense and center change add downside."
     },
     {
       "player": "Cam Skattebo",
       "market": "Rushing Yards",
       "classification": "MIXED",
       "confidence": "MEDIUM",
-      "supporting_evidence": "No injury designation after full practice; led NYG with 98 carries/418 yards through Week 9 and 58% of RB carries+targets.",
-      "contrary_evidence": "Missed previous game with hamstring injury; WAS rush defense ranks 12th (102.3 allowed/game); no DK rushing market row in snapshot.",
-      "interpretation": "Lead-back role is strong if workload returns, but post-injury workload is uncertain and no DK line is available."
+      "supporting_evidence": "NFL official report lists full participation and no game designation; Giants RB snap share through Week 9 was 55%, vs Singletary 45%.",
+      "contrary_evidence": "Returning from hamstring issue after missing Week 9; usage on return remains uncertain. DraftKings line now 52.5, with L10 Market HR 8/10.",
+      "interpretation": "Role/availability is encouraging, and historical rate supports the line, but immediate post-injury workload remains the key variable."
     },
     {
       "player": "Devin Singletary",
       "market": "Rushing Yards",
       "classification": "CONCERN",
       "confidence": "MEDIUM",
-      "supporting_evidence": "Next-largest NYG backfield workload behind Skattebo.",
-      "contrary_evidence": "Skattebo cleared and held 58% of RB carries+targets vs Singletary 27%; WAS ranks 12th in rush defense.",
-      "interpretation": "Return of primary back reduces Singletary's expected touch share."
+      "supporting_evidence": "Was the other part of Giants' backfield rotation; 45% season snap share through Week 9.",
+      "contrary_evidence": "Skattebo is cleared and had 55% season snap share; split remains competitive.",
+      "interpretation": "The returning Skattebo reduces confidence in Singletary's share of carries."
     },
     {
       "player": "Rachaad White",
       "market": "Rushing Yards",
       "classification": "MIXED",
       "confidence": "MEDIUM",
-      "supporting_evidence": "Jacory Croskey-Merritt out; White has 54 carries at 4.2 YPC through Week 9.",
-      "contrary_evidence": "White and Ekeler split workload; Week 9 White 7 carries/28 yards, Ekeler 8/16. NYG rush D ranks 21st (123.6 allowed).",
-      "interpretation": "Favorable matchup and absence of Croskey-Merritt help, but Ekeler remains a meaningful competitor."
+      "supporting_evidence": "Commanders usage report identifies White as lead back through Week 9: 54 carries, 46% offensive snap share.",
+      "contrary_evidence": "Week 9 report describes near-even White/Ekeler playing-time split; NYG is a top-five total defense, but its rush-defense rank differs from pass defense.",
+      "interpretation": "Role is meaningful, but carry competition and overall defensive quality temper the rushing matchup."
     },
     {
       "player": "Malik Nabers",
       "market": "Receiving Yards",
       "classification": "SUPPORTIVE",
       "confidence": "HIGH",
-      "supporting_evidence": "78 targets, 53 catches, 648 yards; 30% NYG target share; full practice and no designation.",
-      "contrary_evidence": "WAS pass defense ranks 30th, allowing 240 yards/game; team-level measure, not receiver-specific.",
-      "interpretation": "Target concentration, cleared health and opponent passing profile support the opportunity."
+      "supporting_evidence": "78 targets, 53 catches, 648 yards; 33% Giants target share and 35% air-yard share through Week 9; full practice.",
+      "contrary_evidence": "NYG faces a Washington defense ranked 20th in total yards allowed, but no receiver-specific coverage metric was verified.",
+      "interpretation": "High target concentration and full availability support opportunity."
     },
     {
       "player": "Malik Nabers",
       "market": "Receptions",
       "classification": "SUPPORTIVE",
       "confidence": "HIGH",
-      "supporting_evidence": "78 targets and 53 catches; about 30% target share; full practice.",
-      "contrary_evidence": "WAS allows 240 pass yards/game, 30th-ranked pass defense; not a direct receptions-allowed metric.",
-      "interpretation": "Strong target share provides a solid catch-volume foundation."
+      "supporting_evidence": "78 targets/53 catches; 33% team target share; full participation on official injury report.",
+      "contrary_evidence": "No verified player-specific catch matchup metric; team defense ranking is broad.",
+      "interpretation": "Consistent target volume is a strong base for receptions."
     },
     {
       "player": "Darnell Mooney",
       "market": "Receiving Yards",
       "classification": "CONCERN",
       "confidence": "MEDIUM",
-      "supporting_evidence": "Full practice and no game designation after chest issue.",
-      "contrary_evidence": "26 targets, 12 catches, 167 yards; about 9% target share; behind Nabers, Fields and Likely in target hierarchy.",
-      "interpretation": "Availability is positive, but season-long opportunity is modest."
+      "supporting_evidence": "Full participation; 26 targets, 12 catches, 167 yards through Week 9.",
+      "contrary_evidence": "Approximately 9% Giants target share; behind Nabers, Likely and Fields in the reported distribution.",
+      "interpretation": "Availability is positive but the season opportunity is limited."
     },
     {
       "player": "Darnell Mooney",
       "market": "Receptions",
       "classification": "CONCERN",
       "confidence": "MEDIUM",
-      "supporting_evidence": "Cleared for game with full practice.",
-      "contrary_evidence": "12 catches on 26 targets; competing targets from Nabers, Fields and Likely.",
-      "interpretation": "Low threshold helps, but limited target volume creates a fragile floor."
+      "supporting_evidence": "Full practice and 12 catches on 26 targets through Week 9.",
+      "contrary_evidence": "Only 26 targets in the Giants' season sample; multiple teammates have larger target roles.",
+      "interpretation": "Catch line is low but target volume is not especially secure."
     },
     {
       "player": "Stefon Diggs",
       "market": "Receiving Yards",
       "classification": "MIXED",
       "confidence": "MEDIUM",
-      "supporting_evidence": "30 catches/303 yards/5 TD on 49 targets; McLaurin out, leaving Diggs a principal option.",
-      "contrary_evidence": "NYG pass defense ranks 3rd (177.8 allowed/game); Diggs target share down ~3 percentage points over recent three-game sample.",
-      "interpretation": "Leading role is positive, but strong defense and declining recent share temper outlook."
+      "supporting_evidence": "49 targets, 30 catches, 303 yards; leads Commanders in targets. Full participation not required by injury report.",
+      "contrary_evidence": "Recent three-game target share down 3 percentage points; 14.7% Week 9 share was season low; NYG top-five total defense.",
+      "interpretation": "Still a leading option, but recent target trend and quality of opponent are concerns."
     },
     {
       "player": "Stefon Diggs",
       "market": "Receptions",
       "classification": "MIXED",
       "confidence": "MEDIUM",
-      "supporting_evidence": "30 receptions on 49 targets; 19.8% target share; McLaurin out.",
-      "contrary_evidence": "NYG pass defense ranks 3rd; recent target share down ~3 percentage points.",
-      "interpretation": "Meaningful role supports catches, but matchup and recent trend make the signal mixed."
+      "supporting_evidence": "49 targets and 30 catches through Week 9; team-leading target total.",
+      "contrary_evidence": "Recent target share down 3 points and Week 9 season-low 14.7%.",
+      "interpretation": "Volume history is useful, but current trend is less favorable."
     },
     {
       "player": "Treylon Burks",
       "market": "Receptions",
       "classification": "MIXED",
-      "confidence": "LOW",
-      "supporting_evidence": "Usage source reports recent snap/target-share growth; secondary report expects him to play.",
-      "contrary_evidence": "Foot: Monday DNP, Tuesday limited; final official designation not confirmed; only 12 catches on 22 targets through Week 9.",
-      "interpretation": "Role trend is encouraging but health and workload remain uncertain."
+      "confidence": "MEDIUM",
+      "supporting_evidence": "22 targets, 12 catches, 233 yards through Week 9; target share has increased 13.1 percentage points in last three games vs earlier sample. Final report: no game designation.",
+      "contrary_evidence": "Missed prior game with foot injury and did not practice Wednesday; final report indicates planned rest/no designation.",
+      "interpretation": "Recent role growth is positive, but injury interruption and only 22 season targets remain relevant."
     },
     {
       "player": "Van Jefferson",
       "market": "Receiving Yards",
       "classification": "MIXED",
       "confidence": "LOW",
-      "supporting_evidence": "Week 9: 36 snaps (58%) and 7 targets; McLaurin out.",
-      "contrary_evidence": "Seven targets is a one-game spike; stable multi-week role and season-level totals not verified.",
-      "interpretation": "Low line plus recent opportunity is promising, but depends heavily on one game."
+      "supporting_evidence": "Week 9: 5 catches on 7 targets for 58 yards; 57% route share while Burks was absent.",
+      "contrary_evidence": "Only 8 targets and 5 catches across season; Week 9 accounts for nearly all targets in the dataset; Burks returned.",
+      "interpretation": "Low line and recent game are positive, but one-game spike may not persist."
     },
     {
       "player": "Van Jefferson",
       "market": "Receptions",
       "classification": "MIXED",
       "confidence": "LOW",
-      "supporting_evidence": "Week 9: 7 targets, 20.6% of team targets; 58% snap share.",
-      "contrary_evidence": "One-game spike; season-level catch volume not verified.",
-      "interpretation": "Recent role is encouraging but volatility is high."
+      "supporting_evidence": "Week 9: 5 receptions on 7 targets, 57% route share.",
+      "contrary_evidence": "Only 8 season targets total through Week 9; target volume highly concentrated in one game; Burks returns.",
+      "interpretation": "Recent performance supports the low threshold, but sample and role stability are weak."
     },
     {
       "player": "Isaiah Likely",
       "market": "Receiving Yards",
       "classification": "SUPPORTIVE",
       "confidence": "MEDIUM",
-      "supporting_evidence": "69 targets, 46 catches, 448 yards; 26.5% target share; 75% snap share.",
-      "contrary_evidence": "WAS allows third-most fantasy points/game to TEs; Likely recent target share down ~5 points.",
-      "interpretation": "Substantial involvement and favorable TE matchup outweigh modest recent share decline."
+      "supporting_evidence": "69 targets, 46 catches, 448 yards through Week 9; 75% snap share; third-most fantasy points allowed to TEs by Washington in matchup source.",
+      "contrary_evidence": "Target share over latest three games is 22%, down 5 percentage points from earlier games.",
+      "interpretation": "Strong season-long involvement and favorable positional matchup, with recent target share cooling."
     },
     {
       "player": "Isaiah Likely",
       "market": "Receptions",
       "classification": "SUPPORTIVE",
       "confidence": "MEDIUM",
-      "supporting_evidence": "69 targets/46 catches; 26.5% target share; favorable TE matchup vs WAS (third-most fantasy points allowed).",
-      "contrary_evidence": "Recent target share down ~5 percentage points.",
-      "interpretation": "Target base and positional matchup support catch volume, though involvement has cooled."
+      "supporting_evidence": "69 targets and 46 catches; 75% snap share through Week 9.",
+      "contrary_evidence": "Latest-three-game target share is down 5 points; no direct catches-allowed data used.",
+      "interpretation": "High season-long involvement supports catch opportunity, though trend has softened."
     },
     {
       "player": "Theo Johnson",
       "market": "Receiving Yards",
       "classification": "CONCERN",
       "confidence": "MEDIUM",
-      "supporting_evidence": "Full practice and no game designation.",
-      "contrary_evidence": "136 NYG snaps (~24%) vs Likely's 420 (75%); insufficient current target-volume evidence.",
-      "interpretation": "Healthy but appears behind Likely in TE role; limited demonstrated opportunity."
+      "supporting_evidence": "Full participation and no game designation on NFL report.",
+      "contrary_evidence": "Giants target distribution is led by Nabers and Likely; no reliable target-volume figure for Johnson was retrieved.",
+      "interpretation": "Health is not the issue; opportunity evidence is insufficient relative to the leading pass catchers."
     },
     {
       "player": "Theo Johnson",
       "market": "Receptions",
       "classification": "CONCERN",
       "confidence": "MEDIUM",
-      "supporting_evidence": "Full practice and no game designation.",
-      "contrary_evidence": "136 snaps vs Likely's 420; no verified target-volume evidence to support a dependable catch workload.",
-      "interpretation": "Role hierarchy is the primary concern."
+      "supporting_evidence": "Full participation and no game designation.",
+      "contrary_evidence": "No reliable target volume or route-share figure verified; Likely is the established lead receiving TE.",
+      "interpretation": "Limited evidence of a stable catch workload."
     },
     {
       "player": "Chigoziem Okonkwo",
       "market": "Receptions",
       "classification": "MIXED",
       "confidence": "MEDIUM",
-      "supporting_evidence": "Full practice Tuesday after Monday limited; 31 targets/23 catches/238 yards; 19% target share; Week 9: 7 targets.",
-      "contrary_evidence": "NYG pass defense ranks 3rd (177.8 allowed/game); season totals span only six games.",
-      "interpretation": "Recent target volume and playing time are positive, but matchup and small sample temper confidence."
+      "supporting_evidence": "31 targets, 23 catches, 238 yards through Week 9; latest-three-game target share 19%, up 6 points; full participation Tuesday and Wednesday.",
+      "contrary_evidence": "Giants rank 3rd in pass defense by pass yards allowed; only 8 Commanders games in sample.",
+      "interpretation": "Recent role trend and playing time support catches, but opposing defense is strong."
     }
   ],
   "assessment_count": 18,
   "sources": [
     {
-      "publisher": "Washington Commanders",
-      "title": "Week 10 matchup preview",
-      "url": "https://www.commanders.com/news/commanders-giants-preview-week-10-2026",
-      "published": "2026-11-10"
-    },
-    {
       "publisher": "NFL.com",
       "title": "Official Week 10 injury report",
-      "url": "https://www.nfl.com/injuries/?team=atl",
+      "url": "https://www.nfl.com/injuries/?week=13",
       "published": "2026-11-11"
     },
     {
       "publisher": "Washington Commanders",
-      "title": "Patrick and Yankoff ruled out",
-      "url": "https://www.commanders.com/news/game-status-commanders-giants-week-10-lucas-patrick",
-      "published": "2026-11-11"
-    },
-    {
-      "publisher": "New York Giants",
-      "title": "Week 10 tracker",
-      "url": "https://www.giants.com/news/week-10-tracker-latest-news-notes-roster-moves-washington-commanders",
+      "title": "Commanders vs Giants Week 10 injury report",
+      "url": "https://www.commanders.com/news/commanders-vs-giants-week-10-injury-report-2026",
       "published": "2026-11-09"
     },
     {
-      "publisher": "NBC Sports",
-      "title": "McCarthy and Skattebo no injury designations",
-      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/j-j-mccarthy-cam-skattebo-have-no-injury-designations-for-thursday-night",
+      "publisher": "New York Giants",
+      "title": "Giants vs Commanders Week 10 injury report",
+      "url": "https://www.giants.com/news/giants-vs-commanders-week-10-injury-report-qb-j-j-mccarthy-rb-cam-skattebo-limited",
+      "published": "2026-11-09"
+    },
+    {
+      "publisher": "Hogs Haven",
+      "title": "Wednesday injury report: Treylon Burks will play",
+      "url": "https://www.hogshaven.com/washington-commanders-injuries/454779/commanders-giants-wednesday-injury-report-treylon-burks-lucas-patrick-colson-yankoff",
       "published": "2026-11-11"
     },
     {
@@ -273,24 +252,30 @@
       "published": "2026-11-11"
     },
     {
-      "publisher": "Hogs Haven",
-      "title": "Burks expected to play",
-      "url": "https://www.hogshaven.com/washington-commanders-injuries/454779/commanders-giants-wednesday-injury-report-treylon-burks-lucas-patrick-colson-yankoff",
-      "published": "2026-11-11"
+      "publisher": "FOX Sports",
+      "title": "2026 NFL defense rankings through Week 9",
+      "url": "https://www.foxsports.com/stories/nfl/2026-nfl-defense-rankings-team-pass-rush-stats",
+      "published": "2026-11-10"
     },
     {
-      "publisher": "RotoBaller",
-      "title": "Week 10 matchup context",
-      "url": "https://www.rotoballer.com/fantasy-football-start-em-sit-em-thursday-commanders-vs-giants-week-10-2026/1990122",
+      "publisher": "RotoWire",
+      "title": "Week 9 box score usage breakdown",
+      "url": "https://www.rotowire.com//football/article/nfl-box-score-breakdown-week-9-recap-usage-stats-145932",
+      "published": "2026-11-10"
+    },
+    {
+      "publisher": "dfs-stack.ai",
+      "title": "WAS at NYG Week 10 matchup context",
+      "url": "https://www.dfs-stack.ai/nfl/matchup/2026_10_WAS_NYG?season=2026&week=10",
       "published": "2026-11-10"
     }
   ],
   "caveats": [
-    "Usage/snap figures are third-party compiled, not official NFL stat feeds.",
-    "Team pass defense rank is not direct coverage/receptions allowed.",
-    "TE fantasy points allowed is not directly equivalent to receiving yards or catches allowed.",
-    "Van Jefferson Week 9 seven-target game is a one-game sample.",
-    "Treylon Burks final game status remains unconfirmed in official injury source.",
-    "No DK rushing line for Cam Skattebo in the Stage 1 snapshot."
+    "Usage statistics are third-party compiled through Week 9; official box scores are the underlying basis where noted.",
+    "Cam Skattebo has no injury designation in the NFL official report, but returning after hamstring injury creates workload uncertainty.",
+    "Van Jefferson's Week 9 target spike is a one-game sample and coincided with Burks' absence.",
+    "Team defense rankings are not player-specific coverage metrics.",
+    "Fantasy points allowed to tight ends is not directly equivalent to receiving yards or receptions allowed.",
+    "DraftKings odds remain the Stage 1 repository snapshot and are not live-verified."
   ]
 }
