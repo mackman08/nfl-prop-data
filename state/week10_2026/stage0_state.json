@@ -3,12 +3,9 @@
   "season": 2026,
   "week": 10,
   "scope": {
-    "type": "Thursday only",
-    "games": [
-      "Washington Commanders at New York Giants"
-    ],
-    "game_date": "2026-11-12",
-    "kickoff_local": "20:15 ET"
+    "type": "Sunday only",
+    "game_date": "2026-11-15",
+    "description": "All NFL Week 10 regular-season games scheduled for Sunday, November 15, 2026"
   },
   "historical_sample": {
     "label": "L10",
@@ -22,12 +19,12 @@
     "exclusion": "No Week 10 game may enter the historical sample"
   },
   "record_count": 0,
-  "state_id": "STATE-0-W10-2026-20261111T1949EST",
+  "state_id": "STATE-0-W10-2026-20261113T1449EST-SUNDAY",
   "parent_state_id": null,
   "records": [],
   "sources": {
     "historical": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
     "sportsbook": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv",
-    "scope_verification": "NFL.com 2026 schedule"
+    "scope_verification": "NFL.com 2026 Regular Season Schedule"
   }
 }
