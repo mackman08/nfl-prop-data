@@ -69,23 +69,6 @@
         "https://dash.football/games/2026/week-10/patriots-at-lions/"
       ]
     },
-    " Kansas City Chiefs @ Atlanta Falcons": {
-      "summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
-      "environment": "Closed roof; no weather adjustment.",
-      "notes": [
-        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
-        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
-        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
-        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
-      ],
-      "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg10",
-        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
-        "https://www.chiefs.com/team/stats/",
-        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
-        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
-      ]
-    },
     "Minnesota Vikings @ Green Bay Packers": {
       "summary": "Outdoor game with calm, dry conditions (45°F, 2 mph). Green Bay's passing production is strong, but Minnesota has been a top-tier pass defense. Minnesota is changing quarterbacks after acquiring Kirk Cousins; Green Bay is without Josh Jacobs.",
       "environment": "45°F; dry; 2 mph wind.",
@@ -257,6 +240,23 @@
         "https://www.pro-football-reference.com/teams/pit/2026.htm",
         "https://www.fantasyalarm.com/articles/nfl/nfl-weather/nfl-week-10-weather-report-fantasy-football-dfs-impact/198723"
       ]
+    },
+    "Kansas City Chiefs @ Atlanta Falcons": {
+      "summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "environment": "Closed roof; no weather adjustment.",
+      "notes": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     }
   },
   "records": [
@@ -365,12 +365,23 @@
       "contrary_evidence": [
         "Atlanta's pass defense is not a complete green light; the Chiefs have multiple recent roster changes."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "Strong quarterback production, full participation and a favorable passing-yard environment support the passing market.",
       "market_specific_note": "Passing yards depend on pass attempts, protection, opponent pressure and game script.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Michael Penix Jr.",
@@ -415,12 +426,23 @@
       "contrary_evidence": [
         "He is averaging about 196 passing yards per game in the matchup snapshot, below the main line; no injury issue is documented."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "The historical ladder may be reachable at low thresholds, but season passing volume is a concern for a yardage prop.",
       "market_specific_note": "Passing yards depend on pass attempts, protection, opponent pressure and game script.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Josh Allen",
@@ -1993,12 +2015,23 @@
       "contrary_evidence": [
         "Kansas City has allowed 97.5 rushing yards per game in the matchup snapshot; no player-specific defensive metric was verified."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "Elite workload and receiving contribution support a strong usage profile.",
       "market_specific_note": "Rushing yards depend on carry share and efficiency; a teammate split or negative game script is especially relevant.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Jaylen Warren",
@@ -2225,12 +2258,23 @@
       "contrary_evidence": [
         "No direct injury or major workload warning was found."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "Strong efficiency and workload meet a reasonably favorable rushing environment.",
       "market_specific_note": "Rushing yards depend on carry share and efficiency; a teammate split or negative game script is especially relevant.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Jahmyr Gibbs",
@@ -2506,12 +2550,23 @@
       "contrary_evidence": [
         "He is a recent trade addition, so the post-trade role and route distribution may still be changing."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "There is a meaningful target role, but do not assume his prior Indianapolis usage transfers perfectly.",
       "market_specific_note": "Receptions depend on target volume and catchable opportunities; no separate catch-probability model was applied.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Tre Tucker",
@@ -3354,12 +3409,23 @@
       "contrary_evidence": [
         "Atlanta's passing volume has been less consistent than its rushing game; no direct cornerback matchup data was verified."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "Strong individual target and yardage form supports receiving markets.",
       "market_specific_note": "Receptions depend on target volume and catchable opportunities; no separate catch-probability model was applied.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Parker Washington",
@@ -3834,12 +3900,23 @@
       "contrary_evidence": [
         "He is a recent trade addition, so the post-trade role and route distribution may still be changing."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "There is a meaningful target role, but do not assume his prior Indianapolis usage transfers perfectly.",
       "market_specific_note": "Receiving yards add depth-of-target and efficiency variance beyond target volume.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Jerry Jeudy",
@@ -4987,12 +5064,23 @@
       "contrary_evidence": [
         "Atlanta's passing volume has been less consistent than its rushing game; no direct cornerback matchup data was verified."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "Strong individual target and yardage form supports receiving markets.",
       "market_specific_note": "Receiving yards add depth-of-target and efficiency variance beyond target volume.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Tee Higgins",
@@ -5222,12 +5310,23 @@
       "contrary_evidence": [
         "His current season sample is smaller than some teammates and the Chiefs have multiple capable receivers."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "A growing target share and full availability support the receiving markets.",
       "market_specific_note": "Receiving yards add depth-of-target and efficiency variance beyond target volume.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Rashee Rice",
@@ -5272,12 +5371,23 @@
       "contrary_evidence": [
         "His current season sample is smaller than some teammates and the Chiefs have multiple capable receivers."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "A growing target share and full availability support the receiving markets.",
       "market_specific_note": "Receptions depend on target volume and catchable opportunities; no separate catch-probability model was applied.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Tank Dell",
@@ -6230,12 +6340,23 @@
       "contrary_evidence": [
         "Kansas City has multiple receiving options, which can create weekly target volatility."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "Established role and clean practice status support his modest receiving thresholds.",
       "market_specific_note": "Receptions depend on target volume and catchable opportunities; no separate catch-probability model was applied.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "Tyler Warren",
@@ -7076,12 +7197,23 @@
       "contrary_evidence": [
         "Kansas City has multiple receiving options, which can create weekly target volatility."
       ],
-      "game_context_summary": "Game context not mapped.",
-      "game_environment": "Not verified.",
-      "game_context_evidence": [],
+      "game_context_summary": "Indoor game. Kansas City has a productive passing offense; Atlanta's defense has allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot. Chiefs skill players Mahomes, Rice and Kelce were full participants.",
+      "game_environment": "Closed roof; no weather adjustment.",
+      "game_context_evidence": [
+        "Patrick Mahomes, Rashee Rice, Travis Kelce and Xavier Worthy were full participants on the Chiefs' Thursday report.",
+        "Kansas City averaged 25.3 points, 392.4 total yards and 254.6 passing yards per game; Atlanta allowed 241.2 passing yards and 118.8 rushing yards per game in the matchup snapshot.",
+        "Kenneth Walker III had 872 rushing yards on 159 carries (5.5 YPC); Bijan Robinson had 880 rushing yards on 169 carries and 983 scrimmage yards.",
+        "Josh Downs is a recent addition to Kansas City; a current-season usage feed listed 57 targets and a 20% target share, so treat the post-trade role as still settling."
+      ],
       "interpretation": "Established role and clean practice status support his modest receiving thresholds.",
       "market_specific_note": "Receiving yards add depth-of-target and efficiency variance beyond target volume.",
-      "sources": []
+      "sources": [
+        "https://www.nfl.com/injuries/league/2026/reg10",
+        "https://www.chiefs.com/news/week-10-injury-report-chiefs-vs-falcons-2026",
+        "https://www.chiefs.com/team/stats/",
+        "https://dash.football/games/2026/week-10/chiefs-at-falcons/",
+        "https://stats.innerpulse.net/game/2026_10_KC_ATL/players"
+      ]
     },
     {
       "player": "George Kittle",
@@ -7275,6 +7407,8 @@
     "unverified_player_roles_flagged": true,
     "weather_applied_only_where_relevant": true,
     "no_bets_selected": true,
-    "no_stage1_or_stage2_state_modified": true
+    "no_stage1_or_stage2_state_modified": true,
+    "all_game_contexts_mapped": true,
+    "kc_atl_context_corrected": true
   }
 }
