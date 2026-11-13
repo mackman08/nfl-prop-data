@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 662,
-      "Receiving Yards": 1871,
-      "Receptions": 962,
-      "Rushing Yards": 852
+      "Passing Yards": 648,
+      "Receiving Yards": 1949,
+      "Receptions": 980,
+      "Rushing Yards": 801
     },
     "FanDuel": {
-      "Passing Yards": 28,
-      "Receiving Yards": 144,
-      "Receptions": 133,
-      "Rushing Yards": 75
+      "Passing Yards": 26,
+      "Receiving Yards": 143,
+      "Receptions": 142,
+      "Rushing Yards": 70
     }
   },
   "core_markets_present": [
@@ -22,7 +22,6 @@
   "duplicates": 0,
   "event_ids": [
     "34118093",
-    "34118102",
     "34118111",
     "34118114",
     "34118132",
@@ -36,7 +35,6 @@
     "34118249",
     "34118270",
     "35605986",
-    "36275757",
     "36275758",
     "36275759",
     "36275760",
@@ -76,25 +74,23 @@
     "SEA Seahawks @ LV Raiders",
     "SF 49ers @ DAL Cowboys",
     "San Francisco 49ers @ Dallas Cowboys",
-    "Seattle Seahawks @ Las Vegas Raiders",
-    "WAS Commanders @ NY Giants",
-    "Washington Commanders @ New York Giants"
+    "Seattle Seahawks @ Las Vegas Raiders"
   ],
   "markets": {
-    "Alt Passing Yards": 260,
-    "Alt Receiving Yards": 1355,
-    "Alt Receptions": 849,
-    "Alt Rushing Yards": 619,
-    "Passing Yards": 690,
-    "Receiving Yards": 2015,
-    "Receptions": 1095,
-    "Rush + Receiving Yards": 507,
-    "Rushing Yards": 927
+    "Alt Passing Yards": 245,
+    "Alt Receiving Yards": 1409,
+    "Alt Receptions": 883,
+    "Alt Rushing Yards": 596,
+    "Passing Yards": 674,
+    "Receiving Yards": 2092,
+    "Receptions": 1122,
+    "Rush + Receiving Yards": 487,
+    "Rushing Yards": 871
   },
   "sportsbooks": {
-    "DraftKings": 4854,
-    "FanDuel": 3463
+    "DraftKings": 4865,
+    "FanDuel": 3514
   },
-  "total_rows": 8317,
+  "total_rows": 8379,
   "validation_mode": "slate-size-agnostic"
 }
