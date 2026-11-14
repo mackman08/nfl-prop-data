@@ -2,15 +2,15 @@
   "core_markets_by_sportsbook": {
     "DraftKings": {
       "Passing Yards": 648,
-      "Receiving Yards": 1949,
-      "Receptions": 980,
-      "Rushing Yards": 801
+      "Receiving Yards": 1989,
+      "Receptions": 1004,
+      "Rushing Yards": 804
     },
     "FanDuel": {
       "Passing Yards": 26,
-      "Receiving Yards": 143,
-      "Receptions": 142,
-      "Rushing Yards": 70
+      "Receiving Yards": 149,
+      "Receptions": 149,
+      "Rushing Yards": 69
     }
   },
   "core_markets_present": [
@@ -77,20 +77,20 @@
     "Seattle Seahawks @ Las Vegas Raiders"
   ],
   "markets": {
-    "Alt Passing Yards": 245,
-    "Alt Receiving Yards": 1409,
-    "Alt Receptions": 883,
-    "Alt Rushing Yards": 596,
+    "Alt Passing Yards": 247,
+    "Alt Receiving Yards": 1492,
+    "Alt Receptions": 931,
+    "Alt Rushing Yards": 584,
     "Passing Yards": 674,
-    "Receiving Yards": 2092,
-    "Receptions": 1122,
-    "Rush + Receiving Yards": 487,
-    "Rushing Yards": 871
+    "Receiving Yards": 2138,
+    "Receptions": 1153,
+    "Rush + Receiving Yards": 483,
+    "Rushing Yards": 873
   },
   "sportsbooks": {
-    "DraftKings": 4865,
-    "FanDuel": 3514
+    "DraftKings": 4928,
+    "FanDuel": 3647
   },
-  "total_rows": 8379,
+  "total_rows": 8575,
   "validation_mode": "slate-size-agnostic"
 }
