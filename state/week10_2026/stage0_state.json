@@ -18,13 +18,18 @@
     "final_game_date": "2026-11-09",
     "exclusion": "No Week 10 game may enter the historical sample"
   },
+  "percentile_methodology": {
+    "statistic": "P15",
+    "sample_size": 10,
+    "definition": "Calculate the 15th percentile using the 10 most recent qualifying completed regular-season games before the historical cutoff; standard linear interpolation. This is an explicit user-directed override to the uploaded V7.2.9 file's default 20-game P15 requirement."
+  },
   "record_count": 0,
-  "state_id": "STATE-0-W10-2026-20261113T1449EST-SUNDAY",
+  "state_id": "STATE-0-W10-2026-20261114T1017EST-SUNDAY-L10-P15L10",
   "parent_state_id": null,
   "records": [],
   "sources": {
     "historical": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
     "sportsbook": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv",
-    "scope_verification": "NFL.com 2026 Regular Season Schedule"
+    "scope_verification": "NFL 2026 regular-season schedule"
   }
 }
