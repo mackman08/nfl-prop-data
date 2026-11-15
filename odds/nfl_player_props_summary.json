@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 652,
-      "Receiving Yards": 2121,
-      "Receptions": 1070,
-      "Rushing Yards": 877
+      "Passing Yards": 115,
+      "Receiving Yards": 410,
+      "Receptions": 208,
+      "Rushing Yards": 194
     },
     "FanDuel": {
-      "Passing Yards": 26,
-      "Receiving Yards": 157,
-      "Receptions": 157,
-      "Rushing Yards": 75
+      "Passing Yards": 7,
+      "Receiving Yards": 30,
+      "Receptions": 24,
+      "Rushing Yards": 19
     }
   },
   "core_markets_present": [
@@ -21,76 +21,38 @@
   ],
   "duplicates": 0,
   "event_ids": [
-    "34118093",
-    "34118111",
     "34118114",
-    "34118132",
     "34118134",
-    "34118165",
     "34118177",
-    "34118179",
-    "34118183",
-    "34118220",
-    "34118232",
-    "34118249",
-    "34118270",
-    "35605986",
-    "36275758",
-    "36275759",
-    "36275760",
-    "36275761",
-    "36275762",
-    "36275763",
     "36275764",
     "36275765",
-    "36275766",
-    "36275767",
     "36275768",
     "36275769"
   ],
   "games": [
-    "BUF Bills @ NY Jets",
-    "Buffalo Bills @ New York Jets",
-    "CAR Panthers @ NO Saints",
-    "Carolina Panthers @ New Orleans Saints",
-    "HOU Texans @ CLE Browns",
-    "Houston Texans @ Cleveland Browns",
-    "JAX Jaguars @ TEN Titans",
-    "Jacksonville Jaguars @ Tennessee Titans",
-    "KC Chiefs @ ATL Falcons",
-    "Kansas City Chiefs @ Atlanta Falcons",
     "LA Chargers @ BAL Ravens",
-    "LA Rams @ ARI Cardinals",
     "Los Angeles Chargers @ Baltimore Ravens",
-    "Los Angeles Rams @ Arizona Cardinals",
-    "MIA Dolphins @ IND Colts",
-    "MIN Vikings @ GB Packers",
-    "Miami Dolphins @ Indianapolis Colts",
-    "Minnesota Vikings @ Green Bay Packers",
-    "NE Patriots @ DET Lions",
-    "New England Patriots @ Detroit Lions",
     "PIT Steelers @ CIN Bengals",
     "Pittsburgh Steelers @ Cincinnati Bengals",
-    "SEA Seahawks @ LV Raiders",
     "SF 49ers @ DAL Cowboys",
     "San Francisco 49ers @ Dallas Cowboys",
     "Seattle Seahawks @ Las Vegas Raiders"
   ],
   "markets": {
-    "Alt Passing Yards": 247,
-    "Alt Receiving Yards": 1561,
-    "Alt Receptions": 972,
-    "Alt Rushing Yards": 644,
-    "Passing Yards": 678,
-    "Receiving Yards": 2278,
-    "Receptions": 1227,
-    "Rush + Receiving Yards": 560,
-    "Rushing Yards": 952
+    "Alt Passing Yards": 52,
+    "Alt Receiving Yards": 290,
+    "Alt Receptions": 190,
+    "Alt Rushing Yards": 141,
+    "Passing Yards": 122,
+    "Receiving Yards": 440,
+    "Receptions": 232,
+    "Rush + Receiving Yards": 149,
+    "Rushing Yards": 213
   },
   "sportsbooks": {
-    "DraftKings": 5280,
-    "FanDuel": 3839
+    "DraftKings": 1076,
+    "FanDuel": 753
   },
-  "total_rows": 9119,
+  "total_rows": 1829,
   "validation_mode": "slate-size-agnostic"
 }
