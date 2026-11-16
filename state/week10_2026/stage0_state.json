@@ -3,9 +3,9 @@
   "season": 2026,
   "week": 10,
   "scope": {
-    "type": "Sunday only",
-    "game_date": "2026-11-15",
-    "description": "All NFL Week 10 regular-season games scheduled for Sunday, November 15, 2026"
+    "type": "Monday only",
+    "game_date": "2026-11-16",
+    "description": "NFL Week 10 Monday game only: Los Angeles Chargers at Baltimore Ravens, 8:15 PM ET"
   },
   "historical_sample": {
     "label": "L10",
@@ -18,13 +18,8 @@
     "final_game_date": "2026-11-09",
     "exclusion": "No Week 10 game may enter the historical sample"
   },
-  "percentile_methodology": {
-    "statistic": "P15",
-    "sample_size": 10,
-    "definition": "Calculate the 15th percentile using the 10 most recent qualifying completed regular-season games before the historical cutoff; standard linear interpolation. This is an explicit user-directed override to the uploaded V7.2.9 file's default 20-game P15 requirement."
-  },
   "record_count": 0,
-  "state_id": "STATE-0-W10-2026-20261114T1017EST-SUNDAY-L10-P15L10",
+  "state_id": "STATE-0-W10-2026-20261116T0742EST-MONDAY-L10",
   "parent_state_id": null,
   "records": [],
   "sources": {
