@@ -1,0 +1,5388 @@
+{
+  "schema_version": "1.0",
+  "stage": 3,
+  "stage_name": "Current-Week Context",
+  "state_id": "STATE-3-W11-2026-20261118-CONTEXT",
+  "parent_state_id": "STATE-2-W11-2026-20261118-ALT-CORE-REPAIRED",
+  "stage1_parent_state_id": "STATE-1-W11-2026-20261118-1455ET",
+  "created_at": "2026-11-18",
+  "scope": "Thursday only",
+  "season": 2026,
+  "week": 11,
+  "candidate_count": 9,
+  "advanced_count": 9,
+  "candidates": [
+    {
+      "player": "Jonathan Taylor",
+      "team": "IND",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "selected_threshold": 39.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "9/10",
+      "stage1_market_hr": "7/10",
+      "stage1_main_market": {
+        "line": 51.5,
+        "price": "-111",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 29.5,
+        "hr": "9/10",
+        "price": "-537",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 39.5,
+        "hr": "9/10",
+        "price": "-236",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 49.5,
+        "hr": "7/10",
+        "price": "-123",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        83,
+        46,
+        23,
+        95,
+        94,
+        45,
+        95,
+        68,
+        92,
+        98
+      ],
+      "current_week_context": {
+        "classification": "MIXED",
+        "factors": [
+          {
+            "factor": "Role and workload",
+            "classification": "Supportive",
+            "finding": "Week 10: 67% of offensive snaps and 20 of 32 RB opportunities (63%); 16 carries for 83 yards and two catches for 20 yards."
+          },
+          {
+            "factor": "Backfield competition",
+            "classification": "Concern",
+            "finding": "Seth McGowan played 30% of snaps and had 12 carries for 77 yards in Week 10. Taylor's carries in Weeks 8–10 were 8, 13 and 16."
+          },
+          {
+            "factor": "Opponent rushing matchup",
+            "classification": "Supportive",
+            "finding": "Sharp Football ranks Indianapolis third in rushing offense and Houston 25th in rushing defense, a strong Colts offensive edge."
+          },
+          {
+            "factor": "Offensive line",
+            "classification": "Concern",
+            "finding": "Starting tackles Bernhard Raimann and Jalen Travis are ruled out, creating a meaningful run-blocking and protection concern."
+          },
+          {
+            "factor": "Game environment",
+            "classification": "Mixed",
+            "finding": "The run-defense mismatch is favorable, but the Colts have multiple offensive-line absences and a meaningful secondary back."
+          }
+        ],
+        "implication": "The low CORE threshold has strong L10 support and the opponent run-defense profile is favorable. The two starting-tackle absences and McGowan's Week 10 workload keep this from being an unqualified green light."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "position": "WR",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "9/10",
+      "stage1_market_hr": "9/10",
+      "stage1_main_market": {
+        "line": 2.5,
+        "price": "-168",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 1.5,
+        "hr": "10/10",
+        "price": "-526",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 2.5,
+        "hr": "9/10",
+        "price": "-168",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "hr": "3/10",
+        "price": "149",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        4,
+        3,
+        3,
+        2,
+        4,
+        3,
+        3,
+        3,
+        3,
+        5
+      ],
+      "current_week_context": {
+        "classification": "SUPPORTIVE",
+        "factors": [
+          {
+            "factor": "Role and target volume",
+            "classification": "Supportive",
+            "finding": "54 targets through nine listed games (17.8% team target share); Week 10: nine targets, four catches, 75% snaps and 71% route share."
+          },
+          {
+            "factor": "Recent efficiency and volatility",
+            "classification": "Mixed",
+            "finding": "RotoWire reports a 51.9% catch rate and 6.4 yards per target in the recent sample; nine targets yielded four catches in Week 10."
+          },
+          {
+            "factor": "Player availability",
+            "classification": "Supportive",
+            "finding": "Hutchinson reportedly suffered a concussion late in Week 10 but is not listed on the current NFL Week 11 injury report; no current game designation is shown."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Houston's pass offense ranks 11th against Indianapolis' 12th-ranked pass defense, essentially neutral."
+          },
+          {
+            "factor": "Game environment",
+            "classification": "Supportive",
+            "finding": "NRG Stadium has a retractable roof; no meaningful weather penalty is expected with the roof closed."
+          }
+        ],
+        "implication": "His route and target involvement support the 2.5-catch CORE. Catch-rate volatility is the main risk; the prior concussion is not appearing as a current injury designation."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    },
+    {
+      "player": "Nico Collins",
+      "team": "HOU",
+      "position": "WR",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "6/10",
+      "stage1_market_hr": "4/10",
+      "stage1_main_market": {
+        "line": 4.5,
+        "price": "-148",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 2.5,
+        "hr": "9/10",
+        "price": "-1000",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 3.5,
+        "hr": "6/10",
+        "price": "-339",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "hr": "4/10",
+        "price": "-148",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        9,
+        4,
+        2,
+        3,
+        5,
+        7,
+        7,
+        3,
+        4,
+        3
+      ],
+      "current_week_context": {
+        "classification": "SUPPORTIVE",
+        "factors": [
+          {
+            "factor": "Role and target volume",
+            "classification": "Supportive",
+            "finding": "55 targets through seven listed games (18.1% of Houston's total targets; RotoWire's active-game calculation puts his season share at 24%). Week 10: 84% snaps and 86% route share."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Supportive",
+            "finding": "Week 10: 16 targets, nine catches and 94 yards; he accounted for 44% of Houston's targets in that game."
+          },
+          {
+            "factor": "Opponent secondary",
+            "classification": "Supportive",
+            "finding": "Colts CB Charvarius Ward is ruled out; Sauce Gardner was a Wednesday nonparticipant and his game status remains unresolved."
+          },
+          {
+            "factor": "Offensive environment",
+            "classification": "Mixed",
+            "finding": "Houston's pass offense ranks 11th against Indianapolis' 12th-ranked pass defense, a neutral baseline before accounting for secondary injuries."
+          },
+          {
+            "factor": "Player availability",
+            "classification": "Supportive",
+            "finding": "Collins is not listed on the current Texans injury report."
+          }
+        ],
+        "implication": "The recent 16-target, nine-catch game and full-time route role are strong support. The 3.5-catch CORE is less historically secure than the 2.5-catch FLOOR."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    },
+    {
+      "player": "Tank Dell",
+      "team": "HOU",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "selected_threshold": 24.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "8/10",
+      "stage1_market_hr": "7/10",
+      "stage1_main_market": {
+        "line": 37.5,
+        "price": "-112",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 19.5,
+        "hr": "10/10",
+        "price": "-317",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 24.5,
+        "hr": "8/10",
+        "price": "-229",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 29.5,
+        "hr": "7/10",
+        "price": "-171",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        21,
+        105,
+        43,
+        98,
+        26,
+        23,
+        72,
+        54,
+        39,
+        126
+      ],
+      "current_week_context": {
+        "classification": "CONCERN",
+        "factors": [
+          {
+            "factor": "Role and snap share",
+            "classification": "Concern",
+            "finding": "Dell played 48% of snaps and ran 55% of routes in Week 10, drawing four targets and producing three catches for 21 yards. His current-season target share is 4.6% across three listed games."
+          },
+          {
+            "factor": "Recent target trend",
+            "classification": "Concern",
+            "finding": "His four Week 10 targets were well below Collins' 16 and Hutchinson's nine. RotoWire describes his snap and route shares as similar to the previous game."
+          },
+          {
+            "factor": "Player availability",
+            "classification": "Supportive",
+            "finding": "Dell is listed as full participation on the current NFL injury report despite the hand/shoulder issue noted earlier in the week."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Houston's pass offense ranks 11th against Indianapolis' 12th-ranked pass defense. Ward is out and Gardner's status remains uncertain."
+          },
+          {
+            "factor": "Volatility",
+            "classification": "Concern",
+            "finding": "Dell has played only three games in the current-season sample reported by LeagueLogs, and his snap share is materially below Collins and Hutchinson."
+          }
+        ],
+        "implication": "The locked alternate hit rates are strong, but current role evidence is materially weaker than the other Houston receivers. Workload uncertainty is the key issue for the 24.5-yard CORE."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "selected_threshold": 24.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "8/10",
+      "stage1_market_hr": "6/10",
+      "stage1_main_market": {
+        "line": 35.5,
+        "price": "-110",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 19.5,
+        "hr": "8/10",
+        "price": "-312",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 24.5,
+        "hr": "8/10",
+        "price": "-215",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 29.5,
+        "hr": "7/10",
+        "price": "-156",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        58,
+        29,
+        17,
+        10,
+        65,
+        46,
+        51,
+        37,
+        32,
+        84
+      ],
+      "current_week_context": {
+        "classification": "SUPPORTIVE",
+        "factors": [
+          {
+            "factor": "Role and target volume",
+            "classification": "Supportive",
+            "finding": "54 targets through nine listed games (17.8% team target share). Week 10 usage was 75% snaps, 71% route share and nine targets."
+          },
+          {
+            "factor": "Recent production",
+            "classification": "Supportive",
+            "finding": "He caught four passes for 58 yards and a touchdown in Week 10. RotoWire notes three straight games with a TD and 38.3 receiving yards per game in the recent sample."
+          },
+          {
+            "factor": "Efficiency volatility",
+            "classification": "Mixed",
+            "finding": "His 51.9% catch rate and 6.4 yards per target indicate some inefficiency; a nine-target game does not guarantee the same yardage conversion."
+          },
+          {
+            "factor": "Player availability",
+            "classification": "Supportive",
+            "finding": "He suffered a concussion late in Week 10 but is not listed on the current NFL Week 11 injury report; no current game designation is shown."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Houston's pass offense (11th) and Indianapolis' pass defense (12th) are near-even. Ward is out and Gardner's status is unresolved."
+          }
+        ],
+        "implication": "A strong snap/route role and recent nine-target, 58-yard game support the 24.5-yard CORE. Catch efficiency and the prior concussion are the watch items."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    },
+    {
+      "player": "Nico Collins",
+      "team": "HOU",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "selected_threshold": 49.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "9/10",
+      "stage1_market_hr": "5/10",
+      "stage1_main_market": {
+        "line": 71.5,
+        "price": "-111",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 39.5,
+        "hr": "9/10",
+        "price": "-498",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 49.5,
+        "hr": "9/10",
+        "price": "-290",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 59.5,
+        "hr": "5/10",
+        "price": "-182",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        94,
+        55,
+        6,
+        74,
+        56,
+        118,
+        75,
+        57,
+        59,
+        85
+      ],
+      "current_week_context": {
+        "classification": "SUPPORTIVE",
+        "factors": [
+          {
+            "factor": "Role and target share",
+            "classification": "Supportive",
+            "finding": "55 targets in seven listed games, 18.1% of Houston's total team targets and a 24% share in active games. Week 10: 84% snaps and 86% route share."
+          },
+          {
+            "factor": "Recent production",
+            "classification": "Supportive",
+            "finding": "Week 10: 16 targets, nine receptions, 94 yards and a touchdown; he led Houston in targets and air yards."
+          },
+          {
+            "factor": "Opponent secondary",
+            "classification": "Supportive",
+            "finding": "Colts CB Charvarius Ward is ruled out; Sauce Gardner was a Wednesday nonparticipant and his game status remains unresolved."
+          },
+          {
+            "factor": "Matchup baseline",
+            "classification": "Mixed",
+            "finding": "Houston's pass offense ranks 11th and Indianapolis' pass defense 12th, a neutral baseline before secondary injury adjustments."
+          },
+          {
+            "factor": "Player availability",
+            "classification": "Supportive",
+            "finding": "Collins is not listed on the current Texans injury report."
+          }
+        ],
+        "implication": "This is the strongest Houston receiver role among the candidates. The 49.5-yard CORE and 39.5-yard FLOOR have strong locked L10 support, reinforced by current volume and Colts secondary absences."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    },
+    {
+      "player": "Dalton Schultz",
+      "team": "HOU",
+      "position": "TE",
+      "market": "Receptions",
+      "selected_threshold": 2.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "7/10",
+      "stage1_market_hr": "7/10",
+      "stage1_main_market": {
+        "line": 2.5,
+        "price": "-220",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 1.5,
+        "hr": "9/10",
+        "price": "-710",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 2.5,
+        "hr": "7/10",
+        "price": "-220",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 3.5,
+        "hr": "5/10",
+        "price": "114",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        1,
+        2,
+        5,
+        4,
+        3,
+        2,
+        3,
+        12,
+        4,
+        4
+      ],
+      "current_week_context": {
+        "classification": "MIXED",
+        "factors": [
+          {
+            "factor": "Season role",
+            "classification": "Supportive",
+            "finding": "Schultz has 49 targets through nine listed games, a 16.1% share of Houston's team targets. Week 10: 65% snaps and 64% route share."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Concern",
+            "finding": "In Week 10 he received only two targets and caught one pass for 11 yards. Foster Moreau played 35% of snaps, although only 14% of routes."
+          },
+          {
+            "factor": "Competition and availability",
+            "classification": "Mixed",
+            "finding": "Moreau remains a secondary TE option. Brevin Jordan has missed practice with a foot/illness issue, which may reduce depth but does not guarantee Schultz gets more targets."
+          },
+          {
+            "factor": "Opponent matchup",
+            "classification": "Mixed",
+            "finding": "Houston's pass offense ranks 11th against Indianapolis' 12th-ranked pass defense, essentially neutral."
+          },
+          {
+            "factor": "Player availability",
+            "classification": "Supportive",
+            "finding": "Schultz is not listed on the current Texans injury report."
+          }
+        ],
+        "implication": "The 2.5-catch CORE is supported by season-long role and locked L10 evidence, but Week 10's two targets are a warning against assuming steady weekly volume."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    },
+    {
+      "player": "Tyler Warren",
+      "team": "IND",
+      "position": "TE",
+      "market": "Receptions",
+      "selected_threshold": 3.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "8/10",
+      "stage1_market_hr": "6/10",
+      "stage1_main_market": {
+        "line": 4.5,
+        "price": "-153",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 2.5,
+        "hr": "9/10",
+        "price": "-930",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 3.5,
+        "hr": "8/10",
+        "price": "-330",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 4.5,
+        "hr": "6/10",
+        "price": "-153",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        2,
+        4,
+        4,
+        7,
+        5,
+        9,
+        6,
+        3,
+        5,
+        5
+      ],
+      "current_week_context": {
+        "classification": "MIXED",
+        "factors": [
+          {
+            "factor": "Role and route participation",
+            "classification": "Supportive",
+            "finding": "Warren has 56 targets through eight listed games (18.2% of Colts team targets). Week 10: 86% snaps and 88% route share."
+          },
+          {
+            "factor": "Recent target volume",
+            "classification": "Concern",
+            "finding": "Despite the high snap and route share in Week 10, Warren saw only three targets and caught one pass for one yard. Andrew Ogletree played 51% of snaps but only a 20% route share."
+          },
+          {
+            "factor": "Opponent pass defense",
+            "classification": "Concern",
+            "finding": "Indianapolis' pass offense ranks 30th against Houston's 8th-ranked pass defense, a strong defensive edge for Houston."
+          },
+          {
+            "factor": "Quarterback situation",
+            "classification": "Concern",
+            "finding": "Daniel Jones has been pressured on 41.3% of dropbacks this season and has averaged a league-low 5.8 yards per attempt even when kept clean, per NFL Next Gen Stats."
+          },
+          {
+            "factor": "Offensive line and injuries",
+            "classification": "Concern",
+            "finding": "Starting tackles Bernhard Raimann and Jalen Travis are ruled out. This may increase pressure risk and constrain the passing game; TE Will Mallory is also ruled out."
+          },
+          {
+            "factor": "Game environment",
+            "classification": "Mixed",
+            "finding": "Indianapolis' rushing offense ranks third against Houston's 25th-ranked run defense, creating a favorable path to lean on the run and potentially reduce pass volume."
+          }
+        ],
+        "implication": "Warren's route participation and target share are strong, but his Week 10 target count, Houston's pass-defense ranking and Colts tackle losses create a difficult context for the 3.5-catch CORE. The 2.5-catch FLOOR is materially safer."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    },
+    {
+      "player": "Dalton Schultz",
+      "team": "HOU",
+      "position": "TE",
+      "market": "Receiving Yards",
+      "selected_threshold": 19.5,
+      "selected_band": "CORE",
+      "historical_hr_at_selected_threshold": "8/10",
+      "stage1_market_hr": "8/10",
+      "stage1_main_market": {
+        "line": 29.5,
+        "price": "-111",
+        "sportsbook": "DraftKings"
+      },
+      "floor": {
+        "threshold": 14.5,
+        "hr": "8/10",
+        "price": "-408",
+        "sportsbook": "DraftKings"
+      },
+      "core": {
+        "threshold": 19.5,
+        "hr": "8/10",
+        "price": "-246",
+        "sportsbook": "DraftKings"
+      },
+      "ceiling": {
+        "threshold": 24.5,
+        "hr": "8/10",
+        "price": "-160",
+        "sportsbook": "DraftKings"
+      },
+      "locked_l10_observations": [
+        11,
+        42,
+        45,
+        33,
+        30,
+        9,
+        30,
+        140,
+        35,
+        73
+      ],
+      "current_week_context": {
+        "classification": "MIXED",
+        "factors": [
+          {
+            "factor": "Season role",
+            "classification": "Supportive",
+            "finding": "Schultz has a 16.1% season target share (49 targets through nine listed games) and remains Houston's primary tight end by route participation."
+          },
+          {
+            "factor": "Recent usage",
+            "classification": "Concern",
+            "finding": "In Week 10 Schultz played 65% of snaps and ran 64% of routes but drew only two targets, catching one for 11 yards."
+          },
+          {
+            "factor": "TE competition",
+            "classification": "Mixed",
+            "finding": "Foster Moreau played 35% of snaps and 14% of routes in Week 10. Brevin Jordan has been a DNP with a foot/illness issue, which may thin depth but does not ensure increased Schultz volume."
+          },
+          {
+            "factor": "Passing environment",
+            "classification": "Supportive",
+            "finding": "Houston produced 312 passing yards on 40 attempts in Week 10 and its pass offense ranks 11th against Indianapolis' 12th-ranked pass defense."
+          },
+          {
+            "factor": "Player availability",
+            "classification": "Supportive",
+            "finding": "Schultz is not listed on the current Texans injury report."
+          }
+        ],
+        "implication": "The 19.5-yard CORE has strong locked L10 support and the overall passing matchup is neutral-to-usable, but his Week 10 two-target usage is the primary concern."
+      },
+      "advance_to_stage4": true,
+      "advance_reason": "Stage 2 advancement rule satisfied: CORE or FLOOR historical L10 HR is at least 7/10."
+    }
+  ],
+  "source_snapshots": [
+    {
+      "name": "NFL Week 11 injury report",
+      "url": "https://www.nfl.com/injuries/?week=12",
+      "published": "2026-11-18",
+      "use": "Wednesday practice participation and game statuses"
+    },
+    {
+      "name": "Colts official Week 11 injury update",
+      "url": "https://www.colts.com/news/colts-rule-out-5-players-for-week-11-thursday-night-football-game-vs-houston-texans",
+      "published": "2026-11-18",
+      "use": "Five Colts ruled out; Sauce Gardner and Anthony Gould among unresolved questionable players"
+    },
+    {
+      "name": "Texans official Week 11 injury report",
+      "url": "https://www.houstontexans.com/news/week-11-injury-report-texans-vs-colts",
+      "published": "2026-11-17",
+      "use": "Tank Dell and David Montgomery full participation; Woody Marks and Brevin Jordan DNP"
+    },
+    {
+      "name": "Sharp Football Week 11 matchup rankings",
+      "url": "https://www.sharpfootballanalysis.com/stats-nfl/nfl-matchups/",
+      "published": "2026-11-17",
+      "use": "Offensive/defensive ranks for passing, rushing, overall and pressure"
+    },
+    {
+      "name": "RotoWire Week 10 box-score usage breakdown",
+      "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdown-week-10-recap-usage-stats-146792",
+      "published": "2026-11-17",
+      "use": "Week 10 snap, route, target, carry and receiving usage"
+    },
+    {
+      "name": "LeagueLogs Houston target share",
+      "url": "https://leaguelogs.com/guides/nfl-target-share/teams/houston-texans",
+      "published": "2026-11-18",
+      "use": "Texans season target shares through reported Week 10"
+    },
+    {
+      "name": "LeagueLogs Indianapolis target share",
+      "url": "https://leaguelogs.com/guides/nfl-target-share/teams/indianapolis-colts",
+      "published": "2026-11-18",
+      "use": "Colts season target shares through reported Week 10"
+    },
+    {
+      "name": "NFL Next Gen Stats Week 11 matchup insights",
+      "url": "https://pro.nfl.com/games/game/f93acbca-311e-11f0-b670-ae1250fadad1/insights",
+      "published": "2026-11-17",
+      "use": "Daniel Jones pressure rate and passing efficiency"
+    },
+    {
+      "name": "MySportsWeather NFL Week 11",
+      "url": "https://mysportsweather.com/nfl",
+      "published": "2026-11-18",
+      "use": "NRG Stadium retractable-roof weather outlook"
+    }
+  ],
+  "stage2_state": {
+    "stage": 2,
+    "season": 2026,
+    "week": 11,
+    "scope": "Thursday only",
+    "historical_sample": "L10",
+    "historical_sample_n": 10,
+    "historical_cutoff": "Completion of the final scheduled game of Week 10 (2026-11-16); no Week 11 games included",
+    "state_id": "STATE-2-W11-2026-20261118-ALT-CORE-REPAIRED",
+    "parent_state_id": "STATE-1-W11-2026-20261118-1455ET",
+    "record_count": 11,
+    "stage1_record_count": 11,
+    "stage1_blob_sha": "5edceefd8de282f77dfaedf7046b4610817db693",
+    "sportsbook": "DraftKings (FanDuel unavailable; user-approved fallback)",
+    "sportsbook_snapshot": {
+      "path": "odds/nfl_player_props_latest.csv",
+      "blob_sha": "7abbada8f53da54cd1978e03b55ff827ce5c4a77",
+      "game": "IND Colts @ HOU Texans",
+      "event_id": "34118011"
+    },
+    "methodology": {
+      "alternate_hr": "Count locked Stage 1 L10 observations strictly greater than each listed alternate threshold; exact-line pushes are not hits; denominator remains 10.",
+      "core_rule": "Among listed alternate lines priced -350 through -150 inclusive, select the price closest numerically to -250; ties select the more negative price.",
+      "floor_rule": "Immediately lower available threshold than CORE.",
+      "ceiling_rule": "Immediately higher available threshold than CORE, regardless of HR.",
+      "candidate_narrowing_rule": "Carry forward only when at least one Floor or Core alternate has L10 HR ≥7/10 (70% minimum portfolio evidence threshold). This applies historical eligibility only; no current-week context used for exclusion.",
+      "ordering_rule": "QB → RB → WR → TE; within position sort P15 relative to locked Stage 1 current main-market line: above first (smallest positive difference), equal next, below last (closest below first).",
+      "source_note": "FanDuel alternate data was unavailable; user-approved DraftKings fallback used. No line movement or cross-book comparison."
+    },
+    "records": [
+      {
+        "player": "C.J. Stroud",
+        "team": "HOU",
+        "position": "QB",
+        "market": "Passing Yards",
+        "stage1_market": {
+          "line": 260.5,
+          "price": "-113",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "6/10",
+        "locked_l10_observations": [
+          211,
+          384,
+          153,
+          312,
+          261,
+          347,
+          167,
+          353,
+          274,
+          169
+        ],
+        "alternate_count": 28,
+        "floor": {
+          "threshold": 219.5,
+          "hr": "6/10",
+          "price": "-310",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 229.5,
+          "hr": "6/10",
+          "price": "-237",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 239.5,
+          "hr": "6/10",
+          "price": "-185",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 179.5,
+            "hr": "7/10",
+            "price": "-1100"
+          },
+          {
+            "threshold": 189.5,
+            "hr": "7/10",
+            "price": "-760"
+          },
+          {
+            "threshold": 199.5,
+            "hr": "7/10",
+            "price": "-546"
+          },
+          {
+            "threshold": 209.5,
+            "hr": "7/10",
+            "price": "-409"
+          },
+          {
+            "threshold": 219.5,
+            "hr": "6/10",
+            "price": "-310"
+          },
+          {
+            "threshold": 229.5,
+            "hr": "6/10",
+            "price": "-237"
+          },
+          {
+            "threshold": 239.5,
+            "hr": "6/10",
+            "price": "-185"
+          },
+          {
+            "threshold": 249.5,
+            "hr": "6/10",
+            "price": "-145"
+          },
+          {
+            "threshold": 259.5,
+            "hr": "6/10",
+            "price": "-115"
+          },
+          {
+            "threshold": 260.5,
+            "hr": "6/10",
+            "price": "-113"
+          },
+          {
+            "threshold": 269.5,
+            "hr": "5/10",
+            "price": "108"
+          },
+          {
+            "threshold": 279.5,
+            "hr": "4/10",
+            "price": "136"
+          },
+          {
+            "threshold": 289.5,
+            "hr": "4/10",
+            "price": "170"
+          },
+          {
+            "threshold": 299.5,
+            "hr": "4/10",
+            "price": "213"
+          },
+          {
+            "threshold": 309.5,
+            "hr": "4/10",
+            "price": "261"
+          },
+          {
+            "threshold": 319.5,
+            "hr": "3/10",
+            "price": "323"
+          },
+          {
+            "threshold": 329.5,
+            "hr": "3/10",
+            "price": "393"
+          },
+          {
+            "threshold": 339.5,
+            "hr": "3/10",
+            "price": "487"
+          },
+          {
+            "threshold": 349.5,
+            "hr": "2/10",
+            "price": "600"
+          },
+          {
+            "threshold": 359.5,
+            "hr": "1/10",
+            "price": "740"
+          },
+          {
+            "threshold": 369.5,
+            "hr": "1/10",
+            "price": "900"
+          },
+          {
+            "threshold": 379.5,
+            "hr": "1/10",
+            "price": "1100"
+          },
+          {
+            "threshold": 389.5,
+            "hr": "0/10",
+            "price": "1340"
+          },
+          {
+            "threshold": 399.5,
+            "hr": "0/10",
+            "price": "1620"
+          },
+          {
+            "threshold": 409.5,
+            "hr": "0/10",
+            "price": "1920"
+          },
+          {
+            "threshold": 419.5,
+            "hr": "0/10",
+            "price": "2200"
+          },
+          {
+            "threshold": 429.5,
+            "hr": "0/10",
+            "price": "2600"
+          },
+          {
+            "threshold": 439.5,
+            "hr": "0/10",
+            "price": "2900"
+          }
+        ],
+        "carry_to_stage3": false,
+        "narrowing_rationale": "Neither Floor nor Core alternate reaches the model's ≥70% minimum L10 HR; excluded before context research."
+      },
+      {
+        "player": "Jonathan Taylor",
+        "team": "IND",
+        "position": "RB",
+        "market": "Rushing Yards",
+        "stage1_market": {
+          "line": 51.5,
+          "price": "-111",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "7/10",
+        "locked_l10_observations": [
+          83,
+          46,
+          23,
+          95,
+          94,
+          45,
+          95,
+          68,
+          92,
+          98
+        ],
+        "alternate_count": 15,
+        "floor": {
+          "threshold": 29.5,
+          "hr": "9/10",
+          "price": "-537",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 39.5,
+          "hr": "9/10",
+          "price": "-236",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 49.5,
+          "hr": "7/10",
+          "price": "-123",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 19.5,
+            "hr": "10/10",
+            "price": "-1760"
+          },
+          {
+            "threshold": 24.5,
+            "hr": "9/10",
+            "price": "-900"
+          },
+          {
+            "threshold": 29.5,
+            "hr": "9/10",
+            "price": "-537"
+          },
+          {
+            "threshold": 39.5,
+            "hr": "9/10",
+            "price": "-236"
+          },
+          {
+            "threshold": 49.5,
+            "hr": "7/10",
+            "price": "-123"
+          },
+          {
+            "threshold": 51.5,
+            "hr": "7/10",
+            "price": "-111"
+          },
+          {
+            "threshold": 59.5,
+            "hr": "7/10",
+            "price": "139"
+          },
+          {
+            "threshold": 69.5,
+            "hr": "6/10",
+            "price": "230"
+          },
+          {
+            "threshold": 79.5,
+            "hr": "6/10",
+            "price": "364"
+          },
+          {
+            "threshold": 89.5,
+            "hr": "5/10",
+            "price": "563"
+          },
+          {
+            "threshold": 99.5,
+            "hr": "0/10",
+            "price": "850"
+          },
+          {
+            "threshold": 109.5,
+            "hr": "0/10",
+            "price": "1260"
+          },
+          {
+            "threshold": 119.5,
+            "hr": "0/10",
+            "price": "1820"
+          },
+          {
+            "threshold": 129.5,
+            "hr": "0/10",
+            "price": "2600"
+          },
+          {
+            "threshold": 139.5,
+            "hr": "0/10",
+            "price": "3700"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      },
+      {
+        "player": "Xavier Hutchinson",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receptions",
+        "stage1_market": {
+          "line": 2.5,
+          "price": "-168",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "9/10",
+        "locked_l10_observations": [
+          4,
+          3,
+          3,
+          2,
+          4,
+          3,
+          3,
+          3,
+          3,
+          5
+        ],
+        "alternate_count": 7,
+        "floor": {
+          "threshold": 1.5,
+          "hr": "10/10",
+          "price": "-526",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 2.5,
+          "hr": "9/10",
+          "price": "-168",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 3.5,
+          "hr": "3/10",
+          "price": "149",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 1.5,
+            "hr": "10/10",
+            "price": "-526"
+          },
+          {
+            "threshold": 2.5,
+            "hr": "9/10",
+            "price": "-168"
+          },
+          {
+            "threshold": 3.5,
+            "hr": "3/10",
+            "price": "149"
+          },
+          {
+            "threshold": 4.5,
+            "hr": "1/10",
+            "price": "346"
+          },
+          {
+            "threshold": 5.5,
+            "hr": "0/10",
+            "price": "760"
+          },
+          {
+            "threshold": 6.5,
+            "hr": "0/10",
+            "price": "1500"
+          },
+          {
+            "threshold": 7.5,
+            "hr": "0/10",
+            "price": "2500"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      },
+      {
+        "player": "Tank Dell",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receptions",
+        "stage1_market": {
+          "line": 2.5,
+          "price": "-121",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "7/10",
+        "locked_l10_observations": [
+          3,
+          4,
+          1,
+          6,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "alternate_count": 6,
+        "floor": null,
+        "core": null,
+        "ceiling": null,
+        "all_alternates": [
+          {
+            "threshold": 1.5,
+            "hr": "8/10",
+            "price": "-381"
+          },
+          {
+            "threshold": 2.5,
+            "hr": "7/10",
+            "price": "-121"
+          },
+          {
+            "threshold": 3.5,
+            "hr": "5/10",
+            "price": "205"
+          },
+          {
+            "threshold": 4.5,
+            "hr": "3/10",
+            "price": "476"
+          },
+          {
+            "threshold": 5.5,
+            "hr": "2/10",
+            "price": "1060"
+          },
+          {
+            "threshold": 6.5,
+            "hr": "0/10",
+            "price": "2100"
+          }
+        ],
+        "carry_to_stage3": false,
+        "narrowing_rationale": "Neither Floor nor Core alternate reaches the model's ≥70% minimum L10 HR; excluded before context research."
+      },
+      {
+        "player": "Nico Collins",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receptions",
+        "stage1_market": {
+          "line": 4.5,
+          "price": "-148",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "4/10",
+        "locked_l10_observations": [
+          9,
+          4,
+          2,
+          3,
+          5,
+          7,
+          7,
+          3,
+          4,
+          3
+        ],
+        "alternate_count": 9,
+        "floor": {
+          "threshold": 2.5,
+          "hr": "9/10",
+          "price": "-1000",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 3.5,
+          "hr": "6/10",
+          "price": "-339",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 4.5,
+          "hr": "4/10",
+          "price": "-148",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 2.5,
+            "hr": "9/10",
+            "price": "-1000"
+          },
+          {
+            "threshold": 3.5,
+            "hr": "6/10",
+            "price": "-339"
+          },
+          {
+            "threshold": 4.5,
+            "hr": "4/10",
+            "price": "-148"
+          },
+          {
+            "threshold": 5.5,
+            "hr": "3/10",
+            "price": "141"
+          },
+          {
+            "threshold": 6.5,
+            "hr": "3/10",
+            "price": "278"
+          },
+          {
+            "threshold": 7.5,
+            "hr": "1/10",
+            "price": "544"
+          },
+          {
+            "threshold": 8.5,
+            "hr": "1/10",
+            "price": "1020"
+          },
+          {
+            "threshold": 9.5,
+            "hr": "0/10",
+            "price": "1800"
+          },
+          {
+            "threshold": 10.5,
+            "hr": "0/10",
+            "price": "2800"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      },
+      {
+        "player": "Tank Dell",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "stage1_market": {
+          "line": 37.5,
+          "price": "-112",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "7/10",
+        "locked_l10_observations": [
+          21,
+          105,
+          43,
+          98,
+          26,
+          23,
+          72,
+          54,
+          39,
+          126
+        ],
+        "alternate_count": 17,
+        "floor": {
+          "threshold": 19.5,
+          "hr": "10/10",
+          "price": "-317",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 24.5,
+          "hr": "8/10",
+          "price": "-229",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 29.5,
+          "hr": "7/10",
+          "price": "-171",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 9.5,
+            "hr": "10/10",
+            "price": "-710"
+          },
+          {
+            "threshold": 14.5,
+            "hr": "10/10",
+            "price": "-464"
+          },
+          {
+            "threshold": 19.5,
+            "hr": "10/10",
+            "price": "-317"
+          },
+          {
+            "threshold": 24.5,
+            "hr": "8/10",
+            "price": "-229"
+          },
+          {
+            "threshold": 29.5,
+            "hr": "7/10",
+            "price": "-171"
+          },
+          {
+            "threshold": 37.5,
+            "hr": "7/10",
+            "price": "-112"
+          },
+          {
+            "threshold": 39.5,
+            "hr": "6/10",
+            "price": "-102"
+          },
+          {
+            "threshold": 49.5,
+            "hr": "5/10",
+            "price": "155"
+          },
+          {
+            "threshold": 59.5,
+            "hr": "4/10",
+            "price": "235"
+          },
+          {
+            "threshold": 69.5,
+            "hr": "4/10",
+            "price": "353"
+          },
+          {
+            "threshold": 79.5,
+            "hr": "3/10",
+            "price": "527"
+          },
+          {
+            "threshold": 89.5,
+            "hr": "3/10",
+            "price": "780"
+          },
+          {
+            "threshold": 99.5,
+            "hr": "2/10",
+            "price": "1160"
+          },
+          {
+            "threshold": 109.5,
+            "hr": "1/10",
+            "price": "1660"
+          },
+          {
+            "threshold": 119.5,
+            "hr": "1/10",
+            "price": "2200"
+          },
+          {
+            "threshold": 129.5,
+            "hr": "0/10",
+            "price": "3100"
+          },
+          {
+            "threshold": 139.5,
+            "hr": "0/10",
+            "price": "4000"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      },
+      {
+        "player": "Xavier Hutchinson",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "stage1_market": {
+          "line": 35.5,
+          "price": "-110",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "6/10",
+        "locked_l10_observations": [
+          58,
+          29,
+          17,
+          10,
+          65,
+          46,
+          51,
+          37,
+          32,
+          84
+        ],
+        "alternate_count": 15,
+        "floor": {
+          "threshold": 19.5,
+          "hr": "8/10",
+          "price": "-312",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 24.5,
+          "hr": "8/10",
+          "price": "-215",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 29.5,
+          "hr": "7/10",
+          "price": "-156",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 9.5,
+            "hr": "10/10",
+            "price": "-910"
+          },
+          {
+            "threshold": 14.5,
+            "hr": "9/10",
+            "price": "-506"
+          },
+          {
+            "threshold": 19.5,
+            "hr": "8/10",
+            "price": "-312"
+          },
+          {
+            "threshold": 24.5,
+            "hr": "8/10",
+            "price": "-215"
+          },
+          {
+            "threshold": 29.5,
+            "hr": "7/10",
+            "price": "-156"
+          },
+          {
+            "threshold": 35.5,
+            "hr": "6/10",
+            "price": "-110"
+          },
+          {
+            "threshold": 39.5,
+            "hr": "5/10",
+            "price": "114"
+          },
+          {
+            "threshold": 49.5,
+            "hr": "4/10",
+            "price": "194"
+          },
+          {
+            "threshold": 59.5,
+            "hr": "2/10",
+            "price": "310"
+          },
+          {
+            "threshold": 69.5,
+            "hr": "1/10",
+            "price": "484"
+          },
+          {
+            "threshold": 79.5,
+            "hr": "1/10",
+            "price": "760"
+          },
+          {
+            "threshold": 89.5,
+            "hr": "0/10",
+            "price": "1140"
+          },
+          {
+            "threshold": 99.5,
+            "hr": "0/10",
+            "price": "1700"
+          },
+          {
+            "threshold": 109.5,
+            "hr": "0/10",
+            "price": "2400"
+          },
+          {
+            "threshold": 119.5,
+            "hr": "0/10",
+            "price": "3500"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      },
+      {
+        "player": "Nico Collins",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "stage1_market": {
+          "line": 71.5,
+          "price": "-111",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "5/10",
+        "locked_l10_observations": [
+          94,
+          55,
+          6,
+          74,
+          56,
+          118,
+          75,
+          57,
+          59,
+          85
+        ],
+        "alternate_count": 19,
+        "floor": {
+          "threshold": 39.5,
+          "hr": "9/10",
+          "price": "-498",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 49.5,
+          "hr": "9/10",
+          "price": "-290",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 59.5,
+          "hr": "5/10",
+          "price": "-182",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 19.5,
+            "hr": "9/10",
+            "price": "-2500"
+          },
+          {
+            "threshold": 24.5,
+            "hr": "9/10",
+            "price": "-1500"
+          },
+          {
+            "threshold": 29.5,
+            "hr": "9/10",
+            "price": "-990"
+          },
+          {
+            "threshold": 39.5,
+            "hr": "9/10",
+            "price": "-498"
+          },
+          {
+            "threshold": 49.5,
+            "hr": "9/10",
+            "price": "-290"
+          },
+          {
+            "threshold": 59.5,
+            "hr": "5/10",
+            "price": "-182"
+          },
+          {
+            "threshold": 69.5,
+            "hr": "5/10",
+            "price": "-121"
+          },
+          {
+            "threshold": 71.5,
+            "hr": "5/10",
+            "price": "-111"
+          },
+          {
+            "threshold": 79.5,
+            "hr": "3/10",
+            "price": "123"
+          },
+          {
+            "threshold": 89.5,
+            "hr": "2/10",
+            "price": "176"
+          },
+          {
+            "threshold": 99.5,
+            "hr": "1/10",
+            "price": "252"
+          },
+          {
+            "threshold": 109.5,
+            "hr": "1/10",
+            "price": "362"
+          },
+          {
+            "threshold": 119.5,
+            "hr": "0/10",
+            "price": "494"
+          },
+          {
+            "threshold": 129.5,
+            "hr": "0/10",
+            "price": "680"
+          },
+          {
+            "threshold": 139.5,
+            "hr": "0/10",
+            "price": "940"
+          },
+          {
+            "threshold": 149.5,
+            "hr": "0/10",
+            "price": "1340"
+          },
+          {
+            "threshold": 159.5,
+            "hr": "0/10",
+            "price": "1840"
+          },
+          {
+            "threshold": 169.5,
+            "hr": "0/10",
+            "price": "2500"
+          },
+          {
+            "threshold": 179.5,
+            "hr": "0/10",
+            "price": "3200"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      },
+      {
+        "player": "Dalton Schultz",
+        "team": "HOU",
+        "position": "TE",
+        "market": "Receptions",
+        "stage1_market": {
+          "line": 2.5,
+          "price": "-220",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "7/10",
+        "locked_l10_observations": [
+          1,
+          2,
+          5,
+          4,
+          3,
+          2,
+          3,
+          12,
+          4,
+          4
+        ],
+        "alternate_count": 7,
+        "floor": {
+          "threshold": 1.5,
+          "hr": "9/10",
+          "price": "-710",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 2.5,
+          "hr": "7/10",
+          "price": "-220",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 3.5,
+          "hr": "5/10",
+          "price": "114",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 1.5,
+            "hr": "9/10",
+            "price": "-710"
+          },
+          {
+            "threshold": 2.5,
+            "hr": "7/10",
+            "price": "-220"
+          },
+          {
+            "threshold": 3.5,
+            "hr": "5/10",
+            "price": "114"
+          },
+          {
+            "threshold": 4.5,
+            "hr": "2/10",
+            "price": "260"
+          },
+          {
+            "threshold": 5.5,
+            "hr": "1/10",
+            "price": "552"
+          },
+          {
+            "threshold": 6.5,
+            "hr": "1/10",
+            "price": "1140"
+          },
+          {
+            "threshold": 7.5,
+            "hr": "1/10",
+            "price": "2100"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      },
+      {
+        "player": "Tyler Warren",
+        "team": "IND",
+        "position": "TE",
+        "market": "Receptions",
+        "stage1_market": {
+          "line": 4.5,
+          "price": "-153",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "6/10",
+        "locked_l10_observations": [
+          2,
+          4,
+          4,
+          7,
+          5,
+          9,
+          6,
+          3,
+          5,
+          5
+        ],
+        "alternate_count": 9,
+        "floor": {
+          "threshold": 2.5,
+          "hr": "9/10",
+          "price": "-930",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 3.5,
+          "hr": "8/10",
+          "price": "-330",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 4.5,
+          "hr": "6/10",
+          "price": "-153",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 2.5,
+            "hr": "9/10",
+            "price": "-930"
+          },
+          {
+            "threshold": 3.5,
+            "hr": "8/10",
+            "price": "-330"
+          },
+          {
+            "threshold": 4.5,
+            "hr": "6/10",
+            "price": "-153"
+          },
+          {
+            "threshold": 5.5,
+            "hr": "3/10",
+            "price": "127"
+          },
+          {
+            "threshold": 6.5,
+            "hr": "2/10",
+            "price": "237"
+          },
+          {
+            "threshold": 7.5,
+            "hr": "1/10",
+            "price": "431"
+          },
+          {
+            "threshold": 8.5,
+            "hr": "1/10",
+            "price": "750"
+          },
+          {
+            "threshold": 9.5,
+            "hr": "0/10",
+            "price": "1280"
+          },
+          {
+            "threshold": 10.5,
+            "hr": "0/10",
+            "price": "2000"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      },
+      {
+        "player": "Dalton Schultz",
+        "team": "HOU",
+        "position": "TE",
+        "market": "Receiving Yards",
+        "stage1_market": {
+          "line": 29.5,
+          "price": "-111",
+          "sportsbook": "DraftKings"
+        },
+        "historical_hr": "8/10",
+        "locked_l10_observations": [
+          11,
+          42,
+          45,
+          33,
+          30,
+          9,
+          30,
+          140,
+          35,
+          73
+        ],
+        "alternate_count": 12,
+        "floor": {
+          "threshold": 14.5,
+          "hr": "8/10",
+          "price": "-408",
+          "sportsbook": "DraftKings"
+        },
+        "core": {
+          "threshold": 19.5,
+          "hr": "8/10",
+          "price": "-246",
+          "sportsbook": "DraftKings"
+        },
+        "ceiling": {
+          "threshold": 24.5,
+          "hr": "8/10",
+          "price": "-160",
+          "sportsbook": "DraftKings"
+        },
+        "all_alternates": [
+          {
+            "threshold": 9.5,
+            "hr": "9/10",
+            "price": "-780"
+          },
+          {
+            "threshold": 14.5,
+            "hr": "8/10",
+            "price": "-408"
+          },
+          {
+            "threshold": 19.5,
+            "hr": "8/10",
+            "price": "-246"
+          },
+          {
+            "threshold": 24.5,
+            "hr": "8/10",
+            "price": "-160"
+          },
+          {
+            "threshold": 29.5,
+            "hr": "8/10",
+            "price": "-111"
+          },
+          {
+            "threshold": 39.5,
+            "hr": "4/10",
+            "price": "170"
+          },
+          {
+            "threshold": 49.5,
+            "hr": "2/10",
+            "price": "305"
+          },
+          {
+            "threshold": 59.5,
+            "hr": "2/10",
+            "price": "509"
+          },
+          {
+            "threshold": 69.5,
+            "hr": "2/10",
+            "price": "830"
+          },
+          {
+            "threshold": 79.5,
+            "hr": "1/10",
+            "price": "1340"
+          },
+          {
+            "threshold": 89.5,
+            "hr": "1/10",
+            "price": "1980"
+          },
+          {
+            "threshold": 99.5,
+            "hr": "1/10",
+            "price": "2900"
+          }
+        ],
+        "carry_to_stage3": true,
+        "narrowing_rationale": "At least one Floor or Core alternate has L10 HR ≥7/10, meeting the model's ≥70% minimum for later portfolio consideration."
+      }
+    ],
+    "stage1_state": {
+      "stage": 1,
+      "season": 2026,
+      "week": 11,
+      "scope": "Thursday only",
+      "historical_sample": "L10",
+      "historical_sample_n": 10,
+      "historical_cutoff": "Completion of the final scheduled game of Week 10 (2026-11-16); no Week 11 games included",
+      "percentile_method_override": {
+        "percentiles": [
+          "P7",
+          "P15",
+          "P16"
+        ],
+        "sample": "10 most recent qualifying completed regular-season games before the historical cutoff",
+        "note": "User-directed override to the model file's default 20-game P15 method; applies to percentile calculations only."
+      },
+      "record_count": 11,
+      "screened_market_count": 21,
+      "records": [
+        {
+          "player": "C.J. Stroud",
+          "team": "HOU",
+          "position": "QB",
+          "market": "Passing Yards",
+          "line": 260.5,
+          "price": "-113",
+          "sportsbook": "DraftKings",
+          "market_hr": "6/10",
+          "market_hits": 6,
+          "ladder": {
+            "150+": 10,
+            "175+": 7,
+            "200+": 7,
+            "225+": 6,
+            "250+": 6,
+            "300+": 4
+          },
+          "qualifies": true,
+          "p7": 161.82,
+          "p15": 167.7,
+          "p16": 167.88,
+          "observations": [
+            211,
+            384,
+            153,
+            312,
+            261,
+            347,
+            167,
+            353,
+            274,
+            169
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 211,
+              "rushing_yards": 20,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 384,
+              "rushing_yards": 20,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 153,
+              "rushing_yards": 4,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2026,
+              "week": 6,
+              "game_id": "2026_06_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 312,
+              "rushing_yards": 5,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_HOU_TEN",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 261,
+              "rushing_yards": 5,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_DAL_HOU",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 347,
+              "rushing_yards": 12,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2026,
+              "week": 3,
+              "game_id": "2026_03_HOU_IND",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 167,
+              "rushing_yards": 10,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2026,
+              "week": 2,
+              "game_id": "2026_02_CIN_HOU",
+              "team": "HOU",
+              "opponent_team": "CIN",
+              "passing_yards": 353,
+              "rushing_yards": 29,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BUF_HOU",
+              "team": "HOU",
+              "opponent_team": "BUF",
+              "passing_yards": 274,
+              "rushing_yards": 15,
+              "receiving_yards": 0,
+              "receptions": 0
+            },
+            {
+              "season": 2025,
+              "week": 18,
+              "game_id": "2025_18_IND_HOU",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 169,
+              "rushing_yards": 5,
+              "receiving_yards": 0,
+              "receptions": 0
+            }
+          ]
+        },
+        {
+          "player": "Jonathan Taylor",
+          "team": "IND",
+          "position": "RB",
+          "market": "Rushing Yards",
+          "line": 51.5,
+          "price": "-111",
+          "sportsbook": "DraftKings",
+          "market_hr": "7/10",
+          "market_hits": 7,
+          "ladder": {
+            "20+": 10,
+            "30+": 9,
+            "40+": 9,
+            "50+": 7,
+            "60+": 7,
+            "75+": 6,
+            "100+": 0
+          },
+          "qualifies": true,
+          "p7": 36.86,
+          "p15": 45.35,
+          "p16": 45.44,
+          "observations": [
+            83,
+            46,
+            23,
+            95,
+            94,
+            45,
+            95,
+            68,
+            92,
+            98
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_MIA_IND",
+              "team": "IND",
+              "opponent_team": "MIA",
+              "passing_yards": 0,
+              "rushing_yards": 83,
+              "receiving_yards": 20,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_DAL_IND",
+              "team": "IND",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 46,
+              "receiving_yards": 18,
+              "receptions": 5
+            },
+            {
+              "season": 2026,
+              "week": 8,
+              "game_id": "2026_08_IND_JAX",
+              "team": "IND",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 23,
+              "receiving_yards": 24,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_IND_MIN",
+              "team": "IND",
+              "opponent_team": "MIN",
+              "passing_yards": 0,
+              "rushing_yards": 95,
+              "receiving_yards": 15,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 6,
+              "game_id": "2026_06_TEN_IND",
+              "team": "IND",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 94,
+              "receiving_yards": 57,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_IND_PIT",
+              "team": "IND",
+              "opponent_team": "PIT",
+              "passing_yards": 0,
+              "rushing_yards": 45,
+              "receiving_yards": 37,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_IND_WAS",
+              "team": "IND",
+              "opponent_team": "WAS",
+              "passing_yards": 0,
+              "rushing_yards": 95,
+              "receiving_yards": 2,
+              "receptions": 1
+            },
+            {
+              "season": 2026,
+              "week": 3,
+              "game_id": "2026_03_HOU_IND",
+              "team": "IND",
+              "opponent_team": "HOU",
+              "passing_yards": 0,
+              "rushing_yards": 68,
+              "receiving_yards": 4,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 2,
+              "game_id": "2026_02_IND_KC",
+              "team": "IND",
+              "opponent_team": "KC",
+              "passing_yards": 0,
+              "rushing_yards": 92,
+              "receiving_yards": 40,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BAL_IND",
+              "team": "IND",
+              "opponent_team": "BAL",
+              "passing_yards": 0,
+              "rushing_yards": 98,
+              "receiving_yards": 23,
+              "receptions": 3
+            }
+          ]
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "position": "WR",
+          "market": "Receiving Yards",
+          "line": 71.5,
+          "price": "-111",
+          "sportsbook": "DraftKings",
+          "market_hr": "5/10",
+          "market_hits": 5,
+          "ladder": {
+            "20+": 9,
+            "30+": 9,
+            "40+": 9,
+            "50+": 9,
+            "60+": 5,
+            "75+": 4,
+            "100+": 1
+          },
+          "qualifies": true,
+          "p7": 36.87,
+          "p15": 55.35,
+          "p16": 55.44,
+          "observations": [
+            94,
+            55,
+            6,
+            74,
+            56,
+            118,
+            75,
+            57,
+            59,
+            85
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 94,
+              "receptions": 9
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 55,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 6,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 6,
+              "game_id": "2026_06_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 5,
+              "receiving_yards": 74,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_HOU_TEN",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 56,
+              "receptions": 5
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_DAL_HOU",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 118,
+              "receptions": 7
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BUF_HOU",
+              "team": "HOU",
+              "opponent_team": "BUF",
+              "passing_yards": 0,
+              "rushing_yards": 7,
+              "receiving_yards": 75,
+              "receptions": 7
+            },
+            {
+              "season": 2025,
+              "week": 17,
+              "game_id": "2025_17_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 57,
+              "receptions": 3
+            },
+            {
+              "season": 2025,
+              "week": 16,
+              "game_id": "2025_16_LV_HOU",
+              "team": "HOU",
+              "opponent_team": "LV",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 59,
+              "receptions": 4
+            },
+            {
+              "season": 2025,
+              "week": 15,
+              "game_id": "2025_15_ARI_HOU",
+              "team": "HOU",
+              "opponent_team": "ARI",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 85,
+              "receptions": 3
+            }
+          ]
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "position": "WR",
+          "market": "Receptions",
+          "line": 4.5,
+          "price": "-148",
+          "sportsbook": "DraftKings",
+          "market_hr": "4/10",
+          "market_hits": 4,
+          "ladder": {
+            "2+": 10,
+            "3+": 9,
+            "4+": 6,
+            "5+": 4,
+            "6+": 3,
+            "7+": 3,
+            "8+": 1
+          },
+          "qualifies": true,
+          "p7": 2.63,
+          "p15": 3,
+          "p16": 3,
+          "observations": [
+            9,
+            4,
+            2,
+            3,
+            5,
+            7,
+            7,
+            3,
+            4,
+            3
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 94,
+              "receptions": 9
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 55,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 6,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 6,
+              "game_id": "2026_06_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 5,
+              "receiving_yards": 74,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_HOU_TEN",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 56,
+              "receptions": 5
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_DAL_HOU",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 118,
+              "receptions": 7
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BUF_HOU",
+              "team": "HOU",
+              "opponent_team": "BUF",
+              "passing_yards": 0,
+              "rushing_yards": 7,
+              "receiving_yards": 75,
+              "receptions": 7
+            },
+            {
+              "season": 2025,
+              "week": 17,
+              "game_id": "2025_17_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 57,
+              "receptions": 3
+            },
+            {
+              "season": 2025,
+              "week": 16,
+              "game_id": "2025_16_LV_HOU",
+              "team": "HOU",
+              "opponent_team": "LV",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 59,
+              "receptions": 4
+            },
+            {
+              "season": 2025,
+              "week": 15,
+              "game_id": "2025_15_ARI_HOU",
+              "team": "HOU",
+              "opponent_team": "ARI",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 85,
+              "receptions": 3
+            }
+          ]
+        },
+        {
+          "player": "Tank Dell",
+          "team": "HOU",
+          "position": "WR",
+          "market": "Receiving Yards",
+          "line": 37.5,
+          "price": "-112",
+          "sportsbook": "DraftKings",
+          "market_hr": "7/10",
+          "market_hits": 7,
+          "ladder": {
+            "20+": 10,
+            "30+": 7,
+            "40+": 6,
+            "50+": 5,
+            "60+": 4,
+            "75+": 3,
+            "100+": 2
+          },
+          "qualifies": true,
+          "p7": 22.26,
+          "p15": 24.05,
+          "p16": 24.32,
+          "observations": [
+            21,
+            105,
+            43,
+            98,
+            26,
+            23,
+            72,
+            54,
+            39,
+            126
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 21,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 105,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 0,
+              "rushing_yards": 2,
+              "receiving_yards": 43,
+              "receptions": 1
+            },
+            {
+              "season": 2024,
+              "week": 16,
+              "game_id": "2024_16_HOU_KC",
+              "team": "HOU",
+              "opponent_team": "KC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 98,
+              "receptions": 6
+            },
+            {
+              "season": 2024,
+              "week": 15,
+              "game_id": "2024_15_MIA_HOU",
+              "team": "HOU",
+              "opponent_team": "MIA",
+              "passing_yards": 0,
+              "rushing_yards": 15,
+              "receiving_yards": 26,
+              "receptions": 2
+            },
+            {
+              "season": 2024,
+              "week": 13,
+              "game_id": "2024_13_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 23,
+              "receptions": 1
+            },
+            {
+              "season": 2024,
+              "week": 12,
+              "game_id": "2024_12_TEN_HOU",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 72,
+              "receptions": 3
+            },
+            {
+              "season": 2024,
+              "week": 11,
+              "game_id": "2024_11_HOU_DAL",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 4,
+              "receiving_yards": 54,
+              "receptions": 4
+            },
+            {
+              "season": 2024,
+              "week": 10,
+              "game_id": "2024_10_DET_HOU",
+              "team": "HOU",
+              "opponent_team": "DET",
+              "passing_yards": 0,
+              "rushing_yards": -6,
+              "receiving_yards": 39,
+              "receptions": 5
+            },
+            {
+              "season": 2024,
+              "week": 9,
+              "game_id": "2024_09_HOU_NYJ",
+              "team": "HOU",
+              "opponent_team": "NYJ",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 126,
+              "receptions": 6
+            }
+          ]
+        },
+        {
+          "player": "Tank Dell",
+          "team": "HOU",
+          "position": "WR",
+          "market": "Receptions",
+          "line": 2.5,
+          "price": "-121",
+          "sportsbook": "DraftKings",
+          "market_hr": "7/10",
+          "market_hits": 7,
+          "ladder": {
+            "2+": 8,
+            "3+": 7,
+            "4+": 5,
+            "5+": 3,
+            "6+": 2,
+            "7+": 0,
+            "8+": 0
+          },
+          "qualifies": true,
+          "p7": 1,
+          "p15": 1.35,
+          "p16": 1.44,
+          "observations": [
+            3,
+            4,
+            1,
+            6,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 21,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 105,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 0,
+              "rushing_yards": 2,
+              "receiving_yards": 43,
+              "receptions": 1
+            },
+            {
+              "season": 2024,
+              "week": 16,
+              "game_id": "2024_16_HOU_KC",
+              "team": "HOU",
+              "opponent_team": "KC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 98,
+              "receptions": 6
+            },
+            {
+              "season": 2024,
+              "week": 15,
+              "game_id": "2024_15_MIA_HOU",
+              "team": "HOU",
+              "opponent_team": "MIA",
+              "passing_yards": 0,
+              "rushing_yards": 15,
+              "receiving_yards": 26,
+              "receptions": 2
+            },
+            {
+              "season": 2024,
+              "week": 13,
+              "game_id": "2024_13_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 23,
+              "receptions": 1
+            },
+            {
+              "season": 2024,
+              "week": 12,
+              "game_id": "2024_12_TEN_HOU",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 72,
+              "receptions": 3
+            },
+            {
+              "season": 2024,
+              "week": 11,
+              "game_id": "2024_11_HOU_DAL",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 4,
+              "receiving_yards": 54,
+              "receptions": 4
+            },
+            {
+              "season": 2024,
+              "week": 10,
+              "game_id": "2024_10_DET_HOU",
+              "team": "HOU",
+              "opponent_team": "DET",
+              "passing_yards": 0,
+              "rushing_yards": -6,
+              "receiving_yards": 39,
+              "receptions": 5
+            },
+            {
+              "season": 2024,
+              "week": 9,
+              "game_id": "2024_09_HOU_NYJ",
+              "team": "HOU",
+              "opponent_team": "NYJ",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 126,
+              "receptions": 6
+            }
+          ]
+        },
+        {
+          "player": "Xavier Hutchinson",
+          "team": "HOU",
+          "position": "WR",
+          "market": "Receiving Yards",
+          "line": 35.5,
+          "price": "-110",
+          "sportsbook": "DraftKings",
+          "market_hr": "6/10",
+          "market_hits": 6,
+          "ladder": {
+            "20+": 8,
+            "30+": 7,
+            "40+": 5,
+            "50+": 4,
+            "60+": 2,
+            "75+": 1,
+            "100+": 0
+          },
+          "qualifies": true,
+          "p7": 14.41,
+          "p15": 21.2,
+          "p16": 22.28,
+          "observations": [
+            58,
+            29,
+            17,
+            10,
+            65,
+            46,
+            51,
+            37,
+            32,
+            84
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 58,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 29,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 0,
+              "rushing_yards": 12,
+              "receiving_yards": 17,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 6,
+              "game_id": "2026_06_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 10,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_HOU_TEN",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 65,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_DAL_HOU",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 46,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 3,
+              "game_id": "2026_03_HOU_IND",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 0,
+              "rushing_yards": 4,
+              "receiving_yards": 51,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 2,
+              "game_id": "2026_02_CIN_HOU",
+              "team": "HOU",
+              "opponent_team": "CIN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 37,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BUF_HOU",
+              "team": "HOU",
+              "opponent_team": "BUF",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 32,
+              "receptions": 3
+            },
+            {
+              "season": 2025,
+              "week": 18,
+              "game_id": "2025_18_IND_HOU",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 84,
+              "receptions": 5
+            }
+          ]
+        },
+        {
+          "player": "Xavier Hutchinson",
+          "team": "HOU",
+          "position": "WR",
+          "market": "Receptions",
+          "line": 2.5,
+          "price": "-168",
+          "sportsbook": "DraftKings",
+          "market_hr": "9/10",
+          "market_hits": 9,
+          "ladder": {
+            "2+": 10,
+            "3+": 9,
+            "4+": 3,
+            "5+": 1,
+            "6+": 0,
+            "7+": 0,
+            "8+": 0
+          },
+          "qualifies": true,
+          "p7": 2.63,
+          "p15": 3,
+          "p16": 3,
+          "observations": [
+            4,
+            3,
+            3,
+            2,
+            4,
+            3,
+            3,
+            3,
+            3,
+            5
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 58,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 29,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 0,
+              "rushing_yards": 12,
+              "receiving_yards": 17,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 6,
+              "game_id": "2026_06_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 10,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_HOU_TEN",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 65,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_DAL_HOU",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 46,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 3,
+              "game_id": "2026_03_HOU_IND",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 0,
+              "rushing_yards": 4,
+              "receiving_yards": 51,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 2,
+              "game_id": "2026_02_CIN_HOU",
+              "team": "HOU",
+              "opponent_team": "CIN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 37,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BUF_HOU",
+              "team": "HOU",
+              "opponent_team": "BUF",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 32,
+              "receptions": 3
+            },
+            {
+              "season": 2025,
+              "week": 18,
+              "game_id": "2025_18_IND_HOU",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 84,
+              "receptions": 5
+            }
+          ]
+        },
+        {
+          "player": "Dalton Schultz",
+          "team": "HOU",
+          "position": "TE",
+          "market": "Receiving Yards",
+          "line": 29.5,
+          "price": "-111",
+          "sportsbook": "DraftKings",
+          "market_hr": "8/10",
+          "market_hits": 8,
+          "ladder": {
+            "20+": 8,
+            "30+": 8,
+            "40+": 4,
+            "50+": 2,
+            "60+": 2,
+            "75+": 1,
+            "100+": 1
+          },
+          "qualifies": true,
+          "p7": 10.26,
+          "p15": 17.65,
+          "p16": 19.36,
+          "observations": [
+            11,
+            42,
+            45,
+            33,
+            30,
+            9,
+            30,
+            140,
+            35,
+            73
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 11,
+              "receptions": 1
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 42,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 45,
+              "receptions": 5
+            },
+            {
+              "season": 2026,
+              "week": 6,
+              "game_id": "2026_06_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 33,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_HOU_TEN",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 30,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_DAL_HOU",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 9,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 3,
+              "game_id": "2026_03_HOU_IND",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 30,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 2,
+              "game_id": "2026_02_CIN_HOU",
+              "team": "HOU",
+              "opponent_team": "CIN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 140,
+              "receptions": 12
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BUF_HOU",
+              "team": "HOU",
+              "opponent_team": "BUF",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 35,
+              "receptions": 4
+            },
+            {
+              "season": 2025,
+              "week": 18,
+              "game_id": "2025_18_IND_HOU",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 73,
+              "receptions": 4
+            }
+          ]
+        },
+        {
+          "player": "Dalton Schultz",
+          "team": "HOU",
+          "position": "TE",
+          "market": "Receptions",
+          "line": 2.5,
+          "price": "-220",
+          "sportsbook": "DraftKings",
+          "market_hr": "7/10",
+          "market_hits": 7,
+          "ladder": {
+            "2+": 9,
+            "3+": 7,
+            "4+": 5,
+            "5+": 2,
+            "6+": 1,
+            "7+": 1,
+            "8+": 1
+          },
+          "qualifies": true,
+          "p7": 1.63,
+          "p15": 2,
+          "p16": 2,
+          "observations": [
+            1,
+            2,
+            5,
+            4,
+            3,
+            2,
+            3,
+            12,
+            4,
+            4
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_HOU_CLE",
+              "team": "HOU",
+              "opponent_team": "CLE",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 11,
+              "receptions": 1
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_HOU_LAC",
+              "team": "HOU",
+              "opponent_team": "LAC",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 42,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 7,
+              "game_id": "2026_07_NYG_HOU",
+              "team": "HOU",
+              "opponent_team": "NYG",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 45,
+              "receptions": 5
+            },
+            {
+              "season": 2026,
+              "week": 6,
+              "game_id": "2026_06_HOU_JAX",
+              "team": "HOU",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 33,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_HOU_TEN",
+              "team": "HOU",
+              "opponent_team": "TEN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 30,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_DAL_HOU",
+              "team": "HOU",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 9,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 3,
+              "game_id": "2026_03_HOU_IND",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 30,
+              "receptions": 3
+            },
+            {
+              "season": 2026,
+              "week": 2,
+              "game_id": "2026_02_CIN_HOU",
+              "team": "HOU",
+              "opponent_team": "CIN",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 140,
+              "receptions": 12
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BUF_HOU",
+              "team": "HOU",
+              "opponent_team": "BUF",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 35,
+              "receptions": 4
+            },
+            {
+              "season": 2025,
+              "week": 18,
+              "game_id": "2025_18_IND_HOU",
+              "team": "HOU",
+              "opponent_team": "IND",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 73,
+              "receptions": 4
+            }
+          ]
+        },
+        {
+          "player": "Tyler Warren",
+          "team": "IND",
+          "position": "TE",
+          "market": "Receptions",
+          "line": 4.5,
+          "price": "-153",
+          "sportsbook": "DraftKings",
+          "market_hr": "6/10",
+          "market_hits": 6,
+          "ladder": {
+            "2+": 10,
+            "3+": 9,
+            "4+": 8,
+            "5+": 6,
+            "6+": 3,
+            "7+": 2,
+            "8+": 1
+          },
+          "qualifies": true,
+          "p7": 2.63,
+          "p15": 3.35,
+          "p16": 3.44,
+          "observations": [
+            2,
+            4,
+            4,
+            7,
+            5,
+            9,
+            6,
+            3,
+            5,
+            5
+          ],
+          "games": [
+            {
+              "season": 2026,
+              "week": 10,
+              "game_id": "2026_10_MIA_IND",
+              "team": "IND",
+              "opponent_team": "MIA",
+              "passing_yards": 0,
+              "rushing_yards": 3,
+              "receiving_yards": 1,
+              "receptions": 2
+            },
+            {
+              "season": 2026,
+              "week": 9,
+              "game_id": "2026_09_DAL_IND",
+              "team": "IND",
+              "opponent_team": "DAL",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 44,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 8,
+              "game_id": "2026_08_IND_JAX",
+              "team": "IND",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 18,
+              "receptions": 4
+            },
+            {
+              "season": 2026,
+              "week": 5,
+              "game_id": "2026_05_IND_PIT",
+              "team": "IND",
+              "opponent_team": "PIT",
+              "passing_yards": 0,
+              "rushing_yards": 1,
+              "receiving_yards": 83,
+              "receptions": 7
+            },
+            {
+              "season": 2026,
+              "week": 4,
+              "game_id": "2026_04_IND_WAS",
+              "team": "IND",
+              "opponent_team": "WAS",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 41,
+              "receptions": 5
+            },
+            {
+              "season": 2026,
+              "week": 3,
+              "game_id": "2026_03_HOU_IND",
+              "team": "IND",
+              "opponent_team": "HOU",
+              "passing_yards": 0,
+              "rushing_yards": 2,
+              "receiving_yards": 55,
+              "receptions": 9
+            },
+            {
+              "season": 2026,
+              "week": 2,
+              "game_id": "2026_02_IND_KC",
+              "team": "IND",
+              "opponent_team": "KC",
+              "passing_yards": 0,
+              "rushing_yards": 3,
+              "receiving_yards": 21,
+              "receptions": 6
+            },
+            {
+              "season": 2026,
+              "week": 1,
+              "game_id": "2026_01_BAL_IND",
+              "team": "IND",
+              "opponent_team": "BAL",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 13,
+              "receptions": 3
+            },
+            {
+              "season": 2025,
+              "week": 18,
+              "game_id": "2025_18_IND_HOU",
+              "team": "IND",
+              "opponent_team": "HOU",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 26,
+              "receptions": 5
+            },
+            {
+              "season": 2025,
+              "week": 17,
+              "game_id": "2025_17_JAX_IND",
+              "team": "IND",
+              "opponent_team": "JAX",
+              "passing_yards": 0,
+              "rushing_yards": 0,
+              "receiving_yards": 43,
+              "receptions": 5
+            }
+          ]
+        }
+      ],
+      "state_id": "STATE-1-W11-2026-20261118-1455ET",
+      "parent_state_id": "STATE-0-W11-2026-20261118-1450ET",
+      "source_snapshot": {
+        "historical_path": "data/nfl_prop_model.txt",
+        "historical_blob_sha": "6bbb6204f691585d526d8005eb6733d7a74a7cab",
+        "sportsbook_path": "odds/nfl_player_props_latest.csv",
+        "sportsbook_blob_sha": "7abbada8f53da54cd1978e03b55ff827ce5c4a77",
+        "sportsbook": "DraftKings",
+        "game": "IND Colts @ HOU Texans"
+      },
+      "line_selection_rule": "For the current main-market line, selected the available line whose over price is numerically closest to -110; ties resolved by lower line. The source file has no explicit main-line flag.",
+      "validation": {
+        "exact_l10_observations": true,
+        "all_qualifiers_pass_market_hr_or_ladder_gate": true,
+        "percentiles_all_use_l10": true
+      }
+    },
+    "superseded_artifact_note": "The prior stage2_state.json contained current-week context, which belongs in Stage 3 under V7.2.9. It has been replaced by this corrected Stage 2 alternate-market analysis; the previous context content is not used as Stage 2.",
+    "validation": {
+      "exact_stage1_universe_preserved": true,
+      "exact_l10_observations_used": true,
+      "qualification_status_preserved": true,
+      "no_fabricated_lines_or_prices": true,
+      "no_current_week_context_performed": true,
+      "stage3_candidate_count": 9
+    }
+  },
+  "stage1_state": {
+    "stage": 1,
+    "season": 2026,
+    "week": 11,
+    "scope": "Thursday only",
+    "historical_sample": "L10",
+    "historical_sample_n": 10,
+    "historical_cutoff": "Completion of the final scheduled game of Week 10 (2026-11-16); no Week 11 games included",
+    "percentile_method_override": {
+      "percentiles": [
+        "P7",
+        "P15",
+        "P16"
+      ],
+      "sample": "10 most recent qualifying completed regular-season games before the historical cutoff",
+      "note": "User-directed override to the model file's default 20-game P15 method; applies to percentile calculations only."
+    },
+    "record_count": 11,
+    "screened_market_count": 21,
+    "records": [
+      {
+        "player": "C.J. Stroud",
+        "team": "HOU",
+        "position": "QB",
+        "market": "Passing Yards",
+        "line": 260.5,
+        "price": "-113",
+        "sportsbook": "DraftKings",
+        "market_hr": "6/10",
+        "market_hits": 6,
+        "ladder": {
+          "150+": 10,
+          "175+": 7,
+          "200+": 7,
+          "225+": 6,
+          "250+": 6,
+          "300+": 4
+        },
+        "qualifies": true,
+        "p7": 161.82,
+        "p15": 167.7,
+        "p16": 167.88,
+        "observations": [
+          211,
+          384,
+          153,
+          312,
+          261,
+          347,
+          167,
+          353,
+          274,
+          169
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 211,
+            "rushing_yards": 20,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 384,
+            "rushing_yards": 20,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 153,
+            "rushing_yards": 4,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 312,
+            "rushing_yards": 5,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_HOU_TEN",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 261,
+            "rushing_yards": 5,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DAL_HOU",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 347,
+            "rushing_yards": 12,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_HOU_IND",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 167,
+            "rushing_yards": 10,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CIN_HOU",
+            "team": "HOU",
+            "opponent_team": "CIN",
+            "passing_yards": 353,
+            "rushing_yards": 29,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BUF_HOU",
+            "team": "HOU",
+            "opponent_team": "BUF",
+            "passing_yards": 274,
+            "rushing_yards": 15,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_IND_HOU",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 169,
+            "rushing_yards": 5,
+            "receiving_yards": 0,
+            "receptions": 0
+          }
+        ]
+      },
+      {
+        "player": "Jonathan Taylor",
+        "team": "IND",
+        "position": "RB",
+        "market": "Rushing Yards",
+        "line": 51.5,
+        "price": "-111",
+        "sportsbook": "DraftKings",
+        "market_hr": "7/10",
+        "market_hits": 7,
+        "ladder": {
+          "20+": 10,
+          "30+": 9,
+          "40+": 9,
+          "50+": 7,
+          "60+": 7,
+          "75+": 6,
+          "100+": 0
+        },
+        "qualifies": true,
+        "p7": 36.86,
+        "p15": 45.35,
+        "p16": 45.44,
+        "observations": [
+          83,
+          46,
+          23,
+          95,
+          94,
+          45,
+          95,
+          68,
+          92,
+          98
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_MIA_IND",
+            "team": "IND",
+            "opponent_team": "MIA",
+            "passing_yards": 0,
+            "rushing_yards": 83,
+            "receiving_yards": 20,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_DAL_IND",
+            "team": "IND",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 46,
+            "receiving_yards": 18,
+            "receptions": 5
+          },
+          {
+            "season": 2026,
+            "week": 8,
+            "game_id": "2026_08_IND_JAX",
+            "team": "IND",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 23,
+            "receiving_yards": 24,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_IND_MIN",
+            "team": "IND",
+            "opponent_team": "MIN",
+            "passing_yards": 0,
+            "rushing_yards": 95,
+            "receiving_yards": 15,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_TEN_IND",
+            "team": "IND",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 94,
+            "receiving_yards": 57,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_IND_PIT",
+            "team": "IND",
+            "opponent_team": "PIT",
+            "passing_yards": 0,
+            "rushing_yards": 45,
+            "receiving_yards": 37,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_IND_WAS",
+            "team": "IND",
+            "opponent_team": "WAS",
+            "passing_yards": 0,
+            "rushing_yards": 95,
+            "receiving_yards": 2,
+            "receptions": 1
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_HOU_IND",
+            "team": "IND",
+            "opponent_team": "HOU",
+            "passing_yards": 0,
+            "rushing_yards": 68,
+            "receiving_yards": 4,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_IND_KC",
+            "team": "IND",
+            "opponent_team": "KC",
+            "passing_yards": 0,
+            "rushing_yards": 92,
+            "receiving_yards": 40,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BAL_IND",
+            "team": "IND",
+            "opponent_team": "BAL",
+            "passing_yards": 0,
+            "rushing_yards": 98,
+            "receiving_yards": 23,
+            "receptions": 3
+          }
+        ]
+      },
+      {
+        "player": "Nico Collins",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "line": 71.5,
+        "price": "-111",
+        "sportsbook": "DraftKings",
+        "market_hr": "5/10",
+        "market_hits": 5,
+        "ladder": {
+          "20+": 9,
+          "30+": 9,
+          "40+": 9,
+          "50+": 9,
+          "60+": 5,
+          "75+": 4,
+          "100+": 1
+        },
+        "qualifies": true,
+        "p7": 36.87,
+        "p15": 55.35,
+        "p16": 55.44,
+        "observations": [
+          94,
+          55,
+          6,
+          74,
+          56,
+          118,
+          75,
+          57,
+          59,
+          85
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 94,
+            "receptions": 9
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 55,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 6,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 5,
+            "receiving_yards": 74,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_HOU_TEN",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 56,
+            "receptions": 5
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DAL_HOU",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 118,
+            "receptions": 7
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BUF_HOU",
+            "team": "HOU",
+            "opponent_team": "BUF",
+            "passing_yards": 0,
+            "rushing_yards": 7,
+            "receiving_yards": 75,
+            "receptions": 7
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 57,
+            "receptions": 3
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_LV_HOU",
+            "team": "HOU",
+            "opponent_team": "LV",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 59,
+            "receptions": 4
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_ARI_HOU",
+            "team": "HOU",
+            "opponent_team": "ARI",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 85,
+            "receptions": 3
+          }
+        ]
+      },
+      {
+        "player": "Nico Collins",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receptions",
+        "line": 4.5,
+        "price": "-148",
+        "sportsbook": "DraftKings",
+        "market_hr": "4/10",
+        "market_hits": 4,
+        "ladder": {
+          "2+": 10,
+          "3+": 9,
+          "4+": 6,
+          "5+": 4,
+          "6+": 3,
+          "7+": 3,
+          "8+": 1
+        },
+        "qualifies": true,
+        "p7": 2.63,
+        "p15": 3,
+        "p16": 3,
+        "observations": [
+          9,
+          4,
+          2,
+          3,
+          5,
+          7,
+          7,
+          3,
+          4,
+          3
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 94,
+            "receptions": 9
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 55,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 6,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 5,
+            "receiving_yards": 74,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_HOU_TEN",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 56,
+            "receptions": 5
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DAL_HOU",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 118,
+            "receptions": 7
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BUF_HOU",
+            "team": "HOU",
+            "opponent_team": "BUF",
+            "passing_yards": 0,
+            "rushing_yards": 7,
+            "receiving_yards": 75,
+            "receptions": 7
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 57,
+            "receptions": 3
+          },
+          {
+            "season": 2025,
+            "week": 16,
+            "game_id": "2025_16_LV_HOU",
+            "team": "HOU",
+            "opponent_team": "LV",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 59,
+            "receptions": 4
+          },
+          {
+            "season": 2025,
+            "week": 15,
+            "game_id": "2025_15_ARI_HOU",
+            "team": "HOU",
+            "opponent_team": "ARI",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 85,
+            "receptions": 3
+          }
+        ]
+      },
+      {
+        "player": "Tank Dell",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "line": 37.5,
+        "price": "-112",
+        "sportsbook": "DraftKings",
+        "market_hr": "7/10",
+        "market_hits": 7,
+        "ladder": {
+          "20+": 10,
+          "30+": 7,
+          "40+": 6,
+          "50+": 5,
+          "60+": 4,
+          "75+": 3,
+          "100+": 2
+        },
+        "qualifies": true,
+        "p7": 22.26,
+        "p15": 24.05,
+        "p16": 24.32,
+        "observations": [
+          21,
+          105,
+          43,
+          98,
+          26,
+          23,
+          72,
+          54,
+          39,
+          126
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 21,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 105,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 0,
+            "rushing_yards": 2,
+            "receiving_yards": 43,
+            "receptions": 1
+          },
+          {
+            "season": 2024,
+            "week": 16,
+            "game_id": "2024_16_HOU_KC",
+            "team": "HOU",
+            "opponent_team": "KC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 98,
+            "receptions": 6
+          },
+          {
+            "season": 2024,
+            "week": 15,
+            "game_id": "2024_15_MIA_HOU",
+            "team": "HOU",
+            "opponent_team": "MIA",
+            "passing_yards": 0,
+            "rushing_yards": 15,
+            "receiving_yards": 26,
+            "receptions": 2
+          },
+          {
+            "season": 2024,
+            "week": 13,
+            "game_id": "2024_13_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 23,
+            "receptions": 1
+          },
+          {
+            "season": 2024,
+            "week": 12,
+            "game_id": "2024_12_TEN_HOU",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 72,
+            "receptions": 3
+          },
+          {
+            "season": 2024,
+            "week": 11,
+            "game_id": "2024_11_HOU_DAL",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 4,
+            "receiving_yards": 54,
+            "receptions": 4
+          },
+          {
+            "season": 2024,
+            "week": 10,
+            "game_id": "2024_10_DET_HOU",
+            "team": "HOU",
+            "opponent_team": "DET",
+            "passing_yards": 0,
+            "rushing_yards": -6,
+            "receiving_yards": 39,
+            "receptions": 5
+          },
+          {
+            "season": 2024,
+            "week": 9,
+            "game_id": "2024_09_HOU_NYJ",
+            "team": "HOU",
+            "opponent_team": "NYJ",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 126,
+            "receptions": 6
+          }
+        ]
+      },
+      {
+        "player": "Tank Dell",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receptions",
+        "line": 2.5,
+        "price": "-121",
+        "sportsbook": "DraftKings",
+        "market_hr": "7/10",
+        "market_hits": 7,
+        "ladder": {
+          "2+": 8,
+          "3+": 7,
+          "4+": 5,
+          "5+": 3,
+          "6+": 2,
+          "7+": 0,
+          "8+": 0
+        },
+        "qualifies": true,
+        "p7": 1,
+        "p15": 1.35,
+        "p16": 1.44,
+        "observations": [
+          3,
+          4,
+          1,
+          6,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 21,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 105,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 0,
+            "rushing_yards": 2,
+            "receiving_yards": 43,
+            "receptions": 1
+          },
+          {
+            "season": 2024,
+            "week": 16,
+            "game_id": "2024_16_HOU_KC",
+            "team": "HOU",
+            "opponent_team": "KC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 98,
+            "receptions": 6
+          },
+          {
+            "season": 2024,
+            "week": 15,
+            "game_id": "2024_15_MIA_HOU",
+            "team": "HOU",
+            "opponent_team": "MIA",
+            "passing_yards": 0,
+            "rushing_yards": 15,
+            "receiving_yards": 26,
+            "receptions": 2
+          },
+          {
+            "season": 2024,
+            "week": 13,
+            "game_id": "2024_13_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 23,
+            "receptions": 1
+          },
+          {
+            "season": 2024,
+            "week": 12,
+            "game_id": "2024_12_TEN_HOU",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 72,
+            "receptions": 3
+          },
+          {
+            "season": 2024,
+            "week": 11,
+            "game_id": "2024_11_HOU_DAL",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 4,
+            "receiving_yards": 54,
+            "receptions": 4
+          },
+          {
+            "season": 2024,
+            "week": 10,
+            "game_id": "2024_10_DET_HOU",
+            "team": "HOU",
+            "opponent_team": "DET",
+            "passing_yards": 0,
+            "rushing_yards": -6,
+            "receiving_yards": 39,
+            "receptions": 5
+          },
+          {
+            "season": 2024,
+            "week": 9,
+            "game_id": "2024_09_HOU_NYJ",
+            "team": "HOU",
+            "opponent_team": "NYJ",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 126,
+            "receptions": 6
+          }
+        ]
+      },
+      {
+        "player": "Xavier Hutchinson",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receiving Yards",
+        "line": 35.5,
+        "price": "-110",
+        "sportsbook": "DraftKings",
+        "market_hr": "6/10",
+        "market_hits": 6,
+        "ladder": {
+          "20+": 8,
+          "30+": 7,
+          "40+": 5,
+          "50+": 4,
+          "60+": 2,
+          "75+": 1,
+          "100+": 0
+        },
+        "qualifies": true,
+        "p7": 14.41,
+        "p15": 21.2,
+        "p16": 22.28,
+        "observations": [
+          58,
+          29,
+          17,
+          10,
+          65,
+          46,
+          51,
+          37,
+          32,
+          84
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 58,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 29,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 0,
+            "rushing_yards": 12,
+            "receiving_yards": 17,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 10,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_HOU_TEN",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 65,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DAL_HOU",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 46,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_HOU_IND",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 0,
+            "rushing_yards": 4,
+            "receiving_yards": 51,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CIN_HOU",
+            "team": "HOU",
+            "opponent_team": "CIN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 37,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BUF_HOU",
+            "team": "HOU",
+            "opponent_team": "BUF",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 32,
+            "receptions": 3
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_IND_HOU",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 84,
+            "receptions": 5
+          }
+        ]
+      },
+      {
+        "player": "Xavier Hutchinson",
+        "team": "HOU",
+        "position": "WR",
+        "market": "Receptions",
+        "line": 2.5,
+        "price": "-168",
+        "sportsbook": "DraftKings",
+        "market_hr": "9/10",
+        "market_hits": 9,
+        "ladder": {
+          "2+": 10,
+          "3+": 9,
+          "4+": 3,
+          "5+": 1,
+          "6+": 0,
+          "7+": 0,
+          "8+": 0
+        },
+        "qualifies": true,
+        "p7": 2.63,
+        "p15": 3,
+        "p16": 3,
+        "observations": [
+          4,
+          3,
+          3,
+          2,
+          4,
+          3,
+          3,
+          3,
+          3,
+          5
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 58,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 29,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 0,
+            "rushing_yards": 12,
+            "receiving_yards": 17,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 10,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_HOU_TEN",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 65,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DAL_HOU",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 46,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_HOU_IND",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 0,
+            "rushing_yards": 4,
+            "receiving_yards": 51,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CIN_HOU",
+            "team": "HOU",
+            "opponent_team": "CIN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 37,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BUF_HOU",
+            "team": "HOU",
+            "opponent_team": "BUF",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 32,
+            "receptions": 3
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_IND_HOU",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 84,
+            "receptions": 5
+          }
+        ]
+      },
+      {
+        "player": "Dalton Schultz",
+        "team": "HOU",
+        "position": "TE",
+        "market": "Receiving Yards",
+        "line": 29.5,
+        "price": "-111",
+        "sportsbook": "DraftKings",
+        "market_hr": "8/10",
+        "market_hits": 8,
+        "ladder": {
+          "20+": 8,
+          "30+": 8,
+          "40+": 4,
+          "50+": 2,
+          "60+": 2,
+          "75+": 1,
+          "100+": 1
+        },
+        "qualifies": true,
+        "p7": 10.26,
+        "p15": 17.65,
+        "p16": 19.36,
+        "observations": [
+          11,
+          42,
+          45,
+          33,
+          30,
+          9,
+          30,
+          140,
+          35,
+          73
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 11,
+            "receptions": 1
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 42,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 45,
+            "receptions": 5
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 33,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_HOU_TEN",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 30,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DAL_HOU",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 9,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_HOU_IND",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 30,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CIN_HOU",
+            "team": "HOU",
+            "opponent_team": "CIN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 140,
+            "receptions": 12
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BUF_HOU",
+            "team": "HOU",
+            "opponent_team": "BUF",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 35,
+            "receptions": 4
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_IND_HOU",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 73,
+            "receptions": 4
+          }
+        ]
+      },
+      {
+        "player": "Dalton Schultz",
+        "team": "HOU",
+        "position": "TE",
+        "market": "Receptions",
+        "line": 2.5,
+        "price": "-220",
+        "sportsbook": "DraftKings",
+        "market_hr": "7/10",
+        "market_hits": 7,
+        "ladder": {
+          "2+": 9,
+          "3+": 7,
+          "4+": 5,
+          "5+": 2,
+          "6+": 1,
+          "7+": 1,
+          "8+": 1
+        },
+        "qualifies": true,
+        "p7": 1.63,
+        "p15": 2,
+        "p16": 2,
+        "observations": [
+          1,
+          2,
+          5,
+          4,
+          3,
+          2,
+          3,
+          12,
+          4,
+          4
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_HOU_CLE",
+            "team": "HOU",
+            "opponent_team": "CLE",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 11,
+            "receptions": 1
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_HOU_LAC",
+            "team": "HOU",
+            "opponent_team": "LAC",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 42,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 7,
+            "game_id": "2026_07_NYG_HOU",
+            "team": "HOU",
+            "opponent_team": "NYG",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 45,
+            "receptions": 5
+          },
+          {
+            "season": 2026,
+            "week": 6,
+            "game_id": "2026_06_HOU_JAX",
+            "team": "HOU",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 33,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_HOU_TEN",
+            "team": "HOU",
+            "opponent_team": "TEN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 30,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_DAL_HOU",
+            "team": "HOU",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 9,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_HOU_IND",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 30,
+            "receptions": 3
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_CIN_HOU",
+            "team": "HOU",
+            "opponent_team": "CIN",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 140,
+            "receptions": 12
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BUF_HOU",
+            "team": "HOU",
+            "opponent_team": "BUF",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 35,
+            "receptions": 4
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_IND_HOU",
+            "team": "HOU",
+            "opponent_team": "IND",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 73,
+            "receptions": 4
+          }
+        ]
+      },
+      {
+        "player": "Tyler Warren",
+        "team": "IND",
+        "position": "TE",
+        "market": "Receptions",
+        "line": 4.5,
+        "price": "-153",
+        "sportsbook": "DraftKings",
+        "market_hr": "6/10",
+        "market_hits": 6,
+        "ladder": {
+          "2+": 10,
+          "3+": 9,
+          "4+": 8,
+          "5+": 6,
+          "6+": 3,
+          "7+": 2,
+          "8+": 1
+        },
+        "qualifies": true,
+        "p7": 2.63,
+        "p15": 3.35,
+        "p16": 3.44,
+        "observations": [
+          2,
+          4,
+          4,
+          7,
+          5,
+          9,
+          6,
+          3,
+          5,
+          5
+        ],
+        "games": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_MIA_IND",
+            "team": "IND",
+            "opponent_team": "MIA",
+            "passing_yards": 0,
+            "rushing_yards": 3,
+            "receiving_yards": 1,
+            "receptions": 2
+          },
+          {
+            "season": 2026,
+            "week": 9,
+            "game_id": "2026_09_DAL_IND",
+            "team": "IND",
+            "opponent_team": "DAL",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 44,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 8,
+            "game_id": "2026_08_IND_JAX",
+            "team": "IND",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 18,
+            "receptions": 4
+          },
+          {
+            "season": 2026,
+            "week": 5,
+            "game_id": "2026_05_IND_PIT",
+            "team": "IND",
+            "opponent_team": "PIT",
+            "passing_yards": 0,
+            "rushing_yards": 1,
+            "receiving_yards": 83,
+            "receptions": 7
+          },
+          {
+            "season": 2026,
+            "week": 4,
+            "game_id": "2026_04_IND_WAS",
+            "team": "IND",
+            "opponent_team": "WAS",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 41,
+            "receptions": 5
+          },
+          {
+            "season": 2026,
+            "week": 3,
+            "game_id": "2026_03_HOU_IND",
+            "team": "IND",
+            "opponent_team": "HOU",
+            "passing_yards": 0,
+            "rushing_yards": 2,
+            "receiving_yards": 55,
+            "receptions": 9
+          },
+          {
+            "season": 2026,
+            "week": 2,
+            "game_id": "2026_02_IND_KC",
+            "team": "IND",
+            "opponent_team": "KC",
+            "passing_yards": 0,
+            "rushing_yards": 3,
+            "receiving_yards": 21,
+            "receptions": 6
+          },
+          {
+            "season": 2026,
+            "week": 1,
+            "game_id": "2026_01_BAL_IND",
+            "team": "IND",
+            "opponent_team": "BAL",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 13,
+            "receptions": 3
+          },
+          {
+            "season": 2025,
+            "week": 18,
+            "game_id": "2025_18_IND_HOU",
+            "team": "IND",
+            "opponent_team": "HOU",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 26,
+            "receptions": 5
+          },
+          {
+            "season": 2025,
+            "week": 17,
+            "game_id": "2025_17_JAX_IND",
+            "team": "IND",
+            "opponent_team": "JAX",
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 43,
+            "receptions": 5
+          }
+        ]
+      }
+    ],
+    "state_id": "STATE-1-W11-2026-20261118-1455ET",
+    "parent_state_id": "STATE-0-W11-2026-20261118-1450ET",
+    "source_snapshot": {
+      "historical_path": "data/nfl_prop_model.txt",
+      "historical_blob_sha": "6bbb6204f691585d526d8005eb6733d7a74a7cab",
+      "sportsbook_path": "odds/nfl_player_props_latest.csv",
+      "sportsbook_blob_sha": "7abbada8f53da54cd1978e03b55ff827ce5c4a77",
+      "sportsbook": "DraftKings",
+      "game": "IND Colts @ HOU Texans"
+    },
+    "line_selection_rule": "For the current main-market line, selected the available line whose over price is numerically closest to -110; ties resolved by lower line. The source file has no explicit main-line flag.",
+    "validation": {
+      "exact_l10_observations": true,
+      "all_qualifiers_pass_market_hr_or_ladder_gate": true,
+      "percentiles_all_use_l10": true
+    }
+  },
+  "validation": {
+    "stage2_input_status": "VALID",
+    "stage2_record_count_preserved": true,
+    "only_locked_stage2_candidates_analyzed": true,
+    "no_new_players_or_markets_added": true,
+    "no_stage1_rescreening": true,
+    "historical_hr_unchanged": true,
+    "historical_samples_unchanged": true,
+    "stage2_alternate_structure_unchanged": true,
+    "current_week_context_separate_from_historical_evidence": true,
+    "no_context_based_exclusion": true
+  },
+  "notes": [
+    "All nine Stage 2 candidates advance to Stage 4 based on the locked CORE/FLOOR historical evidence rule. Context classifications remain separate and do not change eligibility.",
+    "Wednesday injury reports are current as of Nov 18, 2026. Final inactives and late changes remain unverified."
+  ]
+}
