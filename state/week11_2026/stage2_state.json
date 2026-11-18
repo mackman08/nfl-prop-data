@@ -1,0 +1,256 @@
+{
+  "stage": 2,
+  "season": 2026,
+  "week": 11,
+  "scope": "Thursday only",
+  "game": "IND Colts @ HOU Texans",
+  "game_date": "2026-11-19",
+  "historical_sample": "L10",
+  "sportsbook": "DraftKings (FanDuel unavailable; user-approved fallback)",
+  "state_id": "STATE-2-W11-2026-20261118-1510ET",
+  "parent_state_id": "STATE-1-W11-2026-20261118-1455ET",
+  "parent_stage1_path": "state/week11_2026/stage1_state.json",
+  "parent_stage1_blob_sha": "5edceefd8de282f77dfaedf7046b4610817db693",
+  "context_as_of": "2026-11-18",
+  "matchup_context": {
+    "sharp_football_matchup_ranks": {
+      "colts_offense_vs_texans_defense": {
+        "overall": "IND offense 22 vs HOU defense 13",
+        "passing": "IND pass offense 30 vs HOU pass defense 8; strong Houston defensive edge",
+        "rushing": "IND rush offense 3 vs HOU rush defense 25; strong Indianapolis offensive edge",
+        "pressure": "IND pressure offense 24 vs HOU pressure defense 12; Houston defensive edge"
+      },
+      "texans_offense_vs_colts_defense": {
+        "overall": "HOU offense 12 vs IND defense 14",
+        "passing": "HOU pass offense 11 vs IND pass defense 12; near neutral",
+        "rushing": "HOU rush offense 27 vs IND rush defense 24; near neutral",
+        "pressure": "HOU pressure offense 16 vs IND pressure defense 23; near neutral"
+      },
+      "source": "https://www.sharpfootballanalysis.com/stats-nfl/nfl-matchups/",
+      "source_published": "2026-11-17",
+      "methodology_note": "Ranks blend success rate and EPA, adjusted for opponents; lower rank is stronger."
+    },
+    "colts_injuries": {
+      "ruled_out": [
+        "Bernhard Raimann (starting LT)",
+        "Jalen Travis (starting RT)",
+        "Charvarius Ward (starting CB)",
+        "Will Mallory (TE)",
+        "Jerry Tillery (DT)"
+      ],
+      "questionable": [
+        "Sauce Gardner (starting CB)",
+        "Anthony Gould (WR)",
+        "Charlie Heck (T)",
+        "Luke Rhodes (LS)"
+      ],
+      "additional": [
+        "Jaylon Carlies placed on IR; Akeem Davis-Gaither also on IR"
+      ],
+      "implications": [
+        "Two starting offensive tackles unavailable: downgrade Colts pass protection and add uncertainty to Taylor's blocking environment.",
+        "Ward out and Gardner questionable weaken outside corner coverage against Houston receivers.",
+        "Will Mallory out and Mo Alie-Cox already on IR leave Tyler Warren as the clear lead tight end."
+      ],
+      "sources": [
+        "https://www.colts.com/news/colts-rule-out-5-players-for-week-11-thursday-night-football-game-vs-houston-texans",
+        "https://www.colts.com/news/colts-release-unofficial-depth-chart-for-week-11"
+      ]
+    },
+    "texans_injuries": {
+      "confirmed_from_official_week11_report_through_tuesday": [
+        "Tank Dell full participant Monday and Tuesday (hand/shoulder)",
+        "David Montgomery full participant Monday and Tuesday (groin)",
+        "Woody Marks did not participate Monday or Tuesday (concussion)",
+        "Danielle Hunter did not participate Monday or Tuesday (hamstring)",
+        "Marvin Harrison Jr. did not participate Monday or Tuesday (hamstring)",
+        "Brevin Jordan did not participate Monday or Tuesday (foot/illness)",
+        "Azeez Al-Shaair on IR"
+      ],
+      "status_caveat": "Official Texans report available in the reviewed source was updated through Tuesday; final Wednesday game designations were not confirmed in the retrieved official report.",
+      "implications": [
+        "Montgomery appears on track to return, but a return after a four-game absence leaves workload uncertainty.",
+        "Marks' availability is uncertain; if unavailable, Montgomery and Emari Demercado are the remaining listed backs.",
+        "If Hunter is unavailable, Houston loses a starting edge defender; do not assume he is out until final designation.",
+        "Dell practiced fully both days, reducing but not eliminating the hand/shoulder concern."
+      ],
+      "sources": [
+        "https://www.houstontexans.com/news/week-11-injury-report-texans-vs-colts",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/texans-estimate-david-montgomery-as-a-full-participant-but-woody-marks-doesnt-practice",
+        "https://www.ourlads.com/nfldepthcharts/depthchart/HOU"
+      ]
+    },
+    "role_notes": [
+      "Official Colts Week 11 depth chart lists Daniel Jones, Jonathan Taylor and Tyler Warren as starters; Warren moves up the TE depth chart with Mo Alie-Cox on IR and Mallory ruled out.",
+      "Ourlads' Nov 17 Texans chart lists Nico Collins at LWR, Xavier Hutchinson at slot, Kayshon Boutte ahead of Tank Dell at RWR, Dalton Schultz at TE, and C.J. Stroud at QB. This differs from NBC's depth chart that lists Dell as RWR starter; Dell's exact snap/route role should be treated as uncertain.",
+      "Tank Dell's Stage 1 L10 sample contains only three 2026 games before reaching 2024 games; lower confidence in current-role transferability."
+    ],
+    "sources": [
+      "https://www.sharpfootballanalysis.com/stats-nfl/nfl-matchups/",
+      "https://www.colts.com/news/colts-rule-out-5-players-for-week-11-thursday-night-football-game-vs-houston-texans",
+      "https://www.colts.com/news/colts-release-unofficial-depth-chart-for-week-11",
+      "https://www.houstontexans.com/news/week-11-injury-report-texans-vs-colts",
+      "https://www.ourlads.com/nfldepthcharts/depthchart/HOU"
+    ]
+  },
+  "candidates": [
+    {
+      "player": "C.J. Stroud",
+      "market": "Passing Yards",
+      "line": 260.5,
+      "market_hr": "6/10",
+      "context": "Mixed",
+      "reasons": [
+        "Colts have ruled out Ward and Gardner remains questionable, weakening Houston's opposing outside coverage.",
+        "Sharp matchup model grades Houston passing offense 11th against Colts pass defense 12th, approximately neutral.",
+        "Week 3 meeting with Indianapolis produced 167 passing yards, a material negative data point against a 260.5 line."
+      ],
+      "stage1_note": "150+ yards hit 10/10; 250+ hit 6/10."
+    },
+    {
+      "player": "Jonathan Taylor",
+      "market": "Rushing Yards",
+      "line": 51.5,
+      "market_hr": "7/10",
+      "context": "Supportive",
+      "reasons": [
+        "Colts rushing offense ranks 3rd against Texans rushing defense ranked 25th.",
+        "Taylor gained 68 rushing yards in the Week 3 meeting with Houston.",
+        "Houston's Azeez Al-Shaair is on IR, but Indianapolis' two starting tackles are ruled out, tempering the positive matchup."
+      ],
+      "stage1_note": "40+ hit 9/10; 50+ hit 7/10."
+    },
+    {
+      "player": "Nico Collins",
+      "market": "Receiving Yards",
+      "line": 71.5,
+      "market_hr": "5/10",
+      "context": "Mixed",
+      "reasons": [
+        "Colts' Ward is ruled out and Gardner is questionable, improving the receiver matchup.",
+        "Houston passing offense vs Indianapolis pass defense grades near neutral.",
+        "Collins' 71.5 line is above his 60+ and 75+ ladder hit rates; Week 3 vs IND was only 6 receiving yards."
+      ],
+      "stage1_note": "50+ hit 9/10; 60+ hit 5/10; 75+ hit 4/10."
+    },
+    {
+      "player": "Nico Collins",
+      "market": "Receptions",
+      "line": 4.5,
+      "market_hr": "4/10",
+      "context": "Mixed",
+      "reasons": [
+        "Colts outside-corner injuries are favorable for target conversion.",
+        "His 5+ reception threshold hit only 4/10, so the line is demanding relative to the sample.",
+        "Week 3 vs IND produced 2 receptions."
+      ],
+      "stage1_note": "3+ hit 9/10; 4+ hit 6/10; 5+ hit 4/10."
+    },
+    {
+      "player": "Tank Dell",
+      "market": "Receiving Yards",
+      "line": 37.5,
+      "market_hr": "7/10",
+      "context": "Concern",
+      "reasons": [
+        "Dell was a full participant in Monday and Tuesday practice.",
+        "Ourlads lists Dell behind Kayshon Boutte at RWR, while NBC lists Dell as starter; current role/snap share is therefore uncertain.",
+        "L10 includes only three 2026 games and then jumps back to 2024, reducing confidence that the hit rate reflects his current role."
+      ],
+      "stage1_note": "30+ hit 7/10; 40+ hit 6/10."
+    },
+    {
+      "player": "Tank Dell",
+      "market": "Receptions",
+      "line": 2.5,
+      "market_hr": "7/10",
+      "context": "Mixed",
+      "reasons": [
+        "Full participation on both available practice days is encouraging.",
+        "The 3+ threshold hit 7/10, but current depth-chart disagreement and a sparse 2026 sample create role uncertainty.",
+        "Week 3 vs IND produced 1 reception."
+      ],
+      "stage1_note": "2+ hit 8/10; 3+ hit 7/10."
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "market": "Receiving Yards",
+      "line": 35.5,
+      "market_hr": "6/10",
+      "context": "Mixed",
+      "reasons": [
+        "Listed as Houston's starting slot receiver on the Nov 17 Ourlads depth chart.",
+        "Colts have significant outside-corner absences, though the direct slot matchup is less clearly affected.",
+        "Week 3 vs IND produced 17 receiving yards; 40+ hit only 5/10."
+      ],
+      "stage1_note": "20+ hit 8/10; 30+ hit 7/10; 40+ hit 5/10."
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "market": "Receptions",
+      "line": 2.5,
+      "market_hr": "9/10",
+      "context": "Supportive",
+      "reasons": [
+        "Starting slot role is supported by the Nov 17 depth chart.",
+        "3+ receptions hit 9/10, and he had 3 catches in the Week 3 meeting with Indianapolis.",
+        "Price is heavy at -168; that is a value issue for later stages, not a negative role signal."
+      ],
+      "stage1_note": "2+ hit 10/10; 3+ hit 9/10."
+    },
+    {
+      "player": "Dalton Schultz",
+      "market": "Receiving Yards",
+      "line": 29.5,
+      "market_hr": "8/10",
+      "context": "Supportive",
+      "reasons": [
+        "Listed as Houston's starting tight end.",
+        "Colts' linebacker depth has been depleted by injuries/IR, potentially opening intermediate middle-field opportunities.",
+        "Schultz had 51 receiving yards against Indianapolis in Week 3 and 30+ hit 8/10."
+      ],
+      "stage1_note": "30+ hit 8/10."
+    },
+    {
+      "player": "Dalton Schultz",
+      "market": "Receptions",
+      "line": 2.5,
+      "market_hr": "7/10",
+      "context": "Supportive",
+      "reasons": [
+        "Clear starting tight end role; Brevin Jordan has missed the first two listed practices.",
+        "Schultz had 3 receptions against Indianapolis in Week 3.",
+        "2+ hit 9/10, but -220 is expensive and will require value review."
+      ],
+      "stage1_note": "2+ hit 9/10; 3+ hit 7/10."
+    },
+    {
+      "player": "Tyler Warren",
+      "market": "Receptions",
+      "line": 4.5,
+      "market_hr": "6/10",
+      "context": "Supportive",
+      "reasons": [
+        "Clear lead tight end role; Mallory is ruled out and Mo Alie-Cox is on IR.",
+        "Warren caught 9 passes against Houston in Week 3.",
+        "4+ receptions hit 8/10 and 5+ hit 6/10."
+      ],
+      "stage1_note": "4+ hit 8/10; 5+ hit 6/10."
+    }
+  ],
+  "limitations": [
+    "Final Wednesday Houston injury designations were not confirmed from the retrieved official team report; reassess Montgomery, Marks, Hunter, Brevin Jordan and Kamari Lassiter when final designations are published.",
+    "Current depth-chart sources disagree on Tank Dell's starting status; role confidence downgraded.",
+    "Tank Dell's L10 contains a large historical gap between 2026 and 2024 games.",
+    "Matchup rankings are blended season/prior-year estimates, not a direct player projection.",
+    "Stage 2 is contextual classification only; no alternate-line selection or final bet recommendation has been made."
+  ],
+  "validation": {
+    "stage1_parent_loaded": true,
+    "stage1_record_count": 11,
+    "stage2_candidate_count": 11,
+    "every_stage1_candidate_classified": true,
+    "final_houston_injury_designations_confirmed": false,
+    "stage3_started": false
+  }
+}
