@@ -1,0 +1,508 @@
+{
+  "schema_version": "1.0",
+  "stage": 5,
+  "stage_name": "Portfolio Construction",
+  "state_id": "STATE-5-W11-2026-20261118-PORTFOLIOS",
+  "parent_state_id": "STATE-4-W11-2026-20261118-FINAL-CARD",
+  "created_at": "2026-11-18",
+  "season": 2026,
+  "week": 11,
+  "scope": "Thursday only — IND Colts @ HOU Texans",
+  "historical_sample": "L10",
+  "historical_sample_n": 10,
+  "historical_cutoff": "Completion of the final scheduled game of Week 10 (2026-11-16); no Week 11 games included",
+  "sportsbook": "DraftKings fallback — explicitly user-approved because FanDuel data was unavailable",
+  "sportsbook_snapshot": {
+    "path": "odds/nfl_player_props_latest.csv",
+    "blob_sha": "7abbada8f53da54cd1978e03b55ff827ce5c4a77",
+    "event_id": "34118011",
+    "game": "IND Colts @ HOU Texans"
+  },
+  "model_rules_applied": {
+    "portfolio_types": [
+      "LOW VARIANCE",
+      "BALANCED",
+      "PRICE SEEKING — LOW",
+      "PRICE SEEKING — MEDIUM",
+      "PRICE SEEKING — HIGH"
+    ],
+    "low_variance_leg_count": "Exactly 2",
+    "balanced_max_legs": 2,
+    "price_seeking_low_max_legs": 3,
+    "price_seeking_medium_max_legs": 4,
+    "price_seeking_high_max_legs": 5,
+    "historical_gate": "Every leg >=7/10 L10 HR; HR remains descriptive and is never treated as a predicted probability.",
+    "reliability_hierarchy": {
+      "low_variance": "9/10 preferred; 8/10 acceptable; 7/10 permissible only when necessary; below 7/10 prohibited",
+      "balanced_and_price_seeking": "8/10 preferred; 7/10 permissible when necessary; below 7/10 prohibited"
+    },
+    "percentile_tiers": "Tier 1: threshold at or below P7; Tier 2: above P7 and at or below P16; Tier 3: above P16. Prioritize Tier 1, then Tier 2, then Tier 3. No Tier 3 in Low Variance.",
+    "odds_scoring": "Graduated odds scoring; more attractive payouts score better, but payout cannot override percentile tier, locked L10 HR, current-week context, or correlation constraints. No hard odds cutoff.",
+    "payout_targets": "No fixed payout target forced; R25 prohibits forcing a portfolio into a payout target.",
+    "correlation": "Avoid unnecessary correlation. Supported same-game/same-team correlation may be used only when football-supported and not excessively concentrated.",
+    "combined_odds": "Mathematical decimal-odds multiplication only; not an actual FanDuel/DraftKings same-game-parlay quote and not a parlay probability."
+  },
+  "candidate_pool": [
+    {
+      "player": "Jonathan Taylor",
+      "team": "IND",
+      "market": "Rushing Yards",
+      "threshold": 29.5,
+      "selection": "Over 29.5 rushing yards",
+      "band": "FLOOR",
+      "sportsbook": "DraftKings",
+      "american_odds": "-537",
+      "historical_l10_hr": "9/10",
+      "p7": 36.86,
+      "p15": 45.35,
+      "p16": 45.44,
+      "floor_tier": "TIER_1_P7_SUPPORTED",
+      "current_week_context": "MIXED",
+      "stage4_status": "STAGE4_SELECTED_MARKET"
+    },
+    {
+      "player": "Jonathan Taylor",
+      "team": "IND",
+      "market": "Rushing Yards",
+      "threshold": 39.5,
+      "selection": "Over 39.5 rushing yards",
+      "band": "CORE",
+      "sportsbook": "DraftKings",
+      "american_odds": "-236",
+      "historical_l10_hr": "9/10",
+      "p7": 36.86,
+      "p15": 45.35,
+      "p16": 45.44,
+      "floor_tier": "TIER_2_P16_SUPPORTED",
+      "current_week_context": "MIXED",
+      "stage4_status": "STAGE4_SELECTED"
+    },
+    {
+      "player": "Nico Collins",
+      "team": "HOU",
+      "market": "Receiving Yards",
+      "threshold": 49.5,
+      "selection": "Over 49.5 receiving yards",
+      "band": "CORE",
+      "sportsbook": "DraftKings",
+      "american_odds": "-290",
+      "historical_l10_hr": "9/10",
+      "p7": 36.87,
+      "p15": 55.35,
+      "p16": 55.44,
+      "floor_tier": "TIER_2_P16_SUPPORTED",
+      "current_week_context": "SUPPORTIVE",
+      "stage4_status": "STAGE4_SELECTED"
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "market": "Receptions",
+      "threshold": 1.5,
+      "selection": "Over 1.5 receptions",
+      "band": "FLOOR",
+      "sportsbook": "DraftKings",
+      "american_odds": "-526",
+      "historical_l10_hr": "10/10",
+      "p7": 2.63,
+      "p15": 3,
+      "p16": 3,
+      "floor_tier": "TIER_1_P7_SUPPORTED",
+      "current_week_context": "SUPPORTIVE",
+      "stage4_status": "STAGE4_SELECTED_MARKET"
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "market": "Receptions",
+      "threshold": 2.5,
+      "selection": "Over 2.5 receptions",
+      "band": "CORE",
+      "sportsbook": "DraftKings",
+      "american_odds": "-168",
+      "historical_l10_hr": "9/10",
+      "p7": 2.63,
+      "p15": 3,
+      "p16": 3,
+      "floor_tier": "TIER_1_P7_SUPPORTED",
+      "current_week_context": "SUPPORTIVE",
+      "stage4_status": "STAGE4_SELECTED"
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "market": "Receiving Yards",
+      "threshold": 24.5,
+      "selection": "Over 24.5 receiving yards",
+      "band": "CORE",
+      "sportsbook": "DraftKings",
+      "american_odds": "-215",
+      "historical_l10_hr": "8/10",
+      "p7": 14.41,
+      "p15": 21.2,
+      "p16": 22.28,
+      "floor_tier": "TIER_3_NO_P16_FLOOR_SUPPORT",
+      "current_week_context": "SUPPORTIVE",
+      "stage4_status": "STAGE4_WATCHLIST"
+    }
+  ],
+  "hutchinson_joint_history": {
+    "player": "Xavier Hutchinson",
+    "markets": [
+      "Receptions 2.5+",
+      "Receiving Yards 24.5+"
+    ],
+    "locked_l10_joint_hits": 8,
+    "denominator": 10,
+    "hit_rate": "8/10",
+    "game_level_results": [
+      {
+        "game_id": "2026_10_HOU_CLE",
+        "receptions": 4,
+        "receiving_yards": 58,
+        "hit": true
+      },
+      {
+        "game_id": "2026_09_HOU_LAC",
+        "receptions": 3,
+        "receiving_yards": 29,
+        "hit": true
+      },
+      {
+        "game_id": "2026_07_NYG_HOU",
+        "receptions": 3,
+        "receiving_yards": 17,
+        "hit": false
+      },
+      {
+        "game_id": "2026_06_HOU_JAX",
+        "receptions": 2,
+        "receiving_yards": 10,
+        "hit": false
+      },
+      {
+        "game_id": "2026_05_HOU_TEN",
+        "receptions": 4,
+        "receiving_yards": 65,
+        "hit": true
+      },
+      {
+        "game_id": "2026_04_DAL_HOU",
+        "receptions": 3,
+        "receiving_yards": 46,
+        "hit": true
+      },
+      {
+        "game_id": "2026_03_HOU_IND",
+        "receptions": 3,
+        "receiving_yards": 51,
+        "hit": true
+      },
+      {
+        "game_id": "2026_02_CIN_HOU",
+        "receptions": 3,
+        "receiving_yards": 37,
+        "hit": true
+      },
+      {
+        "game_id": "2026_01_BUF_HOU",
+        "receptions": 3,
+        "receiving_yards": 32,
+        "hit": true
+      },
+      {
+        "game_id": "2025_18_IND_HOU",
+        "receptions": 5,
+        "receiving_yards": 84,
+        "hit": true
+      }
+    ],
+    "interpretation": "Descriptive co-hit frequency from paired locked Stage 1 game logs; not a predictive probability."
+  },
+  "portfolios": [
+    {
+      "name": "LOW VARIANCE",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Jonathan Taylor",
+          "team": "IND",
+          "market": "Rushing Yards",
+          "threshold": 29.5,
+          "selection": "Over 29.5 rushing yards",
+          "band": "FLOOR",
+          "sportsbook": "DraftKings",
+          "american_odds": "-537",
+          "historical_l10_hr": "9/10",
+          "p7": 36.86,
+          "p15": 45.35,
+          "p16": 45.44,
+          "floor_tier": "TIER_1_P7_SUPPORTED",
+          "current_week_context": "MIXED",
+          "stage4_status": "STAGE4_SELECTED_MARKET"
+        },
+        {
+          "player": "Xavier Hutchinson",
+          "team": "HOU",
+          "market": "Receptions",
+          "threshold": 1.5,
+          "selection": "Over 1.5 receptions",
+          "band": "FLOOR",
+          "sportsbook": "DraftKings",
+          "american_odds": "-526",
+          "historical_l10_hr": "10/10",
+          "p7": 2.63,
+          "p15": 3,
+          "p16": 3,
+          "floor_tier": "TIER_1_P7_SUPPORTED",
+          "current_week_context": "SUPPORTIVE",
+          "stage4_status": "STAGE4_SELECTED_MARKET"
+        }
+      ],
+      "leg_count": 2,
+      "combined_odds": {
+        "decimal": 1.4117,
+        "american": -243,
+        "return_per_10": 14.12,
+        "profit_per_10": 4.12,
+        "method": "Multiply individual DraftKings decimal prices; mathematical estimate only, not a sportsbook same-game-parlay quote; no correlation adjustment."
+      },
+      "rationale": "Exactly two legs. Both use Stage 2 FLOOR thresholds, both have 9/10 or 10/10 L10 evidence, and both are P7-supported (Tier 1). No Tier 3 leg is used. Taylor's MIXED context is the principal caution."
+    },
+    {
+      "name": "BALANCED",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Jonathan Taylor",
+          "team": "IND",
+          "market": "Rushing Yards",
+          "threshold": 39.5,
+          "selection": "Over 39.5 rushing yards",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-236",
+          "historical_l10_hr": "9/10",
+          "p7": 36.86,
+          "p15": 45.35,
+          "p16": 45.44,
+          "floor_tier": "TIER_2_P16_SUPPORTED",
+          "current_week_context": "MIXED",
+          "stage4_status": "STAGE4_SELECTED"
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "market": "Receiving Yards",
+          "threshold": 49.5,
+          "selection": "Over 49.5 receiving yards",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-290",
+          "historical_l10_hr": "9/10",
+          "p7": 36.87,
+          "p15": 55.35,
+          "p16": 55.44,
+          "floor_tier": "TIER_2_P16_SUPPORTED",
+          "current_week_context": "SUPPORTIVE",
+          "stage4_status": "STAGE4_SELECTED"
+        }
+      ],
+      "leg_count": 2,
+      "combined_odds": {
+        "decimal": 1.9147,
+        "american": -109,
+        "return_per_10": 19.15,
+        "profit_per_10": 9.15,
+        "method": "Multiply individual DraftKings decimal prices; mathematical estimate only, not a sportsbook same-game-parlay quote; no correlation adjustment."
+      },
+      "rationale": "Two-leg base construction using the Stage 4 CORE selections. Both are 9/10 and P16-supported (Tier 2), with one MIXED and one SUPPORTIVE context. Cross-team, different-stat pairing avoids stacking two Houston pass catchers in the base."
+    },
+    {
+      "name": "PRICE SEEKING — LOW",
+      "status": "CONSTRUCTED",
+      "legs": [
+        {
+          "player": "Jonathan Taylor",
+          "team": "IND",
+          "market": "Rushing Yards",
+          "threshold": 39.5,
+          "selection": "Over 39.5 rushing yards",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-236",
+          "historical_l10_hr": "9/10",
+          "p7": 36.86,
+          "p15": 45.35,
+          "p16": 45.44,
+          "floor_tier": "TIER_2_P16_SUPPORTED",
+          "current_week_context": "MIXED",
+          "stage4_status": "STAGE4_SELECTED"
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "market": "Receiving Yards",
+          "threshold": 49.5,
+          "selection": "Over 49.5 receiving yards",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-290",
+          "historical_l10_hr": "9/10",
+          "p7": 36.87,
+          "p15": 55.35,
+          "p16": 55.44,
+          "floor_tier": "TIER_2_P16_SUPPORTED",
+          "current_week_context": "SUPPORTIVE",
+          "stage4_status": "STAGE4_SELECTED"
+        },
+        {
+          "player": "Xavier Hutchinson",
+          "team": "HOU",
+          "market": "Receptions",
+          "threshold": 2.5,
+          "selection": "Over 2.5 receptions",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-168",
+          "historical_l10_hr": "9/10",
+          "p7": 2.63,
+          "p15": 3,
+          "p16": 3,
+          "floor_tier": "TIER_1_P7_SUPPORTED",
+          "current_week_context": "SUPPORTIVE",
+          "stage4_status": "STAGE4_SELECTED"
+        }
+      ],
+      "leg_count": 3,
+      "combined_odds": {
+        "decimal": 3.0544,
+        "american": 205,
+        "return_per_10": 30.54,
+        "profit_per_10": 20.54,
+        "method": "Multiply individual DraftKings decimal prices; mathematical estimate only, not a sportsbook same-game-parlay quote; no correlation adjustment."
+      },
+      "rationale": "Balanced plus one additional permitted leg. The added Hutchinson reception prop is 9/10, P7-supported (Tier 1), and SUPPORTIVE. Two Houston receiving options now share team/game exposure; target competition and shared passing volume are the correlation considerations."
+    },
+    {
+      "name": "PRICE SEEKING — MEDIUM",
+      "status": "CONSTRUCTED_WITH_CORRELATION_FLAG",
+      "legs": [
+        {
+          "player": "Jonathan Taylor",
+          "team": "IND",
+          "market": "Rushing Yards",
+          "threshold": 39.5,
+          "selection": "Over 39.5 rushing yards",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-236",
+          "historical_l10_hr": "9/10",
+          "p7": 36.86,
+          "p15": 45.35,
+          "p16": 45.44,
+          "floor_tier": "TIER_2_P16_SUPPORTED",
+          "current_week_context": "MIXED",
+          "stage4_status": "STAGE4_SELECTED"
+        },
+        {
+          "player": "Nico Collins",
+          "team": "HOU",
+          "market": "Receiving Yards",
+          "threshold": 49.5,
+          "selection": "Over 49.5 receiving yards",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-290",
+          "historical_l10_hr": "9/10",
+          "p7": 36.87,
+          "p15": 55.35,
+          "p16": 55.44,
+          "floor_tier": "TIER_2_P16_SUPPORTED",
+          "current_week_context": "SUPPORTIVE",
+          "stage4_status": "STAGE4_SELECTED"
+        },
+        {
+          "player": "Xavier Hutchinson",
+          "team": "HOU",
+          "market": "Receptions",
+          "threshold": 2.5,
+          "selection": "Over 2.5 receptions",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-168",
+          "historical_l10_hr": "9/10",
+          "p7": 2.63,
+          "p15": 3,
+          "p16": 3,
+          "floor_tier": "TIER_1_P7_SUPPORTED",
+          "current_week_context": "SUPPORTIVE",
+          "stage4_status": "STAGE4_SELECTED"
+        },
+        {
+          "player": "Xavier Hutchinson",
+          "team": "HOU",
+          "market": "Receiving Yards",
+          "threshold": 24.5,
+          "selection": "Over 24.5 receiving yards",
+          "band": "CORE",
+          "sportsbook": "DraftKings",
+          "american_odds": "-215",
+          "historical_l10_hr": "8/10",
+          "p7": 14.41,
+          "p15": 21.2,
+          "p16": 22.28,
+          "floor_tier": "TIER_3_NO_P16_FLOOR_SUPPORT",
+          "current_week_context": "SUPPORTIVE",
+          "stage4_status": "STAGE4_WATCHLIST"
+        }
+      ],
+      "leg_count": 4,
+      "combined_odds": {
+        "decimal": 4.475,
+        "american": 347,
+        "return_per_10": 44.75,
+        "profit_per_10": 34.75,
+        "method": "Multiply individual DraftKings decimal prices; mathematical estimate only, not a sportsbook same-game-parlay quote; no correlation adjustment."
+      },
+      "rationale": "Balanced plus two additional permitted legs. The watchlist receiving-yards leg is 8/10 with SUPPORTIVE context and is not a Stage 4 rejection. It is Tier 3 (threshold above P16), so it appears only in this more aggressive tier. Hutchinson's two props are strongly related; locked L10 game logs show both thresholds cleared together in 8/10 games. This is descriptive joint history, not a future probability. Half the portfolio is concentrated on one player, so treat this as an aggressive correlated construction."
+    },
+    {
+      "name": "PRICE SEEKING — HIGH",
+      "status": "NOT_CONSTRUCTIBLE",
+      "legs": [],
+      "leg_count": 0,
+      "combined_odds": null,
+      "rationale": "Requires Balanced plus three additional permitted legs (five total). Only four distinct Stage 4-consistent player/market candidates are available: the three selected props plus the one watchlist prop. All other Stage 4 non-selections were rejected for sub-70% HR or material current-week usage/context concerns. No fifth eligible leg exists; do not add a new market, reuse a line as a second leg, or revive a rejected candidate."
+    }
+  ],
+  "validation": {
+    "stage1_state_id": "STATE-1-W11-2026-20261118-1455ET",
+    "stage1_blob_sha": "5edceefd8de282f77dfaedf7046b4610817db693",
+    "stage2_state_id": "STATE-2-W11-2026-20261118-ALT-CORE-REPAIRED",
+    "stage2_blob_sha": "181d78acd24e2bd553067c2c79229ad6e550a44c",
+    "stage3_state_id": "STATE-3-W11-2026-20261118-CONTEXT",
+    "stage3_blob_sha": "9d68873b155a81b50f61d332c6a590a352df318b",
+    "stage4_state_id": "STATE-4-W11-2026-20261118-FINAL-CARD",
+    "stage4_blob_sha": "666a5ec65efa124d42ee9f681bebe54d371d8e96",
+    "parent_chain_valid": true,
+    "stage4_complete": true,
+    "all_constructed_legs_have_l10_hr_at_least_7_of_10": true,
+    "all_constructed_legs_survived_stage2": true,
+    "no_stage4_rejected_props_used": true,
+    "low_variance_exactly_two_legs": true,
+    "low_variance_contains_no_tier3": true,
+    "balanced_within_two_leg_max": true,
+    "price_seeking_low_within_three_leg_max": true,
+    "price_seeking_medium_within_four_leg_max": true,
+    "price_seeking_high_marked_infeasible_due_to_no_fifth_eligible_leg": true,
+    "no_new_players_or_markets_introduced": true,
+    "prior_stage_artifacts_unchanged": true,
+    "no_fanduel_price_inferred": true,
+    "no_historical_hr_used_as_probability": true
+  },
+  "portfolio_count": 5,
+  "constructed_count": 4,
+  "not_constructible_count": 1,
+  "next_stage": "Complete — Stage 5 is the final model stage."
+}
