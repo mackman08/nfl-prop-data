@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "stage": 4,
+  "stage_name": "Final Prop Selection",
+  "state_id": "STATE-4-W11-2026-20261118-FINAL-CARD",
+  "parent_state_id": "STATE-3-W11-2026-20261118-CONTEXT",
+  "stage2_parent_state_id": "STATE-2-W11-2026-20261118-ALT-CORE-REPAIRED",
+  "stage1_parent_state_id": "STATE-1-W11-2026-20261118-1455ET",
+  "created_at": "2026-11-18",
+  "season": 2026,
+  "week": 11,
+  "scope": "Thursday only — IND Colts @ HOU Texans",
+  "historical_sample": "L10",
+  "historical_cutoff": "Completion of Week 10 (2026-11-16); no Week 11 games included",
+  "percentile_method": "User override: P7/P15/P16 calculated from the same locked L10 sample using Type 7 linear interpolation.",
+  "sportsbook": "DraftKings (FanDuel unavailable; user-approved fallback)",
+  "sportsbook_snapshot": {
+    "path": "odds/nfl_player_props_latest.csv",
+    "blob_sha": "7abbada8f53da54cd1978e03b55ff827ce5c4a77",
+    "event_id": "34118011",
+    "game": "IND Colts @ HOU Texans"
+  },
+  "selection_method": {
+    "historical_gate": "Selected threshold must have L10 HR >= 7/10.",
+    "context": "Use Stage 3 current-week classification and supporting facts; Concern candidates are not selected absent a compelling reason.",
+    "distribution": "Use locked L10 P15 as a lower-tail reference and report threshold minus P15; P15 is descriptive, not a predictive probability.",
+    "price": "Use the locked DraftKings alternate price from Stage 2; no FanDuel price inferred.",
+    "portfolio": "Stage 4 selects props only; portfolio construction remains Stage 5."
+  },
+  "final_prop_card": [
+    {
+      "rank": 1,
+      "player": "Nico Collins",
+      "team": "HOU",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "selection": "Over 49.5 receiving yards",
+      "threshold": 49.5,
+      "band": "CORE",
+      "sportsbook": "DraftKings",
+      "american_odds": "-290",
+      "historical_l10_hr": "9/10",
+      "p15": 55.35,
+      "threshold_minus_p15": -5.85,
+      "current_week_context": "SUPPORTIVE",
+      "rationale": "Best convergence of historical and current evidence: 9/10 at the selected threshold, the line is 5.85 yards below the locked L10 P15, and Stage 3 records a full-time route role plus 16 targets, nine catches and 94 yards in Week 10. Colts CB Charvarius Ward is ruled out and Sauce Gardner was a Wednesday nonparticipant.",
+      "risk": "The matchup baseline is otherwise near neutral; Gardner's final availability was not yet confirmed at the time of this state."
+    },
+    {
+      "rank": 2,
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "position": "WR",
+      "market": "Receptions",
+      "selection": "Over 2.5 receptions",
+      "threshold": 2.5,
+      "band": "CORE",
+      "sportsbook": "DraftKings",
+      "american_odds": "-168",
+      "historical_l10_hr": "9/10",
+      "p15": 3,
+      "threshold_minus_p15": -0.5,
+      "current_week_context": "SUPPORTIVE",
+      "rationale": "9/10 L10 hit rate, threshold 0.5 catch below P15, and strong current involvement: nine Week 10 targets, 75% snap share and 71% route share. The price is less restrictive than the other top historical candidates.",
+      "risk": "Catch-rate efficiency is imperfect (Stage 3 cited 51.9%); target volume does not guarantee conversion."
+    },
+    {
+      "rank": 3,
+      "player": "Jonathan Taylor",
+      "team": "IND",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "selection": "Over 39.5 rushing yards",
+      "threshold": 39.5,
+      "band": "CORE",
+      "sportsbook": "DraftKings",
+      "american_odds": "-236",
+      "historical_l10_hr": "9/10",
+      "p15": 45.35,
+      "threshold_minus_p15": -5.85,
+      "current_week_context": "MIXED",
+      "rationale": "Very strong locked L10 evidence at a modest threshold, with the line 5.85 yards below P15. Stage 3 identifies a favorable Colts rushing offense versus Houston run-defense matchup.",
+      "risk": "Both starting tackles Bernhard Raimann and Jalen Travis are ruled out, and Seth McGowan's Week 10 workload (12 carries, 77 yards) creates backfield uncertainty."
+    }
+  ],
+  "watchlist": [
+    {
+      "player": "Xavier Hutchinson",
+      "market": "Receiving Yards",
+      "selection": "Over 24.5",
+      "sportsbook": "DraftKings",
+      "american_odds": "-215",
+      "historical_l10_hr": "8/10",
+      "p15": 21.2,
+      "threshold_minus_p15": 3.3,
+      "current_week_context": "SUPPORTIVE",
+      "rationale": "Strong role and recent 58-yard game; held as the first alternate because the selected threshold sits 3.3 yards above P15 and catch efficiency remains a concern."
+    }
+  ],
+  "not_selected": [
+    {
+      "player": "Nico Collins",
+      "market": "Receptions",
+      "selection": "Over 3.5",
+      "historical_l10_hr": "6/10",
+      "decision": "REJECT",
+      "reason": "Fails the >=7/10 selected-threshold historical gate despite supportive current context."
+    },
+    {
+      "player": "Tank Dell",
+      "market": "Receiving Yards",
+      "selection": "Over 24.5",
+      "historical_l10_hr": "8/10",
+      "p15": 24.05,
+      "threshold_minus_p15": 0.45,
+      "current_week_context": "CONCERN",
+      "decision": "REJECT",
+      "reason": "Current role is materially weaker than Collins and Hutchinson; only 48% snaps, 55% routes and four targets in Week 10, with a 4.6% season target share in the Stage 3 sample."
+    },
+    {
+      "player": "Dalton Schultz",
+      "market": "Receptions",
+      "selection": "Over 2.5",
+      "historical_l10_hr": "7/10",
+      "p15": 2,
+      "threshold_minus_p15": 0.5,
+      "current_week_context": "MIXED",
+      "decision": "REJECT",
+      "reason": "Only two Week 10 targets and one catch; recent usage does not support paying -220 despite meeting the historical gate."
+    },
+    {
+      "player": "Tyler Warren",
+      "market": "Receptions",
+      "selection": "Over 3.5",
+      "historical_l10_hr": "8/10",
+      "p15": 3.35,
+      "threshold_minus_p15": 0.15,
+      "current_week_context": "MIXED",
+      "decision": "REJECT",
+      "reason": "Week 10 usage fell to three targets and one catch; Colts pass-game and offensive-line concerns make the current role less dependable than the historical hit rate suggests."
+    },
+    {
+      "player": "Dalton Schultz",
+      "market": "Receiving Yards",
+      "selection": "Over 19.5",
+      "historical_l10_hr": "8/10",
+      "p15": 17.65,
+      "threshold_minus_p15": 1.85,
+      "current_week_context": "MIXED",
+      "decision": "REJECT",
+      "reason": "Week 10 usage was two targets, one catch and 11 yards; the L10 yardage distribution includes a 140-yard outlier that inflates the historical signal."
+    }
+  ],
+  "validation": {
+    "stage3_candidate_universe_preserved": true,
+    "all_selected_props_meet_7_of_10_gate": true,
+    "historical_observations_and_percentiles_unchanged": true,
+    "sportsbook_prices_match_locked_stage2_snapshot": true,
+    "current_week_context_kept_separate_from_historical_hit_rates": true,
+    "no_week11_game_results_used": true,
+    "no_fanduel_prices_inferred": true
+  },
+  "next_stage": "Stage 5 — Portfolio Construction"
+}
