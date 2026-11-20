@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 608,
-      "Receiving Yards": 1524,
-      "Receptions": 773,
-      "Rushing Yards": 740
+      "Passing Yards": 585,
+      "Receiving Yards": 1769,
+      "Receptions": 900,
+      "Rushing Yards": 803
     },
     "FanDuel": {
-      "Passing Yards": 24,
-      "Receiving Yards": 107,
-      "Receptions": 109,
-      "Rushing Yards": 60
+      "Passing Yards": 23,
+      "Receiving Yards": 132,
+      "Receptions": 132,
+      "Rushing Yards": 66
     }
   },
   "core_markets_present": [
@@ -21,7 +21,6 @@
   ],
   "duplicates": 0,
   "event_ids": [
-    "34118011",
     "34118023",
     "34118041",
     "34118063",
@@ -35,7 +34,6 @@
     "34118264",
     "34118267",
     "35605987",
-    "36305232",
     "36305233",
     "36305234",
     "36305235",
@@ -55,8 +53,6 @@
     "Baltimore Ravens @ Carolina Panthers",
     "CIN Bengals @ WAS Commanders",
     "Cincinnati Bengals @ Washington Commanders",
-    "IND Colts @ HOU Texans",
-    "Indianapolis Colts @ Houston Texans",
     "JAX Jaguars @ NY Giants",
     "Jacksonville Jaguars @ New York Giants",
     "LV Raiders @ DEN Broncos",
@@ -77,20 +73,20 @@
     "Tennessee Titans @ Dallas Cowboys"
   ],
   "markets": {
-    "Alt Passing Yards": 225,
-    "Alt Receiving Yards": 1122,
-    "Alt Receptions": 674,
-    "Alt Rushing Yards": 525,
-    "Passing Yards": 632,
-    "Receiving Yards": 1631,
-    "Receptions": 882,
-    "Rush + Receiving Yards": 399,
-    "Rushing Yards": 800
+    "Alt Passing Yards": 213,
+    "Alt Receiving Yards": 1319,
+    "Alt Receptions": 793,
+    "Alt Rushing Yards": 573,
+    "Passing Yards": 608,
+    "Receiving Yards": 1901,
+    "Receptions": 1032,
+    "Rush + Receiving Yards": 476,
+    "Rushing Yards": 869
   },
   "sportsbooks": {
-    "DraftKings": 4044,
-    "FanDuel": 2846
+    "DraftKings": 4533,
+    "FanDuel": 3251
   },
-  "total_rows": 6890,
+  "total_rows": 7784,
   "validation_mode": "slate-size-agnostic"
 }
