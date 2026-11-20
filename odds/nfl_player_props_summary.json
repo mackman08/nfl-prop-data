@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 652,
-      "Receiving Yards": 1602,
-      "Receptions": 814,
-      "Rushing Yards": 800
+      "Passing Yards": 608,
+      "Receiving Yards": 1524,
+      "Receptions": 773,
+      "Rushing Yards": 740
     },
     "FanDuel": {
-      "Passing Yards": 26,
-      "Receiving Yards": 110,
-      "Receptions": 110,
-      "Rushing Yards": 63
+      "Passing Yards": 24,
+      "Receiving Yards": 107,
+      "Receptions": 109,
+      "Rushing Yards": 60
     }
   },
   "core_markets_present": [
@@ -77,20 +77,20 @@
     "Tennessee Titans @ Dallas Cowboys"
   ],
   "markets": {
-    "Alt Passing Yards": 230,
-    "Alt Receiving Yards": 1113,
-    "Alt Receptions": 665,
-    "Alt Rushing Yards": 542,
-    "Passing Yards": 678,
-    "Receiving Yards": 1712,
-    "Receptions": 924,
-    "Rush + Receiving Yards": 417,
-    "Rushing Yards": 863
+    "Alt Passing Yards": 225,
+    "Alt Receiving Yards": 1122,
+    "Alt Receptions": 674,
+    "Alt Rushing Yards": 525,
+    "Passing Yards": 632,
+    "Receiving Yards": 1631,
+    "Receptions": 882,
+    "Rush + Receiving Yards": 399,
+    "Rushing Yards": 800
   },
   "sportsbooks": {
-    "DraftKings": 4285,
-    "FanDuel": 2859
+    "DraftKings": 4044,
+    "FanDuel": 2846
   },
-  "total_rows": 7144,
+  "total_rows": 6890,
   "validation_mode": "slate-size-agnostic"
 }
