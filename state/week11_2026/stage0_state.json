@@ -2,31 +2,20 @@
   "stage": 0,
   "season": 2026,
   "week": 11,
-  "scope": "Thursday only",
+  "scope": "Sunday only",
   "games_in_scope": [
     {
-      "date": "2026-11-19",
-      "away_team": "Indianapolis Colts",
-      "home_team": "Houston Texans",
-      "kickoff_et": "20:15"
+      "date": "2026-11-22",
+      "teams": "All NFL games scheduled Sunday of Week 11; excludes Thursday Nov 19 and Monday Nov 23"
     }
   ],
   "historical_sample": "L10",
   "historical_sample_n": 10,
   "historical_cutoff": "Completion of the final scheduled game of Week 10 (2026-11-16); no Week 11 games included",
-  "percentile_method_override": {
-    "percentiles": [
-      "P7",
-      "P15",
-      "P16"
-    ],
-    "sample": "10 most recent qualifying completed regular-season games before the historical cutoff",
-    "note": "User-directed override to the model file's default 20-game P15 method; applies to percentile calculations only."
-  },
   "historical_data_source": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
   "current_sportsbook_source": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv; FanDuel primary",
   "record_count": 0,
   "records": [],
-  "state_id": "STATE-0-W11-2026-20261118-1450ET",
+  "state_id": "STATE-0-W11-2026-SUN-L10-20261121",
   "parent_state_id": null
 }
