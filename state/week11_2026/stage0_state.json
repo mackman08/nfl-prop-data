@@ -1,5 +1,6 @@
 {
   "stage": 0,
+  "model_version": "V7.2.9",
   "season": 2026,
   "week": 11,
   "scope": "Monday only",
@@ -7,16 +8,41 @@
     {
       "date": "2026-11-23",
       "matchup": "Cincinnati Bengals at Washington Commanders",
-      "kickoff_et": "8:15 PM"
+      "kickoff_et": "8:15 PM",
+      "event_ids": {
+        "DraftKings": "34118063",
+        "FanDuel": "36305242"
+      }
     }
   ],
   "historical_sample": "L10",
   "historical_sample_n": 10,
   "historical_cutoff": "Completion of the final scheduled game of Week 10 (2026-11-16); no Week 11 games included",
+  "historical_cutoff_basis": "NFL 2026 Week 10 schedule; final scheduled game was Los Angeles Chargers at Baltimore Ravens on Monday, November 16, 2026.",
   "historical_data_source": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
-  "current_sportsbook_source": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv; FanDuel primary",
+  "current_sportsbook_source": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv; FanDuel primary; DraftKings only if FanDuel data is unavailable for a required market.",
+  "sportsbook_availability_snapshot": {
+    "matchup_rows": 658,
+    "books_present": [
+      "DraftKings",
+      "FanDuel"
+    ],
+    "draftkings_event_id": "34118063",
+    "fanduel_event_id": "36305242",
+    "selection_rule": "Use FanDuel wherever the required market is available; use DraftKings only for a required market missing from FanDuel."
+  },
+  "source_snapshot": {
+    "historical_path": "data/nfl_prop_model.txt",
+    "historical_sha": "6bbb6204f691585d526d8005eb6733d7a74a7cab",
+    "sportsbook_path": "odds/nfl_player_props_latest.csv",
+    "sportsbook_sha": "c7ff906672a2ac70783247ecca978865f54db200",
+    "branch": "main",
+    "repository": "mackman08/nfl-prop-data"
+  },
   "record_count": 0,
   "records": [],
-  "state_id": "STATE-0-W11-2026-MON-L10-20261122",
-  "parent_state_id": null
+  "state_id": "STATE-0-W11-2026-MON-L10-20261123",
+  "parent_state_id": null,
+  "restart": true,
+  "prior_stage0_state_replaced": true
 }
