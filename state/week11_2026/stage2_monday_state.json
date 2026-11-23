@@ -1,0 +1,2323 @@
+{
+  "stage": 2,
+  "model_version": "V7.2.9",
+  "season": 2026,
+  "week": 11,
+  "scope": "Monday only",
+  "matchup": "Cincinnati Bengals at Washington Commanders",
+  "game_date": "2026-11-23",
+  "historical_sample": "L10",
+  "historical_sample_n": 10,
+  "historical_cutoff": "Completion of the final scheduled game of Week 10 (2026-11-16); no Week 11 games included",
+  "state_id": "STATE-2-W11-2026-MON-L10-20261123",
+  "parent_state_id": "STATE-1-W11-2026-MON-L10-20261123",
+  "stage1_state_blob_sha": "acccdc62b5fac3753ffd102e6bc262ad9b6b8c8b",
+  "source_snapshot": {
+    "historical_path": "data/nfl_prop_model.txt",
+    "historical_sha": "6bbb6204f691585d526d8005eb6733d7a74a7cab",
+    "sportsbook_path": "odds/nfl_player_props_latest.csv",
+    "sportsbook_sha": "c7ff906672a2ac70783247ecca978865f54db200",
+    "branch": "main",
+    "repository": "mackman08/nfl-prop-data"
+  },
+  "record_count": 13,
+  "methodology": {
+    "historical_metrics": "Preserved exactly from locked Stage 1; Stage 2 does not recalculate or alter historical observations, hit rates, ladders, or percentiles.",
+    "sample_definition": "L10 means the 10 most recent qualifying completed regular-season games before cutoff, rolling across seasons when necessary. Games are not restricted to the 2026 season.",
+    "classification": "Supportive / Mixed / Concern based on current-week role, injury, opponent matchup, and environment; this is contextual assessment, not a predicted probability.",
+    "source_rule": "Official NFL/team gamebook and injury reports prioritized; independent matchup sources used only for contextual indicators."
+  },
+  "records": [
+    {
+      "player": "Joe Burrow",
+      "player_id": "00-0036442",
+      "dataset_name": "J.Burrow",
+      "position": "QB",
+      "team": "CIN",
+      "market": "Passing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        409,
+        271,
+        462,
+        292,
+        190,
+        428,
+        282,
+        207,
+        254,
+        236
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 409
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 271
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 462
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 292
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 190
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 428
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 282
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 207
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 254
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 236
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "302.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10
+      },
+      "p15_20": 204.45,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 175,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 200,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 225,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 250,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 300,
+          "hits": 3,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 25
+      },
+      "stage2_context": {
+        "classification": "Supportive",
+        "summary": "Full participation throughout the week with no game designation. Washington allows 244.8 passing yards per game (31st) and blitzes at a 42.1% rate; Burrow has been highly effective against blitzes. Cincinnati has a strong passing offense.",
+        "flags": [
+          "QB healthy/no game designation",
+          "Opponent pass defense vulnerability",
+          "Opponent blitz tendency creates pressure but Burrow has strong blitz performance"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+          "https://www.bengals.com/news/week-11-2026-commanmders-scouting-report-preview-monday-night-football",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf"
+        ]
+      }
+    },
+    {
+      "player": "Jayden Daniels",
+      "player_id": "00-0039910",
+      "dataset_name": "J.Daniels",
+      "position": "QB",
+      "team": "WAS",
+      "market": "Passing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        249,
+        274,
+        217,
+        300,
+        199,
+        96,
+        164,
+        78,
+        153,
+        156
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 249
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 274
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 217
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 300
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 199
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 96
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 164
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_WAS_MIN",
+          "team": "WAS",
+          "opponent": "MIN",
+          "value": 78
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 153
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 156
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "223.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10
+      },
+      "p15_20": 144.45,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 175,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 200,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 225,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 250,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 300,
+          "hits": 1,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 27
+      },
+      "stage2_context": {
+        "classification": "Mixed",
+        "summary": "Full practice with no game designation. Cincinnati allows 216.2 passing yards per game (11th) and can generate pressure with four rushers; Daniels has 17 sacks taken in seven games. Washington's passing production is below average, though his mobility adds a second route to production.",
+        "flags": [
+          "QB cleared/no game designation",
+          "Opponent pass defense ranks 11th",
+          "Daniels sack exposure / Bengals pressure without blitz"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+          "https://pro.nfl.com/games/game/f7536756-311e-11f0-b670-ae1250fadad1",
+          "https://sports.yahoo.com/articles/watch-bengals-commanders-monday-night-020118796.html",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf"
+        ]
+      }
+    },
+    {
+      "player": "Chase Brown",
+      "player_id": "00-0038597",
+      "dataset_name": "C.Brown",
+      "position": "RB",
+      "team": "CIN",
+      "market": "Rushing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        44,
+        57,
+        55,
+        39,
+        39,
+        10,
+        61,
+        80,
+        56,
+        72
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 55
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 10
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 61
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 80
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 56
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 72
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "44.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "p15_20": 38.7,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "Market HR >=6/10",
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 14
+      },
+      "stage2_context": {
+        "classification": "Mixed",
+        "summary": "Clear lead-back workload (113 carries, 441 yards, 49.0 per game), but Cincinnati runs infrequently and Washington allows only 103.8 rushing yards per game (12th), with no 100-yard opposing rusher this season. Washington's 45.3% rushing success rate allowed is a counterpoint.",
+        "flags": [
+          "Lead-back role",
+          "Cincinnati among league-low in rush attempts",
+          "Washington middle-to-good by yards allowed but high rush success rate allowed"
+        ],
+        "urls": [
+          "https://fanduel.com/research/nfl/player-news/game-updates/chase-brown-and-bengals-play-commanders-in-week-11-11-23-2026",
+          "https://www.bengals.com/news/week-11-2026-commanmders-scouting-report-preview-monday-night-football",
+          "https://sports.iheart.com/content/2026-11-22-chase-brown-week-11-preview-vs-the-commanders/"
+        ]
+      }
+    },
+    {
+      "player": "Rachaad White",
+      "player_id": "00-0037256",
+      "dataset_name": "R.White",
+      "position": "RB",
+      "team": "WAS",
+      "market": "Rushing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        47,
+        28,
+        55,
+        27,
+        18,
+        35,
+        43,
+        22,
+        23,
+        10
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 28
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 55
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 27
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 18
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 35
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 43
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 22
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "TB",
+          "opponent": "CAR",
+          "value": 23
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "TB",
+          "opponent": "MIA",
+          "value": 10
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": null,
+      "market_status": "UNAVAILABLE — no FanDuel or DraftKings line in source snapshot",
+      "market_hr": null,
+      "p15_20": 19.7,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 0,
+        "draft_kings": 0
+      },
+      "stage2_context": {
+        "classification": "Concern",
+        "summary": "Questionable with a heel injury and did not participate Saturday. Jacory Croskey-Merritt is also questionable, so backfield availability is uncertain. Cincinnati allows 123.9 rushing yards per game and 5.0 yards per carry, which is favourable if White is active and has his normal role.",
+        "flags": [
+          "Questionable heel",
+          "Saturday DNP",
+          "Backfield competition also questionable",
+          "Favourable opponent run-defense numbers conditional on role"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+          "https://www.commanders.com/news/game-status-commanders-bengals-week-11",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf"
+        ]
+      }
+    },
+    {
+      "player": "Ja'Marr Chase",
+      "player_id": "00-0036900",
+      "dataset_name": "J.Chase",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        231,
+        155,
+        141,
+        62,
+        77,
+        27,
+        98,
+        75,
+        12,
+        96
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 231
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 155
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 141
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 62
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 77
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 27
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 98
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 75
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 96
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "94.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 41.900000000000006,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 18
+      },
+      "stage2_context": {
+        "classification": "Supportive",
+        "summary": "No injury designation. Cincinnati has the league's top passing-yard offense and faces Washington's 31st-ranked pass defense (244.8 yards allowed per game). The matchup is favourable, although Chase shares targets with Higgins.",
+        "flags": [
+          "No reported injury designation",
+          "Elite team passing offense",
+          "Opponent pass defense ranked 31st",
+          "Target competition with Higgins"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf",
+          "https://www.bengals.com/news/week-11-2026-commanmders-scouting-report-preview-monday-night-football"
+        ]
+      }
+    },
+    {
+      "player": "Ja'Marr Chase",
+      "player_id": "00-0036900",
+      "dataset_name": "J.Chase",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        11,
+        10,
+        11,
+        5,
+        6,
+        3,
+        9,
+        7,
+        2,
+        8
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 11
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 10
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 11
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 9
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 8
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "8.5",
+        "over_price": "116",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10
+      },
+      "p15_20": 4.7,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 5,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 12
+      },
+      "stage2_context": {
+        "classification": "Supportive",
+        "summary": "Same favourable passing matchup as receiving yards. Chase's route/target opportunity is strong in Cincinnati's pass-first offense; receptions are less dependent on a single explosive gain, though target distribution with Higgins remains relevant.",
+        "flags": [
+          "No reported injury designation",
+          "Elite team passing offense",
+          "Opponent pass defense ranked 31st",
+          "Target competition with Higgins"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf"
+        ]
+      }
+    },
+    {
+      "player": "Tee Higgins",
+      "player_id": "00-0036410",
+      "dataset_name": "T.Higgins",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        66,
+        32,
+        155,
+        148,
+        22,
+        157,
+        90,
+        95,
+        59,
+        67
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 66
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 32
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 155
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 148
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 22
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 157
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 90
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 95
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 59
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 67
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "75.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 31.85,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 20
+      },
+      "stage2_context": {
+        "classification": "Supportive",
+        "summary": "Full participation throughout the week with no game designation. Washington's pass defense is ranked 31st by yards allowed. Higgins has a favourable team matchup, but his yardage line still requires a meaningful share alongside Chase.",
+        "flags": [
+          "Full practice/no game designation",
+          "Opponent pass defense ranked 31st",
+          "Target competition with Chase"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf"
+        ]
+      }
+    },
+    {
+      "player": "Tee Higgins",
+      "player_id": "00-0036410",
+      "dataset_name": "T.Higgins",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        5,
+        5,
+        10,
+        6,
+        2,
+        11,
+        6,
+        5,
+        3,
+        6
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 10
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 11
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 6
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "5.5",
+        "over_price": "-102",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 3,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 2,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 9
+      },
+      "stage2_context": {
+        "classification": "Supportive",
+        "summary": "Full practice/no game designation and favourable pass-defense matchup. His reception opportunity is credible, though the two high-volume Bengals receivers share targets.",
+        "flags": [
+          "Full practice/no game designation",
+          "Opponent pass defense ranked 31st",
+          "Target competition with Chase"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf"
+        ]
+      }
+    },
+    {
+      "player": "Stefon Diggs",
+      "player_id": "00-0031588",
+      "dataset_name": "S.Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        83,
+        51,
+        38,
+        44,
+        35,
+        33,
+        47,
+        55,
+        43,
+        101
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 83
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 51
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 38
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 35
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 55
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 43
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 101
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "46.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 26,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 17
+      },
+      "stage2_context": {
+        "classification": "Mixed",
+        "summary": "Diggs is Washington's leading receiver (386 yards, six TDs) and Terry McLaurin is unavailable, concentrating targets. However, Cincinnati allows 216.2 passing yards per game (11th) and DJ Turner II is a difficult coverage matchup.",
+        "flags": [
+          "Primary receiving option with McLaurin unavailable",
+          "Strong individual/team production role",
+          "Opponent pass defense ranked 11th"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/week-11-2026-commanmders-scouting-report-preview-monday-night-football",
+          "https://sports.yahoo.com/articles/watch-bengals-commanders-monday-night-020118796.html",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf"
+        ]
+      }
+    },
+    {
+      "player": "Stefon Diggs",
+      "player_id": "00-0031588",
+      "dataset_name": "S.Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        6,
+        3,
+        3,
+        6,
+        5,
+        4,
+        5,
+        4,
+        3,
+        6
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 6
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "4.5",
+        "over_price": "-114",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 3,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 10
+      },
+      "stage2_context": {
+        "classification": "Mixed",
+        "summary": "Target concentration supports a reception floor, but Cincinnati's pass defense is substantially stronger than Washington's and Diggs faces a challenging coverage matchup. Volume is the positive; matchup quality is the negative.",
+        "flags": [
+          "Primary receiving option with McLaurin unavailable",
+          "Opponent pass defense ranked 11th",
+          "Coverage matchup with DJ Turner II"
+        ],
+        "urls": [
+          "https://www.bengals.com/news/week-11-2026-commanmders-scouting-report-preview-monday-night-football",
+          "https://sports.yahoo.com/articles/watch-bengals-commanders-monday-night-020118796.html",
+          "https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2011%20Capsules.pdf"
+        ]
+      }
+    },
+    {
+      "player": "Drew Sample",
+      "player_id": "00-0035631",
+      "dataset_name": "D.Sample",
+      "position": "TE",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        15,
+        24,
+        5,
+        0,
+        19,
+        17,
+        8,
+        31,
+        12,
+        14
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 24
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 19
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 17
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_ARI_CIN",
+          "team": "CIN",
+          "opponent": "ARI",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 31
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BAL_CIN",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 14
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "6.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 8,
+        "denominator": 10
+      },
+      "p15_20": 0,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "Market HR >=6/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 9
+      },
+      "stage2_context": {
+        "classification": "Concern",
+        "summary": "Listed first among Bengals tight ends on the official gamebook depth chart, but the season totals show 10 catches for 63 yards while Mike Gesicki has 20 catches for 261 yards and six TDs. The nominal TE1 label does not establish a high-volume receiving role.",
+        "flags": [
+          "Listed first TE on gamebook depth chart",
+          "Low season receiving volume: 10 catches, 63 yards",
+          "Mike Gesicki has greater receiving production"
+        ],
+        "urls": [
+          "https://static.clubs.nfl.com/image/upload/bengals/fmzmdau78liqqlccdnjd",
+          "https://static.clubs.nfl.com/image/upload/bengals/zzwjwhtbxlqw0aqvw2e6",
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football"
+        ]
+      }
+    },
+    {
+      "player": "Drew Sample",
+      "player_id": "00-0035631",
+      "dataset_name": "D.Sample",
+      "position": "TE",
+      "team": "CIN",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_ARI_CIN",
+          "team": "CIN",
+          "opponent": "ARI",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BAL_CIN",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 1
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "1.5",
+        "over_price": "158",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "p15_20": 1,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "Market HR >=6/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 3
+      },
+      "stage2_context": {
+        "classification": "Concern",
+        "summary": "The official gamebook lists Sample first at TE, but the team's receiving totals show only 10 receptions on the season; Gesicki has twice as many catches. A starting designation alone does not guarantee repeatable target volume.",
+        "flags": [
+          "Listed first TE on gamebook depth chart",
+          "10 season receptions",
+          "Competes with Mike Gesicki, who has 20 receptions"
+        ],
+        "urls": [
+          "https://static.clubs.nfl.com/image/upload/bengals/fmzmdau78liqqlccdnjd",
+          "https://static.clubs.nfl.com/image/upload/bengals/zzwjwhtbxlqw0aqvw2e6"
+        ]
+      }
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "player_id": "00-0037809",
+      "dataset_name": "C.Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        4,
+        6,
+        2,
+        7,
+        4,
+        2,
+        2,
+        2,
+        3,
+        6
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "team": "TEN",
+          "opponent": "JAX",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NO_TEN",
+          "team": "TEN",
+          "opponent": "NO",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_KC_TEN",
+          "team": "TEN",
+          "opponent": "KC",
+          "value": 6
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "4.5",
+        "over_price": "-102",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10
+      },
+      "p15_20": 2,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >=8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 9
+      },
+      "stage2_context": {
+        "classification": "Supportive",
+        "summary": "Listed first among Washington tight ends and practiced fully all week. Cincinnati's overall pass defense is respectable, but a matchup-specific source flags the Bengals as allowing heavy TE production and target volume. Treat the TE-specific matchup statistic cautiously because the source's aggregation is not fully transparent.",
+        "flags": [
+          "TE1 on official gamebook depth chart",
+          "Full practice/no game designation",
+          "TE-specific matchup data points to opportunity, but source methodology is unclear"
+        ],
+        "urls": [
+          "https://static.clubs.nfl.com/image/upload/bengals/fmzmdau78liqqlccdnjd",
+          "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+          "https://statz.ai/nfl/games/1018/bengals-at-commanders/best-matchups"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "stage1_parent_id_matches": true,
+    "stage1_qualifier_count_preserved": true,
+    "all_stage1_observations_preserved": true,
+    "all_13_records_have_context": true,
+    "historical_metrics_changed": false,
+    "note": "Stage 2 state is for Monday scope. The existing stage2_state.json belongs to a separate Sunday-scope run and was not overwritten."
+  }
+}
