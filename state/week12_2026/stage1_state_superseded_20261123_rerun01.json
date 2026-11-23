@@ -1,0 +1,904 @@
+{
+  "stage": 1,
+  "season": 2026,
+  "week": 12,
+  "scope": "Wednesday only — Green Bay Packers at Los Angeles Rams",
+  "historical_sample": "L10",
+  "historical_cutoff": "Completion of the final scheduled Week 11 game; date boundary 2026-11-24T00:00:00 America/Toronto (exclusive)",
+  "record_count": 6,
+  "state_id": "STATE-1-W12-2026-WED-L10",
+  "parent_state_id": "STATE-0-W12-2026-WED-L10",
+  "source_snapshot": {
+    "historical_path": "data/nfl_prop_model.txt",
+    "historical_sha": "6bbb6204f691585d526d8005eb6733d7a74a7cab",
+    "odds_path": "odds/nfl_player_props_latest.csv",
+    "odds_sha": "c7ff906672a2ac70783247ecca978865f54db200"
+  },
+  "sportsbook": {
+    "primary": "FanDuel",
+    "fallback": "not used",
+    "books_present_for_game": [
+      "DraftKings"
+    ],
+    "fan_duel_rows": 0
+  },
+  "eligibility_basis": "Current depth-chart and injury reporting; listed QB1, primary/secondary RB, top three WRs, and top TE per team.",
+  "records": [
+    {
+      "player": "Jordan Love",
+      "player_id": "00-0036264",
+      "position": "QB",
+      "team": "GB",
+      "market": null,
+      "market_hr": null,
+      "market_hr_status": "unavailable — no FanDuel main-market quote in current dataset",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_MIN_GB",
+          "opponent": "MIN",
+          "value": 220
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "opponent": "NE",
+          "value": 372
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CAR_GB",
+          "opponent": "CAR",
+          "value": 288
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "opponent": "DET",
+          "value": 274
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "opponent": "DAL",
+          "value": 276
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "opponent": "CHI",
+          "value": 367
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "opponent": "TB",
+          "value": 197
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "opponent": "ATL",
+          "value": 312
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "opponent": "NYJ",
+          "value": 145
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "opponent": "MIN",
+          "value": 387
+        }
+      ],
+      "statistic": "passing_yards",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 175,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 200,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        },
+        {
+          "threshold": 225,
+          "hits": 7,
+          "denominator": 10,
+          "hr": "7/10"
+        },
+        {
+          "threshold": 250,
+          "hits": 7,
+          "denominator": 10,
+          "hr": "7/10"
+        },
+        {
+          "threshold": 300,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        }
+      ],
+      "qualifying_ladders": [
+        {
+          "threshold": 150,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 175,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 200,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        }
+      ],
+      "p15_20_games": 169.65,
+      "p15_status": "calculated",
+      "qualifies_by": "80%+ fixed ladder"
+    },
+    {
+      "player": "Matthew Stafford",
+      "player_id": "00-0026498",
+      "position": "QB",
+      "team": "LA",
+      "market": null,
+      "market_hr": null,
+      "market_hr_status": "unavailable — no FanDuel main-market quote in current dataset",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_LA_ARI",
+          "opponent": "ARI",
+          "value": 249
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "opponent": "WAS",
+          "value": 228
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_LAC_LA",
+          "opponent": "LAC",
+          "value": 157
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_LA_LV",
+          "opponent": "LV",
+          "value": 195
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_ARI_LA",
+          "opponent": "ARI",
+          "value": 222
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BUF_LA",
+          "opponent": "BUF",
+          "value": 383
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LA_PHI",
+          "opponent": "PHI",
+          "value": 317
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LA_DEN",
+          "opponent": "DEN",
+          "value": 390
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NYG_LA",
+          "opponent": "NYG",
+          "value": 327
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_SF_LA",
+          "opponent": "SF",
+          "value": 155
+        }
+      ],
+      "statistic": "passing_yards",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 175,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        },
+        {
+          "threshold": 200,
+          "hits": 7,
+          "denominator": 10,
+          "hr": "7/10"
+        },
+        {
+          "threshold": 225,
+          "hits": 6,
+          "denominator": 10,
+          "hr": "6/10"
+        },
+        {
+          "threshold": 250,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        },
+        {
+          "threshold": 300,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        }
+      ],
+      "qualifying_ladders": [
+        {
+          "threshold": 150,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 175,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        }
+      ],
+      "p15_20_games": 189.3,
+      "p15_status": "calculated",
+      "qualifies_by": "80%+ fixed ladder"
+    },
+    {
+      "player": "Josh Jacobs",
+      "player_id": "00-0035700",
+      "position": "RB",
+      "team": "GB",
+      "market": null,
+      "market_hr": null,
+      "market_hr_status": "unavailable — no FanDuel main-market quote in current dataset",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "opponent": "NE",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CAR_GB",
+          "opponent": "CAR",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "opponent": "DET",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "opponent": "BAL",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "opponent": "CHI",
+          "value": 36
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "opponent": "DEN",
+          "value": 73
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "opponent": "CHI",
+          "value": 86
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_GB_DET",
+          "opponent": "DET",
+          "value": 83
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "opponent": "NYG",
+          "value": 40
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "opponent": "PHI",
+          "value": 74
+        }
+      ],
+      "statistic": "rushing_yards",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10,
+          "hr": "5/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 2,
+          "denominator": 10,
+          "hr": "2/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hr": "0/10"
+        }
+      ],
+      "qualifying_ladders": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        }
+      ],
+      "p15_20_games": 32.55,
+      "p15_status": "calculated",
+      "qualifies_by": "80%+ fixed ladder"
+    },
+    {
+      "player": "Kyren Williams",
+      "player_id": "00-0037840",
+      "position": "RB",
+      "team": "LA",
+      "market": null,
+      "market_hr": null,
+      "market_hr_status": "unavailable — no FanDuel main-market quote in current dataset",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_LA_ARI",
+          "opponent": "ARI",
+          "value": 23
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "opponent": "WAS",
+          "value": 45
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_LAC_LA",
+          "opponent": "LAC",
+          "value": 56
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_LA_LV",
+          "opponent": "LV",
+          "value": 99
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_ARI_LA",
+          "opponent": "ARI",
+          "value": 50
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BUF_LA",
+          "opponent": "BUF",
+          "value": 49
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LA_PHI",
+          "opponent": "PHI",
+          "value": 80
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LA_DEN",
+          "opponent": "DEN",
+          "value": 88
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NYG_LA",
+          "opponent": "NYG",
+          "value": 85
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_SF_LA",
+          "opponent": "SF",
+          "value": 41
+        }
+      ],
+      "statistic": "rushing_yards",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 6,
+          "denominator": 10,
+          "hr": "6/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10,
+          "hr": "0/10"
+        }
+      ],
+      "qualifying_ladders": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        }
+      ],
+      "p15_20_games": 45.85,
+      "p15_status": "calculated",
+      "qualifies_by": "80%+ fixed ladder"
+    },
+    {
+      "player": "Christian Watson",
+      "player_id": "00-0038124",
+      "position": "WR",
+      "team": "GB",
+      "market": null,
+      "market_hr": null,
+      "market_hr_status": "unavailable — no FanDuel main-market quote in current dataset",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_MIN_GB",
+          "opponent": "MIN",
+          "value": 37
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "opponent": "NE",
+          "value": 171
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CAR_GB",
+          "opponent": "CAR",
+          "value": 113
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "opponent": "DET",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "opponent": "DAL",
+          "value": 64
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "opponent": "CHI",
+          "value": 143
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "opponent": "TB",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "opponent": "ATL",
+          "value": 96
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "opponent": "NYJ",
+          "value": 41
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "opponent": "MIN",
+          "value": 147
+        }
+      ],
+      "statistic": "receiving_yards",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 7,
+          "denominator": 10,
+          "hr": "7/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 6,
+          "denominator": 10,
+          "hr": "6/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 5,
+          "denominator": 10,
+          "hr": "5/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        }
+      ],
+      "qualifying_ladders": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        }
+      ],
+      "p15_20_games": 40.4,
+      "p15_status": "calculated",
+      "qualifies_by": "80%+ fixed ladder"
+    },
+    {
+      "player": "Matthew Golden",
+      "player_id": "00-0040667",
+      "position": "WR",
+      "team": "GB",
+      "market": null,
+      "market_hr": null,
+      "market_hr_status": "unavailable — no FanDuel main-market quote in current dataset",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_MIN_GB",
+          "opponent": "MIN",
+          "value": 70
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "opponent": "NE",
+          "value": 164
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CAR_GB",
+          "opponent": "CAR",
+          "value": 79
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "opponent": "DET",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "opponent": "DAL",
+          "value": 104
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CHI_GB",
+          "opponent": "CHI",
+          "value": 123
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_GB_TB",
+          "opponent": "TB",
+          "value": 21
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "opponent": "ATL",
+          "value": 100
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "opponent": "NYJ",
+          "value": 58
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_GB_MIN",
+          "opponent": "MIN",
+          "value": 95
+        }
+      ],
+      "statistic": "receiving_yards",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "denominator": 10,
+          "hr": "7/10"
+        },
+        {
+          "threshold": 75,
+          "hits": 6,
+          "denominator": 10,
+          "hr": "6/10"
+        },
+        {
+          "threshold": 100,
+          "hits": 4,
+          "denominator": 10,
+          "hr": "4/10"
+        }
+      ],
+      "qualifying_ladders": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10,
+          "hr": "10/10"
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10,
+          "hr": "9/10"
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "denominator": 10,
+          "hr": "8/10"
+        }
+      ],
+      "p15_20_games": 7.4,
+      "p15_status": "calculated",
+      "qualifies_by": "80%+ fixed ladder"
+    }
+  ]
+}
