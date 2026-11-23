@@ -148,13 +148,7 @@
       "dataset_name": "J.Burrow",
       "position": "QB",
       "team": "CIN",
-      "market": {
-        "line": "302.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Passing Yards",
       "historical_sample": "L10",
       "historical_observations": [
         409,
@@ -297,6 +291,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 25
+      },
+      "current_market": {
+        "line": "302.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -305,13 +306,7 @@
       "dataset_name": "J.Daniels",
       "position": "QB",
       "team": "WAS",
-      "market": {
-        "line": "223.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Passing Yards",
       "historical_sample": "L10",
       "historical_observations": [
         249,
@@ -454,6 +449,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 27
+      },
+      "current_market": {
+        "line": "223.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -462,13 +464,7 @@
       "dataset_name": "J.Chase",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "94.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         231,
@@ -616,6 +612,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 18
+      },
+      "current_market": {
+        "line": "94.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -624,13 +627,7 @@
       "dataset_name": "J.Chase",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "8.5",
-        "over_price": "116",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         11,
@@ -778,6 +775,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 12
+      },
+      "current_market": {
+        "line": "8.5",
+        "over_price": "116",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -786,13 +790,7 @@
       "dataset_name": "T.Higgins",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "75.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         66,
@@ -940,6 +938,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 20
+      },
+      "current_market": {
+        "line": "75.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -948,13 +953,7 @@
       "dataset_name": "T.Higgins",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "5.5",
-        "over_price": "-102",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         5,
@@ -1102,6 +1101,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 9
+      },
+      "current_market": {
+        "line": "5.5",
+        "over_price": "-102",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1110,13 +1116,7 @@
       "dataset_name": "D.Meyers",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "20.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": null,
       "historical_game_records": [],
@@ -1131,6 +1131,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 13
+      },
+      "current_market": {
+        "line": "20.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1139,13 +1146,7 @@
       "dataset_name": "D.Meyers",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "2.5",
-        "over_price": "134",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": null,
       "historical_game_records": [],
@@ -1160,6 +1161,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 5
+      },
+      "current_market": {
+        "line": "2.5",
+        "over_price": "134",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1168,13 +1176,7 @@
       "dataset_name": "S.Diggs",
       "position": "WR",
       "team": "WAS",
-      "market": {
-        "line": "46.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         83,
@@ -1322,6 +1324,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 17
+      },
+      "current_market": {
+        "line": "46.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1330,13 +1339,7 @@
       "dataset_name": "S.Diggs",
       "position": "WR",
       "team": "WAS",
-      "market": {
-        "line": "4.5",
-        "over_price": "-114",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         6,
@@ -1484,6 +1487,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 10
+      },
+      "current_market": {
+        "line": "4.5",
+        "over_price": "-114",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1492,13 +1502,7 @@
       "dataset_name": "A.Williams",
       "position": "WR",
       "team": "WAS",
-      "market": {
-        "line": "35.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": null,
       "historical_game_records": [],
@@ -1513,6 +1517,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 15
+      },
+      "current_market": {
+        "line": "35.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1521,13 +1532,7 @@
       "dataset_name": "A.Williams",
       "position": "WR",
       "team": "WAS",
-      "market": {
-        "line": "3.5",
-        "over_price": "100",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": null,
       "historical_game_records": [],
@@ -1542,6 +1547,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 7
+      },
+      "current_market": {
+        "line": "3.5",
+        "over_price": "100",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1550,13 +1562,7 @@
       "dataset_name": "T.Burks",
       "position": "WR",
       "team": "WAS",
-      "market": {
-        "line": "30.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         27,
@@ -1702,6 +1708,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 15
+      },
+      "current_market": {
+        "line": "30.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1710,13 +1723,7 @@
       "dataset_name": "T.Burks",
       "position": "WR",
       "team": "WAS",
-      "market": {
-        "line": "2.5",
-        "over_price": "130",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         2,
@@ -1862,6 +1869,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 5
+      },
+      "current_market": {
+        "line": "2.5",
+        "over_price": "130",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -1870,13 +1884,7 @@
       "dataset_name": "D.Sample",
       "position": "TE",
       "team": "CIN",
-      "market": {
-        "line": "6.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         15,
@@ -2024,6 +2032,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 9
+      },
+      "current_market": {
+        "line": "6.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -2032,13 +2047,7 @@
       "dataset_name": "D.Sample",
       "position": "TE",
       "team": "CIN",
-      "market": {
-        "line": "1.5",
-        "over_price": "158",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         3,
@@ -2186,6 +2195,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 3
+      },
+      "current_market": {
+        "line": "1.5",
+        "over_price": "158",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -2194,13 +2210,7 @@
       "dataset_name": "C.Okonkwo",
       "position": "TE",
       "team": "WAS",
-      "market": {
-        "line": "43.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         24,
@@ -2346,6 +2356,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 17
+      },
+      "current_market": {
+        "line": "43.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -2354,13 +2371,7 @@
       "dataset_name": "C.Okonkwo",
       "position": "TE",
       "team": "WAS",
-      "market": {
-        "line": "4.5",
-        "over_price": "-102",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         4,
@@ -2508,6 +2519,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 9
+      },
+      "current_market": {
+        "line": "4.5",
+        "over_price": "-102",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     }
   ],
@@ -2518,13 +2536,7 @@
       "dataset_name": "J.Burrow",
       "position": "QB",
       "team": "CIN",
-      "market": {
-        "line": "302.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Passing Yards",
       "historical_sample": "L10",
       "historical_observations": [
         409,
@@ -2667,6 +2679,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 25
+      },
+      "current_market": {
+        "line": "302.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -2675,13 +2694,7 @@
       "dataset_name": "J.Daniels",
       "position": "QB",
       "team": "WAS",
-      "market": {
-        "line": "223.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Passing Yards",
       "historical_sample": "L10",
       "historical_observations": [
         249,
@@ -2824,6 +2837,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 27
+      },
+      "current_market": {
+        "line": "223.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -2832,13 +2852,7 @@
       "dataset_name": "J.Chase",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "94.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         231,
@@ -2986,6 +3000,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 18
+      },
+      "current_market": {
+        "line": "94.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -2994,13 +3015,7 @@
       "dataset_name": "J.Chase",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "8.5",
-        "over_price": "116",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         11,
@@ -3148,6 +3163,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 12
+      },
+      "current_market": {
+        "line": "8.5",
+        "over_price": "116",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -3156,13 +3178,7 @@
       "dataset_name": "T.Higgins",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "75.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         66,
@@ -3310,6 +3326,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 20
+      },
+      "current_market": {
+        "line": "75.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -3318,13 +3341,7 @@
       "dataset_name": "T.Higgins",
       "position": "WR",
       "team": "CIN",
-      "market": {
-        "line": "5.5",
-        "over_price": "-102",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         5,
@@ -3472,6 +3489,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 9
+      },
+      "current_market": {
+        "line": "5.5",
+        "over_price": "-102",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -3480,13 +3504,7 @@
       "dataset_name": "S.Diggs",
       "position": "WR",
       "team": "WAS",
-      "market": {
-        "line": "46.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         83,
@@ -3634,6 +3652,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 17
+      },
+      "current_market": {
+        "line": "46.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -3642,13 +3667,7 @@
       "dataset_name": "S.Diggs",
       "position": "WR",
       "team": "WAS",
-      "market": {
-        "line": "4.5",
-        "over_price": "-114",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         6,
@@ -3796,6 +3815,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 10
+      },
+      "current_market": {
+        "line": "4.5",
+        "over_price": "-114",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -3804,13 +3830,7 @@
       "dataset_name": "D.Sample",
       "position": "TE",
       "team": "CIN",
-      "market": {
-        "line": "6.5",
-        "over_price": "-113",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         15,
@@ -3958,6 +3978,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 9
+      },
+      "current_market": {
+        "line": "6.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -3966,13 +3993,7 @@
       "dataset_name": "D.Sample",
       "position": "TE",
       "team": "CIN",
-      "market": {
-        "line": "1.5",
-        "over_price": "158",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": [
         3,
@@ -4120,6 +4141,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 3
+      },
+      "current_market": {
+        "line": "1.5",
+        "over_price": "158",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     },
     {
@@ -4128,13 +4156,7 @@
       "dataset_name": "C.Okonkwo",
       "position": "TE",
       "team": "WAS",
-      "market": {
-        "line": "4.5",
-        "over_price": "-102",
-        "sportsbook": "FanDuel",
-        "selection_method": "available primary-book over line with American odds numerically closest to -110",
-        "source_event_id": "36305242"
-      },
+      "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": [
         4,
@@ -4282,6 +4304,13 @@
       "source_market_row_count": {
         "fan_duel": 1,
         "draft_kings": 9
+      },
+      "current_market": {
+        "line": "4.5",
+        "over_price": "-102",
+        "sportsbook": "FanDuel",
+        "selection_method": "available primary-book over line with American odds numerically closest to -110",
+        "source_event_id": "36305242"
       }
     }
   ],
