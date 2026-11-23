@@ -1,0 +1,3072 @@
+{
+  "stage": 1,
+  "model_version": "V7.2.9",
+  "season": 2026,
+  "week": 11,
+  "scope": "Monday only",
+  "historical_sample": "L10",
+  "historical_sample_n": 10,
+  "historical_cutoff": "Completion of the final scheduled game of Week 10 (2026-11-16); no Week 11 games included",
+  "state_id": "STATE-1-W11-2026-MON-L10-20261123-RERUN1",
+  "parent_state_id": "STATE-0-W11-2026-MON-L10-20261123",
+  "source_snapshot": {
+    "historical_path": "data/nfl_prop_model.txt",
+    "historical_sha": "6bbb6204f691585d526d8005eb6733d7a74a7cab",
+    "sportsbook_path": "odds/nfl_player_props_latest.csv",
+    "sportsbook_sha": "c7ff906672a2ac70783247ecca978865f54db200",
+    "branch": "main",
+    "repository": "mackman08/nfl-prop-data"
+  },
+  "eligibility_basis": [],
+  "screened_market_count": 22,
+  "qualifier_count": 13,
+  "record_count": 22,
+  "qualification_rule": "Market HR >= 6/10 OR at least one fixed ladder threshold >= 8/10. L10 uses the 10 most recent qualifying regular-season games before cutoff across seasons; no zero-padding for missed games.",
+  "ladder_thresholds": {
+    "passing_yards": [
+      150,
+      175,
+      200,
+      225,
+      250,
+      300
+    ],
+    "rushing_yards": [
+      20,
+      30,
+      40,
+      50,
+      60,
+      75,
+      100
+    ],
+    "receiving_yards": [
+      20,
+      30,
+      40,
+      50,
+      60,
+      75,
+      100
+    ],
+    "receptions": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "percentile_method": "20 most recent qualifying regular-season games before cutoff; standard linear interpolation at (20-1)*0.15 = 2.85.",
+  "main_line_selection_method": "FanDuel primary; DraftKings only if no FanDuel market rows for that player/market. Among available over lines, select odds numerically closest to -110; tie resolves to lower threshold.",
+  "screened_records": [
+    {
+      "player": "Joe Burrow",
+      "player_id": "00-0036442",
+      "dataset_name": "J.Burrow",
+      "position": "QB",
+      "team": "CIN",
+      "market": "Passing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        409,
+        271,
+        462,
+        292,
+        190,
+        428,
+        282,
+        207,
+        254,
+        236
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 409
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 271
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 462
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 292
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 190
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 428
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 282
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 207
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 254
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 236
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "302.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10
+      },
+      "p15_20": 204.45,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 175,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 200,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 225,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 250,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 300,
+          "hits": 3,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 25
+      }
+    },
+    {
+      "player": "Jayden Daniels",
+      "player_id": "00-0039910",
+      "dataset_name": "J.Daniels",
+      "position": "QB",
+      "team": "WAS",
+      "market": "Passing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        249,
+        274,
+        217,
+        300,
+        199,
+        96,
+        164,
+        78,
+        153,
+        156
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 249
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 274
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 217
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 300
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 199
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 96
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 164
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_WAS_MIN",
+          "team": "WAS",
+          "opponent": "MIN",
+          "value": 78
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 153
+        },
+        {
+          "season": 2025,
+          "week": 7,
+          "game_id": "2025_07_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 156
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "223.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10
+      },
+      "p15_20": 144.45,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 175,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 200,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 225,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 250,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 300,
+          "hits": 1,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 27
+      }
+    },
+    {
+      "player": "Chase Brown",
+      "player_id": "00-0038597",
+      "dataset_name": "C.Brown",
+      "position": "RB",
+      "team": "CIN",
+      "market": "Rushing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        44,
+        57,
+        55,
+        39,
+        39,
+        10,
+        61,
+        80,
+        56,
+        72
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 55
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 39
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 10
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 61
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 80
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 56
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 72
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "44.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "p15_20": 38.7,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "Market HR >= 6/10",
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 14
+      }
+    },
+    {
+      "player": "Samaje Perine",
+      "player_id": "00-0033526",
+      "dataset_name": "S.Perine",
+      "position": "RB",
+      "team": "CIN",
+      "market": "Rushing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        14,
+        43,
+        10,
+        16,
+        68,
+        7,
+        9,
+        6,
+        20,
+        42
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 14
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 43
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 10
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 16
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 68
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 9
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 20
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 42
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "20.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10
+      },
+      "p15_20": 6.85,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 11
+      }
+    },
+    {
+      "player": "Rachaad White",
+      "player_id": "00-0037256",
+      "dataset_name": "R.White",
+      "position": "RB",
+      "team": "WAS",
+      "market": "Rushing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        47,
+        28,
+        55,
+        27,
+        18,
+        35,
+        43,
+        22,
+        23,
+        10
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 28
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 55
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 27
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 18
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 35
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 43
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 22
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CAR_TB",
+          "team": "TB",
+          "opponent": "CAR",
+          "value": 23
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_TB_MIA",
+          "team": "TB",
+          "opponent": "MIA",
+          "value": 10
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": null,
+      "market_status": "UNAVAILABLE",
+      "market_hr": null,
+      "p15_20": 19.7,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 0,
+        "draft_kings": 0
+      }
+    },
+    {
+      "player": "Austin Ekeler",
+      "player_id": "00-0033699",
+      "dataset_name": "A.Ekeler",
+      "position": "RB",
+      "team": "WAS",
+      "market": "Rushing Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        26,
+        16,
+        36,
+        3,
+        -1,
+        29,
+        17,
+        26,
+        12,
+        22
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 26
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 16
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 36
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": -1
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 29
+        },
+        {
+          "season": 2025,
+          "week": 2,
+          "game_id": "2025_02_WAS_GB",
+          "team": "WAS",
+          "opponent": "GB",
+          "value": 17
+        },
+        {
+          "season": 2025,
+          "week": 1,
+          "game_id": "2025_01_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 26
+        },
+        {
+          "season": 2024,
+          "week": 18,
+          "game_id": "2024_18_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 12
+        },
+        {
+          "season": 2024,
+          "week": 12,
+          "game_id": "2024_12_DAL_WAS",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 22
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": null,
+      "market_status": "UNAVAILABLE",
+      "market_hr": null,
+      "p15_20": 9.55,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 0,
+        "draft_kings": 0
+      }
+    },
+    {
+      "player": "Ja'Marr Chase",
+      "player_id": "00-0036900",
+      "dataset_name": "J.Chase",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        231,
+        155,
+        141,
+        62,
+        77,
+        27,
+        98,
+        75,
+        12,
+        96
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 231
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 155
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 141
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 62
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 77
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 27
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 98
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 75
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 96
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "94.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 41.900000000000006,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 18
+      }
+    },
+    {
+      "player": "Ja'Marr Chase",
+      "player_id": "00-0036900",
+      "dataset_name": "J.Chase",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        11,
+        10,
+        11,
+        5,
+        6,
+        3,
+        9,
+        7,
+        2,
+        8
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 11
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 10
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 11
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 9
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 8
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "8.5",
+        "over_price": "116",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 4,
+        "denominator": 10
+      },
+      "p15_20": 4.7,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 5,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 12
+      }
+    },
+    {
+      "player": "Tee Higgins",
+      "player_id": "00-0036410",
+      "dataset_name": "T.Higgins",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        66,
+        32,
+        155,
+        148,
+        22,
+        157,
+        90,
+        95,
+        59,
+        67
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 66
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 32
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 155
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 148
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 22
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 157
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 90
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 95
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 59
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 67
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "75.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 31.85,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 3,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 20
+      }
+    },
+    {
+      "player": "Tee Higgins",
+      "player_id": "00-0036410",
+      "dataset_name": "T.Higgins",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        5,
+        5,
+        10,
+        6,
+        2,
+        11,
+        6,
+        5,
+        3,
+        6
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 10
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 11
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 6
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "5.5",
+        "over_price": "-102",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 3,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 9,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 2,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 9
+      }
+    },
+    {
+      "player": "Dohnte Meyers",
+      "player_id": "00-0040785",
+      "dataset_name": "D.Meyers",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": null,
+      "historical_game_records": [],
+      "historical_observations_status": "INSUFFICIENT_GAMES",
+      "current_market": {
+        "line": "20.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": null,
+      "p15_20": null,
+      "p15_status": "INSUFFICIENT_20_GAMES",
+      "ladder": [],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 13
+      }
+    },
+    {
+      "player": "Dohnte Meyers",
+      "player_id": "00-0040785",
+      "dataset_name": "D.Meyers",
+      "position": "WR",
+      "team": "CIN",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": null,
+      "historical_game_records": [],
+      "historical_observations_status": "INSUFFICIENT_GAMES",
+      "current_market": {
+        "line": "2.5",
+        "over_price": "134",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": null,
+      "p15_20": null,
+      "p15_status": "INSUFFICIENT_20_GAMES",
+      "ladder": [],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 5
+      }
+    },
+    {
+      "player": "Stefon Diggs",
+      "player_id": "00-0031588",
+      "dataset_name": "S.Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        83,
+        51,
+        38,
+        44,
+        35,
+        33,
+        47,
+        55,
+        43,
+        101
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 83
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 51
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 38
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 44
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 35
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 33
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 55
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 43
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 101
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "46.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 26,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 1,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 17
+      }
+    },
+    {
+      "player": "Stefon Diggs",
+      "player_id": "00-0031588",
+      "dataset_name": "S.Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        6,
+        3,
+        3,
+        6,
+        5,
+        4,
+        5,
+        4,
+        3,
+        6
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 4
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent": "MIA",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NE_NYJ",
+          "team": "NE",
+          "opponent": "NYJ",
+          "value": 6
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "4.5",
+        "over_price": "-114",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 3,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 10
+      }
+    },
+    {
+      "player": "Antonio Williams",
+      "player_id": "00-0041040",
+      "dataset_name": "A.Williams",
+      "position": "WR",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": null,
+      "historical_game_records": [],
+      "historical_observations_status": "INSUFFICIENT_GAMES",
+      "current_market": {
+        "line": "35.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": null,
+      "p15_20": null,
+      "p15_status": "INSUFFICIENT_20_GAMES",
+      "ladder": [],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 15
+      }
+    },
+    {
+      "player": "Antonio Williams",
+      "player_id": "00-0041040",
+      "dataset_name": "A.Williams",
+      "position": "WR",
+      "team": "WAS",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": null,
+      "historical_game_records": [],
+      "historical_observations_status": "INSUFFICIENT_GAMES",
+      "current_market": {
+        "line": "3.5",
+        "over_price": "100",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": null,
+      "p15_20": null,
+      "p15_status": "INSUFFICIENT_20_GAMES",
+      "ladder": [],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 7
+      }
+    },
+    {
+      "player": "Treylon Burks",
+      "player_id": "00-0037742",
+      "dataset_name": "T.Burks",
+      "position": "WR",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        27,
+        81,
+        66,
+        26,
+        47,
+        13,
+        0,
+        12,
+        11,
+        30
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 27
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 81
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 66
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 26
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 13
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DAL_WAS",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 11
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 30
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "30.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10
+      },
+      "p15_20": 0,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 15
+      }
+    },
+    {
+      "player": "Treylon Burks",
+      "player_id": "00-0037742",
+      "dataset_name": "T.Burks",
+      "position": "WR",
+      "team": "WAS",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        2,
+        3,
+        4,
+        2,
+        1,
+        2,
+        0,
+        2,
+        1,
+        2
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 0
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_DAL_WAS",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 2
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "2.5",
+        "over_price": "130",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 2,
+        "denominator": 10
+      },
+      "p15_20": 0,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 5
+      }
+    },
+    {
+      "player": "Drew Sample",
+      "player_id": "00-0035631",
+      "dataset_name": "D.Sample",
+      "position": "TE",
+      "team": "CIN",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        15,
+        24,
+        5,
+        0,
+        19,
+        17,
+        8,
+        31,
+        12,
+        14
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 24
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 19
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 17
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_ARI_CIN",
+          "team": "CIN",
+          "opponent": "ARI",
+          "value": 8
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 31
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BAL_CIN",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 12
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 14
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "6.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 8,
+        "denominator": 10
+      },
+      "p15_20": 0,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "Market HR >= 6/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 9
+      }
+    },
+    {
+      "player": "Drew Sample",
+      "player_id": "00-0035631",
+      "dataset_name": "D.Sample",
+      "position": "TE",
+      "team": "CIN",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 1
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_CLE_CIN",
+          "team": "CIN",
+          "opponent": "CLE",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_ARI_CIN",
+          "team": "CIN",
+          "opponent": "ARI",
+          "value": 1
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BAL_CIN",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 1
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "1.5",
+        "over_price": "158",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 6,
+        "denominator": 10
+      },
+      "p15_20": 1,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "Market HR >= 6/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 3
+      }
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "player_id": "00-0037809",
+      "dataset_name": "C.Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "historical_sample": "L10",
+      "historical_observations": [
+        24,
+        57,
+        32,
+        69,
+        60,
+        5,
+        16,
+        2,
+        55,
+        44
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 24
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 57
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 32
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 69
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 60
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 16
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "team": "TEN",
+          "opponent": "JAX",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NO_TEN",
+          "team": "TEN",
+          "opponent": "NO",
+          "value": 55
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_KC_TEN",
+          "team": "TEN",
+          "opponent": "KC",
+          "value": 44
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "43.5",
+        "over_price": "-113",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 5,
+        "denominator": 10
+      },
+      "p15_20": 9.25,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hits": 7,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": false,
+      "qualification_reasons": [],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 17
+      }
+    },
+    {
+      "player": "Chigoziem Okonkwo",
+      "player_id": "00-0037809",
+      "dataset_name": "C.Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "market": "Receptions",
+      "historical_sample": "L10",
+      "historical_observations": [
+        4,
+        6,
+        2,
+        7,
+        4,
+        2,
+        2,
+        2,
+        3,
+        6
+      ],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 6
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_TEN_JAX",
+          "team": "TEN",
+          "opponent": "JAX",
+          "value": 2
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_NO_TEN",
+          "team": "TEN",
+          "opponent": "NO",
+          "value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_KC_TEN",
+          "team": "TEN",
+          "opponent": "KC",
+          "value": 6
+        }
+      ],
+      "historical_observations_status": "AVAILABLE",
+      "current_market": {
+        "line": "4.5",
+        "over_price": "-102",
+        "sportsbook": "FanDuel",
+        "source_event_id": "36305242"
+      },
+      "market_status": "AVAILABLE",
+      "market_hr": {
+        "hits": 3,
+        "denominator": 10
+      },
+      "p15_20": 2,
+      "p15_status": "AVAILABLE",
+      "ladder": [
+        {
+          "threshold": 2,
+          "hits": 10,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "qualifies": true,
+      "qualification_reasons": [
+        "At least one fixed ladder >= 8/10"
+      ],
+      "source_market_row_count": {
+        "fan_duel": 1,
+        "draft_kings": 9
+      }
+    }
+  ],
+  "validation": {
+    "stage0_parent_id_matches": true,
+    "source_hashes_match_stage0": true,
+    "screened_market_count": 22,
+    "qualifier_count": 13,
+    "historical_samples_all_l10_or_explicitly_insufficient": true,
+    "no_week11_games_included": true,
+    "source_hashes_verified": true
+  }
+}
