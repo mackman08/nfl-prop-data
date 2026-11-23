@@ -17,7 +17,87 @@
     "branch": "main",
     "repository": "mackman08/nfl-prop-data"
   },
-  "eligibility_basis": [],
+  "eligibility_basis": {
+    "source_urls": [
+      "https://static.clubs.nfl.com/image/upload/bengals/fmzmdau78liqqlccdnjd",
+      "https://www.bengals.com/news/bengals-commanders-week-11-2026-injury-report-monday-night-football",
+      "https://www.commanders.com/news/commanders-vs-bengals-week-11-injury-report"
+    ],
+    "eligible_players": [
+      {
+        "name": "Joe Burrow",
+        "team": "CIN",
+        "position": "QB"
+      },
+      {
+        "name": "Jayden Daniels",
+        "team": "WAS",
+        "position": "QB"
+      },
+      {
+        "name": "Chase Brown",
+        "team": "CIN",
+        "position": "RB"
+      },
+      {
+        "name": "Samaje Perine",
+        "team": "CIN",
+        "position": "RB"
+      },
+      {
+        "name": "Rachaad White",
+        "team": "WAS",
+        "position": "RB"
+      },
+      {
+        "name": "Austin Ekeler",
+        "team": "WAS",
+        "position": "RB"
+      },
+      {
+        "name": "Ja'Marr Chase",
+        "team": "CIN",
+        "position": "WR"
+      },
+      {
+        "name": "Tee Higgins",
+        "team": "CIN",
+        "position": "WR"
+      },
+      {
+        "name": "Dohnte Meyers",
+        "team": "CIN",
+        "position": "WR"
+      },
+      {
+        "name": "Stefon Diggs",
+        "team": "WAS",
+        "position": "WR"
+      },
+      {
+        "name": "Antonio Williams",
+        "team": "WAS",
+        "position": "WR"
+      },
+      {
+        "name": "Treylon Burks",
+        "team": "WAS",
+        "position": "WR"
+      },
+      {
+        "name": "Drew Sample",
+        "team": "CIN",
+        "position": "TE"
+      },
+      {
+        "name": "Chigoziem Okonkwo",
+        "team": "WAS",
+        "position": "TE"
+      }
+    ],
+    "rule": "QB named starter; primary and secondary RBs; top three WRs on current depth chart; top expected TE.",
+    "notes": "Rachaad White is questionable but retained as a primary back. Injury status does not remove a player from quantitative eligibility."
+  },
   "screened_market_count": 22,
   "qualifier_count": 13,
   "record_count": 22,
@@ -1662,7 +1742,80 @@
       "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": null,
-      "historical_game_records": [],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 20
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 47
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 34
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 12
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 82
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 29
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 18
+        }
+      ],
       "historical_observations_status": "INSUFFICIENT_GAMES",
       "current_market": {
         "line": "20.5",
@@ -1691,7 +1844,80 @@
       "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": null,
-      "historical_game_records": [],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent": "ATL",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent": "TEN",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent": "BAL",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent": "MIA",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent": "JAX",
+          "value": 7
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent": "PIT",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent": "HOU",
+          "value": 0
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent": "TB",
+          "value": 1
+        }
+      ],
       "historical_observations_status": "INSUFFICIENT_GAMES",
       "current_market": {
         "line": "2.5",
@@ -2044,7 +2270,80 @@
       "market": "Receiving Yards",
       "historical_sample": "L10",
       "historical_observations": null,
-      "historical_game_records": [],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 42
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 25
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 54
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 50
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 31
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 21
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 15
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 24
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 64
+        }
+      ],
       "historical_observations_status": "INSUFFICIENT_GAMES",
       "current_market": {
         "line": "35.5",
@@ -2073,7 +2372,80 @@
       "market": "Receptions",
       "historical_sample": "L10",
       "historical_observations": null,
-      "historical_game_records": [],
+      "historical_game_records": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent": "LA",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 5
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent": "SF",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_NYG_WAS",
+          "team": "WAS",
+          "opponent": "NYG",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent": "IND",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent": "SEA",
+          "value": 2
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent": "DAL",
+          "value": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent": "PHI",
+          "value": 4
+        }
+      ],
       "historical_observations_status": "INSUFFICIENT_GAMES",
       "current_market": {
         "line": "3.5",
@@ -3067,6 +3439,7 @@
     "qualifier_count": 13,
     "historical_samples_all_l10_or_explicitly_insufficient": true,
     "no_week11_games_included": true,
-    "source_hashes_verified": true
+    "source_hashes_verified": true,
+    "all_player_game_records_preserved": true
   }
 }
