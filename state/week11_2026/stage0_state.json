@@ -2,11 +2,12 @@
   "stage": 0,
   "season": 2026,
   "week": 11,
-  "scope": "Sunday only",
+  "scope": "Monday only",
   "games_in_scope": [
     {
-      "date": "2026-11-22",
-      "teams": "All NFL games scheduled Sunday of Week 11; excludes Thursday Nov 19 and Monday Nov 23"
+      "date": "2026-11-23",
+      "matchup": "Cincinnati Bengals at Washington Commanders",
+      "kickoff_et": "8:15 PM"
     }
   ],
   "historical_sample": "L10",
@@ -16,6 +17,6 @@
   "current_sportsbook_source": "mackman08/nfl-prop-data:odds/nfl_player_props_latest.csv; FanDuel primary",
   "record_count": 0,
   "records": [],
-  "state_id": "STATE-0-W11-2026-SUN-L10-20261121",
+  "state_id": "STATE-0-W11-2026-MON-L10-20261122",
   "parent_state_id": null
 }
