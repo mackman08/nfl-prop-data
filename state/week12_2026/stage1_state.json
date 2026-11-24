@@ -4578,54 +4578,50 @@
       "position": "WR",
       "market": "Receiving Yards",
       "status": "INSUFFICIENT_HISTORY",
-      "L10_observations_newest_to_oldest": [
-        22
-      ],
-      "L10_game_logs_newest_to_oldest": [
-        {
-          "season": 2026,
-          "week": 10,
-          "game_id": "2026_10_LA_ARI",
-          "team": "LA",
-          "opponent_team": "ARI",
-          "stat_value": 22
-        }
-      ],
+      "L10_observations_newest_to_oldest": [],
+      "L10_game_logs_newest_to_oldest": [],
       "ladder_results": [
         {
           "threshold": 20,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 30,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 40,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 50,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 60,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 75,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 100,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         }
       ],
       "current_main_market": {
@@ -4639,8 +4635,24 @@
         "unavailable": "1/20 qualifying games"
       },
       "qualifies": false,
-      "qualification_reason": "Does not meet either Stage 1 condition",
-      "qualifying_ladder_thresholds": []
+      "qualification_reason": "Unavailable — only 1/10 qualifying games",
+      "qualifying_ladder_thresholds": [],
+      "available_history_before_cutoff": {
+        "available_game_count": 1,
+        "observations_newest_to_oldest": [
+          22
+        ],
+        "game_logs_newest_to_oldest": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_LA_ARI",
+            "team": "LA",
+            "opponent_team": "ARI",
+            "stat_value": 22
+          }
+        ]
+      }
     },
     {
       "player": "CJ Daniels",
@@ -4649,54 +4661,50 @@
       "position": "WR",
       "market": "Receptions",
       "status": "INSUFFICIENT_HISTORY",
-      "L10_observations_newest_to_oldest": [
-        1
-      ],
-      "L10_game_logs_newest_to_oldest": [
-        {
-          "season": 2026,
-          "week": 10,
-          "game_id": "2026_10_LA_ARI",
-          "team": "LA",
-          "opponent_team": "ARI",
-          "stat_value": 1
-        }
-      ],
+      "L10_observations_newest_to_oldest": [],
+      "L10_game_logs_newest_to_oldest": [],
       "ladder_results": [
         {
           "threshold": 2,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 3,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 4,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 5,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 6,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 7,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         },
         {
           "threshold": 8,
           "hits": null,
-          "denominator": 1
+          "denominator": 0,
+          "unavailable": "Only 1/10 qualifying games"
         }
       ],
       "current_main_market": {
@@ -4710,8 +4718,24 @@
         "unavailable": "1/20 qualifying games"
       },
       "qualifies": false,
-      "qualification_reason": "Does not meet either Stage 1 condition",
-      "qualifying_ladder_thresholds": []
+      "qualification_reason": "Unavailable — only 1/10 qualifying games",
+      "qualifying_ladder_thresholds": [],
+      "available_history_before_cutoff": {
+        "available_game_count": 1,
+        "observations_newest_to_oldest": [
+          1
+        ],
+        "game_logs_newest_to_oldest": [
+          {
+            "season": 2026,
+            "week": 10,
+            "game_id": "2026_10_LA_ARI",
+            "team": "LA",
+            "opponent_team": "ARI",
+            "stat_value": 1
+          }
+        ]
+      }
     },
     {
       "player": "Tutu Atwell",
@@ -5899,6 +5923,8 @@
     "no_unavailable_lines_or_prices_invented": true,
     "source_identity_matched_by_player_id_and_abbreviated_name": true,
     "qualification_gate_applied_as_OR": true,
-    "note": "The model text contains a contradiction in the validation checklist requiring both Market HR ≥60% and a ladder ≥80%, despite the explicit Stage 1 gate and examples specifying OR. This state applies the explicit OR qualification rule."
+    "note": "The model text contains a contradiction in the validation checklist requiring both Market HR ≥60% and a ladder ≥80%, despite the explicit Stage 1 gate and examples specifying OR. This state applies the explicit OR qualification rule.",
+    "incomplete_L10_records_marked_unavailable": true,
+    "complete_L10_validation": true
   }
 }
