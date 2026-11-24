@@ -5,8 +5,9 @@
   "scope": "Wednesday only — Green Bay Packers at Los Angeles Rams",
   "historical_sample": "L10",
   "historical_cutoff": "Completion of the final scheduled Week 11 game; date boundary 2026-11-24T00:00:00 America/Toronto (exclusive)",
-  "record_count": 9,
-  "state_id": "STATE-1-W12-2026-WED-L10-RERUN-20261123-01",
+  "record_count": 11,
+  "screened_record_count": 22,
+  "state_id": "STATE-1-W12-2026-WED-L10-RERUN-20261124-02",
   "parent_state_id": "STATE-0-W12-2026-WED-L10",
   "records": [
     {
@@ -143,15 +144,14 @@
         }
       ],
       "current_main_market": {
-        "line": 273.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 275.5,
+        "over_price": "-112",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
-        "hits": 7,
+        "hits": 6,
         "denominator": 10,
-        "display": "7/10"
+        "display": "6/10"
       },
       "P15": {
         "value": 169.65,
@@ -178,7 +178,7 @@
           179
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -334,10 +334,9 @@
         }
       ],
       "current_main_market": {
-        "line": 234.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 230.5,
+        "over_price": "-113",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 5,
@@ -369,7 +368,7 @@
           281
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "At least one fixed ladder threshold ≥8/10",
@@ -381,6 +380,188 @@
         },
         {
           "threshold": 175,
+          "hits": 8,
+          "denominator": 10
+        }
+      ]
+    },
+    {
+      "player": "Josh Jacobs",
+      "player_id": "00-0035700",
+      "team": "GB",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "status": "AVAILABLE",
+      "L10_observations_newest_to_oldest": [
+        5,
+        39,
+        36,
+        3,
+        36,
+        73,
+        86,
+        83,
+        40,
+        74
+      ],
+      "L10_game_logs_newest_to_oldest": [
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "GB",
+          "opponent_team": "NE",
+          "stat_value": 5
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "stat_value": 39
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "stat_value": 36
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "stat_value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "stat_value": 36
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "stat_value": 73
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "stat_value": 86
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "stat_value": 83
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "team": "GB",
+          "opponent_team": "NYG",
+          "stat_value": 40
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "GB",
+          "opponent_team": "PHI",
+          "stat_value": 74
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "current_main_market": null,
+      "market_HR": null,
+      "P15": {
+        "value": 32.55,
+        "observations": [
+          5,
+          39,
+          36,
+          3,
+          36,
+          73,
+          86,
+          83,
+          40,
+          74,
+          87,
+          33,
+          55,
+          93,
+          86,
+          30,
+          84,
+          66,
+          44,
+          69
+        ],
+        "observation_count": 20,
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
+      },
+      "qualifies": true,
+      "qualification_reason": "At least one fixed ladder threshold ≥8/10",
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
           "hits": 8,
           "denominator": 10
         }
@@ -524,8 +705,16 @@
           "denominator": 10
         }
       ],
-      "current_main_market": null,
-      "market_HR": null,
+      "current_main_market": {
+        "line": 55.5,
+        "over_price": "-113",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
       "P15": {
         "value": 45.85,
         "observations": [
@@ -551,7 +740,7 @@
           114
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "At least one fixed ladder threshold ≥8/10",
@@ -712,10 +901,9 @@
         }
       ],
       "current_main_market": {
-        "line": 76.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 74.5,
+        "over_price": "-111",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 5,
@@ -747,7 +935,7 @@
           85
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "At least one fixed ladder threshold ≥8/10",
@@ -909,9 +1097,8 @@
       ],
       "current_main_market": {
         "line": 4.5,
-        "over_price": "-146",
-        "under_price": "110",
-        "sportsbook": "FanDuel"
+        "over_price": "-155",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 6,
@@ -943,7 +1130,7 @@
           4
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -1100,9 +1287,8 @@
       ],
       "current_main_market": {
         "line": 74.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "over_price": "-113",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 6,
@@ -1134,7 +1320,7 @@
           86
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -1301,9 +1487,8 @@
       ],
       "current_main_market": {
         "line": 5.5,
-        "over_price": "-122",
-        "under_price": "-106",
-        "sportsbook": "FanDuel"
+        "over_price": "-138",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 6,
@@ -1335,7 +1520,7 @@
           3
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -1361,6 +1546,162 @@
           "denominator": 10
         }
       ]
+    },
+    {
+      "player": "Savion Williams",
+      "player_id": "00-0040009",
+      "team": "GB",
+      "position": "WR",
+      "market": "Receptions",
+      "status": "AVAILABLE",
+      "L10_observations_newest_to_oldest": [
+        2,
+        3,
+        1,
+        3,
+        4,
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "L10_game_logs_newest_to_oldest": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_MIN_GB",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "stat_value": 2
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "GB",
+          "opponent_team": "NE",
+          "stat_value": 3
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "stat_value": 1
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "stat_value": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_DAL_GB",
+          "team": "GB",
+          "opponent_team": "DAL",
+          "stat_value": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "stat_value": 0
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_MIN_GB",
+          "team": "GB",
+          "opponent_team": "MIN",
+          "stat_value": 0
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "team": "GB",
+          "opponent_team": "NYG",
+          "stat_value": 1
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "GB",
+          "opponent_team": "PHI",
+          "stat_value": 2
+        },
+        {
+          "season": 2025,
+          "week": 9,
+          "game_id": "2025_09_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "stat_value": 2
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": 6,
+          "denominator": 10
+        },
+        {
+          "threshold": 3,
+          "hits": 3,
+          "denominator": 10
+        },
+        {
+          "threshold": 4,
+          "hits": 1,
+          "denominator": 10
+        },
+        {
+          "threshold": 5,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 6,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 7,
+          "hits": 0,
+          "denominator": 10
+        },
+        {
+          "threshold": 8,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "current_main_market": {
+        "line": 1.5,
+        "over_price": "-248",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
+      "P15": {
+        "value": null,
+        "unavailable": "17/20 qualifying games"
+      },
+      "qualifies": true,
+      "qualification_reason": "Current main-market HR ≥6/10",
+      "qualifying_ladder_thresholds": []
     },
     {
       "player": "Tucker Kraft",
@@ -1502,9 +1843,8 @@
       ],
       "current_main_market": {
         "line": 3.5,
-        "over_price": "-158",
-        "under_price": "118",
-        "sportsbook": "FanDuel"
+        "over_price": "-179",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 6,
@@ -1536,7 +1876,7 @@
           2
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -1687,15 +2027,14 @@
         }
       ],
       "current_main_market": {
-        "line": 3.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 2.5,
+        "over_price": "-226",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
-        "hits": 5,
+        "hits": 6,
         "denominator": 10,
-        "display": "5/10"
+        "display": "6/10"
       },
       "P15": {
         "value": 1,
@@ -1722,10 +2061,10 @@
           5
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
-      "qualification_reason": "At least one fixed ladder threshold ≥8/10",
+      "qualification_reason": "Current main-market HR ≥6/10",
       "qualifying_ladder_thresholds": [
         {
           "threshold": 2,
@@ -1735,7 +2074,6 @@
       ]
     }
   ],
-  "screened_record_count": 21,
   "screened_records": [
     {
       "player": "Jordan Love",
@@ -1871,15 +2209,14 @@
         }
       ],
       "current_main_market": {
-        "line": 273.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 275.5,
+        "over_price": "-112",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
-        "hits": 7,
+        "hits": 6,
         "denominator": 10,
-        "display": "7/10"
+        "display": "6/10"
       },
       "P15": {
         "value": 169.65,
@@ -1906,7 +2243,7 @@
           179
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -2062,10 +2399,9 @@
         }
       ],
       "current_main_market": {
-        "line": 234.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 230.5,
+        "over_price": "-113",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 5,
@@ -2097,7 +2433,7 @@
           281
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "At least one fixed ladder threshold ≥8/10",
@@ -2109,6 +2445,188 @@
         },
         {
           "threshold": 175,
+          "hits": 8,
+          "denominator": 10
+        }
+      ]
+    },
+    {
+      "player": "Josh Jacobs",
+      "player_id": "00-0035700",
+      "team": "GB",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "status": "AVAILABLE",
+      "L10_observations_newest_to_oldest": [
+        5,
+        39,
+        36,
+        3,
+        36,
+        73,
+        86,
+        83,
+        40,
+        74
+      ],
+      "L10_game_logs_newest_to_oldest": [
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "GB",
+          "opponent_team": "NE",
+          "stat_value": 5
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CAR_GB",
+          "team": "GB",
+          "opponent_team": "CAR",
+          "stat_value": 39
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "stat_value": 36
+        },
+        {
+          "season": 2025,
+          "week": 17,
+          "game_id": "2025_17_BAL_GB",
+          "team": "GB",
+          "opponent_team": "BAL",
+          "stat_value": 3
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_GB_CHI",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "stat_value": 36
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_GB_DEN",
+          "team": "GB",
+          "opponent_team": "DEN",
+          "stat_value": 73
+        },
+        {
+          "season": 2025,
+          "week": 14,
+          "game_id": "2025_14_CHI_GB",
+          "team": "GB",
+          "opponent_team": "CHI",
+          "stat_value": 86
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_GB_DET",
+          "team": "GB",
+          "opponent_team": "DET",
+          "stat_value": 83
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_GB_NYG",
+          "team": "GB",
+          "opponent_team": "NYG",
+          "stat_value": 40
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_PHI_GB",
+          "team": "GB",
+          "opponent_team": "PHI",
+          "stat_value": 74
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 40,
+          "hits": 5,
+          "denominator": 10
+        },
+        {
+          "threshold": 50,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 60,
+          "hits": 4,
+          "denominator": 10
+        },
+        {
+          "threshold": 75,
+          "hits": 2,
+          "denominator": 10
+        },
+        {
+          "threshold": 100,
+          "hits": 0,
+          "denominator": 10
+        }
+      ],
+      "current_main_market": null,
+      "market_HR": null,
+      "P15": {
+        "value": 32.55,
+        "observations": [
+          5,
+          39,
+          36,
+          3,
+          36,
+          73,
+          86,
+          83,
+          40,
+          74,
+          87,
+          33,
+          55,
+          93,
+          86,
+          30,
+          84,
+          66,
+          44,
+          69
+        ],
+        "observation_count": 20,
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
+      },
+      "qualifies": true,
+      "qualification_reason": "At least one fixed ladder threshold ≥8/10",
+      "qualifying_ladder_thresholds": [
+        {
+          "threshold": 20,
+          "hits": 8,
+          "denominator": 10
+        },
+        {
+          "threshold": 30,
           "hits": 8,
           "denominator": 10
         }
@@ -2252,35 +2770,22 @@
           "denominator": 10
         }
       ],
-      "current_main_market": null,
-      "market_HR": null,
+      "current_main_market": {
+        "line": 32.5,
+        "over_price": "-111",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": {
+        "hits": 3,
+        "denominator": 10,
+        "display": "3/10"
+      },
       "P15": {
         "value": null,
-        "observations": [
-          42,
-          68,
-          -2,
-          26,
-          42,
-          6,
-          32,
-          0,
-          4,
-          4,
-          3,
-          15,
-          3,
-          4,
-          15,
-          22,
-          1,
-          -2
-        ],
-        "observation_count": 18,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "unavailable": "18/20 qualifying games"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -2421,8 +2926,16 @@
           "denominator": 10
         }
       ],
-      "current_main_market": null,
-      "market_HR": null,
+      "current_main_market": {
+        "line": 55.5,
+        "over_price": "-113",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
       "P15": {
         "value": 45.85,
         "observations": [
@@ -2448,7 +2961,7 @@
           114
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "At least one fixed ladder threshold ≥8/10",
@@ -2608,8 +3121,16 @@
           "denominator": 10
         }
       ],
-      "current_main_market": null,
-      "market_HR": null,
+      "current_main_market": {
+        "line": 56.5,
+        "over_price": "-111",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
       "P15": {
         "value": 17.55,
         "observations": [
@@ -2635,10 +3156,10 @@
           58
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -2780,10 +3301,9 @@
         }
       ],
       "current_main_market": {
-        "line": 76.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 74.5,
+        "over_price": "-111",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 5,
@@ -2815,7 +3335,7 @@
           85
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "At least one fixed ladder threshold ≥8/10",
@@ -2977,9 +3497,8 @@
       ],
       "current_main_market": {
         "line": 4.5,
-        "over_price": "-146",
-        "under_price": "110",
-        "sportsbook": "FanDuel"
+        "over_price": "-155",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 6,
@@ -3011,7 +3530,7 @@
           4
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -3168,9 +3687,8 @@
       ],
       "current_main_market": {
         "line": 74.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "over_price": "-113",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 6,
@@ -3202,7 +3720,7 @@
           86
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -3369,9 +3887,8 @@
       ],
       "current_main_market": {
         "line": 5.5,
-        "over_price": "-122",
-        "under_price": "-106",
-        "sportsbook": "FanDuel"
+        "over_price": "-138",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 6,
@@ -3403,7 +3920,7 @@
           3
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -3568,34 +4085,22 @@
           "denominator": 10
         }
       ],
-      "current_main_market": null,
-      "market_HR": null,
+      "current_main_market": {
+        "line": 18.5,
+        "over_price": "-113",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": {
+        "hits": 5,
+        "denominator": 10,
+        "display": "5/10"
+      },
       "P15": {
         "value": null,
-        "observations": [
-          27,
-          25,
-          5,
-          47,
-          32,
-          0,
-          0,
-          33,
-          2,
-          12,
-          8,
-          0,
-          0,
-          22,
-          0,
-          0,
-          1
-        ],
-        "observation_count": 17,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "unavailable": "17/20 qualifying games"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -3736,34 +4241,22 @@
           "denominator": 10
         }
       ],
-      "current_main_market": null,
-      "market_HR": null,
+      "current_main_market": {
+        "line": 1.5,
+        "over_price": "-248",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": {
+        "hits": 6,
+        "denominator": 10,
+        "display": "6/10"
+      },
       "P15": {
         "value": null,
-        "observations": [
-          2,
-          3,
-          1,
-          3,
-          4,
-          0,
-          0,
-          1,
-          2,
-          2,
-          1,
-          0,
-          0,
-          3,
-          0,
-          0,
-          1
-        ],
-        "observation_count": 17,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "unavailable": "17/20 qualifying games"
       },
-      "qualifies": false,
-      "qualification_reason": "None",
+      "qualifies": true,
+      "qualification_reason": "Current main-market HR ≥6/10",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -3906,9 +4399,8 @@
       ],
       "current_main_market": {
         "line": 37.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "over_price": "-115",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 2,
@@ -3917,32 +4409,10 @@
       },
       "P15": {
         "value": null,
-        "observations": [
-          81,
-          20,
-          0,
-          15,
-          15,
-          7,
-          93,
-          12,
-          0,
-          0,
-          10,
-          40,
-          0,
-          5,
-          0,
-          25,
-          0,
-          5,
-          7
-        ],
-        "observation_count": 19,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "unavailable": "19/20 qualifying games"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -4084,44 +4554,163 @@
         }
       ],
       "current_main_market": {
-        "line": 3.5,
-        "over_price": "118",
-        "under_price": "-158",
-        "sportsbook": "FanDuel"
+        "line": 2.5,
+        "over_price": "-184",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
-        "hits": 1,
+        "hits": 2,
         "denominator": 10,
-        "display": "1/10"
+        "display": "2/10"
       },
       "P15": {
         "value": null,
-        "observations": [
-          3,
-          2,
-          0,
-          1,
-          2,
-          1,
-          4,
-          1,
-          0,
-          0,
-          2,
-          3,
-          0,
-          1,
-          0,
-          2,
-          0,
-          1,
-          1
-        ],
-        "observation_count": 19,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "unavailable": "19/20 qualifying games"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
+      "qualifying_ladder_thresholds": []
+    },
+    {
+      "player": "CJ Daniels",
+      "player_id": "00-0041399",
+      "team": "LA",
+      "position": "WR",
+      "market": "Receiving Yards",
+      "status": "INSUFFICIENT_HISTORY",
+      "L10_observations_newest_to_oldest": [
+        22
+      ],
+      "L10_game_logs_newest_to_oldest": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_LA_ARI",
+          "team": "LA",
+          "opponent_team": "ARI",
+          "stat_value": 22
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 20,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 30,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 40,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 50,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 60,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 75,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 100,
+          "hits": null,
+          "denominator": 1
+        }
+      ],
+      "current_main_market": {
+        "line": 19.5,
+        "over_price": "-111",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": null,
+      "P15": {
+        "value": null,
+        "unavailable": "1/20 qualifying games"
+      },
+      "qualifies": false,
+      "qualification_reason": "Does not meet either Stage 1 condition",
+      "qualifying_ladder_thresholds": []
+    },
+    {
+      "player": "CJ Daniels",
+      "player_id": "00-0041399",
+      "team": "LA",
+      "position": "WR",
+      "market": "Receptions",
+      "status": "INSUFFICIENT_HISTORY",
+      "L10_observations_newest_to_oldest": [
+        1
+      ],
+      "L10_game_logs_newest_to_oldest": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_LA_ARI",
+          "team": "LA",
+          "opponent_team": "ARI",
+          "stat_value": 1
+        }
+      ],
+      "ladder_results": [
+        {
+          "threshold": 2,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 3,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 4,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 5,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 6,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 7,
+          "hits": null,
+          "denominator": 1
+        },
+        {
+          "threshold": 8,
+          "hits": null,
+          "denominator": 1
+        }
+      ],
+      "current_main_market": {
+        "line": 1.5,
+        "over_price": "-173",
+        "sportsbook": "DraftKings"
+      },
+      "market_HR": null,
+      "P15": {
+        "value": null,
+        "unavailable": "1/20 qualifying games"
+      },
+      "qualifies": false,
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -4263,10 +4852,9 @@
         }
       ],
       "current_main_market": {
-        "line": 24.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 23.5,
+        "over_price": "-112",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 3,
@@ -4298,10 +4886,10 @@
           30
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -4444,9 +5032,8 @@
       ],
       "current_main_market": {
         "line": 1.5,
-        "over_price": "-146",
-        "under_price": "110",
-        "sportsbook": "FanDuel"
+        "over_price": "-147",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 3,
@@ -4478,31 +5065,11 @@
           3
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
-    },
-    {
-      "player": "CJ Daniels",
-      "player_id": "00-0041399",
-      "team": "LA",
-      "position": "WR",
-      "market": "Receiving Yards",
-      "status": "UNAVAILABLE — fewer than 10 qualifying games",
-      "L10_n": 1,
-      "qualifies": false
-    },
-    {
-      "player": "CJ Daniels",
-      "player_id": "00-0041399",
-      "team": "LA",
-      "position": "WR",
-      "market": "Receptions",
-      "status": "UNAVAILABLE — fewer than 10 qualifying games",
-      "L10_n": 1,
-      "qualifies": false
     },
     {
       "player": "Tucker Kraft",
@@ -4643,10 +5210,9 @@
         }
       ],
       "current_main_market": {
-        "line": 37.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 39.5,
+        "over_price": "-109",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 5,
@@ -4678,10 +5244,10 @@
           53
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -4824,9 +5390,8 @@
       ],
       "current_main_market": {
         "line": 3.5,
-        "over_price": "-158",
-        "under_price": "118",
-        "sportsbook": "FanDuel"
+        "over_price": "-179",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 6,
@@ -4858,7 +5423,7 @@
           2
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
       "qualification_reason": "Current main-market HR ≥6/10",
@@ -5009,10 +5574,9 @@
         }
       ],
       "current_main_market": {
-        "line": 33.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 30.5,
+        "over_price": "-115",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
         "hits": 4,
@@ -5044,10 +5608,10 @@
           46
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": false,
-      "qualification_reason": "None",
+      "qualification_reason": "Does not meet either Stage 1 condition",
       "qualifying_ladder_thresholds": []
     },
     {
@@ -5189,15 +5753,14 @@
         }
       ],
       "current_main_market": {
-        "line": 3.5,
-        "over_price": "-114",
-        "under_price": "-114",
-        "sportsbook": "FanDuel"
+        "line": 2.5,
+        "over_price": "-226",
+        "sportsbook": "DraftKings"
       },
       "market_HR": {
-        "hits": 5,
+        "hits": 6,
         "denominator": 10,
-        "display": "5/10"
+        "display": "6/10"
       },
       "P15": {
         "value": 1,
@@ -5224,10 +5787,10 @@
           5
         ],
         "observation_count": 20,
-        "method": "20 most recent qualifying regular-season games; standard linear interpolation; unavailable if fewer than 20"
+        "method": "20 most recent qualifying regular-season games; standard linear interpolation"
       },
       "qualifies": true,
-      "qualification_reason": "At least one fixed ladder threshold ≥8/10",
+      "qualification_reason": "Current main-market HR ≥6/10",
       "qualifying_ladder_thresholds": [
         {
           "threshold": 2,
@@ -5238,7 +5801,7 @@
     }
   ],
   "eligibility": {
-    "method": "Current-week starters/depth-chart roles; QB named starters; top three WR; top TE; primary/secondary RB with meaningful expected role.",
+    "method": "Current Week 12 depth-chart roles; named starting QB; top three active WR; top expected TE; primary and secondary RBs with meaningful expected role.",
     "included_players": [
       {
         "player": "Jordan Love",
@@ -5249,6 +5812,11 @@
         "player": "Matthew Stafford",
         "position": "QB",
         "team": "LA"
+      },
+      {
+        "player": "Josh Jacobs",
+        "position": "RB",
+        "team": "GB"
       },
       {
         "player": "Kaleb Johnson",
@@ -5286,12 +5854,12 @@
         "team": "LA"
       },
       {
-        "player": "Tutu Atwell",
+        "player": "CJ Daniels",
         "position": "WR",
         "team": "LA"
       },
       {
-        "player": "CJ Daniels",
+        "player": "Tutu Atwell",
         "position": "WR",
         "team": "LA"
       },
@@ -5306,53 +5874,31 @@
         "team": "LA"
       }
     ],
-    "excluded_players": [
-      {
-        "player": "Josh Jacobs",
-        "position": "RB",
-        "team": "GB",
-        "reason": "Listed OUT for Week 12; not eligible for this game despite historical depth-chart listing."
-      },
-      {
-        "player": "Chris Brooks",
-        "position": "RB",
-        "team": "GB",
-        "reason": "Not among the two expected meaningful-role backs in the current matchup depth chart."
-      },
-      {
-        "player": "MarShawn Lloyd",
-        "position": "RB",
-        "team": "GB",
-        "reason": "Not among the two expected meaningful-role backs in the current matchup depth chart."
-      }
-    ]
+    "injury_eligibility_note": "Josh Jacobs retained as the listed starting RB and officially questionable, not ruled out. Current official injury sources show the Rams' Puka Nacua and Davante Adams unavailable/IR; they are not included in the active top-three WR set."
   },
   "qualification_rule": "Market HR ≥6/10 OR at least one applicable fixed ladder threshold ≥8/10.",
   "sources": {
     "historical_dataset": "data/nfl_prop_model.txt",
-    "historical_dataset_blob_sha": "6bbb6204f691585d526d8005eb6733d7a74a7cab",
-    "historical_player_record_count": 574,
+    "historical_dataset_blob_sha": "7b2909a620e92b8d66b61c5412a6210158ea41a5",
+    "historical_player_record_count": 581,
     "sportsbook_dataset": "odds/nfl_player_props_latest.csv",
-    "sportsbook_dataset_blob_sha": "c7ff906672a2ac70783247ecca978865f54db200",
-    "sportsbook_priority": "FanDuel only; no DraftKings substitution used.",
+    "sportsbook_dataset_blob_sha": "0730cbe33f2b12b14e587bcffa1db1731421419d",
+    "sportsbook_priority": "FanDuel absent for this matchup in current snapshot; DraftKings used only after explicit user authorization.",
     "eligibility_sources": [
-      "https://statz.ai/nfl/games/1019/packers-at-rams/depth-charts",
-      "https://depthroom.com/teams/gb/injuries/",
-      "https://static.clubs.nfl.com/image/upload/packers/fuopgmpyrj6hqmtkoatm.pdf"
+      "https://www.packers.com/team/depth-chart",
+      "https://www.therams.com/news/injury-updates",
+      "https://www.nfl.com/news/nfl-week-12-injury-report-2026-season"
     ]
   },
   "audit": {
     "all_ladder_counts_recomputed_from_same_L10": true,
-    "independent_second_pass_verified_all_ladder_counts": true,
-    "market_HR_independently_verified": true,
+    "market_HR_calculated_at_current_selected_line": true,
     "denominator_locked_at_10": true,
     "fixed_ladders_used": true,
     "P15_calculated_independently_from_20_game_sample": true,
-    "no_alternate_market_lines_used_as_main_market": true,
-    "no_DraftKings_lines_used": true,
+    "no_unavailable_lines_or_prices_invented": true,
     "source_identity_matched_by_player_id_and_abbreviated_name": true,
-    "note": "The model file contains an internal contradiction in one example: it says 5/10 Market HR plus 9/10 ladder does not qualify, while R10 and the later L10 examples specify OR and say 5/10 plus 9/10 qualifies. This rerun follows R10 and the explicit OR shortlist rule."
-  },
-  "supersedes_state_id": "STATE-1-W12-2026-WED-L10",
-  "supersedes_blob_sha": "559d5e0b55d866ffa92015331b0c10b1718c6cb9"
+    "qualification_gate_applied_as_OR": true,
+    "note": "The model text contains a contradiction in the validation checklist requiring both Market HR ≥60% and a ladder ≥80%, despite the explicit Stage 1 gate and examples specifying OR. This state applies the explicit OR qualification rule."
+  }
 }
