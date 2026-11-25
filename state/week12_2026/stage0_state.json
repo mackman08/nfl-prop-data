@@ -2,19 +2,13 @@
   "stage": 0,
   "season": 2026,
   "week": 12,
-  "scope": "Wednesday only — Green Bay Packers at Los Angeles Rams",
+  "scope": "Custom — Thursday and Friday games only",
   "historical_sample": "L10",
   "historical_cutoff": "Completion of the final scheduled Week 11 game; date boundary 2026-11-24T00:00:00 America/Toronto (exclusive)",
   "record_count": 0,
-  "state_id": "STATE-0-W12-2026-WED-L10",
+  "state_id": "STATE-0-W12-2026-THU-FRI-L10",
   "parent_state_id": null,
   "records": [],
-  "game": {
-    "date": "2026-11-25",
-    "away": "Green Bay Packers",
-    "home": "Los Angeles Rams",
-    "kickoff": "20:00 America/Toronto"
-  },
   "historical_source": "data/nfl_prop_model.txt",
   "sportsbook_source": {
     "primary": "FanDuel",
