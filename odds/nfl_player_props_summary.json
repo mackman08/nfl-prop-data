@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 454,
-      "Receiving Yards": 1321,
-      "Receptions": 654,
-      "Rushing Yards": 543
+      "Passing Yards": 654,
+      "Receiving Yards": 2183,
+      "Receptions": 1078,
+      "Rushing Yards": 829
     },
     "FanDuel": {
-      "Passing Yards": 16,
-      "Receiving Yards": 106,
-      "Receptions": 106,
-      "Rushing Yards": 48
+      "Passing Yards": 28,
+      "Receiving Yards": 175,
+      "Receptions": 175,
+      "Rushing Yards": 84
     }
   },
   "core_markets_present": [
@@ -21,26 +21,40 @@
   ],
   "duplicates": 0,
   "event_ids": [
+    "34118022",
     "34118055",
     "34118077",
     "34118092",
     "34118109",
     "34118122",
+    "34118135",
     "34118136",
+    "34118158",
     "34118186",
     "34118200",
     "34118209",
+    "34118248",
+    "34118274",
     "35599534",
     "35607031",
     "35607159",
     "35607552",
     "35610249",
+    "36331649",
+    "36331650",
+    "36331651",
+    "36331652",
+    "36331653",
+    "36331654",
     "36331655",
     "36331656",
     "36331659"
   ],
   "games": [
+    "ATL Falcons @ MIN Vikings",
     "Atlanta Falcons @ Minnesota Vikings",
+    "BAL Ravens @ HOU Texans",
+    "Baltimore Ravens @ Houston Texans",
     "CAR Panthers @ TB Buccaneers",
     "CHI Bears @ DET Lions",
     "Carolina Panthers @ Tampa Bay Buccaneers",
@@ -52,27 +66,35 @@
     "KC Chiefs @ BUF Bills",
     "Kansas City Chiefs @ Buffalo Bills",
     "LV Raiders @ CLE Browns",
+    "Las Vegas Raiders @ Cleveland Browns",
+    "NO Saints @ CIN Bengals",
+    "NY Giants @ IND Colts",
     "NY Jets @ MIA Dolphins",
+    "New Orleans Saints @ Cincinnati Bengals",
+    "New York Giants @ Indianapolis Colts",
+    "New York Jets @ Miami Dolphins",
     "PHI Eagles @ DAL Cowboys",
     "Philadelphia Eagles @ Dallas Cowboys",
     "SEA Seahawks @ SF 49ers",
-    "Seattle Seahawks @ San Francisco 49ers"
+    "Seattle Seahawks @ San Francisco 49ers",
+    "TEN Titans @ JAX Jaguars",
+    "Tennessee Titans @ Jacksonville Jaguars"
   ],
   "markets": {
-    "Alt Passing Yards": 151,
-    "Alt Receiving Yards": 1048,
-    "Alt Receptions": 627,
-    "Alt Rushing Yards": 386,
-    "Passing Yards": 470,
-    "Receiving Yards": 1427,
-    "Receptions": 760,
-    "Rush + Receiving Yards": 372,
-    "Rushing Yards": 591
+    "Alt Passing Yards": 246,
+    "Alt Receiving Yards": 1671,
+    "Alt Receptions": 985,
+    "Alt Rushing Yards": 629,
+    "Passing Yards": 682,
+    "Receiving Yards": 2358,
+    "Receptions": 1253,
+    "Rush + Receiving Yards": 466,
+    "Rushing Yards": 913
   },
   "sportsbooks": {
-    "DraftKings": 3344,
-    "FanDuel": 2488
+    "DraftKings": 5210,
+    "FanDuel": 3993
   },
-  "total_rows": 5832,
+  "total_rows": 9203,
   "validation_mode": "slate-size-agnostic"
 }
