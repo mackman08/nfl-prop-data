@@ -6,7 +6,7 @@
   "historical_sample": "L10",
   "historical_cutoff": "Completion of the final scheduled Week 11 game; date boundary 2026-11-24T00:00:00 America/Toronto (exclusive)",
   "record_count": 0,
-  "state_id": "STATE-0-W12-2026-THU-FRI-L10",
+  "state_id": "STATE-0-W12-2026-THU-FRI-L10-P15L10",
   "parent_state_id": null,
   "records": [],
   "historical_source": "data/nfl_prop_model.txt",
@@ -14,5 +14,11 @@
     "primary": "FanDuel",
     "fallback": "DraftKings only when explicitly specified"
   },
-  "note": "Stage 0 scope and sample lock only. No Stage 1 work performed."
+  "methodology_overrides": {
+    "p15_sample": "Same 10 most recent qualifying completed regular-season games used for L10",
+    "p15_method": "15th percentile using standard linear interpolation",
+    "replaces_default": "V7.2.9 default of 20-game P15",
+    "scope": "This run only"
+  },
+  "note": "Stage 0 scope, sample, and explicit P15 methodology override locked. No Stage 1 work performed."
 }
