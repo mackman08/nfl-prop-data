@@ -26,7 +26,7 @@
     "qualifying_records": 58,
     "non_qualifying_records": 19,
     "l10_unavailable_records": 4,
-    "missing_market_records": 1,
+    "missing_market_records": 2,
     "qualifiers_by_market": {
       "QB": 6,
       "RB": 8,
@@ -10759,6 +10759,15 @@
       "market": "Rushing Yards",
       "game": "Philadelphia Eagles @ Dallas Cowboys",
       "sportsbook": "FanDuel"
+    },
+    {
+      "player": "Kenneth Walker III",
+      "team": "KC",
+      "position": "RB",
+      "market": "Rushing Yards",
+      "game": "KC Chiefs @ BUF Bills",
+      "sportsbook": "DraftKings",
+      "reason": "Current main-market line absent from sportsbook snapshot"
     }
   ],
   "non_qualifying_records": [
@@ -10894,6 +10903,40 @@
       "market": "Receiving Yards",
       "market_hr": "5/10",
       "best_ladder": "7/10"
+    }
+  ],
+  "eligibility_sources": [
+    {
+      "teams": "Chicago Bears",
+      "url": "https://www.cbssports.com/nfl/teams/CHI/chicago-bears/depth-chart/"
+    },
+    {
+      "teams": "Detroit Lions",
+      "url": "https://www.detroitlions.com/team/depth-chart"
+    },
+    {
+      "teams": "Kansas City Chiefs",
+      "url": "https://www.nbcsports.com/nfl/kansas-city-chiefs/depth-chart"
+    },
+    {
+      "teams": "Buffalo Bills",
+      "url": "https://www.fsroundup.com/nfl/depth-charts/buffalo-bills"
+    },
+    {
+      "teams": "Philadelphia Eagles",
+      "url": "https://lineupfield.com/eagles-depth-chart/"
+    },
+    {
+      "teams": "Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/team/depth-chart"
+    },
+    {
+      "teams": "Denver Broncos",
+      "url": "https://www.denverbroncos.com/team/depth-chart/"
+    },
+    {
+      "teams": "Pittsburgh Steelers",
+      "url": "https://www.statiqsports.com/nfl/teams/pit/depth-chart"
     }
   ]
 }
