@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 654,
-      "Receiving Yards": 2183,
-      "Receptions": 1078,
-      "Rushing Yards": 829
+      "Passing Yards": 697,
+      "Receiving Yards": 2288,
+      "Receptions": 1134,
+      "Rushing Yards": 974
     },
     "FanDuel": {
       "Passing Yards": 28,
-      "Receiving Yards": 175,
-      "Receptions": 175,
-      "Rushing Yards": 84
+      "Receiving Yards": 177,
+      "Receptions": 177,
+      "Rushing Yards": 85
     }
   },
   "core_markets_present": [
@@ -24,11 +24,12 @@
     "34118022",
     "34118055",
     "34118077",
-    "34118092",
     "34118109",
+    "34118118",
     "34118122",
     "34118135",
     "34118136",
+    "34118155",
     "34118158",
     "34118186",
     "34118200",
@@ -36,7 +37,6 @@
     "34118248",
     "34118274",
     "35599534",
-    "35607031",
     "35607159",
     "35607552",
     "35610249",
@@ -48,6 +48,8 @@
     "36331654",
     "36331655",
     "36331656",
+    "36331657",
+    "36331658",
     "36331659"
   ],
   "games": [
@@ -61,15 +63,15 @@
     "Chicago Bears @ Detroit Lions",
     "DEN Broncos @ PIT Steelers",
     "Denver Broncos @ Pittsburgh Steelers",
-    "GB Packers @ LA Rams",
-    "Green Bay Packers @ Los Angeles Rams",
     "KC Chiefs @ BUF Bills",
     "Kansas City Chiefs @ Buffalo Bills",
     "LV Raiders @ CLE Browns",
     "Las Vegas Raiders @ Cleveland Browns",
+    "NE Patriots @ LA Chargers",
     "NO Saints @ CIN Bengals",
     "NY Giants @ IND Colts",
     "NY Jets @ MIA Dolphins",
+    "New England Patriots @ Los Angeles Chargers",
     "New Orleans Saints @ Cincinnati Bengals",
     "New York Giants @ Indianapolis Colts",
     "New York Jets @ Miami Dolphins",
@@ -78,23 +80,25 @@
     "SEA Seahawks @ SF 49ers",
     "Seattle Seahawks @ San Francisco 49ers",
     "TEN Titans @ JAX Jaguars",
-    "Tennessee Titans @ Jacksonville Jaguars"
+    "Tennessee Titans @ Jacksonville Jaguars",
+    "WAS Commanders @ ARI Cardinals",
+    "Washington Commanders @ Arizona Cardinals"
   ],
   "markets": {
-    "Alt Passing Yards": 246,
-    "Alt Receiving Yards": 1671,
-    "Alt Receptions": 985,
-    "Alt Rushing Yards": 629,
-    "Passing Yards": 682,
-    "Receiving Yards": 2358,
-    "Receptions": 1253,
-    "Rush + Receiving Yards": 466,
-    "Rushing Yards": 913
+    "Alt Passing Yards": 261,
+    "Alt Receiving Yards": 1711,
+    "Alt Receptions": 1007,
+    "Alt Rushing Yards": 675,
+    "Passing Yards": 725,
+    "Receiving Yards": 2465,
+    "Receptions": 1311,
+    "Rush + Receiving Yards": 562,
+    "Rushing Yards": 1059
   },
   "sportsbooks": {
-    "DraftKings": 5210,
-    "FanDuel": 3993
+    "DraftKings": 5655,
+    "FanDuel": 4121
   },
-  "total_rows": 9203,
+  "total_rows": 9776,
   "validation_mode": "slate-size-agnostic"
 }
