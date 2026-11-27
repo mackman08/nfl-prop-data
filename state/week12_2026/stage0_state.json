@@ -2,23 +2,17 @@
   "stage": 0,
   "season": 2026,
   "week": 12,
-  "scope": "Custom — Thursday and Friday games only",
+  "scope": "Sunday only — all scheduled Sunday games",
   "historical_sample": "L10",
-  "historical_cutoff": "Completion of the final scheduled Week 11 game; date boundary 2026-11-24T00:00:00 America/Toronto (exclusive)",
+  "historical_cutoff": "Completion of the final scheduled game of Week 11 (Monday, 2026-11-23); no Week 12 games included",
   "record_count": 0,
-  "state_id": "STATE-0-W12-2026-THU-FRI-L10-P15L10",
+  "state_id": "STATE-0-W12-2026-SUNDAY-L10",
   "parent_state_id": null,
   "records": [],
-  "historical_source": "data/nfl_prop_model.txt",
+  "historical_source": "mackman08/nfl-prop-data:data/nfl_prop_model.txt",
   "sportsbook_source": {
     "primary": "FanDuel",
     "fallback": "DraftKings only when explicitly specified"
   },
-  "methodology_overrides": {
-    "p15_sample": "Same 10 most recent qualifying completed regular-season games used for L10",
-    "p15_method": "15th percentile using standard linear interpolation",
-    "replaces_default": "V7.2.9 default of 20-game P15",
-    "scope": "This run only"
-  },
-  "note": "Stage 0 scope, sample, and explicit P15 methodology override locked. No Stage 1 work performed."
+  "p15_methodology": "20 most recent qualifying completed regular-season games; standard linear interpolation"
 }
