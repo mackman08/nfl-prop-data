@@ -1,0 +1,3209 @@
+{
+  "stage": "2_bypass_exception",
+  "season": 2026,
+  "week": 12,
+  "scope": "Sunday only — all scheduled Sunday games",
+  "historical_sample": "L10",
+  "historical_cutoff": "Completion of the final scheduled game of Week 11 (Monday, 2026-11-23); no Week 12 games included",
+  "record_count": 20,
+  "state_id": "STATE-2-BYPASS-W12-2026-SUNDAY-L10-PRIORITY20",
+  "parent_state_id": "STATE-1-W12-2026-SUNDAY-L10-RETRY",
+  "exception_authorization": "User explicitly approved proceeding without completing Stage 2, with focus on the previously identified priority 20 list.",
+  "bypass_reason": "Complete Stage 2 alternate-market analysis for all 95 Stage 1 records is absent. This artifact does not represent a completed Stage 2.",
+  "stage2_status": "BYPASSED_NOT_COMPLETED",
+  "candidate_scope": "Priority 20 records only; other 75 Stage 1 qualifiers are intentionally not advanced in this exception run.",
+  "sportsbook_alternates": "Not validated; provisional prior conversation-reported bands are retained only as unverified references. Do not use their prices for final selection.",
+  "stage1_source": {
+    "repository": "mackman08/nfl-prop-data",
+    "path": "state/week12_2026/stage1_state.json",
+    "sha": "80c89e3aa8268c1284d1f9573678b73ba5603002",
+    "state_id": "STATE-1-W12-2026-SUNDAY-L10-RETRY"
+  },
+  "records": [
+    {
+      "player": "Trey McBride",
+      "team": "ARI",
+      "position": "TE",
+      "market_type": "Receptions",
+      "player_id": "00-0037744",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_ARI_KC",
+          "team": "ARI",
+          "opponent_team": "KC",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_LA_ARI",
+          "team": "ARI",
+          "opponent_team": "LA",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_ARI_SEA",
+          "team": "ARI",
+          "opponent_team": "SEA",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ARI_DAL",
+          "team": "ARI",
+          "opponent_team": "DAL",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_DEN_ARI",
+          "team": "ARI",
+          "opponent_team": "DEN",
+          "stat": 10
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_ARI_LA",
+          "team": "ARI",
+          "opponent_team": "LA",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_DET_ARI",
+          "team": "ARI",
+          "opponent_team": "DET",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_ARI_NYG",
+          "team": "ARI",
+          "opponent_team": "NYG",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ARI_SF",
+          "team": "ARI",
+          "opponent_team": "SF",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "ARI",
+          "opponent_team": "SEA",
+          "stat": 8
+        }
+      ],
+      "sportsbook_market": {
+        "line": "6.5",
+        "over_price": "-144",
+        "under_price": "108",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "9/10",
+      "p15_20_game": 6.7,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 30,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 40,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 50,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 60,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR ≥6/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 6,
+          "hits": 6,
+          "hr": "6/10",
+          "american_odds": "-235"
+        },
+        "floor": {
+          "threshold": 7,
+          "hits": 5,
+          "hr": "5/10",
+          "american_odds": "-470"
+        },
+        "ceiling": {
+          "threshold": 7,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-130"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Malik Washington",
+      "team": "MIA",
+      "position": "WR",
+      "market_type": "Receiving Yards",
+      "player_id": "00-0039880",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_MIA_BUF",
+          "team": "MIA",
+          "opponent_team": "BUF",
+          "stat": 30
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_MIA_IND",
+          "team": "MIA",
+          "opponent_team": "IND",
+          "stat": 50
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_DET_MIA",
+          "team": "MIA",
+          "opponent_team": "DET",
+          "stat": 21
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_NE_MIA",
+          "team": "MIA",
+          "opponent_team": "NE",
+          "stat": 40
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_MIA_NYJ",
+          "team": "MIA",
+          "opponent_team": "NYJ",
+          "stat": 27
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "MIA",
+          "opponent_team": "CIN",
+          "stat": 43
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_MIA_MIN",
+          "team": "MIA",
+          "opponent_team": "MIN",
+          "stat": 67
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_KC_MIA",
+          "team": "MIA",
+          "opponent_team": "KC",
+          "stat": 56
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIA_SF",
+          "team": "MIA",
+          "opponent_team": "SF",
+          "stat": 43
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_MIA_LV",
+          "team": "MIA",
+          "opponent_team": "LV",
+          "stat": 53
+        }
+      ],
+      "sportsbook_market": {
+        "line": "26.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "9/10",
+      "p15_20_game": 9.85,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 30,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 40,
+          "hr": "7/10",
+          "hits": 7
+        },
+        {
+          "threshold": 50,
+          "hr": "4/10",
+          "hits": 4
+        },
+        {
+          "threshold": 60,
+          "hr": "1/10",
+          "hits": 1
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR and ladder",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 20,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-210"
+        },
+        "floor": {
+          "threshold": 15,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-330"
+        },
+        "ceiling": {
+          "threshold": 25,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-132"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Kirk Cousins",
+      "team": "MIN",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "player_id": "00-0029604",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_MIN_SF",
+          "team": "MIN",
+          "opponent_team": "SF",
+          "stat": 235
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_MIN_GB",
+          "team": "MIN",
+          "opponent_team": "GB",
+          "stat": 207
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LV_SF",
+          "team": "LV",
+          "opponent_team": "SF",
+          "stat": 216
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_LV_NYJ",
+          "team": "LV",
+          "opponent_team": "NYJ",
+          "stat": 247
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_LA_LV",
+          "team": "LV",
+          "opponent_team": "LA",
+          "stat": 295
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BUF_LV",
+          "team": "LV",
+          "opponent_team": "BUF",
+          "stat": 313
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "LV",
+          "opponent_team": "NE",
+          "stat": 243
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_KC_LV",
+          "team": "LV",
+          "opponent_team": "KC",
+          "stat": 365
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LV_NO",
+          "team": "LV",
+          "opponent_team": "NO",
+          "stat": 248
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_LV_LAC",
+          "team": "LV",
+          "opponent_team": "LAC",
+          "stat": 253
+        }
+      ],
+      "sportsbook_market": {
+        "line": "249.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "4/10",
+      "p15_20_game": 161.7,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 175,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 200,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 225,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 250,
+          "hr": "4/10",
+          "hits": 4
+        },
+        {
+          "threshold": 300,
+          "hr": "2/10",
+          "hits": 2
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Ladder ≥8/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 225,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-215"
+        },
+        "floor": {
+          "threshold": 200,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-420"
+        },
+        "ceiling": {
+          "threshold": 250,
+          "hits": 4,
+          "hr": "4/10",
+          "american_odds": "-114"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "position": "RB",
+      "market_type": "Rushing Yards",
+      "player_id": "00-0038542",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_KC_ATL",
+          "team": "ATL",
+          "opponent_team": "KC",
+          "stat": 71
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "ATL",
+          "opponent_team": "CIN",
+          "stat": 100
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ATL_TB",
+          "team": "ATL",
+          "opponent_team": "TB",
+          "stat": 76
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_SF_ATL",
+          "team": "ATL",
+          "opponent_team": "SF",
+          "stat": 63
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "ATL",
+          "opponent_team": "CHI",
+          "stat": 61
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "team": "ATL",
+          "opponent_team": "BAL",
+          "stat": 86
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_ATL_NO",
+          "team": "ATL",
+          "opponent_team": "NO",
+          "stat": 145
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "ATL",
+          "opponent_team": "GB",
+          "stat": 194
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "ATL",
+          "opponent_team": "CAR",
+          "stat": 72
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_ATL_PIT",
+          "team": "ATL",
+          "opponent_team": "PIT",
+          "stat": 83
+        }
+      ],
+      "sportsbook_market": {
+        "line": "75.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "6/10",
+      "p15_20_game": 62.7,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 30,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 40,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 50,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 60,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 75,
+          "hr": "6/10",
+          "hits": 6
+        },
+        {
+          "threshold": 100,
+          "hr": "3/10",
+          "hits": 3
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR and ladder",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 60,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-250"
+        },
+        "floor": {
+          "threshold": 50,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-450"
+        },
+        "ceiling": {
+          "threshold": 70,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-152"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "position": "WR",
+      "market_type": "Receptions",
+      "player_id": "00-0038618",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_IND_HOU",
+          "team": "HOU",
+          "opponent_team": "IND",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_HOU_CLE",
+          "team": "HOU",
+          "opponent_team": "CLE",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_HOU_LAC",
+          "team": "HOU",
+          "opponent_team": "LAC",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NYG_HOU",
+          "team": "HOU",
+          "opponent_team": "NYG",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "team": "HOU",
+          "opponent_team": "JAX",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_HOU_TEN",
+          "team": "HOU",
+          "opponent_team": "TEN",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DAL_HOU",
+          "team": "HOU",
+          "opponent_team": "DAL",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_HOU_IND",
+          "team": "HOU",
+          "opponent_team": "IND",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "HOU",
+          "opponent_team": "CIN",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BUF_HOU",
+          "team": "HOU",
+          "opponent_team": "BUF",
+          "stat": 3
+        }
+      ],
+      "sportsbook_market": {
+        "line": "2.5",
+        "over_price": "-172",
+        "under_price": "128",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "8/10",
+      "p15_20_game": 1,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 30,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 40,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 50,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 60,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR ≥6/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-172"
+        },
+        "floor": {
+          "threshold": 2,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-550"
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hits": 2,
+          "hr": "2/10",
+          "american_odds": "+148"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "position": "WR",
+      "market_type": "Receptions",
+      "player_id": "00-0033555",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_NE_DET",
+          "team": "NE",
+          "opponent_team": "DET",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "NE",
+          "opponent_team": "GB",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent_team": "JAX",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent_team": "PIT",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent_team": "SEA",
+          "stat": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent_team": "BAL",
+          "stat": 7
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 4
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_NYG_NE",
+          "team": "NE",
+          "opponent_team": "NYG",
+          "stat": 3
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_NE_CIN",
+          "team": "NE",
+          "opponent_team": "CIN",
+          "stat": 2
+        }
+      ],
+      "sportsbook_market": {
+        "line": "2.5",
+        "over_price": "-122",
+        "under_price": "-108",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "8/10",
+      "p15_20_game": 1.85,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 30,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 40,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 50,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 60,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR ≥6/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 2,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-350"
+        },
+        "floor": null,
+        "ceiling": {
+          "threshold": 3,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-125"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "position": "WR",
+      "market_type": "Receiving Yards",
+      "player_id": "00-0033555",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_NE_DET",
+          "team": "NE",
+          "opponent_team": "DET",
+          "stat": 48
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "NE",
+          "opponent_team": "GB",
+          "stat": 36
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 53
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent_team": "JAX",
+          "stat": 87
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent_team": "PIT",
+          "stat": 18
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent_team": "SEA",
+          "stat": 51
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent_team": "BAL",
+          "stat": 69
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 41
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_NYG_NE",
+          "team": "NE",
+          "opponent_team": "NYG",
+          "stat": 23
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_NE_CIN",
+          "team": "NE",
+          "opponent_team": "CIN",
+          "stat": 30
+        }
+      ],
+      "sportsbook_market": {
+        "line": "26.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "8/10",
+      "p15_20_game": 8.85,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "9/10",
+          "hits": 9
+        },
+        {
+          "threshold": 30,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 40,
+          "hr": "6/10",
+          "hits": 6
+        },
+        {
+          "threshold": 50,
+          "hr": "4/10",
+          "hits": 4
+        },
+        {
+          "threshold": 60,
+          "hr": "2/10",
+          "hits": 2
+        },
+        {
+          "threshold": 75,
+          "hr": "1/10",
+          "hits": 1
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR and ladder",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 15,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-290"
+        },
+        "floor": {
+          "threshold": 10,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-490"
+        },
+        "ceiling": {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-192"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "position": "WR",
+      "market_type": "Receiving Yards",
+      "player_id": "00-0031588",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_CIN_WAS",
+          "team": "WAS",
+          "opponent_team": "CIN",
+          "stat": 45
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent_team": "NYG",
+          "stat": 83
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent_team": "LA",
+          "stat": 51
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent_team": "PHI",
+          "stat": 38
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent_team": "SF",
+          "stat": 44
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent_team": "IND",
+          "stat": 35
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent_team": "SEA",
+          "stat": 33
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent_team": "DAL",
+          "stat": 47
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent_team": "PHI",
+          "stat": 55
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent_team": "MIA",
+          "stat": 43
+        }
+      ],
+      "sportsbook_market": {
+        "line": "43.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "6/10",
+      "p15_20_game": 26,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 30,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 40,
+          "hr": "7/10",
+          "hits": 7
+        },
+        {
+          "threshold": 50,
+          "hr": "3/10",
+          "hits": 3
+        },
+        {
+          "threshold": 60,
+          "hr": "1/10",
+          "hits": 1
+        },
+        {
+          "threshold": 75,
+          "hr": "1/10",
+          "hits": 1
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR and ladder",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 30,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-275"
+        },
+        "floor": {
+          "threshold": 25,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-420"
+        },
+        "ceiling": {
+          "threshold": 40,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-146"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "player_id": "00-0039917",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_KC_ATL",
+          "team": "ATL",
+          "opponent_team": "KC",
+          "stat": 286
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "ATL",
+          "opponent_team": "CIN",
+          "stat": 162
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ATL_TB",
+          "team": "ATL",
+          "opponent_team": "TB",
+          "stat": 125
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_SF_ATL",
+          "team": "ATL",
+          "opponent_team": "SF",
+          "stat": 213
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "ATL",
+          "opponent_team": "CHI",
+          "stat": 225
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "team": "ATL",
+          "opponent_team": "BAL",
+          "stat": 240
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_ATL_NO",
+          "team": "ATL",
+          "opponent_team": "NO",
+          "stat": 223
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "ATL",
+          "opponent_team": "GB",
+          "stat": 256
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_CAR_ATL",
+          "team": "ATL",
+          "opponent_team": "CAR",
+          "stat": 175
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_ATL_IND",
+          "team": "ATL",
+          "opponent_team": "IND",
+          "stat": 177
+        }
+      ],
+      "sportsbook_market": {
+        "line": "200.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "6/10",
+      "p15_20_game": 170.5,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hr": "9/10",
+          "hits": 9
+        },
+        {
+          "threshold": 175,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 200,
+          "hr": "6/10",
+          "hits": 6
+        },
+        {
+          "threshold": 225,
+          "hr": "4/10",
+          "hits": 4
+        },
+        {
+          "threshold": 250,
+          "hr": "2/10",
+          "hits": 2
+        },
+        {
+          "threshold": 300,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR and ladder",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 175,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-235"
+        },
+        "floor": {
+          "threshold": 150,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-470"
+        },
+        "ceiling": {
+          "threshold": 200,
+          "hits": 6,
+          "hr": "6/10",
+          "american_odds": "-118"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "player_id": "00-0036971",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_JAX_NYG",
+          "team": "JAX",
+          "opponent_team": "NYG",
+          "stat": 301
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_JAX_TEN",
+          "team": "JAX",
+          "opponent_team": "TEN",
+          "stat": 352
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_JAX_BAL",
+          "team": "JAX",
+          "opponent_team": "BAL",
+          "stat": 242
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "team": "JAX",
+          "opponent_team": "IND",
+          "stat": 210
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "team": "JAX",
+          "opponent_team": "HOU",
+          "stat": 306
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "team": "JAX",
+          "opponent_team": "PHI",
+          "stat": 331
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "JAX",
+          "opponent_team": "CIN",
+          "stat": 227
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "JAX",
+          "opponent_team": "NE",
+          "stat": 182
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "team": "JAX",
+          "opponent_team": "DEN",
+          "stat": 189
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "team": "JAX",
+          "opponent_team": "CLE",
+          "stat": 245
+        }
+      ],
+      "sportsbook_market": {
+        "line": "253.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "4/10",
+      "p15_20_game": 187.95,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 175,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 200,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 225,
+          "hr": "7/10",
+          "hits": 7
+        },
+        {
+          "threshold": 250,
+          "hr": "4/10",
+          "hits": 4
+        },
+        {
+          "threshold": 300,
+          "hr": "4/10",
+          "hits": 4
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Ladder ≥8/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 225,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-245"
+        },
+        "floor": {
+          "threshold": 200,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-470"
+        },
+        "ceiling": {
+          "threshold": 250,
+          "hits": 4,
+          "hr": "4/10",
+          "american_odds": "-130"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Brock Bowers",
+      "team": "LV",
+      "position": "TE",
+      "market_type": "Receptions",
+      "player_id": "00-0039338",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_SEA_LV",
+          "team": "LV",
+          "opponent_team": "SEA",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LV_SF",
+          "team": "LV",
+          "opponent_team": "SF",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_LV_NYJ",
+          "team": "LV",
+          "opponent_team": "NYJ",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_LA_LV",
+          "team": "LV",
+          "opponent_team": "LA",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BUF_LV",
+          "team": "LV",
+          "opponent_team": "BUF",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "LV",
+          "opponent_team": "NE",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_KC_LV",
+          "team": "LV",
+          "opponent_team": "KC",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LV_NO",
+          "team": "LV",
+          "opponent_team": "NO",
+          "stat": 10
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_LV_HOU",
+          "team": "LV",
+          "opponent_team": "HOU",
+          "stat": 5
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_LV_PHI",
+          "team": "LV",
+          "opponent_team": "PHI",
+          "stat": 6
+        }
+      ],
+      "sportsbook_market": {
+        "line": "4.5",
+        "over_price": "-188",
+        "under_price": "140",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "8/10",
+      "p15_20_game": 4,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 30,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 40,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 50,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 60,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR ≥6/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 5,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-174"
+        },
+        "floor": {
+          "threshold": 4,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-380"
+        },
+        "ceiling": {
+          "threshold": 6,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "+118"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Joe Burrow",
+      "team": "CIN",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "player_id": "00-0036442",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_CIN_WAS",
+          "team": "CIN",
+          "opponent_team": "WAS",
+          "stat": 300
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent_team": "PIT",
+          "stat": 409
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent_team": "ATL",
+          "stat": 271
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent_team": "TEN",
+          "stat": 462
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent_team": "BAL",
+          "stat": 292
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent_team": "MIA",
+          "stat": 190
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent_team": "JAX",
+          "stat": 428
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent_team": "PIT",
+          "stat": 282
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent_team": "HOU",
+          "stat": 207
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent_team": "TB",
+          "stat": 254
+        }
+      ],
+      "sportsbook_market": {
+        "line": "284.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "5/10",
+      "p15_20_game": 204.45,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 175,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 200,
+          "hr": "9/10",
+          "hits": 9
+        },
+        {
+          "threshold": 225,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 250,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 300,
+          "hr": "4/10",
+          "hits": 4
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Ladder ≥8/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 250,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-275"
+        },
+        "floor": {
+          "threshold": 225,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-550"
+        },
+        "ceiling": {
+          "threshold": 275,
+          "hits": 6,
+          "hr": "6/10",
+          "american_odds": "-152"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Hunter Henry",
+      "team": "NE",
+      "position": "TE",
+      "market_type": "Receiving Yards",
+      "player_id": "00-0033090",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_NE_DET",
+          "team": "NE",
+          "opponent_team": "DET",
+          "stat": 22
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "NE",
+          "opponent_team": "GB",
+          "stat": 35
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_NE_MIA",
+          "team": "NE",
+          "opponent_team": "MIA",
+          "stat": 30
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "NE",
+          "opponent_team": "CHI",
+          "stat": 71
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent_team": "NYJ",
+          "stat": 48
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent_team": "LV",
+          "stat": 44
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 62
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent_team": "JAX",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent_team": "PIT",
+          "stat": 40
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent_team": "SEA",
+          "stat": 26
+        }
+      ],
+      "sportsbook_market": {
+        "line": "22.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "8/10",
+      "p15_20_game": 16.65,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "9/10",
+          "hits": 9
+        },
+        {
+          "threshold": 30,
+          "hr": "7/10",
+          "hits": 7
+        },
+        {
+          "threshold": 40,
+          "hr": "5/10",
+          "hits": 5
+        },
+        {
+          "threshold": 50,
+          "hr": "2/10",
+          "hits": 2
+        },
+        {
+          "threshold": 60,
+          "hr": "2/10",
+          "hits": 2
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR and ladder",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 15,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-245"
+        },
+        "floor": {
+          "threshold": 10,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-420"
+        },
+        "ceiling": {
+          "threshold": 20,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-148"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "position": "WR",
+      "market_type": "Receiving Yards",
+      "player_id": "00-0038543",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_SEA_LV",
+          "team": "SEA",
+          "opponent_team": "LV",
+          "stat": 171
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_ARI_SEA",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "stat": 51
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "SEA",
+          "opponent_team": "CHI",
+          "stat": 118
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_KC_SEA",
+          "team": "SEA",
+          "opponent_team": "KC",
+          "stat": 150
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_SEA_DEN",
+          "team": "SEA",
+          "opponent_team": "DEN",
+          "stat": 134
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "stat": 102
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "stat": 76
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "stat": 128
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "stat": 155
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "stat": 122
+        }
+      ],
+      "sportsbook_market": {
+        "line": "97.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "8/10",
+      "p15_20_game": 75.4,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 30,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 40,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 50,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 60,
+          "hr": "9/10",
+          "hits": 9
+        },
+        {
+          "threshold": 75,
+          "hr": "9/10",
+          "hits": 9
+        },
+        {
+          "threshold": 100,
+          "hr": "8/10",
+          "hits": 8
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR and ladder",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 80,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-230"
+        },
+        "floor": {
+          "threshold": 70,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-350"
+        },
+        "ceiling": {
+          "threshold": 90,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-152"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "player_id": "00-0030565",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_NYJ_LAC",
+          "team": "NYJ",
+          "opponent_team": "LAC",
+          "stat": 176
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_BUF_NYJ",
+          "team": "NYJ",
+          "opponent_team": "BUF",
+          "stat": 148
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_NYJ_KC",
+          "team": "NYJ",
+          "opponent_team": "KC",
+          "stat": 165
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_LV_NYJ",
+          "team": "NYJ",
+          "opponent_team": "LV",
+          "stat": 290
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_MIA_NYJ",
+          "team": "NYJ",
+          "opponent_team": "MIA",
+          "stat": 287
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NYJ",
+          "opponent_team": "NE",
+          "stat": 252
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CLE_NYJ",
+          "team": "NYJ",
+          "opponent_team": "CLE",
+          "stat": 182
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "NYJ",
+          "opponent_team": "CHI",
+          "stat": 119
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NYJ_DET",
+          "team": "NYJ",
+          "opponent_team": "DET",
+          "stat": 321
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "NYJ",
+          "opponent_team": "GB",
+          "stat": 247
+        }
+      ],
+      "sportsbook_market": {
+        "line": "204.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "5/10",
+      "p15_20_game": 139.4,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 175,
+          "hr": "7/10",
+          "hits": 7
+        },
+        {
+          "threshold": 200,
+          "hr": "5/10",
+          "hits": 5
+        },
+        {
+          "threshold": 225,
+          "hr": "5/10",
+          "hits": 5
+        },
+        {
+          "threshold": 250,
+          "hr": "4/10",
+          "hits": 4
+        },
+        {
+          "threshold": 300,
+          "hr": "1/10",
+          "hits": 1
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Ladder ≥8/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 175,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-250"
+        },
+        "floor": {
+          "threshold": 150,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-490"
+        },
+        "ceiling": {
+          "threshold": 200,
+          "hits": 5,
+          "hr": "5/10",
+          "american_odds": "-132"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "position": "WR",
+      "market_type": "Receptions",
+      "player_id": "00-0038543",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_SEA_LV",
+          "team": "SEA",
+          "opponent_team": "LV",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_ARI_SEA",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "SEA",
+          "opponent_team": "CHI",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_KC_SEA",
+          "team": "SEA",
+          "opponent_team": "KC",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_SEA_DEN",
+          "team": "SEA",
+          "opponent_team": "DEN",
+          "stat": 12
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "stat": 10
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "stat": 8
+        }
+      ],
+      "sportsbook_market": {
+        "line": "7.5",
+        "over_price": "102",
+        "under_price": "-136",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "6/10",
+      "p15_20_game": 5,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 30,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 40,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 50,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 60,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR ≥6/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 7,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-188"
+        },
+        "floor": {
+          "threshold": 6,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-350"
+        },
+        "ceiling": {
+          "threshold": 8,
+          "hits": 6,
+          "hr": "6/10",
+          "american_odds": "+100"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Chris Olave",
+      "team": "NO",
+      "position": "WR",
+      "market_type": "Receptions",
+      "player_id": "00-0037239",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_NO_CHI",
+          "team": "NO",
+          "opponent_team": "CHI",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_CAR_NO",
+          "team": "NO",
+          "opponent_team": "CAR",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CLE_NO",
+          "team": "NO",
+          "opponent_team": "CLE",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_PIT_NO",
+          "team": "NO",
+          "opponent_team": "PIT",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NO_NYG",
+          "team": "NO",
+          "opponent_team": "NYG",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_MIN_NO",
+          "team": "NO",
+          "opponent_team": "MIN",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_ATL_NO",
+          "team": "NO",
+          "opponent_team": "ATL",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LV_NO",
+          "team": "NO",
+          "opponent_team": "LV",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "team": "NO",
+          "opponent_team": "BAL",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NO_DET",
+          "team": "NO",
+          "opponent_team": "DET",
+          "stat": 10
+        }
+      ],
+      "sportsbook_market": {
+        "line": "5.5",
+        "over_price": "-130",
+        "under_price": "-102",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "7/10",
+      "p15_20_game": 3.85,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 30,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 40,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 50,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 60,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR ≥6/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 5,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-270"
+        },
+        "floor": {
+          "threshold": 4,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-650"
+        },
+        "ceiling": {
+          "threshold": 6,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-130"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "player_id": "00-0033537",
+      "historical_games_available": 16,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_HOU_CLE",
+          "team": "CLE",
+          "opponent_team": "HOU",
+          "stat": 312
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CLE_PIT",
+          "team": "CLE",
+          "opponent_team": "PIT",
+          "stat": 324
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CLE_TEN",
+          "team": "CLE",
+          "opponent_team": "TEN",
+          "stat": 308
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "team": "CLE",
+          "opponent_team": "BAL",
+          "stat": 164
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CLE_NYJ",
+          "team": "CLE",
+          "opponent_team": "NYJ",
+          "stat": 155
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_PIT_CLE",
+          "team": "CLE",
+          "opponent_team": "PIT",
+          "stat": 268
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CLE",
+          "opponent_team": "CAR",
+          "stat": 144
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CLE_TB",
+          "team": "CLE",
+          "opponent_team": "TB",
+          "stat": 238
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "team": "CLE",
+          "opponent_team": "JAX",
+          "stat": 205
+        },
+        {
+          "season": 2024,
+          "week": 7,
+          "game_id": "2024_07_CIN_CLE",
+          "team": "CLE",
+          "opponent_team": "CIN",
+          "stat": 128
+        }
+      ],
+      "sportsbook_market": {
+        "line": "209.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "5/10",
+      "p15_20_game": null,
+      "p15_status": "Unavailable — 16/20 games",
+      "ladder": [
+        {
+          "threshold": 150,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 175,
+          "hr": "6/10",
+          "hits": 6
+        },
+        {
+          "threshold": 200,
+          "hr": "6/10",
+          "hits": 6
+        },
+        {
+          "threshold": 225,
+          "hr": "5/10",
+          "hits": 5
+        },
+        {
+          "threshold": 250,
+          "hr": "4/10",
+          "hits": 4
+        },
+        {
+          "threshold": 300,
+          "hr": "3/10",
+          "hits": 3
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Ladder ≥8/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 175,
+          "hits": 6,
+          "hr": "6/10",
+          "american_odds": "-270"
+        },
+        "floor": {
+          "threshold": 150,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-500"
+        },
+        "ceiling": {
+          "threshold": 200,
+          "hits": 6,
+          "hr": "6/10",
+          "american_odds": "-146"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "position": "RB",
+      "market_type": "Rushing Yards",
+      "player_id": "00-0035261",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_TEN_DAL",
+          "team": "TEN",
+          "opponent_team": "DAL",
+          "stat": 110
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_JAX_TEN",
+          "team": "TEN",
+          "opponent_team": "JAX",
+          "stat": 33
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "TEN",
+          "opponent_team": "CIN",
+          "stat": 117
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CLE_TEN",
+          "team": "TEN",
+          "opponent_team": "CLE",
+          "stat": 129
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_TEN_IND",
+          "team": "TEN",
+          "opponent_team": "IND",
+          "stat": 76
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_HOU_TEN",
+          "team": "TEN",
+          "opponent_team": "HOU",
+          "stat": 52
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "team": "TEN",
+          "opponent_team": "BAL",
+          "stat": 48
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_TEN_NYG",
+          "team": "TEN",
+          "opponent_team": "NYG",
+          "stat": 74
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PHI_TEN",
+          "team": "TEN",
+          "opponent_team": "PHI",
+          "stat": 64
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NYJ_TEN",
+          "team": "TEN",
+          "opponent_team": "NYJ",
+          "stat": 35
+        }
+      ],
+      "sportsbook_market": {
+        "line": "52.5",
+        "over_price": "-114",
+        "under_price": "-114",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "6/10",
+      "p15_20_game": 34.7,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 30,
+          "hr": "10/10",
+          "hits": 10
+        },
+        {
+          "threshold": 40,
+          "hr": "8/10",
+          "hits": 8
+        },
+        {
+          "threshold": 50,
+          "hr": "7/10",
+          "hits": 7
+        },
+        {
+          "threshold": 60,
+          "hr": "6/10",
+          "hits": 6
+        },
+        {
+          "threshold": 75,
+          "hr": "4/10",
+          "hits": 4
+        },
+        {
+          "threshold": 100,
+          "hr": "3/10",
+          "hits": 3
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR and ladder",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 40,
+          "hits": 8,
+          "hr": "8/10",
+          "american_odds": "-260"
+        },
+        "floor": {
+          "threshold": 30,
+          "hits": 10,
+          "hr": "10/10",
+          "american_odds": "-580"
+        },
+        "ceiling": {
+          "threshold": 50,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-136"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    },
+    {
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "position": "TE",
+      "market_type": "Receptions",
+      "player_id": "00-0034753",
+      "historical_games_available": 20,
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_BAL_CAR",
+          "team": "BAL",
+          "opponent_team": "CAR",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_LAC_BAL",
+          "team": "BAL",
+          "opponent_team": "LAC",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_JAX_BAL",
+          "team": "BAL",
+          "opponent_team": "JAX",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "team": "BAL",
+          "opponent_team": "BUF",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "BAL",
+          "opponent_team": "CIN",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "team": "BAL",
+          "opponent_team": "CLE",
+          "stat": 1
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "team": "BAL",
+          "opponent_team": "ATL",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "team": "BAL",
+          "opponent_team": "TEN",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "team": "BAL",
+          "opponent_team": "DAL",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "team": "BAL",
+          "opponent_team": "NO",
+          "stat": 6
+        }
+      ],
+      "sportsbook_market": {
+        "line": "2.5",
+        "over_price": "-188",
+        "under_price": "140",
+        "sportsbook": "FanDuel"
+      },
+      "market_hr": "7/10",
+      "p15_20_game": 1.85,
+      "p15_status": "VALID",
+      "ladder": [
+        {
+          "threshold": 20,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 30,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 40,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 50,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 60,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 75,
+          "hr": "0/10",
+          "hits": 0
+        },
+        {
+          "threshold": 100,
+          "hr": "0/10",
+          "hits": 0
+        }
+      ],
+      "qualification": "QUALIFIES",
+      "qualification_basis": "Market HR ≥6/10",
+      "provisional_prior_stage2_reference": {
+        "status": "UNVERIFIED_CONVERSATION_REPORTED",
+        "core": {
+          "threshold": 3,
+          "hits": 7,
+          "hr": "7/10",
+          "american_odds": "-180"
+        },
+        "floor": {
+          "threshold": 2,
+          "hits": 9,
+          "hr": "9/10",
+          "american_odds": "-550"
+        },
+        "ceiling": {
+          "threshold": 4,
+          "hits": 4,
+          "hr": "4/10",
+          "american_odds": "+140"
+        },
+        "note": "Carried forward solely as a provisional reference from the earlier partial Stage 2 output; not independently verified against the currently retrieved odds snapshot and not authoritative pricing."
+      },
+      "stage3_candidate": true
+    }
+  ]
+}
