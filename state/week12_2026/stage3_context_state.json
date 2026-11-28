@@ -121,9 +121,7 @@
           "opponent_team": "SEA",
           "stat": 8
         }
-      ],
-      "p7_l10": 9,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Malik Washington",
@@ -223,9 +221,7 @@
           "opponent_team": "LV",
           "stat": 53
         }
-      ],
-      "p7_l10": 50,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Kirk Cousins",
@@ -326,9 +322,7 @@
           "opponent_team": "LAC",
           "stat": 253
         }
-      ],
-      "p7_l10": 253,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Bijan Robinson",
@@ -429,9 +423,7 @@
           "opponent_team": "PIT",
           "stat": 83
         }
-      ],
-      "p7_l10": 86,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Xavier Hutchinson",
@@ -532,9 +524,7 @@
           "opponent_team": "BUF",
           "stat": 3
         }
-      ],
-      "p7_l10": 3,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Mack Hollins",
@@ -634,9 +624,7 @@
           "opponent_team": "CIN",
           "stat": 2
         }
-      ],
-      "p7_l10": 4,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Mack Hollins",
@@ -736,9 +724,7 @@
           "opponent_team": "CIN",
           "stat": 30
         }
-      ],
-      "p7_l10": 51,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Stefon Diggs",
@@ -838,9 +824,7 @@
           "opponent_team": "MIA",
           "stat": 43
         }
-      ],
-      "p7_l10": 47,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Michael Penix Jr.",
@@ -942,9 +926,7 @@
           "opponent_team": "IND",
           "stat": 177
         }
-      ],
-      "p7_l10": 225,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Trevor Lawrence",
@@ -1044,9 +1026,7 @@
           "opponent_team": "CLE",
           "stat": 245
         }
-      ],
-      "p7_l10": 301,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Brock Bowers",
@@ -1147,9 +1127,7 @@
           "opponent_team": "PHI",
           "stat": 6
         }
-      ],
-      "p7_l10": 7,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Joe Burrow",
@@ -1250,9 +1228,7 @@
           "opponent_team": "TB",
           "stat": 254
         }
-      ],
-      "p7_l10": 300,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Hunter Henry",
@@ -1352,9 +1328,7 @@
           "opponent_team": "SEA",
           "stat": 26
         }
-      ],
-      "p7_l10": 44,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Jaxon Smith-Njigba",
@@ -1455,9 +1429,7 @@
           "opponent_team": "NE",
           "stat": 122
         }
-      ],
-      "p7_l10": 134,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Geno Smith",
@@ -1557,9 +1529,7 @@
           "opponent_team": "GB",
           "stat": 247
         }
-      ],
-      "p7_l10": 252,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Jaxon Smith-Njigba",
@@ -1659,9 +1629,7 @@
           "opponent_team": "NE",
           "stat": 8
         }
-      ],
-      "p7_l10": 9,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Chris Olave",
@@ -1763,9 +1731,7 @@
           "opponent_team": "DET",
           "stat": 10
         }
-      ],
-      "p7_l10": 8,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Deshaun Watson",
@@ -1865,9 +1831,7 @@
           "opponent_team": "CIN",
           "stat": 128
         }
-      ],
-      "p7_l10": 268,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Tony Pollard",
@@ -1968,9 +1932,7 @@
           "opponent_team": "NYJ",
           "stat": 35
         }
-      ],
-      "p7_l10": 76,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     },
     {
       "player": "Mark Andrews",
@@ -2070,9 +2032,7 @@
           "opponent_team": "NO",
           "stat": 6
         }
-      ],
-      "p7_l10": 4,
-      "p15_l10": "See Stage 1 locked L10; descriptive only"
+      ]
     }
   ]
 }
