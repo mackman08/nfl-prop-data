@@ -1,16 +1,16 @@
 {
   "core_markets_by_sportsbook": {
     "DraftKings": {
-      "Passing Yards": 485,
-      "Receiving Yards": 1467,
-      "Receptions": 727,
-      "Rushing Yards": 680
+      "Passing Yards": 525,
+      "Receiving Yards": 1641,
+      "Receptions": 810,
+      "Rushing Yards": 760
     },
     "FanDuel": {
-      "Passing Yards": 22,
-      "Receiving Yards": 112,
-      "Receptions": 110,
-      "Rushing Yards": 58
+      "Passing Yards": 21,
+      "Receiving Yards": 126,
+      "Receptions": 124,
+      "Rushing Yards": 64
     }
   },
   "core_markets_present": [
@@ -23,7 +23,6 @@
   "event_ids": [
     "34118022",
     "34118055",
-    "34118077",
     "34118109",
     "34118118",
     "34118135",
@@ -33,7 +32,6 @@
     "34118186",
     "34118248",
     "34118274",
-    "35610249",
     "36331649",
     "36331650",
     "36331651",
@@ -53,8 +51,6 @@
     "Baltimore Ravens @ Houston Texans",
     "CAR Panthers @ TB Buccaneers",
     "Carolina Panthers @ Tampa Bay Buccaneers",
-    "DEN Broncos @ PIT Steelers",
-    "Denver Broncos @ Pittsburgh Steelers",
     "LV Raiders @ CLE Browns",
     "Las Vegas Raiders @ Cleveland Browns",
     "NE Patriots @ LA Chargers",
@@ -73,20 +69,20 @@
     "Washington Commanders @ Arizona Cardinals"
   ],
   "markets": {
-    "Alt Passing Yards": 194,
-    "Alt Receiving Yards": 1129,
-    "Alt Receptions": 673,
-    "Alt Rushing Yards": 476,
-    "Passing Yards": 507,
-    "Receiving Yards": 1579,
-    "Receptions": 837,
-    "Rush + Receiving Yards": 344,
-    "Rushing Yards": 738
+    "Alt Passing Yards": 198,
+    "Alt Receiving Yards": 1247,
+    "Alt Receptions": 736,
+    "Alt Rushing Yards": 558,
+    "Passing Yards": 546,
+    "Receiving Yards": 1767,
+    "Receptions": 934,
+    "Rush + Receiving Yards": 449,
+    "Rushing Yards": 824
   },
   "sportsbooks": {
-    "DraftKings": 3703,
-    "FanDuel": 2774
+    "DraftKings": 4185,
+    "FanDuel": 3074
   },
-  "total_rows": 6477,
+  "total_rows": 7259,
   "validation_mode": "slate-size-agnostic"
 }
