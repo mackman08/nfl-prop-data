@@ -1,0 +1,2078 @@
+{
+  "stage": "3_context_exception",
+  "season": 2026,
+  "week": 12,
+  "scope": "Sunday only — all scheduled Sunday games",
+  "historical_sample": "L10",
+  "historical_cutoff": "Completion of the final scheduled game of Week 11 (Monday, 2026-11-23); no Week 12 games included",
+  "record_count": 20,
+  "state_id": "STATE-3-CONTEXT-W12-2026-SUNDAY-L10-PRIORITY20",
+  "parent_state_id": "STATE-2-BYPASS-W12-2026-SUNDAY-L10-PRIORITY20",
+  "execution_note": "Stage 3 completed under user-approved Stage 2 bypass. Only the priority 20 records were analyzed. Stage 2 was not completed; provisional core thresholds and HRs are carried as unverified references, not authoritative alternate-market outputs.",
+  "source_states": {
+    "stage1": {
+      "path": "state/week12_2026/stage1_state.json",
+      "sha": "80c89e3aa8268c1284d1f9573678b73ba5603002",
+      "state_id": "STATE-1-W12-2026-SUNDAY-L10-RETRY"
+    },
+    "stage2_bypass": {
+      "path": "state/week12_2026/stage2_bypass_state.json",
+      "sha": "731a87d0c0f202968ea923e417cf745ba2c90a95",
+      "state_id": "STATE-2-BYPASS-W12-2026-SUNDAY-L10-PRIORITY20"
+    }
+  },
+  "records": [
+    {
+      "player": "Trey McBride",
+      "team": "ARI",
+      "position": "TE",
+      "market_type": "Receptions",
+      "provisional_selected_threshold": 6,
+      "historical_hr_at_threshold": "9/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Supportive",
+      "context": "Week 11 role was elite: 14 targets, 9 catches, 54 yards and 80% snaps. He is healthy and faces Washington. The Week 12 target report notes his 14-target game and describes him as the clear Arizona receiving option; the opponent's pass defense is ranked 31st in the NFL capsule.",
+      "source_refs": [
+        "turn441581view0",
+        "turn204741search3",
+        "turn352541search8"
+      ],
+      "stage1_locked_market_line": "6.5",
+      "stage1_locked_market_hr": "9/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_ARI_KC",
+          "team": "ARI",
+          "opponent_team": "KC",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_LA_ARI",
+          "team": "ARI",
+          "opponent_team": "LA",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_ARI_SEA",
+          "team": "ARI",
+          "opponent_team": "SEA",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ARI_DAL",
+          "team": "ARI",
+          "opponent_team": "DAL",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_DEN_ARI",
+          "team": "ARI",
+          "opponent_team": "DEN",
+          "stat": 10
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_ARI_LA",
+          "team": "ARI",
+          "opponent_team": "LA",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_DET_ARI",
+          "team": "ARI",
+          "opponent_team": "DET",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_ARI_NYG",
+          "team": "ARI",
+          "opponent_team": "NYG",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ARI_SF",
+          "team": "ARI",
+          "opponent_team": "SF",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "ARI",
+          "opponent_team": "SEA",
+          "stat": 8
+        }
+      ],
+      "p7_l10": 9,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Malik Washington",
+      "team": "MIA",
+      "position": "WR",
+      "market_type": "Receiving Yards",
+      "provisional_selected_threshold": 20,
+      "historical_hr_at_threshold": "10/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "Played 88% of snaps but drew only 6 targets (18% share) and caught 3 for 30 in the latest report. Miami's passing attack has a low floor and the quarterback context is unsettled; 20 yards is reachable on role, but volume is not secure.",
+      "source_refs": [
+        "turn441581view1",
+        "turn250336search1"
+      ],
+      "stage1_locked_market_line": "26.5",
+      "stage1_locked_market_hr": "9/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_MIA_BUF",
+          "team": "MIA",
+          "opponent_team": "BUF",
+          "stat": 30
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_MIA_IND",
+          "team": "MIA",
+          "opponent_team": "IND",
+          "stat": 50
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_DET_MIA",
+          "team": "MIA",
+          "opponent_team": "DET",
+          "stat": 21
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_NE_MIA",
+          "team": "MIA",
+          "opponent_team": "NE",
+          "stat": 40
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_MIA_NYJ",
+          "team": "MIA",
+          "opponent_team": "NYJ",
+          "stat": 27
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "MIA",
+          "opponent_team": "CIN",
+          "stat": 43
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_MIA_MIN",
+          "team": "MIA",
+          "opponent_team": "MIN",
+          "stat": 67
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_KC_MIA",
+          "team": "MIA",
+          "opponent_team": "KC",
+          "stat": 56
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_MIA_SF",
+          "team": "MIA",
+          "opponent_team": "SF",
+          "stat": 43
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_MIA_LV",
+          "team": "MIA",
+          "opponent_team": "LV",
+          "stat": 53
+        }
+      ],
+      "p7_l10": 50,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Kirk Cousins",
+      "team": "MIN",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "provisional_selected_threshold": 225,
+      "historical_hr_at_threshold": "8/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "No injury designation and listed as Minnesota's QB1. The matchup is against Atlanta, but Minnesota is a 7-point favorite in a low 41.5 total environment; that can cap second-half pass volume if the Vikings control the game.",
+      "source_refs": [
+        "turn204741search8",
+        "turn204741search2",
+        "turn250336search1"
+      ],
+      "stage1_locked_market_line": "249.5",
+      "stage1_locked_market_hr": "4/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_MIN_SF",
+          "team": "MIN",
+          "opponent_team": "SF",
+          "stat": 235
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_MIN_GB",
+          "team": "MIN",
+          "opponent_team": "GB",
+          "stat": 207
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LV_SF",
+          "team": "LV",
+          "opponent_team": "SF",
+          "stat": 216
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_LV_NYJ",
+          "team": "LV",
+          "opponent_team": "NYJ",
+          "stat": 247
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_LA_LV",
+          "team": "LV",
+          "opponent_team": "LA",
+          "stat": 295
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BUF_LV",
+          "team": "LV",
+          "opponent_team": "BUF",
+          "stat": 313
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "LV",
+          "opponent_team": "NE",
+          "stat": 243
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_KC_LV",
+          "team": "LV",
+          "opponent_team": "KC",
+          "stat": 365
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LV_NO",
+          "team": "LV",
+          "opponent_team": "NO",
+          "stat": 248
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_LV_LAC",
+          "team": "LV",
+          "opponent_team": "LAC",
+          "stat": 253
+        }
+      ],
+      "p7_l10": 253,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "position": "RB",
+      "market_type": "Rushing Yards",
+      "provisional_selected_threshold": 60,
+      "historical_hr_at_threshold": "10/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "Clear lead-back usage: Week 10 showed 16 carries, 80% carry share, 5 targets and 71% snaps; Week 11 report had 16 carries for 71 yards and a score. The Vikings are a difficult RB matchup (ranked 6th vs RBs), but Atlanta may lean on him to mitigate the pass rush.",
+      "source_refs": [
+        "turn786780view0",
+        "turn269290search6",
+        "turn269290search8"
+      ],
+      "stage1_locked_market_line": "75.5",
+      "stage1_locked_market_hr": "6/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_KC_ATL",
+          "team": "ATL",
+          "opponent_team": "KC",
+          "stat": 71
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "ATL",
+          "opponent_team": "CIN",
+          "stat": 100
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ATL_TB",
+          "team": "ATL",
+          "opponent_team": "TB",
+          "stat": 76
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_SF_ATL",
+          "team": "ATL",
+          "opponent_team": "SF",
+          "stat": 63
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "ATL",
+          "opponent_team": "CHI",
+          "stat": 61
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "team": "ATL",
+          "opponent_team": "BAL",
+          "stat": 86
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_ATL_NO",
+          "team": "ATL",
+          "opponent_team": "NO",
+          "stat": 145
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "ATL",
+          "opponent_team": "GB",
+          "stat": 194
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CAR_ATL",
+          "team": "ATL",
+          "opponent_team": "CAR",
+          "stat": 72
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_ATL_PIT",
+          "team": "ATL",
+          "opponent_team": "PIT",
+          "stat": 83
+        }
+      ],
+      "p7_l10": 86,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "position": "WR",
+      "market_type": "Receptions",
+      "provisional_selected_threshold": 3,
+      "historical_hr_at_threshold": "8/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "82% snaps in Week 11 but only 3 targets and 2 catches. Season usage is meaningful (17% target share, 5.7 targets/game; 2nd on Houston's WR depth chart), and Kayshon Boutte is out, but other receivers compete for targets. Role is better than the latest box score suggests; three catches still needs volume.",
+      "source_refs": [
+        "turn204741search5",
+        "turn204741search4",
+        "turn117893view0"
+      ],
+      "stage1_locked_market_line": "2.5",
+      "stage1_locked_market_hr": "8/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_IND_HOU",
+          "team": "HOU",
+          "opponent_team": "IND",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_HOU_CLE",
+          "team": "HOU",
+          "opponent_team": "CLE",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_HOU_LAC",
+          "team": "HOU",
+          "opponent_team": "LAC",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NYG_HOU",
+          "team": "HOU",
+          "opponent_team": "NYG",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "team": "HOU",
+          "opponent_team": "JAX",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_HOU_TEN",
+          "team": "HOU",
+          "opponent_team": "TEN",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_DAL_HOU",
+          "team": "HOU",
+          "opponent_team": "DAL",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_HOU_IND",
+          "team": "HOU",
+          "opponent_team": "IND",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "HOU",
+          "opponent_team": "CIN",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_BUF_HOU",
+          "team": "HOU",
+          "opponent_team": "BUF",
+          "stat": 3
+        }
+      ],
+      "p7_l10": 3,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "position": "WR",
+      "market_type": "Receptions",
+      "provisional_selected_threshold": 2,
+      "historical_hr_at_threshold": "10/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "New England's starting QB Drake Maye is out; Tommy DeVito is listed as the replacement starter by the matchup prop preview. Hollins has a low 2.5-catch main line and should have a path to targets, but the QB change and low game total add volatility.",
+      "source_refs": [
+        "turn615751search5",
+        "turn117893view0"
+      ],
+      "stage1_locked_market_line": "2.5",
+      "stage1_locked_market_hr": "8/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_NE_DET",
+          "team": "NE",
+          "opponent_team": "DET",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "NE",
+          "opponent_team": "GB",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent_team": "JAX",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent_team": "PIT",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent_team": "SEA",
+          "stat": 4
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent_team": "BAL",
+          "stat": 7
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 4
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_NYG_NE",
+          "team": "NE",
+          "opponent_team": "NYG",
+          "stat": 3
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_NE_CIN",
+          "team": "NE",
+          "opponent_team": "CIN",
+          "stat": 2
+        }
+      ],
+      "p7_l10": 4,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "position": "WR",
+      "market_type": "Receiving Yards",
+      "provisional_selected_threshold": 15,
+      "historical_hr_at_threshold": "10/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "Same Patriots QB and game-environment concerns as the receptions market. The external matchup preview lists a 24.5-yard line and 41.2-yard projection, but that is not the locked Stage 1 line and is not used as a sportsbook input here.",
+      "source_refs": [
+        "turn615751search5",
+        "turn117893view0"
+      ],
+      "stage1_locked_market_line": "26.5",
+      "stage1_locked_market_hr": "8/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_NE_DET",
+          "team": "NE",
+          "opponent_team": "DET",
+          "stat": 48
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "NE",
+          "opponent_team": "GB",
+          "stat": 36
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 53
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent_team": "JAX",
+          "stat": 87
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent_team": "PIT",
+          "stat": 18
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent_team": "SEA",
+          "stat": 51
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_NE_BAL",
+          "team": "NE",
+          "opponent_team": "BAL",
+          "stat": 69
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_BUF_NE",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 41
+        },
+        {
+          "season": 2025,
+          "week": 13,
+          "game_id": "2025_13_NYG_NE",
+          "team": "NE",
+          "opponent_team": "NYG",
+          "stat": 23
+        },
+        {
+          "season": 2025,
+          "week": 12,
+          "game_id": "2025_12_NE_CIN",
+          "team": "NE",
+          "opponent_team": "CIN",
+          "stat": 30
+        }
+      ],
+      "p7_l10": 51,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "position": "WR",
+      "market_type": "Receiving Yards",
+      "provisional_selected_threshold": 30,
+      "historical_hr_at_threshold": "10/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Supportive",
+      "context": "Washington usage report shows 6 targets, 4 catches, 45 yards, 19% target share and 66% snaps; he is the clear secondary option behind Antonio Williams. The Commanders face Arizona, and the latest WR preview says Terry McLaurin and Jaylin Lane are out for the season, concentrating targets between Diggs and Williams.",
+      "source_refs": [
+        "turn441581view1",
+        "turn490074search15"
+      ],
+      "stage1_locked_market_line": "43.5",
+      "stage1_locked_market_hr": "6/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_CIN_WAS",
+          "team": "WAS",
+          "opponent_team": "CIN",
+          "stat": 45
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_WAS_NYG",
+          "team": "WAS",
+          "opponent_team": "NYG",
+          "stat": 83
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LA_WAS",
+          "team": "WAS",
+          "opponent_team": "LA",
+          "stat": 51
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_PHI_WAS",
+          "team": "WAS",
+          "opponent_team": "PHI",
+          "stat": 38
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_WAS_SF",
+          "team": "WAS",
+          "opponent_team": "SF",
+          "stat": 44
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_IND_WAS",
+          "team": "WAS",
+          "opponent_team": "IND",
+          "stat": 35
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "WAS",
+          "opponent_team": "SEA",
+          "stat": 33
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_WAS_DAL",
+          "team": "WAS",
+          "opponent_team": "DAL",
+          "stat": 47
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_WAS_PHI",
+          "team": "WAS",
+          "opponent_team": "PHI",
+          "stat": 55
+        },
+        {
+          "season": 2025,
+          "week": 18,
+          "game_id": "2025_18_MIA_NE",
+          "team": "NE",
+          "opponent_team": "MIA",
+          "stat": 43
+        }
+      ],
+      "p7_l10": 47,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "provisional_selected_threshold": 175,
+      "historical_hr_at_threshold": "8/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "Atlanta's official Week 12 depth chart lists Penix as QB1; he has no designation in the weekly injury article, although a separate league injury feed shows a conflicting OUT status against a different opponent. Treat availability as unresolved until official inactives. Atlanta is a 7-point underdog in a 41.5 total, while the Vikings are a strong defense.",
+      "source_refs": [
+        "turn204741search1",
+        "turn352541search0",
+        "turn204741search0",
+        "turn250336search1"
+      ],
+      "stage1_locked_market_line": "200.5",
+      "stage1_locked_market_hr": "6/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_KC_ATL",
+          "team": "ATL",
+          "opponent_team": "KC",
+          "stat": 286
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "ATL",
+          "opponent_team": "CIN",
+          "stat": 162
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_ATL_TB",
+          "team": "ATL",
+          "opponent_team": "TB",
+          "stat": 125
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_SF_ATL",
+          "team": "ATL",
+          "opponent_team": "SF",
+          "stat": 213
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_CHI_ATL",
+          "team": "ATL",
+          "opponent_team": "CHI",
+          "stat": 225
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "team": "ATL",
+          "opponent_team": "BAL",
+          "stat": 240
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_ATL_NO",
+          "team": "ATL",
+          "opponent_team": "NO",
+          "stat": 223
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_ATL_GB",
+          "team": "ATL",
+          "opponent_team": "GB",
+          "stat": 256
+        },
+        {
+          "season": 2025,
+          "week": 11,
+          "game_id": "2025_11_CAR_ATL",
+          "team": "ATL",
+          "opponent_team": "CAR",
+          "stat": 175
+        },
+        {
+          "season": 2025,
+          "week": 10,
+          "game_id": "2025_10_ATL_IND",
+          "team": "ATL",
+          "opponent_team": "IND",
+          "stat": 177
+        }
+      ],
+      "p7_l10": 225,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "provisional_selected_threshold": 225,
+      "historical_hr_at_threshold": "7/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "Favorable opponent: Tennessee is listed as the 32nd-ranked QB defense in the matchup analysis and Jacksonville is a 14.5-point favorite. Counterweights: Parker Washington and G Patrick Mekari are out, and C Robert Hainsey is questionable; a large lead could also reduce late passing volume.",
+      "source_refs": [
+        "turn615751search1",
+        "turn117893view0"
+      ],
+      "stage1_locked_market_line": "253.5",
+      "stage1_locked_market_hr": "4/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_JAX_NYG",
+          "team": "JAX",
+          "opponent_team": "NYG",
+          "stat": 301
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_JAX_TEN",
+          "team": "JAX",
+          "opponent_team": "TEN",
+          "stat": 352
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_JAX_BAL",
+          "team": "JAX",
+          "opponent_team": "BAL",
+          "stat": 242
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_IND_JAX",
+          "team": "JAX",
+          "opponent_team": "IND",
+          "stat": 210
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_HOU_JAX",
+          "team": "JAX",
+          "opponent_team": "HOU",
+          "stat": 306
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_PHI_JAX",
+          "team": "JAX",
+          "opponent_team": "PHI",
+          "stat": 331
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "JAX",
+          "opponent_team": "CIN",
+          "stat": 227
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "JAX",
+          "opponent_team": "NE",
+          "stat": 182
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_JAX_DEN",
+          "team": "JAX",
+          "opponent_team": "DEN",
+          "stat": 189
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "team": "JAX",
+          "opponent_team": "CLE",
+          "stat": 245
+        }
+      ],
+      "p7_l10": 301,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Brock Bowers",
+      "team": "LV",
+      "position": "TE",
+      "market_type": "Receptions",
+      "provisional_selected_threshold": 5,
+      "historical_hr_at_threshold": "8/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Concern",
+      "context": "Ankle status is the main issue: questionable after limited practices Wednesday/Thursday and did not practice Friday. Coach optimism is not enough to clear him. Michael Mayer was a full participant, creating a viable alternate TE if Bowers is limited or inactive. Do not use until confirmed active.",
+      "source_refs": [
+        "turn269290search0",
+        "turn490074search2",
+        "turn441581view1"
+      ],
+      "stage1_locked_market_line": "4.5",
+      "stage1_locked_market_hr": "8/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_SEA_LV",
+          "team": "LV",
+          "opponent_team": "SEA",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_LV_SF",
+          "team": "LV",
+          "opponent_team": "SF",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_LV_NYJ",
+          "team": "LV",
+          "opponent_team": "NYJ",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_LA_LV",
+          "team": "LV",
+          "opponent_team": "LA",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BUF_LV",
+          "team": "LV",
+          "opponent_team": "BUF",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "LV",
+          "opponent_team": "NE",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_KC_LV",
+          "team": "LV",
+          "opponent_team": "KC",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LV_NO",
+          "team": "LV",
+          "opponent_team": "NO",
+          "stat": 10
+        },
+        {
+          "season": 2025,
+          "week": 16,
+          "game_id": "2025_16_LV_HOU",
+          "team": "LV",
+          "opponent_team": "HOU",
+          "stat": 5
+        },
+        {
+          "season": 2025,
+          "week": 15,
+          "game_id": "2025_15_LV_PHI",
+          "team": "LV",
+          "opponent_team": "PHI",
+          "stat": 6
+        }
+      ],
+      "p7_l10": 7,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Joe Burrow",
+      "team": "CIN",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "provisional_selected_threshold": 250,
+      "historical_hr_at_threshold": "8/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "Cincinnati is a 9.5-point favorite with a 49.5 total, which gives the offense scoring opportunity but may create a run-heavy second half. G Dalton Risner is out and Tee Higgins is questionable. The matchup preview rates New Orleans well against QBs and notes adverse weather, so the 250-yard threshold is not a clean spot.",
+      "source_refs": [
+        "turn117893view0",
+        "turn250336search1",
+        "turn615751search4"
+      ],
+      "stage1_locked_market_line": "284.5",
+      "stage1_locked_market_hr": "5/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_CIN_WAS",
+          "team": "CIN",
+          "opponent_team": "WAS",
+          "stat": 300
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_PIT_CIN",
+          "team": "CIN",
+          "opponent_team": "PIT",
+          "stat": 409
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CIN_ATL",
+          "team": "CIN",
+          "opponent_team": "ATL",
+          "stat": 271
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "CIN",
+          "opponent_team": "TEN",
+          "stat": 462
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "CIN",
+          "opponent_team": "BAL",
+          "stat": 292
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CIN_MIA",
+          "team": "CIN",
+          "opponent_team": "MIA",
+          "stat": 190
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_JAX_CIN",
+          "team": "CIN",
+          "opponent_team": "JAX",
+          "stat": 428
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CIN_PIT",
+          "team": "CIN",
+          "opponent_team": "PIT",
+          "stat": 282
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CIN_HOU",
+          "team": "CIN",
+          "opponent_team": "HOU",
+          "stat": 207
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_TB_CIN",
+          "team": "CIN",
+          "opponent_team": "TB",
+          "stat": 254
+        }
+      ],
+      "p7_l10": 300,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Hunter Henry",
+      "team": "NE",
+      "position": "TE",
+      "market_type": "Receiving Yards",
+      "provisional_selected_threshold": 15,
+      "historical_hr_at_threshold": "9/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "The Patriots QB change to Tommy DeVito is a material downgrade/uncertainty, but the matchup preview lists Henry at 2.5 receptions and 24.5 yards with a 3-catch/33.8-yard projection. Low game total limits ceiling; 15 yards is a modest threshold if routes and targets hold.",
+      "source_refs": [
+        "turn615751search5",
+        "turn117893view0"
+      ],
+      "stage1_locked_market_line": "22.5",
+      "stage1_locked_market_hr": "8/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_NE_DET",
+          "team": "NE",
+          "opponent_team": "DET",
+          "stat": 22
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_GB_NE",
+          "team": "NE",
+          "opponent_team": "GB",
+          "stat": 35
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_NE_MIA",
+          "team": "NE",
+          "opponent_team": "MIA",
+          "stat": 30
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_NE_CHI",
+          "team": "NE",
+          "opponent_team": "CHI",
+          "stat": 71
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NE",
+          "opponent_team": "NYJ",
+          "stat": 48
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_LV_NE",
+          "team": "NE",
+          "opponent_team": "LV",
+          "stat": 44
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NE_BUF",
+          "team": "NE",
+          "opponent_team": "BUF",
+          "stat": 62
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NE_JAX",
+          "team": "NE",
+          "opponent_team": "JAX",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PIT_NE",
+          "team": "NE",
+          "opponent_team": "PIT",
+          "stat": 40
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "NE",
+          "opponent_team": "SEA",
+          "stat": 26
+        }
+      ],
+      "p7_l10": 44,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "position": "WR",
+      "market_type": "Receiving Yards",
+      "provisional_selected_threshold": 80,
+      "historical_hr_at_threshold": "8/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "Week 10 usage was dominant: 10 targets and 59% target share on 75% snaps. He is on Seattle's Friday report with an ankle issue (limited), while the Seahawks lose RT Abraham Lucas and G Quenton Nelson. Sam Darnold is expected back at QB, which is a change from the recent sample. San Francisco will start Mac Jones with Brock Purdy out.",
+      "source_refs": [
+        "turn786780view0",
+        "turn269290search3",
+        "turn269290search7"
+      ],
+      "stage1_locked_market_line": "97.5",
+      "stage1_locked_market_hr": "8/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_SEA_LV",
+          "team": "SEA",
+          "opponent_team": "LV",
+          "stat": 171
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_ARI_SEA",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "stat": 51
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "SEA",
+          "opponent_team": "CHI",
+          "stat": 118
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_KC_SEA",
+          "team": "SEA",
+          "opponent_team": "KC",
+          "stat": 150
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_SEA_DEN",
+          "team": "SEA",
+          "opponent_team": "DEN",
+          "stat": 134
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "stat": 102
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "stat": 76
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "stat": 128
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "stat": 155
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "stat": 122
+        }
+      ],
+      "p7_l10": 134,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "provisional_selected_threshold": 175,
+      "historical_hr_at_threshold": "7/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Concern",
+      "context": "The locked L10 is strong at lower thresholds, but current context is weaker: Week 12 preview notes three straight games below 176 passing yards, low attempt volume and a Jets run-first approach. The latest report also notes the receiving corps is unhealthy. The 175-yard core threshold is near his recent ceiling, not a comfortable floor.",
+      "source_refs": [
+        "turn490074search3",
+        "turn250336search1"
+      ],
+      "stage1_locked_market_line": "204.5",
+      "stage1_locked_market_hr": "5/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_NYJ_LAC",
+          "team": "NYJ",
+          "opponent_team": "LAC",
+          "stat": 176
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_BUF_NYJ",
+          "team": "NYJ",
+          "opponent_team": "BUF",
+          "stat": 148
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_NYJ_KC",
+          "team": "NYJ",
+          "opponent_team": "KC",
+          "stat": 165
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_LV_NYJ",
+          "team": "NYJ",
+          "opponent_team": "LV",
+          "stat": 290
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_MIA_NYJ",
+          "team": "NYJ",
+          "opponent_team": "MIA",
+          "stat": 287
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NYJ_NE",
+          "team": "NYJ",
+          "opponent_team": "NE",
+          "stat": 252
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CLE_NYJ",
+          "team": "NYJ",
+          "opponent_team": "CLE",
+          "stat": 182
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_NYJ_CHI",
+          "team": "NYJ",
+          "opponent_team": "CHI",
+          "stat": 119
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_NYJ_DET",
+          "team": "NYJ",
+          "opponent_team": "DET",
+          "stat": 321
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_GB_NYJ",
+          "team": "NYJ",
+          "opponent_team": "GB",
+          "stat": 247
+        }
+      ],
+      "p7_l10": 252,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "position": "WR",
+      "market_type": "Receptions",
+      "provisional_selected_threshold": 7,
+      "historical_hr_at_threshold": "7/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Mixed",
+      "context": "Same strong target concentration as his receiving-yards market (10 targets, 59% target share in Week 10), but ankle-limited on Friday and the expected return of Sam Darnold introduces uncertainty. Seven catches is more directly supported by target volume than an 80-yard outcome, but health needs confirmation.",
+      "source_refs": [
+        "turn786780view0",
+        "turn269290search3"
+      ],
+      "stage1_locked_market_line": "7.5",
+      "stage1_locked_market_hr": "6/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_SEA_LV",
+          "team": "SEA",
+          "opponent_team": "LV",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_ARI_SEA",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CHI_SEA",
+          "team": "SEA",
+          "opponent_team": "CHI",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_KC_SEA",
+          "team": "SEA",
+          "opponent_team": "KC",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_SEA_DEN",
+          "team": "SEA",
+          "opponent_team": "DEN",
+          "stat": 12
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_SF_SEA",
+          "team": "SEA",
+          "opponent_team": "SF",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_LAC_SEA",
+          "team": "SEA",
+          "opponent_team": "LAC",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_SEA_WAS",
+          "team": "SEA",
+          "opponent_team": "WAS",
+          "stat": 10
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_SEA_ARI",
+          "team": "SEA",
+          "opponent_team": "ARI",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NE_SEA",
+          "team": "SEA",
+          "opponent_team": "NE",
+          "stat": 8
+        }
+      ],
+      "p7_l10": 9,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Chris Olave",
+      "team": "NO",
+      "position": "WR",
+      "market_type": "Receptions",
+      "provisional_selected_threshold": 5,
+      "historical_hr_at_threshold": "7/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Supportive",
+      "context": "Week 11 usage was excellent: 15 targets, 9 catches, 102 yards, 38% target share and 86% snaps. Saints are likely to face a pass-heavy chase script as 9.5-point underdogs in a 49.5 total game. Juwan Johnson is out and Noah Fant is questionable, which may further concentrate targets; Cincinnati's DJ Turner is a notable coverage matchup.",
+      "source_refs": [
+        "turn441581view1",
+        "turn441581view5",
+        "turn117893view0",
+        "turn250336search1"
+      ],
+      "stage1_locked_market_line": "5.5",
+      "stage1_locked_market_hr": "7/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_NO_CHI",
+          "team": "NO",
+          "opponent_team": "CHI",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_CAR_NO",
+          "team": "NO",
+          "opponent_team": "CAR",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_CLE_NO",
+          "team": "NO",
+          "opponent_team": "CLE",
+          "stat": 7
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_PIT_NO",
+          "team": "NO",
+          "opponent_team": "PIT",
+          "stat": 6
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_NO_NYG",
+          "team": "NO",
+          "opponent_team": "NYG",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_MIN_NO",
+          "team": "NO",
+          "opponent_team": "MIN",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_ATL_NO",
+          "team": "NO",
+          "opponent_team": "ATL",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_LV_NO",
+          "team": "NO",
+          "opponent_team": "LV",
+          "stat": 9
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "team": "NO",
+          "opponent_team": "BAL",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NO_DET",
+          "team": "NO",
+          "opponent_team": "DET",
+          "stat": 10
+        }
+      ],
+      "p7_l10": 8,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "position": "QB",
+      "market_type": "Passing Yards",
+      "provisional_selected_threshold": 175,
+      "historical_hr_at_threshold": "6/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Supportive",
+      "context": "Watson is listed as Cleveland's QB1 and is not on the Week 12 injury report. He threw for 312 yards on 25-of-40 in his last game, and Las Vegas is allowing the second-most passing TDs and 23.8 QB fantasy points per game (29th). Cleveland is coming off a bye. The main Stage 1 line is higher at 209.5, so the provisional 175-yard threshold is materially more forgiving.",
+      "source_refs": [
+        "turn490074search1",
+        "turn490074search13"
+      ],
+      "stage1_locked_market_line": "209.5",
+      "stage1_locked_market_hr": "5/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_HOU_CLE",
+          "team": "CLE",
+          "opponent_team": "HOU",
+          "stat": 312
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_CLE_PIT",
+          "team": "CLE",
+          "opponent_team": "PIT",
+          "stat": 324
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CLE_TEN",
+          "team": "CLE",
+          "opponent_team": "TEN",
+          "stat": 308
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "team": "CLE",
+          "opponent_team": "BAL",
+          "stat": 164
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_CLE_NYJ",
+          "team": "CLE",
+          "opponent_team": "NYJ",
+          "stat": 155
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_PIT_CLE",
+          "team": "CLE",
+          "opponent_team": "PIT",
+          "stat": 268
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_CAR_CLE",
+          "team": "CLE",
+          "opponent_team": "CAR",
+          "stat": 144
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_CLE_TB",
+          "team": "CLE",
+          "opponent_team": "TB",
+          "stat": 238
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_CLE_JAX",
+          "team": "CLE",
+          "opponent_team": "JAX",
+          "stat": 205
+        },
+        {
+          "season": 2024,
+          "week": 7,
+          "game_id": "2024_07_CIN_CLE",
+          "team": "CLE",
+          "opponent_team": "CIN",
+          "stat": 128
+        }
+      ],
+      "p7_l10": 268,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "position": "RB",
+      "market_type": "Rushing Yards",
+      "provisional_selected_threshold": 40,
+      "historical_hr_at_threshold": "8/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Concern",
+      "context": "Week 10 snap share was 72%, but he had only 9 carries (53% share) and was more involved as a receiver (9 targets). Jacksonville is rated the No. 2 RB defense in the matchup preview, and Tennessee is a 14-point underdog; a negative game script could reduce carries. Pollard is healthy and had a full Friday practice.",
+      "source_refs": [
+        "turn615751view0",
+        "turn615751search1",
+        "turn269290search9"
+      ],
+      "stage1_locked_market_line": "52.5",
+      "stage1_locked_market_hr": "6/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_TEN_DAL",
+          "team": "TEN",
+          "opponent_team": "DAL",
+          "stat": 110
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_JAX_TEN",
+          "team": "TEN",
+          "opponent_team": "JAX",
+          "stat": 33
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_TEN_CIN",
+          "team": "TEN",
+          "opponent_team": "CIN",
+          "stat": 117
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CLE_TEN",
+          "team": "TEN",
+          "opponent_team": "CLE",
+          "stat": 129
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_TEN_IND",
+          "team": "TEN",
+          "opponent_team": "IND",
+          "stat": 76
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_HOU_TEN",
+          "team": "TEN",
+          "opponent_team": "HOU",
+          "stat": 52
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "team": "TEN",
+          "opponent_team": "BAL",
+          "stat": 48
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_TEN_NYG",
+          "team": "TEN",
+          "opponent_team": "NYG",
+          "stat": 74
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_PHI_TEN",
+          "team": "TEN",
+          "opponent_team": "PHI",
+          "stat": 64
+        },
+        {
+          "season": 2026,
+          "week": 1,
+          "game_id": "2026_01_NYJ_TEN",
+          "team": "TEN",
+          "opponent_team": "NYJ",
+          "stat": 35
+        }
+      ],
+      "p7_l10": 76,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    },
+    {
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "position": "TE",
+      "market_type": "Receptions",
+      "provisional_selected_threshold": 3,
+      "historical_hr_at_threshold": "7/10",
+      "provisional_band": "CORE",
+      "band_status": "UNVERIFIED_FROM_PRIOR_PARTIAL_STAGE2",
+      "stage3_classification": "Concern",
+      "context": "Recent role has cooled: Week 11 target share was only 8.1%, with 14 receiving yards and zero first reads; over the last five games Houston has allowed the ninth-fewest receiving fantasy points per game and per opportunity. The 3-catch threshold is historically attainable, but current role and matchup point the wrong way.",
+      "source_refs": [
+        "turn490074search0",
+        "turn490074search17"
+      ],
+      "stage1_locked_market_line": "2.5",
+      "stage1_locked_market_hr": "7/10",
+      "l10_observations": [
+        {
+          "season": 2026,
+          "week": 11,
+          "game_id": "2026_11_BAL_CAR",
+          "team": "BAL",
+          "opponent_team": "CAR",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 10,
+          "game_id": "2026_10_LAC_BAL",
+          "team": "BAL",
+          "opponent_team": "LAC",
+          "stat": 8
+        },
+        {
+          "season": 2026,
+          "week": 9,
+          "game_id": "2026_09_JAX_BAL",
+          "team": "BAL",
+          "opponent_team": "JAX",
+          "stat": 2
+        },
+        {
+          "season": 2026,
+          "week": 8,
+          "game_id": "2026_08_BAL_BUF",
+          "team": "BAL",
+          "opponent_team": "BUF",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 7,
+          "game_id": "2026_07_CIN_BAL",
+          "team": "BAL",
+          "opponent_team": "CIN",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 6,
+          "game_id": "2026_06_BAL_CLE",
+          "team": "BAL",
+          "opponent_team": "CLE",
+          "stat": 1
+        },
+        {
+          "season": 2026,
+          "week": 5,
+          "game_id": "2026_05_BAL_ATL",
+          "team": "BAL",
+          "opponent_team": "ATL",
+          "stat": 4
+        },
+        {
+          "season": 2026,
+          "week": 4,
+          "game_id": "2026_04_TEN_BAL",
+          "team": "BAL",
+          "opponent_team": "TEN",
+          "stat": 5
+        },
+        {
+          "season": 2026,
+          "week": 3,
+          "game_id": "2026_03_BAL_DAL",
+          "team": "BAL",
+          "opponent_team": "DAL",
+          "stat": 3
+        },
+        {
+          "season": 2026,
+          "week": 2,
+          "game_id": "2026_02_NO_BAL",
+          "team": "BAL",
+          "opponent_team": "NO",
+          "stat": 6
+        }
+      ],
+      "p7_l10": 4,
+      "p15_l10": "See Stage 1 locked L10; descriptive only"
+    }
+  ]
+}
