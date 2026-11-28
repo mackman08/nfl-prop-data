@@ -1,0 +1,817 @@
+{
+  "stage": 4,
+  "season": 2026,
+  "week": 12,
+  "scope": "Sunday only — all scheduled Sunday games",
+  "historical_sample": "L10",
+  "historical_cutoff": "Completion of the final scheduled game of Week 11 (Monday, 2026-11-23); no Week 12 games included",
+  "record_count": 20,
+  "state_id": "STATE-4-W12-2026-SUNDAY-L10-PRIORITY20-EXCEPTION",
+  "parent_state_id": "STATE-3-CONTEXT-W12-2026-SUNDAY-L10-PRIORITY20",
+  "execution_note": "Stage 4 completed as an exception run after user-authorized Stage 2 bypass. Selected candidates use current FanDuel main-market quotes, exact locked L10 samples, and Stage 3 context. Stage 2 alternate-market bands remain unavailable and were not represented as verified. Current official injury-report corrections are recorded separately.",
+  "source_states": {
+    "stage1": {
+      "path": "state/week12_2026/stage1_state.json",
+      "sha": "80c89e3aa8268c1284d1f9573678b73ba5603002",
+      "state_id": "STATE-1-W12-2026-SUNDAY-L10-RETRY"
+    },
+    "stage2_bypass": {
+      "path": "state/week12_2026/stage2_bypass_state.json",
+      "sha": "731a87d0c0f202968ea923e417cf745ba2c90a95",
+      "state_id": "STATE-2-BYPASS-W12-2026-SUNDAY-L10-PRIORITY20"
+    },
+    "stage3": {
+      "path": "state/week12_2026/stage3_context_state.json",
+      "sha": "ee87a4cc9432156337dde588c929aa00d03c99d8",
+      "state_id": "STATE-3-CONTEXT-W12-2026-SUNDAY-L10-PRIORITY20"
+    },
+    "sportsbook": {
+      "path": "odds/nfl_player_props_latest.csv",
+      "sha": "451ee399951f81688fac768759881a7faac108ce",
+      "primary": "FanDuel"
+    }
+  },
+  "selected_count": 2,
+  "records": [
+    {
+      "player": "Trey McBride",
+      "team": "ARI",
+      "market": "Receptions",
+      "selection": "SELECT",
+      "current_fanduel": {
+        "line": "6.5",
+        "over_american_odds": "-138",
+        "under_american_odds": "104",
+        "game": "Washington Commanders @ Arizona Cardinals"
+      },
+      "historical": {
+        "l10_observations": [
+          9,
+          5,
+          7,
+          7,
+          10,
+          7,
+          9,
+          7,
+          9,
+          8
+        ],
+        "over_hits": 9,
+        "over_hr": "9/10",
+        "p15_l10": 7,
+        "selected_line_minus_p15": -0.5
+      },
+      "stage3_context": {
+        "classification": "Supportive",
+        "summary": "Week 11 role was elite: 14 targets, 9 catches, 54 yards and 80% snaps. He is healthy and faces Washington. The Week 12 target report notes his 14-target game and describes him as the clear Arizona receiving option; the opponent's pass defense is ranked 31st in the NFL capsule."
+      },
+      "latest_official_status": {
+        "status": "Full participation; no game-status designation shown",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "SELECT. 9/10 at the current FanDuel line; the 6.5 line is below the L10 15th percentile (7.0). Strong Week 11 target volume, full participation on the official report, and supportive Stage 3 context."
+    },
+    {
+      "player": "Malik Washington",
+      "team": "MIA",
+      "market": "Receiving Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "26.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "New York Jets @ Miami Dolphins"
+      },
+      "historical": {
+        "l10_observations": [
+          30,
+          50,
+          21,
+          40,
+          27,
+          43,
+          67,
+          56,
+          43,
+          53
+        ],
+        "over_hits": 9,
+        "over_hr": "9/10",
+        "p15_l10": 28.05,
+        "selected_line_minus_p15": -1.55
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "Played 88% of snaps but drew only 6 targets (18% share) and caught 3 for 30 in the latest report. Miami's passing attack has a low floor and the quarterback context is unsettled; 20 yards is reachable on role, but volume is not secure."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 9/10 at the line and low L10 floor, but latest report shows only six targets and a mixed volume profile."
+    },
+    {
+      "player": "Kirk Cousins",
+      "team": "MIN",
+      "market": "Passing Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "249.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "Atlanta Falcons @ Minnesota Vikings"
+      },
+      "historical": {
+        "l10_observations": [
+          235,
+          207,
+          216,
+          247,
+          295,
+          313,
+          243,
+          365,
+          248,
+          253
+        ],
+        "over_hits": 4,
+        "over_hr": "4/10",
+        "p15_l10": 222.65,
+        "selected_line_minus_p15": 26.85
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "No injury designation and listed as Minnesota's QB1. The matchup is against Atlanta, but Minnesota is a 7-point favorite in a low 41.5 total environment; that can cap second-half pass volume if the Vikings control the game."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. Only 4/10 at the current line; 15th-percentile floor is well below the number."
+    },
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "market": "Rushing Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "75.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "Atlanta Falcons @ Minnesota Vikings"
+      },
+      "historical": {
+        "l10_observations": [
+          71,
+          100,
+          76,
+          63,
+          61,
+          86,
+          145,
+          194,
+          72,
+          83
+        ],
+        "over_hits": 6,
+        "over_hr": "6/10",
+        "p15_l10": 65.8,
+        "selected_line_minus_p15": 9.7
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "Clear lead-back usage: Week 10 showed 16 carries, 80% carry share, 5 targets and 71% snaps; Week 11 report had 16 carries for 71 yards and a score. The Vikings are a difficult RB matchup (ranked 6th vs RBs), but Atlanta may lean on him to mitigate the pass rush."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 6/10 at the current line and matchup/run-script concerns; current line sits above L10 15th percentile."
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "team": "HOU",
+      "market": "Receptions",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "2.5",
+        "over_american_odds": "-172",
+        "under_american_odds": "128",
+        "game": "Baltimore Ravens @ Houston Texans"
+      },
+      "historical": {
+        "l10_observations": [
+          2,
+          4,
+          3,
+          3,
+          2,
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "over_hits": 8,
+        "over_hr": "8/10",
+        "p15_l10": 2.35,
+        "selected_line_minus_p15": 0.15
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "82% snaps in Week 11 but only 3 targets and 2 catches. Season usage is meaningful (17% target share, 5.7 targets/game; 2nd on Houston's WR depth chart), and Kayshon Boutte is out, but other receivers compete for targets. Role is better than the latest box score suggests; three catches still needs volume."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 8/10 at the line but only three targets in the latest usage snapshot; role/volume is not secure enough."
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "market": "Receptions",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "2.5",
+        "over_american_odds": "-122",
+        "under_american_odds": "-108",
+        "game": "New England Patriots @ Los Angeles Chargers"
+      },
+      "historical": {
+        "l10_observations": [
+          5,
+          3,
+          3,
+          6,
+          2,
+          4,
+          7,
+          4,
+          3,
+          2
+        ],
+        "over_hits": 8,
+        "over_hr": "8/10",
+        "p15_l10": 2.35,
+        "selected_line_minus_p15": 0.15
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "New England's starting QB Drake Maye is out; Tommy DeVito is listed as the replacement starter by the matchup prop preview. Hollins has a low 2.5-catch main line and should have a path to targets, but the QB change and low game total add volatility."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 8/10 but low target certainty and Patriots QB change adds volatility."
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "market": "Receiving Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "26.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "New England Patriots @ Los Angeles Chargers"
+      },
+      "historical": {
+        "l10_observations": [
+          48,
+          36,
+          53,
+          87,
+          18,
+          51,
+          69,
+          41,
+          23,
+          30
+        ],
+        "over_hits": 8,
+        "over_hr": "8/10",
+        "p15_l10": 25.45,
+        "selected_line_minus_p15": 1.05
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "Same Patriots QB and game-environment concerns as the receptions market. The external matchup preview lists a 24.5-yard line and 41.2-yard projection, but that is not the locked Stage 1 line and is not used as a sportsbook input here."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 8/10 but the Patriots QB change and modest role reduce confidence."
+    },
+    {
+      "player": "Stefon Diggs",
+      "team": "WAS",
+      "market": "Receiving Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "43.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "Washington Commanders @ Arizona Cardinals"
+      },
+      "historical": {
+        "l10_observations": [
+          45,
+          83,
+          51,
+          38,
+          44,
+          35,
+          33,
+          47,
+          55,
+          43
+        ],
+        "over_hits": 6,
+        "over_hr": "6/10",
+        "p15_l10": 36.05,
+        "selected_line_minus_p15": 7.45
+      },
+      "stage3_context": {
+        "classification": "Supportive",
+        "summary": "Washington usage report shows 6 targets, 4 catches, 45 yards, 19% target share and 66% snaps; he is the clear secondary option behind Antonio Williams. The Commanders face Arizona, and the latest WR preview says Terry McLaurin and Jaylin Lane are out for the season, concentrating targets between Diggs and Williams."
+      },
+      "latest_official_status": {
+        "status": "OUT",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. Official NFL Week 12 injury report lists him OUT; overrides the earlier Stage 3 supportive classification for final decision purposes."
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "market": "Passing Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "200.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "Atlanta Falcons @ Minnesota Vikings"
+      },
+      "historical": {
+        "l10_observations": [
+          286,
+          162,
+          125,
+          213,
+          225,
+          240,
+          223,
+          256,
+          175,
+          177
+        ],
+        "over_hits": 6,
+        "over_hr": "6/10",
+        "p15_l10": 166.55,
+        "selected_line_minus_p15": 33.95
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "Atlanta's official Week 12 depth chart lists Penix as QB1; he has no designation in the weekly injury article, although a separate league injury feed shows a conflicting OUT status against a different opponent. Treat availability as unresolved until official inactives. Atlanta is a 7-point underdog in a 41.5 total, while the Vikings are a strong defense."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 6/10 at the current line; context remains mixed and L10 floor is materially lower."
+    },
+    {
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "market": "Passing Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "253.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "Tennessee Titans @ Jacksonville Jaguars"
+      },
+      "historical": {
+        "l10_observations": [
+          301,
+          352,
+          242,
+          210,
+          306,
+          331,
+          227,
+          182,
+          189,
+          245
+        ],
+        "over_hits": 4,
+        "over_hr": "4/10",
+        "p15_l10": 196.35,
+        "selected_line_minus_p15": 57.15
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "Favorable opponent: Tennessee is listed as the 32nd-ranked QB defense in the matchup analysis and Jacksonville is a 14.5-point favorite. Counterweights: Parker Washington and G Patrick Mekari are out, and C Robert Hainsey is questionable; a large lead could also reduce late passing volume."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 4/10 at the current line; too much historical downside relative to price."
+    },
+    {
+      "player": "Brock Bowers",
+      "team": "LV",
+      "market": "Receptions",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "4.5",
+        "over_american_odds": "-158",
+        "under_american_odds": "118",
+        "game": "Las Vegas Raiders @ Cleveland Browns"
+      },
+      "historical": {
+        "l10_observations": [
+          2,
+          7,
+          7,
+          6,
+          4,
+          8,
+          6,
+          10,
+          5,
+          6
+        ],
+        "over_hits": 8,
+        "over_hr": "8/10",
+        "p15_l10": 4.35,
+        "selected_line_minus_p15": 0.15
+      },
+      "stage3_context": {
+        "classification": "Concern",
+        "summary": "Ankle status is the main issue: questionable after limited practices Wednesday/Thursday and did not practice Friday. Coach optimism is not enough to clear him. Michael Mayer was a full participant, creating a viable alternate TE if Bowers is limited or inactive. Do not use until confirmed active."
+      },
+      "latest_official_status": {
+        "status": "QUESTIONABLE (ankle)",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. Questionable with ankle injury; availability uncertainty outweighs the historical 8/10."
+    },
+    {
+      "player": "Joe Burrow",
+      "team": "CIN",
+      "market": "Passing Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "284.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "New Orleans Saints @ Cincinnati Bengals"
+      },
+      "historical": {
+        "l10_observations": [
+          300,
+          409,
+          271,
+          462,
+          292,
+          190,
+          428,
+          282,
+          207,
+          254
+        ],
+        "over_hits": 5,
+        "over_hr": "5/10",
+        "p15_l10": 223.45,
+        "selected_line_minus_p15": 61.05
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "Cincinnati is a 9.5-point favorite with a 49.5 total, which gives the offense scoring opportunity but may create a run-heavy second half. G Dalton Risner is out and Tee Higgins is questionable. The matchup preview rates New Orleans well against QBs and notes adverse weather, so the 250-yard threshold is not a clean spot."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 5/10 at the current line and mixed matchup/game-script context."
+    },
+    {
+      "player": "Hunter Henry",
+      "team": "NE",
+      "market": "Receiving Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "22.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "New England Patriots @ Los Angeles Chargers"
+      },
+      "historical": {
+        "l10_observations": [
+          22,
+          35,
+          30,
+          71,
+          48,
+          44,
+          62,
+          5,
+          40,
+          26
+        ],
+        "over_hits": 8,
+        "over_hr": "8/10",
+        "p15_l10": 23.4,
+        "selected_line_minus_p15": -0.9
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "The Patriots QB change to Tommy DeVito is a material downgrade/uncertainty, but the matchup preview lists Henry at 2.5 receptions and 24.5 yards with a 3-catch/33.8-yard projection. Low game total limits ceiling; 15 yards is a modest threshold if routes and targets hold."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 8/10 but quarterback change materially increases role/efficiency uncertainty."
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "market": "Receiving Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "97.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "Seattle Seahawks @ San Francisco 49ers"
+      },
+      "historical": {
+        "l10_observations": [
+          171,
+          51,
+          118,
+          150,
+          134,
+          102,
+          76,
+          128,
+          155,
+          122
+        ],
+        "over_hits": 8,
+        "over_hr": "8/10",
+        "p15_l10": 85.1,
+        "selected_line_minus_p15": 12.4
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "Week 10 usage was dominant: 10 targets and 59% target share on 75% snaps. He is on Seattle's Friday report with an ankle issue (limited), while the Seahawks lose RT Abraham Lucas and G Quenton Nelson. Sam Darnold is expected back at QB, which is a change from the recent sample. San Francisco will start Mac Jones with Brock Purdy out."
+      },
+      "latest_official_status": {
+        "status": "Limited participation; no game-status designation shown",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 8/10 at line, but limited practice and uncertainty around Seattle's QB/OL context make the high yardage line less attractive."
+    },
+    {
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "market": "Passing Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "204.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "New York Jets @ Miami Dolphins"
+      },
+      "historical": {
+        "l10_observations": [
+          176,
+          148,
+          165,
+          290,
+          287,
+          252,
+          182,
+          119,
+          321,
+          247
+        ],
+        "over_hits": 5,
+        "over_hr": "5/10",
+        "p15_l10": 153.95,
+        "selected_line_minus_p15": 50.55
+      },
+      "stage3_context": {
+        "classification": "Concern",
+        "summary": "The locked L10 is strong at lower thresholds, but current context is weaker: Week 12 preview notes three straight games below 176 passing yards, low attempt volume and a Jets run-first approach. The latest report also notes the receiving corps is unhealthy. The 175-yard core threshold is near his recent ceiling, not a comfortable floor."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 5/10 at line and recent volume trend is concerning."
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "market": "Receptions",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "7.5",
+        "over_american_odds": "102",
+        "under_american_odds": "-136",
+        "game": "Seattle Seahawks @ San Francisco 49ers"
+      },
+      "historical": {
+        "l10_observations": [
+          8,
+          7,
+          6,
+          9,
+          12,
+          5,
+          5,
+          10,
+          9,
+          8
+        ],
+        "over_hits": 6,
+        "over_hr": "6/10",
+        "p15_l10": 5.35,
+        "selected_line_minus_p15": 2.15
+      },
+      "stage3_context": {
+        "classification": "Mixed",
+        "summary": "Same strong target concentration as his receiving-yards market (10 targets, 59% target share in Week 10), but ankle-limited on Friday and the expected return of Sam Darnold introduces uncertainty. Seven catches is more directly supported by target volume than an 80-yard outcome, but health needs confirmation."
+      },
+      "latest_official_status": {
+        "status": "Limited participation; no game-status designation shown",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 6/10 at line, limited practice, and no meaningful edge at current quote."
+    },
+    {
+      "player": "Chris Olave",
+      "team": "NO",
+      "market": "Receptions",
+      "selection": "SELECT",
+      "current_fanduel": {
+        "line": "5.5",
+        "over_american_odds": "-130",
+        "under_american_odds": "-102",
+        "game": "New Orleans Saints @ Cincinnati Bengals"
+      },
+      "historical": {
+        "l10_observations": [
+          9,
+          3,
+          7,
+          6,
+          4,
+          4,
+          8,
+          9,
+          8,
+          10
+        ],
+        "over_hits": 7,
+        "over_hr": "7/10",
+        "p15_l10": 4,
+        "selected_line_minus_p15": 1.5
+      },
+      "stage3_context": {
+        "classification": "Supportive",
+        "summary": "Week 11 usage was excellent: 15 targets, 9 catches, 102 yards, 38% target share and 86% snaps. Saints are likely to face a pass-heavy chase script as 9.5-point underdogs in a 49.5 total game. Juwan Johnson is out and Noah Fant is questionable, which may further concentrate targets; Cincinnati's DJ Turner is a notable coverage matchup."
+      },
+      "latest_official_status": {
+        "status": "Full participation; no game-status designation shown",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "SELECT. 7/10 at the current FanDuel line; L10 15th percentile is below the 5.5 line. Week 11 target volume was exceptionally strong and he was full participation on the official report. Price is reasonable at -130."
+    },
+    {
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "market": "Passing Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "209.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "Las Vegas Raiders @ Cleveland Browns"
+      },
+      "historical": {
+        "l10_observations": [
+          312,
+          324,
+          308,
+          164,
+          155,
+          268,
+          144,
+          238,
+          205,
+          128
+        ],
+        "over_hits": 5,
+        "over_hr": "5/10",
+        "p15_l10": 147.85,
+        "selected_line_minus_p15": 61.65
+      },
+      "stage3_context": {
+        "classification": "Supportive",
+        "summary": "Watson is listed as Cleveland's QB1 and is not on the Week 12 injury report. He threw for 312 yards on 25-of-40 in his last game, and Las Vegas is allowing the second-most passing TDs and 23.8 QB fantasy points per game (29th). Cleveland is coming off a bye. The main Stage 1 line is higher at 209.5, so the provisional 175-yard threshold is materially more forgiving."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 5/10 at the current FanDuel main line; supportive matchup alone does not overcome the historical hit rate."
+    },
+    {
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "market": "Rushing Yards",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "52.5",
+        "over_american_odds": "-114",
+        "under_american_odds": "-114",
+        "game": "Tennessee Titans @ Jacksonville Jaguars"
+      },
+      "historical": {
+        "l10_observations": [
+          110,
+          33,
+          117,
+          129,
+          76,
+          52,
+          48,
+          74,
+          64,
+          35
+        ],
+        "over_hits": 6,
+        "over_hr": "6/10",
+        "p15_l10": 39.55,
+        "selected_line_minus_p15": 12.95
+      },
+      "stage3_context": {
+        "classification": "Concern",
+        "summary": "Week 10 snap share was 72%, but he had only 9 carries (53% share) and was more involved as a receiver (9 targets). Jacksonville is rated the No. 2 RB defense in the matchup preview, and Tennessee is a 14-point underdog; a negative game script could reduce carries. Pollard is healthy and had a full Friday practice."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 6/10 at line with role/game-script concerns; recent practice reporting adds uncertainty."
+    },
+    {
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "market": "Receptions",
+      "selection": "PASS",
+      "current_fanduel": {
+        "line": "2.5",
+        "over_american_odds": "-188",
+        "under_american_odds": "140",
+        "game": "Baltimore Ravens @ Houston Texans"
+      },
+      "historical": {
+        "l10_observations": [
+          2,
+          8,
+          2,
+          3,
+          3,
+          1,
+          4,
+          5,
+          3,
+          6
+        ],
+        "over_hits": 7,
+        "over_hr": "7/10",
+        "p15_l10": 2,
+        "selected_line_minus_p15": 0.5
+      },
+      "stage3_context": {
+        "classification": "Concern",
+        "summary": "Recent role has cooled: Week 11 target share was only 8.1%, with 14 receiving yards and zero first reads; over the last five games Houston has allowed the ninth-fewest receiving fantasy points per game and per opportunity. The 3-catch threshold is historically attainable, but current role and matchup point the wrong way."
+      },
+      "latest_official_status": {
+        "status": "No specific injury designation verified in the official report reviewed",
+        "source": "NFL.com Week 12 official injury report"
+      },
+      "final_read": "PASS. 7/10 but recent target share is weak and context is concerning."
+    }
+  ]
+}
